@@ -76,7 +76,7 @@ To get started, from the outset you download the complete library
 ```
 
 # License
-cssanimation.io is licensed under the [MIT Licenses](cssanimation.io/LICENSE)
+cssanimation.io is licensed under the [MIT Licenses](/LICENSE)
 
 # Having trouble?
 If cssanimation.io isn't doing what you expect it to please post a mail to hello@cssanimation.io
