@@ -1,4 +1,4 @@
-#Getting started with cssanimation
+# Getting started with cssanimation
 >The human eye perceives motion first, silhouette second and color last. Therefore, using motion, or animation, uses people’s natural predisposition towards movement to draw attention to your website.
 
 Animation draws valuable interaction and feedback, as well as enhance the emotional experience, bring delight, and add personality to your interface. As Frank Thomas, one of the pioneers of traditional animation, once said: Animation is the illusion of life. Therefore, it literally brings your website into life.
