@@ -1,5 +1,5 @@
 # Getting started with cssanimation.io
->The human eye perceives motion first, silhouette second and color last. Therefore, using motion, or animation, uses people’s natural predisposition towards movement to draw attention to your website.
+**The human eye perceives motion first, silhouette second and color last. Therefore, using motion, or animation, uses people’s natural predisposition towards movement to draw attention to your website.**
 
 Animation draws valuable interaction and feedback, as well as enhance the emotional experience, bring delight, and add personality to your interface. As Frank Thomas, one of the pioneers of traditional animation, once said: Animation is the illusion of life. Therefore, it literally brings your website into life.
 
@@ -49,29 +49,28 @@ With cssanimation.io, all you have to do is to include the appropriate classes w
 To get started, from the outset you download the complete library
 
 
-1. Now include the cssanimation.css or cssanimation.min.css file into the head.
+**1. Now include the `cssanimation.css` or `cssanimation.min.css` file into the head.**
 ``` html
 <head> 
    <link rel="stylesheet" href="cssanimation.css"> 
 </head>
 ```
 
-2. And if you need character animation just add characteranimte.js download from here [ For character animation ]
+**2. And if you need character animation just add `characteranimte.js`**
 ``` html
 <head> 
    <link rel="stylesheet" href="cssanimation.css"> 
    <script type="text/javascript" src="characteranimte.js"> 
 </head>
-
-
-``` html
-3. Now add the class cssanimation and class of animation name [ please check below codepen title red block section for animation class name ] to the element you want to animate.
 ```
-<div class="cssanimation fadeIn"> Example </div>
+
+**3. Now add the class `cssanimation` and class of animation name [ please check below codepen title red block section for animation class name ] to the element you want to animate.**
 ``` html
+<div class="cssanimation fadeIn"> Example </div>
+``` 
 
 
-4. You may also want to include the class infinite for an infinite loop.
+**4. You may also want to include the class `infinite` for an infinite loop.**
 ``` html
 <div class="cssanimation infinite fadeIn"> Example </div>
 ```
