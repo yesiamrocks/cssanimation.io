@@ -49,14 +49,14 @@ With cssanimation.io, all you have to do is to include the appropriate classes w
 To get started, from the outset you download the complete library
 
 
-**1. Now include the `cssanimation.css` or `cssanimation.min.css` file into the head.**
+1. Now include the `cssanimation.css` or `cssanimation.min.css` file into the head.
 ``` html
 <head> 
    <link rel="stylesheet" href="cssanimation.css"> 
 </head>
 ```
 
-**2. And if you need character animation just add `characteranimte.js`**
+2. And if you need character animation just add `characteranimte.js`
 ``` html
 <head> 
    <link rel="stylesheet" href="cssanimation.css"> 
@@ -64,13 +64,19 @@ To get started, from the outset you download the complete library
 </head>
 ```
 
-**3. Now add the class `cssanimation` and class of animation name [ please check below codepen title red block section for animation class name ] to the element you want to animate.**
+3. Now add the class `cssanimation` and class of animation name [ please check below codepen title red block section for animation class name ] to the element you want to animate.
 ``` html
 <div class="cssanimation fadeIn"> Example </div>
 ``` 
 
 
-**4. You may also want to include the class `infinite` for an infinite loop.**
+4. You may also want to include the class `infinite` for an infinite loop.
 ``` html
 <div class="cssanimation infinite fadeIn"> Example </div>
 ```
+
+# License
+cssanimation.io is licensed under the [MIT Licenses](cssanimation.io/LICENSE)
+
+# Having trouble?
+If cssanimation.io isn't doing what you expect it to please post a mail to hello@cssanimation.io
