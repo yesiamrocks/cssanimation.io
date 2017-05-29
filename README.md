@@ -1,4 +1,4 @@
-## Getting started with cssanimation.io
+# Getting started with cssanimation.io
 In this documantation we discussed about cssanimation.io's CSS version which professional-grade animation library for the modern web. If you want cssanimation.io's animation by [GreenSock](https://greensock.com/), Please [check our another documantation](https://greensock.com/), which will guide you about the GreenSock.
 
 With cssanimation.io, all you have to do is to include the appropriate classes with your elements. The method of including the CSS version is outlined below:
@@ -76,11 +76,12 @@ To get started, from the outset you [ download ] the complete library and then
 </html>
 ```
 
-## How to use cssanimation.io's GSAP version
+
+# How to use cssanimation.io's GSAP version
 Have a great news for you. Do you know anything about the GreenSock Animation Platform? [GreenSock](https://greensock.com/) is a JavaScript framework which makes it easy to animate HTML elements. And yes GreenSock is absolutely a JavaScript framework, it is not CSS. **So we’ve created another version of cssanimatio.io that animate HTML element by GreenSock**. 
 That means you animate your HTML element by [GreenSock](https://greensock.com/) the animations that you saw on the home page. So, why worry about something else? Let's get started!!
 
-**please follow the instruction below**
+****please follow the instruction below**
 
 First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock](https://greensock.com/tweenmax) and download cssanimation.io's GSAP script `cssanimation-gsap.js` from [cssanimation.io](http://localhost/cssanimation/lib/cssanimation.zip)
 
