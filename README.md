@@ -1,99 +1,58 @@
 ## Getting started with cssanimation.io
-**The human eye perceives motion first, silhouette second and color last. Therefore, using motion, or animation, uses people’s natural predisposition towards the movement to draw attention to your website.**
+In this documantation we discussed about cssanimation.io's CSS version which professional-grade animation library for the modern web. If you want cssanimation.io's animation by [GreenSock](https://greensock.com/), Please [check our another documantation](https://greensock.com/), which will guide you about the GreenSock.
 
-Animation draws valuable interaction and feedback, as well as enhance the emotional experience, bring delight, and add personality to your interface. As Frank Thomas, one of the pioneers of traditional animation, once said: Animation is the illusion of life. Therefore, it literally brings your website into life.
-
-## What is CSS animation?
-CSS Animation is a modern art-form that helps you create animations. If you are a beginner in CSS or have a little bit of knowledge in CSS, or even an expert; you must have felt the need for a ready-made template that makes the animation a lot easier than before. You might have felt that “If there was a ready-made template where all types of formats are already installed and were ready to use just like that…….”
-
-We have catered to that need and have made this template, where you will find almost all kind of formats that you might need. In only a few cases, it might need a trivial change to make your desired animation. **For the rest, it’s just simple “paste and go”**.
-
-## For the Front-end Development Professionals.
-You might be very talented in your field, but we can bet that you get bored of grinding through repetitive lines of codes, every time you work. We are here to make your job easier and reduce the work pressure and help you relax. Why do the extra work if there is a solution that gives you a faster result, sometimes even better ones. Use the plugin and redirect your efforts towards other things. We are here to help you. Take the shorter way to achieve greater successes.
-
-**Have you ever been asked by your client, boss or designer to create some nice animations for the next web project?**
-
-**You can’t say “No, I can’t do it.” That’s not what a modern front-end developer would say.**
-
-**Just follow our way to achieve it in a shorter period of time.**
-
-## Or maybe a complete beginner?
-Are you a complete beginner on CSS animation
-
-Nothing to worry about!!!
-
-We are here to help you. Use our plugin to prepare you as an expert in CSS animation. We have put a lot of effort to make your life easier. Utilize your skills for other important things in life. Just follow the easy instructions below.
-
-**Are you a developer with many years of experience and want to take your web animations to the next level?**
-
-Have a lot of experience in your pocket and want to take the animation to another level where, it became an art? You are at the right place. Our plugins will help you reduce your effort on trivial things and will enhance it to reach the peak of your animation skill. Enjoy the plugin and have fun.
-
-**Whoever you are, we are here to help.**
-
-## There are so many options
-The prospect of searching through countless plugins to find the one that you need can be a scary one; especially if it’s the first time you are working with CSS animations. There are just too many options to choose from and too many questions to be answered. Have you been in that situation?
-
-Don’t worry
-
-You’ve come to the right place.
-
-Here are the options, regardless of your skill level or a stage of your career.
-
-It will also save you a lot of time lurking on the web, instead you can start having fun with CSS animations.
-
-**cssanimations.io is the easiest way to create your project. In a simple way you will be able to make a big impact on the overall look and feel of your next project.**
-
-## Getting started
 With cssanimation.io, all you have to do is to include the appropriate classes with your elements. The method of including the CSS version is outlined below:
 
-To get started, from the outset you download the complete library
+To get started, from the outset you [ download ] the complete library and then
 
 
 1. Include the `cssanimation.css` or `cssanimation.min.css` stylesheet into the head.
 ``` html
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="cssanimation.css">
-</head>
-<body>
+    <title>Document</title> 
+    <link href="cssanimation.min.css" rel="stylesheet">
+</head> 
+<body> 
 
  </body>
 </html>
 ```
 
-2. And if you want letter or character animation just add `letterAnimate.js` before the `head` tag
+2. Now add the class `cssanimation` and class of animation name like `fadeIn` for fade in animation to the element that you want to animate. [For list of animation class name check out the [home page](http://cssanimation.io/) or check in codepen title red block section from below or click here ]
 ``` html
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="cssanimation.css">
-    <script type="text/javascript" src="letterAnimate.js">
-</head>
-<body>
+    <title>Document</title> 
+    <link rel="stylesheet" href="cssanimation.min.css">
+</head> 
+<body> 
 
- </body>
+   <h1 class="cssanimation fadeIn"> Example </h1> 
+
+</body>
 </html>
 ```
 
-3. Now add the class `cssanimation` and class of animation name to the element you want to animate.
+3. And if you want letter animation, There are two versions here. One is the sequential and the other is random animation. Just add the file `letteranimation.js` before the body tag. Now add a letter animation class like `leFadeIn` for letter fade in animation then must be add `sequential` class for to get an animation in sequence or `random` class for animate randomly.
 ``` html
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="cssanimation.css">
-    <script type="text/javascript" src="letterAnimate.js">
-</head>
-<body>
+    <title>Document</title> 
+    <link rel="stylesheet" href="cssanimation.min.css">
+</head> 
+<body> 
 
-   <h1 class="cssanimation fadeIn"> Example </h1>
+   <h1 class="cssanimation leFadeIn sequence"> Example </h1>
+   <h1 class="cssanimation leFadeIn random"> Example </h1>
 
+   <script type="text/javascript" src="letteranimation.js">
 </body>
 </html>
 ```
@@ -103,22 +62,85 @@ To get started, from the outset you download the complete library
 ``` html
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="cssanimation.css">
-    <script type="text/javascript" src="letterAnimate.js">
-</head>
-<body>
+    <title>Document</title> 
+    <link rel="stylesheet" href="cssanimation.min.css">
+    <script type="text/javascript" src="letteranimation.js">
+</head> 
+<body> 
 
-   <h1 class="cssanimation fadeIn infinite"> Example </h1>
+   <h1 class="cssanimation fadeIn infinite"> Example </h1> 
 
 </body>
 </html>
 ```
 
-## License
-cssanimation.io is licensed under the [MIT Licenses](/LICENSE)
+## How to use cssanimation.io's GSAP version
+Have a great news for you. Do you know anything about the GreenSock Animation Platform? [GreenSock](https://greensock.com/) is a JavaScript framework which makes it easy to animate HTML elements. And yes GreenSock is absolutely a JavaScript framework, it is not CSS. **So we’ve created another version of cssanimatio.io that animate HTML element by GreenSock**. 
+That means you animate your HTML element by [GreenSock](https://greensock.com/) the animations that you saw on the home page. So, why worry about something else? Let's get started!!
+
+****please follow the instruction below**
+
+First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock](https://greensock.com/tweenmax) and download cssanimation.io's GSAP script `cssanimation-gsap.js` from [cssanimation.io](http://localhost/cssanimation/lib/cssanimation.zip)
+
+1. Include the `TweenMax.min.js` and `cssanimation-gsap.js` before the body tag like below:
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Document</title> 
+</head> 
+<body> 
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+   <script type="text/javascript" src="cssanimation-gsap.js"></script>
+</body>
+</html>
+```
+
+2. Now add the class `cssanimation` and class of animation name like `fadeIn` for fade in animation to the element that you want to animate. [For list of animation class name check out the [home page](http://cssanimation.io/) or check in codepen title red block section from below or click here ]
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Document</title> 
+</head> 
+<body> 
+
+   <h1 class="cssanimation fadeIn"> Example </h1> 
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> 
+   <script type="text/javascript" src="cssanimation-gsap.js">
+</body>
+</html>
+```
+
+3. And if you want letter animation, There are two versions here. One is the sequential and the other is random animation. Just add the file `letteranimation.js` before the body tag. Now add a letter animation class like `leFadeIn` for letter fade in animation then must be add `sequential` class for to get an animation in sequence or `random` class for animate randomly.
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Document</title> 
+</head> 
+<body> 
+
+   <h1 class="cssanimation leFadeIn sequence"> Example </h1>
+   <h1 class="cssanimation leFadeIn random"> Example </h1>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> 
+   <script type="text/javascript" src="cssanimation-gsap.js">
+</body>
+</html>
+```
+
+**It's that easy! 😀**
 
 ## Having trouble?
-If cssanimation.io isn't doing what you expect it to please post a mail to hello@cssanimation.io
+If **cssanimation.io** isn't doing what you expect it to please post a mail to hello@cssanimation.io or create a [issue](https://github.com/yesiamrocks/cssanimation.io/issues)
+
+## License
+cssanimation.io is licensed under the [MIT Licenses](https://github.com/yesiamrocks/cssanimation.io/blob/master/LICENSE)
