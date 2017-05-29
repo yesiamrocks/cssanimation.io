@@ -1,82 +1,87 @@
-/*
-Written by : Pavel
-Contribute by: Amzad Hossain & Miraz Hossain
-Find me at: https://bd.linkedin.com/in/bdpavel
+/*******************************************************************************************************************
+Created and maintained by: Pavel
+Find me at: https://www.linkedin.com/in/yesiamrocks/
 Email: hello@cssanimation.io
-Released: 2016
-Current Version: 1.0.1
-Amount of Animation: 260
-Description: "cssanimation.io - A CSS Animation Library for Developers and Ninjas"
-Library Size: 76 kB
-Copyright (c) 2016 cssanimation.io
-License: cssanimation.io is licensed under the MIT license. http://opensource.org/licenses/MIT
-*/
+Github: https://github.com/yesiamrocks/cssanimation.io
+Current Version: 1.0.2
+Title: "A Animation Library for Developers and Ninjas"
+Copyright (c) 2016 Pavel
+License: cssanimattion is licensed under the MIT license
+******************************************************************************************************************/
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
 
-.cssanimation {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-.cssanimation span {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    display: inline-block;
-}
+.cssanimation span { display: inline-block }
 .infinite { animation-iteration-count: infinite !important }
 
-/*--------------------------------------------------------------
- Striking
---------------------------------------------------------------*/
-.hu___hu___ { animation-name: hu___hu__; animation-iteration-count: infinite; animation-duration: 2s; animation-timing-function: linear; }
-@keyframes hu___hu__ {
-    from, to { transform: translateY(30px) }
-    50% { transform: translateY(0px) }
+/*************************************************************
+Striking
+**************************************************************/
+.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
 }
-.snake span{ animation-name: snake; animation-iteration-count: infinite; animation-duration: 1.5s }
-@keyframes snake {
+
+.leSnake span { animation: leSnake 1.5s ease-in-out; animation-iteration-count: infinite }
+@keyframes leSnake {
     from, to { transform: translateY(0px) }
     50% { transform: translateY(30px) }
 }
+
+.lePeek span { animation-name: lePeek }
+@keyframes lePeek {
+    25% {  transform: rotateX(30deg) translateY(10px) rotate(-13deg); }
+    50% { transform: translateY(-22px) rotate(3deg) scale(1.1);  }
+}
+
 .effect3d { animation-name: effect3d }
 @keyframes effect3d {
-    to { text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15) }
+    to {
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)
+    }
 }
-.rainDrop span { animation-name: rainDrop; animation-iteration-count: infinite }
-@keyframes rainDrop {
+
+.leRainDrop span { animation-name: leRainDrop; animation-iteration-count: infinite; }
+@keyframes leRainDrop {
     0%, 25%, 55%, 75%, 87%, 97%, 100% { transform: scaleX(1.0) }
     26%, 56%, 76% { transform: scaleX(1.3) scaleY(0.8) }
     31%, 61%, 81% { transform: scaleX(0.8) scaleY(1.2) }
     76%, 88% { transform: scaleX(1.2) }
     98% { transform: scaleX(1.1) }
 }
+
 .pepe { animation-name: pepe; animation-iteration-count: infinite }
 @keyframes pepe {
-    from, 33%, 66%, to { transform: rotate(4deg); }
-    16%, 50%, 83%  { transform: rotate(-4deg);}
+    from, 33%, 66%, to { transform: rotate(4deg) }
+    16%, 50%, 83% { transform: rotate(-4deg) }
 }
-.waterWave span { animation-name: waterWave; animation-duration: .2s; animation-timing-function: linear; animation-iteration-count: infinite; }
-@keyframes waterWave {
+
+.leWaterWave span { animation: leWaterWave .2s linear infinite }
+@keyframes leWaterWave {
     50% { transform: skewY(1deg) skewX(-1deg) scale(1.06) }
 }
-.lightning { animation-name: lightning; animation-iteration-count: infinite; }
+
+.lightning { animation-name: lightning }
 @keyframes lightning {
-    from, 40%, 80%, to { opacity: 1 }
-    20%, 60% { opacity: 0 }
+    from, 50%, to { opacity: 1 }
+    25%, 75% { opacity: 0 }
 }
-.joltZoom span { animation-name: joltZoom }
-@keyframes joltZoom {
+
+.leJoltZoom span { animation-name: leJoltZoom }
+@keyframes leJoltZoom {
     10% { font-size: 140% }
-    40% {
-        font-size: 80%;
-        animation-timing-function: ease-out;
-    }
+    40% { font-size: 80% }
     100% { font-size: 100% }
 }
+
 .typing {
     width: 473px;
     overflow: hidden;
-    display: inline-flex;
+    white-space: nowrap;
     border-right: 2px solid #7E2EA0;
-    animation: typing 2s steps(11, end), cursor .25s steps(11, end) infinite;
+    animation: typing 2s steps(12, end), cursor .2s steps(12, end) infinite;
 }
 @keyframes typing {
     from { width: 0 }
@@ -84,17 +89,19 @@ License: cssanimation.io is licensed under the MIT license. http://opensource.or
 @keyframes cursor {
     50% { border-color: transparent }
 }
-.electricity { animation-name: electricity; animation-iteration-count: infinite; }
+
+.electricity { animation-name: electricity; animation-iteration-count: infinite }
 @keyframes electricity {
-    from, 37%, 67%, 85%, 93%{ transform: translateY(30px) }
+    from, 37%, 67%, 85%, 93% { transform: translateY(30px) }
     4%, 64%, 88% { transform: translateY(10px) }
     8%, 24%, 32%, 44% { transform: translateY(5px) }
     12%, 52%, 60%, 20% { transform: translateY(10px) }
     16%, 40% { transform: translateY(5px) }
     28%, 56% { transform: translateY(10px) }
     48%, 72%, 80%, 96% { transform: translateY(30px) }
-    76% , to{ transform: translateY(40px) }
+    76%, to { transform: translateY(40px) }
 }
+
 .wipe {
     width: 473px;
     overflow: hidden;
@@ -105,6 +112,7 @@ License: cssanimation.io is licensed under the MIT license. http://opensource.or
 @keyframes wipe {
     to { width: 0 }
 }
+
 .open {
     width: 473px;
     margin: 0 auto;
@@ -115,27 +123,30 @@ License: cssanimation.io is licensed under the MIT license. http://opensource.or
 @keyframes open {
     from { width: 0 }
 }
-.shapeRise span { animation-name: shapeRise }
-@keyframes shapeRise {
+
+.leMagnify span { animation-name: leMagnify }
+@keyframes leMagnify {
     50% {
         transform: scale(1.8);
         letter-spacing: 26px
     }
 }
-.leBeat span{ animation-name: leBeat; animation-iteration-count: infinite; }
+
+.leBeat span { animation-name: leBeat; }
 @keyframes leBeat {
     14%, 42% { transform: scale(1.3) }
     28%, 70% { transform: scale(1) }
 }
 
-/*--------------------------------------------------------------
+/*************************************************************
 Letter Fade in
---------------------------------------------------------------*/
+**************************************************************/
 .leFadeIn span { animation-name: leFadeIn }
 @keyframes leFadeIn {
     from { opacity: 0 }
     to { opacity: 1 }
 }
+
 .leFadeInLeft span { animation-name: leFadeInLeft }
 @keyframes leFadeInLeft {
     from {
@@ -144,6 +155,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .leFadeInRight span { animation-name: leFadeInRight }
 @keyframes leFadeInRight {
     from {
@@ -152,6 +164,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .leFadeInTop span { animation-name: leFadeInTop }
 @keyframes leFadeInTop {
     from {
@@ -160,6 +173,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .leFadeInBottom span { animation-name: leFadeInBottom }
 @keyframes leFadeInBottom {
     from {
@@ -169,13 +183,14 @@ Letter Fade in
     to { opacity: 1 }
 }
 
-/*--------------------------------------------------------------
- Letter Fade Out
---------------------------------------------------------------*/
+/************************************************************
+Letter Fade Out
+*************************************************************/
 .leFadeOut span { animation-name: leFadeOut }
 @keyframes leFadeOut {
     to { opacity: 0 }
 }
+
 .leFadeOutLeft span { animation-name: leFadeOutLeft }
 @keyframes leFadeOutLeft {
     from { opacity: 1 }
@@ -184,6 +199,7 @@ Letter Fade in
         transform: translateX(-60px);
     }
 }
+
 .leFadeOutRight span { animation-name: leFadeOutRight }
 @keyframes leFadeOutRight {
     from { opacity: 1 }
@@ -192,6 +208,7 @@ Letter Fade in
         transform: translateX(60px);
     }
 }
+
 .leFadeOutTop span { animation-name: leFadeOutTop }
 @keyframes leFadeOutTop {
     from { opacity: 1 }
@@ -200,6 +217,7 @@ Letter Fade in
         transform: translateY(-100%);
     }
 }
+
 .leFadeOutBottom span { animation-name: leFadeOutBottom }
 @keyframes leFadeOutBottom {
     from { opacity: 1 }
@@ -209,53 +227,100 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Skate
---------------------------------------------------------------*/
-.skateX span {  animation-name: scaleX; animation-iteration-count: infinite; }
-@keyframes scaleX {
+/*************************************************************
+Moving Back
+**************************************************************/
+.leMovingBackFromRight span { animation-name: leMovingBackFromRight; transform-origin: bottom }
+@keyframes leMovingBackFromRight {
+    40% { transform: rotate(45deg) }
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0,.9,.7,1.45)
+    }
+}
+
+.leMovingBackFromLeft span { animation-name: leMovingBackFromLeft; transform-origin: bottom }
+@keyframes leMovingBackFromLeft {
+    40% { transform: rotate(-45deg) }
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0,.9,.7,1.45)
+    }
+}
+
+/*************************************************************
+Kick out
+**************************************************************/
+.leKickOutBehind span { animation-name: leKickOutFront; transform-origin: top }
+@keyframes leKickOutFront {
+    40% { transform: rotate(45deg) }
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0,.9,.7,1.45)
+    }
+}
+
+.leKickOutFront span { animation-name: leKickOutBehind; transform-origin: top }
+@keyframes leKickOutBehind {
+    40% { transform: rotate(-45deg) }
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0,.9,.7,1.45)
+    }
+}
+
+/************************************************************
+Letter Skate
+*************************************************************/
+.leSkateX span { animation-name: leScaleX; animation-iteration-count: infinite }
+@keyframes leScaleX {
     50% { transform: scaleX(0.4) }
 }
-.skateY span { animation-name: scaleY; animation-iteration-count: infinite; }
-@keyframes scaleY {
+
+.leSkateY span { animation-name: leSkateY; animation-iteration-count: infinite }
+@keyframes leSkateY {
     50% { transform: scaleY(0.4) }
 }
-.skateXY span { animation-name: scaleXY; animation-iteration-count: infinite; animation-duration: 1.5s; }
-@keyframes scaleXY {
+
+.leSkateXY span { animation-name: leSkateXY; animation-iteration-count: infinite; animation-duration: 1.5s; }
+@keyframes leSkateXY {
     25% { transform: scale3d(1, 0.4, 0) }
     50% { transform: scale3d(0.4, 0.4, 1) }
     75% { transform: scale3d(0.4, 1, 1) }
 }
 
-/*--------------------------------------------------------------
- Letter Scale
---------------------------------------------------------------*/
-.scaleXIn span { animation-name: scaleXIn }
-@keyframes scaleXIn {
+/************************************************************
+Letter Scale
+*************************************************************/
+.leScaleXIn span { animation-name: leScaleXIn }
+@keyframes leScaleXIn {
     from {
         transform: perspective(400px) rotateX(90deg);
         opacity: 0;
     }
     50% { opacity: 1 }
 }
-.scaleXOut span { animation-name: scaleXOut }
-@keyframes scaleXOut {
+
+.leScaleXOut span { animation-name: leScaleXOut }
+@keyframes leScaleXOut {
     to {
         transform: perspective(400px) rotateX(90deg);
         opacity: 0;
     }
     from { opacity: 1 }
 }
-.scaleYIn span { animation-name: scaleYIn }
-@keyframes scaleYIn {
+
+.leScaleYIn span { animation-name: leScaleYIn }
+@keyframes leScaleYIn {
     from {
         transform: perspective(400px) rotateY(90deg);
         opacity: 0;
     }
     50% { opacity: 1 }
 }
-.scaleYOut span { animation-name: scaleYOut }
-@keyframes scaleYOut {
+
+.leScaleYOut span { animation-name: leScaleYOut }
+@keyframes leScaleYOut {
     to {
         transform: perspective(400px) rotateY(90deg);
         opacity: 0;
@@ -263,104 +328,137 @@ Letter Fade in
     from { opacity: 1 }
 }
 
-/*--------------------------------------------------------------
- Letter Jump
---------------------------------------------------------------*/
+/*************************************************************
+Letter Jump
+**************************************************************/
 .leJump span { animation-name: leJump; animation-iteration-count: infinite }
 @keyframes leJump {
     to { transform: translateY(-20px) }
 }
 
-/*--------------------------------------------------------------
- Letter Fly
---------------------------------------------------------------*/
-.aboundTop span { animation-name: aboundTop }
-@keyframes aboundTop {
+/*************************************************************
+Letter Fly
+**************************************************************/
+.leAboundTop span { animation-name: leAboundTop }
+@keyframes leAboundTop {
     50% {
         transform: translateY(-100px);
         animation-timing-function: ease-in;
     }
 }
-.aboundBottom span { animation-name: aboundBottom }
-@keyframes aboundBottom {
+
+.leAboundBottom span { animation-name: leAboundBottom }
+@keyframes leAboundBottom {
     50% {
         transform: translateY(100px);
         animation-timing-function: ease-in;
     }
 }
-.aboundLeft span { animation-name: aboundLeft }
-@keyframes aboundLeft {
+
+.leAboundLeft span { animation-name: leAboundLeft }
+@keyframes leAboundLeft {
     50% {
         transform: translateX(-100px);
-        animation-timing-function: ease-in;
-    }
-}
-.aboundRight span { animation-name: aboundRight }
-@keyframes aboundRight {
-    50% {
-        transform: translateX(100px);
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Fly In
---------------------------------------------------------------*/
-.flyInTop span { animation-name: flyInTop }
-@keyframes flyInTop {
-    0% { transform: translate(0px, -800px) }
-    50% { transform: translate(10px, 40px) }
+.leAboundRight span { animation-name: leAboundRight }
+@keyframes leAboundRight {
+    50% {
+        transform: translateX(100px);
+        animation-timing-function: ease-in
+    }
 }
-.flyInLeft span { animation-name: flyInLeft }
-@keyframes flyInLeft {
+
+/*************************************************************
+Letter Fly In
+**************************************************************/
+.leFlyInTop span { animation-name: leFlyInTop }
+@keyframes leFlyInTop {
+    0% {
+        transform: translate(0px, -80px);
+        opacity: 0
+    }
+    50% {
+        transform: translate(10px, 50px);
+        animation-timing-function: ease-in-out
+    }
+}
+
+.leFlyInLeft span { animation-name: leFlyInLeft; animation-timing-function: ease-in-out }
+@keyframes leFlyInLeft {
     0% {
         transform: translate(-40px, 0px);
         opacity: 0;
     }
     50% { transform: translate(40px, 0px) }
 }
-.flyInRight span { animation-name: flyInRight }
-@keyframes flyInRight {
+
+.leFlyInRight span { animation-name: leFlyInRight; animation-timing-function: ease-in-out }
+@keyframes leFlyInRight {
     0% {
         transform: translate(40px, 0px);
         opacity: 0;
     }
     50% { transform: translate(-40px, 0px) }
 }
-.flyInBottom span { animation-name: flyInBottom }
-@keyframes flyInBottom {
-    0% { transform: translate(0px, 800px) }
-    50% { transform: translate(10px, -40px) }
+
+.leFlyInBottom span { animation-name: leFlyInBottom }
+@keyframes leFlyInBottom {
+    0% {
+        transform: translate(0px, 80px);
+        opacity: 0
+    }
+    50% {
+        transform: translate(10px, -50px);
+        animation-timing-function: ease-in-out
+    }
 }
 
-/*--------------------------------------------------------------
- Letter Fly Out
---------------------------------------------------------------*/
-.flyOutTop span { animation-name: flyOutTop }
-@keyframes flyOutTop {
-    50% { transform: translate(0px, 40px) }
-    to { transform: translate(0px, -800px) }
+/*************************************************************
+Letter Fly Out
+**************************************************************/
+.leFlyOutTop span { animation-name: leFlyOutTop }
+@keyframes leFlyOutTop {
+    50% { transform: translate(0px, 50px) }
+    to {
+        transform: translate(0px, -100px);
+        opacity: 0;
+    }
 }
-.flyOutLeft span { animation-name: flyOutLeft }
-@keyframes flyOutLeft {
+
+.leFlyOutLeft span { animation-name: leFlyOutLeft; animation-timing-function: ease-in-out }
+@keyframes leFlyOutLeft {
     50% { transform: translate(40px, 0px) }
-    to { transform: translate(-1200px, 0px) }
-}
-.flyOutRight span { animation-name: flyOutRight }
-@keyframes flyOutRight {
-    50% { transform: translate(-40px, 0px) }
-    to { transform: translate(1200px, 0px) }
-}
-.flyOutBottom span { animation-name: flyOutBottom }
-@keyframes flyOutBottom {
-    50% { transform: translate(0px, -40px) }
-    to { transform: translate(0px, 800px) }
+    to {
+        transform: translate(-100px, 0px);
+        opacity: 0;
+    }
 }
 
-/*--------------------------------------------------------------
- Letter Door Open & Close
---------------------------------------------------------------*/
-.leDoorCloseLeft span{ animation-name: leDoorCloseLeft }
+.leFlyOutRight span { animation-name: leFlyOutRight; animation-timing-function: ease-in-out }
+@keyframes leFlyOutRight {
+    50% { transform: translate(-40px, 0px) }
+    to {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
+}
+
+.leFlyOutBottom span { animation-name: leFlyOutBottom }
+@keyframes leFlyOutBottom {
+    50% { transform: translate(0px, -40px) }
+    to {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+}
+
+/*************************************************************
+Letter Door Open & Close
+**************************************************************/
+.leDoorCloseLeft span { animation-name: leDoorCloseLeft }
 @keyframes leDoorCloseLeft {
     from, to {
         transform: perspective(400px);
@@ -371,9 +469,9 @@ Letter Fade in
         opacity: 0;
     }
     to { opacity: 1 }
-
 }
-.leDoorOpenRight span{ animation-name: leDoorOpenRight }
+
+.leDoorOpenRight span { animation-name: leDoorOpenRight }
 @keyframes leDoorOpenRight {
     from, to {
         transform: perspective(400px);
@@ -381,10 +479,11 @@ Letter Fade in
     }
     to {
         transform: rotateY(90deg);
-        opacity: 0;
+        opacity: 0
     }
 }
-.leDoorCloseRight span{ animation-name: leDoorCloseRight }
+
+.leDoorCloseRight span { animation-name: leDoorCloseRight }
 @keyframes leDoorCloseRight {
     from, to {
         transform: perspective(400px);
@@ -392,11 +491,12 @@ Letter Fade in
     }
     from {
         transform: rotateY(-90deg);
-        opacity: 0;
+        opacity: 0
     }
     to { opacity: 1 }
 }
-.leDoorOpenLeft span{ animation-name: leDoorOpenLeft }
+
+.leDoorOpenLeft span { animation-name: leDoorOpenLeft }
 @keyframes leDoorOpenLeft {
     from, to {
         transform: perspective(400px);
@@ -404,30 +504,31 @@ Letter Fade in
     }
     to {
         transform: rotateY(-90deg);
-        opacity: 0;
+        opacity: 0
     }
 }
 
-/*--------------------------------------------------------------
- Letter Hang And Drop
---------------------------------------------------------------*/
-.leHangAndDropLeft span{ animation-name: leHangAndDropLeft }
+/*************************************************************
+Letter Hang And Drop
+**************************************************************/
+.leHangAndDropLeft span { animation-name: leHangAndDropLeft }
 @keyframes leHangAndDropLeft {
-    from {transform-origin: left;}
+    from { transform-origin: left }
     50% {
         transform: rotate(100deg);
-        transform-origin: left;
+        transform-origin: left
     }
     60% {
         transform: rotate(90deg);
-        transform-origin: left;
+        transform-origin: left
     }
     to {
         transform: translateY(800px) rotate(70deg);
-        transform-origin: left;
+        transform-origin: left
     }
 }
-.leHangAndDropRight span{ animation-name: leHangAndDropRight }
+
+.leHangAndDropRight span { animation-name: leHangAndDropRight }
 @keyframes leHangAndDropRight {
     from { transform-origin: right }
     50% {
@@ -444,61 +545,78 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Shake
---------------------------------------------------------------*/
-.lePulseShake span{ animation-name: lePulseShake; animation-iteration-count: infinite }
+/*************************************************************
+Letter Shake
+**************************************************************/
+.leRencontre span { animation: leRencontre .4s; animation-iteration-count: infinite }
+@keyframes leRencontre {
+    0%, 33%, 100% {
+        transform-origin: bottom;
+        animation-timing-function: cubic-bezier(.17,.67,.79,1.83)
+    }
+    33% { transform: translateY(-2px) rotate(-3deg) }
+    66% { transform: translateY(2px) rotate(3deg) }
+}
+
+.lePulseShake span { animation-name: lePulseShake; animation-iteration-count: infinite }
 @keyframes lePulseShake {
     90% { transform: scale(1) }
     92% { transform: scale(1.2) }
     96% { transform: scale(1, 1) }
     98% { transform: scale(1.1) }
 }
-.leHorizontalShake span{ animation-name: leHorizontalShake; animation-iteration-count: infinite }
+
+.leHorizontalShake span { animation-name: leHorizontalShake; animation-iteration-count: infinite }
 @keyframes leHorizontalShake {
-    3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 83%, 92% { transform: translateX(5px) }
+    3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 3%, 92% { transform: translateX(5px) }
     6%, 15%, 24%, 33%, 42%, 51%, 60%, 68%, 77%, 86%, 95% { transform: translateX(3px) }
     9%, 18%, 27%, 36%, 45%, 54%, 63%, 71%, 80%, 89%, 98% { transform: translateX(-5px) }
 }
-.leVerticalShake span{ animation-name: leVerticalShake; animation-iteration-count: infinite }
+
+.leVerticalShake span { animation-name: leVerticalShake; animation-iteration-count: infinite }
 @keyframes leVerticalShake {
     3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 83%, 92% { transform: translateY(5px) }
     6%, 15%, 24%, 33%, 42%, 51%, 60%, 68%, 77%, 86%, 95% { transform: translateY(3px) }
     9%, 18%, 27%, 36%, 45%, 54%, 63%, 71%, 80%, 89%, 98% { transform: translateY(-5px) }
 }
-.leMadMax span{ animation-name: leMadMax; animation-iteration-count: infinite }
+
+.leMadMax span { animation-name: leMadMax; animation-iteration-count: infinite }
 @keyframes leMadMax {
     3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 83%, 92% { transform: translateY(5px) scale(1.1) }
     6%, 15%, 24%, 33%, 42%, 51%, 60%, 68%, 77%, 86%, 95% { transform: translateY(3px) scale(.8) }
     9%, 18%, 27%, 36%, 45%, 54%, 63%, 71%, 80%, 89%, 98% { transform: translateY(-5px) scale(1.1) }
 }
-.leHorizontalTremble span{ animation-name: leHorizontalTremble; animation-iteration-count: infinite }
+
+.leHorizontalTremble span { animation-name: leHorizontalTremble; animation-iteration-count: infinite }
 @keyframes leHorizontalTremble {
     3%, 21%, 39%, 57%, 74%, 92% { transform: translateX(5px) }
     6%, 24%, 42%, 60%, 77%, 95% { transform: translateX(3px) }
     9%, 27%, 45%, 63%, 80%, 98% { transform: translateX(-5px) }
 }
-.leVerticalTremble span{ animation-name: leVerticalTremble; animation-iteration-count: infinite }
+
+.leVerticalTremble span { animation-name: leVerticalTremble; animation-iteration-count: infinite }
 @keyframes leVerticalTremble {
     3%, 21%, 39%, 57%, 74%, 92% { transform: translateY(5px) }
     6%, 24%, 42%, 60%, 77%, 95% { transform: translateY(3px) }
     9%, 27%, 45%, 63%, 80%, 98% { transform: translateY(-5px) }
 }
-.leCrazyCool span{ animation-name: leCrazyCool; animation-iteration-count: infinite }
+
+.leCrazyCool span { animation-name: leCrazyCool; animation-iteration-count: infinite }
 @keyframes leCrazyCool {
     3%, 21%, 39%, 57%, 74%, 92% { transform: translateY(5px) scale(1.1) }
     6%, 24%, 42%, 60%, 77%, 95% { transform: translateY(3px) scale(.8) }
     9%, 27%, 45%, 63%, 80%, 98% { transform: translateY(-5px) scale(1.1) }
 }
-.leVibration span{ animation: leVibration .1s linear infinite }
+
+.leVibration span { animation: leVibration .1s linear infinite }
 @keyframes leVibration {
     50% { transform: skewY(1deg) skewX(-1deg) scale(1.06) }
 }
 
-/*--------------------------------------------------------------
- Letter Push Release
---------------------------------------------------------------*/
-.lePushReleaseFrom span{ animation-name: lePushReleaseFrom }
+/*************************************************************
+Letter Push Release
+**************************************************************/
+.lePushReleaseFrom span { animation-name: lePushReleaseFrom }
 @keyframes lePushReleaseFrom {
     from {
         transform: scale(3, 3);
@@ -506,7 +624,8 @@ Letter Fade in
     }
     50% { transform: scale(.5, .5) }
 }
-.lePushReleaseFromLeft span{ animation-name: lePushReleaseFromLeft }
+
+.lePushReleaseFromLeft span { animation-name: lePushReleaseFromLeft }
 @keyframes lePushReleaseFromLeft {
     from {
         transform: translateX(-100%);
@@ -514,7 +633,8 @@ Letter Fade in
     }
     30% { transform: translateX(100px) }
 }
-.lePushReleaseFromTop span{ animation-name: lePushReleaseFromTop }
+
+.lePushReleaseFromTop span { animation-name: lePushReleaseFromTop }
 @keyframes lePushReleaseFromTop {
     from {
         transform: translateY(-100%);
@@ -522,7 +642,8 @@ Letter Fade in
     }
     30% { transform: translateY(100px) }
 }
-.lePushReleaseFromBottom span{ animation-name: lePushReleaseFromBottom }
+
+.lePushReleaseFromBottom span { animation-name: lePushReleaseFromBottom }
 @keyframes lePushReleaseFromBottom {
     from {
         transform: translateY(100%);
@@ -530,31 +651,39 @@ Letter Fade in
     }
     30% { transform: translateY(-100px) }
 }
-.lePushReleaseTo span{ animation-name: lePushReleaseTo }
+
+.lePushReleaseTo span { animation-name: lePushReleaseTo }
 @keyframes lePushReleaseTo {
     30% { transform: scale(.5, .5) }
     to {
         transform: scale(5, 5);
         opacity: 0;
     }
-
 }
-.lePushReleaseToTop span{ animation-name: lePushReleaseToTop }
+
+.lePushReleaseToTop span { animation-name: lePushReleaseToTop }
 @keyframes lePushReleaseToTop {
     30% { transform: translateY(100px) }
-    to { transform: translateY(-100%); opacity: 0}
-}
-.lePushReleaseToBottom span{ animation-name: lePushReleaseToBottom }
-@keyframes lePushReleaseToBottom {
-    30% { transform: translateY(-100px) }
-    to { transform: translateY(100%); opacity: 0 }
+    to {
+        transform: translateY(-100%);
+        opacity: 0
+    }
 }
 
-/*--------------------------------------------------------------
- Letter Flip
---------------------------------------------------------------*/
-.leFlipIn span { animation-name: leFlipX }
-@keyframes leFlipX {
+.lePushReleaseToBottom span { animation-name: lePushReleaseToBottom }
+@keyframes lePushReleaseToBottom {
+    30% { transform: translateY(-100px) }
+    to {
+        transform: translateY(100%);
+        opacity: 0
+    }
+}
+
+/*************************************************************
+Letter Flip
+**************************************************************/
+.leFlipInTop span { animation-name: leFlipInTop }
+@keyframes leFlipInTop {
     from {
         transform: perspective(600px);
         opacity: 0
@@ -564,10 +693,11 @@ Letter Fade in
         transform-origin: 0 0;
         animation-timing-function: ease-out;
     }
-    to {transform: perspective(600px) }
+    to { transform: perspective(600px) }
 }
-.leFlipOut span { animation-name: leFlipOut }
-@keyframes leFlipOut {
+
+.leFlipOutTop span { animation-name: leFlipOutTop }
+@keyframes leFlipOutTop {
     to {
         transform: perspective(600px);
         opacity: 0
@@ -577,13 +707,41 @@ Letter Fade in
         transform-origin: 0 0;
         animation-timing-function: ease-out;
     }
-    to {transform: perspective(600px) }
+    to { transform: perspective(600px) }
 }
 
-/*--------------------------------------------------------------
- Letter Elevate
---------------------------------------------------------------*/
-.leElevateLeft span{ animation-name: leElevateLeft }
+.leFlipInBottom span { animation-name: leFlipInBottom }
+@keyframes leFlipInBottom {
+    from {
+        transform: perspective(600px);
+        opacity: 0
+    }
+    30% {
+        transform: perspective(600px) rotateX(180deg);
+        transform-origin: bottom;
+        animation-timing-function: ease-out;
+    }
+    to { transform: perspective(600px) }
+}
+
+.leFlipOutBottom span { animation-name: leFlipOutBottom }
+@keyframes leFlipOutBottom {
+    to {
+        transform: perspective(600px);
+        opacity: 0
+    }
+    70% {
+        transform: perspective(600px) rotateX(180deg);
+        transform-origin: bottom;
+        animation-timing-function: ease-out;
+    }
+    to { transform: perspective(600px) }
+}
+
+/*************************************************************
+Letter Elevate
+**************************************************************/
+.leElevateLeft span { animation-name: leElevateLeft }
 @keyframes leElevateLeft {
     from {
         transform: translateY(100%) rotate(-20deg);
@@ -599,7 +757,8 @@ Letter Fade in
         transform-origin: right;
     }
 }
-.leElevateRight span{ animation-name: leElevateRight }
+
+.leElevateRight span { animation-name: leElevateRight }
 @keyframes leElevateRight {
     from {
         transform: translateY(100%) rotate(20deg);
@@ -616,75 +775,178 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Roll From
---------------------------------------------------------------*/
-.leRollFromLeft span{ animation-name: leRollFromLeft }
+/*************************************************************
+Letter Roll From
+**************************************************************/
+.leRollFromLeft span { animation-name: leRollFromLeft }
 @keyframes leRollFromLeft {
-    from { transform: translateX(-60px) perspective(600px) rotateY(180deg); opacity: 0 }
+    from {
+        transform: translateX(-60px) perspective(600px) rotateY(180deg);
+        opacity: 0
+    }
 }
-.leRollFromRight span{ animation-name: leRollFromRight }
+
+.leRollFromRight span { animation-name: leRollFromRight }
 @keyframes leRollFromRight {
-    from { transform: translateX(60px) perspective(600px) rotateY(-180deg); opacity: 0 }
+    from {
+        transform: translateX(60px) perspective(600px) rotateY(-180deg);
+        opacity: 0
+    }
 }
-.leRollFromTop span{ animation-name: leRollFromTop }
+
+.leRollFromTop span { animation-name: leRollFromTop }
 @keyframes leRollFromTop {
-    from { transform: translateY(-60px) perspective(600px) rotateX(180deg); opacity: 0 }
+    from {
+        transform: translateY(-60px) perspective(600px) rotateX(180deg);
+        opacity: 0
+    }
 }
-.leRollFromBottom span{ animation-name: leRollFromBottom }
+
+.leRollFromBottom span { animation-name: leRollFromBottom }
 @keyframes leRollFromBottom {
-    from { transform: translateY(60px) perspective(600px) rotateX(-180deg); opacity: 0 }
+    from {
+        transform: translateY(60px) perspective(600px) rotateX(-180deg);
+        opacity: 0
+    }
 }
 
-/*--------------------------------------------------------------
- Letter Roll To
---------------------------------------------------------------*/
-.leRollToLeft span{ animation-name: leRollToLeft }
+/*************************************************************
+Letter Roll To
+**************************************************************/
+.leRollToLeft span { animation-name: leRollToLeft }
 @keyframes leRollToLeft {
-    to { transform: translateX(-60px) perspective(600px) rotateY(180deg); opacity: 0 }
-}
-.leRollToRight span{ animation-name: leRollToRight }
-@keyframes leRollToRight {
-    to { transform: translateX(60px) perspective(600px) rotateY(-180deg);  opacity: 0}
-}
-.leRollToTop span{ animation-name: leRollToTop }
-@keyframes leRollToTop {
-    to { transform: translateY(-60px) perspective(600px) rotateX(180deg);  opacity: 0}
-}
-.leRollToBottom span{ animation-name: leRollToBottom }
-@keyframes leRollToBottom {
-    to { transform: translateY(60px) perspective(600px) rotateX(-180deg);  opacity: 0}
+    to {
+        transform: translateX(-60px) perspective(600px) rotateY(180deg);
+        opacity: 0
+    }
 }
 
-/*--------------------------------------------------------------
- Letter Rotation
---------------------------------------------------------------*/
-.leRotationXIn span{ animation-name: leRotationXIn }
-@keyframes leRotationXIn {
+.leRollToRight span { animation-name: leRollToRight }
+@keyframes leRollToRight {
+    to {
+        transform: translateX(60px) perspective(600px) rotateY(-180deg);
+        opacity: 0
+    }
+}
+
+.leRollToTop span { animation-name: leRollToTop }
+@keyframes leRollToTop {
+    to {
+        transform: translateY(-60px) perspective(600px) rotateX(180deg);
+        opacity: 0
+    }
+}
+
+.leRollToBottom span { animation-name: leRollToBottom }
+@keyframes leRollToBottom {
+    to {
+        transform: translateY(60px) perspective(600px) rotateX(-180deg);
+        opacity: 0
+    }
+}
+
+/*************************************************************
+Letter Rotate In skate
+**************************************************************/
+.leRotateSkateInRight span { animation-name: leRotateSkateInRight }
+@keyframes leRotateSkateInRight {
+    from {
+        transform: scaleX(0.2) translateX(100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateInLeft span { animation-name: leRotateSkateInLeft }
+@keyframes leRotateSkateInLeft {
+    from {
+        transform: scaleX(0.2) translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateInTop span { animation-name: leRotateSkateInTop }
+@keyframes leRotateSkateInTop {
+    from {
+        transform: scaleY(0.2) translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateInBottom span { animation-name: leRotateSkateInBottom }
+@keyframes leRotateSkateInBottom {
+    from {
+        transform: scaleY(0.2) translateY(100px);
+        opacity: 0;
+    }
+}
+
+/*************************************************************
+Letter Rotate Out skate
+**************************************************************/
+.leRotateSkateOutRight span { animation-name: leRotateSkateOutRight }
+@keyframes leRotateSkateOutRight {
+    to {
+        transform: scaleX(0.2) translateX(100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateOutLeft span { animation-name: leRotateSkateOutLeft }
+@keyframes leRotateSkateOutLeft {
+    to {
+        transform: scaleX(0.2) translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateOutTop span { animation-name: leRotateSkateOutTop }
+@keyframes leRotateSkateOutTop {
+    to {
+        transform: scaleY(0.2) translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateOutBottom span { animation-name: leRotateSkateOutBottom }
+@keyframes leRotateSkateOutBottom {
+    to {
+        transform: scaleY(0.2) translateY(100px);
+        opacity: 0;
+    }
+}
+
+/*************************************************************
+Letter Rotation
+**************************************************************/
+.leRotateXZoomIn span { animation-name: leRotateXZoomIn }
+@keyframes leRotateXZoomIn {
     from {
         transform: perspective(600px) translate3d(0, -60px, -2000px) rotateX(75deg);
-        opacity: 0;
+        opacity: 0
     }
     5% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg) }
 }
-.leRotationXOut span{ animation-name: leRotationXOut }
-@keyframes leRotationXOut {
+
+.leRotateXZoomOut span { animation-name: leRotateXZoomOut }
+@keyframes leRotateXZoomOut {
     95% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg) }
     to {
         transform: perspective(600px) translate3d(0, -60px, -2000px) rotateX(75deg);
-        opacity: 0;
+        opacity: 0
     }
 }
-.leRotationYIn span{ animation-name: leRotationYIn }
-@keyframes leRotationYIn {
+
+.leRotateYZoomIn span { animation-name: leRotateYZoomIn }
+@keyframes leRotateYZoomIn {
     from {
         transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
-        opacity: 0;
+        opacity: 0
     }
-    5% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg); }
+    5% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg) }
 }
-.leRotationYOut span{ animation-name: leRotationYOut }
-@keyframes leRotationYOut {
+
+.leRotateYZoomOut span { animation-name: leRotateYZoomOut }
+@keyframes leRotateYZoomOut {
     95% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg) }
     to {
         transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
@@ -692,9 +954,10 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Rotate
---------------------------------------------------------------*/
+/*************************************************************
+Letter Rotate
+**************************************************************/
+
 .leRotateIn span { animation-name: leRotateIn }
 @keyframes leRotateIn {
     from {
@@ -703,6 +966,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .leRotateOut span { animation-name: leRotateOut }
 @keyframes leRotateOut {
     from { opacity: 1 }
@@ -711,6 +975,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .leRotateInLeft span { animation-name: leRotateInLeft }
 @keyframes leRotateInLeft {
     from {
@@ -719,6 +984,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .leRotateOutLeft span { animation-name: leRotateOutLeft }
 @keyframes leRotateOutLeft {
     from { opacity: 1 }
@@ -727,6 +993,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .leRotateInRight span { animation-name: leRotateInRight }
 @keyframes leRotateInRight {
     from {
@@ -735,6 +1002,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .leRotateOutRight span { animation-name: leRotateOutRight }
 @keyframes leRotateOutRight {
     from { opacity: 1 }
@@ -744,10 +1012,10 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Spin
---------------------------------------------------------------*/
-.leSpinInLeft span{ animation-name: leSpinInLeft }
+/*************************************************************
+Letter Spin
+**************************************************************/
+.leSpinInLeft span { animation-name: leSpinInLeft }
 @keyframes leSpinInLeft {
     from, to { transform-origin: left bottom }
     from {
@@ -755,7 +1023,8 @@ Letter Fade in
         opacity: 0;
     }
 }
-.leSpinInRight span{ animation-name: leSpinInRight }
+
+.leSpinInRight span { animation-name: leSpinInRight }
 @keyframes leSpinInRight {
     from, to { transform-origin: right bottom }
     from {
@@ -763,7 +1032,8 @@ Letter Fade in
         opacity: 0;
     }
 }
-.leSpinOutLeft span{ animation-name: leSpinOutLeft }
+
+.leSpinOutLeft span { animation-name: leSpinOutLeft }
 @keyframes leSpinOutLeft {
     from, to { transform-origin: left bottom }
     to {
@@ -771,7 +1041,8 @@ Letter Fade in
         opacity: 0;
     }
 }
-.leSpinOutRight span{ animation-name: leSpinOutRight }
+
+.leSpinOutRight span { animation-name: leSpinOutRight }
 @keyframes leSpinOutRight {
     from, to { transform-origin: right bottom }
     to {
@@ -780,125 +1051,110 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Blur In
---------------------------------------------------------------*/
-.leBlurInRight span {  animation-name: leBlurInRight }
+/*************************************************************
+Letter Blur In
+**************************************************************/
+.leBlurIn span { animation-name: leBlurIn }
+@keyframes leBlurIn {
+    from {
+        transform: scaleX(0.2);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.leBlurInRight span { animation-name: leBlurInRight }
 @keyframes leBlurInRight {
     from {
         transform: scaleX(0.2) translateX(100px);
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+        filter: blur(20px);
         opacity: 0;
     }
-    20% {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
 }
-.leBlurInLeft span {  animation-name: leBlurInLeft }
+
+.leBlurInLeft span { animation-name: leBlurInLeft }
 @keyframes leBlurInLeft {
     from {
         transform: scaleX(0.2) translateX(-100px);
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+        filter: blur(20px);
         opacity: 0;
     }
-    20% {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
 }
-.leBlurInTop span {  animation-name: leBlurInTop }
+
+.leBlurInTop span { animation-name: leBlurInTop }
 @keyframes leBlurInTop {
     from {
         transform: scaleY(0.2) translateY(-100px);
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+        filter: blur(20px);
         opacity: 0;
     }
-    20% {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
 }
+
 .leBlurInBottom span { animation-name: leBlurInBottom }
 @keyframes leBlurInBottom {
     from {
         transform: scaleY(0.2) translateY(100px);
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+        filter: blur(20px);
         opacity: 0;
-    }
-    20% {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
     }
 }
 
-/*--------------------------------------------------------------
- Letter Blur Out
---------------------------------------------------------------*/
+/*************************************************************
+Letter Blur Out
+**************************************************************/
+.leBlurOut span { animation-name: leBlurOut }
+@keyframes leBlurOut {
+    to {
+        transform: scaleX(0.2);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
 .leBlurOutRight span { animation-name: leBlurOutRight }
 @keyframes leBlurOutRight {
-    20% {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
     to {
         transform: scaleX(0.2) translateX(100px);
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-        opacity: 0;
-    }
-}
-.leBlurOutLeft span { animation-name: leBlurOutLeft }
-@keyframes leBlurOutLeft {
-    20% {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-    to {
-        transform: scaleX(0.2) translateX(-100px);
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-        opacity: 0;
-    }
-}
-.leBlurOutTop span { animation-name: leBlurOutTop }
-@keyframes leBlurOutTop {
-    20% {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-    to {
-        transform: scaleY(0.2) translateY(-100px);
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-        opacity: 0;
-    }
-}
-.leBlurOutBottom span { animation-name: leBlurOutBottom }
-@keyframes leBlurOutBottom {
-    20% {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-    to {
-        transform: scaleY(0.2) translateY(100px);
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+        filter: blur(20px);
         opacity: 0;
     }
 }
 
-/*--------------------------------------------------------------
- Letter Pop Up
---------------------------------------------------------------*/
+.leBlurOutLeft span { animation-name: leBlurOutLeft }
+@keyframes leBlurOutLeft {
+    to {
+        transform: scaleX(0.2) translateX(-100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.leBlurOutTop span { animation-name: leBlurOutTop }
+@keyframes leBlurOutTop {
+    to {
+        transform: scaleY(0.2) translateY(-100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.leBlurOutBottom span { animation-name: leBlurOutBottom }
+@keyframes leBlurOutBottom {
+    to {
+        transform: scaleY(0.2) translateY(100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+/*************************************************************
+Letter Pop Up
+**************************************************************/
 .lePopUp span { animation-name: lePopUp }
 @keyframes lePopUp {
     50% { transform: scale(1.5) }
 }
+
 .lePopUpLeft span { animation-name: lePopUpLeft }
 @keyframes lePopUpLeft {
     50% {
@@ -906,6 +1162,7 @@ Letter Fade in
         animation-timing-function: ease-in;
     }
 }
+
 .lePopUpRight span { animation-name: lePopUpRight }
 @keyframes lePopUpRight {
     50% {
@@ -914,13 +1171,15 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Pop Out
---------------------------------------------------------------*/
+/*************************************************************
+Letter Pop Out
+**************************************************************/
+
 .lePopOut span { animation-name: lePopOut }
 @keyframes lePopOut {
     50% { transform: scale(.5) }
 }
+
 .lePopOutLeft span { animation-name: lePopOutLeft }
 @keyframes lePopOutLeft {
     50% {
@@ -928,6 +1187,7 @@ Letter Fade in
         animation-timing-function: ease-in;
     }
 }
+
 .lePopOutRight span { animation-name: lePopOutRight }
 @keyframes lePopOutRight {
     50% {
@@ -936,10 +1196,10 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Bouncing
---------------------------------------------------------------*/
-.leBounceFromTop span{ animation-name: leBounceFromTop }
+/*************************************************************
+Letter Bouncing
+**************************************************************/
+.leBounceFromTop span { animation-name: leBounceFromTop }
 @keyframes leBounceFromTop {
     0%, 25%, 55%, 85%, 100% {
         animation-timing-function: ease-out;
@@ -955,7 +1215,8 @@ Letter Fade in
     }
     90% { transform: translate3d(0, -4px, 0) }
 }
-.leBounceFromDown span{ animation-name: leBounceFromDown }
+
+.leBounceFromDown span { animation-name: leBounceFromDown }
 @keyframes leBounceFromDown {
     0%, 25%, 55%, 85%, 100% {
         animation-timing-function: ease-out;
@@ -971,7 +1232,8 @@ Letter Fade in
     }
     90% { transform: translate3d(0, 4px, 0) }
 }
-.leBounceY span{ animation-name: leBounceY }
+
+.leBounceY span { animation-name: leBounceY }
 @keyframes leBounceY {
     0%, 25%, 55%, 85%, 100% {
         animation-timing-function: ease-out;
@@ -987,7 +1249,8 @@ Letter Fade in
     }
     90% { transform: scale3d(1, 1.1, 1) }
 }
-.leBounceZoomIn span{ animation-name: leBounceZoomIn }
+
+.leBounceZoomIn span { animation-name: leBounceZoomIn }
 @keyframes leBounceZoomIn {
     0%, 25%, 55%, 85%, 100% {
         animation-timing-function: ease-out;
@@ -1003,7 +1266,8 @@ Letter Fade in
     }
     90% { transform: scale(1.1) }
 }
-.leBounceZoomOut span{ animation-name: leBounceZoomOut }
+
+.leBounceZoomOut span { animation-name: leBounceZoomOut }
 @keyframes leBounceZoomOut {
     0%, 25%, 55%, 85%, 100% {
         animation-timing-function: ease-out;
@@ -1020,29 +1284,31 @@ Letter Fade in
     90% { transform: scale(.9) }
 }
 
-/*--------------------------------------------------------------
- Letter Perspective
---------------------------------------------------------------*/
-.lePerspectiveOutTop span{ animation-name: lePerspectiveOutTop; transform: perspective(500px); transform-style: preserve-3d }
+/*************************************************************
+Letter Perspective
+**************************************************************/
+.lePerspectiveOutTop span { animation-name: lePerspectiveOutTop; transform: perspective(500px); transform-style: preserve-3d }
 @keyframes lePerspectiveOutTop {
-    50% { opacity: 1;}
+    50% { opacity: 1 }
     to {
         transform: perspective(500px) rotateX(90deg) translateY(-50px) translateZ(50px);
         opacity: 0;
     }
 }
-.lePerspectiveOutBottom span{ animation-name: lePerspectiveOutBottom; transform: perspective(500px); transform-style: preserve-3d }
+
+.lePerspectiveOutBottom span { animation-name: lePerspectiveOutBottom; transform: perspective(500px); transform-style: preserve-3d }
 @keyframes lePerspectiveOutBottom {
-    50% { opacity: 1;}
+    50% { opacity: 1 }
     to {
         transform: perspective(500px) rotateX(90deg) translateY(50px) translateZ(-50px);
         opacity: 0;
     }
 }
 
-/*--------------------------------------------------------------
- Letter Zoom In
---------------------------------------------------------------*/
+/*************************************************************
+Letter Zoom In
+**************************************************************/
+
 .leZoomIn span { animation-name: leZoomIn }
 @keyframes leZoomIn {
     from {
@@ -1050,20 +1316,23 @@ Letter Fade in
         opacity: 0;
     }
 }
-.leZoomInLeft span{ animation-name: leZoomInLeft }
+
+.leZoomInLeft span { animation-name: leZoomInLeft }
 @keyframes leZoomInLeft {
     from {
         transform: scale(10) translateX(-150%);
         opacity: 0;
     }
 }
-.leZoomInRight span{ animation-name: leZoomInRight }
+
+.leZoomInRight span { animation-name: leZoomInRight }
 @keyframes leZoomInRight {
     from {
         transform: scale(10) translateX(150%);
         opacity: 0;
     }
 }
+
 .leZoomInTop span { animation-name: LetterZoomInTop }
 @keyframes LetterZoomInTop {
     from {
@@ -1071,46 +1340,51 @@ Letter Fade in
         opacity: 0;
     }
 }
-.leZoomInBottom span { animation-name: leZoomInBottom  }
-@keyframes leZoomInBottom  {
+
+.leZoomInBottom span { animation-name: leZoomInBottom }
+@keyframes leZoomInBottom {
     from {
         transform: scale(10) translateY(50%);
         opacity: 0;
     }
 }
 
-/*--------------------------------------------------------------
- Letter Zoom Out
---------------------------------------------------------------*/
-.leZoomOut span{ animation-name: leZoomOut }
+/*************************************************************
+Letter Zoom Out
+**************************************************************/
+.leZoomOut span { animation-name: leZoomOut }
 @keyframes leZoomOut {
     to {
         transform: scale(10);
         opacity: 0;
     }
 }
-.leZoomOutLeft span{ animation-name: leZoomOutLeft }
+
+.leZoomOutLeft span { animation-name: leZoomOutLeft }
 @keyframes leZoomOutLeft {
     to {
         transform: scale(10) translateX(-150%);
         opacity: 0;
     }
 }
-.leZoomOutRight span{ animation-name: leZoomOutRight }
+
+.leZoomOutRight span { animation-name: leZoomOutRight }
 @keyframes leZoomOutRight {
     to {
         transform: scale(10) translateX(150%);
         opacity: 0;
     }
 }
-.leZoomOutTop span{ animation-name: leZoomOutTop }
+
+.leZoomOutTop span { animation-name: leZoomOutTop }
 @keyframes leZoomOutTop {
     to {
         transform: scale(10) translateY(-50%);
         opacity: 0;
     }
 }
-.leZoomOutBottom span{ animation-name: leZoomOutBottom }
+
+.leZoomOutBottom span { animation-name: leZoomOutBottom }
 @keyframes leZoomOutBottom {
     to {
         transform: scale(10) translateY(50%);
@@ -1118,9 +1392,9 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Letter Dance In
---------------------------------------------------------------*/
+/*************************************************************
+Letter Dance In
+**************************************************************/
 .leDanceInTop span { animation-name: leDanceInTop; transform-origin: top }
 @keyframes leDanceInTop {
     from { opacity: 0 }
@@ -1130,6 +1404,7 @@ Letter Fade in
     66% { transform: skew(6deg) }
     83% { transform: skew(-4deg) }
 }
+
 .leDanceInMiddle span { animation-name: leDanceInMiddle }
 @keyframes leDanceInMiddle {
     from { opacity: 0 }
@@ -1139,6 +1414,7 @@ Letter Fade in
     66% { transform: skew(6deg) }
     83% { transform: skew(-4deg) }
 }
+
 .leDanceInBottom span { animation-name: leDanceInBottom; transform-origin: bottom }
 @keyframes leDanceInBottom {
     from { opacity: 0 }
@@ -1149,9 +1425,9 @@ Letter Fade in
     83% { transform: skew(-4deg) }
 }
 
-/*--------------------------------------------------------------
- Letter Dance Out
---------------------------------------------------------------*/
+/*************************************************************
+Letter Dance Out
+**************************************************************/
 .leDanceOutTop span { animation-name: leDanceOutTop; transform-origin: top }
 @keyframes leDanceOutTop {
     16% { transform: skew(-14deg) }
@@ -1161,6 +1437,7 @@ Letter Fade in
     83% { transform: skew(-4deg) }
     to { opacity: 0 }
 }
+
 .leDanceOutMiddle span { animation-name: leDanceOutMiddle }
 @keyframes leDanceOutMiddle {
     16% { transform: skew(-14deg) }
@@ -1170,6 +1447,7 @@ Letter Fade in
     83% { transform: skew(-4deg) }
     to { opacity: 0 }
 }
+
 .leDanceOutBottom span { animation-name: leDanceOutBottom; transform-origin: bottom }
 @keyframes leDanceOutBottom {
     16% { transform: skew(-14deg) }
@@ -1180,14 +1458,185 @@ Letter Fade in
     to { opacity: 0 }
 }
 
-/*--------------------------------------------------------------
- Fade in
---------------------------------------------------------------*/
+/*************************************************************
+One After One Fade in
+**************************************************************/
+.oaoFadeIn span:nth-child(even) { animation-name: leoaoFadeInTop; animation-duration: .7s; animation-timing-function: ease-out; }
+@keyframes leoaoFadeInTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+.oaoFadeIn span:nth-child(odd) { animation-name: leoaoFadeInBottom; animation-duration: .7s; animation-timing-function: ease-out;  }
+@keyframes leoaoFadeInBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+.oaoFadeOut span:nth-child(even) { animation-name: leoaoFadeOutop; animation-duration: .7s; animation-timing-function: ease-in; }
+@keyframes leoaoFadeOutop {
+    to {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+.oaoFadeOut span:nth-child(odd) { animation-name: leoaoFadeOutBottom; animation-duration: .7s; animation-timing-function: ease-in;  }
+@keyframes leoaoFadeOutBottom {
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.oaoFlyIn span:nth-child(even) { animation-name: leoaoFlyInTop }
+@keyframes leoaoFlyInTop {
+    0% {
+        transform: translateY(80px);
+        opacity: 0
+    }
+    50% {
+        transform: translateY(-50px);
+        animation-timing-function: ease-out
+    }
+}
+.oaoFlyIn span:nth-child(odd) { animation-name: leoaoFlyInBottom }
+@keyframes leoaoFlyInBottom {
+    0% {
+        transform: translateY(-80px);
+        opacity: 0
+    }
+    50% {
+        transform: translateY(50px);
+        animation-timing-function: ease-out
+    }
+}
+
+
+.oaoFlyOut span:nth-child(even) { animation-name: leoaoFlyOutTop }
+@keyframes leoaoFlyOutTop {
+    30% {
+        transform: translateY(80px);
+        animation-timing-function: ease-out
+    }
+    80% {
+        transform: translateY(-50px);
+        animation-timing-function: ease-out
+    }
+    to { opacity: 0 }
+}
+.oaoFlyOut span:nth-child(odd) { animation-name: leoaoFlyOutBottom }
+@keyframes leoaoFlyOutBottom {
+    30% {
+        transform: translateY(-80px);
+        animation-timing-function: ease-out
+    }
+    80% {
+        transform: translateY(50px);
+        animation-timing-function: ease-out
+    }
+    to { opacity: 0 }
+}
+
+.oaoRotateIn span:nth-child(even) { animation-name: oaoRotateInTop }
+@keyframes oaoRotateInTop {
+    from {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateIn span:nth-child(odd) { animation-name: oaoRotateInBottom }
+@keyframes oaoRotateInBottom {
+    from {
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateOut span:nth-child(even) { animation-name: oaoRotateOutTop }
+@keyframes oaoRotateOutTop {
+    to {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateOut span:nth-child(odd) { animation-name: oaoRotateOutBottom }
+@keyframes oaoRotateOutBottom {
+    to {
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.oaoRotateXIn span:nth-child(even) { animation-name: oaoRotateXInTop }
+@keyframes oaoRotateXInTop {
+    from {
+        transform: translateY(-100px) rotateX(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateXIn span:nth-child(odd) { animation-name: oaoRotateXInBottom }
+@keyframes oaoRotateXInBottom {
+    from {
+        transform: translateY(100px) rotateX(360deg);
+        opacity: 0;
+    }
+}
+
+.oaoRotateXOut span:nth-child(even) { animation-name: oaoRotateXOutTop }
+@keyframes oaoRotateXOutTop {
+    to {
+        transform: translateY(-100px) rotateX(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateXOut span:nth-child(odd) { animation-name: oaoRotateXOutBottom }
+@keyframes oaoRotateXOutBottom {
+    to {
+        transform: translateY(100px) rotateX(360deg);
+        opacity: 0;
+    }
+}
+
+.oaoRotateYIn span:nth-child(even) { animation-name: oaoRotateYInTop }
+@keyframes oaoRotateYInTop {
+    from {
+        transform: translateY(-100px) rotateY(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateYIn span:nth-child(odd) { animation-name: oaoRotateYInBottom }
+@keyframes oaoRotateYInBottom {
+    from {
+        transform: translateY(100px) rotateY(360deg);
+        opacity: 0;
+    }
+}
+
+.oaoRotateYOut span:nth-child(even) { animation-name: oaoRotateYOutTop }
+@keyframes oaoRotateYOutTop {
+    to {
+        transform: translateY(-100px) rotateY(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateYOut span:nth-child(odd) { animation-name: oaoRotateYOutBottom }
+@keyframes oaoRotateYOutBottom {
+    to {
+        transform: translateY(100px) rotateY(360deg);
+        opacity: 0;
+    }
+}
+/*************************************************************
+Fade in
+**************************************************************/
 .fadeIn { animation-name: fadeIn }
 @keyframes fadeIn {
     from { opacity: 0 }
     to { opacity: 1 }
 }
+
 .fadeInLeft { animation-name: fadeInLeft }
 @keyframes fadeInLeft {
     from {
@@ -1196,6 +1645,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .fadeInRight { animation-name: fadeInRight }
 @keyframes fadeInRight {
     from {
@@ -1204,6 +1654,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .fadeInTop { animation-name: fadeInTop }
 @keyframes fadeInTop {
     from {
@@ -1212,6 +1663,7 @@ Letter Fade in
     }
     to { opacity: 1 }
 }
+
 .fadeInBottom { animation-name: fadeInBottom }
 @keyframes fadeInBottom {
     from {
@@ -1221,13 +1673,14 @@ Letter Fade in
     to { opacity: 1 }
 }
 
-/*--------------------------------------------------------------
- Fade Out
---------------------------------------------------------------*/
+/**************************************************************
+Fade Out
+**************************************************************/
 .fadeOut { animation-name: fadeOut }
 @keyframes fadeOut {
     to { opacity: 0 }
 }
+
 .fadeOutLeft { animation-name: fadeOutLeft }
 @keyframes fadeOutLeft {
     from { opacity: 1 }
@@ -1236,6 +1689,7 @@ Letter Fade in
         transform: translateX(-100%);
     }
 }
+
 .fadeOutRight { animation-name: fadeOutRight }
 @keyframes fadeOutRight {
     from { opacity: 1 }
@@ -1244,6 +1698,7 @@ Letter Fade in
         transform: translateX(100%);
     }
 }
+
 .fadeOutTop { animation-name: fadeOutTop }
 @keyframes fadeOutTop {
     from { opacity: 1 }
@@ -1252,6 +1707,7 @@ Letter Fade in
         transform: translateY(-100%);
     }
 }
+
 .fadeOutBottom { animation-name: fadeOutBottom }
 @keyframes fadeOutBottom {
     from { opacity: 1 }
@@ -1261,104 +1717,131 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Move From
---------------------------------------------------------------*/
+/*************************************************************
+Move From
+**************************************************************/
 .moveFromLeft { animation-name: moveFromLeft }
 @keyframes moveFromLeft {
-    from { transform: translateX(-100%) }
+    from { transform: translateX(-800px) }
 }
+
 .moveFromRight { animation-name: moveFromRight }
 @keyframes moveFromRight {
-    from { transform: translateX(100%) }
+    from { transform: translateX(800px) }
 }
+
 .moveFromTop { animation-name: moveFromTop }
 @keyframes moveFromTop {
-    from { transform: translateY(-100%) }
+    from { transform: translateY(-800px) }
 }
+
 .moveFromBottom { animation-name: moveFromBottom }
 @keyframes moveFromBottom {
-    from { transform: translateY(100%) }
+    from { transform: translateY(800px) }
 }
 
-/*--------------------------------------------------------------
- Move To
---------------------------------------------------------------*/
+/*************************************************************
+Move To
+**************************************************************/
 .moveToLeft { animation-name: moveToLeft }
 @keyframes moveToLeft {
-    to { transform: translateX(-100%) }
+    to { transform: translateX(-800px) }
 }
+
 .moveToRight { animation-name: moveToRight }
 @keyframes moveToRight {
-    to { transform: translateX(100%) }
+    to { transform: translateX(800px) }
 }
+
 .moveToTop { animation-name: moveToTop }
 @keyframes moveToTop {
-    to { transform: translateY(-100%) }
+    to { transform: translateY(-800px) }
 }
+
 .moveToBottom { animation-name: moveToBottom }
 @keyframes moveToBottom {
-    to { transform: translateY(100%) }
+    to { transform: translateY(800px) }
 }
 
-/*--------------------------------------------------------------
- Door
---------------------------------------------------------------*/
+/*************************************************************
+Door
+**************************************************************/
 .doorCloseFromLeft { animation-name: doorCloseFromLeft }
 @keyframes doorCloseFromLeft {
-    from, to { transform-origin: left }
     from {
         transform: perspective(400px) rotateY(90deg);
+        transform-origin: left;
         opacity: 0;
     }
-    50% { opacity: 1 }
+    50%, to {
+        transform: perspective(400px) rotateY(0deg);
+        transform-origin: left;
+        opacity: 1;
+    }
 }
+
 .doorOpenFromRight { animation-name: doorOpenFromRight }
 @keyframes doorOpenFromRight {
-    from, to { transform-origin: left }
-    to {
-        transform: perspective(400px) rotateY(90deg);
-        opacity: 0;
-    }
-}
-.doorCloseFromRight { animation-name: doorCloseFromRight }
-@keyframes doorCloseFromRight {
-    from, to { transform-origin: right }
     from {
-        transform: perspective(400px) rotateY(-90deg);
-        opacity: 0;
+        transform: perspective(400px) rotateY(0deg);
+        transform-origin: left;
+        opacity: 1;
     }
-    50% { opacity: 1 }
-}
-.doorOpenFromLeft { animation-name: doorOpenFromLeft }
-@keyframes doorOpenFromLeft {
-    from, to { transform-origin: right }
-    to {
-        transform: perspective(400px) rotateY(-90deg);
+    50%, to {
+        transform: perspective(400px) rotateY(90deg);
+        transform-origin: left;
         opacity: 0;
     }
 }
 
-/*--------------------------------------------------------------
- Heartbeat
---------------------------------------------------------------*/
-.heartbeat { animation-name: heartbeat; animation-iteration-count: infinite; animation-duration: .5s }
-@keyframes heartbeat {
+.doorCloseFromRight { animation-name: doorCloseFromRight }
+@keyframes doorCloseFromRight {
+    from {
+        transform: perspective(400px) rotateY(-90deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+    50%, to {
+        transform: perspective(400px) rotateY(0deg);
+        transform-origin: right;
+        opacity: 1;
+    }
+}
+
+.doorOpenFromLeft { animation-name: doorOpenFromLeft }
+@keyframes doorOpenFromLeft {
+    from {
+        transform: perspective(400px) rotateY(0deg);
+        transform-origin: right;
+        opacity: 1;
+    }
+    50%, to {
+        transform: perspective(400px) rotateY(-90deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+}
+
+/*************************************************************
+Heartbeat
+**************************************************************/
+.heartbeatSlow { animation-name: heartbeatSlow; animation-iteration-count: infinite; animation-duration: .5s }
+@keyframes heartbeatSlow {
     35%, 65% { transform: scale(1.2) }
 }
 
-.heartbeat2 { animation-name: heartbeat2; animation-iteration-count: infinite; }
-@keyframes heartbeat2 {
+.heartbeatFast { animation-name: heartbeatFast; animation-iteration-count: infinite }
+@keyframes heartbeatFast {
     14%, 42% { transform: scale(1.3) }
     28%, 70% { transform: scale(1) }
 }
 
-/*--------------------------------------------------------------
- Hang On
---------------------------------------------------------------*/
+/*************************************************************
+Hang On
+**************************************************************/
 .hangOnLeft { animation-name: hangOnLeft }
 @keyframes hangOnLeft {
-    from {transform-origin: left;}
+    from { transform-origin: left; }
     40% {
         transform: rotate(100deg);
         transform-origin: left;
@@ -1380,9 +1863,10 @@ Letter Fade in
         transform-origin: left;
     }
 }
+
 .hangOnRight { animation-name: hangOnRight }
 @keyframes hangOnRight {
-    from {transform-origin: right;}
+    from { transform-origin: right; }
     40% {
         transform: rotate(-100deg);
         transform-origin: right;
@@ -1405,13 +1889,12 @@ Letter Fade in
     }
 }
 
-
-/*--------------------------------------------------------------
- Hang And Drop
---------------------------------------------------------------*/
+/*************************************************************
+Hang And Drop
+**************************************************************/
 .hangAndDropLeft { animation-name: hangAndDropLeft }
 @keyframes hangAndDropLeft {
-    from {transform-origin: left;}
+    from { transform-origin: left }
     50% {
         transform: rotate(100deg);
         transform-origin: left;
@@ -1419,15 +1902,18 @@ Letter Fade in
     60% {
         transform: rotate(90deg);
         transform-origin: left;
+        opacity: 1;
     }
     to {
         transform: translateY(300px) rotate(70deg);
         transform-origin: left;
+        opacity: 0;
     }
 }
+
 .hangAndDropRight { animation-name: hangAndDropRight }
 @keyframes hangAndDropRight {
-    from {transform-origin: right;}
+    from { transform-origin: right }
     50% {
         transform: rotate(-100deg);
         transform-origin: right;
@@ -1435,16 +1921,18 @@ Letter Fade in
     60% {
         transform: rotate(-90deg);
         transform-origin: right;
+        opacity: 1;
     }
     to {
         transform: translateY(300px) rotate(-70deg);
         transform-origin: right;
+        opacity: 0
     }
 }
 
-/*--------------------------------------------------------------
- Shake
---------------------------------------------------------------*/
+/*************************************************************
+Shake
+**************************************************************/
 .pulseShake { animation-name: pulseShake; animation-iteration-count: infinite }
 @keyframes pulseShake {
     90% { transform: scale(1) }
@@ -1452,50 +1940,57 @@ Letter Fade in
     96% { transform: scale(1, 1) }
     98% { transform: scale(1.1) }
 }
+
 .horizontalShake { animation-name: horizontalShake; animation-iteration-count: infinite }
 @keyframes horizontalShake {
     3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 83%, 92% { transform: translateX(5px) }
     6%, 15%, 24%, 33%, 42%, 51%, 60%, 68%, 77%, 86%, 95% { transform: translateX(3px) }
     9%, 18%, 27%, 36%, 45%, 54%, 63%, 71%, 80%, 89%, 98% { transform: translateX(-5px) }
 }
+
 .verticalShake { animation-name: verticalShake; animation-iteration-count: infinite }
 @keyframes verticalShake {
     3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 83%, 92% { transform: translateY(5px) }
     6%, 15%, 24%, 33%, 42%, 51%, 60%, 68%, 77%, 86%, 95% { transform: translateY(3px) }
     9%, 18%, 27%, 36%, 45%, 54%, 63%, 71%, 80%, 89%, 98% { transform: translateY(-5px) }
 }
+
 .madMax { animation-name: madMax; animation-iteration-count: infinite }
 @keyframes madMax {
     3%, 12%, 21%, 30%, 39%, 48%, 57%, 65%, 74%, 83%, 92% { transform: translateY(5px) scale(1.1) }
     6%, 15%, 24%, 33%, 42%, 51%, 60%, 68%, 77%, 86%, 95% { transform: translateY(3px) scale(.8) }
     9%, 18%, 27%, 36%, 45%, 54%, 63%, 71%, 80%, 89%, 98% { transform: translateY(-5px) scale(1.1) }
 }
+
 .coolHorizontalShake { animation-name: coolHorizontalShake; animation-iteration-count: infinite }
 @keyframes coolHorizontalShake {
     3%, 21%, 39%, 57%, 74%, 92% { transform: translateX(5px) }
     6%, 24%, 42%, 60%, 77%, 95% { transform: translateX(3px) }
     9%, 27%, 45%, 63%, 80%, 98% { transform: translateX(-5px) }
 }
+
 .coolVerticalShake { animation-name: coolVerticalShake; animation-iteration-count: infinite }
 @keyframes coolVerticalShake {
     3%, 21%, 39%, 57%, 74%, 92% { transform: translateY(5px) }
     6%, 24%, 42%, 60%, 77%, 95% { transform: translateY(3px) }
     9%, 27%, 45%, 63%, 80%, 98% { transform: translateY(-5px) }
 }
+
 .quietMad { animation-name: quietMad; animation-iteration-count: infinite }
 @keyframes quietMad {
     3%, 21%, 39%, 57%, 74%, 92% { transform: translateY(5px) scale(1.1) }
     6%, 24%, 42%, 60%, 77%, 95% { transform: translateY(3px) scale(.8) }
     9%, 27%, 45%, 63%, 80%, 98% { transform: translateY(-5px) scale(1.1) }
 }
+
 .vibration { animation: vibration .1s linear infinite }
 @keyframes vibration {
     50% { transform: skewY(1deg) skewX(-1deg) scale(1.06) }
 }
 
-/*--------------------------------------------------------------
- Push Release From
---------------------------------------------------------------*/
+/*************************************************************
+Push Release From
+**************************************************************/
 .pushReleaseFrom { animation-name: pushReleaseFrom }
 @keyframes pushReleaseFrom {
     from {
@@ -1504,29 +1999,34 @@ Letter Fade in
     }
     30% { transform: scale(.5, .5) }
 }
+
 .pushReleaseFromLeft { animation-name: pushReleaseFromLeft }
 @keyframes pushReleaseFromLeft {
     from { transform: translateX(-100%) }
     30% { transform: translateX(100px) }
 }
+
 .pushReleaseFromRight { animation-name: pushReleaseFromRight }
 @keyframes pushReleaseFromRight {
     from { transform: translateX(100%) }
     30% { transform: translateX(-100px) }
 }
+
 .pushReleaseFromTop { animation-name: pushReleaseFromTop }
 @keyframes pushReleaseFromTop {
     from { transform: translateY(-100%) }
     30% { transform: translateY(100px) }
 }
+
 .pushReleaseFromBottom { animation-name: pushReleaseFromBottom }
 @keyframes pushReleaseFromBottom {
     from { transform: translateY(100%) }
     30% { transform: translateY(-100px) }
 }
-/*--------------------------------------------------------------
- Push Release To
---------------------------------------------------------------*/
+
+/*************************************************************
+Push Release To
+**************************************************************/
 .pushReleaseTo { animation-name: pushReleaseTo }
 @keyframes pushReleaseTo {
     30% { transform: scale(.5, .5) }
@@ -1534,179 +2034,216 @@ Letter Fade in
         transform: scale(5, 5);
         opacity: 0;
     }
-
 }
+
 .pushReleaseToLeft { animation-name: pushReleaseToLeft }
 @keyframes pushReleaseToLeft {
     30% { transform: translateX(100px) }
-    to { transform: translateX(-100%) }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
 }
+
 .pushReleaseToRight { animation-name: pushReleaseToRight }
 @keyframes pushReleaseToRight {
     30% { transform: translateX(-100px) }
-    to { transform: translateX(100%) }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 }
+
 .pushReleaseToTop { animation-name: pushReleaseToTop }
 @keyframes pushReleaseToTop {
     30% { transform: translateY(100px) }
-    to { transform: translateY(-100%) }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
 }
+
 .pushReleaseToBottom { animation-name: pushReleaseToBottom }
 @keyframes pushReleaseToBottom {
     30% { transform: translateY(-100px) }
-    to { transform: translateY(100%) }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
 }
 
-/*--------------------------------------------------------------
- Flip X
---------------------------------------------------------------*/
+/*************************************************************
+Flip X
+**************************************************************/
 .flipX { animation-name: flipX }
 @keyframes flipX {
-    40% {
+    from {
         transform: perspective(600px) rotateX(-180deg);
-        animation-timing-function: ease-out;
+        opacity: 0;
     }
-    80% {
-        transform: perspective(600px) rotateX(0deg);
-        animation-timing-function: ease-out;
-    }
+    to { transform: perspective(600px) rotateX(-360deg) }
 }
+
 .flipXZoomIn { animation-name: flipXZoomIn }
 @keyframes flipXZoomIn {
+    from {
+      transform: perspective(600px) rotateX(0deg) scale(1);
+      animation-timing-function: ease-out;
+    }
     40% {
-        transform: perspective(600px) rotateX(-180deg) scale(1.8);
-        animation-timing-function: ease-out;
+      transform: perspective(600px) rotateX(-180deg) scale(1.8);
+      animation-timing-function: ease-out;
     }
     80% {
-        transform: perspective(600px) rotateX(0deg) scale(.8);
-        animation-timing-function: ease-out;
+      transform: perspective(600px) rotateX(-360deg) scale(.7);
+      animation-timing-function: ease-in;
     }
-    95%, to {
-        transform: perspective(600px);
-        animation-timing-function: ease-in;
-    }
+    to  { transform: scale(1) }
 }
+
 .flipXZoomOut { animation-name: flipXZoomOut }
 @keyframes flipXZoomOut {
+    from {
+      transform: perspective(600px) rotateX(0deg) scale(1);
+      animation-timing-function: ease-out;
+    }
     40% {
-        transform: perspective(600px) rotateX(-180deg) scale(.8);
-        animation-timing-function: ease-out;
+      transform: perspective(600px) rotateX(180deg) scale(1.8);
+      animation-timing-function: ease-out;
     }
     80% {
-        transform: perspective(600px) rotateX(0deg) scale(1.8);
-        animation-timing-function: ease-out;
+      transform: perspective(600px) rotateX(360deg) scale(.7);
+      animation-timing-function: ease-in;
     }
-    95%, to {
-        transform: perspective(600px);
-        animation-timing-function: ease-in;
-    }
+    to  { transform: scale(1) }
 }
 
-/*--------------------------------------------------------------
- Flip Y
---------------------------------------------------------------*/
+/*************************************************************
+Flip Y
+**************************************************************/
 .flipY { animation-name: flipY }
 @keyframes flipY {
-    40% {
-        transform: perspective(600px) rotateY(-180deg);
-        animation-timing-function: ease-out;
+    from {
+        transform: perspective(600px) rotateY(180deg);
+        opacity: 0;
     }
-    80% {
-        transform: perspective(600px) rotateY(0deg);
-        animation-timing-function: ease-out;
-    }
+    to { transform: perspective(600px) rotateY(360deg) }
 }
+
 .flipYZoomIn { animation-name: flipYZoomIn }
 @keyframes flipYZoomIn {
+    from {
+      transform: perspective(600px) rotateY(0deg) scale(1);
+      animation-timing-function: ease-out;
+    }
     40% {
-        transform: perspective(600px) rotateY(-180deg) scale(1.8);
-        animation-timing-function: ease-out;
+      transform: perspective(600px) rotateY(180deg) scale(1.6);
+      animation-timing-function: ease-out;
     }
     80% {
-        transform: perspective(600px) rotateY(0deg) scale(.8);
-        animation-timing-function: ease-out;
+      transform: perspective(600px) rotateY(360deg) scale(.7);
+      animation-timing-function: ease-in;
     }
-    95%, to {
-        transform: perspective(600px);
-        animation-timing-function: ease-in;
-    }
+    to  { transform: scale(1) }
 }
+
 .flipYZoomOut { animation-name: flipYZoomOut }
 @keyframes flipYZoomOut {
+    from {
+      transform: perspective(600px) rotateY(0deg) scale(1);
+      animation-timing-function: ease-out;
+    }
     40% {
-        transform: perspective(600px) rotateY(-180deg) scale(.8);
-        animation-timing-function: ease-out;
+      transform: perspective(600px) rotateY(180deg) scale(.6);
+      animation-timing-function: ease-out;
     }
     80% {
-        transform: perspective(600px) rotateY(0deg) scale(1.8);
-        animation-timing-function: ease-out;
+      transform: perspective(600px) rotateY(360deg) scale(1.8);
+      animation-timing-function: ease-in;
     }
-    95%, to {
-        transform: perspective(600px);
-        animation-timing-function: ease-in;
-    }
+    to  { transform: scale(1) }
 }
 
-/*--------------------------------------------------------------
- Skew
---------------------------------------------------------------*/
+/*************************************************************
+Skew
+**************************************************************/
 .skewLeft { animation-name: skewLeft }
 @keyframes skewLeft {
-    70% { transform: skewX(30deg) }
+    70% { transform: skewX(40deg) }
 }
+
 .skewRight { animation-name: skewRight }
 @keyframes skewRight {
-    70% { transform: skewX(-30deg) }
+    70% { transform: skewX(-40deg) }
 }
+
 .skewInLeft { animation-name: skewInLeft }
 @keyframes skewInLeft {
-    from { transform: translateX(-100%) skewX(-40deg) }
+    from {
+        opacity: 0;
+        transform: translateX(-100%) skewX(-40deg)
+    }
     70% { transform: skewX(-30deg) }
 }
+
 .skewInRight { animation-name: skewInRight }
 @keyframes skewInRight {
-    from { transform: translateX(100%) skewX(40deg) }
+    from {
+        opacity: 0;
+        transform: translateX(100%) skewX(40deg)
+    }
     70% { transform: skewX(30deg) }
 }
+
 .skewOutLeft { animation-name: skewOutLeft }
 @keyframes skewOutLeft {
-    50% { transform: skewX(40deg) }
-    to { transform: translateX(-100%) skewX(30deg) }
-
+    20% { transform: skewX(40deg) }
+    to {
+        transform: translateX(-100%) skewX(40deg);
+        opacity: 0
+    }
 }
+
 .skewOutRight { animation-name: skewOutRight }
 @keyframes skewOutRight {
-    50% { transform: skewX(-40deg) }
-    to { transform: translateX(100%) skewX(-30deg) }
+    20% { transform: skewX(-40deg) }
+    to {
+        transform: translateX(100%) skewX(-40deg);
+        opacity: 0
+    }
 }
 
-/*--------------------------------------------------------------
- Shock In
---------------------------------------------------------------*/
+/*************************************************************
+Shock In
+**************************************************************/
 .shockZoom { animation-name: shockZoom }
 @keyframes shockZoom {
     from { transform: matrix(5, 0, 0, 5, 0, 0) }
     35% { transform: matrix(2, 0, 0, 2, 0, 0) }
     43% { transform: matrix(1, 0, 0, 1, 0, 0) }
 }
+
 .shockInLeft { animation-name: shockInLeft }
 @keyframes shockInLeft {
     from { transform: matrix(1, 0, 0, 1, -800, 0) }
     35% { transform: matrix(1, 0, 0, 1, 50, 0) }
     43% { transform: matrix(1, 0, 0, 1, 0, 0) }
 }
+
 .shockInRight { animation-name: shockInRight }
 @keyframes shockInRight {
     from { transform: matrix(1, 0, 0, 1, 800, 0) }
     35% { transform: matrix(1, 0, 0, 1, -50, 0) }
     43% { transform: matrix(1, 0, 0, 1, 0, 0) }
 }
+
 .shockInTop { animation-name: shockInTop }
 @keyframes shockInTop {
     from { transform: matrix(1, 0, 0, 1, 0, -400) }
     35% { transform: matrix(1, 0, 0, 1, 0, 50) }
     43% { transform: matrix(1, 0, 0, 1, 0, 0) }
 }
+
 .shockInBottom { animation-name: shockInBottom }
 @keyframes shockInBottom {
     from { transform: matrix(1, 0, 0, 1, 0, 400) }
@@ -1714,21 +2251,22 @@ Letter Fade in
     43% { transform: matrix(1, 0, 0, 1, 0, 0) }
 }
 
-/*--------------------------------------------------------------
- Pull release
---------------------------------------------------------------*/
-.pullReleaseIn { animation-name: pullReleaseIn }
-@keyframes pullReleaseIn {
-    15% { transform: scale(1.5) }
+/*************************************************************
+Pull release
+**************************************************************/
+.pullRelease { animation-name: pullRelease }
+@keyframes pullRelease {
+    15% { transform: scale(1.8) }
 }
-.pullReleaseOut { animation-name: pullReleaseOut }
-@keyframes pullReleaseOut {
+
+.pushRelease { animation-name: pushRelease }
+@keyframes pushRelease {
     15% { transform: scale(.5) }
 }
 
-/*--------------------------------------------------------------
- Swing In
---------------------------------------------------------------*/
+/*************************************************************
+Swing In
+**************************************************************/
 .swingInLeft { animation-name: swingInLeft }
 @keyframes swingInLeft {
     from {
@@ -1737,6 +2275,7 @@ Letter Fade in
     }
     50% { transform: matrix(1.3, 0, 0, 1.3, 20, 0) }
 }
+
 .swingInRight { animation-name: swingInRight }
 @keyframes swingInRight {
     from {
@@ -1745,6 +2284,7 @@ Letter Fade in
     }
     50% { transform: matrix(1.3, 0, 0, 1.3, -20, 0) }
 }
+
 .swingInTop { animation-name: swingInTop }
 @keyframes swingInTop {
     from {
@@ -1753,6 +2293,7 @@ Letter Fade in
     }
     50% { transform: matrix(1.3, 0, 0, 1.3, 0, 20) }
 }
+
 .swingInBottom { animation-name: swingInBottom }
 @keyframes swingInBottom {
     from {
@@ -1762,9 +2303,10 @@ Letter Fade in
     50% { transform: matrix(1.3, 0, 0, 1.3, 0, -20) }
 }
 
-/*--------------------------------------------------------------
- Elevate
---------------------------------------------------------------*/
+/*************************************************************
+Elevate
+**************************************************************/
+
 .elevateLeft { animation-name: elevateLeft }
 @keyframes elevateLeft {
     from {
@@ -1780,6 +2322,7 @@ Letter Fade in
         transform-origin: right;
     }
 }
+
 .elevateRight { animation-name: elevateRight }
 @keyframes elevateRight {
     from {
@@ -1796,82 +2339,124 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Roll From
---------------------------------------------------------------*/
+/*************************************************************
+Roll From
+**************************************************************/
 .rollFromLeft { animation-name: rollFromLeft }
 @keyframes rollFromLeft {
     from {
-      transform: translateX(-100%) perspective(600px) rotateY(180deg);
-      opacity: 0
+        transform: translateX(-100%) perspective(600px) rotateY(180deg);
+        opacity: 0
+    }
+    to {
+        transform: translateX(0) perspective(600px) rotateY(0deg);
+        opacity: 1
     }
 }
+
 .rollFromRight { animation-name: rollFromRight }
 @keyframes rollFromRight {
     from {
-      transform: translateX(100%) perspective(600px) rotateY(-180deg);
-      opacity: 0
-     }
+        transform: translateX(100%) perspective(600px) rotateY(-180deg);
+        opacity: 0
+    }
+    to {
+        transform: translateX(0) perspective(600px) rotateY(0deg);
+        opacity: 1
+    }
+
 }
+
 .rollFromTop { animation-name: rollFromTop }
 @keyframes rollFromTop {
     from {
-      transform: translateY(-100%) perspective(600px) rotateX(180deg);
-      opacity: 0
+        transform: translateY(-100%) perspective(600px) rotateY(180deg);
+        opacity: 0
+    }
+    to {
+        transform: translateY(0) perspective(600px) rotateY(0deg);
+        opacity: 1
     }
 }
+
 .rollFromBottom { animation-name: rollFromBottom }
 @keyframes rollFromBottom {
     from {
-      transform: translateY(100%) perspective(600px) rotateX(-180deg);
-      opacity: 0
+        transform: translateY(100%) perspective(600px) rotateY(-180deg);
+        opacity: 0
+    }
+    to {
+        transform: translateY(0) perspective(600px) rotateY(0deg);
+        opacity: 1
     }
 }
 
-/*--------------------------------------------------------------
- Roll To
---------------------------------------------------------------*/
+/*************************************************************
+Roll To
+**************************************************************/
 .rollToLeft { animation-name: rollToLeft }
 @keyframes rollToLeft {
+    from {
+        transform: translateX(0) perspective(600px) rotateY(0deg);
+        opacity: 1
+    }
     to {
-      transform: translateX(-100%) perspective(600px) rotateY(180deg);
-      opacity: 0
-   }
+        transform: translateX(-100%) perspective(600px) rotateY(180deg);
+        opacity: 0
+    }
 }
+
 .rollToRight { animation-name: rollToRight }
 @keyframes rollToRight {
+    from {
+        transform: translateX(0) perspective(600px) rotateY(0deg);
+        opacity: 1
+    }
     to {
-      transform: translateX(100%) perspective(600px) rotateY(-180deg);
-      opacity: 0
+        transform: translateX(100%) perspective(600px) rotateY(-180deg);
+        opacity: 0
     }
 }
+
 .rollToTop { animation-name: rollToTop }
 @keyframes rollToTop {
+    from {
+        transform: translateY(0) perspective(600px) rotateX(0deg);
+        opacity: 1
+    }
     to {
-      transform: translateY(-100%) perspective(600px) rotateX(180deg);
-      opacity: 0
+        transform: translateY(-100%) perspective(600px) rotateX(180deg);
+        opacity: 0
     }
 }
+
 .rollToBottom { animation-name: rollToBottom }
 @keyframes rollToBottom {
     to {
-      transform: translateY(100%) perspective(600px) rotateX(-180deg);
-      opacity: 0
+        transform: translateY(0) perspective(600px) rotateX(0deg);
+        opacity: 1
+    }
+    to {
+        transform: translateY(100%) perspective(600px) rotateX(-180deg);
+        opacity: 0
     }
 }
 
-/*--------------------------------------------------------------
- Rotation
---------------------------------------------------------------*/
-.rotate { animation-name: rotate; animation-timing-function: linear; }
+/*************************************************************
+Rotation
+**************************************************************/
+.rotate { animation-name: rotate; animation-timing-function: ease-in-out }
 @keyframes rotate {
-    50% { transform: rotate(-180deg) }
-    to { transform: rotate(0deg) }
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
 }
+
 .rotateX { animation-name: rotateX }
 @keyframes rotateX {
+    from { transform: perspective(600px) rotateX(0deg) }
     to { transform: perspective(600px) rotateX(90deg) }
 }
+
 .rotateXIn { animation-name: rotateXIn }
 @keyframes rotateXIn {
     from {
@@ -1880,6 +2465,7 @@ Letter Fade in
     }
     5% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg) }
 }
+
 .rotateXOut { animation-name: rotateXOut }
 @keyframes rotateXOut {
     95% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg) }
@@ -1888,18 +2474,22 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .rotateY { animation-name: rotateY }
 @keyframes rotateY {
+    from { transform: perspective(600px) rotateY(0deg) }
     to { transform: perspective(600px) rotateY(90deg) }
 }
+
 .rotateYIn { animation-name: rotateYIn }
 @keyframes rotateYIn {
     from {
         transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
         opacity: 0;
     }
-    5% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg); }
+    5% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg) }
 }
+
 .rotateYOut { animation-name: rotateYOut }
 @keyframes rotateYOut {
     95% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg) }
@@ -1909,57 +2499,87 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Rotate In
---------------------------------------------------------------*/
+/*************************************************************
+Rotate In
+**************************************************************/
 .rotateInLeft { animation-name: rotateInLeft }
 @keyframes rotateInLeft {
-    from { transform: translateX(-100%) rotate(0deg) }
-    to { transform: translateX(0px) rotate(360deg) }
-}
-.rotateInRight { animation-name: rotateInRight }
-@keyframes rotateInRight {
-    from { transform: translateX(100%) rotate(0deg) }
-    to { transform: translateX(0px) rotate(-360deg) }
-}
-.rotateInTop { animation-name: rotateInTop }
-@keyframes rotateInTop {
-    from { transform: translateY(-400%) rotate(0deg) }
-    to { transform: translateX(0px) rotate(360deg) }
-}
-.rotateInBottom { animation-name: rotateInBottom }
-@keyframes rotateInBottom {
-    from { transform: translateY(400%) rotate(0deg) }
+    from {
+        opacity: 0;
+        transform: translateX(-100%) rotate(0deg)
+    }
     to { transform: translateX(0px) rotate(360deg) }
 }
 
-/*--------------------------------------------------------------
- Rotate Out
---------------------------------------------------------------*/
+.rotateInRight { animation-name: rotateInRight }
+@keyframes rotateInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%) rotate(0deg)
+    }
+    to { transform: translateX(0px) rotate(-360deg) }
+}
+
+.rotateInTop { animation-name: rotateInTop }
+@keyframes rotateInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-400%) rotate(0deg)
+    }
+    to { transform: translateX(0px) rotate(360deg) }
+}
+
+.rotateInBottom { animation-name: rotateInBottom }
+@keyframes rotateInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(400%) rotate(0deg)
+    }
+    to { transform: translateX(0px) rotate(360deg) }
+}
+
+/*************************************************************
+Rotate Out
+**************************************************************/
 .rotateOutLeft { animation-name: rotateOutLeft }
 @keyframes rotateOutLeft {
     from { transform: translateX(0px) rotate(360deg) }
-    to { transform: translateX(-100%) rotate(0deg) }
+    to {
+        transform: translateX(-800px) rotate(0deg);
+        opacity: 0
+    }
 }
+
 .rotateOutRight { animation-name: rotateOutRight }
 @keyframes rotateOutRight {
     from { transform: translateX(0px) rotate(-360deg) }
-    to { transform: translateX(100%) rotate(0deg) }
+    to {
+        transform: translateX(800px) rotate(0deg);
+        opacity: 0
+    }
 }
+
 .rotateOutTop { animation-name: rotateOutTop }
 @keyframes rotateOutTop {
     from { transform: translateX(0px) rotate(360deg) }
-    to { transform: translateY(-400%) rotate(0deg) }
+    to {
+        transform: translateY(-800px) rotate(0deg);
+        opacity: 0
+    }
 }
+
 .rotateOutBottom { animation-name: rotateOutBottom }
 @keyframes rotateOutBottom {
     from { transform: translateX(0px) rotate(360deg) }
-    to { transform: translateY(400%) rotate(0deg) }
+    to {
+        transform: translateY(800px) rotate(0deg);
+        opacity: 0
+    }
 }
 
-/*--------------------------------------------------------------
- Spin To
---------------------------------------------------------------*/
+/*************************************************************
+Spin To
+**************************************************************/
 .spinToLeft { animation-name: spinToLeft }
 @keyframes spinToLeft {
     from, to { transform-origin: left bottom }
@@ -1968,6 +2588,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .spinToRight { animation-name: spinToRight }
 @keyframes spinToRight {
     from, to { transform-origin: right bottom }
@@ -1976,6 +2597,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .spinToTop { animation-name: spinToTop }
 @keyframes spinToTop {
     from, to { transform-origin: left bottom }
@@ -1984,6 +2606,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .spinToBottom { animation-name: spinToBottom }
 @keyframes spinToBottom {
     from, to { transform-origin: right bottom }
@@ -1993,9 +2616,9 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Spin From
---------------------------------------------------------------*/
+/*************************************************************
+Spin From
+**************************************************************/
 .spinFromLeft { animation-name: spinFromLeft }
 @keyframes spinFromLeft {
     from, to { transform-origin: left bottom }
@@ -2004,6 +2627,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .spinFromRight { animation-name: spinFromRight }
 @keyframes spinFromRight {
     from, to { transform-origin: right bottom }
@@ -2012,6 +2636,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .spinFromTop { animation-name: spinFromTop }
 @keyframes spinFromTop {
     from, to { transform-origin: left bottom }
@@ -2020,6 +2645,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .spinFromBottom { animation-name: spinFromBottom }
 @keyframes spinFromBottom {
     from, to { transform-origin: right bottom }
@@ -2029,120 +2655,102 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Blur In
---------------------------------------------------------------*/
+/*************************************************************
+Blur In
+**************************************************************/
+
 .blurIn { animation-name: blurIn }
 @keyframes blurIn {
-    to {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+    from {
+        filter: blur(20px);
+        opacity: 0;
     }
 }
+
 .blurInLeft { animation-name: blurInLeft }
 @keyframes blurInLeft {
     from {
         transform: translateX(100%);
-        text-shadow: none;
-    }
-
-    to {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+        filter: blur(20px);
+        opacity: 0;
     }
 }
+
 .blurInRight { animation-name: blurInRight }
 @keyframes blurInRight {
     from {
         transform: translateX(-100%);
-        text-shadow: none;
-    }
-
-    to {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+        filter: blur(20px);
+        opacity: 0;
     }
 }
+
 .blurInTop { animation-name: blurInTop }
 @keyframes blurInTop {
     from {
         transform: translateY(100%);
-        text-shadow: none;
-    }
-    to {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
+        filter: blur(20px);
+        opacity: 0;
     }
 }
+
 .blurInBottom { animation-name: blurInBottom }
 @keyframes blurInBottom {
     from {
         transform: translateY(-100%);
-        text-shadow: none;
-    }
-    to {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-}
-/*--------------------------------------------------------------
- Blur Out
---------------------------------------------------------------*/
-.blurOut { animation-name: blurOut }
-@keyframes blurOut {
-    from {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-}
-.blurOutLeft { animation-name: blurOutLeft }
-@keyframes blurOutLeft {
-    from {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-    to {
-        transform: translateX(100%);
-        text-shadow: none;
-    }
-}
-.blurOutRight { animation-name: blurOutRight }
-@keyframes blurOutRight {
-    from {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-    to {
-        transform: translateX(-100%);
-        text-shadow: none;
-    }
-}
-.blurOutTop { animation-name: blurOutTop }
-@keyframes blurOutTop {
-    from {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-    to {
-        transform: translateY(100%);
-        text-shadow: none;
-    }
-}
-.blurOutBottom { animation-name: blurOutBottom }
-@keyframes blurOutBottom {
-    from {
-        text-shadow: 0 0 10px rgba(167, 81, 203, 0.6), 0 0 30px rgba(167, 81, 203, 0.4), 0 0 50px rgba(167, 81, 203, 0.3), 0 0 180px rgba(167, 81, 203, 0.3);
-        color: transparent;
-    }
-    to {
-        transform: translateY(-100%);
-        text-shadow: none;
+        filter: blur(20px);
+        opacity: 0;
     }
 }
 
-/*--------------------------------------------------------------
- Bounce
---------------------------------------------------------------*/
+/*************************************************************
+Blur Out
+**************************************************************/
+.blurOut { animation-name: blurOut }
+@keyframes blurOut {
+    85%, to { filter: blur(20px) }
+    to { opacity: 0 }
+}
+
+.blurOutLeft { animation-name: blurOutLeft }
+@keyframes blurOutLeft {
+    85%, to {
+        filter: blur(20px);
+        transform: translateX(100%);
+    }
+    to { opacity: 0 }
+}
+
+.blurOutRight { animation-name: blurOutRight }
+@keyframes blurOutRight {
+    85%, to {
+        filter: blur(20px);
+        transform: translateX(-100%);
+    }
+    to { opacity: 0 }
+}
+
+.blurOutTop { animation-name: blurOutTop }
+@keyframes blurOutTop {
+    85%, to {
+        filter: blur(20px);
+        transform: translateY(100%);
+    }
+    to { opacity: 0 }
+}
+
+.blurOutBottom { animation-name: blurOutBottom }
+@keyframes blurOutBottom {
+    85%, to {
+        filter: blur(20px);
+        transform: translateY(-100%);
+    }
+    to { opacity: 0 }
+}
+
+/*************************************************************
+Bounce
+**************************************************************/
 .bounceFromTop { animation-name: bounceFromTop }
 @keyframes bounceFromTop {
     0%, 25%, 55%, 85%, 100% {
@@ -2151,7 +2759,7 @@ Letter Fade in
     }
     41%, 44% {
         animation-timing-function: ease-in;
-        transform: translate3d(0, -80px, 0) scale3d(1, 1.2, 1);
+        transform: translate3d(0, -80px, 0) scale3d(1, 1.6, 1);
     }
     70% {
         animation-timing-function: ease-in;
@@ -2159,6 +2767,7 @@ Letter Fade in
     }
     90% { transform: translate3d(0, -4px, 0) }
 }
+
 .bounceFromDown { animation-name: bounceFromDown }
 @keyframes bounceFromDown {
     0%, 25%, 55%, 85%, 100% {
@@ -2175,6 +2784,7 @@ Letter Fade in
     }
     90% { transform: translate3d(0, 4px, 0) }
 }
+
 .bounceX { animation-name: bounceX }
 @keyframes bounceX {
     0%, 25%, 55%, 85%, 100% {
@@ -2191,6 +2801,7 @@ Letter Fade in
     }
     90% { transform: scale3d(1.1, 1, 1) }
 }
+
 .bounceY { animation-name: bounceY }
 @keyframes bounceY {
     0%, 25%, 55%, 85%, 100% {
@@ -2207,6 +2818,7 @@ Letter Fade in
     }
     90% { transform: scale3d(1, 1.1, 1) }
 }
+
 .bounceZoomIn { animation-name: bounceZoomIn }
 @keyframes bounceZoomIn {
     0%, 25%, 55%, 85%, 100% {
@@ -2223,6 +2835,7 @@ Letter Fade in
     }
     90% { transform: scale(1.1) }
 }
+
 .bounceZoomOut { animation-name: bounceZoomOut }
 @keyframes bounceZoomOut {
     0%, 25%, 55%, 85%, 100% {
@@ -2240,9 +2853,9 @@ Letter Fade in
     90% { transform: scale(.9) }
 }
 
-/*--------------------------------------------------------------
- Bounce In
---------------------------------------------------------------*/
+/*************************************************************
+Bounce In
+**************************************************************/
 .bounceInTop { animation-name: bounceInTop }
 @keyframes bounceInTop {
     0% { transform: translate3d(0, -300%, 0) }
@@ -2250,6 +2863,7 @@ Letter Fade in
     73% { transform: translate3d(0, -12px, 0) }
     88% { transform: translate3d(0, 7px, 0) }
 }
+
 .bounceInBottom { animation-name: bounceInBottom }
 @keyframes bounceInBottom {
     0% { transform: translate3d(0, 300%, 0) }
@@ -2257,6 +2871,7 @@ Letter Fade in
     73% { transform: translate3d(0, 12px, 0) }
     88% { transform: translate3d(0, -8px, 0) }
 }
+
 .bounceInLeft { animation-name: bounceInLeft }
 @keyframes bounceInLeft {
     0% { transform: translate3d(-300%, 0, 0) }
@@ -2264,6 +2879,7 @@ Letter Fade in
     73% { transform: translate3d(-12px, 0, 0) }
     88% { transform: translate3d(8px, 0, 0) }
 }
+
 .bounceInRight { animation-name: bounceInRight }
 @keyframes bounceInRight {
     0% { transform: translate3d(300%, 0, 0) }
@@ -2271,61 +2887,82 @@ Letter Fade in
     73% { transform: translate3d(12px, 0, 0) }
     88% { transform: translate3d(-8px, 0, 0) }
 }
-/*--------------------------------------------------------------
- Bounce Out
---------------------------------------------------------------*/
+
+/*************************************************************
+Bounce Out
+**************************************************************/
 .bounceOutTop { animation-name: bounceOutTop }
 @keyframes bounceOutTop {
+    18%, 33%, 48% { opacity: 1}
     18% { transform: translate3d(0, 27px, 0) }
     33% { transform: translate3d(0, -12px, 0) }
     48% { transform: translate3d(0, 8px, 0) }
-    100% { transform: translate3d(0, -300%, 0) }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -300%, 0)
+    }
 }
+
 .bounceOutBottom { animation-name: bounceOutBottom }
 @keyframes bounceOutBottom {
+    18%, 33%, 48% { opacity: 1}
     18% { transform: translate3d(0, -27px, 0) }
     33% { transform: translate3d(0, 12px, 0) }
     48% { transform: translate3d(0, -8px, 0) }
-    100% { transform: translate3d(0, 300%, 0) }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 300%, 0)
+    }
 }
+
 .bounceOutLeft { animation-name: bounceOutLeft }
 @keyframes bounceOutLeft {
+    18%, 33%, 48% { opacity: 1}
     18% { transform: translate3d(27px, 0, 0) }
     33% { transform: translate3d(-12px, 0, 0) }
     48% { transform: translate3d(8px, 0, 0) }
-    100% { transform: translate3d(-300%, 0, 0) }
+    100% {
+        opacity: 0;
+        transform: translate3d(-300%, 0, 0)
+    }
 }
+
 .bounceOutRight { animation-name: bounceOutRight }
 @keyframes bounceOutRight {
+    18%, 33%, 48% { opacity: 1}
     18% { transform: translate3d(-27px, 0, 0) }
     33% { transform: translate3d(12px, 0, 0) }
     48% { transform: translate3d(-8px, 0, 0) }
-    100% { transform: translate3d(300%, 0, 0) }
+    100% {
+        opacity: 0;
+        transform: translate3d(300%, 0, 0)
+    }
 }
 
-/*--------------------------------------------------------------
- Perspective
---------------------------------------------------------------*/
+/*************************************************************
+Perspective
+**************************************************************/
 .perspectiveToTop { animation-name: perspectiveToTop; transform: perspective(500px); transform-style: preserve-3d }
 @keyframes perspectiveToTop {
-    50% { opacity: 1;}
+    50% { opacity: 1 }
     to {
         transform: perspective(500px) rotateX(90deg) translateY(-50px) translateZ(50px);
         opacity: 0;
     }
 }
+
 .perspectiveToBottom { animation-name: perspectiveToBottom; transform: perspective(500px); transform-style: preserve-3d }
 @keyframes perspectiveToBottom {
-    50% { opacity: 1;}
+    50% { opacity: 1 }
     to {
         transform: perspective(500px) rotateX(90deg) translateY(50px) translateZ(-50px);
         opacity: 0;
     }
 }
 
-/*--------------------------------------------------------------
- Zoom In
---------------------------------------------------------------*/
+/*************************************************************
+Zoom In
+**************************************************************/
 .zoomIn { animation-name: zoomIn }
 @keyframes zoomIn {
     from {
@@ -2333,6 +2970,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .zoomInLeft { animation-name: zoomInLeft }
 @keyframes zoomInLeft {
     from {
@@ -2340,6 +2978,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .zoomInRight { animation-name: zoomInRight }
 @keyframes zoomInRight {
     from {
@@ -2347,6 +2986,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .zoomInTop { animation-name: zoomInTop }
 @keyframes zoomInTop {
     from {
@@ -2354,6 +2994,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .zoomInBottom { animation-name: zoomInBottom }
 @keyframes zoomInBottom {
     from {
@@ -2362,9 +3003,9 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Zoom Out
---------------------------------------------------------------*/
+/*************************************************************
+Zoom Out
+**************************************************************/
 .zoomOut { animation-name: zoomOut }
 @keyframes zoomOut {
     to {
@@ -2372,6 +3013,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .zoomOutLeft { animation-name: zoomOutLeft }
 @keyframes zoomOutLeft {
     to {
@@ -2379,6 +3021,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .zoomOutRight { animation-name: zoomOutRight }
 @keyframes zoomOutRight {
     to {
@@ -2386,6 +3029,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .zoomOutTop { animation-name: zoomOutTop }
 @keyframes zoomOutTop {
     to {
@@ -2393,6 +3037,7 @@ Letter Fade in
         opacity: 0;
     }
 }
+
 .zoomOutBottom { animation-name: zoomOutBottom }
 @keyframes zoomOutBottom {
     to {
@@ -2401,9 +3046,9 @@ Letter Fade in
     }
 }
 
-/*--------------------------------------------------------------
- Dance
---------------------------------------------------------------*/
+/*************************************************************
+Dance
+**************************************************************/
 .danceTop { animation-name: danceTop; transform-origin: top }
 @keyframes danceTop {
     16% { transform: skew(-14deg) }
