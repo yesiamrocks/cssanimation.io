@@ -23,7 +23,7 @@ To get started, from the outset you download the complete library and then
 </html>
 ```
 
-2. Now add the class `cssanimation` and class of animation name like `fadeIn` for fade in animation to the element that you want to animate. [For list of animation class name check out the [home page](http://cssanimation.io/)
+2. Now add the class `cssanimation` and class of animation name like `fadeIn` for fade in animation to the element that you want to animate. For list of animation class name check out the [home page](http://cssanimation.io/)
 ``` html
 <!DOCTYPE html>
 <html lang="en">
