@@ -1,9 +1,9 @@
 # Getting started with cssanimation.io
 In modern web concept, cssanimation.io is the best controlling animation library for CSS and [GreenSock](https://greensock.com/),  Moving forward with this library, you need to have a basic idea on HTML and CSS3. We believe you have that. If you are pretty confused, just refreshing your idea from [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) to go along more easily.
 
-We also offer you to [GreenSock](https://greensock.com/) animation, just fly over here to get the guideline.
+We also offer you to [GreenSock](https://greensock.com/) animation, just fly over [here](https://cssanimation.io/how-to-use.html) to get the guideline.
 
-With cssanimation.io, all you have to do is to include the appropriate classes with your elements. The method of including the CSS version is outlined below:
+This library is too easy to install and implement. Anything you can be done with our relevant animation class name. So [Download](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) and let’s get started with this library.
 
 To get started, from the outset you download the complete library and then
 
@@ -23,7 +23,7 @@ To get started, from the outset you download the complete library and then
 </html>
 ```
 
-2. Now add the class `cssanimation` and class of animation name like `fadeIn` for fade in animation to the element that you want to animate. [For list of animation class name check out the [home page](http://cssanimation.io/) or check in codepen title red block section from below or click here ]
+2. Now add the class `cssanimation` and class of animation name like `fadeIn` for fade in animation to the element that you want to animate. [For list of animation class name check out the [home page](http://cssanimation.io/)
 ``` html
 <!DOCTYPE html>
 <html lang="en">
@@ -68,15 +68,20 @@ To get started, from the outset you download the complete library and then
     <meta charset="UTF-8">
     <title>Document</title> 
     <link rel="stylesheet" href="cssanimation.min.css">
-    <script type="text/javascript" src="letteranimation.js">
 </head> 
 <body> 
 
    <h1 class="cssanimation fadeIn infinite"> Example </h1> 
 
+   <script type="text/javascript" src="letteranimation.js">
 </body>
 </html>
 ```
+## Extremely light weight
+Unlike all the other complicated vendors, our `cssanimation.css` **is only 84kb with 300 animations, 165kb in the minified version with all prefix and only 10kb when compressed.
+And the letteranimation.js only 3kb, with 1kb in the minified version and only 0.6kb when compressed.**
+
+**Hard to believe it!!! We know, Believe it!!!**
 
 ## Having trouble?
 If **cssanimation.io** isn't doing what you expect it to please post a mail to hello@cssanimation.io or create a [issue](https://github.com/yesiamrocks/cssanimation.io/issues)
