@@ -1,5 +1,7 @@
 # Getting started with cssanimation.io
-In this documantation we discussed about cssanimation.io's CSS version which professional-grade animation library for the modern web. If you want cssanimation.io's animation by [GreenSock](https://greensock.com/), Please [check our another documantation](https://github.com/yesiamrocks/cssanimation.io/tree/master/GreenSock%20Version), which will guide you about the GreenSock.
+In modern web concept, cssanimation.io is the best controlling animation library for CSS and [GreenSock](https://greensock.com/),  Moving forward with this library, you need to have a basic idea on HTML and CSS3. We believe you have that. If you are pretty confused, just refreshing your idea from [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) to go along more easily.
+
+We also offer you to [GreenSock](https://greensock.com/) animation, just fly over here to get the guideline.
 
 With cssanimation.io, all you have to do is to include the appropriate classes with your elements. The method of including the CSS version is outlined below:
 

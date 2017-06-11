@@ -1,13 +1,15 @@
-/*******************************************************************************************************************
-Created and maintained by: Pavel
-Find me at: https://www.linkedin.com/in/yesiamrocks/
-Email: hello@cssanimation.io
-Github: https://github.com/yesiamrocks/cssanimation.io
-Current Version: 1.0.2
-Title: "A Animation Library for Developers and Ninjas"
-Copyright (c) 2016 Pavel
-License: cssanimattion is licensed under the MIT license
-******************************************************************************************************************/
+/**
+ * letteranimation.js
+ * Current Version: 1.0.2
+ * https://www.cssanimatio.io
+ * Created and maintained by: Pavel
+ * Find me at: https://www.linkedin.com/in/yesiamrocks/
+ * Email: hello@cssanimation.io
+ * Github: https://github.com/yesiamrocks/cssanimation.io
+ * Title: A CSS Animation Library for Developers and Ninjas
+ * Copyright (c) 2017 Pavel
+ * License: cssanimation.io is licensed under the MIT license
+ **/
 window.onload = function() {
     animateSequence();
     animateRandom();
