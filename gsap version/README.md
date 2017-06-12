@@ -1,7 +1,7 @@
 # How to use cssanimation.io's GSAP version
 This library is not only built for CSS, it supports [GreenSock](https://greensock.com/) as well. Greensock is the standard JavaScript Animation framework in the world. It can help you to animate your HTML elements.
 
-This is absolutely easy to have your HTML elements animated by our  [GreenScok Version](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) Just add your desired class name. 
+This is absolutely easy to have your HTML elements animated by our  [GreenScok Version](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) After include all the files just add your desired class name. 
 
 So why worried? [ Download ] ‍and let’s get started with this library.
 
