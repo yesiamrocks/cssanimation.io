@@ -14,12 +14,12 @@ To get started, from the outset you download the complete library and then
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <title>Document</title> 
+    <title>CSS Animation Library for Developers and Ninjas</title> 
     <link href="cssanimation.min.css" rel="stylesheet">
 </head> 
 <body> 
 
- </body>
+</body>
 </html>
 ```
 
@@ -29,7 +29,7 @@ To get started, from the outset you download the complete library and then
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <title>Document</title> 
+    <title>CSS Animation Library for Developers and Ninjas</title> 
     <link rel="stylesheet" href="cssanimation.min.css">
 </head> 
 <body> 
@@ -46,7 +46,7 @@ To get started, from the outset you download the complete library and then
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <title>Document</title> 
+    <title>CSS Animation Library for Developers and Ninjas</title> 
     <link rel="stylesheet" href="cssanimation.min.css">
 </head> 
 <body> 
@@ -54,7 +54,7 @@ To get started, from the outset you download the complete library and then
    <h1 class="cssanimation leFadeIn sequence"> Example </h1>
    <h1 class="cssanimation leFadeIn random"> Example </h1>
 
-   <script type="text/javascript" src="letteranimation.js">
+   <script type="text/javascript" src="letteranimation.js"></script>
 </body>
 </html>
 ```
@@ -66,14 +66,14 @@ To get started, from the outset you download the complete library and then
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <title>Document</title> 
+    <title>CSS Animation Library for Developers and Ninjas</title> 
     <link rel="stylesheet" href="cssanimation.min.css">
 </head> 
 <body> 
 
    <h1 class="cssanimation fadeIn infinite"> Example </h1> 
 
-   <script type="text/javascript" src="letteranimation.js">
+   <script type="text/javascript" src="letteranimation.js"></script>
 </body>
 </html>
 ```

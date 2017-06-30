@@ -16,7 +16,7 @@ First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock]
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <title>Document</title> 
+    <title>CSS Animation Library for Developers and Ninjas</title> 
 </head> 
 <body> 
 
@@ -33,14 +33,14 @@ First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock]
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <title>Document</title> 
+    <title>CSS Animation Library for Developers and Ninjas</title> 
 </head> 
 <body> 
 
    <h1 class="cssanimation fadeIn"> Example </h1> 
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> 
-   <script type="text/javascript" src="cssanimation-gsap.js">
+   <script type="text/javascript" src="cssanimation-gsap.js"></script>
 </body>
 </html>
 ```
@@ -52,14 +52,14 @@ First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock]
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <title>Document</title> 
+    <title>CSS Animation Library for Developers and Ninjas</title> 
 </head> 
 <body> 
 
    <h1 class="cssanimation leFadeIn"> Example </h1>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> 
-   <script type="text/javascript" src="cssanimation-gsap.js">
+   <script type="text/javascript" src="cssanimation-gsap.js"></script>
 </body>
 </html>
 ```
