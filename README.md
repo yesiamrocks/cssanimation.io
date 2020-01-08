@@ -8,14 +8,15 @@ This library is too easy to install and implement. Anything you can be done with
 To get started, from the outset you download the complete library and then
 
 
-1. Include the `cssanimation.css` or `cssanimation.min.css` stylesheet into the head.
+1. Include the `cssanimation.css` or `cssanimation.min.css` stylesheet into the head or use a CDN hosted version by jsDelivr
+
 ``` html
 <!DOCTYPE html>
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
     <title>CSS Animation Library for Developers and Ninjas</title> 
-    <link href="cssanimation.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
 </head> 
 <body> 
 
@@ -30,7 +31,7 @@ To get started, from the outset you download the complete library and then
 <head> 
     <meta charset="UTF-8">
     <title>CSS Animation Library for Developers and Ninjas</title> 
-    <link rel="stylesheet" href="cssanimation.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
 </head> 
 <body> 
 
@@ -47,7 +48,7 @@ To get started, from the outset you download the complete library and then
 <head> 
     <meta charset="UTF-8">
     <title>CSS Animation Library for Developers and Ninjas</title> 
-    <link rel="stylesheet" href="cssanimation.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
 </head> 
 <body> 
 
@@ -67,7 +68,7 @@ To get started, from the outset you download the complete library and then
 <head> 
     <meta charset="UTF-8">
     <title>CSS Animation Library for Developers and Ninjas</title> 
-    <link rel="stylesheet" href="cssanimation.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
 </head> 
 <body> 
 
