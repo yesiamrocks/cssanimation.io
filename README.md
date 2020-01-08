@@ -7,8 +7,12 @@ This library is too easy to install and implement. Anything you can be done with
 
 To get started, from the outset you download the complete library or use a CDN hosted version by jsDelivr 
 - cssanimation.css: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
-- `cssanimation.min.css`: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
-- `letteranimation.js`: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.js
+- cssanimation.min.css: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
+- letteranimation.js: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.js
+- letteranimation.min.js: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js
+
+- cssanimation greenSock version: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.js
+- cssanimation greenSock min version: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.min.js
 
 
 And then
