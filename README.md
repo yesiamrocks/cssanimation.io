@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/yesiamrocks/cssanimation.io/blob/master/LICENSE) 
 [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/yesiamrocks/cssanimation.io/releases/) 
 [![GitHub code-size](https://img.shields.io/github/languages/code-size/yesiamrocks/cssanimation.io?style=plastic)](https://github.com/yesiamrocks/cssanimation.io/)
-[![HitCount](http://hits.dwyl.io/Naereen/badges.svg?style=plastic)](https://github.com/yesiamrocks/cssanimation.io/)
+[![HitCount](https://img.shields.io/badge/size-sizep-brightgreen)](https://github.com/yesiamrocks/cssanimation.io/)
 
 > In modern web concept, cssanimation.io is the best controlling animation library for CSS and [GreenSock](https://greensock.com/),  Moving forward with this library, you need to have a basic idea on HTML and CSS3. We believe you have that. If you are pretty confused, just refreshing your idea from [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) to go along more easily.
 
