@@ -17,8 +17,7 @@ To get started, from the outset you download the complete library or use a CDN h
 - **cssanimation greenSock min version:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.min.js
 
 
-And then
-
+## Usage
 
 1. Include the `cssanimation.css` or `cssanimation.min.css` stylesheet into the head 
 
