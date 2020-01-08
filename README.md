@@ -6,8 +6,8 @@ We also offer you to [GreenSock](https://greensock.com/) animation, just fly ove
 This library is too easy to install and implement. Anything you can be done with our relevant animation class name. So [Download](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) and let’s get started with this library.
 
 To get started, from the outset you download the complete library or use a CDN hosted version by jsDelivr 
-- cssanimation.css: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
-- cssanimation.min.css: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
+**cssanimation.css:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
+**cssanimation.min.css:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
 - letteranimation.js: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.js
 - letteranimation.min.js: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js
 - cssanimation greenSock version: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.js
