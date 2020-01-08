@@ -1,6 +1,6 @@
 /**
  * letteranimation.js
- * Current Version: 1.0.2
+ * Current Version: 1.0.3
  * https://www.cssanimatio.io
  * Created and maintained by: Pavel
  * Find me at: https://www.linkedin.com/in/yesiamrocks/
