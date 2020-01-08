@@ -12,7 +12,7 @@ This is absolutely easy to have your HTML elements animated by our  [GreenScok V
 
 And then just add your desired class name. So why worried? Include ‍and let’s get started with this library.
 
-First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock](https://greensock.com/tweenmax) and download cssanimation.io's GSAP script [cssanimation-gsap.js](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master)
+First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock](https://greensock.com/tweenmax) and include cssanimation.io's GSAP script `https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.min.js`
 
 1. Now include the `TweenMax.min.js` and `cssanimation-gsap.js` before the body tag like below:
 
