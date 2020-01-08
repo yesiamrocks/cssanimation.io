@@ -1,9 +1,16 @@
 # How to use cssanimation.io's GSAP version
 This library is not only built for CSS, it supports [GreenSock](https://greensock.com/) as well. Greensock is the standard JavaScript Animation framework in the world. It can help you to animate your HTML elements.
 
-This is absolutely easy to have your HTML elements animated by our  [GreenScok Version](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) After include all the files just add your desired class name. 
+This is absolutely easy to have your HTML elements animated by our  [GreenScok Version](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) After include all the files  or use a CDN hosted version by jsDelivr. All CDN URLs below:
 
-So why worried? [ Download ] ‍and let’s get started with this library.
+- **cssanimation.css:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
+- **cssanimation.min.css:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
+- **letteranimation.js:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.js
+- **letteranimation.min.js:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js
+- **cssanimation greenSock version:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.js
+- **cssanimation greenSock min version:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.min.js
+
+And then just add your desired class name. So why worried? Include ‍and let’s get started with this library.
 
 please follow the instruction below
 
@@ -21,7 +28,7 @@ First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock]
 <body> 
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
-   <script type="text/javascript" src="cssanimation-gsap.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.min.js"></script>
 </body>
 </html>
 ```
@@ -40,7 +47,7 @@ First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock]
    <h1 class="cssanimation fadeIn"> Example </h1> 
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> 
-   <script type="text/javascript" src="cssanimation-gsap.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.min.js"></script>
 </body>
 </html>
 ```
@@ -59,7 +66,7 @@ First, you download or grab the CDN URL of `TweenMax.js` plugin from [GreenSock]
    <h1 class="cssanimation leFadeIn"> Example </h1>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> 
-   <script type="text/javascript" src="cssanimation-gsap.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.min.js"></script>
 </body>
 </html>
 ```
