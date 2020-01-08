@@ -1,4 +1,5 @@
-# Getting started with cssanimation.io [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/yesiamrocks/cssanimation.io/blob/master/LICENSE)
+# Getting started with cssanimation.io [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/yesiamrocks/cssanimation.io/blob/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/yesiamrocks/cssanimation.io/releases/) [![GitHub commits](https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg)](https://github.com/yesiamrocks/cssanimation.io/commits/)
+
 > In modern web concept, cssanimation.io is the best controlling animation library for CSS and [GreenSock](https://greensock.com/),  Moving forward with this library, you need to have a basic idea on HTML and CSS3. We believe you have that. If you are pretty confused, just refreshing your idea from [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) to go along more easily.
 
 This library is too easy to install and implement. Anything you can be done with our relevant animation class name. So [Download](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) and let’s get started with this library.
