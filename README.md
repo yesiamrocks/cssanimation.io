@@ -5,25 +5,16 @@ We also offer you to [GreenSock](https://greensock.com/) animation, just fly ove
 
 This library is too easy to install and implement. Anything you can be done with our relevant animation class name. So [Download](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) and let’s get started with this library.
 
-To get started, from the outset you download the complete library and then
+To get started, from the outset you download the complete library or use a CDN hosted version by jsDelivr 
+- cssanimation.css: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
+- `cssanimation.min.css`: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
+- `letteranimation.js`: https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.js
 
 
-1. Include the `cssanimation.css` or `cssanimation.min.css` stylesheet into the head or use a CDN hosted version by jsDelivr
+And then
 
-All CDN URLs
-``` html
-<!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <title>CSS Animation Library for Developers and Ninjas</title> 
-    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-</head> 
-<body> 
 
-</body>
-</html>
-```
+1. Include the `cssanimation.css` or `cssanimation.min.css` stylesheet into the head 
 
 ``` html
 <!DOCTYPE html>
