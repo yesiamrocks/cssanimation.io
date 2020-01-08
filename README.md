@@ -1,7 +1,7 @@
 # Getting started with cssanimation.io 
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/yesiamrocks/cssanimation.io/blob/master/LICENSE) 
-[![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/yesiamrocks/cssanimation.io/) 
+[![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=plastic&label=Fork)](https://github.com/yesiamrocks/cssanimation.io/) 
 [![GitHub code-size](https://img.shields.io/github/languages/code-size/yesiamrocks/cssanimation.io?style=plastic)](https://github.com/yesiamrocks/cssanimation.io/)
 [![HitCount](http://hits.dwyl.io/Naereen/badges.svg)](https://github.com/yesiamrocks/cssanimation.io/)
 
