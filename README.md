@@ -64,7 +64,7 @@ And then
    <h1 class="cssanimation leFadeIn sequence"> Example </h1>
    <h1 class="cssanimation leFadeIn random"> Example </h1>
 
-   <script type="text/javascript" src="letteranimation.js"></script>
+   <script type="text/javascript" src=" https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
 </body>
 </html>
 ```
@@ -83,7 +83,7 @@ And then
 
    <h1 class="cssanimation fadeIn infinite"> Example </h1> 
 
-   <script type="text/javascript" src="letteranimation.js"></script>
+   <script type="text/javascript" src=" https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
 </body>
 </html>
 ```
