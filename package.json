@@ -1,5 +1,5 @@
 {
-  "name": "@hellouxpavel/cssanimation",
+  "name": "cssanimation",
   "version": "2.0.1",
   "description": "Modular and lightweight CSS animation library",
   "main": "dist/cssanimation.css",
