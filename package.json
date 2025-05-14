@@ -1,0 +1,21 @@
+{
+  "name": "@hellouxpavel/cssanimation",
+  "version": "2.0.1",
+  "description": "Modular and lightweight CSS animation library",
+  "main": "dist/cssanimation.css",
+  "keywords": ["css", "animation", "library", "scroll", "frontend", "modular"],
+  "author": "Pavel <hello@cssanimation.io>",
+  "license": "Hippocratic-2.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yesiamrocks/cssanimation.io"
+  },
+  "bugs": {
+    "url": "https://github.com/yesiamrocks/cssanimation.io/issues"
+  },
+  "homepage": "https://github.com/yesiamrocks/cssanimation.io#readme",
+  "files": [
+    "dist/",
+    "src/"
+  ]
+}
