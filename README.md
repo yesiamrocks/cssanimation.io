@@ -141,65 +141,114 @@ Whether you're building a landing page, a portfolio, sliders, or an onboarding e
 
 Include in your `<head>`:
 
-````html
+```html
 <link
   href="https://cdn.jsdelivr.net/npm/cssanimationio/dist/cssanimation.css"
   rel="stylesheet"
 />
+```
 
-### ✅ Option B: Use with NPM ```bash npm i cssanimationio ```import
+### ✅ Option B: Use with NPM `bash npm i cssanimationio `import
+
 'cssanimationio/dist/cssanimation.css'; ## 🎯 Usage Examples Basic Fade In
+
 <h1 class="cssanimation fadeIn">Hello, World!</h1>
 
 Letter-by-Letter Animation Include the letter animation script: ```html
+
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio/dist/letteranimation.min.js"></script>
 
 Then animate letter-by-letter: ```html
+
 <h1 class="cssanimation leFadeIn sequence">Sequence</h1>
 <h1 class="cssanimation leFadeIn random">Random</h1>
 
-##📚 Modular Import Only need fade and zoom? ```html
+##📚 Modular Import
+Only need fade and zoom?
+
+```html
 <link href="cssanimation.io/src/fade.css" rel="stylesheet" />
 <link href="cssanimation.io/src/zoom.css" rel="stylesheet" />
+```
 
-### 🧩 Available Modules | Module | File | | --- | --- | | Fade | `src/fade.css`
-| | Zoom | `src/zoom.css` | | Rotate | `src/rotate.css` | | Bounce |
-`src/bounce.css` | | Slide | `src/slide.css` | | ...and more | See `/src/`
-folder | ## 🎛️ Utility Class System for Animations Animate.css comes packed with
-a few utility classes to simplify its use. All classes should be added alongside
-.cssanimation and your animation class, like: ### ⏱️ Duration (Speed Classes) |
-Class Name | Duration | Description | | ------------- | -------- |
-------------------------- | | `speed-blitz` | `0.3s` | Very fast | |
-`speed-quick` | `0.6s` | Default (slightly faster) | | `speed-chill` | `1.2s` |
-Calm and fluid | | `speed-drift` | `2s` | Slow motion | | `speed-snail` | `3s` |
-Super slow | ### ⏳ Delay (Start Later) | Class Name | Delay | Description | |
----------- | ------- | ----------------- | | `delay-1` | `0.25s` | Slight pause
-| | `delay-2` | `0.5s` | Half second delay | | `delay-3` | `1s` | One second
-delay | | `delay-5` | `2s` | Two seconds delay | ### 🌀 Easing (Timing
-Functions) | Class Name | Easing Function | Description | | ------------- |
------------------------------- | --------------------- | | `ease-smooth` |
-`ease-in-out` | Default smooth motion | | `ease-snappy` | `cubic-bezier(.5, 1.8,
-.5, 1)` | Spring pop | | `ease-chill` | `ease-in` | Gentle start | |
-`ease-punch` | `ease-out` | Quick exit | | `ease-linear` | `linear` | Constant
-speed | ### 🔁 Repeating (Loops) | Class Name | Behavior | Description | |
--------------- | -------------------- | ----------------------- | | `loop-once`
-| `1` | Play one time (default) | | `loop-forever` | `infinite` | Infinite
-repeat | | `loop-triple` | `3` | 3x repeat | | `loop-bounce` | `infinite
-alternate` | Ping-pong style | ### ✨ Optional Combo Example ```html
+### 🧩 Available Modules
+
+| Module      | File               |
+| ----------- | ------------------ |
+| Fade        | `src/fade.css`     |
+| Zoom        | `src/zoom.css`     |
+| Rotate      | `src/rotate.css`   |
+| Bounce      | `src/bounce.css`   |
+| Slide       | `src/slide.css`    |
+| ...and more | See `/src/` folder |
+
+## 🎛️ Utility Class System for Animations
+
+Animate.css comes packed with a few utility classes to simplify its use. All classes should be added alongside .cssanimation and your animation class, like:
+
+### ⏱️ Duration (Speed Classes)
+
+| Class Name    | Duration | Description               |
+| ------------- | -------- | ------------------------- |
+| `speed-blitz` | `0.3s`   | Very fast                 |
+| `speed-quick` | `0.6s`   | Default (slightly faster) |
+| `speed-chill` | `1.2s`   | Calm and fluid            |
+| `speed-drift` | `2s`     | Slow motion               |
+| `speed-snail` | `3s`     | Super slow                |
+
+### ⏳ Delay (Start Later)
+
+| Class Name | Delay   | Description       |
+| ---------- | ------- | ----------------- |
+| `delay-1`  | `0.25s` | Slight pause      |
+| `delay-2`  | `0.5s`  | Half second delay |
+| `delay-3`  | `1s`    | One second delay  |
+| `delay-5`  | `2s`    | Two seconds delay |
+
+### 🌀 Easing (Timing Functions)
+
+| Class Name    | Easing Function                | Description           |
+| ------------- | ------------------------------ | --------------------- |
+| `ease-smooth` | `ease-in-out`                  | Default smooth motion |
+| `ease-snappy` | `cubic-bezier(.5, 1.8, .5, 1)` | Spring pop            |
+| `ease-chill`  | `ease-in`                      | Gentle start          |
+| `ease-punch`  | `ease-out`                     | Quick exit            |
+| `ease-linear` | `linear`                       | Constant speed        |
+
+### 🔁 Repeating (Loops)
+
+| Class Name     | Behavior             | Description             |
+| -------------- | -------------------- | ----------------------- |
+| `loop-once`    | `1`                  | Play one time (default) |
+| `loop-forever` | `infinite`           | Infinite repeat         |
+| `loop-triple`  | `3`                  | 3x repeat               |
+| `loop-bounce`  | `infinite alternate` | Ping-pong style         |
+
+### ✨ Optional Combo Example
+
+```html
 <h2 class="cssanimation zoomIn speed-chill delay-3 ease-snappy loop-bounce">
   Magical Entrance!
 </h2>
+```
 
-## ♿ Accessibility: Reduce Motion Support By default, cssanimation.io respects
-user system preferences. When `prefers-reduced-motion: reduce` is enabled,
-animations are automatically turned off for a better UX. ##📄 License
-Animate.css is licensed under the Hippocratic License. ## CSS Animation Library
-for Modern Developers and Designers Fast, modular animations for text, elements,
-and letters — no JS required. **Modular CSS Animation Library** for creative
-front-end developers. Add delightful, performant animations to your site — with
-**zero JavaScript**, no dependencies, and fine-grained control.
+## ♿ Accessibility: Reduce Motion Support
+
+By default, cssanimation.io respects user system preferences.  
+When `prefers-reduced-motion: reduce` is enabled, animations are automatically turned off for a better UX.
+
+##📄 License
+Animate.css is licensed under the Hippocratic License.
+
+## CSS Animation Library for Modern Developers and Designers
+
+Fast, modular animations for text, elements, and letters — no JS required.
+
+**Modular CSS Animation Library** for creative front-end developers.  
+Add delightful, performant animations to your site — with **zero JavaScript**, no dependencies, and fine-grained control.
+
+```html
 ![cssanimation.io banner](https://cssanimation.io/assets/banner.png)
 <!-- Optional promo image -->
-
 ---
-````
+```
