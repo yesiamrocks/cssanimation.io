@@ -150,18 +150,26 @@ Include in your `<head>`:
 
 ### ✅ Option B: Use with NPM `bash npm i cssanimationio `import
 
-'cssanimationio/dist/cssanimation.css'; ## 🎯 Usage Examples Basic Fade In
+'cssanimationio/dist/cssanimation.css';
 
+## 🎯 Usage Examples Basic Fade In
+
+```html
 <h1 class="cssanimation fadeIn">Hello, World!</h1>
+```
 
-Letter-by-Letter Animation Include the letter animation script: ```html
+Letter-by-Letter Animation Include the letter animation script:
 
+```html
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio/dist/letteranimation.min.js"></script>
+```
 
-Then animate letter-by-letter: ```html
+Then animate letter-by-letter:
 
+```html
 <h1 class="cssanimation leFadeIn sequence">Sequence</h1>
 <h1 class="cssanimation leFadeIn random">Random</h1>
+```
 
 ##📚 Modular Import
 Only need fade and zoom?
