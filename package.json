@@ -3,7 +3,14 @@
   "version": "2.0.1",
   "description": "Modular and lightweight CSS animation library",
   "main": "dist/cssanimation.css",
-  "keywords": ["css", "animation", "library", "scroll", "frontend", "modular"],
+  "keywords": [
+    "css",
+    "animation",
+    "library",
+    "scroll",
+    "frontend",
+    "modular"
+  ],
   "author": "Pavel <hello@cssanimation.io>",
   "license": "Hippocratic-2.1",
   "repository": {
@@ -17,5 +24,16 @@
   "files": [
     "dist/",
     "src/"
-  ]
+  ],
+  "scripts": {
+    "build": "postcss src/*.css -d dist/ --no-map",
+    "build:watch": "postcss src/*.css -d dist/ --watch"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-prefix-selector": "^2.1.1",
+    "postcss-preset-env": "^10.1.6",
+    "postcss-selector-namespace": "^3.0.1"
+  }
 }
