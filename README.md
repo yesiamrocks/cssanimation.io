@@ -148,9 +148,9 @@ Include in your `<head>`:
 />
 ```
 
-### ✅ Option B: Use with NPM `bash npm i cssanimationio `import
+### ✅ Option B: Use with NPM `bash npm i cssanimationio import`
 
-'cssanimationio/dist/cssanimation.css';
+`cssanimationio/dist/cssanimation.css;`
 
 ## 🎯 Usage Examples Basic Fade In
 
