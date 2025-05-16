@@ -111,10 +111,6 @@ And the letteranimation.js only 3kb, with 1kb in the minified version and only 0
 
 **Hard to believe it!!! We know, Believe it!!!**
 
-## Having trouble?
-
-If **cssanimation.io** isn't doing what you expect it to please post a mail to hello@cssanimation.io or create a [issue](https://github.com/yesiamrocks/cssanimation.io/issues)
-
 # cssanimation.io — A Developer and Designer's Animation Playground
 
 Bring your interfaces to life with over **300 CSS and GSAP-powered animations**.  
@@ -123,22 +119,31 @@ Lightweight, modular, and super easy to use — no bloated frameworks, just clea
 Whether you're building a landing page, a portfolio, sliders, or an onboarding experience,  
 **cssanimation.io** gives you plug-and-play classes to animate text, elements, and letters — right out of the box.
 
+## CSS Animation Library for Modern Developers and Designers
+
 ## 🪶 Why Developers Love It
 
-- ✅ Over 300 prebuilt animations: fade, zoom, rotate, fly, bounce, skew, and more
-- 🎯 Lightweight, pure CSS (no JavaScript)
-- 🧱 Modular — import only what you need
-- 💨 Great for scroll reveals, UI micro interactions, hero effects, and more
-- 🌐 CDN & NPM ready
+- **Over 300 prebuilt animations**: fade, zoom, rotate, fly, bounce, skew, and more.
+- Animations for **text, elements and letters**.
+- Lightweight, pure CSS (no JavaScript).
+- **Zero JavaScript**, no dependencies, and fine-grained control.
+- Modular — import only what you need.
+- Great for scroll reveals, UI micro interactions, hero effects, and more.
+- CDN & NPM ready.
 
 ## Installing
 
 ### Option A: Install with NPM
 
-`npm i cssanimationio`
+```bash
+npm i cssanimationio
+```
 
 Import it into your file:
-`import 'animate.css';`
+
+```bash
+`import 'cssanimation.css';`
+```
 
 ### Option B: Install via CDN
 
@@ -154,14 +159,16 @@ Include in your `<head>`:
 ```
 
 ## Usage Examples
+
 After installing `cssanimation.css` add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name check out the home page
 
 ```html
 <h1 class="cssanimation fadeIn">Hello, World!</h1>
 ```
+
 That's it! You've got a CSS animated element. Super!
 
-## Letter-by-Letter Animation
+### Letter-by-Letter Animation
 
 Include the letter animation script:
 
@@ -176,7 +183,8 @@ Then animate letter-by-letter:
 <h1 class="cssanimation leFadeIn random">Random</h1>
 ```
 
-##📚 Modular Import
+### Modular Import
+
 Only need fade and zoom?
 
 ```html
@@ -184,7 +192,7 @@ Only need fade and zoom?
 <link href="cssanimation.io/src/zoom.css" rel="stylesheet" />
 ```
 
-### Available Modules
+#### Available Modules
 
 | Module      | File               |
 | ----------- | ------------------ |
@@ -237,7 +245,7 @@ Animate.css comes packed with a few utility classes to simplify its use. All cla
 | `loop-triple`  | `3`                  | 3x repeat               |
 | `loop-bounce`  | `infinite alternate` | Ping-pong style         |
 
-### Optional Combo Example
+### Combo Example
 
 ```html
 <h2 class="cssanimation zoomIn speed-chill delay-3 ease-snappy loop-bounce">
@@ -254,15 +262,6 @@ When `prefers-reduced-motion: reduce` is enabled, animations are automatically t
 
 cssanimation.io is licensed under the [Hippocratic License.](https://firstdonoharm.dev/)
 
-## CSS Animation Library for Modern Developers and Designers
+## Having trouble?
 
-Fast, modular animations for text, elements, and letters — no JS required.
-
-**Modular CSS Animation Library** for creative front-end developers.  
-Add delightful, performant animations to your site — with **zero JavaScript**, no dependencies, and fine-grained control.
-
-```html
-![cssanimation.io banner](https://cssanimation.io/assets/banner.png)
-<!-- Optional promo image -->
----
-```
+If **cssanimation.io** isn't doing what you expect it to please create a [issue](https://github.com/yesiamrocks/cssanimation.io/issues)
