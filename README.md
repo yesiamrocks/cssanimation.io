@@ -115,11 +115,7 @@ And the letteranimation.js only 3kb, with 1kb in the minified version and only 0
 
 If **cssanimation.io** isn't doing what you expect it to please post a mail to hello@cssanimation.io or create a [issue](https://github.com/yesiamrocks/cssanimation.io/issues)
 
-## License
-
-cssanimation.io is licensed under the [MIT Licenses](https://github.com/yesiamrocks/cssanimation.io/blob/master/LICENSE)
-
-# ✨ cssanimation.io — A Developer and Designer's Animation Playground
+# cssanimation.io — A Developer and Designer's Animation Playground
 
 Bring your interfaces to life with over **300 CSS and GSAP-powered animations**.  
 Lightweight, modular, and super easy to use — no bloated frameworks, just clean motion.
@@ -135,30 +131,39 @@ Whether you're building a landing page, a portfolio, sliders, or an onboarding e
 - 💨 Great for scroll reveals, UI micro interactions, hero effects, and more
 - 🌐 CDN & NPM ready
 
-## 🚀 Quick Start
+## Installing
 
-### ✅ Option A: Install via CDN
+### Option A: Install with NPM
+
+`npm i cssanimationio`
+
+Import it into your file:
+`import 'animate.css';`
+
+### Option B: Install via CDN
 
 Include in your `<head>`:
 
 ```html
-<link
-  href="https://cdn.jsdelivr.net/npm/cssanimationio/dist/cssanimation.css"
-  rel="stylesheet"
-/>
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/cssanimationio/dist/cssanimation.css"
+  />
+</head>
 ```
 
-### ✅ Option B: Use with NPM `bash npm i cssanimationio import`
-
-`cssanimationio/dist/cssanimation.css;`
-
-## 🎯 Usage Examples Basic Fade In
+## Usage Examples
+After installing `cssanimation.css` add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name check out the home page
 
 ```html
 <h1 class="cssanimation fadeIn">Hello, World!</h1>
 ```
+That's it! You've got a CSS animated element. Super!
 
-Letter-by-Letter Animation Include the letter animation script:
+## Letter-by-Letter Animation
+
+Include the letter animation script:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio/dist/letteranimation.min.js"></script>
@@ -179,7 +184,7 @@ Only need fade and zoom?
 <link href="cssanimation.io/src/zoom.css" rel="stylesheet" />
 ```
 
-### 🧩 Available Modules
+### Available Modules
 
 | Module      | File               |
 | ----------- | ------------------ |
@@ -190,11 +195,11 @@ Only need fade and zoom?
 | Slide       | `src/slide.css`    |
 | ...and more | See `/src/` folder |
 
-## 🎛️ Utility Class System for Animations
+## Utility Class System for Animations
 
 Animate.css comes packed with a few utility classes to simplify its use. All classes should be added alongside .cssanimation and your animation class, like:
 
-### ⏱️ Duration (Speed Classes)
+### Duration (Speed Classes)
 
 | Class Name    | Duration | Description               |
 | ------------- | -------- | ------------------------- |
@@ -204,7 +209,7 @@ Animate.css comes packed with a few utility classes to simplify its use. All cla
 | `speed-drift` | `2s`     | Slow motion               |
 | `speed-snail` | `3s`     | Super slow                |
 
-### ⏳ Delay (Start Later)
+### Delay (Start Later)
 
 | Class Name | Delay   | Description       |
 | ---------- | ------- | ----------------- |
@@ -213,7 +218,7 @@ Animate.css comes packed with a few utility classes to simplify its use. All cla
 | `delay-3`  | `1s`    | One second delay  |
 | `delay-5`  | `2s`    | Two seconds delay |
 
-### 🌀 Easing (Timing Functions)
+### Easing (Timing Functions)
 
 | Class Name    | Easing Function                | Description           |
 | ------------- | ------------------------------ | --------------------- |
@@ -223,7 +228,7 @@ Animate.css comes packed with a few utility classes to simplify its use. All cla
 | `ease-punch`  | `ease-out`                     | Quick exit            |
 | `ease-linear` | `linear`                       | Constant speed        |
 
-### 🔁 Repeating (Loops)
+### Repeating (Loops)
 
 | Class Name     | Behavior             | Description             |
 | -------------- | -------------------- | ----------------------- |
@@ -232,7 +237,7 @@ Animate.css comes packed with a few utility classes to simplify its use. All cla
 | `loop-triple`  | `3`                  | 3x repeat               |
 | `loop-bounce`  | `infinite alternate` | Ping-pong style         |
 
-### ✨ Optional Combo Example
+### Optional Combo Example
 
 ```html
 <h2 class="cssanimation zoomIn speed-chill delay-3 ease-snappy loop-bounce">
@@ -240,13 +245,14 @@ Animate.css comes packed with a few utility classes to simplify its use. All cla
 </h2>
 ```
 
-## ♿ Accessibility: Reduce Motion Support
+## Accessibility: Reduce Motion Support
 
 By default, cssanimation.io respects user system preferences.  
 When `prefers-reduced-motion: reduce` is enabled, animations are automatically turned off for a better UX.
 
-##📄 License
-Animate.css is licensed under the Hippocratic License.
+## License
+
+cssanimation.io is licensed under the [Hippocratic License.](https://firstdonoharm.dev/)
 
 ## CSS Animation Library for Modern Developers and Designers
 
