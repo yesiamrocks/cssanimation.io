@@ -64,7 +64,7 @@ After installing `cssanimation.css` library, now add the class `.cssanimation` a
 <h1 class="cssanimation fadeIn">Hello, World!</h1>
 ```
 
-#### _That's it! You've got a CSS animated element. Super!_
+_That's it! You've got a CSS animated element. Super!_
 
 ## How to Use Letter Animations
 
@@ -123,7 +123,7 @@ Only need fade and zoom?
 
 ## Utility Class
 
-Animate.css comes packed with a few utility classes to simplify its use. All classes should be added alongside .cssanimation and your animation class, like:
+cssanimation.io includes handy utility classes to make animations even easier to apply. Just use them along with the `.cssanimation` base class and your chosen animation class.
 
 ### Duration (Speed Classes)
 
