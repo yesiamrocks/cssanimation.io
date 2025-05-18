@@ -1,44 +1,36 @@
-cssanimation.io Copyright 2025 Shafayetul Islam Pavel
+Parity Public License 7.0.0
 
-Hippocratic License Version Number: 2.1
+cssanimation.io Copyright © 2025 Shafayetul Islam Pavel
 
-Purpose. The purpose of this License is for the Licensor named above to permit the Licensee (as defined below) broad permission, if consistent with Human Rights Laws and Human Rights Principles (as each is defined below), to use and work with the Software (as defined below) within the full scope of Licensor’s copyright and patent rights, if any, in the Software, while ensuring attribution and protecting the Licensor from liability.
+Purpose
 
-Permission and Conditions. The Licensor grants permission by this license (“License”), free of charge, to the extent of Licensor’s rights under applicable copyright and patent law, to any person or entity (the “Licensee”) obtaining a copy of this software and associated documentation files (the “Software”), to do everything with the Software that would otherwise infringe (i) the Licensor’s copyright in the Software or (ii) any patent claims to the Software that the Licensor can license or becomes able to license, subject to all of the following terms and conditions:
+This license gives everyone as much permission to work with this software as possible, while protecting contributors from liability and ensuring paid licenses for commercial use.
 
-- Acceptance. This License is automatically offered to every person and entity subject to its terms and conditions. Licensee accepts this License and agrees to its terms and conditions by taking any action with the Software that, absent this License, would infringe any intellectual property right held by Licensor.
+Acceptance
 
-- Notice. Licensee must ensure that everyone who gets a copy of any part of this Software from Licensee, with or without changes, also receives the License and the above copyright notice (and if included by the Licensor, patent, trademark and attribution notice). Licensee must cause any modified versions of the Software to carry prominent notices stating that Licensee changed the Software.
+In order to receive this license, you must agree to its rules. Those rules are both obligations under that agreement and conditions to your license. You must not do anything with this software that triggers a rule you cannot or will not follow.
 
-- Restrictions. Licensee may not use the Software:
-  - In any military, government, or defense-related applications
-  - For surveillance, profiling, biometric scanning, or similar unethical technology
-  - For commercial projects without obtaining a commercial license from the Licensor
+Copyright
 
-To use this library in a commercial, enterprise, or closed-source project, **you must obtain a commercial license** by contacting the author.
+Each contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
 
-- Compliance with Human Rights Principles and Human Rights Laws.
+Notices
 
-  1. Human Rights Principles.
-     (a) Licensee is advised to consult the articles of the United Nations Universal Declaration of Human Rights and the United Nations Global Compact that define recognized principles of international human rights (the “Human Rights Principles”). Licensee shall use the Software in a manner consistent with Human Rights Principles.
+You must ensure that everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source information provided with the software.
 
-     (b) Disputes under this clause shall be resolved by arbitration in accordance with the Hague Rules on Business and Human Rights Arbitration.
+Copyleft
 
-  2. Human Rights Laws. The Software shall not be used by any person or entity for any systems, activities, or other uses that violate any Human Rights Laws. “Human Rights Laws” includes applicable laws that protect human, civil, labor, privacy, political, environmental, economic, or similar rights.
+You must release all software you create, adapt, or combine with this software, in whole or in part, under this license. You must include the source code of that software when you share it. You may convert it to another commonly used open license.
 
-  3. Indemnity. Licensee shall hold harmless and indemnify Licensor against any damages or liability arising from use of the Software in violation of this license.
+No Liability
 
-- Failure to Comply. Any breach of these terms terminates the License immediately.
+As far as the law allows, this software comes as is, without any warranty or condition, and no contributor will be liable to anyone for any damages related to this software or this license, under any kind of legal claim.
 
-- Enforceability. If any part of this License is found invalid, the remainder shall continue in effect. In case clauses regarding human rights or ethical use are deemed unenforceable, the license shall be void.
+Limitations on Use
 
-- Disclaimer. TO THE FULL EXTENT ALLOWED BY LAW, THIS SOFTWARE COMES “AS IS,” WITHOUT WARRANTY, AND LICENSOR SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING OUT OF USE OF THE SOFTWARE.
+You may not use this software for military, government surveillance, or any unethical applications. Commercial use, including resale, SaaS integration, or bundling in paid products, requires a commercial license from the author.
 
-- 4. Liability, The Software is provided "as is", without warranty of any kind. In no event shall the authors be liable for any claim, damages, or other liability.
-
-This is an Ethical Source license (https://ethicalsource.dev), adapted from the Hippocratic License.
-
-For questions, licensing, or commercial use, contact:
+To obtain a commercial license, please contact:
 
 hellouxpavel@gmail.com
 https://cssanimation.io

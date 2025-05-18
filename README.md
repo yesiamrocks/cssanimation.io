@@ -259,7 +259,7 @@ By default, cssanimation.io respects user system preferences. When `prefers-redu
 
 ## License
 
-cssanimation.io is licensed under the [Hippocratic License.](https://firstdonoharm.dev/)
+cssanimation.io is licensed under the [Parity Public License](https://paritylicense.com/)
 
 ## Having trouble?
 
