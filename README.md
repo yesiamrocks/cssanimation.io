@@ -29,7 +29,7 @@ You stay in control, just apply the [class names](cssanimation-cheatsheet.md) wh
 - Great for scroll reveals, UI micro interactions, hero effects, and more.
 - **Free** and open-source, with a growing community.
 
-## CSS Animation Guide ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue)
+## ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue) CSS Animation Guide
 
 #### Option A: Install with NPM
 
@@ -237,21 +237,21 @@ _Note: The GSAP version currently supports **sequential letter animations only**
 
 ## CSS vs. GSAP – Which Animation Version Should You Use?
 
-| Feature / Capability        | **CSS Version**                            | **GSAP Version**                                      |
-| --------------------------- | ------------------------------------------ | ----------------------------------------------------- |
-| 🧱 Technology               | Pure CSS                                   | JavaScript (GSAP)                                     |
-| ⚡ Performance              | Great for simple UI effects                | Optimized for complex, smooth animations              |
-| 🎛 Control                   | Fine-grained control via CSS | Fine-grained control via JS (timing, easing)          |
-| 🎞 Animation Types           | Predefined class-based animations          | Class-based with dynamic GSAP tweening                |
-| 🔤 Letter Animation Support | ✅ Sequence & Random                       | ✅ Sequence only (random coming soon)                 |
-| 🔁 Looping & Repeating      | `infinite` class                           | Full loop control via JS (e.g. `repeat`, `yoyo`)      |
-| ⚙️ Configuration            | Minimal setup                              | Script includes + optional JS tweaks                  |
-| 🎨 Customization            | Moderate (via utility classes)             | High — control properties on the fly                  |
-| 📦 Size                     | Very lightweight (no JS needed)            | Heavier due to JS dependency                          |
-| 🧩 Dependencies             | None                                       | Requires GSAP (`TweenMax`)                            |
-| 🌐 CDN Available?           | ✅ Yes                                     | ✅ Yes                                                |
-| 🛠 NPM Ready?                | ✅ Yes (`cssanimationio`)                  | ✅ Yes (`cssanimationio`)                             |
-| 🧠 Use Case Examples        | Hover states, hero sections, banners       | Interactive animations, scroll triggers, custom flows |
+| Feature / Capability        | **CSS Version**                      | **GSAP Version**                                      |
+| --------------------------- | ------------------------------------ | ----------------------------------------------------- |
+| 🧱 Technology               | Pure CSS                             | JavaScript (GSAP)                                     |
+| ⚡ Performance              | Great for simple UI effects          | Optimized for complex, smooth animations              |
+| 🎛 Control                   | Fine-grained control via CSS         | Fine-grained control via JS (timing, easing)          |
+| 🎞 Animation Types           | Predefined class-based animations    | Class-based with dynamic GSAP tweening                |
+| 🔤 Letter Animation Support | ✅ Sequence & Random                 | ✅ Sequence only (random coming soon)                 |
+| 🔁 Looping & Repeating      | `infinite` class                     | Full loop control via JS (e.g. `repeat`, `yoyo`)      |
+| ⚙️ Configuration            | Minimal setup                        | Script includes + optional JS tweaks                  |
+| 🎨 Customization            | Moderate (via utility classes)       | High — control properties on the fly                  |
+| 📦 Size                     | Very lightweight (no JS needed)      | Heavier due to JS dependency                          |
+| 🧩 Dependencies             | None                                 | Requires GSAP (`TweenMax`)                            |
+| 🌐 CDN Available?           | ✅ Yes                               | ✅ Yes                                                |
+| 🛠 NPM Ready?                | ✅ Yes (`cssanimationio`)            | ✅ Yes (`cssanimationio`)                             |
+| 🧠 Use Case Examples        | Hover states, hero sections, banners | Interactive animations, scroll triggers, custom flows |
 
 ## Accessibility: Reduce Motion Support
 
