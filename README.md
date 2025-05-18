@@ -1,135 +1,39 @@
-# Getting started with cssanimation.io
+# cssanimation.io
 
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/yesiamrocks/cssanimation.io/blob/master/LICENSE)
+> A Developer and Designer's Animation Playground
 
-> In modern web concept, cssanimation.io is the best controlling animation library for CSS and [GreenSock](https://greensock.com/), Moving forward with this library, you need to have a basic idea on HTML and CSS3. We believe you have that. If you are pretty confused, just refreshing your idea from [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) to go along more easily.
+<!-- Tech & Status -->
 
-This library is too easy to install and implement. Anything you can be done with our relevant animation class name. So [Download](https://codeload.github.com/yesiamrocks/cssanimation.io/zip/master) and let’s get started with this library.
+![CSS](https://img.shields.io/badge/style-CSS-blue)
+[![NPM](https://img.shields.io/npm/v/cssanimationio.svg)](https://www.npmjs.com/package/cssanimationio)
+[![jsDelivr](https://data.jsdelivr.com/v1/package/gh/yesiamrocks/cssanimation.io/badge)](https://www.jsdelivr.com/package/gh/yesiamrocks/cssanimation.io)
+[![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/issues)
+[![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/stargazers)
+[![GSAP Support](https://img.shields.io/badge/Also%20Supports-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
 
-**_We also offer to you [GreenSock](https://greensock.com/) animation, just fly over [here](https://cssanimation.io/how-to-use.html) to get the guideline._**
+<!-- Live Demo (Optional) -->
 
-To get started, from the outset you download the complete library or use a CDN hosted version by jsDelivr. All CDN URLs below:
-
-- **cssanimation.css:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
-- **cssanimation.min.css:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css
-- **letteranimation.js:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.js
-- **letteranimation.min.js:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js
-- **cssanimation greenSock version:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.js
-- **cssanimation greenSock min version:** https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/gsap-version/cssanimation-gsap.min.js
-
-## Usage
-
-1. Include the `cssanimation.css` or `cssanimation.min.css` stylesheet into the head
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS Animation Library for Developers and Ninjas</title>
-    <link
-      href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body></body>
-</html>
-```
-
-2. Now add the class `cssanimation` and class of animation name like `fadeIn` for fade in animation to the element that you want to animate. For list of animation class name check out the [home page](http://cssanimation.io/)
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS Animation Library for Developers and Ninjas</title>
-    <link
-      href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1 class="cssanimation fadeIn">Example</h1>
-  </body>
-</html>
-```
-
-3. And if you want letter animation, There are two versions here. One is the sequential and the other is random animation. Just add the file `letteranimation.js` before the body tag. Now add a letter animation class like `leFadeIn` for letter fade in animation then must be add `sequential` class for to get an animation in sequence or `random` class for animate randomly.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS Animation Library for Developers and Ninjas</title>
-    <link
-      href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1 class="cssanimation leFadeIn sequence">Example</h1>
-    <h1 class="cssanimation leFadeIn random">Example</h1>
-
-    <script
-      type="text/javascript"
-      src=" https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"
-    ></script>
-  </body>
-</html>
-```
-
-4. You may also want to include the class `infinite` for an infinite loop.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS Animation Library for Developers and Ninjas</title>
-    <link
-      href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1 class="cssanimation fadeIn infinite">Example</h1>
-
-    <script
-      type="text/javascript"
-      src=" https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"
-    ></script>
-  </body>
-</html>
-```
-
-## Extremely light weight
-
-Unlike all the other complicated vendors, our `cssanimation.css` **is only 84kb with 300 animations, 165kb in the minified version with all prefix and only 10kb when compressed.
-And the letteranimation.js only 3kb, with 1kb in the minified version and only 0.6kb when compressed.**
-
-**Hard to believe it!!! We know, Believe it!!!**
-
-# cssanimation.io — A Developer and Designer's Animation Playground
-
-Bring your interfaces to life with over **300 CSS and GSAP-powered animations**.  
-Lightweight, modular, and super easy to use — no bloated frameworks, just clean motion.
-
-Whether you're building a landing page, a portfolio, sliders, or an onboarding experience,  
-**cssanimation.io** gives you plug-and-play classes to animate text, elements, and letters — right out of the box.
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://cssanimation.io)
 
 ## CSS Animation Library for Modern Developers and Designers
 
-## 🪶 Why Developers Love It
+Bring your interfaces to life with over **300+ CSS and GSAP-powered animations**. Lightweight, modular, and super easy to use — no bloated frameworks, just clean motion.
+
+Whether you're building a landing page, a portfolio, sliders, or an onboarding experience, **cssanimation.io** gives you plug-and-play classes to animate text, elements, and letters — right out of the box.
+
+## Why Developers Love It
 
 - **Over 300 prebuilt animations**: fade, zoom, rotate, fly, bounce, skew, and more.
-- Animations for **text, elements and letters**.
-- Lightweight, pure CSS (no JavaScript).
+- **GSAP support:** Add powerful animations with GreenSock.
+- Animations for **text, elements and individual letters**.
+- **Modular and lightweight**: no unnecessary code, just pure animation goodness.
+- **Easy to use**: just add a class, and your animation is live.
+- **Customizable**: tweak animation properties to fit your design.
 - **Zero JavaScript**, no dependencies, and fine-grained control.
-- Modular — import only what you need.
 - Great for scroll reveals, UI micro interactions, hero effects, and more.
-- CDN & NPM ready.
+- Easy to start: CDN and NPM ready.
+- **Free** and open-source, with a growing community.
+- Ideal for creative developers, motion designers, and product teams who need high-fidelity motion in the browser.
 
 ## Installing
 
@@ -160,7 +64,7 @@ Include in your `<head>`:
 
 ## Usage Examples
 
-After installing `cssanimation.css` add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name check out the home page
+After installing `cssanimation.css` add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name [click here](cssanimation-cheatsheet.md)]
 
 ```html
 <h1 class="cssanimation fadeIn">Hello, World!</h1>
@@ -265,3 +169,7 @@ cssanimation.io is licensed under the [Hippocratic License.](https://firstdonoha
 ## Having trouble?
 
 If **cssanimation.io** isn't doing what you expect it to please create a [issue](https://github.com/yesiamrocks/cssanimation.io/issues)
+
+<!-- Project Identity -->
+
+![Built with ❤️ by Pavel](https://img.shields.io/badge/built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange)
