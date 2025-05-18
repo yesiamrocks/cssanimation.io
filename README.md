@@ -241,7 +241,7 @@ _Note: The GSAP version currently supports **sequential letter animations only**
 | --------------------------- | ------------------------------------------ | ----------------------------------------------------- |
 | 🧱 Technology               | Pure CSS                                   | JavaScript (GSAP)                                     |
 | ⚡ Performance              | Great for simple UI effects                | Optimized for complex, smooth animations              |
-| 🎛 Control                   | Limited (via class + duration/delay utils) | Fine-grained control via JS (timing, easing)          |
+| 🎛 Control                   | Fine-grained control via CSS | Fine-grained control via JS (timing, easing)          |
 | 🎞 Animation Types           | Predefined class-based animations          | Class-based with dynamic GSAP tweening                |
 | 🔤 Letter Animation Support | ✅ Sequence & Random                       | ✅ Sequence only (random coming soon)                 |
 | 🔁 Looping & Repeating      | `infinite` class                           | Full loop control via JS (e.g. `repeat`, `yoyo`)      |
