@@ -27,11 +27,9 @@ You stay in control, just apply the [class names](cssanimation-cheatsheet.md) wh
 - **Customizable**: tweak animation properties to fit your design.
 - **Zero JavaScript**, no dependencies, and fine-grained control.
 - Great for scroll reveals, UI micro interactions, hero effects, and more.
-- Easy to start: CDN and NPM ready.
 - **Free** and open-source, with a growing community.
-- Ideal for creative developers, motion designers, and product teams who need high-fidelity motion in the browser.
 
-## CSS Animation Guide ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue) 
+## CSS Animation Guide ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue)
 
 #### Option A: Install with NPM
 
