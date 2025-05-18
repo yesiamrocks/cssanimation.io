@@ -29,7 +29,7 @@ You stay in control, just apply the [class names](cssanimation-cheatsheet.md) wh
 - Great for scroll reveals, UI micro interactions, hero effects, and more.
 - **Free** and open-source, with a growing community.
 
-## ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue) CSS Animation Guide
+## ![CSS Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations) CSS Animation Guide
 
 #### Option A: Install with NPM
 
