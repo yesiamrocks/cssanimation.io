@@ -1,6 +1,6 @@
 # cssanimation.io
 
-> A Developer and Designer's Animation Playground
+> A Powerful Animation Library with GSAP Support for Advanced Motion Design.
 
 <!-- Tech & Status -->
 
@@ -9,17 +9,13 @@
 [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/yesiamrocks/cssanimation.io/badge)](https://www.jsdelivr.com/package/gh/yesiamrocks/cssanimation.io)
 [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/issues)
 [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/stargazers)
-[![GSAP Support](https://img.shields.io/badge/Also%20Supports-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
-
-<!-- Live Demo (Optional) -->
-
 [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://cssanimation.io)
 
-## CSS Animation Library for Modern Developers and Designers
+[![GSAP Support](https://img.shields.io/badge/Also%20Supports-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
 
-Bring your interfaces to life with over **300+ CSS and GSAP-powered animations**. Lightweight, modular, and super easy to use — no bloated frameworks, just clean motion.
+**cssanimation.io** is a lightweight, modular **CSS animation library** designed for developers, designers, and UI ninjas. It provides over **300+ CSS and GSAP-powered plug-and-play animation** classes to bring your interfaces to life — from simple fades and zooms to dynamic letter effects and 3D transitions.
 
-Whether you're building a landing page, a portfolio, sliders, or an onboarding experience, **cssanimation.io** gives you plug-and-play classes to animate text, elements, and letters — right out of the box.
+You stay in control, just apply the [class names](cssanimation-cheatsheet.md) when and where you want them. **No dependencies. No setup. Just clean, reusable animations.**
 
 ## Why Developers Love It
 
@@ -37,21 +33,21 @@ Whether you're building a landing page, a portfolio, sliders, or an onboarding e
 
 ## Installing
 
-### Option A: Install with NPM
+#### Option A: Install with NPM
 
-```bash
+```shell
 npm i cssanimationio
 ```
 
 Import it into your file:
 
-```bash
+```shell
 `import 'cssanimation.css';`
 ```
 
-### Option B: Install via CDN
+#### Option B: Install via CDN
 
-Include in your `<head>`:
+Include the `cssanimation.css` library into the `<head>`:
 
 ```html
 <head>
@@ -64,30 +60,50 @@ Include in your `<head>`:
 
 ## Usage Examples
 
-After installing `cssanimation.css` add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name [click here](cssanimation-cheatsheet.md)]
+After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name [click here](cssanimation-cheatsheet.md) or [check the website](https://cssanimation.io/getting-started.html).
 
 ```html
 <h1 class="cssanimation fadeIn">Hello, World!</h1>
 ```
 
-That's it! You've got a CSS animated element. Super!
+#### _That's it! You've got a CSS animated element. Super!_
 
-### Letter-by-Letter Animation
+## How to Use Letter Animations
 
-Include the letter animation script:
+Animate your text one letter at a time with style. Our library includes **two exclusive types** of letter animations: `sequence` and `random`.
+
+What Are Sequence and Random Animations?
+
+- **`sequence`** – Letters animate **one after another**, in order.
+- **`random`** – Letters animate in a **randomized order**, adding playful motion.
+
+#### Step 1. Include the Script
+
+Add this right **before the closing `</body>` tag**:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/cssanimationio/dist/letteranimation.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@latest/letteranimation.min.js"></script>
 ```
 
-Then animate letter-by-letter:
+#### Step 2. Add Animation classes to Your HTML
+
+Use:
+
+| Class          | What It Does                                    |
+| -------------- | ----------------------------------------------- |
+| `cssanimation` | Base class for all animations                   |
+| `leFadeIn`     | A letter animation class (Fades in each letter) |
+| `sequence`     | Animates letters in order                       |
+| `random`       | Animates letters in random order                |
 
 ```html
-<h1 class="cssanimation leFadeIn sequence">Sequence</h1>
-<h1 class="cssanimation leFadeIn random">Random</h1>
+<h1 class="cssanimation leFadeIn sequence">Hello World</h1>
+<h2 class="cssanimation leFadeIn random">Surprise!</h2>
 ```
 
-### Modular Import
+> This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.
+
+## Modular Import
 
 Only need fade and zoom?
 
@@ -107,7 +123,7 @@ Only need fade and zoom?
 | Slide       | `src/slide.css`    |
 | ...and more | See `/src/` folder |
 
-## Utility Class System for Animations
+## Utility Class
 
 Animate.css comes packed with a few utility classes to simplify its use. All classes should be added alongside .cssanimation and your animation class, like:
 
@@ -149,7 +165,7 @@ Animate.css comes packed with a few utility classes to simplify its use. All cla
 | `loop-triple`  | `3`                  | 3x repeat               |
 | `loop-bounce`  | `infinite alternate` | Ping-pong style         |
 
-### Combo Example
+Combo Example
 
 ```html
 <h2 class="cssanimation zoomIn speed-chill delay-3 ease-snappy loop-bounce">
@@ -157,10 +173,91 @@ Animate.css comes packed with a few utility classes to simplify its use. All cla
 </h2>
 ```
 
+# GSAP Animation Guide
+
+cssanimation.io isn’t just about CSS – it also supports **GSAP** (GreenSock Animation Platform), the gold standard for JavaScript animations. With GSAP, you get even more powerful, smooth, and flexible control over your animations.
+
+## Why Use the GSAP Version?
+
+- Smoother and more performant animations.
+- Fine control over timing, easing, delays, and sequencing.
+- Works great with ScrollTrigger, SplitText, and other GSAP plugins.
+- Ideal for creative UI/UX and motion design.
+
+## Getting Started with GSAP Version
+
+Here’s how to animate elements using our GSAP-powered version:
+
+#### 1. Install via NPM
+
+```bash
+npm install cssanimationio gsap
+```
+
+Then in your JavaScript:
+
+```js
+// Import GSAP core
+import { TweenMax } from "gsap";
+
+// Import cssanimation.io's GSAP integration
+import "cssanimationio/cssanimation-gsap";
+
+// Include CSS styles
+import "cssanimationio/cssanimation.css"; // or cssanimation.min.css
+```
+
+#### Or Include via CDN. If you're working without a bundler:
+
+```html
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+<!-- cssanimation.io's GSAP script -->
+<script src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@latest/cssanimation-gsap.js"></script>
+```
+
+### 2. Add Animation Classes to Your Elements
+
+Add the `cssanimation` class and one of the supported animation class names, like `fadeIn`:
+
+```html
+<h1 class="cssanimation fadeIn">Example</h1>
+```
+
+📌 **Tip**: Check the full list of animation class names on the [homepage](https://cssanimation.io) or in the cheatsheet.
+
+### 3. Letter Animations (Sequential Only)
+
+For **letter-by-letter animation**, just use any `le*` animation class like `leFadeIn`.
+
+```html
+<h1 class="cssanimation leFadeIn">Amazing!</h1>
+```
+
+_Note: The GSAP version currently supports **sequential letter animations only**. Random animation support is coming soon!_
+
+## CSS vs. GSAP – Which Animation Version Should You Use?
+
+| Feature / Capability        | **CSS Version**                            | **GSAP Version**                                      |
+| --------------------------- | ------------------------------------------ | ----------------------------------------------------- |
+| 🧱 Technology               | Pure CSS                                   | JavaScript (GSAP)                                     |
+| ⚡ Performance              | Great for simple UI effects                | Optimized for complex, smooth animations              |
+| 🎛 Control                   | Limited (via class + duration/delay utils) | Fine-grained control via JS (timing, easing)          |
+| 🎞 Animation Types           | Predefined class-based animations          | Class-based with dynamic GSAP tweening                |
+| 🔤 Letter Animation Support | ✅ Sequence & Random                       | ✅ Sequence only (random coming soon)                 |
+| 🔁 Looping & Repeating      | `infinite` class                           | Full loop control via JS (e.g. `repeat`, `yoyo`)      |
+| ⚙️ Configuration            | Minimal setup                              | Script includes + optional JS tweaks                  |
+| 🎨 Customization            | Moderate (via utility classes)             | High — control properties on the fly                  |
+| 📦 Size                     | Very lightweight (no JS needed)            | Heavier due to JS dependency                          |
+| 🧩 Dependencies             | None                                       | Requires GSAP (`TweenMax`)                            |
+| 🌐 CDN Available?           | ✅ Yes                                     | ✅ Yes                                                |
+| 🛠 NPM Ready?                | ✅ Yes (`cssanimationio`)                  | ✅ Yes (`cssanimationio`)                             |
+| 🧠 Use Case Examples        | Hover states, hero sections, banners       | Interactive animations, scroll triggers, custom flows |
+
 ## Accessibility: Reduce Motion Support
 
-By default, cssanimation.io respects user system preferences.  
-When `prefers-reduced-motion: reduce` is enabled, animations are automatically turned off for a better UX.
+By default, cssanimation.io respects user system preferences. When `prefers-reduced-motion: reduce` is enabled, animations are automatically turned off for a better UX.
 
 ## License
 
@@ -169,7 +266,5 @@ cssanimation.io is licensed under the [Hippocratic License.](https://firstdonoha
 ## Having trouble?
 
 If **cssanimation.io** isn't doing what you expect it to please create a [issue](https://github.com/yesiamrocks/cssanimation.io/issues)
-
-<!-- Project Identity -->
 
 ![Built with ❤️ by Pavel](https://img.shields.io/badge/built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange)
