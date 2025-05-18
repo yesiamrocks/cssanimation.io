@@ -1,6 +1,6 @@
 # cssanimation.io
 
-> A Powerful Animation Library with GSAP Support for Advanced Motion Design.
+> A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.
 
 <!-- Tech & Status -->
 
@@ -31,7 +31,7 @@ You stay in control, just apply the [class names](cssanimation-cheatsheet.md) wh
 - **Free** and open-source, with a growing community.
 - Ideal for creative developers, motion designers, and product teams who need high-fidelity motion in the browser.
 
-## Installing
+## CSS Animation Guide ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue) 
 
 #### Option A: Install with NPM
 
@@ -173,7 +173,7 @@ Combo Example
 </h2>
 ```
 
-# GSAP Animation Guide
+# ![GSAP Powered](https://img.shields.io/badge/GSAP-Powered-brightgreen) GSAP Animation Guide
 
 cssanimation.io isn’t just about CSS – it also supports **GSAP** (GreenSock Animation Platform), the gold standard for JavaScript animations. With GSAP, you get even more powerful, smooth, and flexible control over your animations.
 
