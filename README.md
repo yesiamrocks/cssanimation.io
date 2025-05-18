@@ -17,7 +17,7 @@
 
 You stay in control, just apply the [class names](cssanimation-cheatsheet.md) when and where you want them. **No dependencies. No setup. Just clean, reusable animations.**
 
-## Why Developers Love It
+### Why Developers Love It
 
 - **Over 300 prebuilt animations**: fade, zoom, rotate, fly, bounce, skew, and more.
 - **GSAP support:** Add powerful animations with GreenSock.
