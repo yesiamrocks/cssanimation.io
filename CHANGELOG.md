@@ -12,7 +12,7 @@ This release refines the package for real-world usage and distribution by publis
 
 ### What’s New in v2.0.3:
 
-- dist/-only NPM package
+- `dist/`-only NPM package
   Reduced package size by excluding source files, configs, and dev tools — only production-ready assets are now shipped.
 - Cleaned Up File Structure
   Improved maintainability by restructuring with a modular CSS build system and separating utility/animation modules.
