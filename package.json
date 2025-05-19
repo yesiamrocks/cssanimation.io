@@ -27,8 +27,9 @@
   },
   "homepage": "https://cssanimation.io/",
   "files": [
-    "dist/",
-    "src/"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "npm run build:css && npm run copy:js",
