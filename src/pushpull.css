@@ -1,167 +1,98 @@
 @keyframes lePushReleaseFrom {
-  from {
-    transform: scale(3, 3);
-    opacity: 0;
-  }
-  
-
+  0%{transform : scale(3, 3);
+  opacity : 0;
+}
 @keyframes lePushReleaseFromLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  
-
+  0%{transform : translateX(-100%);
+  opacity : 0;
+}
 @keyframes lePushReleaseFromTop {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  
-
+  0%{transform : translateY(-100%);
+  opacity : 0;
+}
 @keyframes lePushReleaseFromBottom {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  
-
+  0%{transform : translateY(100%);
+  opacity : 0;
+}
 @keyframes lePushReleaseTo {
-  30% {
-    transform: scale(0.5, 0.5);
-  }
-  
-
+  30%{transform : scale(0.5, 0.5);
+}
 @keyframes lePushReleaseToTop {
-  30% {
-    transform: translateY(100px);
-  }
-  
-
+  30%{transform : translateY(100px);
+}
 @keyframes lePushReleaseToBottom {
-  30% {
-    transform: translateY(-100px);
-  }
-  
-
+  30%{transform : translateY(-100px);
+}
 .pushReleaseFrom {
-  animation-name: pushReleaseFrom;
+  animation-name : pushReleaseFrom;
 }
-
 @keyframes pushReleaseFrom {
-  from {
-    transform: scale(3, 3);
-    opacity: 0;
-  }
-  
-
+  0%{transform : scale(3, 3);
+  opacity : 0;
+}
 .pushReleaseFromLeft {
-  animation-name: pushReleaseFromLeft;
+  animation-name : pushReleaseFromLeft;
 }
-
 @keyframes pushReleaseFromLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  
-
+  0%{transform : translateX(-100%);
+}
 .pushReleaseFromRight {
-  animation-name: pushReleaseFromRight;
+  animation-name : pushReleaseFromRight;
 }
-
 @keyframes pushReleaseFromRight {
-  from {
-    transform: translateX(100%);
-  }
-  
-
+  0%{transform : translateX(100%);
+}
 .pushReleaseFromTop {
-  animation-name: pushReleaseFromTop;
+  animation-name : pushReleaseFromTop;
 }
-
 @keyframes pushReleaseFromTop {
-  from {
-    transform: translateY(-100%);
-  }
-  
-
+  0%{transform : translateY(-100%);
+}
 .pushReleaseFromBottom {
-  animation-name: pushReleaseFromBottom;
+  animation-name : pushReleaseFromBottom;
 }
-
 @keyframes pushReleaseFromBottom {
-  from {
-    transform: translateY(100%);
-  }
-  
-
+  0%{transform : translateY(100%);
+}
 .pushReleaseTo {
-  animation-name: pushReleaseTo;
+  animation-name : pushReleaseTo;
 }
-
 @keyframes pushReleaseTo {
-  30% {
-    transform: scale(0.5, 0.5);
-  }
-  
-
+  30%{transform : scale(0.5, 0.5);
+}
 .pushReleaseToLeft {
-  animation-name: pushReleaseToLeft;
+  animation-name : pushReleaseToLeft;
 }
-
 @keyframes pushReleaseToLeft {
-  30% {
-    transform: translateX(100px);
-  }
-  
-
+  30%{transform : translateX(100px);
+}
 .pushReleaseToRight {
-  animation-name: pushReleaseToRight;
+  animation-name : pushReleaseToRight;
 }
-
 @keyframes pushReleaseToRight {
-  30% {
-    transform: translateX(-100px);
-  }
-  
-
+  30%{transform : translateX(-100px);
+}
 .pushReleaseToTop {
-  animation-name: pushReleaseToTop;
+  animation-name : pushReleaseToTop;
 }
-
 @keyframes pushReleaseToTop {
-  30% {
-    transform: translateY(100px);
-  }
-  
-
+  30%{transform : translateY(100px);
+}
 .pushReleaseToBottom {
-  animation-name: pushReleaseToBottom;
+  animation-name : pushReleaseToBottom;
 }
-
 @keyframes pushReleaseToBottom {
-  30% {
-    transform: translateY(-100px);
-  }
-  
-
+  30%{transform : translateY(-100px);
+}
 .pullRelease {
-  animation-name: pullRelease;
+  animation-name : pullRelease;
 }
-
 @keyframes pullRelease {
-  15% {
-    transform: scale(1.8);
-  }
-
-
-.pushRelease {
-  animation-name: pushRelease;
+  15%{transform : scale(1.8);
 }
-
+.pushRelease {
+  animation-name : pushRelease;
+}
 @keyframes pushRelease {
-  15% {
-    transform: scale(0.5);
-  }
-
-
+  15%{transform : scale(0.5);
+}

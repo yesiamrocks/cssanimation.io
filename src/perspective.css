@@ -1,177 +1,6 @@
-@keyframes leScaleXIn {
-  from {
-    transform: perspective(400px) rotateX(90deg);
-    opacity: 0;
-  }
-  
-
-@keyframes leScaleXOut {
-  to {
-    transform: perspective(400px) rotateX(90deg);
-    opacity: 0;
-  }
-  
-
-@keyframes leScaleYIn {
-  from {
-    transform: perspective(400px) rotateY(90deg);
-    opacity: 0;
-  }
-  
-
-@keyframes leScaleYOut {
-  to {
-    transform: perspective(400px) rotateY(90deg);
-    opacity: 0;
-  }
-  
-
-@keyframes leFlipInTop {
-  from {
-    transform: perspective(600px);
-    opacity: 0;
-  }
-  
-
-@keyframes leFlipOutTop {
-  to {
-    transform: perspective(600px);
-    opacity: 0;
-  }
-  
-
-@keyframes leFlipInBottom {
-  from {
-    transform: perspective(600px);
-    opacity: 0;
-  }
-  
-
-@keyframes leFlipOutBottom {
-  to {
-    transform: perspective(600px);
-    opacity: 0;
-  }
-  
-
-@keyframes leRotateXZoomIn {
-  from {
-    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateX(75deg);
-    opacity: 0;
-  }
-  
-
-@keyframes leRotateXZoomOut {
-  95% {
-    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg);
-  }
-  
-
-@keyframes leRotateYZoomIn {
-  from {
-    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
-    opacity: 0;
-  }
-  
-
-@keyframes leRotateYZoomOut {
-  95% {
-    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg);
-  }
-  
-
-@keyframes lePerspectiveOutTop {
-  50% {
-    opacity: 1;
-  }
-  
-
-@keyframes lePerspectiveOutBottom {
-  50% {
-    opacity: 1;
-  }
-  
-
-@keyframes flipX {
-  from {
-    transform: perspective(600px) rotateX(-180deg);
-    opacity: 0;
-  }
-  
-
-@keyframes flipXZoomIn {
-  from {
-    transform: perspective(600px) rotateX(0deg) scale(1);
-    animation-timing-function: ease-out;
-  }
-  
-
-@keyframes flipXZoomOut {
-  from {
-    transform: perspective(600px) rotateX(0deg) scale(1);
-    animation-timing-function: ease-out;
-  }
-  
-
-@keyframes flipY {
-  from {
-    transform: perspective(600px) rotateY(180deg);
-    opacity: 0;
-  }
-  
-
-@keyframes flipYZoomIn {
-  from {
-    transform: perspective(600px) rotateY(0deg) scale(1);
-    animation-timing-function: ease-out;
-  }
-  
-
-@keyframes flipYZoomOut {
-  from {
-    transform: perspective(600px) rotateY(0deg) scale(1);
-    animation-timing-function: ease-out;
-  }
-  
-
-@keyframes rotateX {
-  from {
-    transform: perspective(600px) rotateX(0deg);
-  }
-  
-
-@keyframes rotateXIn {
-  from {
-    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateX(75deg);
-    opacity: 0;
-  }
-  
-
-@keyframes rotateXOut {
-  95% {
-    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg);
-  }
-  
-
-@keyframes rotateY {
-  from {
-    transform: perspective(600px) rotateY(0deg);
-  }
-  
-
-@keyframes rotateYIn {
-  from {
-    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
-    opacity: 0;
-  }
-  
-
-@keyframes rotateYOut {
-  95% {
-    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg);
-  }
-  
-
+/*************************************************************
+Perspective
+**************************************************************/
 .perspectiveToTop {
   animation-name: perspectiveToTop;
   transform: perspective(500px);
@@ -182,7 +11,13 @@
   50% {
     opacity: 1;
   }
-  
+
+  100% {
+    transform: perspective(500px) rotateX(90deg) translateY(-50px)
+      translateZ(50px);
+    opacity: 0;
+  }
+}
 
 .perspectiveToBottom {
   animation-name: perspectiveToBottom;
@@ -194,5 +29,10 @@
   50% {
     opacity: 1;
   }
-  
 
+  100% {
+    transform: perspective(500px) rotateX(90deg) translateY(50px)
+      translateZ(-50px);
+    opacity: 0;
+  }
+}

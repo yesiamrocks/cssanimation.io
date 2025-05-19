@@ -5,10 +5,10 @@
   
 
 @keyframes pepe {
-  from,
+  0%,
   33%,
   66%,
-  to {
+  100% {
     transform: rotate(4deg);
   }
   
@@ -38,207 +38,207 @@
   
 
 @keyframes leRotateSkateInRight {
-  from {
+  0% {
     transform: scaleX(0.2) translateX(100px);
     opacity: 0;
   }
 
 
 @keyframes leRotateSkateInLeft {
-  from {
+  0% {
     transform: scaleX(0.2) translateX(-100px);
     opacity: 0;
   }
 
 
 @keyframes leRotateSkateInTop {
-  from {
+  0% {
     transform: scaleY(0.2) translateY(-100px);
     opacity: 0;
   }
 
 
 @keyframes leRotateSkateInBottom {
-  from {
+  0% {
     transform: scaleY(0.2) translateY(100px);
     opacity: 0;
   }
 
 
 @keyframes leRotateSkateOutRight {
-  to {
+  100% {
     transform: scaleX(0.2) translateX(100px);
     opacity: 0;
   }
 
 
 @keyframes leRotateSkateOutLeft {
-  to {
+  100% {
     transform: scaleX(0.2) translateX(-100px);
     opacity: 0;
   }
 
 
 @keyframes leRotateSkateOutTop {
-  to {
+  100% {
     transform: scaleY(0.2) translateY(-100px);
     opacity: 0;
   }
 
 
 @keyframes leRotateSkateOutBottom {
-  to {
+  100% {
     transform: scaleY(0.2) translateY(100px);
     opacity: 0;
   }
 
 
 @keyframes leRotateIn {
-  from {
+  0% {
     transform: rotate(-180deg);
     opacity: 0;
   }
   
 
 @keyframes leRotateOut {
-  from {
+  0% {
     opacity: 1;
   }
   
 
 @keyframes leRotateInLeft {
-  from {
+  0% {
     transform: rotate(-180deg) translateX(150px);
     opacity: 0;
   }
   
 
 @keyframes leRotateOutLeft {
-  from {
+  0% {
     opacity: 1;
   }
   
 
 @keyframes leRotateInRight {
-  from {
+  0% {
     transform: rotate(-180deg) translateX(-150px);
     opacity: 0;
   }
   
 
 @keyframes leRotateOutRight {
-  from {
+  0% {
     opacity: 1;
   }
   
 
 @keyframes leSpinInLeft {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: left bottom;
   }
   
 
 @keyframes leSpinInRight {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: right bottom;
   }
   
 
 @keyframes leSpinOutLeft {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: left bottom;
   }
   
 
 @keyframes leSpinOutRight {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: right bottom;
   }
   
 
 @keyframes oaoRotateInTop {
-  from {
+  0% {
     transform: translateY(-100px) rotate(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateInBottom {
-  from {
+  0% {
     transform: translateY(100px) rotate(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateOutTop {
-  to {
+  100% {
     transform: translateY(-100px) rotate(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateOutBottom {
-  to {
+  100% {
     transform: translateY(100px) rotate(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateXInTop {
-  from {
+  0% {
     transform: translateY(-100px) rotateX(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateXInBottom {
-  from {
+  0% {
     transform: translateY(100px) rotateX(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateXOutTop {
-  to {
+  100% {
     transform: translateY(-100px) rotateX(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateXOutBottom {
-  to {
+  100% {
     transform: translateY(100px) rotateX(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateYInTop {
-  from {
+  0% {
     transform: translateY(-100px) rotateY(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateYInBottom {
-  from {
+  0% {
     transform: translateY(100px) rotateY(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateYOutTop {
-  to {
+  100% {
     transform: translateY(-100px) rotateY(360deg);
     opacity: 0;
   }
 
 
 @keyframes oaoRotateYOutBottom {
-  to {
+  100% {
     transform: translateY(100px) rotateY(360deg);
     opacity: 0;
   }
@@ -250,7 +250,7 @@
 }
 
 @keyframes rotate {
-  from {
+  0% {
     transform: rotate(0deg);
   }
   
@@ -284,7 +284,7 @@
 }
 
 @keyframes rotateInLeft {
-  from {
+  0% {
     opacity: 0;
     transform: translateX(-100%) rotate(0deg);
   }
@@ -295,7 +295,7 @@
 }
 
 @keyframes rotateInRight {
-  from {
+  0% {
     opacity: 0;
     transform: translateX(100%) rotate(0deg);
   }
@@ -306,7 +306,7 @@
 }
 
 @keyframes rotateInTop {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-400%) rotate(0deg);
   }
@@ -317,7 +317,7 @@
 }
 
 @keyframes rotateInBottom {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(400%) rotate(0deg);
   }
@@ -328,8 +328,8 @@
 }
 
 @keyframes rotateOutLeft {
-  from {
-    transform: translateX(0px) rotate(360deg);
+  0% {
+    transform: translateX(0) rotate(360deg);
   }
   
 
@@ -338,8 +338,8 @@
 }
 
 @keyframes rotateOutRight {
-  from {
-    transform: translateX(0px) rotate(-360deg);
+  0% {
+    transform: translateX(0) rotate(-360deg);
   }
   
 
@@ -348,8 +348,8 @@
 }
 
 @keyframes rotateOutTop {
-  from {
-    transform: translateX(0px) rotate(360deg);
+  0% {
+    transform: translateX(0) rotate(360deg);
   }
   
 
@@ -358,8 +358,8 @@
 }
 
 @keyframes rotateOutBottom {
-  from {
-    transform: translateX(0px) rotate(360deg);
+  0% {
+    transform: translateX(0) rotate(360deg);
   }
   
 
@@ -368,8 +368,8 @@
 }
 
 @keyframes spinToLeft {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: left bottom;
   }
   
@@ -379,8 +379,8 @@
 }
 
 @keyframes spinToRight {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: right bottom;
   }
   
@@ -390,8 +390,8 @@
 }
 
 @keyframes spinToTop {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: left bottom;
   }
   
@@ -401,8 +401,8 @@
 }
 
 @keyframes spinToBottom {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: right bottom;
   }
   
@@ -412,8 +412,8 @@
 }
 
 @keyframes spinFromLeft {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: left bottom;
   }
   
@@ -423,8 +423,8 @@
 }
 
 @keyframes spinFromRight {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: right bottom;
   }
   
@@ -434,8 +434,8 @@
 }
 
 @keyframes spinFromTop {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: left bottom;
   }
   
@@ -445,9 +445,7 @@
 }
 
 @keyframes spinFromBottom {
-  from,
-  to {
+  0%,
+  100% {
     transform-origin: right bottom;
   }
-  
-

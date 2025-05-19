@@ -5,70 +5,71 @@
   
 
 @keyframes leZoomIn {
-  from {
+  0% {
     transform: scale(10);
     opacity: 0;
   }
+}
 
 
 @keyframes leZoomInLeft {
-  from {
+  0% {
     transform: scale(10) translateX(-150%);
     opacity: 0;
   }
 
 
 @keyframes leZoomInRight {
-  from {
+  0% {
     transform: scale(10) translateX(150%);
     opacity: 0;
   }
 
 
 @keyframes LetterZoomInTop {
-  from {
+  0% {
     transform: scale(10) translateY(-50%);
     opacity: 0;
   }
 
 
 @keyframes leZoomInBottom {
-  from {
+  0% {
     transform: scale(10) translateY(50%);
     opacity: 0;
   }
 
 
 @keyframes leZoomOut {
-  to {
+  100% {
     transform: scale(10);
     opacity: 0;
   }
 
 
 @keyframes leZoomOutLeft {
-  to {
+  100% {
     transform: scale(10) translateX(-150%);
     opacity: 0;
   }
 
 
 @keyframes leZoomOutRight {
-  to {
+  100% {
     transform: scale(10) translateX(150%);
     opacity: 0;
   }
 
 
 @keyframes leZoomOutTop {
-  to {
+  100% {
     transform: scale(10) translateY(-50%);
     opacity: 0;
   }
 
 
 @keyframes leZoomOutBottom {
-  to {
+  100% {
     transform: scale(10) translateY(50%);
     opacity: 0;
   }
@@ -95,7 +96,7 @@
 }
 
 @keyframes zoomIn {
-  from {
+  0% {
     transform: scale(10);
     opacity: 0;
   }
@@ -106,7 +107,7 @@
 }
 
 @keyframes zoomInLeft {
-  from {
+  0% {
     transform: scale(10) translateX(-50%);
     opacity: 0;
   }
@@ -117,7 +118,7 @@
 }
 
 @keyframes zoomInRight {
-  from {
+  0% {
     transform: scale(10) translateX(50%);
     opacity: 0;
   }
@@ -128,7 +129,7 @@
 }
 
 @keyframes zoomInTop {
-  from {
+  0% {
     transform: scale(10) translateY(-50%);
     opacity: 0;
   }
@@ -139,7 +140,7 @@
 }
 
 @keyframes zoomInBottom {
-  from {
+  0% {
     transform: scale(10) translateY(50%);
     opacity: 0;
   }
@@ -150,7 +151,7 @@
 }
 
 @keyframes zoomOut {
-  to {
+  100% {
     transform: scale(10);
     opacity: 0;
   }
@@ -161,7 +162,7 @@
 }
 
 @keyframes zoomOutLeft {
-  to {
+  100% {
     transform: scale(10) translateX(-50%);
     opacity: 0;
   }
@@ -172,7 +173,7 @@
 }
 
 @keyframes zoomOutRight {
-  to {
+  100% {
     transform: scale(10) translateX(50%);
     opacity: 0;
   }
@@ -183,7 +184,7 @@
 }
 
 @keyframes zoomOutTop {
-  to {
+  100% {
     transform: scale(10) translateY(-50%);
     opacity: 0;
   }
@@ -194,9 +195,10 @@
 }
 
 @keyframes zoomOutBottom {
-  to {
+  100% {
     transform: scale(10) translateY(50%);
     opacity: 0;
   }
 
 
+}}}}}}}}}}}}}}}}}}}}}

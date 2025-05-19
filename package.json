@@ -31,9 +31,11 @@
     "src/"
   ],
   "scripts": {
-    "start": "postcss src/*.css -d dist/ --watch",
-    "build": "postcss src/cssanimation.css -o dist/cssanimation.css --no-map",
-    "build:watch": "postcss src/*.css -d dist/ --watch"
+    "build": "npm run build:css && npm run copy:js",
+    "build:css": "postcss src/*.css -d dist/ --no-map",
+    "copy:js": "mkdir -p dist && cp src/*.js dist/",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css:fix": "stylelint \"src/**/*.css\" --fix"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
@@ -41,7 +43,9 @@
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
     "postcss-preset-env": "^10.1.6",
-    "postcss-selector-namespace": "^3.0.1"
+    "postcss-selector-namespace": "^3.0.1",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0"
   },
   "publishConfig": {
     "access": "public"

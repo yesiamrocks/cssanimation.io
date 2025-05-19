@@ -25,7 +25,7 @@
 }
 
 @keyframes shockZoom {
-  from {
+  0% {
     transform: matrix(5, 0, 0, 5, 0, 0);
   }
   
@@ -35,7 +35,7 @@
 }
 
 @keyframes shockInLeft {
-  from {
+  0% {
     transform: matrix(1, 0, 0, 1, -800, 0);
   }
   
@@ -45,7 +45,7 @@
 }
 
 @keyframes shockInRight {
-  from {
+  0% {
     transform: matrix(1, 0, 0, 1, 800, 0);
   }
   
@@ -55,7 +55,7 @@
 }
 
 @keyframes shockInTop {
-  from {
+  0% {
     transform: matrix(1, 0, 0, 1, 0, -400);
   }
   
@@ -65,8 +65,9 @@
 }
 
 @keyframes shockInBottom {
-  from {
+  0% {
     transform: matrix(1, 0, 0, 1, 0, 400);
   }
   
 
+}}}}}}}

@@ -1,10 +1,27 @@
+.leDoorCloseLeft span {
+  animation-name: leDoorCloseLeft;
+}
+
 @keyframes leDoorCloseLeft {
   from,
   to {
     transform: perspective(400px);
     transform-origin: left;
   }
-  
+
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.leDoorOpenRight span {
+  animation-name: leDoorOpenRight;
+}
 
 @keyframes leDoorOpenRight {
   from,
@@ -12,7 +29,16 @@
     transform: perspective(400px);
     transform-origin: left;
   }
-  
+
+  to {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+.leDoorCloseRight span {
+  animation-name: leDoorCloseRight;
+}
 
 @keyframes leDoorCloseRight {
   from,
@@ -20,7 +46,20 @@
     transform: perspective(400px);
     transform-origin: right;
   }
-  
+
+  from {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.leDoorOpenLeft span {
+  animation-name: leDoorOpenLeft;
+}
 
 @keyframes leDoorOpenLeft {
   from,
@@ -28,53 +67,9 @@
     transform: perspective(400px);
     transform-origin: right;
   }
-  
 
-.doorCloseFromLeft {
-  animation-name: doorCloseFromLeft;
-}
-
-@keyframes doorCloseFromLeft {
-  from {
-    transform: perspective(400px) rotateY(90deg);
-    transform-origin: left;
+  to {
+    transform: rotateY(-90deg);
     opacity: 0;
   }
-  
-
-.doorOpenFromRight {
-  animation-name: doorOpenFromRight;
 }
-
-@keyframes doorOpenFromRight {
-  from {
-    transform: perspective(400px) rotateY(0deg);
-    transform-origin: left;
-    opacity: 1;
-  }
-  
-
-.doorCloseFromRight {
-  animation-name: doorCloseFromRight;
-}
-
-@keyframes doorCloseFromRight {
-  from {
-    transform: perspective(400px) rotateY(-90deg);
-    transform-origin: right;
-    opacity: 0;
-  }
-  
-
-.doorOpenFromLeft {
-  animation-name: doorOpenFromLeft;
-}
-
-@keyframes doorOpenFromLeft {
-  from {
-    transform: perspective(400px) rotateY(0deg);
-    transform-origin: right;
-    opacity: 1;
-  }
-  
-

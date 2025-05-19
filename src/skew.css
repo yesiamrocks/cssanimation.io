@@ -59,7 +59,7 @@
 }
 
 @keyframes skewInLeft {
-  from {
+  0% {
     opacity: 0;
     transform: translateX(-100%) skewX(-40deg);
   }
@@ -70,7 +70,7 @@
 }
 
 @keyframes skewInRight {
-  from {
+  0% {
     opacity: 0;
     transform: translateX(100%) skewX(40deg);
   }
@@ -114,3 +114,4 @@
   }
   
 
+}}}}}}}}}}}}}}}
