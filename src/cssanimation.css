@@ -1,15 +1,15 @@
 /**
  * cssanimation.css
- * Current Version: 1.0.3
+ * Current Version: 2.0.1
  * https://www.cssanimatio.io
- * Created and maintained by: Pavel
- * Find me at: https://www.linkedin.com/in/yesiamrocks/
+ * Created and maintained by: Shafayetul Islam Pavel
+ * Find me at: https://www.linkedin.com/in/shafayetul/
  * Email: hello@cssanimation.io
  * Github: https://github.com/yesiamrocks/cssanimation.io
- * Title: A CSS Animation Library for Developers and Ninjas
- * Copyright (c) 2017 Pavel
- * License: cssanimation.io is licensed under the MIT license
+ * Title: A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.
+ * cssanimation.io Copyright © 2025 Shafayetul Islam Pavel
  **/
+
 .cssanimation,
 .cssanimation span {
   animation-duration: 1s;
