@@ -50,8 +50,8 @@ Include the `cssanimation.css` library into the `<head>`:
 ```html
 <head>
   <link
+    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.css"
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/cssanimationio/dist/cssanimation.css"
   />
 </head>
 ```
@@ -80,7 +80,7 @@ What Are Sequence and Random Animations?
 Add this right **before the closing `</body>` tag**:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@latest/letteranimation.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/letteranimation.js"></script>
 ```
 
 #### Step 2. Add Animation classes to Your HTML
@@ -212,7 +212,7 @@ import "cssanimationio/cssanimation.css"; // or cssanimation.min.css
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 
 <!-- cssanimation.io's GSAP script -->
-<script src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@latest/cssanimation-gsap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-gsap.js"></script>
 ```
 
 ### 2. Add Animation Classes to Your Elements
