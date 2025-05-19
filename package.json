@@ -32,14 +32,15 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "npm run build:css && npm run copy:js",
+    "build": "npm run build:css && npm run copy:assets",
     "build:css": "postcss src/*.css -d dist/ --no-map",
-    "copy:js": "mkdir -p dist && cp src/*.js dist/",
+    "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules",
     "lint:css": "stylelint \"src/**/*.css\"",
     "lint:css:fix": "stylelint \"src/**/*.css\" --fix"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "cpx": "^1.5.0",
     "cssnano": "^7.0.7",
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
