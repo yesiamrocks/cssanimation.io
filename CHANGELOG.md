@@ -39,4 +39,4 @@ Updated the package.json files field to explicitly include:
   Package is now cleaner and production-focused. Only the `dist/` folder is published, reducing size and removing dev clutter.
 
 - **New Folder Structure**  
-  Modular CSS animations (e.g., `fade.css`, `rotate.css`, `zoom.css`) have been moved into a new `src/animations/` directory for better organization.
+  Modular CSS animations (e.g., `fade.css`, `rotate.css`, `zoom.css`) have been moved into a new `dist/modules/` directory for better organization.

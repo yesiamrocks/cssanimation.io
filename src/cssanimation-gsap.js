@@ -1,6 +1,6 @@
 /**
- * cssanimation-gsap.js
- * Current Version: 2.0.3
+ * cssanimation.css
+ * Current Version: 2.0.4
  * https://www.cssanimatio.io
  * Created and maintained by: Shafayetul Islam Pavel
  * Find me at: https://www.linkedin.com/in/shafayetul/
