@@ -1,0 +1,98 @@
+@keyframes lePushReleaseFrom {
+  0%{transform : scale(3, 3);
+  opacity : 0;
+}
+@keyframes lePushReleaseFromLeft {
+  0%{transform : translateX(-100%);
+  opacity : 0;
+}
+@keyframes lePushReleaseFromTop {
+  0%{transform : translateY(-100%);
+  opacity : 0;
+}
+@keyframes lePushReleaseFromBottom {
+  0%{transform : translateY(100%);
+  opacity : 0;
+}
+@keyframes lePushReleaseTo {
+  30%{transform : scale(0.5, 0.5);
+}
+@keyframes lePushReleaseToTop {
+  30%{transform : translateY(100px);
+}
+@keyframes lePushReleaseToBottom {
+  30%{transform : translateY(-100px);
+}
+.pushReleaseFrom {
+  animation-name : pushReleaseFrom;
+}
+@keyframes pushReleaseFrom {
+  0%{transform : scale(3, 3);
+  opacity : 0;
+}
+.pushReleaseFromLeft {
+  animation-name : pushReleaseFromLeft;
+}
+@keyframes pushReleaseFromLeft {
+  0%{transform : translateX(-100%);
+}
+.pushReleaseFromRight {
+  animation-name : pushReleaseFromRight;
+}
+@keyframes pushReleaseFromRight {
+  0%{transform : translateX(100%);
+}
+.pushReleaseFromTop {
+  animation-name : pushReleaseFromTop;
+}
+@keyframes pushReleaseFromTop {
+  0%{transform : translateY(-100%);
+}
+.pushReleaseFromBottom {
+  animation-name : pushReleaseFromBottom;
+}
+@keyframes pushReleaseFromBottom {
+  0%{transform : translateY(100%);
+}
+.pushReleaseTo {
+  animation-name : pushReleaseTo;
+}
+@keyframes pushReleaseTo {
+  30%{transform : scale(0.5, 0.5);
+}
+.pushReleaseToLeft {
+  animation-name : pushReleaseToLeft;
+}
+@keyframes pushReleaseToLeft {
+  30%{transform : translateX(100px);
+}
+.pushReleaseToRight {
+  animation-name : pushReleaseToRight;
+}
+@keyframes pushReleaseToRight {
+  30%{transform : translateX(-100px);
+}
+.pushReleaseToTop {
+  animation-name : pushReleaseToTop;
+}
+@keyframes pushReleaseToTop {
+  30%{transform : translateY(100px);
+}
+.pushReleaseToBottom {
+  animation-name : pushReleaseToBottom;
+}
+@keyframes pushReleaseToBottom {
+  30%{transform : translateY(-100px);
+}
+.pullRelease {
+  animation-name : pullRelease;
+}
+@keyframes pullRelease {
+  15%{transform : scale(1.8);
+}
+.pushRelease {
+  animation-name : pushRelease;
+}
+@keyframes pushRelease {
+  15%{transform : scale(0.5);
+}

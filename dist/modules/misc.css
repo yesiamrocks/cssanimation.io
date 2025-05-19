@@ -1,0 +1,445 @@
+.infinite {
+  animation-iteration-count : infinite !important;
+}
+.hu__hu__ {
+  animation : hu__hu__ infinite 2s ease-in-out;
+}
+@keyframes hu__hu__ {
+  50%{transform : translateY(30px);
+}
+@keyframes leSnake {
+  0%, 100%{transform : translateY(0);
+}
+.effect3d {
+  animation-name : effect3d;
+}
+@keyframes effect3d {
+  100%{text-shadow : 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%),
+      0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%),
+      0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+}
+@keyframes leRainDrop {
+0%,
+  25%,
+  55%,
+  75%,
+  87%,
+    97%, 100%{transform : scaleX(1);
+}
+.pepe {
+  animation-name : pepe;
+  animation-iteration-count : infinite;
+}
+.lightning {
+  animation-name : lightning;
+}
+@keyframes lightning {
+0%,
+    50%, 100%{opacity : 1;
+}
+.typing {
+  width : 473px;
+  overflow : hidden;
+  white-space : nowrap;
+  border-right : 2px solid #7e2ea0;
+  animation : typing 2s steps(12, end), cursor 0.2s steps(12, end) infinite;
+}
+@keyframes typing {
+  0%{width : 0;
+}
+@keyframes cursor {
+  50%{border-color : transparent;
+}
+.electricity {
+  animation-name : electricity;
+  animation-iteration-count : infinite;
+}
+@keyframes electricity {
+0%,
+  37%,
+  67%,
+    85%, 93%{transform : translateY(30px);
+}
+.wipe {
+  width : 473px;
+  overflow : hidden;
+  margin : 0 auto;
+  display : inline-flex;
+  animation-name : wipe;
+}
+@keyframes wipe {
+  100%{width : 0;
+}
+.open {
+  width : 473px;
+  margin : 0 auto;
+  overflow : hidden;
+  display : inline-flex;
+  animation-name : open;
+}
+@keyframes open {
+  0%{width : 0;
+}
+@keyframes leMagnify {
+  50%{transform : scale(1.8);
+  letter-spacing : 26px;
+}
+@keyframes leBeat {
+  14%, 42%{transform : scale(1.3);
+}
+@keyframes leScaleX {
+  50%{transform : scaleX(0.4);
+}
+@keyframes leSkateY {
+  50%{transform : scaleY(0.4);
+}
+@keyframes leSkateXY {
+  25%{transform : scale3d(1, 0.4, 0);
+}
+@keyframes leJump {
+  100%{transform : translateY(-20px);
+}
+@keyframes leAboundTop {
+  50%{transform : translateY(-100px);
+  animation-timing-function : ease-in;
+}
+@keyframes leAboundBottom {
+  50%{transform : translateY(100px);
+  animation-timing-function : ease-in;
+}
+@keyframes leAboundLeft {
+  50%{transform : translateX(-100px);
+  animation-timing-function : ease-in;
+}
+@keyframes leAboundRight {
+  50%{transform : translateX(100px);
+  animation-timing-function : ease-in;
+}
+@keyframes leFlyInTop {
+  0%{transform : translate(0, -80px);
+  opacity : 0;
+}
+@keyframes leFlyInLeft {
+  0%{transform : translate(-40px, 0);
+  opacity : 0;
+}
+@keyframes leFlyInRight {
+  0%{transform : translate(40px, 0);
+  opacity : 0;
+}
+@keyframes leFlyInBottom {
+  0%{transform : translate(0, 80px);
+  opacity : 0;
+}
+@keyframes leFlyOutTop {
+  50%{transform : translate(0, 50px);
+}
+@keyframes leFlyOutLeft {
+  50%{transform : translate(40px, 0);
+}
+@keyframes leFlyOutRight {
+  50%{transform : translate(-40px, 0);
+}
+@keyframes leFlyOutBottom {
+  50%{transform : translate(0, -40px);
+}
+@keyframes leHangAndDropLeft {
+  0%{transform-origin : left;
+}
+@keyframes leHangAndDropRight {
+  0%{transform-origin : right;
+}
+@keyframes leRencontre {
+0%,
+    33%, 100%{transform-origin : bottom;
+  animation-timing-function : cubic-bezier(0.17, 0.67, 0.79, 1.83);
+}
+@keyframes leMadMax {
+3%,
+  12%,
+  21%,
+  30%,
+  39%,
+  48%,
+  57%,
+  65%,
+  74%,
+    83%, 92%{transform : translateY(5px) scale(1.1);
+}
+@keyframes leCrazyCool {
+3%,
+  21%,
+  39%,
+  57%,
+    74%, 92%{transform : translateY(5px) scale(1.1);
+}
+@keyframes leRollFromLeft {
+  0%{transform : translateX(-60px) perspective(600px) rotateY(180deg);
+  opacity : 0;
+}
+@keyframes leRollFromRight {
+  0%{transform : translateX(60px) perspective(600px) rotateY(-180deg);
+  opacity : 0;
+}
+@keyframes leRollFromTop {
+  0%{transform : translateY(-60px) perspective(600px) rotateX(180deg);
+  opacity : 0;
+}
+@keyframes leRollFromBottom {
+  0%{transform : translateY(60px) perspective(600px) rotateX(-180deg);
+  opacity : 0;
+}
+@keyframes leRollToLeft {
+  100%{transform : translateX(-60px) perspective(600px) rotateY(180deg);
+  opacity : 0;
+}
+@keyframes leRollToRight {
+  100%{transform : translateX(60px) perspective(600px) rotateY(-180deg);
+  opacity : 0;
+}
+@keyframes leRollToTop {
+  100%{transform : translateY(-60px) perspective(600px) rotateX(180deg);
+  opacity : 0;
+}
+@keyframes leRollToBottom {
+  100%{transform : translateY(60px) perspective(600px) rotateX(-180deg);
+  opacity : 0;
+}
+@keyframes lePopUp {
+  50%{transform : scale(1.5);
+}
+@keyframes lePopUpLeft {
+  50%{transform : translateX(-50px) scale(1.5);
+  animation-timing-function : ease-in;
+}
+@keyframes lePopUpRight {
+  50%{transform : translateX(50px) scale(1.5);
+  animation-timing-function : ease-in;
+}
+@keyframes lePopOut {
+  50%{transform : scale(0.5);
+}
+@keyframes lePopOutLeft {
+  50%{transform : translateX(-50px) scale(0.5);
+  animation-timing-function : ease-in;
+}
+@keyframes lePopOutRight {
+  50%{transform : translateX(50px) scale(0.5);
+  animation-timing-function : ease-in;
+}
+@keyframes leDanceInTop {
+  0%{opacity : 0;
+}
+@keyframes leDanceInMiddle {
+  0%{opacity : 0;
+}
+@keyframes leDanceInBottom {
+  0%{opacity : 0;
+}
+@keyframes leoaoFlyInTop {
+  0%{transform : translateY(80px);
+  opacity : 0;
+}
+@keyframes leoaoFlyInBottom {
+  0%{transform : translateY(-80px);
+  opacity : 0;
+}
+@keyframes leoaoFlyOutTop {
+  30%{transform : translateY(80px);
+  animation-timing-function : ease-out;
+}
+@keyframes leoaoFlyOutBottom {
+  30%{transform : translateY(-80px);
+  animation-timing-function : ease-out;
+}
+.moveFromLeft {
+  animation-name : moveFromLeft;
+}
+@keyframes moveFromLeft {
+  0%{transform : translateX(-800px);
+}
+.moveFromRight {
+  animation-name : moveFromRight;
+}
+@keyframes moveFromRight {
+  0%{transform : translateX(800px);
+}
+.moveFromTop {
+  animation-name : moveFromTop;
+}
+@keyframes moveFromTop {
+  0%{transform : translateY(-800px);
+}
+.moveFromBottom {
+  animation-name : moveFromBottom;
+}
+@keyframes moveFromBottom {
+  0%{transform : translateY(800px);
+}
+.moveToLeft {
+  animation-name : moveToLeft;
+}
+@keyframes moveToLeft {
+  100%{transform : translateX(-800px);
+}
+.moveToRight {
+  animation-name : moveToRight;
+}
+@keyframes moveToRight {
+  100%{transform : translateX(800px);
+}
+.moveToTop {
+  animation-name : moveToTop;
+}
+@keyframes moveToTop {
+  100%{transform : translateY(-800px);
+}
+.moveToBottom {
+  animation-name : moveToBottom;
+}
+@keyframes moveToBottom {
+  100%{transform : translateY(800px);
+}
+.heartbeatSlow {
+  animation-name : heartbeatSlow;
+  animation-iteration-count : infinite;
+  animation-duration : 0.5s;
+}
+@keyframes heartbeatSlow {
+  35%, 65%{transform : scale(1.2);
+}
+.heartbeatFast {
+  animation-name : heartbeatFast;
+  animation-iteration-count : infinite;
+}
+@keyframes heartbeatFast {
+  14%, 42%{transform : scale(1.3);
+}
+.hangOnLeft {
+  animation-name : hangOnLeft;
+}
+@keyframes hangOnLeft {
+  0%{transform-origin : left;
+}
+.hangOnRight {
+  animation-name : hangOnRight;
+}
+@keyframes hangOnRight {
+  0%{transform-origin : right;
+}
+.hangAndDropLeft {
+  animation-name : hangAndDropLeft;
+}
+@keyframes hangAndDropLeft {
+  0%{transform-origin : left;
+}
+.hangAndDropRight {
+  animation-name : hangAndDropRight;
+}
+@keyframes hangAndDropRight {
+  0%{transform-origin : right;
+}
+.madMax {
+  animation-name : madMax;
+  animation-iteration-count : infinite;
+}
+@keyframes madMax {
+3%,
+  12%,
+  21%,
+  30%,
+  39%,
+  48%,
+  57%,
+  65%,
+  74%,
+    83%, 92%{transform : translateY(5px) scale(1.1);
+}
+.quietMad {
+  animation-name : quietMad;
+  animation-iteration-count : infinite;
+}
+@keyframes quietMad {
+3%,
+  21%,
+  39%,
+  57%,
+    74%, 92%{transform : translateY(5px) scale(1.1);
+}
+.vibration {
+  animation : vibration 0.1s linear infinite;
+}
+.flipX {
+  animation-name : flipX;
+}
+.flipY {
+  animation-name : flipY;
+}
+.rollFromLeft {
+  animation-name : rollFromLeft;
+}
+@keyframes rollFromLeft {
+  0%{transform : translateX(-100%) perspective(600px) rotateY(180deg);
+  opacity : 0;
+}
+.rollFromRight {
+  animation-name : rollFromRight;
+}
+@keyframes rollFromRight {
+  0%{transform : translateX(100%) perspective(600px) rotateY(-180deg);
+  opacity : 0;
+}
+.rollFromTop {
+  animation-name : rollFromTop;
+}
+@keyframes rollFromTop {
+  0%{transform : translateY(-100%) perspective(600px) rotateY(180deg);
+  opacity : 0;
+}
+.rollFromBottom {
+  animation-name : rollFromBottom;
+}
+@keyframes rollFromBottom {
+  0%{transform : translateY(100%) perspective(600px) rotateY(-180deg);
+  opacity : 0;
+}
+.rollToLeft {
+  animation-name : rollToLeft;
+}
+@keyframes rollToLeft {
+  0%{transform : translateX(0) perspective(600px) rotateY(0deg);
+  opacity : 1;
+}
+.rollToRight {
+  animation-name : rollToRight;
+}
+@keyframes rollToRight {
+  0%{transform : translateX(0) perspective(600px) rotateY(0deg);
+  opacity : 1;
+}
+.rollToTop {
+  animation-name : rollToTop;
+}
+@keyframes rollToTop {
+  0%{transform : translateY(0) perspective(600px) rotateX(0deg);
+  opacity : 1;
+}
+.rollToBottom {
+  animation-name : rollToBottom;
+}
+@keyframes rollToBottom {
+  100%{transform : translateY(0) perspective(600px) rotateX(0deg);
+  opacity : 1;
+}
+.danceTop {
+  animation-name : danceTop;
+  transform-origin : top;
+}
+.danceMiddle {
+  animation-name : danceMiddle;
+}
+.danceBottom {
+  animation-name : danceBottom;
+  transform-origin : bottom;
+}

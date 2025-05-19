@@ -1,0 +1,117 @@
+@keyframes leWaterWave {
+  50% {
+    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+  }
+
+
+@keyframes leVibration {
+  50% {
+    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+  }
+
+
+@keyframes leDanceOutTop {
+  16% {
+    transform: skew(-14deg);
+  }
+  
+
+@keyframes leDanceOutMiddle {
+  16% {
+    transform: skew(-14deg);
+  }
+  
+
+@keyframes leDanceOutBottom {
+  16% {
+    transform: skew(-14deg);
+  }
+  
+
+@keyframes vibration {
+  50% {
+    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+  }
+
+
+.skewLeft {
+  animation-name: skewLeft;
+}
+
+@keyframes skewLeft {
+  70% {
+    transform: skewX(40deg);
+  }
+
+
+.skewRight {
+  animation-name: skewRight;
+}
+
+@keyframes skewRight {
+  70% {
+    transform: skewX(-40deg);
+  }
+
+
+.skewInLeft {
+  animation-name: skewInLeft;
+}
+
+@keyframes skewInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) skewX(-40deg);
+  }
+  
+
+.skewInRight {
+  animation-name: skewInRight;
+}
+
+@keyframes skewInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) skewX(40deg);
+  }
+  
+
+.skewOutLeft {
+  animation-name: skewOutLeft;
+}
+
+@keyframes skewOutLeft {
+  20% {
+    transform: skewX(40deg);
+  }
+  
+
+.skewOutRight {
+  animation-name: skewOutRight;
+}
+
+@keyframes skewOutRight {
+  20% {
+    transform: skewX(-40deg);
+  }
+  
+
+@keyframes danceTop {
+  16% {
+    transform: skew(-14deg);
+  }
+  
+
+@keyframes danceMiddle {
+  16% {
+    transform: skew(-14deg);
+  }
+  
+
+@keyframes danceBottom {
+  16% {
+    transform: skew(-14deg);
+  }
+  
+
+}}}}}}}}}}}}}}}

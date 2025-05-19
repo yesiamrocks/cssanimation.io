@@ -1,0 +1,269 @@
+/*************************************************************
+Letter Blur In
+**************************************************************/
+.leBlurIn span {
+  animation-name: leBlurIn;
+}
+
+@keyframes leBlurIn {
+  from {
+    transform: scaleX(0.2);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.leBlurInRight span {
+  animation-name: leBlurInRight;
+}
+
+@keyframes leBlurInRight {
+  from {
+    transform: scaleX(0.2) translateX(100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.leBlurInLeft span {
+  animation-name: leBlurInLeft;
+}
+
+@keyframes leBlurInLeft {
+  from {
+    transform: scaleX(0.2) translateX(-100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.leBlurInTop span {
+  animation-name: leBlurInTop;
+}
+
+@keyframes leBlurInTop {
+  from {
+    transform: scaleY(0.2) translateY(-100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.leBlurInBottom span {
+  animation-name: leBlurInBottom;
+}
+
+@keyframes leBlurInBottom {
+  from {
+    transform: scaleY(0.2) translateY(100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+/*************************************************************
+Letter Blur Out
+**************************************************************/
+.leBlurOut span {
+  animation-name: leBlurOut;
+}
+
+@keyframes leBlurOut {
+  to {
+    transform: scaleX(0.2);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.leBlurOutRight span {
+  animation-name: leBlurOutRight;
+}
+
+@keyframes leBlurOutRight {
+  to {
+    transform: scaleX(0.2) translateX(100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.leBlurOutLeft span {
+  animation-name: leBlurOutLeft;
+}
+
+@keyframes leBlurOutLeft {
+  to {
+    transform: scaleX(0.2) translateX(-100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.leBlurOutTop span {
+  animation-name: leBlurOutTop;
+}
+
+@keyframes leBlurOutTop {
+  to {
+    transform: scaleY(0.2) translateY(-100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.leBlurOutBottom span {
+  animation-name: leBlurOutBottom;
+}
+
+@keyframes leBlurOutBottom {
+  to {
+    transform: scaleY(0.2) translateY(100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+/*************************************************************
+Blur In
+**************************************************************/
+
+.blurIn {
+  animation-name: blurIn;
+}
+
+@keyframes blurIn {
+  from {
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.blurInLeft {
+  animation-name: blurInLeft;
+}
+
+@keyframes blurInLeft {
+  from {
+    transform: translateX(100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.blurInRight {
+  animation-name: blurInRight;
+}
+
+@keyframes blurInRight {
+  from {
+    transform: translateX(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.blurInTop {
+  animation-name: blurInTop;
+}
+
+@keyframes blurInTop {
+  from {
+    transform: translateY(100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.blurInBottom {
+  animation-name: blurInBottom;
+}
+
+@keyframes blurInBottom {
+  from {
+    transform: translateY(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+/*************************************************************
+Blur Out
+**************************************************************/
+.blurOut {
+  animation-name: blurOut;
+}
+
+@keyframes blurOut {
+  85%,
+  100% {
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.blurOutLeft {
+  animation-name: blurOutLeft;
+}
+
+@keyframes blurOutLeft {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.blurOutRight {
+  animation-name: blurOutRight;
+}
+
+@keyframes blurOutRight {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.blurOutTop {
+  animation-name: blurOutTop;
+}
+
+@keyframes blurOutTop {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.blurOutBottom {
+  animation-name: blurOutBottom;
+}
+
+@keyframes blurOutBottom {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
