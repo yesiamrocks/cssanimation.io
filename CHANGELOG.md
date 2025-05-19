@@ -29,9 +29,7 @@ Updated the package.json files field to explicitly include:
 **Tag:** `v2.0.4`  
 **Focus:** Clean publish, modular structure, and future-friendly folder refactor
 
----
-
-### ✨ What’s New
+### What’s New
 
 - **Dist-Only Publishing to NPM**  
   Package is now cleaner and production-focused. Only the `dist/` folder is published, reducing size and removing dev clutter.
