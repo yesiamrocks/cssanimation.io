@@ -1,6 +1,6 @@
 # Version: v2.0.3
 
-### Production-Ready Build – Only dist/ Published
+### Production-Ready Build – Only `dist/` Published
 
 **Released:** May 2025  
 **Tag:** `v2.0.3`  
