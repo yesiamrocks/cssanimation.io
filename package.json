@@ -1,18 +1,22 @@
 {
   "name": "cssanimationio",
   "version": "2.0.1",
-  "description": "Modular and lightweight CSS animation library",
+  "description": "A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.",
   "main": "dist/cssanimation.css",
   "keywords": [
     "css",
     "animation",
-    "library",
-    "scroll",
-    "frontend",
-    "modular"
+    "CSS animation library",
+    "scroll animation",
+    "GSAP animation library",
+    "text animation library",
+    "pure CSS animations",
+    "letter animation effects",
+    "CSS keyframe animations",
+    "animate text with CSS"
   ],
-  "author": "Pavel <hello@cssanimation.io>",
-  "license": "Hippocratic-2.1",
+  "author": "Shafayetul Islam Pavel <hello@cssanimation.io>",
+  "license": "Parity Public License",
   "repository": {
     "type": "git",
     "url": "https://github.com/yesiamrocks/cssanimation.io"
@@ -20,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/yesiamrocks/cssanimation.io/issues"
   },
-  "homepage": "https://github.com/yesiamrocks/cssanimation.io#readme",
+  "homepage": "https://cssanimation.io/",
   "files": [
     "dist/",
     "src/"
