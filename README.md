@@ -40,7 +40,7 @@ npm i cssanimationio
 Import it into your file:
 
 ```shell
-`import 'cssanimation.css';`
+import 'cssanimation.css';
 ```
 
 #### Option B: Install via CDN
