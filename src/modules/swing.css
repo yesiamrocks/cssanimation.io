@@ -7,39 +7,37 @@
     transform: matrix(3, 0, 0, 3, -800, 0);
     animation-timing-function: ease-out;
   }
-  
 
-.swingInRight {
-  animation-name: swingInRight;
-}
-
-@keyframes swingInRight {
-  0% {
-    transform: matrix(3, 0, 0, 3, 800, 0);
-    animation-timing-function: ease-out;
+  .swingInRight {
+    animation-name: swingInRight;
   }
-  
 
-.swingInTop {
-  animation-name: swingInTop;
-}
+  @keyframes swingInRight {
+    0% {
+      transform: matrix(3, 0, 0, 3, 800, 0);
+      animation-timing-function: ease-out;
+    }
 
-@keyframes swingInTop {
-  0% {
-    transform: matrix(3, 0, 0, 3, 0, -800);
-    animation-timing-function: ease-out;
+    .swingInTop {
+      animation-name: swingInTop;
+    }
+
+    @keyframes swingInTop {
+      0% {
+        transform: matrix(3, 0, 0, 3, 0, -800);
+        animation-timing-function: ease-out;
+      }
+
+      .swingInBottom {
+        animation-name: swingInBottom;
+      }
+
+      @keyframes swingInBottom {
+        0% {
+          transform: matrix(3, 0, 0, 3, 0, 800);
+          animation-timing-function: ease-out;
+        }
+      }
+    }
   }
-  
-
-.swingInBottom {
-  animation-name: swingInBottom;
 }
-
-@keyframes swingInBottom {
-  0% {
-    transform: matrix(3, 0, 0, 3, 0, 800);
-    animation-timing-function: ease-out;
-  }
-  
-
-}}}}

@@ -73,10 +73,18 @@ Striking
 
 @keyframes effect3d {
   to {
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-      0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%),
-      0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%),
-      0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%),
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgb(0 0 0 / 10%),
+      0 0 5px rgb(0 0 0 / 10%),
+      0 1px 3px rgb(0 0 0 / 30%),
+      0 3px 5px rgb(0 0 0 / 20%),
+      0 5px 10px rgb(0 0 0 / 25%),
+      0 10px 10px rgb(0 0 0 / 20%),
       0 20px 20px rgb(0 0 0 / 15%);
   }
 }
@@ -189,7 +197,9 @@ Striking
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid #7e2ea0;
-  animation: typing 2s steps(12, end), cursor 0.2s steps(12, end) infinite;
+  animation:
+    typing 2s steps(12, end),
+    cursor 0.2s steps(12, end) infinite;
 }
 
 @keyframes typing {
@@ -2295,8 +2305,7 @@ Letter Perspective
   }
 
   100% {
-    transform: perspective(500px) rotateX(90deg) translateY(-50px)
-      translateZ(50px);
+    transform: perspective(500px) rotateX(90deg) translateY(-50px) translateZ(50px);
     opacity: 0;
   }
 }
@@ -2313,8 +2322,7 @@ Letter Perspective
   }
 
   100% {
-    transform: perspective(500px) rotateX(90deg) translateY(50px)
-      translateZ(-50px);
+    transform: perspective(500px) rotateX(90deg) translateY(50px) translateZ(-50px);
     opacity: 0;
   }
 }
@@ -5297,8 +5305,7 @@ Perspective
   }
 
   100% {
-    transform: perspective(500px) rotateX(90deg) translateY(-50px)
-      translateZ(50px);
+    transform: perspective(500px) rotateX(90deg) translateY(-50px) translateZ(50px);
     opacity: 0;
   }
 }
@@ -5315,8 +5322,7 @@ Perspective
   }
 
   100% {
-    transform: perspective(500px) rotateX(90deg) translateY(50px)
-      translateZ(-50px);
+    transform: perspective(500px) rotateX(90deg) translateY(50px) translateZ(-50px);
     opacity: 0;
   }
 }

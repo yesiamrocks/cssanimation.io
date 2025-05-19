@@ -2,123 +2,121 @@
   90% {
     transform: scale(1);
   }
-  
 
-@keyframes leHorizontalShake {
-  3%,
-  12%,
-  21%,
-  30%,
-  39%,
-  48%,
-  57%,
-  65%,
-  74%,
-  3%,
-  92% {
-    transform: translateX(5px);
+  @keyframes leHorizontalShake {
+    3%,
+    12%,
+    21%,
+    30%,
+    39%,
+    48%,
+    57%,
+    65%,
+    74%,
+    3%,
+    92% {
+      transform: translateX(5px);
+    }
+
+    @keyframes leVerticalShake {
+      3%,
+      12%,
+      21%,
+      30%,
+      39%,
+      48%,
+      57%,
+      65%,
+      74%,
+      83%,
+      92% {
+        transform: translateY(5px);
+      }
+
+      .pulseShake {
+        animation-name: pulseShake;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes pulseShake {
+        90% {
+          transform: scale(1);
+        }
+
+        .horizontalShake {
+          animation-name: horizontalShake;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes horizontalShake {
+          3%,
+          12%,
+          21%,
+          30%,
+          39%,
+          48%,
+          57%,
+          65%,
+          74%,
+          83%,
+          92% {
+            transform: translateX(5px);
+          }
+
+          .verticalShake {
+            animation-name: verticalShake;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes verticalShake {
+            3%,
+            12%,
+            21%,
+            30%,
+            39%,
+            48%,
+            57%,
+            65%,
+            74%,
+            83%,
+            92% {
+              transform: translateY(5px);
+            }
+
+            .coolHorizontalShake {
+              animation-name: coolHorizontalShake;
+              animation-iteration-count: infinite;
+            }
+
+            @keyframes coolHorizontalShake {
+              3%,
+              21%,
+              39%,
+              57%,
+              74%,
+              92% {
+                transform: translateX(5px);
+              }
+
+              .coolVerticalShake {
+                animation-name: coolVerticalShake;
+                animation-iteration-count: infinite;
+              }
+
+              @keyframes coolVerticalShake {
+                3%,
+                21%,
+                39%,
+                57%,
+                74%,
+                92% {
+                  transform: translateY(5px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  
-
-@keyframes leVerticalShake {
-  3%,
-  12%,
-  21%,
-  30%,
-  39%,
-  48%,
-  57%,
-  65%,
-  74%,
-  83%,
-  92% {
-    transform: translateY(5px);
-  }
-  
-
-.pulseShake {
-  animation-name: pulseShake;
-  animation-iteration-count: infinite;
 }
-
-@keyframes pulseShake {
-  90% {
-    transform: scale(1);
-  }
-  
-
-.horizontalShake {
-  animation-name: horizontalShake;
-  animation-iteration-count: infinite;
-}
-
-@keyframes horizontalShake {
-  3%,
-  12%,
-  21%,
-  30%,
-  39%,
-  48%,
-  57%,
-  65%,
-  74%,
-  83%,
-  92% {
-    transform: translateX(5px);
-  }
-  
-
-.verticalShake {
-  animation-name: verticalShake;
-  animation-iteration-count: infinite;
-}
-
-@keyframes verticalShake {
-  3%,
-  12%,
-  21%,
-  30%,
-  39%,
-  48%,
-  57%,
-  65%,
-  74%,
-  83%,
-  92% {
-    transform: translateY(5px);
-  }
-  
-
-.coolHorizontalShake {
-  animation-name: coolHorizontalShake;
-  animation-iteration-count: infinite;
-}
-
-@keyframes coolHorizontalShake {
-  3%,
-  21%,
-  39%,
-  57%,
-  74%,
-  92% {
-    transform: translateX(5px);
-  }
-  
-
-.coolVerticalShake {
-  animation-name: coolVerticalShake;
-  animation-iteration-count: infinite;
-}
-
-@keyframes coolVerticalShake {
-  3%,
-  21%,
-  39%,
-  57%,
-  74%,
-  92% {
-    transform: translateY(5px);
-  }
-  
-
-}}}}}}}}

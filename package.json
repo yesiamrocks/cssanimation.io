@@ -1,55 +1,57 @@
 {
-  "name": "cssanimationio",
-  "version": "2.0.4",
-  "description": "A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.",
-  "main": "dist/cssanimation.css",
-  "style": "dist/cssanimation.css",
-  "keywords": [
-    "css",
-    "animation",
-    "CSS animation library",
-    "scroll animation",
-    "gsap animation",
-    "text animation",
-    "pure CSS animations",
-    "letter animation effects",
-    "CSS keyframe animations",
-    "animate text with CSS"
-  ],
-  "author": "Shafayetul Islam Pavel <hello@cssanimation.io>",
-  "license": "SEE LICENSE IN LICENSE",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yesiamrocks/cssanimation.io"
-  },
-  "bugs": {
-    "url": "https://github.com/yesiamrocks/cssanimation.io/issues"
-  },
-  "homepage": "https://cssanimation.io/",
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
-  "scripts": {
-    "build": "npm run build:css && npm run copy:assets",
-    "build:css": "postcss src/*.css -d dist/ --no-map",
-    "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules",
-    "lint:css": "stylelint \"src/**/*.css\"",
-    "lint:css:fix": "stylelint \"src/**/*.css\" --fix"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "cpx": "^1.5.0",
-    "cssnano": "^7.0.7",
-    "postcss": "^8.5.3",
-    "postcss-cli": "^11.0.1",
-    "postcss-preset-env": "^10.1.6",
-    "postcss-selector-namespace": "^3.0.1",
-    "stylelint": "^16.19.1",
-    "stylelint-config-standard": "^38.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+    "name": "cssanimationio",
+    "version": "2.0.4",
+    "description": "A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.",
+    "main": "dist/cssanimation.css",
+    "style": "dist/cssanimation.css",
+    "keywords": [
+        "css",
+        "animation",
+        "CSS animation library",
+        "scroll animation",
+        "gsap animation",
+        "text animation",
+        "pure CSS animations",
+        "letter animation effects",
+        "CSS keyframe animations",
+        "animate text with CSS"
+    ],
+    "author": "Shafayetul Islam Pavel <hello@cssanimation.io>",
+    "license": "SEE LICENSE IN LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yesiamrocks/cssanimation.io"
+    },
+    "bugs": {
+        "url": "https://github.com/yesiamrocks/cssanimation.io/issues"
+    },
+    "homepage": "https://cssanimation.io/",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "npm run build:css && npm run copy:assets",
+        "build:css": "postcss src/*.css -d dist/ --no-map",
+        "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules",
+        "lint:css": "stylelint \"src/**/*.css\"",
+        "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
+        "format:css": "prettier --write \"src/**/*.css\""
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.21",
+        "cpx": "^1.5.0",
+        "cssnano": "^7.0.7",
+        "postcss": "^8.5.3",
+        "postcss-cli": "^11.0.1",
+        "postcss-preset-env": "^10.1.6",
+        "postcss-selector-namespace": "^3.0.1",
+        "prettier": "^3.5.3",
+        "stylelint": "^16.19.1",
+        "stylelint-config-standard": "^38.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
 }

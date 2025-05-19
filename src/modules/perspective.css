@@ -13,8 +13,7 @@ Perspective
   }
 
   100% {
-    transform: perspective(500px) rotateX(90deg) translateY(-50px)
-      translateZ(50px);
+    transform: perspective(500px) rotateX(90deg) translateY(-50px) translateZ(50px);
     opacity: 0;
   }
 }
@@ -31,8 +30,7 @@ Perspective
   }
 
   100% {
-    transform: perspective(500px) rotateX(90deg) translateY(50px)
-      translateZ(-50px);
+    transform: perspective(500px) rotateX(90deg) translateY(50px) translateZ(-50px);
     opacity: 0;
   }
 }
