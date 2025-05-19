@@ -1,0 +1,38 @@
+@keyframes leElevateLeft {
+  from {
+    transform: translateY(100%) rotate(-20deg);
+    transform-origin: right;
+    opacity: 0;
+  }
+  
+
+@keyframes leElevateRight {
+  from {
+    transform: translateY(100%) rotate(20deg);
+    transform-origin: left;
+    opacity: 0;
+  }
+  
+
+.elevateLeft {
+  animation-name: elevateLeft;
+}
+
+@keyframes elevateLeft {
+  from {
+    transform: translateY(100%) rotate(-20deg);
+    transform-origin: right;
+  }
+  
+
+.elevateRight {
+  animation-name: elevateRight;
+}
+
+@keyframes elevateRight {
+  from {
+    transform: translateY(100%) rotate(20deg);
+    transform-origin: left;
+  }
+  
+

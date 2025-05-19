@@ -1,0 +1,196 @@
+@keyframes leFadeIn {
+  from {
+    opacity: 0;
+  }
+  
+
+@keyframes leFadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  
+
+@keyframes leFadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  
+
+@keyframes leFadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+
+@keyframes leFadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+
+@keyframes leFadeOut {
+  to {
+    opacity: 0;
+  }
+
+
+@keyframes leFadeOutLeft {
+  from {
+    opacity: 1;
+  }
+  
+
+@keyframes leFadeOutRight {
+  from {
+    opacity: 1;
+  }
+  
+
+@keyframes leFadeOutTop {
+  from {
+    opacity: 1;
+  }
+  
+
+@keyframes leFadeOutBottom {
+  from {
+    opacity: 1;
+  }
+  
+
+@keyframes leoaoFadeInTop {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+
+@keyframes leoaoFadeInBottom {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+
+@keyframes leoaoFadeOutop {
+  to {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+
+@keyframes leoaoFadeOutBottom {
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+
+.fadeInTop {
+  animation-name: fadeInTop;
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+  
+
+.fadeOutRight {
+  animation-name: fadeOutRight;
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+  
+
+.fadeOutTop {
+  animation-name: fadeOutTop;
+}
+
+@keyframes fadeOutTop {
+  from {
+    opacity: 1;
+  }
+  
+
+.fadeOutBottom {
+  animation-name: fadeOutBottom;
+}
+
+@keyframes fadeOutBottom {
+  from {
+    opacity: 1;
+  }
+  
+

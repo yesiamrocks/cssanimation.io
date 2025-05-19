@@ -1,0 +1,44 @@
+.swingInLeft {
+  animation-name: swingInLeft;
+}
+
+@keyframes swingInLeft {
+  from {
+    transform: matrix(3, 0, 0, 3, -800, 0);
+    animation-timing-function: ease-out;
+  }
+  
+
+.swingInRight {
+  animation-name: swingInRight;
+}
+
+@keyframes swingInRight {
+  from {
+    transform: matrix(3, 0, 0, 3, 800, 0);
+    animation-timing-function: ease-out;
+  }
+  
+
+.swingInTop {
+  animation-name: swingInTop;
+}
+
+@keyframes swingInTop {
+  from {
+    transform: matrix(3, 0, 0, 3, 0, -800);
+    animation-timing-function: ease-out;
+  }
+  
+
+.swingInBottom {
+  animation-name: swingInBottom;
+}
+
+@keyframes swingInBottom {
+  from {
+    transform: matrix(3, 0, 0, 3, 0, 800);
+    animation-timing-function: ease-out;
+  }
+  
+

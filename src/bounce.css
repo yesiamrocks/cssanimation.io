@@ -1,0 +1,233 @@
+@keyframes leBounceFromTop {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+  
+
+@keyframes leBounceFromDown {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+  
+
+@keyframes leBounceY {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale3d(1, 1, 1);
+  }
+  
+
+@keyframes leBounceZoomIn {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+  
+
+@keyframes leBounceZoomOut {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+  
+
+.bounceFromTop {
+  animation-name: bounceFromTop;
+}
+
+@keyframes bounceFromTop {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+  
+
+.bounceFromDown {
+  animation-name: bounceFromDown;
+}
+
+@keyframes bounceFromDown {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+  
+
+.bounceX {
+  animation-name: bounceX;
+}
+
+@keyframes bounceX {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale3d(1, 1, 1);
+  }
+  
+
+.bounceY {
+  animation-name: bounceY;
+}
+
+@keyframes bounceY {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale3d(1, 1, 1);
+  }
+  
+
+.bounceZoomIn {
+  animation-name: bounceZoomIn;
+}
+
+@keyframes bounceZoomIn {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+  
+
+.bounceZoomOut {
+  animation-name: bounceZoomOut;
+}
+
+@keyframes bounceZoomOut {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+  
+
+.bounceInTop {
+  animation-name: bounceInTop;
+}
+
+@keyframes bounceInTop {
+  0% {
+    transform: translate3d(0, -300%, 0);
+  }
+  
+
+.bounceInBottom {
+  animation-name: bounceInBottom;
+}
+
+@keyframes bounceInBottom {
+  0% {
+    transform: translate3d(0, 300%, 0);
+  }
+  
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+@keyframes bounceInLeft {
+  0% {
+    transform: translate3d(-300%, 0, 0);
+  }
+  
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+@keyframes bounceInRight {
+  0% {
+    transform: translate3d(300%, 0, 0);
+  }
+  
+
+.bounceOutTop {
+  animation-name: bounceOutTop;
+}
+
+@keyframes bounceOutTop {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+  
+
+.bounceOutBottom {
+  animation-name: bounceOutBottom;
+}
+
+@keyframes bounceOutBottom {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+  
+
+.bounceOutLeft {
+  animation-name: bounceOutLeft;
+}
+
+@keyframes bounceOutLeft {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+  
+
+.bounceOutRight {
+  animation-name: bounceOutRight;
+}
+
+@keyframes bounceOutRight {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+  
+

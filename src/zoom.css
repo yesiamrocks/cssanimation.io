@@ -1,0 +1,202 @@
+@keyframes leJoltZoom {
+  10% {
+    font-size: 140%;
+  }
+  
+
+@keyframes leZoomIn {
+  from {
+    transform: scale(10);
+    opacity: 0;
+  }
+
+
+@keyframes leZoomInLeft {
+  from {
+    transform: scale(10) translateX(-150%);
+    opacity: 0;
+  }
+
+
+@keyframes leZoomInRight {
+  from {
+    transform: scale(10) translateX(150%);
+    opacity: 0;
+  }
+
+
+@keyframes LetterZoomInTop {
+  from {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
+
+
+@keyframes leZoomInBottom {
+  from {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+
+
+@keyframes leZoomOut {
+  to {
+    transform: scale(10);
+    opacity: 0;
+  }
+
+
+@keyframes leZoomOutLeft {
+  to {
+    transform: scale(10) translateX(-150%);
+    opacity: 0;
+  }
+
+
+@keyframes leZoomOutRight {
+  to {
+    transform: scale(10) translateX(150%);
+    opacity: 0;
+  }
+
+
+@keyframes leZoomOutTop {
+  to {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
+
+
+@keyframes leZoomOutBottom {
+  to {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+
+
+.flipXZoomIn {
+  animation-name: flipXZoomIn;
+}
+
+.flipXZoomOut {
+  animation-name: flipXZoomOut;
+}
+
+.flipYZoomIn {
+  animation-name: flipYZoomIn;
+}
+
+.flipYZoomOut {
+  animation-name: flipYZoomOut;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(10);
+    opacity: 0;
+  }
+
+
+.zoomInLeft {
+  animation-name: zoomInLeft;
+}
+
+@keyframes zoomInLeft {
+  from {
+    transform: scale(10) translateX(-50%);
+    opacity: 0;
+  }
+
+
+.zoomInRight {
+  animation-name: zoomInRight;
+}
+
+@keyframes zoomInRight {
+  from {
+    transform: scale(10) translateX(50%);
+    opacity: 0;
+  }
+
+
+.zoomInTop {
+  animation-name: zoomInTop;
+}
+
+@keyframes zoomInTop {
+  from {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
+
+
+.zoomInBottom {
+  animation-name: zoomInBottom;
+}
+
+@keyframes zoomInBottom {
+  from {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+
+
+.zoomOut {
+  animation-name: zoomOut;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale(10);
+    opacity: 0;
+  }
+
+
+.zoomOutLeft {
+  animation-name: zoomOutLeft;
+}
+
+@keyframes zoomOutLeft {
+  to {
+    transform: scale(10) translateX(-50%);
+    opacity: 0;
+  }
+
+
+.zoomOutRight {
+  animation-name: zoomOutRight;
+}
+
+@keyframes zoomOutRight {
+  to {
+    transform: scale(10) translateX(50%);
+    opacity: 0;
+  }
+
+
+.zoomOutTop {
+  animation-name: zoomOutTop;
+}
+
+@keyframes zoomOutTop {
+  to {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
+
+
+.zoomOutBottom {
+  animation-name: zoomOutBottom;
+}
+
+@keyframes zoomOutBottom {
+  to {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+
+
