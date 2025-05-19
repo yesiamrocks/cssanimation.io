@@ -1,6 +1,10 @@
 # Version: v2.0.3
 
-### Release Name: Production-Ready Build – Only dist/ Published | v2.0.3
+### Production-Ready Build – Only dist/ Published
+
+**Released:** May 2025  
+**Tag:** `v2.0.3`  
+**Focus:** Clean publish and future-friendly folder refactor
 
 ### Release Summary
 
@@ -23,7 +27,7 @@ Updated the package.json files field to explicitly include:
 
 # Version: v2.0.4
 
-### v2.0.4 — Production Build & Modular Structure Refinement
+### Production Build & Modular Structure Refinement
 
 **Released:** May 2025  
 **Tag:** `v2.0.4`  
