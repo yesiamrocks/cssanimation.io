@@ -50,10 +50,10 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ```html
 <head>
-  <link
-    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.css"
-    rel="stylesheet"
-  />
+    <link
+        href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.css"
+        rel="stylesheet"
+    />
 </head>
 ```
 
@@ -70,12 +70,12 @@ _That's it! You've got a CSS animated element. Super!_
 ## How to Use Letter Animations
 
 Want to animate text, letter by letter?  
-The **cssanimation.io** library includes **100+ letter-based effects** (`leFadeIn`, `leZoomIn`, `leRotateX`, etc.) perfect for headlines, banners, and hero sections.
+The **cssanimation.io** library includes **100+ letter-based effects** (`.leFadeIn`, `.leZoomIn`, `.leRotateX`, etc.) perfect for headlines, banners, and hero sections.
 
-**cssanimation.io** library also includes **two exclusive types** of letter animations: `sequence` and `random`. What Are Sequence and Random Animations?
+**cssanimation.io** library also includes **two exclusive types** of letter animations: `.sequence` and `.random`. What Are Sequence and Random Animations?
 
-- **`sequence`** – Letters animate **one after another**, in order.
-- **`random`** – Letters animate in a **randomized order**, adding playful motion.
+- **`.sequence`** – Letters animate **one after another**, in order.
+- **`.random`** – Letters animate in a **randomized order**, adding playful motion.
 
 #### Step 1. Include the Script
 
@@ -89,12 +89,12 @@ Add this right **before the closing `</body>` tag**:
 
 Use:
 
-| Class          | What It Does                                    |
-| -------------- | ----------------------------------------------- |
-| `cssanimation` | Base class for all animations                   |
-| `leFadeIn`     | A letter animation class (Fades in each letter) |
-| `sequence`     | Animates letters in order                       |
-| `random`       | Animates letters in random order                |
+| Class           | What It Does                                    |
+| --------------- | ----------------------------------------------- |
+| `.cssanimation` | Base class for all animations                   |
+| `.leFadeIn`     | A letter animation class (Fades in each letter) |
+| `.sequence`     | Animates letters in order                       |
+| `.random`       | Animates letters in random order                |
 
 ```html
 <h1 class="cssanimation leFadeIn sequence">Hello World</h1>
@@ -114,12 +114,12 @@ Only need fade and zoom?
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/fade.css"
-  rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/fade.css"
+    rel="stylesheet"
 />
 <link
-  href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/zoom.css"
-  rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/zoom.css"
+    rel="stylesheet"
 />
 ```
 
@@ -150,8 +150,8 @@ For the full list of animation utility classes check the [cssanimation-cheatshee
 Combo Example
 
 ```html
-<h2 class="cssanimation zoomIn .ca_speed-chill delay-3 ease-snappy loop-bounce">
-  Magical Entrance!
+<h2 class="cssanimation zoomIn ca_speed-chill delay-3 ease-snappy loop-bounce">
+    Magical Entrance!
 </h2>
 ```
 
@@ -198,7 +198,7 @@ import 'cssanimationio/dist/cssanimation-gsap';
 
 ### 2. Add Animation Classes to Your Elements
 
-Add the `cssanimation` class and one of the supported animation class names, like `fadeIn`:
+Add the `.cssanimation` class and one of the supported animation class names, like `.fadeIn`:
 
 ```html
 <h1 class="cssanimation fadeIn">Example</h1>
@@ -208,7 +208,7 @@ Add the `cssanimation` class and one of the supported animation class names, lik
 
 ### 3. Letter Animations (Sequential Only)
 
-For **letter-by-letter animation**, just use any `le*` animation class like `leFadeIn`.
+For **letter-by-letter animation**, just use any `le*` animation class like `.leFadeIn`.
 
 ```html
 <h1 class="cssanimation leFadeIn">Amazing!</h1>
