@@ -15,7 +15,7 @@
 
 **cssanimation.io** is a lightweight, modular **CSS animation library** designed for developers, designers, and UI ninjas. It provides over **300+ CSS and GSAP-powered plug-and-play animation** classes to bring your interfaces to life — from simple fades and zooms to dynamic letter effects and 3D transitions.
 
-You stay in control, just apply the [class names](cssanimation-cheatsheet.md) when and where you want them. **No dependencies. No setup. Just clean, reusable animations.**
+You stay in control, just apply the [class names](dist/cssanimation-cheatsheet.md) when and where you want them. **No dependencies. No setup. Just clean, reusable animations.**
 
 ### Why Developers Love It
 
@@ -49,10 +49,7 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ```html
 <head>
-  <link
-    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.css" rel="stylesheet" />
 </head>
 ```
 
@@ -166,9 +163,7 @@ cssanimation.io includes handy utility classes to make animations even easier to
 Combo Example
 
 ```html
-<h2 class="cssanimation zoomIn speed-chill delay-3 ease-snappy loop-bounce">
-  Magical Entrance!
-</h2>
+<h2 class="cssanimation zoomIn speed-chill delay-3 ease-snappy loop-bounce">Magical Entrance!</h2>
 ```
 
 # ![GSAP Powered](https://img.shields.io/badge/GSAP-Powered-brightgreen) GSAP Animation Guide
@@ -196,13 +191,13 @@ Then in your JavaScript:
 
 ```js
 // Import GSAP core
-import { TweenMax } from "gsap";
+import { TweenMax } from 'gsap';
 
 // Import cssanimation.io's GSAP integration
-import "cssanimationio/cssanimation-gsap";
+import 'cssanimationio/cssanimation-gsap';
 
 // Include CSS styles
-import "cssanimationio/cssanimation.css"; // or cssanimation.min.css
+import 'cssanimationio/cssanimation.css'; // or cssanimation.min.css
 ```
 
 #### Or Include via CDN. If you're working without a bundler:
@@ -241,8 +236,8 @@ _Note: The GSAP version currently supports **sequential letter animations only**
 | --------------------------- | ------------------------------------ | ----------------------------------------------------- |
 | 🧱 Technology               | Pure CSS                             | JavaScript (GSAP)                                     |
 | ⚡ Performance              | Great for simple UI effects          | Optimized for complex, smooth animations              |
-| 🎛 Control                   | Fine-grained control via CSS         | Fine-grained control via JS (timing, easing)          |
-| 🎞 Animation Types           | Predefined class-based animations    | Class-based with dynamic GSAP tweening                |
+| 🎛 Control                  | Fine-grained control via CSS         | Fine-grained control via JS (timing, easing)          |
+| 🎞 Animation Types          | Predefined class-based animations    | Class-based with dynamic GSAP tweening                |
 | 🔤 Letter Animation Support | ✅ Sequence & Random                 | ✅ Sequence only (random coming soon)                 |
 | 🔁 Looping & Repeating      | `infinite` class                     | Full loop control via JS (e.g. `repeat`, `yoyo`)      |
 | ⚙️ Configuration            | Minimal setup                        | Script includes + optional JS tweaks                  |
@@ -250,7 +245,7 @@ _Note: The GSAP version currently supports **sequential letter animations only**
 | 📦 Size                     | Very lightweight (no JS needed)      | Heavier due to JS dependency                          |
 | 🧩 Dependencies             | None                                 | Requires GSAP (`TweenMax`)                            |
 | 🌐 CDN Available?           | ✅ Yes                               | ✅ Yes                                                |
-| 🛠 NPM Ready?                | ✅ Yes (`cssanimationio`)            | ✅ Yes (`cssanimationio`)                             |
+| 🛠 NPM Ready?               | ✅ Yes (`cssanimationio`)            | ✅ Yes (`cssanimationio`)                             |
 | 🧠 Use Case Examples        | Hover states, hero sections, banners | Interactive animations, scroll triggers, custom flows |
 
 ## Accessibility: Reduce Motion Support
