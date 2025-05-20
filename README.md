@@ -50,7 +50,10 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ```html
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.css"
+    rel="stylesheet"
+  />
 </head>
 ```
 
@@ -66,9 +69,10 @@ _That's it! You've got a CSS animated element. Super!_
 
 ## How to Use Letter Animations
 
-Animate your text one letter at a time with style. Our library includes **two exclusive types** of letter animations: `sequence` and `random`.
+Want to animate text, letter by letter?  
+The cssanimation.io library includes **100+ letter-based effects** (`leFadeIn`, `leZoomIn`, `leRotateX`, etc.) perfect for headlines, banners, and hero sections.
 
-What Are Sequence and Random Animations?
+cssanimation.io library also includes **two exclusive types** of letter animations: `sequence` and `random`. What Are Sequence and Random Animations?
 
 - **`sequence`** – Letters animate **one after another**, in order.
 - **`random`** – Letters animate in a **randomized order**, adding playful motion.
@@ -97,6 +101,11 @@ Use:
 <h2 class="cssanimation leFadeIn random">Surprise!</h2>
 ```
 
+Browse the full list of `le` (letter-based) animation classes.
+
+- [Cheatsheet on GitHub](https://github.com/yesiamrocks/cssanimation.io/blob/master/dist/cssanimation-cheatsheet.md#letter-based-animations-le)
+- [Official Website](https://cssanimation.io)
+
 > This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.
 
 ## Modular Import
@@ -104,67 +113,48 @@ Use:
 Only need fade and zoom?
 
 ```html
-<link href="cssanimation.io/src/fade.css" rel="stylesheet" />
-<link href="cssanimation.io/src/zoom.css" rel="stylesheet" />
+<link
+  href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/fade.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/zoom.css"
+  rel="stylesheet"
+/>
 ```
 
 #### Available Modules
 
-| Module      | File               |
-| ----------- | ------------------ |
-| Fade        | `src/fade.css`     |
-| Zoom        | `src/zoom.css`     |
-| Rotate      | `src/rotate.css`   |
-| Bounce      | `src/bounce.css`   |
-| Slide       | `src/slide.css`    |
-| ...and more | See `/src/` folder |
+| Module      | File                |
+| ----------- | ------------------- |
+| Fade        | `dist/fade.css`     |
+| Zoom        | `dist/zoom.css`     |
+| Rotate      | `dist/rotate.css`   |
+| Bounce      | `dist/bounce.css`   |
+| Slide       | `dist/slide.css`    |
+| ...and more | See `/dist/` folder |
 
 ## Utility Class
 
 cssanimation.io includes handy utility classes to make animations even easier to apply. Just use them along with the `.cssanimation` base class and your chosen animation class.
 
-### Duration (Speed Classes)
+This includes:
 
-| Class Name    | Duration | Description               |
-| ------------- | -------- | ------------------------- |
-| `speed-blitz` | `0.3s`   | Very fast                 |
-| `speed-quick` | `0.6s`   | Default (slightly faster) |
-| `speed-chill` | `1.2s`   | Calm and fluid            |
-| `speed-drift` | `2s`     | Slow motion               |
-| `speed-snail` | `3s`     | Super slow                |
+- Duration Animation Utilities (Speed Classes) (`.ca_speed-*`)
+- Delay Animation Utilities (Start Later) (`.ca_delay-*`)
+- Easing Animation Utilities (Timing Functions) (`.ca_ease-*`)
+- Repeating Animation Utilities (Repeat) (`.ca_loop-*`)
 
-### Delay (Start Later)
+For the full list of animation utility classes like easing presets, custom speeds, and more
 
-| Class Name | Delay   | Description       |
-| ---------- | ------- | ----------------- |
-| `delay-1`  | `0.25s` | Slight pause      |
-| `delay-2`  | `0.5s`  | Half second delay |
-| `delay-3`  | `1s`    | One second delay  |
-| `delay-5`  | `2s`    | Two seconds delay |
-
-### Easing (Timing Functions)
-
-| Class Name    | Easing Function                | Description           |
-| ------------- | ------------------------------ | --------------------- |
-| `ease-smooth` | `ease-in-out`                  | Default smooth motion |
-| `ease-snappy` | `cubic-bezier(.5, 1.8, .5, 1)` | Spring pop            |
-| `ease-chill`  | `ease-in`                      | Gentle start          |
-| `ease-punch`  | `ease-out`                     | Quick exit            |
-| `ease-linear` | `linear`                       | Constant speed        |
-
-### Repeating (Loops)
-
-| Class Name     | Behavior             | Description             |
-| -------------- | -------------------- | ----------------------- |
-| `loop-once`    | `1`                  | Play one time (default) |
-| `loop-forever` | `infinite`           | Infinite repeat         |
-| `loop-triple`  | `3`                  | 3x repeat               |
-| `loop-bounce`  | `infinite alternate` | Ping-pong style         |
+[![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](./dist/cssanimation-cheatsheet.md)
 
 Combo Example
 
 ```html
-<h2 class="cssanimation zoomIn speed-chill delay-3 ease-snappy loop-bounce">Magical Entrance!</h2>
+<h2 class="cssanimation zoomIn .ca_speed-chill delay-3 ease-snappy loop-bounce">
+  Magical Entrance!
+</h2>
 ```
 
 # ![GSAP Powered](https://img.shields.io/badge/GSAP-Powered-brightgreen) GSAP Animation Guide
