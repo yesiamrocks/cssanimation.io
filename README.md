@@ -55,7 +55,7 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ## Usage Examples
 
-After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name [click here](cssanimation-cheatsheet.md) or [check the website](https://cssanimation.io/getting-started.html).
+After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name [click here](dist/cssanimation-cheatsheet.md) or [check the website](https://cssanimation.io/getting-started.html).
 
 ```html
 <h1 class="cssanimation fadeIn">Hello, World!</h1>
