@@ -145,9 +145,7 @@ This includes:
 - Easing Animation Utilities (Timing Functions) (`.ca_ease-*`)
 - Repeating Animation Utilities (Repeat) (`.ca_loop-*`)
 
-For the full list of animation utility classes like easing presets, custom speeds, and more
-
-[![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](./dist/cssanimation-cheatsheet.md#utility-class)
+For the full list of animation utility classes check the cssanimation-cheatsheet [![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](./dist/cssanimation-cheatsheet.md#utility-class)
 
 Combo Example
 
