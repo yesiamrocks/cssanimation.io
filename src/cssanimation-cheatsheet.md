@@ -178,5 +178,4 @@ This file contains a categorized list of all available animation classes support
 | `.ca_loop-triple`  | `3`                  | 3x repeat               |
 | `.ca_loop-bounce`  | `infinite alternate` | Ping-pong style         |
 
-
 _Explore more with live demos and animation playgrounds at [cssanimation.io](https://cssanimation.io)_ 🚀
