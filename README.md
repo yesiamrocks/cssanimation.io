@@ -70,9 +70,9 @@ _That's it! You've got a CSS animated element. Super!_
 ## How to Use Letter Animations
 
 Want to animate text, letter by letter?  
-The cssanimation.io library includes **100+ letter-based effects** (`leFadeIn`, `leZoomIn`, `leRotateX`, etc.) perfect for headlines, banners, and hero sections.
+The **cssanimation.io** library includes **100+ letter-based effects** (`leFadeIn`, `leZoomIn`, `leRotateX`, etc.) perfect for headlines, banners, and hero sections.
 
-cssanimation.io library also includes **two exclusive types** of letter animations: `sequence` and `random`. What Are Sequence and Random Animations?
+**cssanimation.io** library also includes **two exclusive types** of letter animations: `sequence` and `random`. What Are Sequence and Random Animations?
 
 - **`sequence`** – Letters animate **one after another**, in order.
 - **`random`** – Letters animate in a **randomized order**, adding playful motion.
@@ -136,7 +136,7 @@ Only need fade and zoom?
 
 ## Utility Class
 
-cssanimation.io includes handy utility classes to make animations even easier to apply. Just use them along with the `.cssanimation` base class and your chosen animation class.
+**cssanimation.io** includes handy utility classes to make animations even easier to apply. Just use them along with the `.cssanimation` base class and your chosen animation class.
 
 This includes:
 
@@ -157,7 +157,7 @@ Combo Example
 
 # ![GSAP Powered](https://img.shields.io/badge/GSAP-Powered-brightgreen) GSAP Animation Guide
 
-cssanimation.io isn’t just about CSS – it also supports **GSAP** (GreenSock Animation Platform), the gold standard for JavaScript animations. With GSAP, you get even more powerful, smooth, and flexible control over your animations.
+**cssanimation.io** isn’t just about CSS – it also supports **GSAP** (GreenSock Animation Platform), the gold standard for JavaScript animations. With GSAP, you get even more powerful, smooth, and flexible control over your animations.
 
 ## Why Use the GSAP Version?
 
@@ -183,10 +183,7 @@ Then in your JavaScript:
 import { TweenMax } from 'gsap';
 
 // Import cssanimation.io's GSAP integration
-import 'cssanimationio/cssanimation-gsap';
-
-// Include CSS styles
-import 'cssanimationio/cssanimation.css'; // or cssanimation.min.css
+import 'cssanimationio/dist/cssanimation-gsap';
 ```
 
 #### Or Include via CDN. If you're working without a bundler:
@@ -239,11 +236,11 @@ _Note: The GSAP version currently supports **sequential letter animations only**
 
 ## Accessibility: Reduce Motion Support
 
-By default, cssanimation.io respects user system preferences. When `prefers-reduced-motion: reduce` is enabled, animations are automatically turned off for a better UX.
+By default, **cssanimation.io** respects user system preferences. When `prefers-reduced-motion: reduce` is enabled, animations are automatically turned off for a better UX.
 
 ## License
 
-cssanimation.io is licensed under the [Parity Public License](https://paritylicense.com/)
+**cssanimation.io** is licensed under the [Parity Public License](https://paritylicense.com/)
 
 ## Having trouble?
 
