@@ -145,7 +145,7 @@ This includes:
 - Easing Animation Utilities (Timing Functions) (`.ca_ease-*`)
 - Repeating Animation Utilities (Repeat) (`.ca_loop-*`)
 
-For the full list of animation utility classes check the `cssanimation-cheatsheet.md` [![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](./dist/cssanimation-cheatsheet.md#utility-class)
+For the full list of animation utility classes check the [cssanimation-cheatsheet.md](dist/cssanimation-cheatsheet.md#utility-class) [![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](dist/cssanimation-cheatsheet.md#utility-class)
 
 Combo Example
 
@@ -204,7 +204,7 @@ Add the `cssanimation` class and one of the supported animation class names, lik
 <h1 class="cssanimation fadeIn">Example</h1>
 ```
 
-📌 **Tip**: Check the full list of animation class names on the [homepage](https://cssanimation.io) or in the cheatsheet.
+📌 **Tip**: Check the full list of animation class names on the [homepage](https://cssanimation.io) or in the [cssanimation-cheatsheet.md](dist/cssanimation-cheatsheet.md#utility-class).
 
 ### 3. Letter Animations (Sequential Only)
 
