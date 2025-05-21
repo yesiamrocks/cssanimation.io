@@ -2,7 +2,7 @@
     "name": "cssanimationio",
     "version": "2.0.5",
     "description": "A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.",
-    "main": "dist/cssanimation.css",
+    "main": "index.js",
     "style": "dist/cssanimation.css",
     "keywords": [
         "css",
@@ -54,5 +54,12 @@
     },
     "publishConfig": {
         "access": "public"
+    },
+    "exports": {
+        ".": "./index.js",
+        "./gsap": "./dist/cssanimation-gsap.js",
+        "./letter": "./dist/ca-letteranimation.js",
+        "./css": "./dist/cssanimation.css",
+        "./utility": "./dist/ca-animation-utility.css"
     }
 }

@@ -1,4 +1,4 @@
-# cssanimation.io
+# CSS Animation Library for Developers and Ninjas — cssanimation.io
 
 > A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.
 
@@ -34,14 +34,14 @@ You stay in control, just apply the [class names](dist/cssanimation-cheatsheet.m
 
 #### Option A: Install with NPM
 
-```shell
+```bash
 npm i cssanimationio
 ```
 
 Import it into your file:
 
-```shell
-import 'cssanimation.css';
+```bash
+import 'cssanimationio';
 ```
 
 #### Option B: Install via CDN
@@ -136,16 +136,16 @@ Only need fade and zoom?
 
 ## Utility Class
 
-**cssanimation.io** includes handy utility classes to make animations even easier to apply. Just use them along with the `.cssanimation` base class and your chosen animation class.
+**cssanimation.io** offers a powerful set of pre-built utility classes. Just use them along with the `.cssanimation` base class and your chosen animation class.
 
 This includes:
 
-- Duration Animation Utilities (Speed Classes) (`.ca_speed-*`)
-- Delay Animation Utilities (Start Later) (`.ca_delay-*`)
-- Easing Animation Utilities (Timing Functions) (`.ca_ease-*`)
-- Repeating Animation Utilities (Repeat) (`.ca_loop-*`)
+- `.ca_speed-*`: Control speed
+- `.ca_ease-*`: Easing control
+- `.ca_loop-*`: Repeat settings
+- `.ca_delay-*`: Add delays
 
-For the full list of animation utility classes check the [cssanimation-cheatsheet.md](dist/cssanimation-cheatsheet.md#utility-class) [![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](dist/cssanimation-cheatsheet.md#utility-class)
+**Check out the full list of utility classes in [`cssanimation-cheatsheet.md`](./dist/cssanimation-cheatsheet.md#utility-class)** [![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](dist/cssanimation-cheatsheet.md#utility-class)
 
 Combo Example
 
@@ -240,10 +240,10 @@ By default, **cssanimation.io** respects user system preferences. When `prefers-
 
 ## License
 
-**cssanimation.io** is licensed under the [Parity Public License](https://paritylicense.com/)
+**cssanimation.io** is licensed under the [Parity Public License](https://paritylicense.com/) — Free for organizational and personal use.
 
-## Having trouble?
+## 📣 Contribute
 
-If **cssanimation.io** isn't doing what you expect it to please create a [issue](https://github.com/yesiamrocks/cssanimation.io/issues)
+We welcome issues, pull requests, and suggestions! Make your animations even more magical.
 
 ![Built with ❤️ by Pavel](https://img.shields.io/badge/built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/shafayetul/)
