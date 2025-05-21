@@ -26,7 +26,7 @@ files.forEach((filePath) => {
 });
 
 // Build markdown output
-let output = '# Class Name Reference by File\n\n';
+let output = '# cssanimation.io – Animation Class Reference\n\n';
 
 for (const [file, classSet] of Object.entries(groupedClasses)) {
     output += `## ${file}\n`;
@@ -37,5 +37,5 @@ for (const [file, classSet] of Object.entries(groupedClasses)) {
     output += '\n';
 }
 
-fs.writeFileSync('cssanimation-reference.md', output, 'utf8');
+fs.writeFileSync('./src/cssanimation-reference.md', output, 'utf8');
 console.log('✅ Grouped class reference saved to cssanimation-reference.md');

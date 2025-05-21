@@ -1,4 +1,4 @@
-# Class Name Reference by File
+# cssanimation.io – Animation Class Reference
 
 ## cssanimation.css
 - `.ca__blurIn`
