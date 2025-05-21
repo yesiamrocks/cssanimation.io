@@ -68,6 +68,7 @@
         "./utility": "./dist/cssanimation-utility.css"
     },
     "dependencies": {
+        "glob-parent": "^6.0.2",
         "micromatch": "^4.0.8"
     }
 }
