@@ -113,11 +113,11 @@ Only need fade and zoom?
 
 ```html
 <link
-    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/fade.css"
+    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/ca__fade.css"
     rel="stylesheet"
 />
 <link
-    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/zoom.css"
+    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/ca__zoom.css"
     rel="stylesheet"
 />
 ```
@@ -144,7 +144,7 @@ This includes:
 - `.ca__loop-*`: Repeat settings
 - `.ca__delay-*`: Add delays
 
-**Check out the full list of utility classes in [`cssanimation-reference.md`](./dist/cssanimation-reference.md#cssanimation-utility.css)** [![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](./dist/cssanimation-reference.md#cssanimation-utility.css)
+**Check out the full list of utility classes in [`cssanimation-reference.md`](./dist/cssanimation-reference.md#cssanimation-utilitycss)** [![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](./dist/cssanimation-reference.md#cssanimation-utilitycss)
 
 Combo Example
 
@@ -188,7 +188,7 @@ import { TweenMax } from 'gsap';
 
 ```html
 <!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
 <!-- cssanimation.io's GSAP script -->
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-gsap.js"></script>
@@ -196,10 +196,10 @@ import { TweenMax } from 'gsap';
 
 ### 2. Add Animation Classes to Your Elements
 
-Add the `.cssanimation` class and one of the supported animation class names, like `.ca__fadeIn`:
+Add the `.cssanimation` class and one of the supported animation class names, like `.ca__gsap-fadeIn`:
 
 ```html
-<h1 class="cssanimation ca__fadeIn">Example</h1>
+<h1 class="cssanimation ca__gsap-fadeIn">Example</h1>
 ```
 
 📌 **Tip**: Check the full list of animation class names on the [homepage](https://cssanimation.io) or in the [cssanimation-reference.md](./dist/cssanimation-reference.md).
