@@ -1,9 +1,7 @@
 module.exports = {
-  plugins: [
-    // Adds vendor prefixes based on .browserslistrc
-    require("autoprefixer"),
-
-    // Polyfills modern CSS features based on browser support
-    require("postcss-preset-env")(),
-  ],
+    plugins: [
+        require('autoprefixer'),
+        require('postcss-preset-env')(),
+        require('./postcss/classname-prefixer')({ prefix: 'ca__' }),
+    ],
 };

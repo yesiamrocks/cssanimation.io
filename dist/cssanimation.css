@@ -11,24 +11,24 @@
  * cssanimation.io Copyright © 2025 Shafayetul Islam Pavel
  **/
 
-.cssanimation,
-.cssanimation span {
+.ca__cssanimation,
+.ca__cssanimation span {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
 
-.cssanimation span {
+.ca__cssanimation span {
     display: inline-block;
 }
 
-.infinite {
+.ca__infinite {
     animation-iteration-count: infinite !important;
 }
 
 /*************************************************************
 Striking
 **************************************************************/
-.hu__hu__ {
+.ca__hu__hu__ {
     animation: hu__hu__ infinite 2s ease-in-out;
 }
 
@@ -38,7 +38,7 @@ Striking
     }
 }
 
-.leSnake span {
+.ca__leSnake span {
     animation: leSnake 1.5s ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -54,7 +54,7 @@ Striking
     }
 }
 
-.lePeek span {
+.ca__lePeek span {
     animation-name: lePeek;
 }
 
@@ -68,7 +68,7 @@ Striking
     }
 }
 
-.effect3d {
+.ca__effect3d {
     animation-name: effect3d;
 }
 
@@ -90,7 +90,7 @@ Striking
     }
 }
 
-.leRainDrop span {
+.ca__leRainDrop span {
     animation-name: leRainDrop;
     animation-iteration-count: infinite;
 }
@@ -128,7 +128,7 @@ Striking
     }
 }
 
-.pepe {
+.ca__pepe {
     animation-name: pepe;
     animation-iteration-count: infinite;
 }
@@ -148,7 +148,7 @@ Striking
     }
 }
 
-.leWaterWave span {
+.ca__leWaterWave span {
     animation: leWaterWave 0.2s linear infinite;
 }
 
@@ -158,7 +158,7 @@ Striking
     }
 }
 
-.lightning {
+.ca__lightning {
     animation-name: lightning;
 }
 
@@ -175,7 +175,7 @@ Striking
     }
 }
 
-.leJoltZoom span {
+.ca__leJoltZoom span {
     animation-name: leJoltZoom;
 }
 
@@ -193,7 +193,7 @@ Striking
     }
 }
 
-.typing {
+.ca__typing {
     width: 473px;
     overflow: hidden;
     white-space: nowrap;
@@ -215,7 +215,7 @@ Striking
     }
 }
 
-.electricity {
+.ca__electricity {
     animation-name: electricity;
     animation-iteration-count: infinite;
 }
@@ -272,7 +272,7 @@ Striking
     }
 }
 
-.wipe {
+.ca__wipe {
     width: 473px;
     overflow: hidden;
     margin: 0 auto;
@@ -286,7 +286,7 @@ Striking
     }
 }
 
-.open {
+.ca__open {
     width: 473px;
     margin: 0 auto;
     overflow: hidden;
@@ -300,7 +300,7 @@ Striking
     }
 }
 
-.leMagnify span {
+.ca__leMagnify span {
     animation-name: leMagnify;
 }
 
@@ -311,7 +311,7 @@ Striking
     }
 }
 
-.leBeat span {
+.ca__leBeat span {
     animation-name: leBeat;
 }
 
@@ -330,7 +330,7 @@ Striking
 /*************************************************************
 Letter Fade in
 **************************************************************/
-.leFadeIn span {
+.ca__leFadeIn span {
     animation-name: leFadeIn;
 }
 
@@ -344,7 +344,7 @@ Letter Fade in
     }
 }
 
-.leFadeInLeft span {
+.ca__leFadeInLeft span {
     animation-name: leFadeInLeft;
 }
 
@@ -359,7 +359,7 @@ Letter Fade in
     }
 }
 
-.leFadeInRight span {
+.ca__leFadeInRight span {
     animation-name: leFadeInRight;
 }
 
@@ -374,7 +374,7 @@ Letter Fade in
     }
 }
 
-.leFadeInTop span {
+.ca__leFadeInTop span {
     animation-name: leFadeInTop;
 }
 
@@ -389,7 +389,7 @@ Letter Fade in
     }
 }
 
-.leFadeInBottom span {
+.ca__leFadeInBottom span {
     animation-name: leFadeInBottom;
 }
 
@@ -407,7 +407,7 @@ Letter Fade in
 /************************************************************
 Letter Fade Out
 *************************************************************/
-.leFadeOut span {
+.ca__leFadeOut span {
     animation-name: leFadeOut;
 }
 
@@ -417,7 +417,7 @@ Letter Fade Out
     }
 }
 
-.leFadeOutLeft span {
+.ca__leFadeOutLeft span {
     animation-name: leFadeOutLeft;
 }
 
@@ -432,7 +432,7 @@ Letter Fade Out
     }
 }
 
-.leFadeOutRight span {
+.ca__leFadeOutRight span {
     animation-name: leFadeOutRight;
 }
 
@@ -447,7 +447,7 @@ Letter Fade Out
     }
 }
 
-.leFadeOutTop span {
+.ca__leFadeOutTop span {
     animation-name: leFadeOutTop;
 }
 
@@ -462,7 +462,7 @@ Letter Fade Out
     }
 }
 
-.leFadeOutBottom span {
+.ca__leFadeOutBottom span {
     animation-name: leFadeOutBottom;
 }
 
@@ -480,7 +480,7 @@ Letter Fade Out
 /*************************************************************
 Moving Back
 **************************************************************/
-.leMovingBackFromRight span {
+.ca__leMovingBackFromRight span {
     animation-name: leMovingBackFromRight;
     transform-origin: bottom;
 }
@@ -496,7 +496,7 @@ Moving Back
     }
 }
 
-.leMovingBackFromLeft span {
+.ca__leMovingBackFromLeft span {
     animation-name: leMovingBackFromLeft;
     transform-origin: bottom;
 }
@@ -515,7 +515,7 @@ Moving Back
 /*************************************************************
 Kick out
 **************************************************************/
-.leKickOutBehind span {
+.ca__leKickOutBehind span {
     animation-name: leKickOutFront;
     transform-origin: top;
 }
@@ -531,7 +531,7 @@ Kick out
     }
 }
 
-.leKickOutFront span {
+.ca__leKickOutFront span {
     animation-name: leKickOutBehind;
     transform-origin: top;
 }
@@ -550,7 +550,7 @@ Kick out
 /************************************************************
 Letter Skate
 *************************************************************/
-.leSkateX span {
+.ca__leSkateX span {
     animation-name: leScaleX;
     animation-iteration-count: infinite;
 }
@@ -561,7 +561,7 @@ Letter Skate
     }
 }
 
-.leSkateY span {
+.ca__leSkateY span {
     animation-name: leSkateY;
     animation-iteration-count: infinite;
 }
@@ -572,7 +572,7 @@ Letter Skate
     }
 }
 
-.leSkateXY span {
+.ca__leSkateXY span {
     animation-name: leSkateXY;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
@@ -595,7 +595,7 @@ Letter Skate
 /************************************************************
 Letter Scale
 *************************************************************/
-.leScaleXIn span {
+.ca__leScaleXIn span {
     animation-name: leScaleXIn;
 }
 
@@ -610,7 +610,7 @@ Letter Scale
     }
 }
 
-.leScaleXOut span {
+.ca__leScaleXOut span {
     animation-name: leScaleXOut;
 }
 
@@ -625,7 +625,7 @@ Letter Scale
     }
 }
 
-.leScaleYIn span {
+.ca__leScaleYIn span {
     animation-name: leScaleYIn;
 }
 
@@ -640,7 +640,7 @@ Letter Scale
     }
 }
 
-.leScaleYOut span {
+.ca__leScaleYOut span {
     animation-name: leScaleYOut;
 }
 
@@ -658,7 +658,7 @@ Letter Scale
 /*************************************************************
 Letter Jump
 **************************************************************/
-.leJump span {
+.ca__leJump span {
     animation-name: leJump;
     animation-iteration-count: infinite;
 }
@@ -672,7 +672,7 @@ Letter Jump
 /*************************************************************
 Letter Fly
 **************************************************************/
-.leAboundTop span {
+.ca__leAboundTop span {
     animation-name: leAboundTop;
 }
 
@@ -683,7 +683,7 @@ Letter Fly
     }
 }
 
-.leAboundBottom span {
+.ca__leAboundBottom span {
     animation-name: leAboundBottom;
 }
 
@@ -694,7 +694,7 @@ Letter Fly
     }
 }
 
-.leAboundLeft span {
+.ca__leAboundLeft span {
     animation-name: leAboundLeft;
 }
 
@@ -705,7 +705,7 @@ Letter Fly
     }
 }
 
-.leAboundRight span {
+.ca__leAboundRight span {
     animation-name: leAboundRight;
 }
 
@@ -719,7 +719,7 @@ Letter Fly
 /*************************************************************
 Letter Fly In
 **************************************************************/
-.leFlyInTop span {
+.ca__leFlyInTop span {
     animation-name: leFlyInTop;
 }
 
@@ -735,7 +735,7 @@ Letter Fly In
     }
 }
 
-.leFlyInLeft span {
+.ca__leFlyInLeft span {
     animation-name: leFlyInLeft;
     animation-timing-function: ease-in-out;
 }
@@ -751,7 +751,7 @@ Letter Fly In
     }
 }
 
-.leFlyInRight span {
+.ca__leFlyInRight span {
     animation-name: leFlyInRight;
     animation-timing-function: ease-in-out;
 }
@@ -767,7 +767,7 @@ Letter Fly In
     }
 }
 
-.leFlyInBottom span {
+.ca__leFlyInBottom span {
     animation-name: leFlyInBottom;
 }
 
@@ -786,7 +786,7 @@ Letter Fly In
 /*************************************************************
 Letter Fly Out
 **************************************************************/
-.leFlyOutTop span {
+.ca__leFlyOutTop span {
     animation-name: leFlyOutTop;
 }
 
@@ -801,7 +801,7 @@ Letter Fly Out
     }
 }
 
-.leFlyOutLeft span {
+.ca__leFlyOutLeft span {
     animation-name: leFlyOutLeft;
     animation-timing-function: ease-in-out;
 }
@@ -817,7 +817,7 @@ Letter Fly Out
     }
 }
 
-.leFlyOutRight span {
+.ca__leFlyOutRight span {
     animation-name: leFlyOutRight;
     animation-timing-function: ease-in-out;
 }
@@ -833,7 +833,7 @@ Letter Fly Out
     }
 }
 
-.leFlyOutBottom span {
+.ca__leFlyOutBottom span {
     animation-name: leFlyOutBottom;
 }
 
@@ -851,7 +851,7 @@ Letter Fly Out
 /*************************************************************
 Letter Door Open & Close
 **************************************************************/
-.leDoorCloseLeft span {
+.ca__leDoorCloseLeft span {
     animation-name: leDoorCloseLeft;
 }
 
@@ -872,7 +872,7 @@ Letter Door Open & Close
     }
 }
 
-.leDoorOpenRight span {
+.ca__leDoorOpenRight span {
     animation-name: leDoorOpenRight;
 }
 
@@ -889,7 +889,7 @@ Letter Door Open & Close
     }
 }
 
-.leDoorCloseRight span {
+.ca__leDoorCloseRight span {
     animation-name: leDoorCloseRight;
 }
 
@@ -910,7 +910,7 @@ Letter Door Open & Close
     }
 }
 
-.leDoorOpenLeft span {
+.ca__leDoorOpenLeft span {
     animation-name: leDoorOpenLeft;
 }
 
@@ -930,7 +930,7 @@ Letter Door Open & Close
 /*************************************************************
 Letter Hang And Drop
 **************************************************************/
-.leHangAndDropLeft span {
+.ca__leHangAndDropLeft span {
     animation-name: leHangAndDropLeft;
 }
 
@@ -955,7 +955,7 @@ Letter Hang And Drop
     }
 }
 
-.leHangAndDropRight span {
+.ca__leHangAndDropRight span {
     animation-name: leHangAndDropRight;
 }
 
@@ -983,7 +983,7 @@ Letter Hang And Drop
 /*************************************************************
 Letter Shake
 **************************************************************/
-.leRencontre span {
+.ca__leRencontre span {
     animation: leRencontre 0.4s;
     animation-iteration-count: infinite;
 }
@@ -1005,7 +1005,7 @@ Letter Shake
     }
 }
 
-.lePulseShake span {
+.ca__lePulseShake span {
     animation-name: lePulseShake;
     animation-iteration-count: infinite;
 }
@@ -1028,7 +1028,7 @@ Letter Shake
     }
 }
 
-.leHorizontalShake span {
+.ca__leHorizontalShake span {
     animation-name: leHorizontalShake;
     animation-iteration-count: infinite;
 }
@@ -1077,7 +1077,7 @@ Letter Shake
     }
 }
 
-.leVerticalShake span {
+.ca__leVerticalShake span {
     animation-name: leVerticalShake;
     animation-iteration-count: infinite;
 }
@@ -1126,7 +1126,7 @@ Letter Shake
     }
 }
 
-.leMadMax span {
+.ca__leMadMax span {
     animation-name: leMadMax;
     animation-iteration-count: infinite;
 }
@@ -1175,7 +1175,7 @@ Letter Shake
     }
 }
 
-.leHorizontalTremble span {
+.ca__leHorizontalTremble span {
     animation-name: leHorizontalTremble;
     animation-iteration-count: infinite;
 }
@@ -1209,7 +1209,7 @@ Letter Shake
     }
 }
 
-.leVerticalTremble span {
+.ca__leVerticalTremble span {
     animation-name: leVerticalTremble;
     animation-iteration-count: infinite;
 }
@@ -1243,7 +1243,7 @@ Letter Shake
     }
 }
 
-.leCrazyCool span {
+.ca__leCrazyCool span {
     animation-name: leCrazyCool;
     animation-iteration-count: infinite;
 }
@@ -1277,7 +1277,7 @@ Letter Shake
     }
 }
 
-.leVibration span {
+.ca__leVibration span {
     animation: leVibration 0.1s linear infinite;
 }
 
@@ -1290,7 +1290,7 @@ Letter Shake
 /*************************************************************
 Letter Push Release
 **************************************************************/
-.lePushReleaseFrom span {
+.ca__lePushReleaseFrom span {
     animation-name: lePushReleaseFrom;
 }
 
@@ -1305,7 +1305,7 @@ Letter Push Release
     }
 }
 
-.lePushReleaseFromLeft span {
+.ca__lePushReleaseFromLeft span {
     animation-name: lePushReleaseFromLeft;
 }
 
@@ -1320,7 +1320,7 @@ Letter Push Release
     }
 }
 
-.lePushReleaseFromTop span {
+.ca__lePushReleaseFromTop span {
     animation-name: lePushReleaseFromTop;
 }
 
@@ -1335,7 +1335,7 @@ Letter Push Release
     }
 }
 
-.lePushReleaseFromBottom span {
+.ca__lePushReleaseFromBottom span {
     animation-name: lePushReleaseFromBottom;
 }
 
@@ -1350,7 +1350,7 @@ Letter Push Release
     }
 }
 
-.lePushReleaseTo span {
+.ca__lePushReleaseTo span {
     animation-name: lePushReleaseTo;
 }
 
@@ -1365,7 +1365,7 @@ Letter Push Release
     }
 }
 
-.lePushReleaseToTop span {
+.ca__lePushReleaseToTop span {
     animation-name: lePushReleaseToTop;
 }
 
@@ -1380,7 +1380,7 @@ Letter Push Release
     }
 }
 
-.lePushReleaseToBottom span {
+.ca__lePushReleaseToBottom span {
     animation-name: lePushReleaseToBottom;
 }
 
@@ -1398,7 +1398,7 @@ Letter Push Release
 /*************************************************************
 Letter Flip
 **************************************************************/
-.leFlipInTop span {
+.ca__leFlipInTop span {
     animation-name: leFlipInTop;
 }
 
@@ -1419,7 +1419,7 @@ Letter Flip
     }
 }
 
-.leFlipOutTop span {
+.ca__leFlipOutTop span {
     animation-name: leFlipOutTop;
 }
 
@@ -1440,7 +1440,7 @@ Letter Flip
     }
 }
 
-.leFlipInBottom span {
+.ca__leFlipInBottom span {
     animation-name: leFlipInBottom;
 }
 
@@ -1461,7 +1461,7 @@ Letter Flip
     }
 }
 
-.leFlipOutBottom span {
+.ca__leFlipOutBottom span {
     animation-name: leFlipOutBottom;
 }
 
@@ -1485,7 +1485,7 @@ Letter Flip
 /*************************************************************
 Letter Elevate
 **************************************************************/
-.leElevateLeft span {
+.ca__leElevateLeft span {
     animation-name: leElevateLeft;
 }
 
@@ -1507,7 +1507,7 @@ Letter Elevate
     }
 }
 
-.leElevateRight span {
+.ca__leElevateRight span {
     animation-name: leElevateRight;
 }
 
@@ -1532,7 +1532,7 @@ Letter Elevate
 /*************************************************************
 Letter Roll From
 **************************************************************/
-.leRollFromLeft span {
+.ca__leRollFromLeft span {
     animation-name: leRollFromLeft;
 }
 
@@ -1543,7 +1543,7 @@ Letter Roll From
     }
 }
 
-.leRollFromRight span {
+.ca__leRollFromRight span {
     animation-name: leRollFromRight;
 }
 
@@ -1554,7 +1554,7 @@ Letter Roll From
     }
 }
 
-.leRollFromTop span {
+.ca__leRollFromTop span {
     animation-name: leRollFromTop;
 }
 
@@ -1565,7 +1565,7 @@ Letter Roll From
     }
 }
 
-.leRollFromBottom span {
+.ca__leRollFromBottom span {
     animation-name: leRollFromBottom;
 }
 
@@ -1579,7 +1579,7 @@ Letter Roll From
 /*************************************************************
 Letter Roll To
 **************************************************************/
-.leRollToLeft span {
+.ca__leRollToLeft span {
     animation-name: leRollToLeft;
 }
 
@@ -1590,7 +1590,7 @@ Letter Roll To
     }
 }
 
-.leRollToRight span {
+.ca__leRollToRight span {
     animation-name: leRollToRight;
 }
 
@@ -1601,7 +1601,7 @@ Letter Roll To
     }
 }
 
-.leRollToTop span {
+.ca__leRollToTop span {
     animation-name: leRollToTop;
 }
 
@@ -1612,7 +1612,7 @@ Letter Roll To
     }
 }
 
-.leRollToBottom span {
+.ca__leRollToBottom span {
     animation-name: leRollToBottom;
 }
 
@@ -1626,7 +1626,7 @@ Letter Roll To
 /*************************************************************
 Letter Rotate In skate
 **************************************************************/
-.leRotateSkateInRight span {
+.ca__leRotateSkateInRight span {
     animation-name: leRotateSkateInRight;
 }
 
@@ -1637,7 +1637,7 @@ Letter Rotate In skate
     }
 }
 
-.leRotateSkateInLeft span {
+.ca__leRotateSkateInLeft span {
     animation-name: leRotateSkateInLeft;
 }
 
@@ -1648,7 +1648,7 @@ Letter Rotate In skate
     }
 }
 
-.leRotateSkateInTop span {
+.ca__leRotateSkateInTop span {
     animation-name: leRotateSkateInTop;
 }
 
@@ -1659,7 +1659,7 @@ Letter Rotate In skate
     }
 }
 
-.leRotateSkateInBottom span {
+.ca__leRotateSkateInBottom span {
     animation-name: leRotateSkateInBottom;
 }
 
@@ -1673,7 +1673,7 @@ Letter Rotate In skate
 /*************************************************************
 Letter Rotate Out skate
 **************************************************************/
-.leRotateSkateOutRight span {
+.ca__leRotateSkateOutRight span {
     animation-name: leRotateSkateOutRight;
 }
 
@@ -1684,7 +1684,7 @@ Letter Rotate Out skate
     }
 }
 
-.leRotateSkateOutLeft span {
+.ca__leRotateSkateOutLeft span {
     animation-name: leRotateSkateOutLeft;
 }
 
@@ -1695,7 +1695,7 @@ Letter Rotate Out skate
     }
 }
 
-.leRotateSkateOutTop span {
+.ca__leRotateSkateOutTop span {
     animation-name: leRotateSkateOutTop;
 }
 
@@ -1706,7 +1706,7 @@ Letter Rotate Out skate
     }
 }
 
-.leRotateSkateOutBottom span {
+.ca__leRotateSkateOutBottom span {
     animation-name: leRotateSkateOutBottom;
 }
 
@@ -1720,7 +1720,7 @@ Letter Rotate Out skate
 /*************************************************************
 Letter Rotation
 **************************************************************/
-.leRotateXZoomIn span {
+.ca__leRotateXZoomIn span {
     animation-name: leRotateXZoomIn;
 }
 
@@ -1737,7 +1737,7 @@ Letter Rotation
     }
 }
 
-.leRotateXZoomOut span {
+.ca__leRotateXZoomOut span {
     animation-name: leRotateXZoomOut;
 }
 
@@ -1754,7 +1754,7 @@ Letter Rotation
     }
 }
 
-.leRotateYZoomIn span {
+.ca__leRotateYZoomIn span {
     animation-name: leRotateYZoomIn;
 }
 
@@ -1771,7 +1771,7 @@ Letter Rotation
     }
 }
 
-.leRotateYZoomOut span {
+.ca__leRotateYZoomOut span {
     animation-name: leRotateYZoomOut;
 }
 
@@ -1792,7 +1792,7 @@ Letter Rotation
 Letter Rotate
 **************************************************************/
 
-.leRotateIn span {
+.ca__leRotateIn span {
     animation-name: leRotateIn;
 }
 
@@ -1807,7 +1807,7 @@ Letter Rotate
     }
 }
 
-.leRotateOut span {
+.ca__leRotateOut span {
     animation-name: leRotateOut;
 }
 
@@ -1822,7 +1822,7 @@ Letter Rotate
     }
 }
 
-.leRotateInLeft span {
+.ca__leRotateInLeft span {
     animation-name: leRotateInLeft;
 }
 
@@ -1837,7 +1837,7 @@ Letter Rotate
     }
 }
 
-.leRotateOutLeft span {
+.ca__leRotateOutLeft span {
     animation-name: leRotateOutLeft;
 }
 
@@ -1852,7 +1852,7 @@ Letter Rotate
     }
 }
 
-.leRotateInRight span {
+.ca__leRotateInRight span {
     animation-name: leRotateInRight;
 }
 
@@ -1867,7 +1867,7 @@ Letter Rotate
     }
 }
 
-.leRotateOutRight span {
+.ca__leRotateOutRight span {
     animation-name: leRotateOutRight;
 }
 
@@ -1885,7 +1885,7 @@ Letter Rotate
 /*************************************************************
 Letter Spin
 **************************************************************/
-.leSpinInLeft span {
+.ca__leSpinInLeft span {
     animation-name: leSpinInLeft;
 }
 
@@ -1901,7 +1901,7 @@ Letter Spin
     }
 }
 
-.leSpinInRight span {
+.ca__leSpinInRight span {
     animation-name: leSpinInRight;
 }
 
@@ -1917,7 +1917,7 @@ Letter Spin
     }
 }
 
-.leSpinOutLeft span {
+.ca__leSpinOutLeft span {
     animation-name: leSpinOutLeft;
 }
 
@@ -1933,7 +1933,7 @@ Letter Spin
     }
 }
 
-.leSpinOutRight span {
+.ca__leSpinOutRight span {
     animation-name: leSpinOutRight;
 }
 
@@ -1952,7 +1952,7 @@ Letter Spin
 /*************************************************************
 Letter Blur In
 **************************************************************/
-.leBlurIn span {
+.ca__leBlurIn span {
     animation-name: leBlurIn;
 }
 
@@ -1964,7 +1964,7 @@ Letter Blur In
     }
 }
 
-.leBlurInRight span {
+.ca__leBlurInRight span {
     animation-name: leBlurInRight;
 }
 
@@ -1976,7 +1976,7 @@ Letter Blur In
     }
 }
 
-.leBlurInLeft span {
+.ca__leBlurInLeft span {
     animation-name: leBlurInLeft;
 }
 
@@ -1988,7 +1988,7 @@ Letter Blur In
     }
 }
 
-.leBlurInTop span {
+.ca__leBlurInTop span {
     animation-name: leBlurInTop;
 }
 
@@ -2000,7 +2000,7 @@ Letter Blur In
     }
 }
 
-.leBlurInBottom span {
+.ca__leBlurInBottom span {
     animation-name: leBlurInBottom;
 }
 
@@ -2015,7 +2015,7 @@ Letter Blur In
 /*************************************************************
 Letter Blur Out
 **************************************************************/
-.leBlurOut span {
+.ca__leBlurOut span {
     animation-name: leBlurOut;
 }
 
@@ -2027,7 +2027,7 @@ Letter Blur Out
     }
 }
 
-.leBlurOutRight span {
+.ca__leBlurOutRight span {
     animation-name: leBlurOutRight;
 }
 
@@ -2039,7 +2039,7 @@ Letter Blur Out
     }
 }
 
-.leBlurOutLeft span {
+.ca__leBlurOutLeft span {
     animation-name: leBlurOutLeft;
 }
 
@@ -2051,7 +2051,7 @@ Letter Blur Out
     }
 }
 
-.leBlurOutTop span {
+.ca__leBlurOutTop span {
     animation-name: leBlurOutTop;
 }
 
@@ -2063,7 +2063,7 @@ Letter Blur Out
     }
 }
 
-.leBlurOutBottom span {
+.ca__leBlurOutBottom span {
     animation-name: leBlurOutBottom;
 }
 
@@ -2078,7 +2078,7 @@ Letter Blur Out
 /*************************************************************
 Letter Pop Up
 **************************************************************/
-.lePopUp span {
+.ca__lePopUp span {
     animation-name: lePopUp;
 }
 
@@ -2088,7 +2088,7 @@ Letter Pop Up
     }
 }
 
-.lePopUpLeft span {
+.ca__lePopUpLeft span {
     animation-name: lePopUpLeft;
 }
 
@@ -2099,7 +2099,7 @@ Letter Pop Up
     }
 }
 
-.lePopUpRight span {
+.ca__lePopUpRight span {
     animation-name: lePopUpRight;
 }
 
@@ -2114,7 +2114,7 @@ Letter Pop Up
 Letter Pop Out
 **************************************************************/
 
-.lePopOut span {
+.ca__lePopOut span {
     animation-name: lePopOut;
 }
 
@@ -2124,7 +2124,7 @@ Letter Pop Out
     }
 }
 
-.lePopOutLeft span {
+.ca__lePopOutLeft span {
     animation-name: lePopOutLeft;
 }
 
@@ -2135,7 +2135,7 @@ Letter Pop Out
     }
 }
 
-.lePopOutRight span {
+.ca__lePopOutRight span {
     animation-name: lePopOutRight;
 }
 
@@ -2149,7 +2149,7 @@ Letter Pop Out
 /*************************************************************
 Letter Bouncing
 **************************************************************/
-.leBounceFromTop span {
+.ca__leBounceFromTop span {
     animation-name: leBounceFromTop;
 }
 
@@ -2179,7 +2179,7 @@ Letter Bouncing
     }
 }
 
-.leBounceFromDown span {
+.ca__leBounceFromDown span {
     animation-name: leBounceFromDown;
 }
 
@@ -2209,7 +2209,7 @@ Letter Bouncing
     }
 }
 
-.leBounceY span {
+.ca__leBounceY span {
     animation-name: leBounceY;
 }
 
@@ -2239,7 +2239,7 @@ Letter Bouncing
     }
 }
 
-.leBounceZoomIn span {
+.ca__leBounceZoomIn span {
     animation-name: leBounceZoomIn;
 }
 
@@ -2269,7 +2269,7 @@ Letter Bouncing
     }
 }
 
-.leBounceZoomOut span {
+.ca__leBounceZoomOut span {
     animation-name: leBounceZoomOut;
 }
 
@@ -2302,7 +2302,7 @@ Letter Bouncing
 /*************************************************************
 Letter Perspective
 **************************************************************/
-.lePerspectiveOutTop span {
+.ca__lePerspectiveOutTop span {
     animation-name: lePerspectiveOutTop;
     transform: perspective(500px);
     transform-style: preserve-3d;
@@ -2320,7 +2320,7 @@ Letter Perspective
     }
 }
 
-.lePerspectiveOutBottom span {
+.ca__lePerspectiveOutBottom span {
     animation-name: lePerspectiveOutBottom;
     transform: perspective(500px);
     transform-style: preserve-3d;
@@ -2342,7 +2342,7 @@ Letter Perspective
 Letter Zoom In
 **************************************************************/
 
-.leZoomIn span {
+.ca__leZoomIn span {
     animation-name: leZoomIn;
 }
 
@@ -2353,7 +2353,7 @@ Letter Zoom In
     }
 }
 
-.leZoomInLeft span {
+.ca__leZoomInLeft span {
     animation-name: leZoomInLeft;
 }
 
@@ -2364,7 +2364,7 @@ Letter Zoom In
     }
 }
 
-.leZoomInRight span {
+.ca__leZoomInRight span {
     animation-name: leZoomInRight;
 }
 
@@ -2375,7 +2375,7 @@ Letter Zoom In
     }
 }
 
-.leZoomInTop span {
+.ca__leZoomInTop span {
     animation-name: LetterZoomInTop;
 }
 
@@ -2386,7 +2386,7 @@ Letter Zoom In
     }
 }
 
-.leZoomInBottom span {
+.ca__leZoomInBottom span {
     animation-name: leZoomInBottom;
 }
 
@@ -2400,7 +2400,7 @@ Letter Zoom In
 /*************************************************************
 Letter Zoom Out
 **************************************************************/
-.leZoomOut span {
+.ca__leZoomOut span {
     animation-name: leZoomOut;
 }
 
@@ -2411,7 +2411,7 @@ Letter Zoom Out
     }
 }
 
-.leZoomOutLeft span {
+.ca__leZoomOutLeft span {
     animation-name: leZoomOutLeft;
 }
 
@@ -2422,7 +2422,7 @@ Letter Zoom Out
     }
 }
 
-.leZoomOutRight span {
+.ca__leZoomOutRight span {
     animation-name: leZoomOutRight;
 }
 
@@ -2433,7 +2433,7 @@ Letter Zoom Out
     }
 }
 
-.leZoomOutTop span {
+.ca__leZoomOutTop span {
     animation-name: leZoomOutTop;
 }
 
@@ -2444,7 +2444,7 @@ Letter Zoom Out
     }
 }
 
-.leZoomOutBottom span {
+.ca__leZoomOutBottom span {
     animation-name: leZoomOutBottom;
 }
 
@@ -2458,7 +2458,7 @@ Letter Zoom Out
 /*************************************************************
 Letter Dance In
 **************************************************************/
-.leDanceInTop span {
+.ca__leDanceInTop span {
     animation-name: leDanceInTop;
     transform-origin: top;
 }
@@ -2489,7 +2489,7 @@ Letter Dance In
     }
 }
 
-.leDanceInMiddle span {
+.ca__leDanceInMiddle span {
     animation-name: leDanceInMiddle;
 }
 
@@ -2519,7 +2519,7 @@ Letter Dance In
     }
 }
 
-.leDanceInBottom span {
+.ca__leDanceInBottom span {
     animation-name: leDanceInBottom;
     transform-origin: bottom;
 }
@@ -2553,7 +2553,7 @@ Letter Dance In
 /*************************************************************
 Letter Dance Out
 **************************************************************/
-.leDanceOutTop span {
+.ca__leDanceOutTop span {
     animation-name: leDanceOutTop;
     transform-origin: top;
 }
@@ -2584,7 +2584,7 @@ Letter Dance Out
     }
 }
 
-.leDanceOutMiddle span {
+.ca__leDanceOutMiddle span {
     animation-name: leDanceOutMiddle;
 }
 
@@ -2614,7 +2614,7 @@ Letter Dance Out
     }
 }
 
-.leDanceOutBottom span {
+.ca__leDanceOutBottom span {
     animation-name: leDanceOutBottom;
     transform-origin: bottom;
 }
@@ -2648,7 +2648,7 @@ Letter Dance Out
 /*************************************************************
 One After One Fade in
 **************************************************************/
-.oaoFadeIn span:nth-child(even) {
+.ca__oaoFadeIn span:nth-child(even) {
     animation-name: leoaoFadeInTop;
     animation-duration: 0.7s;
     animation-timing-function: ease-out;
@@ -2661,7 +2661,7 @@ One After One Fade in
     }
 }
 
-.oaoFadeIn span:nth-child(odd) {
+.ca__oaoFadeIn span:nth-child(odd) {
     animation-name: leoaoFadeInBottom;
     animation-duration: 0.7s;
     animation-timing-function: ease-out;
@@ -2674,7 +2674,7 @@ One After One Fade in
     }
 }
 
-.oaoFadeOut span:nth-child(even) {
+.ca__oaoFadeOut span:nth-child(even) {
     animation-name: leoaoFadeOutop;
     animation-duration: 0.7s;
     animation-timing-function: ease-in;
@@ -2687,7 +2687,7 @@ One After One Fade in
     }
 }
 
-.oaoFadeOut span:nth-child(odd) {
+.ca__oaoFadeOut span:nth-child(odd) {
     animation-name: leoaoFadeOutBottom;
     animation-duration: 0.7s;
     animation-timing-function: ease-in;
@@ -2700,7 +2700,7 @@ One After One Fade in
     }
 }
 
-.oaoFlyIn span:nth-child(even) {
+.ca__oaoFlyIn span:nth-child(even) {
     animation-name: leoaoFlyInTop;
 }
 
@@ -2716,7 +2716,7 @@ One After One Fade in
     }
 }
 
-.oaoFlyIn span:nth-child(odd) {
+.ca__oaoFlyIn span:nth-child(odd) {
     animation-name: leoaoFlyInBottom;
 }
 
@@ -2732,7 +2732,7 @@ One After One Fade in
     }
 }
 
-.oaoFlyOut span:nth-child(even) {
+.ca__oaoFlyOut span:nth-child(even) {
     animation-name: leoaoFlyOutTop;
 }
 
@@ -2752,7 +2752,7 @@ One After One Fade in
     }
 }
 
-.oaoFlyOut span:nth-child(odd) {
+.ca__oaoFlyOut span:nth-child(odd) {
     animation-name: leoaoFlyOutBottom;
 }
 
@@ -2772,7 +2772,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateIn span:nth-child(even) {
+.ca__oaoRotateIn span:nth-child(even) {
     animation-name: oaoRotateInTop;
 }
 
@@ -2783,7 +2783,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateIn span:nth-child(odd) {
+.ca__oaoRotateIn span:nth-child(odd) {
     animation-name: oaoRotateInBottom;
 }
 
@@ -2794,7 +2794,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateOut span:nth-child(even) {
+.ca__oaoRotateOut span:nth-child(even) {
     animation-name: oaoRotateOutTop;
 }
 
@@ -2805,7 +2805,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateOut span:nth-child(odd) {
+.ca__oaoRotateOut span:nth-child(odd) {
     animation-name: oaoRotateOutBottom;
 }
 
@@ -2816,7 +2816,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateXIn span:nth-child(even) {
+.ca__oaoRotateXIn span:nth-child(even) {
     animation-name: oaoRotateXInTop;
 }
 
@@ -2827,7 +2827,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateXIn span:nth-child(odd) {
+.ca__oaoRotateXIn span:nth-child(odd) {
     animation-name: oaoRotateXInBottom;
 }
 
@@ -2838,7 +2838,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateXOut span:nth-child(even) {
+.ca__oaoRotateXOut span:nth-child(even) {
     animation-name: oaoRotateXOutTop;
 }
 
@@ -2849,7 +2849,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateXOut span:nth-child(odd) {
+.ca__oaoRotateXOut span:nth-child(odd) {
     animation-name: oaoRotateXOutBottom;
 }
 
@@ -2860,7 +2860,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateYIn span:nth-child(even) {
+.ca__oaoRotateYIn span:nth-child(even) {
     animation-name: oaoRotateYInTop;
 }
 
@@ -2871,7 +2871,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateYIn span:nth-child(odd) {
+.ca__oaoRotateYIn span:nth-child(odd) {
     animation-name: oaoRotateYInBottom;
 }
 
@@ -2882,7 +2882,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateYOut span:nth-child(even) {
+.ca__oaoRotateYOut span:nth-child(even) {
     animation-name: oaoRotateYOutTop;
 }
 
@@ -2893,7 +2893,7 @@ One After One Fade in
     }
 }
 
-.oaoRotateYOut span:nth-child(odd) {
+.ca__oaoRotateYOut span:nth-child(odd) {
     animation-name: oaoRotateYOutBottom;
 }
 
@@ -2907,7 +2907,7 @@ One After One Fade in
 /*************************************************************
 Fade in
 **************************************************************/
-.fadeIn {
+.ca__fadeIn {
     animation-name: fadeIn;
 }
 
@@ -2921,7 +2921,7 @@ Fade in
     }
 }
 
-.fadeInLeft {
+.ca__fadeInLeft {
     animation-name: fadeInLeft;
 }
 
@@ -2936,7 +2936,7 @@ Fade in
     }
 }
 
-.fadeInRight {
+.ca__fadeInRight {
     animation-name: fadeInRight;
 }
 
@@ -2951,7 +2951,7 @@ Fade in
     }
 }
 
-.fadeInTop {
+.ca__fadeInTop {
     animation-name: fadeInTop;
 }
 
@@ -2966,7 +2966,7 @@ Fade in
     }
 }
 
-.fadeInBottom {
+.ca__fadeInBottom {
     animation-name: fadeInBottom;
 }
 
@@ -2984,7 +2984,7 @@ Fade in
 /**************************************************************
 Fade Out
 **************************************************************/
-.fadeOut {
+.ca__fadeOut {
     animation-name: fadeOut;
 }
 
@@ -2994,7 +2994,7 @@ Fade Out
     }
 }
 
-.fadeOutLeft {
+.ca__fadeOutLeft {
     animation-name: fadeOutLeft;
 }
 
@@ -3009,7 +3009,7 @@ Fade Out
     }
 }
 
-.fadeOutRight {
+.ca__fadeOutRight {
     animation-name: fadeOutRight;
 }
 
@@ -3024,7 +3024,7 @@ Fade Out
     }
 }
 
-.fadeOutTop {
+.ca__fadeOutTop {
     animation-name: fadeOutTop;
 }
 
@@ -3039,7 +3039,7 @@ Fade Out
     }
 }
 
-.fadeOutBottom {
+.ca__fadeOutBottom {
     animation-name: fadeOutBottom;
 }
 
@@ -3057,7 +3057,7 @@ Fade Out
 /*************************************************************
 Move From
 **************************************************************/
-.moveFromLeft {
+.ca__moveFromLeft {
     animation-name: moveFromLeft;
 }
 
@@ -3067,7 +3067,7 @@ Move From
     }
 }
 
-.moveFromRight {
+.ca__moveFromRight {
     animation-name: moveFromRight;
 }
 
@@ -3077,7 +3077,7 @@ Move From
     }
 }
 
-.moveFromTop {
+.ca__moveFromTop {
     animation-name: moveFromTop;
 }
 
@@ -3087,7 +3087,7 @@ Move From
     }
 }
 
-.moveFromBottom {
+.ca__moveFromBottom {
     animation-name: moveFromBottom;
 }
 
@@ -3100,7 +3100,7 @@ Move From
 /*************************************************************
 Move To
 **************************************************************/
-.moveToLeft {
+.ca__moveToLeft {
     animation-name: moveToLeft;
 }
 
@@ -3110,7 +3110,7 @@ Move To
     }
 }
 
-.moveToRight {
+.ca__moveToRight {
     animation-name: moveToRight;
 }
 
@@ -3120,7 +3120,7 @@ Move To
     }
 }
 
-.moveToTop {
+.ca__moveToTop {
     animation-name: moveToTop;
 }
 
@@ -3130,7 +3130,7 @@ Move To
     }
 }
 
-.moveToBottom {
+.ca__moveToBottom {
     animation-name: moveToBottom;
 }
 
@@ -3143,7 +3143,7 @@ Move To
 /*************************************************************
 Door
 **************************************************************/
-.doorCloseFromLeft {
+.ca__doorCloseFromLeft {
     animation-name: doorCloseFromLeft;
 }
 
@@ -3162,7 +3162,7 @@ Door
     }
 }
 
-.doorOpenFromRight {
+.ca__doorOpenFromRight {
     animation-name: doorOpenFromRight;
 }
 
@@ -3181,7 +3181,7 @@ Door
     }
 }
 
-.doorCloseFromRight {
+.ca__doorCloseFromRight {
     animation-name: doorCloseFromRight;
 }
 
@@ -3200,7 +3200,7 @@ Door
     }
 }
 
-.doorOpenFromLeft {
+.ca__doorOpenFromLeft {
     animation-name: doorOpenFromLeft;
 }
 
@@ -3222,7 +3222,7 @@ Door
 /*************************************************************
 Heartbeat
 **************************************************************/
-.heartbeatSlow {
+.ca__heartbeatSlow {
     animation-name: heartbeatSlow;
     animation-iteration-count: infinite;
     animation-duration: 0.5s;
@@ -3235,7 +3235,7 @@ Heartbeat
     }
 }
 
-.heartbeatFast {
+.ca__heartbeatFast {
     animation-name: heartbeatFast;
     animation-iteration-count: infinite;
 }
@@ -3255,7 +3255,7 @@ Heartbeat
 /*************************************************************
 Hang On
 **************************************************************/
-.hangOnLeft {
+.ca__hangOnLeft {
     animation-name: hangOnLeft;
 }
 
@@ -3290,7 +3290,7 @@ Hang On
     }
 }
 
-.hangOnRight {
+.ca__hangOnRight {
     animation-name: hangOnRight;
 }
 
@@ -3328,7 +3328,7 @@ Hang On
 /*************************************************************
 Hang And Drop
 **************************************************************/
-.hangAndDropLeft {
+.ca__hangAndDropLeft {
     animation-name: hangAndDropLeft;
 }
 
@@ -3355,7 +3355,7 @@ Hang And Drop
     }
 }
 
-.hangAndDropRight {
+.ca__hangAndDropRight {
     animation-name: hangAndDropRight;
 }
 
@@ -3385,7 +3385,7 @@ Hang And Drop
 /*************************************************************
 Shake
 **************************************************************/
-.pulseShake {
+.ca__pulseShake {
     animation-name: pulseShake;
     animation-iteration-count: infinite;
 }
@@ -3408,7 +3408,7 @@ Shake
     }
 }
 
-.horizontalShake {
+.ca__horizontalShake {
     animation-name: horizontalShake;
     animation-iteration-count: infinite;
 }
@@ -3457,7 +3457,7 @@ Shake
     }
 }
 
-.verticalShake {
+.ca__verticalShake {
     animation-name: verticalShake;
     animation-iteration-count: infinite;
 }
@@ -3506,7 +3506,7 @@ Shake
     }
 }
 
-.madMax {
+.ca__madMax {
     animation-name: madMax;
     animation-iteration-count: infinite;
 }
@@ -3555,7 +3555,7 @@ Shake
     }
 }
 
-.coolHorizontalShake {
+.ca__coolHorizontalShake {
     animation-name: coolHorizontalShake;
     animation-iteration-count: infinite;
 }
@@ -3589,7 +3589,7 @@ Shake
     }
 }
 
-.coolVerticalShake {
+.ca__coolVerticalShake {
     animation-name: coolVerticalShake;
     animation-iteration-count: infinite;
 }
@@ -3623,7 +3623,7 @@ Shake
     }
 }
 
-.quietMad {
+.ca__quietMad {
     animation-name: quietMad;
     animation-iteration-count: infinite;
 }
@@ -3657,7 +3657,7 @@ Shake
     }
 }
 
-.vibration {
+.ca__vibration {
     animation: vibration 0.1s linear infinite;
 }
 
@@ -3670,7 +3670,7 @@ Shake
 /*************************************************************
 Push Release From
 **************************************************************/
-.pushReleaseFrom {
+.ca__pushReleaseFrom {
     animation-name: pushReleaseFrom;
 }
 
@@ -3685,7 +3685,7 @@ Push Release From
     }
 }
 
-.pushReleaseFromLeft {
+.ca__pushReleaseFromLeft {
     animation-name: pushReleaseFromLeft;
 }
 
@@ -3699,7 +3699,7 @@ Push Release From
     }
 }
 
-.pushReleaseFromRight {
+.ca__pushReleaseFromRight {
     animation-name: pushReleaseFromRight;
 }
 
@@ -3713,7 +3713,7 @@ Push Release From
     }
 }
 
-.pushReleaseFromTop {
+.ca__pushReleaseFromTop {
     animation-name: pushReleaseFromTop;
 }
 
@@ -3727,7 +3727,7 @@ Push Release From
     }
 }
 
-.pushReleaseFromBottom {
+.ca__pushReleaseFromBottom {
     animation-name: pushReleaseFromBottom;
 }
 
@@ -3744,7 +3744,7 @@ Push Release From
 /*************************************************************
 Push Release To
 **************************************************************/
-.pushReleaseTo {
+.ca__pushReleaseTo {
     animation-name: pushReleaseTo;
 }
 
@@ -3759,7 +3759,7 @@ Push Release To
     }
 }
 
-.pushReleaseToLeft {
+.ca__pushReleaseToLeft {
     animation-name: pushReleaseToLeft;
 }
 
@@ -3774,7 +3774,7 @@ Push Release To
     }
 }
 
-.pushReleaseToRight {
+.ca__pushReleaseToRight {
     animation-name: pushReleaseToRight;
 }
 
@@ -3789,7 +3789,7 @@ Push Release To
     }
 }
 
-.pushReleaseToTop {
+.ca__pushReleaseToTop {
     animation-name: pushReleaseToTop;
 }
 
@@ -3804,7 +3804,7 @@ Push Release To
     }
 }
 
-.pushReleaseToBottom {
+.ca__pushReleaseToBottom {
     animation-name: pushReleaseToBottom;
 }
 
@@ -3822,7 +3822,7 @@ Push Release To
 /*************************************************************
 Flip X
 **************************************************************/
-.flipX {
+.ca__flipX {
     animation-name: flipX;
 }
 
@@ -3837,7 +3837,7 @@ Flip X
     }
 }
 
-.flipXZoomIn {
+.ca__flipXZoomIn {
     animation-name: flipXZoomIn;
 }
 
@@ -3862,7 +3862,7 @@ Flip X
     }
 }
 
-.flipXZoomOut {
+.ca__flipXZoomOut {
     animation-name: flipXZoomOut;
 }
 
@@ -3890,7 +3890,7 @@ Flip X
 /*************************************************************
 Flip Y
 **************************************************************/
-.flipY {
+.ca__flipY {
     animation-name: flipY;
 }
 
@@ -3905,7 +3905,7 @@ Flip Y
     }
 }
 
-.flipYZoomIn {
+.ca__flipYZoomIn {
     animation-name: flipYZoomIn;
 }
 
@@ -3930,7 +3930,7 @@ Flip Y
     }
 }
 
-.flipYZoomOut {
+.ca__flipYZoomOut {
     animation-name: flipYZoomOut;
 }
 
@@ -3958,7 +3958,7 @@ Flip Y
 /*************************************************************
 Skew
 **************************************************************/
-.skewLeft {
+.ca__skewLeft {
     animation-name: skewLeft;
 }
 
@@ -3968,7 +3968,7 @@ Skew
     }
 }
 
-.skewRight {
+.ca__skewRight {
     animation-name: skewRight;
 }
 
@@ -3978,7 +3978,7 @@ Skew
     }
 }
 
-.skewInLeft {
+.ca__skewInLeft {
     animation-name: skewInLeft;
 }
 
@@ -3993,7 +3993,7 @@ Skew
     }
 }
 
-.skewInRight {
+.ca__skewInRight {
     animation-name: skewInRight;
 }
 
@@ -4008,7 +4008,7 @@ Skew
     }
 }
 
-.skewOutLeft {
+.ca__skewOutLeft {
     animation-name: skewOutLeft;
 }
 
@@ -4023,7 +4023,7 @@ Skew
     }
 }
 
-.skewOutRight {
+.ca__skewOutRight {
     animation-name: skewOutRight;
 }
 
@@ -4041,7 +4041,7 @@ Skew
 /*************************************************************
 Shock In
 **************************************************************/
-.shockZoom {
+.ca__shockZoom {
     animation-name: shockZoom;
 }
 
@@ -4059,7 +4059,7 @@ Shock In
     }
 }
 
-.shockInLeft {
+.ca__shockInLeft {
     animation-name: shockInLeft;
 }
 
@@ -4077,7 +4077,7 @@ Shock In
     }
 }
 
-.shockInRight {
+.ca__shockInRight {
     animation-name: shockInRight;
 }
 
@@ -4095,7 +4095,7 @@ Shock In
     }
 }
 
-.shockInTop {
+.ca__shockInTop {
     animation-name: shockInTop;
 }
 
@@ -4113,7 +4113,7 @@ Shock In
     }
 }
 
-.shockInBottom {
+.ca__shockInBottom {
     animation-name: shockInBottom;
 }
 
@@ -4134,7 +4134,7 @@ Shock In
 /*************************************************************
 Pull release
 **************************************************************/
-.pullRelease {
+.ca__pullRelease {
     animation-name: pullRelease;
 }
 
@@ -4144,7 +4144,7 @@ Pull release
     }
 }
 
-.pushRelease {
+.ca__pushRelease {
     animation-name: pushRelease;
 }
 
@@ -4157,7 +4157,7 @@ Pull release
 /*************************************************************
 Swing In
 **************************************************************/
-.swingInLeft {
+.ca__swingInLeft {
     animation-name: swingInLeft;
 }
 
@@ -4172,7 +4172,7 @@ Swing In
     }
 }
 
-.swingInRight {
+.ca__swingInRight {
     animation-name: swingInRight;
 }
 
@@ -4187,7 +4187,7 @@ Swing In
     }
 }
 
-.swingInTop {
+.ca__swingInTop {
     animation-name: swingInTop;
 }
 
@@ -4202,7 +4202,7 @@ Swing In
     }
 }
 
-.swingInBottom {
+.ca__swingInBottom {
     animation-name: swingInBottom;
 }
 
@@ -4221,7 +4221,7 @@ Swing In
 Elevate
 **************************************************************/
 
-.elevateLeft {
+.ca__elevateLeft {
     animation-name: elevateLeft;
 }
 
@@ -4242,7 +4242,7 @@ Elevate
     }
 }
 
-.elevateRight {
+.ca__elevateRight {
     animation-name: elevateRight;
 }
 
@@ -4266,7 +4266,7 @@ Elevate
 /*************************************************************
 Roll From
 **************************************************************/
-.rollFromLeft {
+.ca__rollFromLeft {
     animation-name: rollFromLeft;
 }
 
@@ -4282,7 +4282,7 @@ Roll From
     }
 }
 
-.rollFromRight {
+.ca__rollFromRight {
     animation-name: rollFromRight;
 }
 
@@ -4298,7 +4298,7 @@ Roll From
     }
 }
 
-.rollFromTop {
+.ca__rollFromTop {
     animation-name: rollFromTop;
 }
 
@@ -4314,7 +4314,7 @@ Roll From
     }
 }
 
-.rollFromBottom {
+.ca__rollFromBottom {
     animation-name: rollFromBottom;
 }
 
@@ -4333,7 +4333,7 @@ Roll From
 /*************************************************************
 Roll To
 **************************************************************/
-.rollToLeft {
+.ca__rollToLeft {
     animation-name: rollToLeft;
 }
 
@@ -4349,7 +4349,7 @@ Roll To
     }
 }
 
-.rollToRight {
+.ca__rollToRight {
     animation-name: rollToRight;
 }
 
@@ -4365,7 +4365,7 @@ Roll To
     }
 }
 
-.rollToTop {
+.ca__rollToTop {
     animation-name: rollToTop;
 }
 
@@ -4381,7 +4381,7 @@ Roll To
     }
 }
 
-.rollToBottom {
+.ca__rollToBottom {
     animation-name: rollToBottom;
 }
 
@@ -4400,7 +4400,7 @@ Roll To
 /*************************************************************
 Rotation
 **************************************************************/
-.rotate {
+.ca__rotate {
     animation-name: rotate;
     animation-timing-function: ease-in-out;
 }
@@ -4415,7 +4415,7 @@ Rotation
     }
 }
 
-.rotateX {
+.ca__rotateX {
     animation-name: rotateX;
 }
 
@@ -4429,7 +4429,7 @@ Rotation
     }
 }
 
-.rotateXIn {
+.ca__rotateXIn {
     animation-name: rotateXIn;
 }
 
@@ -4446,7 +4446,7 @@ Rotation
     }
 }
 
-.rotateXOut {
+.ca__rotateXOut {
     animation-name: rotateXOut;
 }
 
@@ -4463,7 +4463,7 @@ Rotation
     }
 }
 
-.rotateY {
+.ca__rotateY {
     animation-name: rotateY;
 }
 
@@ -4477,7 +4477,7 @@ Rotation
     }
 }
 
-.rotateYIn {
+.ca__rotateYIn {
     animation-name: rotateYIn;
 }
 
@@ -4494,7 +4494,7 @@ Rotation
     }
 }
 
-.rotateYOut {
+.ca__rotateYOut {
     animation-name: rotateYOut;
 }
 
@@ -4514,7 +4514,7 @@ Rotation
 /*************************************************************
 Rotate In
 **************************************************************/
-.rotateInLeft {
+.ca__rotateInLeft {
     animation-name: rotateInLeft;
 }
 
@@ -4529,7 +4529,7 @@ Rotate In
     }
 }
 
-.rotateInRight {
+.ca__rotateInRight {
     animation-name: rotateInRight;
 }
 
@@ -4544,7 +4544,7 @@ Rotate In
     }
 }
 
-.rotateInTop {
+.ca__rotateInTop {
     animation-name: rotateInTop;
 }
 
@@ -4559,7 +4559,7 @@ Rotate In
     }
 }
 
-.rotateInBottom {
+.ca__rotateInBottom {
     animation-name: rotateInBottom;
 }
 
@@ -4577,7 +4577,7 @@ Rotate In
 /*************************************************************
 Rotate Out
 **************************************************************/
-.rotateOutLeft {
+.ca__rotateOutLeft {
     animation-name: rotateOutLeft;
 }
 
@@ -4592,7 +4592,7 @@ Rotate Out
     }
 }
 
-.rotateOutRight {
+.ca__rotateOutRight {
     animation-name: rotateOutRight;
 }
 
@@ -4607,7 +4607,7 @@ Rotate Out
     }
 }
 
-.rotateOutTop {
+.ca__rotateOutTop {
     animation-name: rotateOutTop;
 }
 
@@ -4622,7 +4622,7 @@ Rotate Out
     }
 }
 
-.rotateOutBottom {
+.ca__rotateOutBottom {
     animation-name: rotateOutBottom;
 }
 
@@ -4640,7 +4640,7 @@ Rotate Out
 /*************************************************************
 Spin To
 **************************************************************/
-.spinToLeft {
+.ca__spinToLeft {
     animation-name: spinToLeft;
 }
 
@@ -4656,7 +4656,7 @@ Spin To
     }
 }
 
-.spinToRight {
+.ca__spinToRight {
     animation-name: spinToRight;
 }
 
@@ -4672,7 +4672,7 @@ Spin To
     }
 }
 
-.spinToTop {
+.ca__spinToTop {
     animation-name: spinToTop;
 }
 
@@ -4688,7 +4688,7 @@ Spin To
     }
 }
 
-.spinToBottom {
+.ca__spinToBottom {
     animation-name: spinToBottom;
 }
 
@@ -4707,7 +4707,7 @@ Spin To
 /*************************************************************
 Spin From
 **************************************************************/
-.spinFromLeft {
+.ca__spinFromLeft {
     animation-name: spinFromLeft;
 }
 
@@ -4723,7 +4723,7 @@ Spin From
     }
 }
 
-.spinFromRight {
+.ca__spinFromRight {
     animation-name: spinFromRight;
 }
 
@@ -4739,7 +4739,7 @@ Spin From
     }
 }
 
-.spinFromTop {
+.ca__spinFromTop {
     animation-name: spinFromTop;
 }
 
@@ -4755,7 +4755,7 @@ Spin From
     }
 }
 
-.spinFromBottom {
+.ca__spinFromBottom {
     animation-name: spinFromBottom;
 }
 
@@ -4775,7 +4775,7 @@ Spin From
 Blur In
 **************************************************************/
 
-.blurIn {
+.ca__blurIn {
     animation-name: blurIn;
 }
 
@@ -4786,7 +4786,7 @@ Blur In
     }
 }
 
-.blurInLeft {
+.ca__blurInLeft {
     animation-name: blurInLeft;
 }
 
@@ -4798,7 +4798,7 @@ Blur In
     }
 }
 
-.blurInRight {
+.ca__blurInRight {
     animation-name: blurInRight;
 }
 
@@ -4810,7 +4810,7 @@ Blur In
     }
 }
 
-.blurInTop {
+.ca__blurInTop {
     animation-name: blurInTop;
 }
 
@@ -4822,7 +4822,7 @@ Blur In
     }
 }
 
-.blurInBottom {
+.ca__blurInBottom {
     animation-name: blurInBottom;
 }
 
@@ -4837,7 +4837,7 @@ Blur In
 /*************************************************************
 Blur Out
 **************************************************************/
-.blurOut {
+.ca__blurOut {
     animation-name: blurOut;
 }
 
@@ -4852,7 +4852,7 @@ Blur Out
     }
 }
 
-.blurOutLeft {
+.ca__blurOutLeft {
     animation-name: blurOutLeft;
 }
 
@@ -4868,7 +4868,7 @@ Blur Out
     }
 }
 
-.blurOutRight {
+.ca__blurOutRight {
     animation-name: blurOutRight;
 }
 
@@ -4884,7 +4884,7 @@ Blur Out
     }
 }
 
-.blurOutTop {
+.ca__blurOutTop {
     animation-name: blurOutTop;
 }
 
@@ -4900,7 +4900,7 @@ Blur Out
     }
 }
 
-.blurOutBottom {
+.ca__blurOutBottom {
     animation-name: blurOutBottom;
 }
 
@@ -4919,7 +4919,7 @@ Blur Out
 /*************************************************************
 Bounce
 **************************************************************/
-.bounceFromTop {
+.ca__bounceFromTop {
     animation-name: bounceFromTop;
 }
 
@@ -4949,7 +4949,7 @@ Bounce
     }
 }
 
-.bounceFromDown {
+.ca__bounceFromDown {
     animation-name: bounceFromDown;
 }
 
@@ -4979,7 +4979,7 @@ Bounce
     }
 }
 
-.bounceX {
+.ca__bounceX {
     animation-name: bounceX;
 }
 
@@ -5009,7 +5009,7 @@ Bounce
     }
 }
 
-.bounceY {
+.ca__bounceY {
     animation-name: bounceY;
 }
 
@@ -5039,7 +5039,7 @@ Bounce
     }
 }
 
-.bounceZoomIn {
+.ca__bounceZoomIn {
     animation-name: bounceZoomIn;
 }
 
@@ -5069,7 +5069,7 @@ Bounce
     }
 }
 
-.bounceZoomOut {
+.ca__bounceZoomOut {
     animation-name: bounceZoomOut;
 }
 
@@ -5102,7 +5102,7 @@ Bounce
 /*************************************************************
 Bounce In
 **************************************************************/
-.bounceInTop {
+.ca__bounceInTop {
     animation-name: bounceInTop;
 }
 
@@ -5124,7 +5124,7 @@ Bounce In
     }
 }
 
-.bounceInBottom {
+.ca__bounceInBottom {
     animation-name: bounceInBottom;
 }
 
@@ -5146,7 +5146,7 @@ Bounce In
     }
 }
 
-.bounceInLeft {
+.ca__bounceInLeft {
     animation-name: bounceInLeft;
 }
 
@@ -5168,7 +5168,7 @@ Bounce In
     }
 }
 
-.bounceInRight {
+.ca__bounceInRight {
     animation-name: bounceInRight;
 }
 
@@ -5193,7 +5193,7 @@ Bounce In
 /*************************************************************
 Bounce Out
 **************************************************************/
-.bounceOutTop {
+.ca__bounceOutTop {
     animation-name: bounceOutTop;
 }
 
@@ -5222,7 +5222,7 @@ Bounce Out
     }
 }
 
-.bounceOutBottom {
+.ca__bounceOutBottom {
     animation-name: bounceOutBottom;
 }
 
@@ -5251,7 +5251,7 @@ Bounce Out
     }
 }
 
-.bounceOutLeft {
+.ca__bounceOutLeft {
     animation-name: bounceOutLeft;
 }
 
@@ -5280,7 +5280,7 @@ Bounce Out
     }
 }
 
-.bounceOutRight {
+.ca__bounceOutRight {
     animation-name: bounceOutRight;
 }
 
@@ -5312,7 +5312,7 @@ Bounce Out
 /*************************************************************
 Perspective
 **************************************************************/
-.perspectiveToTop {
+.ca__perspectiveToTop {
     animation-name: perspectiveToTop;
     transform: perspective(500px);
     transform-style: preserve-3d;
@@ -5330,7 +5330,7 @@ Perspective
     }
 }
 
-.perspectiveToBottom {
+.ca__perspectiveToBottom {
     animation-name: perspectiveToBottom;
     transform: perspective(500px);
     transform-style: preserve-3d;
@@ -5351,7 +5351,7 @@ Perspective
 /*************************************************************
 Zoom In
 **************************************************************/
-.zoomIn {
+.ca__zoomIn {
     animation-name: zoomIn;
 }
 
@@ -5362,7 +5362,7 @@ Zoom In
     }
 }
 
-.zoomInLeft {
+.ca__zoomInLeft {
     animation-name: zoomInLeft;
 }
 
@@ -5373,7 +5373,7 @@ Zoom In
     }
 }
 
-.zoomInRight {
+.ca__zoomInRight {
     animation-name: zoomInRight;
 }
 
@@ -5384,7 +5384,7 @@ Zoom In
     }
 }
 
-.zoomInTop {
+.ca__zoomInTop {
     animation-name: zoomInTop;
 }
 
@@ -5395,7 +5395,7 @@ Zoom In
     }
 }
 
-.zoomInBottom {
+.ca__zoomInBottom {
     animation-name: zoomInBottom;
 }
 
@@ -5409,7 +5409,7 @@ Zoom In
 /*************************************************************
 Zoom Out
 **************************************************************/
-.zoomOut {
+.ca__zoomOut {
     animation-name: zoomOut;
 }
 
@@ -5420,7 +5420,7 @@ Zoom Out
     }
 }
 
-.zoomOutLeft {
+.ca__zoomOutLeft {
     animation-name: zoomOutLeft;
 }
 
@@ -5431,7 +5431,7 @@ Zoom Out
     }
 }
 
-.zoomOutRight {
+.ca__zoomOutRight {
     animation-name: zoomOutRight;
 }
 
@@ -5442,7 +5442,7 @@ Zoom Out
     }
 }
 
-.zoomOutTop {
+.ca__zoomOutTop {
     animation-name: zoomOutTop;
 }
 
@@ -5453,7 +5453,7 @@ Zoom Out
     }
 }
 
-.zoomOutBottom {
+.ca__zoomOutBottom {
     animation-name: zoomOutBottom;
 }
 
@@ -5467,7 +5467,7 @@ Zoom Out
 /*************************************************************
 Dance
 **************************************************************/
-.danceTop {
+.ca__danceTop {
     animation-name: danceTop;
     transform-origin: top;
 }
@@ -5494,7 +5494,7 @@ Dance
     }
 }
 
-.danceMiddle {
+.ca__danceMiddle {
     animation-name: danceMiddle;
 }
 
@@ -5520,7 +5520,7 @@ Dance
     }
 }
 
-.danceBottom {
+.ca__danceBottom {
     animation-name: danceBottom;
     transform-origin: bottom;
 }
@@ -5548,8 +5548,8 @@ Dance
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .cssanimation,
-    .cssanimation span {
+    .ca__cssanimation,
+    .ca__cssanimation span {
         animation: none !important;
         transition: none !important;
     }

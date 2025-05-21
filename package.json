@@ -34,20 +34,25 @@
     "scripts": {
         "build": "npm run build:css && npm run copy:assets",
         "build:css": "postcss src/*.css -d dist/ --no-map",
+        "build:prefix": "postcss src/*.css -d dist/ --no-map",
         "start": "postcss src/*.css -d dist/ --watch --no-map",
         "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules",
         "lint:css": "stylelint \"src/**/*.css\"",
         "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
-        "format:css": "prettier --write \"src/**/*.css\""
+        "format:css": "prettier --write \"src/**/*.css\"",
+        "build:classlist": "node tools/extract-class-names.js"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.21",
         "cpx": "^1.5.0",
         "cssnano": "^7.0.7",
+        "mkdirp": "^3.0.1",
         "postcss": "^8.5.3",
         "postcss-cli": "^11.0.1",
+        "postcss-prefix-selector": "^2.1.1",
         "postcss-preset-env": "^10.1.6",
         "postcss-selector-namespace": "^3.0.1",
+        "postcss-selector-prefix": "^5.0.1",
         "prettier": "^3.5.3",
         "stylelint": "^16.19.1",
         "stylelint-config-standard": "^38.0.0"
@@ -60,6 +65,6 @@
         "./gsap": "./dist/cssanimation-gsap.js",
         "./letter": "./dist/ca-letteranimation.js",
         "./css": "./dist/cssanimation.css",
-        "./utility": "./dist/ca-animation-utility.css"
+        "./utility": "./dist/cssanimation-utility.css"
     }
 }

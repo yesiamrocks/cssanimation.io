@@ -32,7 +32,7 @@ You stay in control, just apply the [class names](dist/cssanimation-cheatsheet.m
 
 ## ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue) CSS Animation Guide
 
-#### Option A: Install with NPM
+### Option A: Install with NPM
 
 ```bash
 npm i cssanimationio
@@ -44,7 +44,7 @@ Import it into your file:
 import 'cssanimationio';
 ```
 
-#### Option B: Install via CDN
+### Option B: Install via CDN
 
 Include the `cssanimation.css` library into the `<head>`:
 
@@ -57,7 +57,7 @@ Include the `cssanimation.css` library into the `<head>`:
 </head>
 ```
 
-## Usage Examples
+### Usage Examples
 
 After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.fadeIn` for fade in animation to an element. For list of animation class name [click here](dist/cssanimation-cheatsheet.md) or [check the website](https://cssanimation.io/getting-started.html).
 
