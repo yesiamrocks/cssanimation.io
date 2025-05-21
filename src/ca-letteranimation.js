@@ -1,5 +1,5 @@
 /**
- * cssanimation-utility.css - Core utility classes for CSS-based animations
+ * ca-letteranimation.js - Letter-by-letter animation enhancements
  * Part of cssanimation.io
  * Version: 2.0.5
  * Author: Shafayetul Islam Pavel
@@ -7,7 +7,7 @@
  * Email: hello@cssanimation.io
  * Github: https://github.com/yesiamrocks/cssanimation.io
  * Title: A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.
- * Description: Utility-based animation helpers including delay, duration, easing, and keyframe shorthands.
+ * Description: Handles sequence-based and randomized letter-by-letter animations with span-wrapping and timed delays.
  * cssanimation.io Copyright © 2025 Shafayetul Islam Pavel
  **/
 
