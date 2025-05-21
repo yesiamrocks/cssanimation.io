@@ -181,7 +181,7 @@ Then in your JavaScript:
 
 ```js
 // Import GSAP core
-import { TweenMax } from 'gsap';
+import { gsap } from 'gsap';
 ```
 
 #### Or Include via CDN. If you're working without a bundler:
