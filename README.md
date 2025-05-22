@@ -71,7 +71,7 @@ _That's it! You've got a CSS animated element. Super!_
 Want to animate text, letter by letter?  
 The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__leFadeIn`, `.ca__leZoomIn`, `.ca__leRotateX`, etc.) perfect for headlines, banners, and hero sections.
 
-**cssanimation.io** library also includes **two exclusive types** of letter animations: `.sequence` and `.random`. What Are Sequence and Random Animations?
+**cssanimation.io** library also includes **two exclusive types** of letter animations: `.ca__sequence` and `.ca__random`. What Are Sequence and Random Animations?
 
 - **`.sequence`** – Letters animate **one after another**, in order.
 - **`.random`** – Letters animate in a **randomized order**, adding playful motion.
@@ -96,8 +96,8 @@ Use:
 | `.random`       | Animates letters in random order                |
 
 ```html
-<h1 class="cssanimation ca__leFadeIn sequence">Hello World</h1>
-<h2 class="cssanimation ca__leFadeIn random">Surprise!</h2>
+<h1 class="cssanimation ca__leFadeIn ca__sequence">Hello World</h1>
+<h2 class="cssanimation ca__leFadeIn ca__random">Surprise!</h2>
 ```
 
 Browse the full list of `ca__le` (letter-based) animation classes.

@@ -1,7 +1,7 @@
 /**
  * ca-letteranimation.js - Letter-by-letter animation enhancements
  * Part of cssanimation.io
- * Version: 2.1.0
+ * Version: 2.2.0
  * Author: Shafayetul Islam Pavel
  * Find me at: https://www.linkedin.com/in/shafayetul/
  * Email: hello@cssanimation.io
@@ -10,19 +10,6 @@
  * Description: Applies letter-by-letter CSS animations to text.
  * cssanimation.io Copyright © 2025 Shafayetul Islam Pavel
  **/
-
-window.addEventListener('DOMContentLoaded', () => {
-    animateSequence();
-    animateRandom();
-});
-/**
- * ca-letteranimation.js
- * Part of cssanimation.io
- * Version: 2.2.0
- * Author: Shafayetul Islam Pavel
- * Description: Applies letter-by-letter CSS animations to text,
- * while preserving inner HTML elements like icons or spans.
- */
 
 window.addEventListener('DOMContentLoaded', () => {
     // Trigger animations when the DOM is fully loaded
