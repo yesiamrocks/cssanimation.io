@@ -48,9 +48,15 @@ JavaScript Targets
 
 | Command                   | Description                                                  |
 |---------------------------|--------------------------------------------------------------|
-| `npm run build`           | Run prefixer, asset copier, class extractor                  |
+| `npm run build`           | Full build: prefix CSS, copy assets, extract class names     |
+| `npm run build:css`       | Compiles all CSS files using PostCSS with prefixing          |
 | `npm run build:classlist` | Extracts and groups all `.ca__*` classes to markdown         |
-| `npm run copy:assets`     | Copies JS & misc assets to `dist/`                           |
+| `npm run copy:assets`     | Copies JS, markdown, and module assets to the `dist/` folder |
+| `npm run start`           | Watch mode for CSS changes with PostCSS                      |
+| `npm run lint:css`        | Lint all CSS files with Stylelint                            |
+| `npm run lint:css:fix`    | Fix stylelint issues automatically                           |
+| `npm run format:css`      | Format CSS files using Prettier                              |
+
 
 ## Code Style
 

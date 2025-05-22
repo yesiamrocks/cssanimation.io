@@ -33,7 +33,7 @@
         "LICENSE"
     ],
     "scripts": {
-        "build": "npm run build:css && npm run copy:assets && run build:classlist",
+        "build": "npm run build:css && npm run copy:assets && npm run build:classlist",
         "build:css": "postcss src/*.css -d dist/ --no-map",
         "build:prefix": "postcss src/*.css -d dist/ --no-map",
         "start": "postcss src/*.css -d dist/ --watch --no-map",
