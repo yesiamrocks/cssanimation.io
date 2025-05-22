@@ -85,7 +85,6 @@ This document provides a complete reference of utility classes available in **cs
 >
     Slide me in style!
 </div>
-
-_Explore more with live demos and animation playgrounds at
-[cssanimation.io](https://cssanimation.io)_ 🚀
 ```
+
+_Explore more with live demos and animation playgrounds at [cssanimation.io](https://cssanimation.io)_ 🚀

@@ -111,10 +111,7 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 <h2 class="cssanimation ca__leFadeIn ca__random">Surprise!</h2>
 ```
 
-Browse the full list of `ca__le` (letter-based) animation classes.
-
-- [Cheatsheet on GitHub](https://github.com/yesiamrocks/cssanimation.io/blob/master/docs/cssanimation-reference.md)
-- [Official Website](https://cssanimation.io)
+Browse the full list of `ca__le` (letter-based) animation classes: [Cheatsheet on GitHub](https://github.com/yesiamrocks/cssanimation.io/blob/master/docs/cssanimation-reference.md)
 
 > This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.
 
@@ -247,7 +244,7 @@ By default, **cssanimation.io** respects user system preferences. When `prefers-
 
 ## License
 
-**cssanimation.io** is licensed under the [Parity Public License](https://paritylicense.com/) — Free for organizational and personal use.
+**cssanimation.io** is licensed under the [Parity Public License](https://paritylicense.com/).
 
 ## 📣 Contribute
 
