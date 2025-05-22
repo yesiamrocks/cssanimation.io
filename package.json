@@ -28,6 +28,7 @@
     "homepage": "https://cssanimation.io/",
     "files": [
         "dist",
+        "docs",
         "README.md",
         "LICENSE"
     ],

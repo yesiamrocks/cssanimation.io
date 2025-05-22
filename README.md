@@ -16,7 +16,8 @@
 
 **cssanimation.io** is a lightweight, modular **CSS animation library** designed for developers, designers, and UI ninjas. It provides over **300+ CSS and GSAP-powered plug-and-play animation** classes to bring your interfaces to life — from simple fades and zooms to dynamic letter effects and 3D transitions.
 
-You stay in control, just apply the [class names](./dist/cssanimation-reference.md) when and where you want them. **Zero setup. No JavaScript required. Just clean, reusable animations.**
+You stay in control, just apply the [class names](./docs/cssanimation-reference.md) when and where you want them.
+**Zero setup. No JavaScript required. Just clean, reusable animations.**
 
 ### Why Developers Love It
 
@@ -26,21 +27,27 @@ You stay in control, just apply the [class names](./dist/cssanimation-reference.
 - **Easy to use**: just add a class, and your animation is live.
 - **Customizable**: tweak animation properties to fit your design.
 - **Zero JavaScript**, no dependencies, and fine-grained control.
-- Perfect for scroll-based reveals, hover effects, hero sections, and dynamic UI interactions.
-- **Free** and open-source, with a growing community.
 
 ## ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue) CSS Animation Guide
 
-### Option A: Install with NPM
+### Option A: Install with NPM / Yarn
 
 ```bash
 npm i cssanimationio
+# or
+yarn add cssanimationio
 ```
 
 Import it into your file:
 
 ```bash
 import 'cssanimationio';
+```
+
+In your CSS/SCSS (if applicable):
+
+```scss
+@import 'cssanimationio/dist/cssanimation.css';
 ```
 
 ### Option B: Install via CDN
@@ -58,51 +65,55 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ### Usage Examples
 
-After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fadeIn` for fade in animation to an element. For list of animation class name [click here](./dist/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
+After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
 
 ```html
-<h1 class="cssanimation ca__fadeIn">Hello, World!</h1>
+<h1 class="cssanimation ca__fadeIn">cssanimation</h1>
 ```
 
 _That's it! You've got a CSS animated element. Super!_
 
 ## How to Use Letter Animations
 
-Want to animate text, letter by letter?  
-The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__leFadeIn`, `.ca__leZoomIn`, `.ca__leRotateX`, etc.) perfect for headlines, banners, and hero sections.
+Want to animate text, letter by letter?
 
-**cssanimation.io** library also includes **two exclusive types** of letter animations: `.ca__sequence` and `.ca__random`. What Are Sequence and Random Animations?
+The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__leFadeIn`, `.ca__leZoomIn`, `.ca__leRotateX`, etc.).
+
+**cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__sequence` and `.ca__random`, which must be added to any element you want to animate letter by letter. What Are Sequence and Random Animations?
 
 - **`.sequence`** – Letters animate **one after another**, in order.
 - **`.random`** – Letters animate in a **randomized order**, adding playful motion.
 
 #### Step 1. Include the Script
 
-Add this right **before the closing `</body>` tag**:
+If you're using a `<script>` tag (e.g., for plain HTML), add this right **before the closing `</body>` tag**:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/ca-letteranimation.js"></script>
 ```
 
-#### Step 2. Add Animation classes to Your HTML
+⚠️ Note: If you're already importing the library in your JavaScript using: `import 'cssanimationio';` you can skip Step 1, as the animation script is already included in your build.
 
-Use:
+#### Step 2. Add Animation classes to Your HTML
 
 | Class           | What It Does                                    |
 | --------------- | ----------------------------------------------- |
 | `.cssanimation` | Base class for all animations                   |
 | `.ca__leFadeIn` | A letter animation class (Fades in each letter) |
-| `.sequence`     | Animates letters in order                       |
-| `.random`       | Animates letters in random order                |
+| `.ca__sequence` | Animates letters in order                       |
+| `.ca__random`   | Animates letters in random order                |
 
 ```html
-<h1 class="cssanimation ca__leFadeIn ca__sequence">Hello World</h1>
+<h1 class="cssanimation ca__leFadeIn ca__sequence">cssanimation</h1>
+```
+
+```html
 <h2 class="cssanimation ca__leFadeIn ca__random">Surprise!</h2>
 ```
 
 Browse the full list of `ca__le` (letter-based) animation classes.
 
-- [Cheatsheet on GitHub](https://github.com/yesiamrocks/cssanimation.io/blob/master/dist/cssanimation-reference.md)
+- [Cheatsheet on GitHub](https://github.com/yesiamrocks/cssanimation.io/blob/master/docs/cssanimation-reference.md)
 - [Official Website](https://cssanimation.io)
 
 > This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.
@@ -144,13 +155,13 @@ This includes:
 - `.ca__loop-*`: Repeat settings
 - `.ca__delay-*`: Add delays
 
-**Check out the full list of utility classes in [`cssanimation-reference.md`](./dist/cssanimation-reference.md#cssanimation-utilitycss)** [![View Utility Classes](https://img.shields.io/badge/Utility%20Cheatsheet-%F0%9F%93%9D%20Full%20Reference-blue)](./dist/cssanimation-reference.md#cssanimation-utilitycss)
+**Check out the full list of utility classes with details in [`cssanimation-utilities.md`](./docs/cssanimation-utilities.md)**.
 
 Combo Example
 
 ```html
 <h2
-    class="cssanimation zoomIn ca__speed-chill ca__delay-3 ca__ease-snappy ca__loop-bounce"
+    class="cssanimation ca__zoomIn ca__speed-chill ca__delay-3 ca__ease-snappy ca__loop-bounce"
 >
     Magical Entrance!
 </h2>
@@ -158,7 +169,7 @@ Combo Example
 
 # ![GSAP Powered](https://img.shields.io/badge/GSAP-Powered-brightgreen) GSAP Animation Guide
 
-**cssanimation.io** isn’t just about CSS – it also supports **GSAP** (GreenSock Animation Platform), the gold standard for JavaScript animations. With GSAP, you get even more powerful, smooth, and flexible control over your animations.
+**cssanimation.io** isn’t just about CSS – it also supports [**GSAP** (GreenSock Animation Platform)](https://gsap.com/), the gold standard for JavaScript animations. With GSAP, you get even more powerful, smooth, and flexible control over your animations.
 
 ## Why Use the GSAP Version?
 
@@ -196,23 +207,21 @@ import { gsap } from 'gsap';
 
 ### 2. Add Animation Classes to Your Elements
 
-Add the `.cssanimation` class and one of the supported animation class names, like `.ca__gsap-fadeIn`:
+Add the `.cssanimation` class and one of the cssanimation.io's GSAP animation class names, like `.ca__gsap-fadeIn`:
 
 ```html
 <h1 class="cssanimation ca__gsap-fadeIn">Example</h1>
 ```
 
-📌 **Tip**: Check the full list of animation class names on the [homepage](https://cssanimation.io) or in the [cssanimation-reference.md](./dist/cssanimation-reference.md).
+📌 **Tip**: Check the full list of animation class names in the [cssanimation-reference.md](./docs/cssanimation-reference.md).
 
-### 3. Letter Animations (Sequential Only)
+### 3. Letter Animations
 
 For **letter-by-letter animation**, just use any `le*` animation class like `.ca__gsap-leFadeIn`.
 
 ```html
 <h1 class="cssanimation ca__gsap-leFadeIn">Amazing!</h1>
 ```
-
-_Note: The GSAP version currently supports **sequential letter animations only**. Random animation support is coming soon!_
 
 ## CSS vs. GSAP – Which Animation Version Should You Use?
 

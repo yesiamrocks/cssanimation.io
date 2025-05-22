@@ -27,16 +27,17 @@ files.forEach((filePath) => {
     }
 });
 
-// Build numbered Markdown output
+// Build Markdown output with bullet points
 let output = '# cssanimation.io – Animation Class Reference\n\n';
 
 for (const [file, classSet] of Object.entries(groupedClasses)) {
     output += `## ${file}\n`;
     const sorted = Array.from(classSet).sort();
-    sorted.forEach((className, index) => {
-        output += `${index + 1}. \`${className}\`\n`;
+    sorted.forEach((className) => {
+        output += `- \`${className}\`\n`;
     });
     output += '\n';
 }
-fs.writeFileSync('./src/cssanimation-reference.md', output, 'utf8');
+
+fs.writeFileSync('./docs/cssanimation-reference.md', output, 'utf8');
 console.log('✅ Grouped class reference saved to cssanimation-reference.md');
