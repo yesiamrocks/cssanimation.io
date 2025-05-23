@@ -101,3 +101,36 @@ Updated the package.json files field to explicitly include:
 
 ## cssanimation-utility.css
 ```
+
+# Version: 3.0.0
+
+### Added
+
+- **GSAP Animation Engine**: Introduced a new modular engine (`cssanimation-gsap.js`) that enables GSAP-powered animations using HTML attributes.
+    - Usage via `data-gsap="bounce"` and `data-gsap-options='{ "y": 30, "duration": 1.5 }'`
+    - Supports all GSAP animation properties like `x`, `y`, `opacity`, `scale`, `ease`, `repeat`, etc.
+    - Compatible with Vite, Webpack, and plain HTML via UMD build.
+- **Generated Animation Map**: Auto-generated `generated-animation-map.js` maps `data-gsap` names to animation functions for scalable modularity.
+- **Error Handling**: Robust JSON validation for `data-gsap-options` with helpful console messages to aid developers.
+- **New NPM Build Targets**:
+    - `dist/ca__gsap/cssanimation-gsap.umd.js` – UMD-compatible build for browser use
+    - `src/animations/` – Modular animation definitions
+- **Developer Tools**:
+    - Auto-copying of `animations` and `ca__gsap` folders in build
+    - Added `generate:map` script to manage animation mapping
+    - Improved `package.json` scripts and dev dependencies
+
+### Changed
+
+- Restructured `src/animations/` to follow one-module-per-animation best practice.
+- Added `gsap` as a `peerDependency` to avoid forced version locks.
+- Updated README with GSAP usage examples for:
+    - NPM + Vite/ESM setup
+    - Plain HTML via `<script>` + CDN
+
+### Breaking Changes
+
+- **GSAP is now a required peer dependency**. Developers must install GSAP themselves:
+    ```bash
+    npm install cssanimationio gsap
+    ```
