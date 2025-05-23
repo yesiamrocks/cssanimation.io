@@ -1,3 +1,85 @@
+# Version: 3.0.0
+
+### Added
+
+- **GSAP Animation Engine**: Introduced a new modular engine (`cssanimation-gsap.js`) that enables GSAP-powered animations using HTML attributes.
+    - Usage via `data-gsap="bounce"` and `data-gsap-options='{ "y": 30, "duration": 1.5 }'`
+    - Supports all GSAP animation properties like `x`, `y`, `opacity`, `scale`, `ease`, `repeat`, etc.
+    - Compatible with Vite, Webpack, and plain HTML via UMD build.
+- **Generated Animation Map**: Auto-generated `generated-animation-map.js` maps `data-gsap` names to animation functions for scalable modularity.
+- **Error Handling**: Robust JSON validation for `data-gsap-options` with helpful console messages to aid developers.
+- **New NPM Build Targets**:
+    - `dist/ca__gsap/cssanimation-gsap.umd.js` – UMD-compatible build for browser use
+    - `src/animations/` – Modular animation definitions
+- **Developer Tools**:
+    - Auto-copying of `animations` and `ca__gsap` folders in build
+    - Added `generate:map` script to manage animation mapping
+    - Improved `package.json` scripts and dev dependencies
+
+### Changed
+
+- Restructured `src/animations/` to follow one-module-per-animation best practice.
+- Added `gsap` as a `peerDependency` to avoid forced version locks.
+- Updated README with GSAP usage examples for:
+    - NPM + Vite/ESM setup
+    - Plain HTML via `<script>` + CDN
+
+### Breaking Changes
+
+- **GSAP is now a required peer dependency**. Developers must install GSAP themselves:
+  `bash
+npm install cssanimationio gsap
+`
+
+# Version: 2.2.1
+
+### Added
+
+- Support for `.ca__le*` letter animation classes in the class extraction tool
+- A new dedicated section in `cssanimation-reference.md` titled **"Letter Animations Class"**
+- Automated placement of the letter class section **after** `cssanimation.css` for improved logical flow
+
+### Changed
+
+- Improved `extract-class-names.js` script structure and maintainability
+- Enhanced code readability with **extensive inline comments** to help future contributors
+
+### Output Example
+
+```md
+## cssanimation.css
+
+- `.ca__ease-in`
+- `.ca__delay-500`
+
+## Letter Animations Class
+
+- `.ca__leFadeIn`
+- `.ca__leZoomOut`
+
+## cssanimation-utility.css
+```
+
+<br>
+
+# Version: v2.0.4
+
+### Production Build & Modular Structure Refinement
+
+**Released:** May 2025  
+**Tag:** `v2.0.4`  
+**Focus:** Clean publish, modular structure, and future-friendly folder refactor
+
+### What’s New
+
+- **Dist-Only Publishing to NPM**  
+  Package is now cleaner and production-focused. Only the `dist/` folder is published, reducing size and removing dev clutter.
+
+- **New Folder Structure**  
+  Modular CSS animations (e.g., `fade.css`, `rotate.css`, `zoom.css`) have been moved into a new `dist/modules/` directory for better organization.
+
+<br>
+
 # Version: v2.0.3
 
 ### Production-Ready Build – Only `dist/` Published
@@ -25,21 +107,7 @@ Updated the package.json files field to explicitly include:
 - README.md
 - LICENSE
 
-# Version: v2.0.4
-
-### Production Build & Modular Structure Refinement
-
-**Released:** May 2025  
-**Tag:** `v2.0.4`  
-**Focus:** Clean publish, modular structure, and future-friendly folder refactor
-
-### What’s New
-
-- **Dist-Only Publishing to NPM**  
-  Package is now cleaner and production-focused. Only the `dist/` folder is published, reducing size and removing dev clutter.
-
-- **New Folder Structure**  
-  Modular CSS animations (e.g., `fade.css`, `rotate.css`, `zoom.css`) have been moved into a new `dist/modules/` directory for better organization.
+<br>
 
 # Version: 2.2.0
 
@@ -71,66 +139,4 @@ Updated the package.json files field to explicitly include:
     - <div class="random">
     + <div class="ca__sequence">
     + <div class="ca__random">
-    ```
-
-# Version: 2.2.1
-
-### Added
-
-- Support for `.ca__le*` letter animation classes in the class extraction tool
-- A new dedicated section in `cssanimation-reference.md` titled **"Letter Animations Class"**
-- Automated placement of the letter class section **after** `cssanimation.css` for improved logical flow
-
-### Changed
-
-- Improved `extract-class-names.js` script structure and maintainability
-- Enhanced code readability with **extensive inline comments** to help future contributors
-
-### Output Example
-
-```md
-## cssanimation.css
-
-- `.ca__ease-in`
-- `.ca__delay-500`
-
-## Letter Animations Class
-
-- `.ca__leFadeIn`
-- `.ca__leZoomOut`
-
-## cssanimation-utility.css
-```
-
-# Version: 3.0.0
-
-### Added
-
-- **GSAP Animation Engine**: Introduced a new modular engine (`cssanimation-gsap.js`) that enables GSAP-powered animations using HTML attributes.
-    - Usage via `data-gsap="bounce"` and `data-gsap-options='{ "y": 30, "duration": 1.5 }'`
-    - Supports all GSAP animation properties like `x`, `y`, `opacity`, `scale`, `ease`, `repeat`, etc.
-    - Compatible with Vite, Webpack, and plain HTML via UMD build.
-- **Generated Animation Map**: Auto-generated `generated-animation-map.js` maps `data-gsap` names to animation functions for scalable modularity.
-- **Error Handling**: Robust JSON validation for `data-gsap-options` with helpful console messages to aid developers.
-- **New NPM Build Targets**:
-    - `dist/ca__gsap/cssanimation-gsap.umd.js` – UMD-compatible build for browser use
-    - `src/animations/` – Modular animation definitions
-- **Developer Tools**:
-    - Auto-copying of `animations` and `ca__gsap` folders in build
-    - Added `generate:map` script to manage animation mapping
-    - Improved `package.json` scripts and dev dependencies
-
-### Changed
-
-- Restructured `src/animations/` to follow one-module-per-animation best practice.
-- Added `gsap` as a `peerDependency` to avoid forced version locks.
-- Updated README with GSAP usage examples for:
-    - NPM + Vite/ESM setup
-    - Plain HTML via `<script>` + CDN
-
-### Breaking Changes
-
-- **GSAP is now a required peer dependency**. Developers must install GSAP themselves:
-    ```bash
-    npm install cssanimationio gsap
     ```
