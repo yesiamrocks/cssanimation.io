@@ -71,7 +71,7 @@ After installing `cssanimation.css` library, now add the class `.cssanimation` a
 <h1 class="cssanimation ca__fadeIn">cssanimation</h1>
 ```
 
-_That's it! You've got a CSS animated element. Super!_
+_That's it! You've got a CSS animated element. Super! 🎉_ <br><br>
 
 ## How to Use Letter Animations
 
@@ -79,10 +79,10 @@ Want to animate text, letter by letter?
 
 The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__leFadeIn`, `.ca__leZoomIn`, `.ca__leRotateX`, etc.).
 
-**cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__sequence` and `.ca__random`, which must be added to any element you want to animate letter by letter. What Are Sequence and Random Animations?
+**cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__sequence` and `.ca__random`, which must be added to any element you want to animate letter by letter. What Are **Sequence** and **Random** Animations?
 
-- **`.sequence`** – Letters animate **one after another**, in order.
-- **`.random`** – Letters animate in a **randomized order**, adding playful motion.
+- **`.ca__sequence`** – Letters animate **one after another**, in order.
+- **`.ca__random`** – Letters animate in a **randomized order**, adding playful motion.
 
 #### Step 1. Include the Script
 
@@ -92,7 +92,7 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/ca-letteranimation.js"></script>
 ```
 
-⚠️ Note: If you're already importing the library in your JavaScript using: `import 'cssanimationio';` you can skip Step 1, as the animation script is already included in your build.
+>_Note: If you're already importing the library in your JavaScript using: `import 'cssanimationio';` you can skip Step 1, as the animation script is already included in your build._
 
 #### Step 2. Add Animation classes to Your HTML
 
@@ -100,7 +100,7 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 | --------------- | ----------------------------------------------- |
 | `.cssanimation` | Base class for all animations                   |
 | `.ca__leFadeIn` | A letter animation class (Fades in each letter) |
-| `.ca__sequence` | Animates letters in order                       |
+| `.ca__sequence` | Animates letters in order or                    |
 | `.ca__random`   | Animates letters in random order                |
 
 ```html
