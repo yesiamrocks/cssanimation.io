@@ -60,10 +60,9 @@ npm install cssanimationio gsap
   `diff
     - <div class="sequence">
     - <div class="random">
-    + <div class="ca__sequence">
-    + <div class="ca__random">
-    `
-  <br>
+    * <div class="ca__sequence">
+    * <div class="ca__random">
+      `
 
 # Version: 2.2.1
 
