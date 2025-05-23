@@ -61,7 +61,7 @@ JavaScript Targets
 ## Code Style
 
 - Use 2 spaces for indentation
-- Keep comments helpful and concise
+- Write clear, concise comments
 - Use semantic naming (e.g. .ca__bounceInLeft > .bL)
 - Prefer SCSS-like readability in raw CSS
 
