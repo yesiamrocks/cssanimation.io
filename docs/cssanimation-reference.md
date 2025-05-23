@@ -423,8 +423,3 @@
 - `ca__zoomOutRight`
 - `ca__zoomOutTop`
 
-## GSAP Integration Classes (Ungrouped)
-- `ca__gsap-effect3d`
-- `ca__gsap-hu__hu__`
-- `ca__gsap-snake`
-

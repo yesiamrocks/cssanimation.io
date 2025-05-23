@@ -33,17 +33,24 @@
         "LICENSE"
     ],
     "scripts": {
-        "build": "npm run build:css && npm run copy:assets && npm run build:classlist",
+        "build": "npm run generate:map && npm run build:css && npm run copy:assets && npm run build:classlist && npm run build:gsap",
         "build:css": "postcss src/*.css -d dist/ --no-map",
         "build:prefix": "postcss src/*.css -d dist/ --no-map",
         "start": "postcss src/*.css -d dist/ --watch --no-map",
-        "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules",
+        "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules && cpx \"src/animations/**/*\" dist/animations && cpx \"src/ca__gsap/**/*\" dist/ca__gsap",
         "lint:css": "stylelint \"src/**/*.css\"",
         "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
         "format:css": "prettier --write \"src/**/*.css\"",
-        "build:classlist": "node tools/extract-class-names.js"
+        "build:classlist": "node tools/extract-class-names.js",
+        "build:gsap": "rollup -c",
+        "generate:map": "node scripts/gen-animation-map.mjs"
+    },
+    "peerDependencies": {
+        "gsap": "^3.12.0"
     },
     "devDependencies": {
+        "@rollup/plugin-commonjs": "^28.0.3",
+        "@rollup/plugin-node-resolve": "^16.0.1",
         "autoprefixer": "^10.4.21",
         "cpx": "^1.2.1",
         "cssnano": "^7.0.7",
@@ -55,8 +62,11 @@
         "postcss-selector-namespace": "^1.2.2",
         "postcss-selector-prefix": "^5.0.1",
         "prettier": "^3.5.3",
+        "rollup": "^4.41.0",
         "stylelint": "^16.19.1",
-        "stylelint-config-standard": "^38.0.0"
+        "stylelint-config-standard": "^38.0.0",
+        "vite": "^6.3.5",
+        "gsap": "^3.12.0"
     },
     "publishConfig": {
         "access": "public"
