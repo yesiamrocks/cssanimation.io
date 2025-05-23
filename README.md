@@ -115,7 +115,7 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 <h2 class="cssanimation ca__leFadeIn ca__random">Surprise!</h2>
 ```
 
-Browse the full list of `ca__le` (letter-based) animation classes: [Cheatsheet on GitHub](./docs/cssanimation-reference.md)
+Browse the full list of `ca__le` (letter-based) animation classes: [Cheatsheet on GitHub](./docs/cssanimation-reference.md#letter-abound-animations)
 
 > This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.
 
