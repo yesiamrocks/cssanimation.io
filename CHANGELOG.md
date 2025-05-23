@@ -30,6 +30,40 @@
   `bash
 npm install cssanimationio gsap
 `
+  <br>
+
+# Version: 2.2.0
+
+### Added
+
+- **Scoped Class Naming**  
+  Introduced `.ca__sequence` and `.ca__random` class names to replace `.sequence` and `.random`. This avoids conflicts with third-party styles or libraries and improves maintainability across large projects and frameworks.
+
+- **HTML-Aware Text Animation**  
+  Updated the animation engine to traverse DOM nodes recursively. Now it wraps only pure text characters in `<span>` tags for animation while leaving nested HTML elements (like `<span>` icons, `<strong>`, etc.) untouched.
+
+### Compatibility
+
+- Fully tested in latest versions of:
+
+    - Chrome, Firefox, Safari, Edge, Opera
+    - iOS & Android mobile browsers
+
+- Compatible with:
+    - **React** (via `useEffect` or DOM `ref`)
+    - **jQuery**
+    - **Vanilla JS / Web Components**
+
+### Migration Notes
+
+- Replace old class references:
+  `diff
+    - <div class="sequence">
+    - <div class="random">
+    + <div class="ca__sequence">
+    + <div class="ca__random">
+    `
+  <br>
 
 # Version: 2.2.1
 
@@ -106,37 +140,3 @@ Updated the package.json files field to explicitly include:
 - dist/
 - README.md
 - LICENSE
-
-<br>
-
-# Version: 2.2.0
-
-### Added
-
-- **Scoped Class Naming**  
-  Introduced `.ca__sequence` and `.ca__random` class names to replace `.sequence` and `.random`. This avoids conflicts with third-party styles or libraries and improves maintainability across large projects and frameworks.
-
-- **HTML-Aware Text Animation**  
-  Updated the animation engine to traverse DOM nodes recursively. Now it wraps only pure text characters in `<span>` tags for animation while leaving nested HTML elements (like `<span>` icons, `<strong>`, etc.) untouched.
-
-### Compatibility
-
-- Fully tested in latest versions of:
-
-    - Chrome, Firefox, Safari, Edge, Opera
-    - iOS & Android mobile browsers
-
-- Compatible with:
-    - **React** (via `useEffect` or DOM `ref`)
-    - **jQuery**
-    - **Vanilla JS / Web Components**
-
-### Migration Notes
-
-- Replace old class references:
-    ```diff
-    - <div class="sequence">
-    - <div class="random">
-    + <div class="ca__sequence">
-    + <div class="ca__random">
-    ```
