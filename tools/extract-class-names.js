@@ -1,78 +1,103 @@
 const fs = require('fs');
 const path = require('path');
 
-// List of CSS and JS distribution files to scan for class names
+// Input files to scan
 const files = [
     'dist/cssanimation.css',
     'dist/cssanimation-utility.css',
     'dist/cssanimation-gsap.js',
 ];
 
-// Regular expression to match general utility/animation classes that start with `.ca__` but NOT `.ca__le`
-const generalClassRegex = /(?:\.)(ca__(?!le)[a-zA-Z0-9_-]+)/g;
+// Optional titles for ungrouped fallback
+const sectionTitles = {
+    'cssanimation.css': 'Core Animation Classes',
+    'cssanimation-utility.css': 'Utility Classes',
+    'cssanimation-gsap.js': 'GSAP Integration Classes',
+};
 
-// Regular expression to match only letter animation classes that start with `.ca__le`
-const letterClassRegex = /(?:\.)(ca__le[a-zA-Z0-9_-]+)/g;
+// Load grouped class descriptions
+const groupedDescPath = path.resolve(__dirname, 'class-descriptions.json');
+let groupedDescriptions = {};
+try {
+    groupedDescriptions = JSON.parse(fs.readFileSync(groupedDescPath, 'utf8'));
+} catch (error) {
+    console.warn('⚠️ Could not load class-descriptions.json');
+}
 
-// Object to store matched classes grouped by file
-const groupedClasses = {};
+// Regex to capture any .ca__class
+const generalClassRegex = /(?:\.)(ca__[a-zA-Z0-9_-]+)/g;
+const discoveredClasses = new Set();
 
-// Set to store all `.ca__le*` letter animation classes globally
-const letterClasses = new Set();
-
-// Iterate over each file to extract class names
+// Step 1: Discover all classes
 files.forEach((filePath) => {
-    const absPath = path.resolve(filePath); // Get absolute path of the file
-    const content = fs.readFileSync(absPath, 'utf8'); // Read file contents as text
-    const fileName = path.basename(filePath); // Get file name (e.g., cssanimation.css)
-
-    // Initialize set for this file
-    groupedClasses[fileName] = new Set();
-
-    // Match and store general utility or animation classes (excluding .ca__le*)
+    const absPath = path.resolve(filePath);
+    const content = fs.readFileSync(absPath, 'utf8');
     let match;
     while ((match = generalClassRegex.exec(content)) !== null) {
-        groupedClasses[fileName].add(`.${match[1]}`); // Add with leading dot for consistency
-    }
-
-    // Match and store all letter animation classes globally
-    while ((match = letterClassRegex.exec(content)) !== null) {
-        letterClasses.add(`.${match[1]}`);
+        discoveredClasses.add(match[1]); // store without dot
     }
 });
 
-// Start building the Markdown output for class reference
+// Step 2: Separate groupings into main and utility types
 let output = '# cssanimation.io – Animation Class Reference\n\n';
+const utilityGroupNames = [];
+const animationGroupNames = [];
 
-// Loop over each file’s extracted class names
-for (const [file, classSet] of Object.entries(groupedClasses)) {
-    output += `## ${file}\n`;
+for (const groupName of Object.keys(groupedDescriptions)) {
+    const isUtility = /utility|utilities|control/i.test(groupName);
+    if (isUtility) {
+        utilityGroupNames.push(groupName);
+    } else {
+        animationGroupNames.push(groupName);
+    }
+}
 
-    // Sort and format class names as bullet list
-    const sorted = Array.from(classSet).sort();
-    sorted.forEach((className) => {
-        output += `- \`${className}\`\n`;
-    });
-    output += '\n';
-
-    // Insert the Letter Animation Classes section after cssanimation.css
-    if (file === 'cssanimation.css' && letterClasses.size > 0) {
-        output += '## Letter Animations Class\n';
-
-        // Sort and format letter animation class list
-        const sortedLetters = Array.from(letterClasses).sort();
-        sortedLetters.forEach((cls) => {
-            output += `- \`${cls}\`\n`;
+// Step 3: Render grouped animation-related sections first
+[...animationGroupNames, ...utilityGroupNames].forEach((groupName) => {
+    const classMap = groupedDescriptions[groupName];
+    const included = Object.entries(classMap).filter(([className]) =>
+        discoveredClasses.has(className),
+    );
+    if (included.length) {
+        output += `## ${groupName}\n`;
+        included.forEach(([className, description]) => {
+            output += `- \`${className}\` — ${description}\n`;
         });
+        output += '\n';
+    }
+});
+
+// Step 4: Fallback for ungrouped classes from scanned files
+for (const filePath of files) {
+    const fileName = path.basename(filePath);
+    const sectionTitle = sectionTitles[fileName] || fileName;
+    const absPath = path.resolve(filePath);
+    const content = fs.readFileSync(absPath, 'utf8');
+
+    const unmatched = new Set();
+    let match;
+    while ((match = generalClassRegex.exec(content)) !== null) {
+        const className = match[1];
+        const isGrouped = Object.values(groupedDescriptions).some(
+            (group) => className in group,
+        );
+        if (!isGrouped) {
+            unmatched.add(className);
+        }
+    }
+
+    if (unmatched.size > 0) {
+        output += `## ${sectionTitle} (Ungrouped)\n`;
+        Array.from(unmatched)
+            .sort()
+            .forEach((className) => {
+                output += `- \`${className}\`\n`;
+            });
         output += '\n';
     }
 }
 
-// Output file location
+// Step 5: Write output
 const outPath = './docs/cssanimation-reference.md';
-
-// Write final Markdown output to disk
 fs.writeFileSync(outPath, output, 'utf8');
-
-// Log confirmation
-console.log(`✅ Grouped class reference saved to ${outPath}`);
+console.log(`✅ Class reference with grouped descriptions saved to ${outPath}`);

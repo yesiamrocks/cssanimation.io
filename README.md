@@ -71,7 +71,9 @@ After installing `cssanimation.css` library, now add the class `.cssanimation` a
 <h1 class="cssanimation ca__fadeIn">cssanimation</h1>
 ```
 
-_That's it! You've got a CSS animated element. Super! 🎉_ <br><br>
+_That's it! You've got a CSS animated element. Super! 🎉_
+
+<br>
 
 ## How to Use Letter Animations
 
@@ -79,7 +81,9 @@ Want to animate text, letter by letter?
 
 The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__leFadeIn`, `.ca__leZoomIn`, `.ca__leRotateX`, etc.).
 
-**cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__sequence` and `.ca__random`, which must be added to any element you want to animate letter by letter. What Are **Sequence** and **Random** Animations?
+**cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__sequence` and `.ca__random`, which must be added to any element you want to animate letter by letter.
+
+What Are **Sequence** and **Random** Animations?
 
 - **`.ca__sequence`** – Letters animate **one after another**, in order.
 - **`.ca__random`** – Letters animate in a **randomized order**, adding playful motion.
@@ -92,7 +96,7 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/ca-letteranimation.js"></script>
 ```
 
->_Note: If you're already importing the library in your JavaScript using: `import 'cssanimationio';` you can skip Step 1, as the animation script is already included in your build._
+> _Note: If you're already importing the library in your JavaScript using: `import 'cssanimationio';` you can skip Step 1, as the animation script is already included in your build._
 
 #### Step 2. Add Animation classes to Your HTML
 
@@ -111,9 +115,11 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 <h2 class="cssanimation ca__leFadeIn ca__random">Surprise!</h2>
 ```
 
-Browse the full list of `ca__le` (letter-based) animation classes: [Cheatsheet on GitHub](https://github.com/yesiamrocks/cssanimation.io/blob/master/docs/cssanimation-reference.md)
+Browse the full list of `ca__le` (letter-based) animation classes: [Cheatsheet on GitHub](./docs/cssanimation-reference.md)
 
 > This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.
+
+<br>
 
 ## Modular Import
 
@@ -141,6 +147,8 @@ Only need fade and zoom?
 | Slide       | `dist/ca__slide.css`  |
 | ...and more | See `/dist/` folder   |
 
+<br>
+
 ## Utility Class
 
 **cssanimation.io** offers a powerful set of pre-built utility classes. Just use them along with the `.cssanimation` base class and your chosen animation class.
@@ -152,7 +160,7 @@ This includes:
 - `.ca__loop-*`: Repeat settings
 - `.ca__delay-*`: Add delays
 
-**Check out the full list of utility classes with details in [`cssanimation-utilities.md`](./docs/cssanimation-utilities.md)**.
+Check out the full list of utility classes with details in [`cssanimation-utilities.md`](./docs/cssanimation-utilities.md).
 
 Combo Example
 
@@ -163,6 +171,8 @@ Combo Example
     Magical Entrance!
 </h2>
 ```
+
+<br>
 
 # ![GSAP Powered](https://img.shields.io/badge/GSAP-Powered-brightgreen) GSAP Animation Guide
 
@@ -202,6 +212,8 @@ import { gsap } from 'gsap';
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-gsap.js"></script>
 ```
 
+> Note: If you haven't already installed and imported the library in your project, make sure to do so first.
+
 ### 2. Add Animation Classes to Your Elements
 
 Add the `.cssanimation` class and one of the cssanimation.io's GSAP animation class names, like `.ca__gsap-fadeIn`:
@@ -212,7 +224,7 @@ Add the `.cssanimation` class and one of the cssanimation.io's GSAP animation cl
 
 📌 **Tip**: Check the full list of animation class names in the [cssanimation-reference.md](./docs/cssanimation-reference.md).
 
-### 3. Letter Animations
+### 3. GSAP Letter Animations
 
 For **letter-by-letter animation**, just use any `le*` animation class like `.ca__gsap-leFadeIn`.
 
@@ -246,7 +258,7 @@ By default, **cssanimation.io** respects user system preferences. When `prefers-
 
 **cssanimation.io** is licensed under the [Parity Public License](https://paritylicense.com/).
 
-## 📣 Contribute
+## Contribute
 
 We welcome issues, pull requests, and suggestions! Make your animations even more magical.
 
