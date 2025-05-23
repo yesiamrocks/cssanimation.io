@@ -62,7 +62,6 @@ npm install cssanimationio gsap
     - <div class="random">
     * <div class="ca__sequence">
     * <div class="ca__random">
-      `
 
 # Version: 2.2.1
 
