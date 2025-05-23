@@ -72,3 +72,32 @@ Updated the package.json files field to explicitly include:
     + <div class="ca__sequence">
     + <div class="ca__random">
     ```
+
+# Version: 2.2.1
+
+### Added
+
+- Support for `.ca__le*` letter animation classes in the class extraction tool
+- A new dedicated section in `cssanimation-reference.md` titled **"Letter Animations Class"**
+- Automated placement of the letter class section **after** `cssanimation.css` for improved logical flow
+
+### Changed
+
+- Improved `extract-class-names.js` script structure and maintainability
+- Enhanced code readability with **extensive inline comments** to help future contributors
+
+### Output Example
+
+```md
+## cssanimation.css
+
+- `.ca__ease-in`
+- `.ca__delay-500`
+
+## Letter Animations Class
+
+- `.ca__leFadeIn`
+- `.ca__leZoomOut`
+
+## cssanimation-utility.css
+```
