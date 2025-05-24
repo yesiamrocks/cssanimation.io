@@ -178,6 +178,8 @@ Combo Example
 
 **cssanimation.io** isn’t just about CSS – it also supports [**GSAP** (GreenSock Animation Platform)](https://gsap.com/), the gold standard for JavaScript animations. With GSAP, you get even more powerful, smooth, and flexible control over your animations.
 
+Supports animations via HTML using `ca__data-gsap` attributes, with JSON-configurable options.
+
 ## Why Use the GSAP Version?
 
 - Smoother and more performant animations.
@@ -209,20 +211,64 @@ import { gsap } from 'gsap';
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
 <!-- cssanimation.io's GSAP script -->
-<script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-gsap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-gsap.umd.js"></script>
 ```
 
 > Note: If you haven't already installed and imported the library in your project, make sure to do so first.
 
 ### 2. Add Animation Classes to Your Elements
 
-Add the `.cssanimation` class and one of the cssanimation.io's GSAP animation class names, like `.ca__gsap-fadeIn`:
+Add the GSAP animation name in the `ca-gsap` data atribute like:
 
 ```html
-<h1 class="cssanimation ca__gsap-fadeIn">Example</h1>
+<h1 ca-gsap="fadeIn">cssanimation.io GSAP</h1>
 ```
 
+- `ca-gsap="fadeIn"` – selects which animation to use (from `src/animations/`)
+- `ca-gsap-options='{}'` – passes GSAP options to the animation function
+
 📌 **Tip**: Check the full list of animation class names in the [cssanimation-reference.md](./docs/cssanimation-reference.md).
+
+### Supported `ca-gsap-options`
+
+You can use any valid GSAP properties, including:
+| Option | Example |
+| ------------------ | ---------------------- |
+| `x`, `y` | `"y": 50` |
+| `duration` | `"duration": 1.2` |
+| `delay` | `"delay": 0.5` |
+| `repeat` | `"repeat": -1` |
+| `yoyo` | `"yoyo": true` |
+| `ease` | `"ease": "sine.inOut"` |
+| `opacity` | `"opacity": 0.7` |
+| `rotation` | `"rotation": 45` |
+| `scaleX`, `scaleY` | `"scaleX": 1.3` |
+
+```html
+<div ca-gsap="fadeIn" ca-gsap-options='{"opacity": 0, "duration": 2}'>
+    Fade in this text
+</div>
+```
+
+### Common Mistakes
+
+Invalid JSON:
+
+```html
+<div data-gsap-options='{"duration": .5}'>❌ Missing leading 0</div>
+```
+
+Correct:
+
+```html
+<div data-gsap-options='{"duration": 0.5}'>✔️ Valid</div>
+```
+
+### General Tips:
+
+- Always use double quotes (")
+- Include leading zeros (0.5, not .5)
+- No trailing commas
 
 ### 3. GSAP Letter Animations
 

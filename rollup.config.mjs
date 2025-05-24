@@ -5,7 +5,7 @@ import commonjs from '@rollup/plugin-commonjs';
 export default {
     input: 'src/cssanimation-gsap.js',
     output: {
-        file: 'src/ca__gsap/cssanimation-gsap.umd.js',
+        file: 'src/cssanimation-gsap.umd.js',
         format: 'umd',
         name: 'cssanimation-gsap',
         globals: {
