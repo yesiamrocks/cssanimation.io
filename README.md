@@ -73,14 +73,13 @@ After installing `cssanimation.css` library, now add the class `.cssanimation` a
 
 _That's it! You've got a CSS animated element. Super! 🎉_
 
-### Prefix System for Animations & Utilities
+### Prefix System for CSS Animations & CSS Utilities
 
 | Prefix    | Description                                      | Example Usage                |
 | --------- | ------------------------------------------------ | ---------------------------- |
 | `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-bounce">` |
 | `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-mt-4">`    |
 | `ca__lt-` | Letter-based animations (pure CSS)               | `<h1 class="ca__lt-swing">`  |
-| `ca-gsap` | GSAP animation hook attribute                    | `<h1 ca-gsap="bounce">`      |
 
 <br>
 
