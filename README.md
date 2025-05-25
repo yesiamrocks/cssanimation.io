@@ -83,7 +83,7 @@ _That's it! You've got a CSS animated element. Super! 🎉_
 
 <br>
 
-## How to Use Letter Animations
+## How to Use CSS Letter Animations
 
 Want to animate text, letter by letter?
 
@@ -111,7 +111,7 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 | Class              | What It Does                                    |
 | ------------------ | ----------------------------------------------- |
 | `.cssanimation`    | Base class for all animations                   |
-| `.ca__lt-leFadeIn` | A letter animation class (Fades in each letter) |
+| `.ca__lt-FadeIn`   | A letter animation class (Fades in each letter) |
 | `.ca__lt-sequence` | Animates letters in order or                    |
 | `.ca__lt-random`   | Animates letters in random order                |
 
