@@ -65,10 +65,10 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ### Usage Examples
 
-After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
+After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fx-fadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
 
 ```html
-<h1 class="cssanimation ca__fadeIn">cssanimation</h1>
+<h1 class="cssanimation ca__fx-fadeIn">cssanimation</h1>
 ```
 
 _That's it! You've got a CSS animated element. Super! 🎉_
@@ -87,14 +87,14 @@ _That's it! You've got a CSS animated element. Super! 🎉_
 
 Want to animate text, letter by letter?
 
-The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__leFadeIn`, `.ca__leZoomIn`, `.ca__leRotateX`, etc.).
+The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__lt-FadeIn`, `.ca__lt-ZoomIn`, `.ca__lt-RotateX`, etc.).
 
-**cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__sequence` and `.ca__random`, which must be added to any element you want to animate letter by letter.
+**cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__lt-sequence` and `.ca__lt-random`, which must be added to any element you want to animate letter by letter.
 
 What Are **Sequence** and **Random** Animations?
 
-- **`.ca__sequence`** – Letters animate **one after another**, in order.
-- **`.ca__random`** – Letters animate in a **randomized order**, adding playful motion.
+- **`.ca__lt-sequence`** – Letters animate **one after another**, in order.
+- **`.ca__lt-random`** – Letters animate in a **randomized order**, adding playful motion.
 
 #### Step 1. Include the Script
 
@@ -108,22 +108,22 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 
 #### Step 2. Add Animation classes to Your HTML
 
-| Class           | What It Does                                    |
-| --------------- | ----------------------------------------------- |
-| `.cssanimation` | Base class for all animations                   |
-| `.ca__leFadeIn` | A letter animation class (Fades in each letter) |
-| `.ca__sequence` | Animates letters in order or                    |
-| `.ca__random`   | Animates letters in random order                |
+| Class              | What It Does                                    |
+| ------------------ | ----------------------------------------------- |
+| `.cssanimation`    | Base class for all animations                   |
+| `.ca__lt-leFadeIn` | A letter animation class (Fades in each letter) |
+| `.ca__lt-sequence` | Animates letters in order or                    |
+| `.ca__lt-random`   | Animates letters in random order                |
 
 ```html
-<h1 class="cssanimation ca__leFadeIn ca__sequence">cssanimation</h1>
+<h1 class="cssanimation ca__lt-FadeIn ca__lt-sequence">cssanimation</h1>
 ```
 
 ```html
-<h2 class="cssanimation ca__leFadeIn ca__random">Surprise!</h2>
+<h2 class="cssanimation ca__lt-FadeIn ca__lt-random">Surprise!</h2>
 ```
 
-Browse the full list of `ca__le` (letter-based) animation classes: [Cheatsheet on GitHub](./docs/cssanimation-reference.md#letter-abound-animations)
+Browse the full list of `ca__lt` (letter-based) animation classes: [Cheatsheet on GitHub](./docs/cssanimation-reference.md#letter-abound-animations)
 
 > This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.
 
@@ -163,10 +163,10 @@ Only need fade and zoom?
 
 This includes:
 
-- `.ca__speed-*`: Control speed
-- `.ca__ease-*`: Easing control
-- `.ca__loop-*`: Repeat settings
-- `.ca__delay-*`: Add delays
+- `.ca__u-speed-*`: Control speed
+- `.ca__u-ease-*`: Easing control
+- `.ca__u-loop-*`: Repeat settings
+- `.ca__u-delay-*`: Add delays
 
 Check out the full list of utility classes with details in [`cssanimation-utilities.md`](./docs/cssanimation-utilities.md).
 
@@ -174,7 +174,7 @@ Combo Example
 
 ```html
 <h2
-    class="cssanimation ca__zoomIn ca__speed-chill ca__delay-3 ca__ease-snappy ca__loop-bounce"
+    class="cssanimation ca__fx-zoomIn ca__u-speed-chill ca__u-delay-3 ca__u-ease-snappy ca__u-loop-bounce"
 >
     Magical Entrance!
 </h2>
@@ -186,7 +186,7 @@ Combo Example
 
 **cssanimation.io** isn’t just about CSS – it also supports [**GSAP** (GreenSock Animation Platform)](https://gsap.com/), the gold standard for JavaScript animations. With GSAP, you get even more powerful, smooth, and flexible control over your animations.
 
-Supports animations via HTML using `ca__data-gsap` attributes, with JSON-configurable options.
+Supports animations via HTML using `ca-gsap` attributes, with JSON-configurable options.
 
 ## Why Use the GSAP Version?
 
@@ -280,7 +280,7 @@ Correct:
 
 ### 3. GSAP Letter Animations
 
-For **letter-by-letter animation**, just use any `le*` animation class like `.ca__gsap-leFadeIn`.
+For **letter-by-letter animation**, just use any `lt*` animation class like `.ca__gsap-leFadeIn`.
 
 ```html
 <h1 class="cssanimation ca__gsap-leFadeIn">Amazing!</h1>

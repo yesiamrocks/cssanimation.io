@@ -86,10 +86,10 @@ function processTextNodes(node, animationType) {
 
 /**
  * Animate text using sequential delays per character
- * Targets elements with class 'ca__sequence'
+ * Targets elements with class 'ca__lt-sequence'
  */
 function animateSequence() {
-    document.querySelectorAll('.ca__sequence').forEach((el) => {
+    document.querySelectorAll('.ca__lt-sequence').forEach((el) => {
         const animated = processTextNodes(el, 'sequence');
         el.innerHTML = animated.join('');
     });
@@ -97,10 +97,10 @@ function animateSequence() {
 
 /**
  * Animate text using random delays per character
- * Targets elements with class 'ca__random'
+ * Targets elements with class 'ca__lt-random'
  */
 function animateRandom() {
-    document.querySelectorAll('.ca__random').forEach((el) => {
+    document.querySelectorAll('.ca__lt-random').forEach((el) => {
         const animated = processTextNodes(el, 'random');
         el.innerHTML = animated.join('');
     });
