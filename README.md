@@ -63,15 +63,6 @@ Include the `cssanimation.css` library into the `<head>`:
 </head>
 ```
 
-## Prefix System for Animations & Utilities
-
-| Prefix    | Description                                      | Example Usage                |
-| --------- | ------------------------------------------------ | ---------------------------- |
-| `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-bounce">` |
-| `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-mt-4">`    |
-| `ca__lt-` | Letter-based animations (pure CSS)               | `<h1 class="ca__lt-swing">`  |
-| `ca-gsap` | GSAP animation hook attribute                    | `<h1 ca-gsap="bounce">`      |
-
 ### Usage Examples
 
 After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
@@ -81,6 +72,15 @@ After installing `cssanimation.css` library, now add the class `.cssanimation` a
 ```
 
 _That's it! You've got a CSS animated element. Super! 🎉_
+
+### Prefix System for Animations & Utilities
+
+| Prefix    | Description                                      | Example Usage                |
+| --------- | ------------------------------------------------ | ---------------------------- |
+| `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-bounce">` |
+| `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-mt-4">`    |
+| `ca__lt-` | Letter-based animations (pure CSS)               | `<h1 class="ca__lt-swing">`  |
+| `ca-gsap` | GSAP animation hook attribute                    | `<h1 ca-gsap="bounce">`      |
 
 <br>
 
