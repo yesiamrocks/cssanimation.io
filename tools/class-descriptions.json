@@ -284,5 +284,10 @@
         "ca__loop-forever": "Infinite repeat",
         "ca__loop-triple": "3x repeat",
         "ca__loop-bounce": "Ping-pong style"
+    },
+
+    "GSAP": {
+        "bounce": "Play one time (default)",
+        "effect3D": "Infinite repeat"
     }
 }

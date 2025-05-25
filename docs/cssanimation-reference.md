@@ -423,3 +423,11 @@
 - `ca__zoomOutRight`
 - `ca__zoomOutTop`
 
+## GSAP Data Attribute Animations
+These values can be used with the `ca-gsap` attribute, e.g. `<div ca-gsap="bounce">`.
+
+- `bounce`
+- `effect3D`
+- `leBounce`
+- `leMoveFromLeft`
+

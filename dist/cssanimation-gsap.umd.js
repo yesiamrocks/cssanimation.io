@@ -1,8 +1,7 @@
-(function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('gsap')) :
-    typeof define === 'function' && define.amd ? define(['gsap'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.gsap));
-})(this, (function (gsap$1) { 'use strict';
+(function (factory) {
+    typeof define === 'function' && define.amd ? define(factory) :
+    factory();
+})((function () { 'use strict';
 
     // animations/bounce.js
     function animateBounce(el, options = {}) {
@@ -97,7 +96,7 @@
      * @param {Object} options - GSAP override options
      */
     function animateLeMoveFromLeft(el, options = {}) {
-        if (!el || !gsap$1.gsap) return;
+        if (!el || !gsap) return;
 
         const text = el.textContent.trim();
 
@@ -112,13 +111,13 @@
         const letters = el.querySelectorAll('.ca__gsap-letter');
 
         // Set initial state
-        gsap$1.gsap.set(letters, {
+        gsap.set(letters, {
             x: options.fromX ?? -800,
             opacity: options.fromOpacity ?? 0,
         });
 
         // Animate to final position
-        gsap$1.gsap.to(letters, {
+        gsap.to(letters, {
             x: 0,
             opacity: 1,
             ease: options.ease ?? 'power3.out',

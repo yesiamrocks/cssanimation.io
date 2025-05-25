@@ -1,5 +1,3 @@
-import { gsap } from 'gsap';
-
 /**
  * Letter-by-letter GSAP animation: move from left
  * @param {HTMLElement} el - Target element
