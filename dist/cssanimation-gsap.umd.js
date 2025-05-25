@@ -1,7 +1,8 @@
-(function (factory) {
-    typeof define === 'function' && define.amd ? define(factory) :
-    factory();
-})((function () { 'use strict';
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('gsap')) :
+    typeof define === 'function' && define.amd ? define(['gsap'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.gsap));
+})(this, (function (gsap$1) { 'use strict';
 
     // animations/bounce.js
     function animateBounce(el, options = {}) {
@@ -24,9 +25,125 @@
         });
     }
 
+    /**
+     * animateLeBounce.js
+     * GSAP-powered bounce animation for letter-by-letter text
+     * Part of cssanimation.io
+     *
+     * @param {HTMLElement} el - Element to animate (its text will be split into spans)
+     * @param {Object} options - Optional GSAP animation settings from `ca-gsap-options`
+     */
+
+    function animateLeBounce(el, options = {}) {
+        // === Safety Check: GSAP must be loaded ===
+        if (typeof gsap === 'undefined') {
+            console.error(
+                '[cssanimation.io] ❌ GSAP is not loaded. Make sure it is imported before using animateLeBounce.',
+            );
+            return;
+        }
+
+        // === Inject CSS only once ===
+        if (!document.querySelector('[data-ca-gsap-style]')) {
+            const style = document.createElement('style');
+            style.setAttribute('data-ca-gsap-style', 'true');
+            style.innerHTML = `
+            .ca__gsap-letter {
+                display: inline-block;
+                will-change: transform;
+            }
+        `;
+            document.head.appendChild(style);
+        }
+
+        // === Extract and prepare text ===
+        const text = el.textContent.trim();
+
+        // === Convert to letter-by-letter spans ===
+        el.innerHTML = text
+            .split('')
+            .map((char) =>
+                char === ' '
+                    ? ' ' // preserve spaces
+                    : `<span class="ca__gsap-letter">${char}</span>`,
+            )
+            .join('');
+
+        const letters = el.querySelectorAll('.ca__gsap-letter');
+
+        // === Reset previous animation state (in case of re-init) ===
+        gsap.set(letters, { y: 0, opacity: 1 });
+
+        // === Animate all letters with bounce loop ===
+        gsap.to(letters, {
+            // Default settings, can be overridden by options
+            y: options.y ?? -30,
+            repeat: options.repeat ?? -1,
+            yoyo: options.yoyo ?? true,
+            ease: options.ease ?? 'sine.inOut',
+            duration: options.duration ?? 0.8,
+            stagger: options.stagger ?? 0.1,
+
+            // Spread user options last so they override safely
+            ...options,
+        });
+
+        console.log('[cssanimation.io] ✅ animateLeBounce applied:', el);
+    }
+
+    /**
+     * Letter-by-letter GSAP animation: move from left
+     * @param {HTMLElement} el - Target element
+     * @param {Object} options - GSAP override options
+     */
+    function animateLeMoveFromLeft(el, options = {}) {
+        if (!el || !gsap$1.gsap) return;
+
+        const text = el.textContent.trim();
+
+        // Split into individual span-wrapped letters
+        el.innerHTML = text
+            .split('')
+            .map((char) =>
+                char === ' ' ? ' ' : `<span class="ca__gsap-letter">${char}</span>`,
+            )
+            .join('');
+
+        const letters = el.querySelectorAll('.ca__gsap-letter');
+
+        // Set initial state
+        gsap$1.gsap.set(letters, {
+            x: options.fromX ?? -800,
+            opacity: options.fromOpacity ?? 0,
+        });
+
+        // Animate to final position
+        gsap$1.gsap.to(letters, {
+            x: 0,
+            opacity: 1,
+            ease: options.ease ?? 'power3.out',
+            duration: options.duration ?? 1,
+            stagger: options.stagger ?? 0.05,
+            ...options,
+        });
+
+        console.log('[cssanimation.io] ✅ animateLeMoveFromLeft applied:', el);
+    }
+
+    /**
+     * Auto-generated animation map from ./src/animations
+     * Run this file before building: npm run generate:map
+     * 
+     * This file maps animation names (e.g., 'bounce') to exported GSAP functions (e.g., animateBounce).
+     * DO NOT EDIT MANUALLY — instead, edit animation files in /src/animations/
+     */
+
+
     const animationMap = {
-      "bounce": animateBounce,
-      "effect3D": animateEffect3D,
+      'bounce': animateBounce,
+      'effect3D': animateEffect3D,
+      'leBounce': animateLeBounce,
+      'leMoveFromLeft': animateLeMoveFromLeft,
     };
 
     /**

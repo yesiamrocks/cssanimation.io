@@ -1,29 +1,69 @@
+// Import Node.js built-in modules for file system and path handling
 import fs from 'fs';
 import path from 'path';
 
-const animationsDir = path.resolve('./src/animations');
-const outputFile = path.resolve('./src/generated-animation-map.js');
+// 📁 Define the source animations directory and output map file location
+const animationDir = './src/animations';
+const outputPath = './src/generated-animation-map.js';
 
+// 📄 Read all files in the animations directory and filter for .js files only
 const files = fs
-    .readdirSync(animationsDir)
+    .readdirSync(animationDir)
     .filter((file) => file.endsWith('.js'));
 
-let imports = '';
-let mapEntries = '';
+// 📦 These arrays will collect our generated import statements and map entries
+const imports = [];
+const mapEntries = [];
 
-for (const file of files) {
+// 🔁 Loop through each animation file to generate imports and map
+files.forEach((file) => {
+    // Get filename without extension (e.g., 'bounce')
     const base = path.basename(file, '.js');
-    const funcName = `animate${base.charAt(0).toUpperCase() + base.slice(1)}`;
-    imports += `import { ${funcName} } from './animations/${base}.js';\n`;
-    mapEntries += `  "${base}": ${funcName},\n`;
-}
 
-const output = `${imports}
+    // Construct expected function name (e.g., 'animateBounce')
+    const funcName = `animate${capitalize(base)}`;
+
+    // 🛡 Read file content to validate the presence of the expected export
+    const filePath = path.join(animationDir, file);
+    const contents = fs.readFileSync(filePath, 'utf-8');
+
+    // 🚨 Warn if the expected function is not found in the file
+    if (!contents.includes(`function ${funcName}`)) {
+        console.warn(
+            `⚠️  Expected export '${funcName}' not found in '${file}'.\n` +
+                `    ➤ Make sure the file exports a function with this name:\n\n` +
+                `    export function ${funcName}(el, options = {}) {\n      // ...animation logic\n    }\n`,
+        );
+    }
+
+    // 📥 Push import line for this animation
+    imports.push(`import { ${funcName} } from './animations/${base}.js';`);
+
+    // 📌 Add a key-value pair to the animation map (e.g., 'bounce': animateBounce)
+    mapEntries.push(`  '${base}': ${funcName},`);
+});
+
+// 🛠 Combine everything into the final output content for the map file
+const output = `/**
+ * Auto-generated animation map from ./src/animations
+ * Run this file before building: npm run generate:map
+ * 
+ * This file maps animation names (e.g., 'bounce') to exported GSAP functions (e.g., animateBounce).
+ * DO NOT EDIT MANUALLY — instead, edit animation files in /src/animations/
+ */
+
+${imports.join('\n')}
+
 export const animationMap = {
-${mapEntries}};
+${mapEntries.join('\n')}
+};
 `;
 
-fs.writeFileSync(outputFile, output);
-console.log(
-    `✅ Generated animation map with ${files.length} entries at ${outputFile}`,
-);
+// 💾 Write the output to the target file
+fs.writeFileSync(outputPath, output, 'utf-8');
+console.log(`✅ Generated animation map with ${files.length} entries.`);
+
+// 🧠 Utility function to capitalize the first letter of a string
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
