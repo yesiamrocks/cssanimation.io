@@ -1,15 +1,15 @@
 {
     "Fade Animations": {
-        "ca__fadeIn": "Fades in gently from transparent to visible",
-        "ca__fadeInTop": "Fades in while moving down from the top",
-        "ca__fadeInBottom": "Fades in while moving up from the bottom",
-        "ca__fadeInLeft": "Fades in while sliding in from the left",
-        "ca__fadeInRight": "Fades in while sliding in from the right",
-        "ca__fadeOut": "Fades out gradually until fully transparent",
-        "ca__fadeOutTop": "Fades out while moving up to the top",
-        "ca__fadeOutBottom": "Fades out while moving down to the bottom",
-        "ca__fadeOutLeft": "Fades out while sliding leftward",
-        "ca__fadeOutRight": "Fades out while sliding rightward"
+        "ca__fx-fadeIn": "Fades in gently from transparent to visible",
+        "ca__fx-fadeInTop": "Fades in while moving down from the top",
+        "ca__fx-fadeInBottom": "Fades in while moving up from the bottom",
+        "ca__fx-fadeInLeft": "Fades in while sliding in from the left",
+        "ca__fx-fadeInRight": "Fades in while sliding in from the right",
+        "ca__fx-fadeOut": "Fades out gradually until fully transparent",
+        "ca__fx-fadeOutTop": "Fades out while moving up to the top",
+        "ca__fx-fadeOutBottom": "Fades out while moving down to the bottom",
+        "ca__fx-fadeOutLeft": "Fades out while sliding leftward",
+        "ca__fx-fadeOutRight": "Fades out while sliding rightward"
     },
     "Flip Animations": {
         "ca__flipX": "Flips the element along the horizontal (X) axis",

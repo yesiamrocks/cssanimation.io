@@ -12,112 +12,112 @@
  **/
 
 /* Duration Utilities */
-.ca__speed-blitz {
+.ca__u-speed-blitz {
     animation-duration: 0.3s !important;
 }
 
-.ca__speed-quick {
+.ca__u-speed-quick {
     animation-duration: 0.6s !important;
 }
 
-.ca__speed-chill {
+.ca__u-speed-chill {
     animation-duration: 1.2s !important;
 }
 
-.ca__speed-drift {
+.ca__u-speed-drift {
     animation-duration: 2s !important;
 }
 
-.ca__speed-snail {
+.ca__u-speed-snail {
     animation-duration: 3s !important;
 }
 
 /* Delay Utilities */
-.ca__delay-1 {
+.ca__u-delay-1 {
     animation-delay: 0.25s !important;
 }
 
-.ca__delay-2 {
+.ca__u-delay-2 {
     animation-delay: 0.5s !important;
 }
 
-.ca__delay-3 {
+.ca__u-delay-3 {
     animation-delay: 1s !important;
 }
 
-.ca__delay-5 {
+.ca__u-delay-5 {
     animation-delay: 2s !important;
 }
 
 /* Easing Utilities */
-.ca__ease-smooth {
+.ca__u-ease-smooth {
     animation-timing-function: ease-in-out !important;
 }
 
-.ca__ease-snappy {
+.ca__u-ease-snappy {
     animation-timing-function: cubic-bezier(0.5, 1.8, 0.5, 1) !important;
 }
 
-.ca__ease-chill {
+.ca__u-ease-chill {
     animation-timing-function: ease-in !important;
 }
 
-.ca__ease-punch {
+.ca__u-ease-punch {
     animation-timing-function: ease-out !important;
 }
 
-.ca__ease-linear {
+.ca__u-ease-linear {
     animation-timing-function: linear !important;
 }
-.ca__easeSoft {
+.ca__u-easeSoft {
     animation-timing-function: ease;
 }
 
-.ca__easeInFast {
+.ca__u-easeInFast {
     animation-timing-function: ease-in;
 }
 
-.ca__easeOutChill {
+.ca__u-easeOutChill {
     animation-timing-function: ease-out;
 }
 
-.ca__easeSnap {
+.ca__u-easeSnap {
     animation-timing-function: ease-in-out;
 }
 
-.ca__easeBounce {
+.ca__u-easeBounce {
     animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.ca__easeElastic {
+.ca__u-easeElastic {
     animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.ca__easeSwoosh {
+.ca__u-easeSwoosh {
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ca__easeGlide {
+.ca__u-easeGlide {
     animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.ca__easeStagger {
+.ca__u-easeStagger {
     animation-timing-function: step-end;
 }
 
-.ca__easeDrift {
+.ca__u-easeDrift {
     animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
 }
 
-.ca__easeJelly {
+.ca__u-easeJelly {
     animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.ca__easePop {
+.ca__u-easePop {
     animation-timing-function: cubic-bezier(0.3, 1.3, 0.3, 1);
 }
 
-.ca__easeRocket {
+.ca__u-easeRocket {
     animation-timing-function: cubic-bezier(
         0.6,
         0.05,
@@ -126,7 +126,7 @@
     ); /* Fast takeoff */
 }
 
-.ca__easeGravity {
+.ca__u-easeGravity {
     animation-timing-function: cubic-bezier(
         0.8,
         0,
@@ -135,7 +135,7 @@
     ); /* Slow rise, fast fall */
 }
 
-.ca__easeRubber {
+.ca__u-easeRubber {
     animation-timing-function: cubic-bezier(
         0.36,
         0.66,
@@ -144,7 +144,7 @@
     ); /* Elastic stretch */
 }
 
-.ca__easeSnappy {
+.ca__u-easeSnappy {
     animation-timing-function: cubic-bezier(
         0.5,
         1.5,
@@ -153,11 +153,11 @@
     ); /* Fast overshoot */
 }
 
-.ca__easeBoom {
+.ca__u-easeBoom {
     animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1.5); /* Big bounce */
 }
 
-.ca__easeSlideBack {
+.ca__u-easeSlideBack {
     animation-timing-function: cubic-bezier(
         0.33,
         1,
@@ -166,11 +166,11 @@
     ); /* Nice backward drag */
 }
 
-.ca__easeQuickStep {
+.ca__u-easeQuickStep {
     animation-timing-function: steps(3, end); /* Stepped flick */
 }
 
-.ca__easeSnapBack {
+.ca__u-easeSnapBack {
     animation-timing-function: cubic-bezier(
         0.5,
         -0.5,
@@ -179,7 +179,7 @@
     ); /* Overstretch snap */
 }
 
-.ca__easeWhip {
+.ca__u-easeWhip {
     animation-timing-function: cubic-bezier(
         0.6,
         -0.28,
@@ -188,7 +188,7 @@
     ); /* Whiplash exit */
 }
 
-.ca__easeComet {
+.ca__u-easeComet {
     animation-timing-function: cubic-bezier(
         0.2,
         0.8,
@@ -197,84 +197,84 @@
     ); /* Tail-like motion */
 }
 
-.ca__easeQuick {
+.ca__u-easeQuick {
     animation-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
 }
 
-.ca__easeGentle {
+.ca__u-easeGentle {
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.ca__easeSling {
+.ca__u-easeSling {
     animation-timing-function: cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
-.ca__easeBounceHard {
+.ca__u-easeBounceHard {
     animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-.ca__easeOvershoot {
+.ca__u-easeOvershoot {
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
 }
 
-.ca__easeSnapZoom {
+.ca__u-easeSnapZoom {
     animation-timing-function: cubic-bezier(0.2, 0.85, 0.5, 1);
 }
 
-.ca__easeRipple {
+.ca__u-easeRipple {
     animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-.ca__easePulse {
+.ca__u-easePulse {
     animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.ca__easeStepSmooth {
+.ca__u-easeStepSmooth {
     animation-timing-function: steps(5, end);
 }
 
-.ca__easeFlow {
+.ca__u-easeFlow {
     animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.ca__easeWhiplash {
+.ca__u-easeWhiplash {
     animation-timing-function: cubic-bezier(0.3, 1.5, 0.8, 1);
 }
 
-.ca__easePopIn {
+.ca__u-easePopIn {
     animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.ca__easeDip {
+.ca__u-easeDip {
     animation-timing-function: cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
-.ca__easeBounceSoft {
+.ca__u-easeBounceSoft {
     animation-timing-function: cubic-bezier(0.57, 1.45, 0.45, 1);
 }
 
-.ca__easeZoomSnappy {
+.ca__u-easeZoomSnappy {
     animation-timing-function: cubic-bezier(0.3, 0, 0.3, 1.5);
 }
 
-.ca__easeBackTwist {
+.ca__u-easeBackTwist {
     animation-timing-function: cubic-bezier(0.9, -0.6, 0.8, 1.8);
 }
 
 /* Repeating Utilities */
-.ca__loop-once {
+.ca__u-loop-once {
     animation-iteration-count: 1 !important;
 }
 
-.ca__loop-forever {
+.ca__u-loop-forever {
     animation-iteration-count: infinite !important;
 }
 
-.ca__loop-triple {
+.ca__u-loop-triple {
     animation-iteration-count: 3 !important;
 }
 
-.ca__loop-bounce {
+.ca__u-loop-bounce {
     animation-iteration-count: infinite !important;
     animation-direction: alternate !important;
 }

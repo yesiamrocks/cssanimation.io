@@ -33,9 +33,9 @@
         "LICENSE"
     ],
     "scripts": {
-        "build": "npm run generate:map && npm run build:css && npm run copy:assets && npm run build:classlist && npm run build:gsap",
-        "build:css": "postcss src/*.css -d dist/ --no-map",
-        "build:prefix": "postcss src/*.css -d dist/ --no-map",
+        "build": "npm run generate:map && npm run prefix:css:all && npm run copy:assets && npm run build:classlist && npm run build:gsap",
+        "build:css:basic": "postcss src/*.css -d dist/ --no-map",
+        "prefix:css:all": "postcss src/cssanimation.css -o dist/cssanimation.css && postcss src/cssanimation-utility.css -o dist/cssanimation-utility.css",
         "start": "postcss src/*.css -d dist/ --watch --no-map",
         "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules && cpx \"src/animations/**/*\" dist/animations",
         "lint:css": "stylelint \"src/**/*.css\"",
@@ -43,7 +43,10 @@
         "format:css": "prettier --write \"src/**/*.css\"",
         "build:classlist": "node tools/extract-class-names.js",
         "build:gsap": "rollup -c",
-        "generate:map": "node scripts/gen-animation-map.mjs"
+        "generate:map": "node scripts/gen-animation-map.mjs",
+        "prefix:css": "postcss src/cssanimation.css -o dist/cssanimation.css && postcss src/cssanimation.css -o dist/cssanimation.min.css --env production",
+        "prefix:utility": "postcss src/cssanimation-utility.css -o dist/cssanimation-utility.css && postcss src/cssanimation-utility.css -o dist/cssanimation-utility.min.css --env production",
+        "prefix:css:all": "npm run prefix:css && npm run prefix:utility"
     },
     "peerDependencies": {
         "gsap": "^3.12.0"

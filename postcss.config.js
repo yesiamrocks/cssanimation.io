@@ -1,10 +1,7 @@
 module.exports = {
     plugins: [
-        require('autoprefixer'),
-        require('postcss-preset-env')(),
-        require('./postcss/classname-prefixer')({
-            prefix: 'ca__',
-            ignore: ['cssanimation', 'infinite'],
-        }),
+        require('./postcss/prefixer'),
+        require('postcss-preset-env'),
+        ...(process.env.NODE_ENV === 'production' ? [require('cssnano')] : []),
     ],
 };

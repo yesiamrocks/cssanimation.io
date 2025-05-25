@@ -172,6 +172,16 @@ Combo Example
 </h2>
 ```
 
+## Prefix System for Animations & Utilities
+
+| Prefix    | Type               | Description                                                                  | Example Usage                                        | Used In                    |
+| --------- | ------------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------- |
+| `ca__lx-` | **GSAP Letter**    | Animations that apply GSAP effects to each **individual letter** in text.    | `<h1 ca-gsap="ca__lx-bounce">Hello</h1>`             | `animations/leBounce.js`   |
+| `ca__fx-` | **CSS Visual FX**  | Pure CSS animation effects (e.g., glow, fade, flicker) for entire elements.  | `<div class="ca__fx-glow">Glow</div>`                | `cssanimation.css`         |
+| `ca__gx-` | **GSAP Exclusive** | Full-element GSAP effects (e.g., scale, pulse, shake) with advanced options. | `<div ca-gsap="ca__gx-pulse">Pulse</div>`            | `cssanimation-gsap.js`     |
+| `ca__u-`  | **CSS Utility**    | Helpful CSS utilities like spacing, visibility, responsiveness.              | `<div class="ca__u-hide-mobile">...</div>`           | `cssanimation-utility.css` |
+| `ca__gt-` | **GSAP Triggers**  | Scroll or interaction-based triggers using GSAP/ScrollTrigger.               | `<section ca-gsap="ca__gt-scrollFade">...</section>` | `animations/scrollFade.js` |
+
 <br>
 
 # ![GSAP Powered](https://img.shields.io/badge/GSAP-Powered-brightgreen) GSAP Animation Guide
