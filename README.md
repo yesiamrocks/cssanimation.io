@@ -63,6 +63,15 @@ Include the `cssanimation.css` library into the `<head>`:
 </head>
 ```
 
+## Prefix System for Animations & Utilities
+
+| Prefix    | Description                                      | Example Usage                |
+| --------- | ------------------------------------------------ | ---------------------------- |
+| `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-bounce">` |
+| `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-mt-4">`    |
+| `ca__lt-` | Letter-based animations (pure CSS)               | `<h1 class="ca__lt-swing">`  |
+| `ca-gsap` | GSAP animation hook attribute                    | `<h1 ca-gsap="bounce">`      |
+
 ### Usage Examples
 
 After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
@@ -171,16 +180,6 @@ Combo Example
     Magical Entrance!
 </h2>
 ```
-
-## Prefix System for Animations & Utilities
-
-| Prefix    | Type               | Description                                                                  | Example Usage                                        | Used In                    |
-| --------- | ------------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------- |
-| `ca__lx-` | **GSAP Letter**    | Animations that apply GSAP effects to each **individual letter** in text.    | `<h1 ca-gsap="ca__lx-bounce">Hello</h1>`             | `animations/leBounce.js`   |
-| `ca__fx-` | **CSS Visual FX**  | Pure CSS animation effects (e.g., glow, fade, flicker) for entire elements.  | `<div class="ca__fx-glow">Glow</div>`                | `cssanimation.css`         |
-| `ca__gx-` | **GSAP Exclusive** | Full-element GSAP effects (e.g., scale, pulse, shake) with advanced options. | `<div ca-gsap="ca__gx-pulse">Pulse</div>`            | `cssanimation-gsap.js`     |
-| `ca__u-`  | **CSS Utility**    | Helpful CSS utilities like spacing, visibility, responsiveness.              | `<div class="ca__u-hide-mobile">...</div>`           | `cssanimation-utility.css` |
-| `ca__gt-` | **GSAP Triggers**  | Scroll or interaction-based triggers using GSAP/ScrollTrigger.               | `<section ca-gsap="ca__gt-scrollFade">...</section>` | `animations/scrollFade.js` |
 
 <br>
 
