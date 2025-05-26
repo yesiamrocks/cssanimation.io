@@ -28,7 +28,7 @@
 /*************************************************************
 Striking
 **************************************************************/
-.ca__fx-hu__hu__ {
+.ca__fx-HuHu {
     animation: hu__hu__ infinite 2s ease-in-out;
 }
 
@@ -68,7 +68,7 @@ Striking
     }
 }
 
-.ca__fx-effect3d {
+.ca__fx-Effect3d {
     animation-name: effect3d;
 }
 
@@ -128,7 +128,7 @@ Striking
     }
 }
 
-.ca__fx-pepe {
+.ca__fx-Pepe {
     animation-name: pepe;
     animation-iteration-count: infinite;
 }
@@ -158,7 +158,7 @@ Striking
     }
 }
 
-.ca__fx-lightning {
+.ca__fx-Lightning {
     animation-name: lightning;
 }
 
@@ -193,7 +193,7 @@ Striking
     }
 }
 
-.ca__fx-typing {
+.ca__fx-Typing {
     width: 473px;
     overflow: hidden;
     white-space: nowrap;
@@ -215,7 +215,7 @@ Striking
     }
 }
 
-.ca__fx-electricity {
+.ca__fx-Electricity {
     animation-name: electricity;
     animation-iteration-count: infinite;
 }
@@ -272,7 +272,7 @@ Striking
     }
 }
 
-.ca__fx-wipe {
+.ca__fx-Wipe {
     width: 473px;
     overflow: hidden;
     margin: 0 auto;
@@ -286,7 +286,7 @@ Striking
     }
 }
 
-.ca__fx-open {
+.ca__fx-Open {
     width: 473px;
     margin: 0 auto;
     overflow: hidden;
@@ -2648,7 +2648,7 @@ Letter Dance Out
 /*************************************************************
 One After One Fade in
 **************************************************************/
-.ca__fx-oaoFadeIn span:nth-child(even) {
+.ca__fx-OaoFadeIn span:nth-child(even) {
     animation-name: leoaoFadeInTop;
     animation-duration: 0.7s;
     animation-timing-function: ease-out;
@@ -2661,7 +2661,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoFadeIn span:nth-child(odd) {
+.ca__fx-OaoFadeIn span:nth-child(odd) {
     animation-name: leoaoFadeInBottom;
     animation-duration: 0.7s;
     animation-timing-function: ease-out;
@@ -2674,7 +2674,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoFadeOut span:nth-child(even) {
+.ca__fx-OaoFadeOut span:nth-child(even) {
     animation-name: leoaoFadeOutop;
     animation-duration: 0.7s;
     animation-timing-function: ease-in;
@@ -2687,7 +2687,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoFadeOut span:nth-child(odd) {
+.ca__fx-OaoFadeOut span:nth-child(odd) {
     animation-name: leoaoFadeOutBottom;
     animation-duration: 0.7s;
     animation-timing-function: ease-in;
@@ -2700,7 +2700,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoFlyIn span:nth-child(even) {
+.ca__fx-OaoFlyIn span:nth-child(even) {
     animation-name: leoaoFlyInTop;
 }
 
@@ -2716,7 +2716,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoFlyIn span:nth-child(odd) {
+.ca__fx-OaoFlyIn span:nth-child(odd) {
     animation-name: leoaoFlyInBottom;
 }
 
@@ -2732,7 +2732,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoFlyOut span:nth-child(even) {
+.ca__fx-OaoFlyOut span:nth-child(even) {
     animation-name: leoaoFlyOutTop;
 }
 
@@ -2752,7 +2752,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoFlyOut span:nth-child(odd) {
+.ca__fx-OaoFlyOut span:nth-child(odd) {
     animation-name: leoaoFlyOutBottom;
 }
 
@@ -2772,7 +2772,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateIn span:nth-child(even) {
+.ca__fx-OaoRotateIn span:nth-child(even) {
     animation-name: oaoRotateInTop;
 }
 
@@ -2783,7 +2783,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateIn span:nth-child(odd) {
+.ca__fx-OaoRotateIn span:nth-child(odd) {
     animation-name: oaoRotateInBottom;
 }
 
@@ -2794,7 +2794,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateOut span:nth-child(even) {
+.ca__fx-OaoRotateOut span:nth-child(even) {
     animation-name: oaoRotateOutTop;
 }
 
@@ -2805,7 +2805,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateOut span:nth-child(odd) {
+.ca__fx-OaoRotateOut span:nth-child(odd) {
     animation-name: oaoRotateOutBottom;
 }
 
@@ -2816,7 +2816,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateXIn span:nth-child(even) {
+.ca__fx-OaoRotateXIn span:nth-child(even) {
     animation-name: oaoRotateXInTop;
 }
 
@@ -2827,7 +2827,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateXIn span:nth-child(odd) {
+.ca__fx-OaoRotateXIn span:nth-child(odd) {
     animation-name: oaoRotateXInBottom;
 }
 
@@ -2838,7 +2838,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateXOut span:nth-child(even) {
+.ca__fx-OaoRotateXOut span:nth-child(even) {
     animation-name: oaoRotateXOutTop;
 }
 
@@ -2849,7 +2849,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateXOut span:nth-child(odd) {
+.ca__fx-OaoRotateXOut span:nth-child(odd) {
     animation-name: oaoRotateXOutBottom;
 }
 
@@ -2860,7 +2860,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateYIn span:nth-child(even) {
+.ca__fx-OaoRotateYIn span:nth-child(even) {
     animation-name: oaoRotateYInTop;
 }
 
@@ -2871,7 +2871,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateYIn span:nth-child(odd) {
+.ca__fx-OaoRotateYIn span:nth-child(odd) {
     animation-name: oaoRotateYInBottom;
 }
 
@@ -2882,7 +2882,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateYOut span:nth-child(even) {
+.ca__fx-OaoRotateYOut span:nth-child(even) {
     animation-name: oaoRotateYOutTop;
 }
 
@@ -2893,7 +2893,7 @@ One After One Fade in
     }
 }
 
-.ca__fx-oaoRotateYOut span:nth-child(odd) {
+.ca__fx-OaoRotateYOut span:nth-child(odd) {
     animation-name: oaoRotateYOutBottom;
 }
 
@@ -2907,7 +2907,7 @@ One After One Fade in
 /*************************************************************
 Fade in
 **************************************************************/
-.ca__fx-fadeIn {
+.ca__fx-FadeIn {
     animation-name: fadeIn;
 }
 
@@ -2921,7 +2921,7 @@ Fade in
     }
 }
 
-.ca__fx-fadeInLeft {
+.ca__fx-FadeInLeft {
     animation-name: fadeInLeft;
 }
 
@@ -2936,7 +2936,7 @@ Fade in
     }
 }
 
-.ca__fx-fadeInRight {
+.ca__fx-FadeInRight {
     animation-name: fadeInRight;
 }
 
@@ -2951,7 +2951,7 @@ Fade in
     }
 }
 
-.ca__fx-fadeInTop {
+.ca__fx-FadeInTop {
     animation-name: fadeInTop;
 }
 
@@ -2966,7 +2966,7 @@ Fade in
     }
 }
 
-.ca__fx-fadeInBottom {
+.ca__fx-FadeInBottom {
     animation-name: fadeInBottom;
 }
 
@@ -2984,7 +2984,7 @@ Fade in
 /**************************************************************
 Fade Out
 **************************************************************/
-.ca__fx-fadeOut {
+.ca__fx-FadeOut {
     animation-name: fadeOut;
 }
 
@@ -2994,7 +2994,7 @@ Fade Out
     }
 }
 
-.ca__fx-fadeOutLeft {
+.ca__fx-FadeOutLeft {
     animation-name: fadeOutLeft;
 }
 
@@ -3009,7 +3009,7 @@ Fade Out
     }
 }
 
-.ca__fx-fadeOutRight {
+.ca__fx-FadeOutRight {
     animation-name: fadeOutRight;
 }
 
@@ -3024,7 +3024,7 @@ Fade Out
     }
 }
 
-.ca__fx-fadeOutTop {
+.ca__fx-FadeOutTop {
     animation-name: fadeOutTop;
 }
 
@@ -3039,7 +3039,7 @@ Fade Out
     }
 }
 
-.ca__fx-fadeOutBottom {
+.ca__fx-FadeOutBottom {
     animation-name: fadeOutBottom;
 }
 
@@ -3057,7 +3057,7 @@ Fade Out
 /*************************************************************
 Move From
 **************************************************************/
-.ca__fx-moveFromLeft {
+.ca__fx-MoveFromLeft {
     animation-name: moveFromLeft;
 }
 
@@ -3067,7 +3067,7 @@ Move From
     }
 }
 
-.ca__fx-moveFromRight {
+.ca__fx-MoveFromRight {
     animation-name: moveFromRight;
 }
 
@@ -3077,7 +3077,7 @@ Move From
     }
 }
 
-.ca__fx-moveFromTop {
+.ca__fx-MoveFromTop {
     animation-name: moveFromTop;
 }
 
@@ -3087,7 +3087,7 @@ Move From
     }
 }
 
-.ca__fx-moveFromBottom {
+.ca__fx-MoveFromBottom {
     animation-name: moveFromBottom;
 }
 
@@ -3100,7 +3100,7 @@ Move From
 /*************************************************************
 Move To
 **************************************************************/
-.ca__fx-moveToLeft {
+.ca__fx-MoveToLeft {
     animation-name: moveToLeft;
 }
 
@@ -3110,7 +3110,7 @@ Move To
     }
 }
 
-.ca__fx-moveToRight {
+.ca__fx-MoveToRight {
     animation-name: moveToRight;
 }
 
@@ -3120,7 +3120,7 @@ Move To
     }
 }
 
-.ca__fx-moveToTop {
+.ca__fx-MoveToTop {
     animation-name: moveToTop;
 }
 
@@ -3130,7 +3130,7 @@ Move To
     }
 }
 
-.ca__fx-moveToBottom {
+.ca__fx-MoveToBottom {
     animation-name: moveToBottom;
 }
 
@@ -3143,7 +3143,7 @@ Move To
 /*************************************************************
 Door
 **************************************************************/
-.ca__fx-doorCloseFromLeft {
+.ca__fx-DoorCloseFromLeft {
     animation-name: doorCloseFromLeft;
 }
 
@@ -3162,7 +3162,7 @@ Door
     }
 }
 
-.ca__fx-doorOpenFromRight {
+.ca__fx-DoorOpenFromRight {
     animation-name: doorOpenFromRight;
 }
 
@@ -3181,7 +3181,7 @@ Door
     }
 }
 
-.ca__fx-doorCloseFromRight {
+.ca__fx-DoorCloseFromRight {
     animation-name: doorCloseFromRight;
 }
 
@@ -3200,7 +3200,7 @@ Door
     }
 }
 
-.ca__fx-doorOpenFromLeft {
+.ca__fx-DoorOpenFromLeft {
     animation-name: doorOpenFromLeft;
 }
 
@@ -3222,7 +3222,7 @@ Door
 /*************************************************************
 Heartbeat
 **************************************************************/
-.ca__fx-heartbeatSlow {
+.ca__fx-HeartbeatSlow {
     animation-name: heartbeatSlow;
     animation-iteration-count: infinite;
     animation-duration: 0.5s;
@@ -3235,7 +3235,7 @@ Heartbeat
     }
 }
 
-.ca__fx-heartbeatFast {
+.ca__fx-HeartbeatFast {
     animation-name: heartbeatFast;
     animation-iteration-count: infinite;
 }
@@ -3255,7 +3255,7 @@ Heartbeat
 /*************************************************************
 Hang On
 **************************************************************/
-.ca__fx-hangOnLeft {
+.ca__fx-HangOnLeft {
     animation-name: hangOnLeft;
 }
 
@@ -3290,7 +3290,7 @@ Hang On
     }
 }
 
-.ca__fx-hangOnRight {
+.ca__fx-HangOnRight {
     animation-name: hangOnRight;
 }
 
@@ -3328,7 +3328,7 @@ Hang On
 /*************************************************************
 Hang And Drop
 **************************************************************/
-.ca__fx-hangAndDropLeft {
+.ca__fx-HangAndDropLeft {
     animation-name: hangAndDropLeft;
 }
 
@@ -3355,7 +3355,7 @@ Hang And Drop
     }
 }
 
-.ca__fx-hangAndDropRight {
+.ca__fx-HangAndDropRight {
     animation-name: hangAndDropRight;
 }
 
@@ -3385,7 +3385,7 @@ Hang And Drop
 /*************************************************************
 Shake
 **************************************************************/
-.ca__fx-pulseShake {
+.ca__fx-PulseShake {
     animation-name: pulseShake;
     animation-iteration-count: infinite;
 }
@@ -3408,7 +3408,7 @@ Shake
     }
 }
 
-.ca__fx-horizontalShake {
+.ca__fx-HorizontalShake {
     animation-name: horizontalShake;
     animation-iteration-count: infinite;
 }
@@ -3457,7 +3457,7 @@ Shake
     }
 }
 
-.ca__fx-verticalShake {
+.ca__fx-VerticalShake {
     animation-name: verticalShake;
     animation-iteration-count: infinite;
 }
@@ -3506,7 +3506,7 @@ Shake
     }
 }
 
-.ca__fx-madMax {
+.ca__fx-MadMax {
     animation-name: madMax;
     animation-iteration-count: infinite;
 }
@@ -3555,7 +3555,7 @@ Shake
     }
 }
 
-.ca__fx-coolHorizontalShake {
+.ca__fx-CoolHorizontalShake {
     animation-name: coolHorizontalShake;
     animation-iteration-count: infinite;
 }
@@ -3589,7 +3589,7 @@ Shake
     }
 }
 
-.ca__fx-coolVerticalShake {
+.ca__fx-CoolVerticalShake {
     animation-name: coolVerticalShake;
     animation-iteration-count: infinite;
 }
@@ -3623,7 +3623,7 @@ Shake
     }
 }
 
-.ca__fx-quietMad {
+.ca__fx-QuietMad {
     animation-name: quietMad;
     animation-iteration-count: infinite;
 }
@@ -3657,7 +3657,7 @@ Shake
     }
 }
 
-.ca__fx-vibration {
+.ca__fx-Vibration {
     animation: vibration 0.1s linear infinite;
 }
 
@@ -3670,7 +3670,7 @@ Shake
 /*************************************************************
 Push Release From
 **************************************************************/
-.ca__fx-pushReleaseFrom {
+.ca__fx-PushReleaseFrom {
     animation-name: pushReleaseFrom;
 }
 
@@ -3685,7 +3685,7 @@ Push Release From
     }
 }
 
-.ca__fx-pushReleaseFromLeft {
+.ca__fx-PushReleaseFromLeft {
     animation-name: pushReleaseFromLeft;
 }
 
@@ -3699,7 +3699,7 @@ Push Release From
     }
 }
 
-.ca__fx-pushReleaseFromRight {
+.ca__fx-PushReleaseFromRight {
     animation-name: pushReleaseFromRight;
 }
 
@@ -3713,7 +3713,7 @@ Push Release From
     }
 }
 
-.ca__fx-pushReleaseFromTop {
+.ca__fx-PushReleaseFromTop {
     animation-name: pushReleaseFromTop;
 }
 
@@ -3727,7 +3727,7 @@ Push Release From
     }
 }
 
-.ca__fx-pushReleaseFromBottom {
+.ca__fx-PushReleaseFromBottom {
     animation-name: pushReleaseFromBottom;
 }
 
@@ -3744,7 +3744,7 @@ Push Release From
 /*************************************************************
 Push Release To
 **************************************************************/
-.ca__fx-pushReleaseTo {
+.ca__fx-PushReleaseTo {
     animation-name: pushReleaseTo;
 }
 
@@ -3759,7 +3759,7 @@ Push Release To
     }
 }
 
-.ca__fx-pushReleaseToLeft {
+.ca__fx-PushReleaseToLeft {
     animation-name: pushReleaseToLeft;
 }
 
@@ -3774,7 +3774,7 @@ Push Release To
     }
 }
 
-.ca__fx-pushReleaseToRight {
+.ca__fx-PushReleaseToRight {
     animation-name: pushReleaseToRight;
 }
 
@@ -3789,7 +3789,7 @@ Push Release To
     }
 }
 
-.ca__fx-pushReleaseToTop {
+.ca__fx-PushReleaseToTop {
     animation-name: pushReleaseToTop;
 }
 
@@ -3804,7 +3804,7 @@ Push Release To
     }
 }
 
-.ca__fx-pushReleaseToBottom {
+.ca__fx-PushReleaseToBottom {
     animation-name: pushReleaseToBottom;
 }
 
@@ -3822,7 +3822,7 @@ Push Release To
 /*************************************************************
 Flip X
 **************************************************************/
-.ca__fx-flipX {
+.ca__fx-FlipX {
     animation-name: flipX;
 }
 
@@ -3837,7 +3837,7 @@ Flip X
     }
 }
 
-.ca__fx-flipXZoomIn {
+.ca__fx-FlipXZoomIn {
     animation-name: flipXZoomIn;
 }
 
@@ -3862,7 +3862,7 @@ Flip X
     }
 }
 
-.ca__fx-flipXZoomOut {
+.ca__fx-FlipXZoomOut {
     animation-name: flipXZoomOut;
 }
 
@@ -3890,7 +3890,7 @@ Flip X
 /*************************************************************
 Flip Y
 **************************************************************/
-.ca__fx-flipY {
+.ca__fx-FlipY {
     animation-name: flipY;
 }
 
@@ -3905,7 +3905,7 @@ Flip Y
     }
 }
 
-.ca__fx-flipYZoomIn {
+.ca__fx-FlipYZoomIn {
     animation-name: flipYZoomIn;
 }
 
@@ -3930,7 +3930,7 @@ Flip Y
     }
 }
 
-.ca__fx-flipYZoomOut {
+.ca__fx-FlipYZoomOut {
     animation-name: flipYZoomOut;
 }
 
@@ -3958,7 +3958,7 @@ Flip Y
 /*************************************************************
 Skew
 **************************************************************/
-.ca__fx-skewLeft {
+.ca__fx-SkewLeft {
     animation-name: skewLeft;
 }
 
@@ -3968,7 +3968,7 @@ Skew
     }
 }
 
-.ca__fx-skewRight {
+.ca__fx-SkewRight {
     animation-name: skewRight;
 }
 
@@ -3978,7 +3978,7 @@ Skew
     }
 }
 
-.ca__fx-skewInLeft {
+.ca__fx-SkewInLeft {
     animation-name: skewInLeft;
 }
 
@@ -3993,7 +3993,7 @@ Skew
     }
 }
 
-.ca__fx-skewInRight {
+.ca__fx-SkewInRight {
     animation-name: skewInRight;
 }
 
@@ -4008,7 +4008,7 @@ Skew
     }
 }
 
-.ca__fx-skewOutLeft {
+.ca__fx-SkewOutLeft {
     animation-name: skewOutLeft;
 }
 
@@ -4023,7 +4023,7 @@ Skew
     }
 }
 
-.ca__fx-skewOutRight {
+.ca__fx-SkewOutRight {
     animation-name: skewOutRight;
 }
 
@@ -4041,7 +4041,7 @@ Skew
 /*************************************************************
 Shock In
 **************************************************************/
-.ca__fx-shockZoom {
+.ca__fx-ShockZoom {
     animation-name: shockZoom;
 }
 
@@ -4059,7 +4059,7 @@ Shock In
     }
 }
 
-.ca__fx-shockInLeft {
+.ca__fx-ShockInLeft {
     animation-name: shockInLeft;
 }
 
@@ -4077,7 +4077,7 @@ Shock In
     }
 }
 
-.ca__fx-shockInRight {
+.ca__fx-ShockInRight {
     animation-name: shockInRight;
 }
 
@@ -4095,7 +4095,7 @@ Shock In
     }
 }
 
-.ca__fx-shockInTop {
+.ca__fx-ShockInTop {
     animation-name: shockInTop;
 }
 
@@ -4113,7 +4113,7 @@ Shock In
     }
 }
 
-.ca__fx-shockInBottom {
+.ca__fx-ShockInBottom {
     animation-name: shockInBottom;
 }
 
@@ -4134,7 +4134,7 @@ Shock In
 /*************************************************************
 Pull release
 **************************************************************/
-.ca__fx-pullRelease {
+.ca__fx-PullRelease {
     animation-name: pullRelease;
 }
 
@@ -4144,7 +4144,7 @@ Pull release
     }
 }
 
-.ca__fx-pushRelease {
+.ca__fx-PushRelease {
     animation-name: pushRelease;
 }
 
@@ -4157,7 +4157,7 @@ Pull release
 /*************************************************************
 Swing In
 **************************************************************/
-.ca__fx-swingInLeft {
+.ca__fx-SwingInLeft {
     animation-name: swingInLeft;
 }
 
@@ -4172,7 +4172,7 @@ Swing In
     }
 }
 
-.ca__fx-swingInRight {
+.ca__fx-SwingInRight {
     animation-name: swingInRight;
 }
 
@@ -4187,7 +4187,7 @@ Swing In
     }
 }
 
-.ca__fx-swingInTop {
+.ca__fx-SwingInTop {
     animation-name: swingInTop;
 }
 
@@ -4202,7 +4202,7 @@ Swing In
     }
 }
 
-.ca__fx-swingInBottom {
+.ca__fx-SwingInBottom {
     animation-name: swingInBottom;
 }
 
@@ -4221,7 +4221,7 @@ Swing In
 Elevate
 **************************************************************/
 
-.ca__fx-elevateLeft {
+.ca__fx-ElevateLeft {
     animation-name: elevateLeft;
 }
 
@@ -4242,7 +4242,7 @@ Elevate
     }
 }
 
-.ca__fx-elevateRight {
+.ca__fx-ElevateRight {
     animation-name: elevateRight;
 }
 
@@ -4266,7 +4266,7 @@ Elevate
 /*************************************************************
 Roll From
 **************************************************************/
-.ca__fx-rollFromLeft {
+.ca__fx-RollFromLeft {
     animation-name: rollFromLeft;
 }
 
@@ -4282,7 +4282,7 @@ Roll From
     }
 }
 
-.ca__fx-rollFromRight {
+.ca__fx-RollFromRight {
     animation-name: rollFromRight;
 }
 
@@ -4298,7 +4298,7 @@ Roll From
     }
 }
 
-.ca__fx-rollFromTop {
+.ca__fx-RollFromTop {
     animation-name: rollFromTop;
 }
 
@@ -4314,7 +4314,7 @@ Roll From
     }
 }
 
-.ca__fx-rollFromBottom {
+.ca__fx-RollFromBottom {
     animation-name: rollFromBottom;
 }
 
@@ -4333,7 +4333,7 @@ Roll From
 /*************************************************************
 Roll To
 **************************************************************/
-.ca__fx-rollToLeft {
+.ca__fx-RollToLeft {
     animation-name: rollToLeft;
 }
 
@@ -4349,7 +4349,7 @@ Roll To
     }
 }
 
-.ca__fx-rollToRight {
+.ca__fx-RollToRight {
     animation-name: rollToRight;
 }
 
@@ -4365,7 +4365,7 @@ Roll To
     }
 }
 
-.ca__fx-rollToTop {
+.ca__fx-RollToTop {
     animation-name: rollToTop;
 }
 
@@ -4381,7 +4381,7 @@ Roll To
     }
 }
 
-.ca__fx-rollToBottom {
+.ca__fx-RollToBottom {
     animation-name: rollToBottom;
 }
 
@@ -4400,7 +4400,7 @@ Roll To
 /*************************************************************
 Rotation
 **************************************************************/
-.ca__fx-rotate {
+.ca__fx-Rotate {
     animation-name: rotate;
     animation-timing-function: ease-in-out;
 }
@@ -4415,7 +4415,7 @@ Rotation
     }
 }
 
-.ca__fx-rotateX {
+.ca__fx-RotateX {
     animation-name: rotateX;
 }
 
@@ -4429,7 +4429,7 @@ Rotation
     }
 }
 
-.ca__fx-rotateXIn {
+.ca__fx-RotateXIn {
     animation-name: rotateXIn;
 }
 
@@ -4446,7 +4446,7 @@ Rotation
     }
 }
 
-.ca__fx-rotateXOut {
+.ca__fx-RotateXOut {
     animation-name: rotateXOut;
 }
 
@@ -4463,7 +4463,7 @@ Rotation
     }
 }
 
-.ca__fx-rotateY {
+.ca__fx-RotateY {
     animation-name: rotateY;
 }
 
@@ -4477,7 +4477,7 @@ Rotation
     }
 }
 
-.ca__fx-rotateYIn {
+.ca__fx-RotateYIn {
     animation-name: rotateYIn;
 }
 
@@ -4494,7 +4494,7 @@ Rotation
     }
 }
 
-.ca__fx-rotateYOut {
+.ca__fx-RotateYOut {
     animation-name: rotateYOut;
 }
 
@@ -4514,7 +4514,7 @@ Rotation
 /*************************************************************
 Rotate In
 **************************************************************/
-.ca__fx-rotateInLeft {
+.ca__fx-RotateInLeft {
     animation-name: rotateInLeft;
 }
 
@@ -4529,7 +4529,7 @@ Rotate In
     }
 }
 
-.ca__fx-rotateInRight {
+.ca__fx-RotateInRight {
     animation-name: rotateInRight;
 }
 
@@ -4544,7 +4544,7 @@ Rotate In
     }
 }
 
-.ca__fx-rotateInTop {
+.ca__fx-RotateInTop {
     animation-name: rotateInTop;
 }
 
@@ -4559,7 +4559,7 @@ Rotate In
     }
 }
 
-.ca__fx-rotateInBottom {
+.ca__fx-RotateInBottom {
     animation-name: rotateInBottom;
 }
 
@@ -4577,7 +4577,7 @@ Rotate In
 /*************************************************************
 Rotate Out
 **************************************************************/
-.ca__fx-rotateOutLeft {
+.ca__fx-RotateOutLeft {
     animation-name: rotateOutLeft;
 }
 
@@ -4592,7 +4592,7 @@ Rotate Out
     }
 }
 
-.ca__fx-rotateOutRight {
+.ca__fx-RotateOutRight {
     animation-name: rotateOutRight;
 }
 
@@ -4607,7 +4607,7 @@ Rotate Out
     }
 }
 
-.ca__fx-rotateOutTop {
+.ca__fx-RotateOutTop {
     animation-name: rotateOutTop;
 }
 
@@ -4622,7 +4622,7 @@ Rotate Out
     }
 }
 
-.ca__fx-rotateOutBottom {
+.ca__fx-RotateOutBottom {
     animation-name: rotateOutBottom;
 }
 
@@ -4640,7 +4640,7 @@ Rotate Out
 /*************************************************************
 Spin To
 **************************************************************/
-.ca__fx-spinToLeft {
+.ca__fx-SpinToLeft {
     animation-name: spinToLeft;
 }
 
@@ -4656,7 +4656,7 @@ Spin To
     }
 }
 
-.ca__fx-spinToRight {
+.ca__fx-SpinToRight {
     animation-name: spinToRight;
 }
 
@@ -4672,7 +4672,7 @@ Spin To
     }
 }
 
-.ca__fx-spinToTop {
+.ca__fx-SpinToTop {
     animation-name: spinToTop;
 }
 
@@ -4688,7 +4688,7 @@ Spin To
     }
 }
 
-.ca__fx-spinToBottom {
+.ca__fx-SpinToBottom {
     animation-name: spinToBottom;
 }
 
@@ -4707,7 +4707,7 @@ Spin To
 /*************************************************************
 Spin From
 **************************************************************/
-.ca__fx-spinFromLeft {
+.ca__fx-SpinFromLeft {
     animation-name: spinFromLeft;
 }
 
@@ -4723,7 +4723,7 @@ Spin From
     }
 }
 
-.ca__fx-spinFromRight {
+.ca__fx-SpinFromRight {
     animation-name: spinFromRight;
 }
 
@@ -4739,7 +4739,7 @@ Spin From
     }
 }
 
-.ca__fx-spinFromTop {
+.ca__fx-SpinFromTop {
     animation-name: spinFromTop;
 }
 
@@ -4755,7 +4755,7 @@ Spin From
     }
 }
 
-.ca__fx-spinFromBottom {
+.ca__fx-SpinFromBottom {
     animation-name: spinFromBottom;
 }
 
@@ -4775,7 +4775,7 @@ Spin From
 Blur In
 **************************************************************/
 
-.ca__fx-blurIn {
+.ca__fx-BlurIn {
     animation-name: blurIn;
 }
 
@@ -4786,7 +4786,7 @@ Blur In
     }
 }
 
-.ca__fx-blurInLeft {
+.ca__fx-BlurInLeft {
     animation-name: blurInLeft;
 }
 
@@ -4798,7 +4798,7 @@ Blur In
     }
 }
 
-.ca__fx-blurInRight {
+.ca__fx-BlurInRight {
     animation-name: blurInRight;
 }
 
@@ -4810,7 +4810,7 @@ Blur In
     }
 }
 
-.ca__fx-blurInTop {
+.ca__fx-BlurInTop {
     animation-name: blurInTop;
 }
 
@@ -4822,7 +4822,7 @@ Blur In
     }
 }
 
-.ca__fx-blurInBottom {
+.ca__fx-BlurInBottom {
     animation-name: blurInBottom;
 }
 
@@ -4837,7 +4837,7 @@ Blur In
 /*************************************************************
 Blur Out
 **************************************************************/
-.ca__fx-blurOut {
+.ca__fx-BlurOut {
     animation-name: blurOut;
 }
 
@@ -4852,7 +4852,7 @@ Blur Out
     }
 }
 
-.ca__fx-blurOutLeft {
+.ca__fx-BlurOutLeft {
     animation-name: blurOutLeft;
 }
 
@@ -4868,7 +4868,7 @@ Blur Out
     }
 }
 
-.ca__fx-blurOutRight {
+.ca__fx-BlurOutRight {
     animation-name: blurOutRight;
 }
 
@@ -4884,7 +4884,7 @@ Blur Out
     }
 }
 
-.ca__fx-blurOutTop {
+.ca__fx-BlurOutTop {
     animation-name: blurOutTop;
 }
 
@@ -4900,7 +4900,7 @@ Blur Out
     }
 }
 
-.ca__fx-blurOutBottom {
+.ca__fx-BlurOutBottom {
     animation-name: blurOutBottom;
 }
 
@@ -4919,7 +4919,7 @@ Blur Out
 /*************************************************************
 Bounce
 **************************************************************/
-.ca__fx-bounceFromTop {
+.ca__fx-BounceFromTop {
     animation-name: bounceFromTop;
 }
 
@@ -4949,7 +4949,7 @@ Bounce
     }
 }
 
-.ca__fx-bounceFromDown {
+.ca__fx-BounceFromDown {
     animation-name: bounceFromDown;
 }
 
@@ -4979,7 +4979,7 @@ Bounce
     }
 }
 
-.ca__fx-bounceX {
+.ca__fx-BounceX {
     animation-name: bounceX;
 }
 
@@ -5009,7 +5009,7 @@ Bounce
     }
 }
 
-.ca__fx-bounceY {
+.ca__fx-BounceY {
     animation-name: bounceY;
 }
 
@@ -5039,7 +5039,7 @@ Bounce
     }
 }
 
-.ca__fx-bounceZoomIn {
+.ca__fx-BounceZoomIn {
     animation-name: bounceZoomIn;
 }
 
@@ -5069,7 +5069,7 @@ Bounce
     }
 }
 
-.ca__fx-bounceZoomOut {
+.ca__fx-BounceZoomOut {
     animation-name: bounceZoomOut;
 }
 
@@ -5102,7 +5102,7 @@ Bounce
 /*************************************************************
 Bounce In
 **************************************************************/
-.ca__fx-bounceInTop {
+.ca__fx-BounceInTop {
     animation-name: bounceInTop;
 }
 
@@ -5124,7 +5124,7 @@ Bounce In
     }
 }
 
-.ca__fx-bounceInBottom {
+.ca__fx-BounceInBottom {
     animation-name: bounceInBottom;
 }
 
@@ -5146,7 +5146,7 @@ Bounce In
     }
 }
 
-.ca__fx-bounceInLeft {
+.ca__fx-BounceInLeft {
     animation-name: bounceInLeft;
 }
 
@@ -5168,7 +5168,7 @@ Bounce In
     }
 }
 
-.ca__fx-bounceInRight {
+.ca__fx-BounceInRight {
     animation-name: bounceInRight;
 }
 
@@ -5193,7 +5193,7 @@ Bounce In
 /*************************************************************
 Bounce Out
 **************************************************************/
-.ca__fx-bounceOutTop {
+.ca__fx-BounceOutTop {
     animation-name: bounceOutTop;
 }
 
@@ -5222,7 +5222,7 @@ Bounce Out
     }
 }
 
-.ca__fx-bounceOutBottom {
+.ca__fx-BounceOutBottom {
     animation-name: bounceOutBottom;
 }
 
@@ -5251,7 +5251,7 @@ Bounce Out
     }
 }
 
-.ca__fx-bounceOutLeft {
+.ca__fx-BounceOutLeft {
     animation-name: bounceOutLeft;
 }
 
@@ -5280,7 +5280,7 @@ Bounce Out
     }
 }
 
-.ca__fx-bounceOutRight {
+.ca__fx-BounceOutRight {
     animation-name: bounceOutRight;
 }
 
@@ -5312,7 +5312,7 @@ Bounce Out
 /*************************************************************
 Perspective
 **************************************************************/
-.ca__fx-perspectiveToTop {
+.ca__fx-PerspectiveToTop {
     animation-name: perspectiveToTop;
     transform: perspective(500px);
     transform-style: preserve-3d;
@@ -5330,7 +5330,7 @@ Perspective
     }
 }
 
-.ca__fx-perspectiveToBottom {
+.ca__fx-PerspectiveToBottom {
     animation-name: perspectiveToBottom;
     transform: perspective(500px);
     transform-style: preserve-3d;
@@ -5351,7 +5351,7 @@ Perspective
 /*************************************************************
 Zoom In
 **************************************************************/
-.ca__fx-zoomIn {
+.ca__fx-ZoomIn {
     animation-name: zoomIn;
 }
 
@@ -5362,7 +5362,7 @@ Zoom In
     }
 }
 
-.ca__fx-zoomInLeft {
+.ca__fx-ZoomInLeft {
     animation-name: zoomInLeft;
 }
 
@@ -5373,7 +5373,7 @@ Zoom In
     }
 }
 
-.ca__fx-zoomInRight {
+.ca__fx-ZoomInRight {
     animation-name: zoomInRight;
 }
 
@@ -5384,7 +5384,7 @@ Zoom In
     }
 }
 
-.ca__fx-zoomInTop {
+.ca__fx-ZoomInTop {
     animation-name: zoomInTop;
 }
 
@@ -5395,7 +5395,7 @@ Zoom In
     }
 }
 
-.ca__fx-zoomInBottom {
+.ca__fx-ZoomInBottom {
     animation-name: zoomInBottom;
 }
 
@@ -5409,7 +5409,7 @@ Zoom In
 /*************************************************************
 Zoom Out
 **************************************************************/
-.ca__fx-zoomOut {
+.ca__fx-ZoomOut {
     animation-name: zoomOut;
 }
 
@@ -5420,7 +5420,7 @@ Zoom Out
     }
 }
 
-.ca__fx-zoomOutLeft {
+.ca__fx-ZoomOutLeft {
     animation-name: zoomOutLeft;
 }
 
@@ -5431,7 +5431,7 @@ Zoom Out
     }
 }
 
-.ca__fx-zoomOutRight {
+.ca__fx-ZoomOutRight {
     animation-name: zoomOutRight;
 }
 
@@ -5442,7 +5442,7 @@ Zoom Out
     }
 }
 
-.ca__fx-zoomOutTop {
+.ca__fx-ZoomOutTop {
     animation-name: zoomOutTop;
 }
 
@@ -5453,7 +5453,7 @@ Zoom Out
     }
 }
 
-.ca__fx-zoomOutBottom {
+.ca__fx-ZoomOutBottom {
     animation-name: zoomOutBottom;
 }
 
@@ -5467,7 +5467,7 @@ Zoom Out
 /*************************************************************
 Dance
 **************************************************************/
-.ca__fx-danceTop {
+.ca__fx-DanceTop {
     animation-name: danceTop;
     transform-origin: top;
 }
@@ -5494,7 +5494,7 @@ Dance
     }
 }
 
-.ca__fx-danceMiddle {
+.ca__fx-DanceMiddle {
     animation-name: danceMiddle;
 }
 
@@ -5520,7 +5520,7 @@ Dance
     }
 }
 
-.ca__fx-danceBottom {
+.ca__fx-DanceBottom {
     animation-name: danceBottom;
     transform-origin: bottom;
 }

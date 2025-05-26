@@ -2,15 +2,23 @@ module.exports = () => {
     return {
         postcssPlugin: 'cssanimation-prefixer',
         Rule(rule) {
-            // These exact selectors should be skipped
+            // Exact selectors that should be left untouched
             const skipExact = new Set([
                 '.cssanimation',
                 '.cssanimation span',
                 '.infinite',
             ]);
 
+            // Converts class name to PascalCase
+            const toPascalCase = (str) => {
+                return str
+                    .replace(/[-_]+/g, ' ')
+                    .replace(/\b\w/g, (c) => c.toUpperCase())
+                    .replace(/\s+/g, '');
+            };
+
             rule.selectors = rule.selectors.map((selector) => {
-                // If the full selector matches a known skip value, skip processing it
+                // Skip selectors that match the full string exactly
                 if (skipExact.has(selector.trim())) {
                     return selector;
                 }
@@ -20,23 +28,23 @@ module.exports = () => {
                     (_, className) => {
                         const filename = rule.source?.input?.file ?? '';
 
-                        // Skip specific class names no matter where they appear
+                        // Skip common class exclusions
                         if (['cssanimation', 'infinite'].includes(className)) {
                             return `.${className}`;
                         }
 
-                        // Utility CSS: prefix all with ca__u-
+                        // Utility CSS: apply ca__u- prefix
                         if (filename.includes('cssanimation-utility.css')) {
-                            return `.ca__u-${className}`;
+                            return `.ca__u-${toPascalCase(className)}`;
                         }
 
-                        // Letter animation: le* -> ca__lt-[suffix]
+                        // Letter animation: le* ➝ ca__lt-[PascalCase]
                         if (className.startsWith('le')) {
-                            return `.ca__lt-${className.replace(/^le/, '')}`;
+                            return `.ca__lt-${toPascalCase(className.replace(/^le/, ''))}`;
                         }
 
-                        // All other: ca__fx-[className]
-                        return `.ca__fx-${className}`;
+                        // All other CSS animation classes ➝ ca__fx-[PascalCase]
+                        return `.ca__fx-${toPascalCase(className)}`;
                     },
                 );
             });

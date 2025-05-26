@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>cssanimation.io GSAP Test</title>
+    <link rel="stylesheet" href="../dist/cssanimation.css">
     <style>
     body {
       font-family: sans-serif;
@@ -15,19 +16,23 @@
       font-size: 24px;
       background: #f0f0f0;
       margin: 10px;
+      overflow: hidden;
     }
 
   </style>
   </head>
   <body>
+    <div class="demo cssanimation ca__fx-BounceInRight">
+      BounceInRight
+    </div>
 
     <!-- Animated elements -->
     <div class="demo" ca-gsap="bounce">
       Bouncing Text
     </div>
 
-    <div ca-gsap="leBounce">Letter Bounce</div>
-    <h1 ca-gsap="leMoveFromLeft">Animate Me</h1>
+    <div class="demo" ca-gsap="leBounce">Letter Bounce</div>
+    <h1 class="demo" ca-gsap="leMoveFromLeft">Animate Me</h1>
     <!-- Load GSAP from CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
