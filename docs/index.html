@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>cssanimation.io GSAP Test</title>
     <link rel="stylesheet" href="../dist/cssanimation.css">
+    <link rel="stylesheet" href="../dist/cssanimation-utility.css">
     <style>
     body {
       font-family: sans-serif;
@@ -22,16 +23,18 @@
   </style>
   </head>
   <body>
-    <div class="demo cssanimation ca__fx-BounceInRight">
-      BounceInRight
-    </div>
+    <p
+      class="demo cssanimation ca__lt-sequence ca__lt-BlurInBottom"
+      ca__lt-delay="500">
+      Letter Animation Random
+    </p>
 
     <!-- Animated elements -->
-    <div class="demo" ca-gsap="bounce">
+    <p class="demo" ca-gsap="bounce">
       Bouncing Text
-    </div>
+    </p>
 
-    <div class="demo" ca-gsap="leBounce">Letter Bounce</div>
+    <p class="demo" ca-gsap="leBounce">Letter Bounce</p>
     <h1 class="demo" ca-gsap="leMoveFromLeft">Animate Me</h1>
     <!-- Load GSAP from CDN -->
     <script
@@ -39,6 +42,7 @@
 
     <!-- Load your UMD build -->
     <script src="../dist/cssanimation-gsap.umd.js"></script>
+    <script src="../dist/ca-letteranimation.js"></script>
 
   </body>
 </html>

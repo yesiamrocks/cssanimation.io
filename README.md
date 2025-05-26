@@ -123,6 +123,21 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 <h2 class="cssanimation ca__lt-FadeIn ca__lt-random">Surprise!</h2>
 ```
 
+## Letter Animation Delay Control
+
+You can now customize the animation delay between letters using the `ca__lt-delay` attribute, no need to edit JavaScript!
+
+```html
+<div class="ca__lt-sequence" ca__lt-delay="200">
+    This will animate letter-by-letter with a 200ms step
+</div>
+
+<div class="ca__lt-random" ca__lt-delay="50">Random delay with 50ms steps</div>
+```
+
+- `ca__lt-delay` sets the delay step in milliseconds for each letter span.
+- Works for both `.ca__lt-sequence` and `.ca__lt-random` classes.
+
 Browse the full list of `ca__lt` (letter-based) animation classes: [Cheatsheet on GitHub](./docs/cssanimation-reference.md#letter-abound-animations)
 
 > This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.

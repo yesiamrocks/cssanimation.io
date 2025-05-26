@@ -26,19 +26,16 @@ window.addEventListener('DOMContentLoaded', () => {
  * @param {string} animationType - 'sequence' or 'random'
  * @returns {string[]} - Array of HTML strings with animation spans
  */
-function processTextNodes(node, animationType) {
-    // Initial delay for animations
+function processTextNodes(node, animationType, delayStep) {
     let delay = animationType === 'sequence' ? 100 : 70;
     const result = [];
 
     node.childNodes.forEach((child) => {
         if (child.nodeType === Node.TEXT_NODE) {
-            // If the node is a raw text node (not an HTML element)
             const text = child.textContent;
             const chars = [...text];
 
             if (animationType === 'random') {
-                // Shuffle animation delay for random type
                 const indices = chars.map((_, i) => i);
                 shuffle(indices);
                 const randomized = Array(chars.length).fill('');
@@ -46,7 +43,7 @@ function processTextNodes(node, animationType) {
                 indices.forEach((i) => {
                     if (chars[i] !== ' ') {
                         randomized[i] = createAnimatedSpan(chars[i], delay);
-                        delay += 80;
+                        delay += delayStep;
                     } else {
                         randomized[i] = ' ';
                     }
@@ -54,11 +51,10 @@ function processTextNodes(node, animationType) {
 
                 result.push(randomized.join(''));
             } else {
-                // Sequential animation with increasing delay
                 const sequenced = chars.map((char) => {
                     if (char !== ' ') {
                         const span = createAnimatedSpan(char, delay);
-                        delay += 150;
+                        delay += delayStep;
                         return span;
                     }
                     return ' ';
@@ -66,17 +62,15 @@ function processTextNodes(node, animationType) {
                 result.push(sequenced.join(''));
             }
         } else if (child.nodeType === Node.ELEMENT_NODE) {
-            // If the node is an HTML element (e.g., <span>, <i>, etc.)
-            // We preserve it but process its children recursively
             const wrapper = document.createElement(child.tagName);
-
-            // Copy all attributes from the original element
             for (const attr of child.attributes) {
                 wrapper.setAttribute(attr.name, attr.value);
             }
-
-            // Recursively process inner content
-            wrapper.innerHTML = processTextNodes(child, animationType).join('');
+            wrapper.innerHTML = processTextNodes(
+                child,
+                animationType,
+                delayStep,
+            ).join('');
             result.push(wrapper.outerHTML);
         }
     });
@@ -89,8 +83,9 @@ function processTextNodes(node, animationType) {
  * Targets elements with class 'ca__sequence'
  */
 function animateSequence() {
-    document.querySelectorAll('.ca__sequence').forEach((el) => {
-        const animated = processTextNodes(el, 'sequence');
+    document.querySelectorAll('.ca__lt-sequence').forEach((el) => {
+        const delayStep = parseInt(el.getAttribute('ca__lt-delay')) || 150;
+        const animated = processTextNodes(el, 'sequence', delayStep);
         el.innerHTML = animated.join('');
     });
 }
@@ -100,8 +95,9 @@ function animateSequence() {
  * Targets elements with class 'ca__random'
  */
 function animateRandom() {
-    document.querySelectorAll('.ca__random').forEach((el) => {
-        const animated = processTextNodes(el, 'random');
+    document.querySelectorAll('.ca__lt-random').forEach((el) => {
+        const delayStep = parseInt(el.getAttribute('ca__lt-delay')) || 80;
+        const animated = processTextNodes(el, 'random', delayStep);
         el.innerHTML = animated.join('');
     });
 }
