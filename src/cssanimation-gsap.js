@@ -1,7 +1,7 @@
 /**
  * cssanimation-gsap.js - GSAP-powered animation
  * Part of cssanimation.io
- * Version: 2.3.0
+ * Version: 3.0.2
  * Author: Shafayetul Islam Pavel
  * https://cssanimation.io | https://github.com/yesiamrocks/cssanimation.io
  *
