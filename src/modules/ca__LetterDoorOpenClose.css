@@ -1,0 +1,83 @@
+/**
+ * Module: Letter Door Open & Close
+ * Filename: ca__LetterDoorOpenClose.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterDoorOpenClose">Your Text</div>
+ */
+
+.ca__lt-DoorCloseLeft span {
+    animation-name: leDoorCloseLeft;
+}
+
+@keyframes leDoorCloseLeft {
+    from,
+    to {
+        transform: perspective(400px);
+        transform-origin: left;
+    }
+
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ca__lt-DoorOpenRight span {
+    animation-name: leDoorOpenRight;
+}
+
+@keyframes leDoorOpenRight {
+    from,
+    to {
+        transform: perspective(400px);
+        transform-origin: left;
+    }
+
+    to {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+}
+
+.ca__lt-DoorCloseRight span {
+    animation-name: leDoorCloseRight;
+}
+
+@keyframes leDoorCloseRight {
+    from,
+    to {
+        transform: perspective(400px);
+        transform-origin: right;
+    }
+
+    from {
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ca__lt-DoorOpenLeft span {
+    animation-name: leDoorOpenLeft;
+}
+
+@keyframes leDoorOpenLeft {
+    from,
+    to {
+        transform: perspective(400px);
+        transform-origin: right;
+    }
+
+    to {
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+}

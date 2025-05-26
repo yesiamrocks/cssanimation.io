@@ -1,0 +1,66 @@
+/* Flip Y */
+
+.flipY {
+    animation-name: flipY;
+}
+
+@keyframes flipY {
+    from {
+        transform: perspective(600px) rotateY(180deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective(600px) rotateY(360deg);
+    }
+}
+
+.flipYZoomIn {
+    animation-name: flipYZoomIn;
+}
+
+@keyframes flipYZoomIn {
+    0% {
+        transform: perspective(600px) rotateY(0deg) scale(1);
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        transform: perspective(600px) rotateY(180deg) scale(1.6);
+        animation-timing-function: ease-out;
+    }
+
+    80% {
+        transform: perspective(600px) rotateY(360deg) scale(0.7);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.flipYZoomOut {
+    animation-name: flipYZoomOut;
+}
+
+@keyframes flipYZoomOut {
+    0% {
+        transform: perspective(600px) rotateY(0deg) scale(1);
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        transform: perspective(600px) rotateY(180deg) scale(0.6);
+        animation-timing-function: ease-out;
+    }
+
+    80% {
+        transform: perspective(600px) rotateY(360deg) scale(1.8);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,97 @@
+/**
+ * Module: Shock In
+ * Filename: ca__ShockIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__ShockIn">Your Text</div>
+ */
+
+.ca__fx-ShockZoom {
+    animation-name: shockZoom;
+}
+
+@keyframes shockZoom {
+    0% {
+        transform: matrix(5, 0, 0, 5, 0, 0);
+    }
+
+    35% {
+        transform: matrix(2, 0, 0, 2, 0, 0);
+    }
+
+    43% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+.ca__fx-ShockInLeft {
+    animation-name: shockInLeft;
+}
+
+@keyframes shockInLeft {
+    0% {
+        transform: matrix(1, 0, 0, 1, -800, 0);
+    }
+
+    35% {
+        transform: matrix(1, 0, 0, 1, 50, 0);
+    }
+
+    43% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+.ca__fx-ShockInRight {
+    animation-name: shockInRight;
+}
+
+@keyframes shockInRight {
+    0% {
+        transform: matrix(1, 0, 0, 1, 800, 0);
+    }
+
+    35% {
+        transform: matrix(1, 0, 0, 1, -50, 0);
+    }
+
+    43% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+.ca__fx-ShockInTop {
+    animation-name: shockInTop;
+}
+
+@keyframes shockInTop {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, -400);
+    }
+
+    35% {
+        transform: matrix(1, 0, 0, 1, 0, 50);
+    }
+
+    43% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+.ca__fx-ShockInBottom {
+    animation-name: shockInBottom;
+}
+
+@keyframes shockInBottom {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 400);
+    }
+
+    35% {
+        transform: matrix(1, 0, 0, 1, 0, -50);
+    }
+
+    43% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}

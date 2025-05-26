@@ -1,0 +1,86 @@
+/**
+ * Module: Blur Out
+ * Filename: ca__BlurOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__BlurOut">Your Text</div>
+ */
+
+.ca__fx-BlurOut {
+    animation-name: blurOut;
+}
+
+@keyframes blurOut {
+    85%,
+    100% {
+        filter: blur(20px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ca__fx-BlurOutLeft {
+    animation-name: blurOutLeft;
+}
+
+@keyframes blurOutLeft {
+    85%,
+    100% {
+        filter: blur(20px);
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ca__fx-BlurOutRight {
+    animation-name: blurOutRight;
+}
+
+@keyframes blurOutRight {
+    85%,
+    100% {
+        filter: blur(20px);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ca__fx-BlurOutTop {
+    animation-name: blurOutTop;
+}
+
+@keyframes blurOutTop {
+    85%,
+    100% {
+        filter: blur(20px);
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ca__fx-BlurOutBottom {
+    animation-name: blurOutBottom;
+}
+
+@keyframes blurOutBottom {
+    85%,
+    100% {
+        filter: blur(20px);
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

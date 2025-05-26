@@ -1,0 +1,61 @@
+/* Rotate In */
+
+.rotateInLeft {
+    animation-name: rotateInLeft;
+}
+
+@keyframes rotateInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(360deg);
+    }
+}
+
+.rotateInRight {
+    animation-name: rotateInRight;
+}
+
+@keyframes rotateInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(-360deg);
+    }
+}
+
+.rotateInTop {
+    animation-name: rotateInTop;
+}
+
+@keyframes rotateInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-400%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(360deg);
+    }
+}
+
+.rotateInBottom {
+    animation-name: rotateInBottom;
+}
+
+@keyframes rotateInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(400%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(360deg);
+    }
+}

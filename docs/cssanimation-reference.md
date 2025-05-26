@@ -1,7 +1,9 @@
 # cssanimation.io – Animation Class Reference
 
+## Blur Animations
+- `ca__fx-BlurIn` — Blurs in from the center while fading into focus
+
 ## Core Animation Classes (Ungrouped)
-- `ca__fx-BlurIn`
 - `ca__fx-BlurInBottom`
 - `ca__fx-BlurInLeft`
 - `ca__fx-BlurInRight`

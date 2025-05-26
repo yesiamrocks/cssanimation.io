@@ -1,0 +1,56 @@
+/* Letter Zoom Out */
+
+.leZoomOut span {
+    animation-name: leZoomOut;
+}
+
+@keyframes leZoomOut {
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.leZoomOutLeft span {
+    animation-name: leZoomOutLeft;
+}
+
+@keyframes leZoomOutLeft {
+    to {
+        transform: scale(10) translateX(-150%);
+        opacity: 0;
+    }
+}
+
+.leZoomOutRight span {
+    animation-name: leZoomOutRight;
+}
+
+@keyframes leZoomOutRight {
+    to {
+        transform: scale(10) translateX(150%);
+        opacity: 0;
+    }
+}
+
+.leZoomOutTop span {
+    animation-name: leZoomOutTop;
+}
+
+@keyframes leZoomOutTop {
+    to {
+        transform: scale(10) translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.leZoomOutBottom span {
+    animation-name: leZoomOutBottom;
+}
+
+@keyframes leZoomOutBottom {
+    to {
+        transform: scale(10) translateY(50%);
+        opacity: 0;
+    }
+}

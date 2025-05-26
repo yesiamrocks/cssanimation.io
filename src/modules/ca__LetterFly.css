@@ -1,0 +1,51 @@
+/**
+ * Module: Letter Fly
+ * Filename: ca__LetterFly.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterFly">Your Text</div>
+ */
+
+.ca__lt-AboundTop span {
+    animation-name: leAboundTop;
+}
+
+@keyframes leAboundTop {
+    50% {
+        transform: translateY(-100px);
+        animation-timing-function: ease-in;
+    }
+}
+
+.ca__lt-AboundBottom span {
+    animation-name: leAboundBottom;
+}
+
+@keyframes leAboundBottom {
+    50% {
+        transform: translateY(100px);
+        animation-timing-function: ease-in;
+    }
+}
+
+.ca__lt-AboundLeft span {
+    animation-name: leAboundLeft;
+}
+
+@keyframes leAboundLeft {
+    50% {
+        transform: translateX(-100px);
+        animation-timing-function: ease-in;
+    }
+}
+
+.ca__lt-AboundRight span {
+    animation-name: leAboundRight;
+}
+
+@keyframes leAboundRight {
+    50% {
+        transform: translateX(100px);
+        animation-timing-function: ease-in;
+    }
+}

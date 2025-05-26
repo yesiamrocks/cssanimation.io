@@ -1,0 +1,67 @@
+/**
+ * Module: Letter Blur Out
+ * Filename: ca__LetterBlurOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterBlurOut">Your Text</div>
+ */
+
+.ca__lt-BlurOut span {
+    animation-name: leBlurOut;
+}
+
+@keyframes leBlurOut {
+    to {
+        transform: scaleX(0.2);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-BlurOutRight span {
+    animation-name: leBlurOutRight;
+}
+
+@keyframes leBlurOutRight {
+    to {
+        transform: scaleX(0.2) translateX(100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-BlurOutLeft span {
+    animation-name: leBlurOutLeft;
+}
+
+@keyframes leBlurOutLeft {
+    to {
+        transform: scaleX(0.2) translateX(-100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-BlurOutTop span {
+    animation-name: leBlurOutTop;
+}
+
+@keyframes leBlurOutTop {
+    to {
+        transform: scaleY(0.2) translateY(-100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-BlurOutBottom span {
+    animation-name: leBlurOutBottom;
+}
+
+@keyframes leBlurOutBottom {
+    to {
+        transform: scaleY(0.2) translateY(100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}

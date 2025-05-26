@@ -1,0 +1,33 @@
+/* Moving Back */
+
+.leMovingBackFromRight span {
+    animation-name: leMovingBackFromRight;
+    transform-origin: bottom;
+}
+
+@keyframes leMovingBackFromRight {
+    40% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+    }
+}
+
+.leMovingBackFromLeft span {
+    animation-name: leMovingBackFromLeft;
+    transform-origin: bottom;
+}
+
+@keyframes leMovingBackFromLeft {
+    40% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+    }
+}

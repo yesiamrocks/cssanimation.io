@@ -1,0 +1,67 @@
+/**
+ * Module: Swing In
+ * Filename: ca__SwingIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__SwingIn">Your Text</div>
+ */
+
+.ca__fx-SwingInLeft {
+    animation-name: swingInLeft;
+}
+
+@keyframes swingInLeft {
+    0% {
+        transform: matrix(3, 0, 0, 3, -800, 0);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: matrix(1.3, 0, 0, 1.3, 20, 0);
+    }
+}
+
+.ca__fx-SwingInRight {
+    animation-name: swingInRight;
+}
+
+@keyframes swingInRight {
+    0% {
+        transform: matrix(3, 0, 0, 3, 800, 0);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: matrix(1.3, 0, 0, 1.3, -20, 0);
+    }
+}
+
+.ca__fx-SwingInTop {
+    animation-name: swingInTop;
+}
+
+@keyframes swingInTop {
+    0% {
+        transform: matrix(3, 0, 0, 3, 0, -800);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: matrix(1.3, 0, 0, 1.3, 0, 20);
+    }
+}
+
+.ca__fx-SwingInBottom {
+    animation-name: swingInBottom;
+}
+
+@keyframes swingInBottom {
+    0% {
+        transform: matrix(3, 0, 0, 3, 0, 800);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: matrix(1.3, 0, 0, 1.3, 0, -20);
+    }
+}

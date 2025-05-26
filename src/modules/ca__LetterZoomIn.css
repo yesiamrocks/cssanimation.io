@@ -1,0 +1,62 @@
+/**
+ * Module: Letter Zoom In
+ * Filename: ca__LetterZoomIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterZoomIn">Your Text</div>
+ */
+
+.ca__lt-ZoomIn span {
+    animation-name: leZoomIn;
+}
+
+@keyframes leZoomIn {
+    from {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.ca__lt-ZoomInLeft span {
+    animation-name: leZoomInLeft;
+}
+
+@keyframes leZoomInLeft {
+    from {
+        transform: scale(10) translateX(-150%);
+        opacity: 0;
+    }
+}
+
+.ca__lt-ZoomInRight span {
+    animation-name: leZoomInRight;
+}
+
+@keyframes leZoomInRight {
+    from {
+        transform: scale(10) translateX(150%);
+        opacity: 0;
+    }
+}
+
+.ca__lt-ZoomInTop span {
+    animation-name: LetterZoomInTop;
+}
+
+@keyframes LetterZoomInTop {
+    from {
+        transform: scale(10) translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.ca__lt-ZoomInBottom span {
+    animation-name: leZoomInBottom;
+}
+
+@keyframes leZoomInBottom {
+    from {
+        transform: scale(10) translateY(50%);
+        opacity: 0;
+    }
+}

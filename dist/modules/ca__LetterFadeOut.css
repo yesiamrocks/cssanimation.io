@@ -1,0 +1,77 @@
+/**
+ * Module: Letter Fade Out
+ * Filename: ca__LetterFadeOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterFadeOut">Your Text</div>
+ */
+
+.ca__lt-FadeOut span {
+    animation-name: leFadeOut;
+}
+
+@keyframes leFadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.ca__lt-FadeOutLeft span {
+    animation-name: leFadeOutLeft;
+}
+
+@keyframes leFadeOutLeft {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+}
+
+.ca__lt-FadeOutRight span {
+    animation-name: leFadeOutRight;
+}
+
+@keyframes leFadeOutRight {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+}
+
+.ca__lt-FadeOutTop span {
+    animation-name: leFadeOutTop;
+}
+
+@keyframes leFadeOutTop {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.ca__lt-FadeOutBottom span {
+    animation-name: leFadeOutBottom;
+}
+
+@keyframes leFadeOutBottom {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}

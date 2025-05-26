@@ -1,0 +1,27 @@
+/**
+ * Module: Pull release
+ * Filename: ca__PullRelease.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__PullRelease">Your Text</div>
+ */
+
+.ca__fx-PullRelease {
+    animation-name: pullRelease;
+}
+
+@keyframes pullRelease {
+    15% {
+        transform: scale(1.8);
+    }
+}
+
+.ca__fx-PushRelease {
+    animation-name: pushRelease;
+}
+
+@keyframes pushRelease {
+    15% {
+        transform: scale(0.5);
+    }
+}

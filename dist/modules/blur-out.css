@@ -1,0 +1,80 @@
+/* Blur Out */
+
+.blurOut {
+    animation-name: blurOut;
+}
+
+@keyframes blurOut {
+    85%,
+    100% {
+        filter: blur(20px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.blurOutLeft {
+    animation-name: blurOutLeft;
+}
+
+@keyframes blurOutLeft {
+    85%,
+    100% {
+        filter: blur(20px);
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.blurOutRight {
+    animation-name: blurOutRight;
+}
+
+@keyframes blurOutRight {
+    85%,
+    100% {
+        filter: blur(20px);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.blurOutTop {
+    animation-name: blurOutTop;
+}
+
+@keyframes blurOutTop {
+    85%,
+    100% {
+        filter: blur(20px);
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.blurOutBottom {
+    animation-name: blurOutBottom;
+}
+
+@keyframes blurOutBottom {
+    85%,
+    100% {
+        filter: blur(20px);
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

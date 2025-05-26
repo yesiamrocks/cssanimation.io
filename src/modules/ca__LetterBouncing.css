@@ -1,0 +1,157 @@
+/**
+ * Module: Letter Bouncing
+ * Filename: ca__LetterBouncing.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterBouncing">Your Text</div>
+ */
+
+.ca__lt-BounceFromTop span {
+    animation-name: leBounceFromTop;
+}
+
+@keyframes leBounceFromTop {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: translate3d(0, 0, 0);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, -80px, 0) scale3d(1, 1.2, 1);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.ca__lt-BounceFromDown span {
+    animation-name: leBounceFromDown;
+}
+
+@keyframes leBounceFromDown {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: translate3d(0, 0, 0);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, 80px, 0) scale3d(1, 1.2, 1);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, 4px, 0);
+    }
+}
+
+.ca__lt-BounceY span {
+    animation-name: leBounceY;
+}
+
+@keyframes leBounceY {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale3d(1, 1, 1);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: scale3d(1, 2, 1);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: scale3d(1, 1.5, 1);
+    }
+
+    90% {
+        transform: scale3d(1, 1.1, 1);
+    }
+}
+
+.ca__lt-BounceZoomIn span {
+    animation-name: leBounceZoomIn;
+}
+
+@keyframes leBounceZoomIn {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: scale(1.7);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: scale(1.9);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+}
+
+.ca__lt-BounceZoomOut span {
+    animation-name: leBounceZoomOut;
+}
+
+@keyframes leBounceZoomOut {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: scale(0.5);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: scale(0.7);
+    }
+
+    90% {
+        transform: scale(0.9);
+    }
+}

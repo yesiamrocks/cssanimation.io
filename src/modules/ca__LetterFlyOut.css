@@ -1,0 +1,69 @@
+/**
+ * Module: Letter Fly Out
+ * Filename: ca__LetterFlyOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterFlyOut">Your Text</div>
+ */
+
+.ca__lt-FlyOutTop span {
+    animation-name: leFlyOutTop;
+}
+
+@keyframes leFlyOutTop {
+    50% {
+        transform: translate(0, 50px);
+    }
+
+    100% {
+        transform: translate(0, -100px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-FlyOutLeft span {
+    animation-name: leFlyOutLeft;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes leFlyOutLeft {
+    50% {
+        transform: translate(40px, 0);
+    }
+
+    100% {
+        transform: translate(-100px, 0);
+        opacity: 0;
+    }
+}
+
+.ca__lt-FlyOutRight span {
+    animation-name: leFlyOutRight;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes leFlyOutRight {
+    50% {
+        transform: translate(-40px, 0);
+    }
+
+    100% {
+        transform: translate(100px, 0);
+        opacity: 0;
+    }
+}
+
+.ca__lt-FlyOutBottom span {
+    animation-name: leFlyOutBottom;
+}
+
+@keyframes leFlyOutBottom {
+    50% {
+        transform: translate(0, -40px);
+    }
+
+    100% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+}

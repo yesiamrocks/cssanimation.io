@@ -1,0 +1,106 @@
+/* Letter Push Release */
+
+.lePushReleaseFrom span {
+    animation-name: lePushReleaseFrom;
+}
+
+@keyframes lePushReleaseFrom {
+    0% {
+        transform: scale(3, 3);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+}
+
+.lePushReleaseFromLeft span {
+    animation-name: lePushReleaseFromLeft;
+}
+
+@keyframes lePushReleaseFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(100px);
+    }
+}
+
+.lePushReleaseFromTop span {
+    animation-name: lePushReleaseFromTop;
+}
+
+@keyframes lePushReleaseFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateY(100px);
+    }
+}
+
+.lePushReleaseFromBottom span {
+    animation-name: lePushReleaseFromBottom;
+}
+
+@keyframes lePushReleaseFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateY(-100px);
+    }
+}
+
+.lePushReleaseTo span {
+    animation-name: lePushReleaseTo;
+}
+
+@keyframes lePushReleaseTo {
+    30% {
+        transform: scale(0.5, 0.5);
+    }
+
+    100% {
+        transform: scale(5, 5);
+        opacity: 0;
+    }
+}
+
+.lePushReleaseToTop span {
+    animation-name: lePushReleaseToTop;
+}
+
+@keyframes lePushReleaseToTop {
+    30% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.lePushReleaseToBottom span {
+    animation-name: lePushReleaseToBottom;
+}
+
+@keyframes lePushReleaseToBottom {
+    30% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}

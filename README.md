@@ -146,29 +146,52 @@ Browse the full list of `ca__lt` (letter-based) animation classes: [Cheatsheet o
 
 ## Modular Import
 
-Only need fade and zoom?
+#### Only need one effect? Import it like this:
+
+HTML
 
 ```html
-<link
-    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/ca__fade.css"
-    rel="stylesheet"
-/>
-<link
-    href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/modules/ca__zoom.css"
-    rel="stylesheet"
-/>
+<link rel="stylesheet" href="./dist/modules/ca__LetterFadeIn.css" />
+```
+
+CSS or SCSS
+
+```CSS
+@import './dist/modules/ca__LetterFadeIn.css';
+```
+
+JavaScript (Webpack/Vite/Rollup)
+
+```js
+import './dist/modules/ca__LetterFadeIn.css';
+```
+
+#### Use All Animations at Once
+
+Import everything in one go using the index file:
+
+```html
+<link rel="stylesheet" href="./dist/modules/ca__index.css" />
+```
+
+```js
+import './dist/modules/ca__index.css';
 ```
 
 #### Available Modules
 
-| Module      | File                  |
-| ----------- | --------------------- |
-| Fade        | `dist/ca__fade.css`   |
-| Zoom        | `dist/ca__zoom.css`   |
-| Rotate      | `dist/ca__rotate.css` |
-| Bounce      | `dist/ca__bounce.css` |
-| Slide       | `dist/ca__slide.css`  |
-| ...and more | See `/dist/` folder   |
+| Module          | File                             |
+| --------------- | -------------------------------- |
+| Blur In         | `./dist/modules/ca__BlurIn.css`  |
+| Blur Out        | `./dist/modules/ca__BlurOut.css` |
+| Bounce          | `./dist/modules/ca__Bounce.css`  |
+| Door Open Close | `./dist/modules/ca__Door.css`    |
+| Dance           | `./dist/modules/ca__Dance.css`   |
+| ...and more     | See `./dist/modules/` folder     |
+
+- Each file is generated from `./dist/modules/cssanimation.css`
+- Follows the naming convention: `ca__[AnimationName].css` (PascalCase)
+- `ca__index.css` imports all animation modules
 
 <br>
 

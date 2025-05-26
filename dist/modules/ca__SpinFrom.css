@@ -1,0 +1,71 @@
+/**
+ * Module: Spin From
+ * Filename: ca__SpinFrom.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__SpinFrom">Your Text</div>
+ */
+
+.ca__fx-SpinFromLeft {
+    animation-name: spinFromLeft;
+}
+
+@keyframes spinFromLeft {
+    from,
+    to {
+        transform-origin: left bottom;
+    }
+
+    to {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-SpinFromRight {
+    animation-name: spinFromRight;
+}
+
+@keyframes spinFromRight {
+    from,
+    to {
+        transform-origin: right bottom;
+    }
+
+    to {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-SpinFromTop {
+    animation-name: spinFromTop;
+}
+
+@keyframes spinFromTop {
+    from,
+    to {
+        transform-origin: left bottom;
+    }
+
+    to {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-SpinFromBottom {
+    animation-name: spinFromBottom;
+}
+
+@keyframes spinFromBottom {
+    from,
+    to {
+        transform-origin: right bottom;
+    }
+
+    to {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}

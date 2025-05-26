@@ -1,0 +1,81 @@
+/**
+ * Module: Letter Fade in
+ * Filename: ca__LetterFadeIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterFadeIn">Your Text</div>
+ */
+
+.ca__lt-FadeIn span {
+    animation-name: leFadeIn;
+}
+
+@keyframes leFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ca__lt-FadeInLeft span {
+    animation-name: leFadeInLeft;
+}
+
+@keyframes leFadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ca__lt-FadeInRight span {
+    animation-name: leFadeInRight;
+}
+
+@keyframes leFadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ca__lt-FadeInTop span {
+    animation-name: leFadeInTop;
+}
+
+@keyframes leFadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ca__lt-FadeInBottom span {
+    animation-name: leFadeInBottom;
+}
+
+@keyframes leFadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}

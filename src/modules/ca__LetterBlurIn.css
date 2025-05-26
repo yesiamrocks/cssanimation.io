@@ -1,0 +1,67 @@
+/**
+ * Module: Letter Blur In
+ * Filename: ca__LetterBlurIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterBlurIn">Your Text</div>
+ */
+
+.ca__lt-BlurIn span {
+    animation-name: leBlurIn;
+}
+
+@keyframes leBlurIn {
+    from {
+        transform: scaleX(0.2);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-BlurInRight span {
+    animation-name: leBlurInRight;
+}
+
+@keyframes leBlurInRight {
+    from {
+        transform: scaleX(0.2) translateX(100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-BlurInLeft span {
+    animation-name: leBlurInLeft;
+}
+
+@keyframes leBlurInLeft {
+    from {
+        transform: scaleX(0.2) translateX(-100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-BlurInTop span {
+    animation-name: leBlurInTop;
+}
+
+@keyframes leBlurInTop {
+    from {
+        transform: scaleY(0.2) translateY(-100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-BlurInBottom span {
+    animation-name: leBlurInBottom;
+}
+
+@keyframes leBlurInBottom {
+    from {
+        transform: scaleY(0.2) translateY(100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,39 @@
+/**
+ * Module: Letter Pop Up
+ * Filename: ca__LetterPopUp.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterPopUp">Your Text</div>
+ */
+
+.ca__lt-PopUp span {
+    animation-name: lePopUp;
+}
+
+@keyframes lePopUp {
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.ca__lt-PopUpLeft span {
+    animation-name: lePopUpLeft;
+}
+
+@keyframes lePopUpLeft {
+    50% {
+        transform: translateX(-50px) scale(1.5);
+        animation-timing-function: ease-in;
+    }
+}
+
+.ca__lt-PopUpRight span {
+    animation-name: lePopUpRight;
+}
+
+@keyframes lePopUpRight {
+    50% {
+        transform: translateX(50px) scale(1.5);
+        animation-timing-function: ease-in;
+    }
+}

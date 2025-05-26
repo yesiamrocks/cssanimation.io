@@ -1,0 +1,72 @@
+/**
+ * Module: Flip X
+ * Filename: ca__FlipX.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__FlipX">Your Text</div>
+ */
+
+.ca__fx-FlipX {
+    animation-name: flipX;
+}
+
+@keyframes flipX {
+    from {
+        transform: perspective(600px) rotateX(-180deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective(600px) rotateX(-360deg);
+    }
+}
+
+.ca__fx-FlipXZoomIn {
+    animation-name: flipXZoomIn;
+}
+
+@keyframes flipXZoomIn {
+    0% {
+        transform: perspective(600px) rotateX(0deg) scale(1);
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        transform: perspective(600px) rotateX(-180deg) scale(1.8);
+        animation-timing-function: ease-out;
+    }
+
+    80% {
+        transform: perspective(600px) rotateX(-360deg) scale(0.7);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ca__fx-FlipXZoomOut {
+    animation-name: flipXZoomOut;
+}
+
+@keyframes flipXZoomOut {
+    0% {
+        transform: perspective(600px) rotateX(0deg) scale(1);
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        transform: perspective(600px) rotateX(180deg) scale(1.8);
+        animation-timing-function: ease-out;
+    }
+
+    80% {
+        transform: perspective(600px) rotateX(360deg) scale(0.7);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

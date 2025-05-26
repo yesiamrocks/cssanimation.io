@@ -1,0 +1,289 @@
+/**
+ * Module: Shake
+ * Filename: ca__Shake.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__Shake">Your Text</div>
+ */
+
+.ca__fx-PulseShake {
+    animation-name: pulseShake;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulseShake {
+    90% {
+        transform: scale(1);
+    }
+
+    92% {
+        transform: scale(1.2);
+    }
+
+    96% {
+        transform: scale(1, 1);
+    }
+
+    98% {
+        transform: scale(1.1);
+    }
+}
+
+.ca__fx-HorizontalShake {
+    animation-name: horizontalShake;
+    animation-iteration-count: infinite;
+}
+
+@keyframes horizontalShake {
+    3%,
+    12%,
+    21%,
+    30%,
+    39%,
+    48%,
+    57%,
+    65%,
+    74%,
+    83%,
+    92% {
+        transform: translateX(5px);
+    }
+
+    6%,
+    15%,
+    24%,
+    33%,
+    42%,
+    51%,
+    60%,
+    68%,
+    77%,
+    86%,
+    95% {
+        transform: translateX(3px);
+    }
+
+    9%,
+    18%,
+    27%,
+    36%,
+    45%,
+    54%,
+    63%,
+    71%,
+    80%,
+    89%,
+    98% {
+        transform: translateX(-5px);
+    }
+}
+
+.ca__fx-VerticalShake {
+    animation-name: verticalShake;
+    animation-iteration-count: infinite;
+}
+
+@keyframes verticalShake {
+    3%,
+    12%,
+    21%,
+    30%,
+    39%,
+    48%,
+    57%,
+    65%,
+    74%,
+    83%,
+    92% {
+        transform: translateY(5px);
+    }
+
+    6%,
+    15%,
+    24%,
+    33%,
+    42%,
+    51%,
+    60%,
+    68%,
+    77%,
+    86%,
+    95% {
+        transform: translateY(3px);
+    }
+
+    9%,
+    18%,
+    27%,
+    36%,
+    45%,
+    54%,
+    63%,
+    71%,
+    80%,
+    89%,
+    98% {
+        transform: translateY(-5px);
+    }
+}
+
+.ca__fx-MadMax {
+    animation-name: madMax;
+    animation-iteration-count: infinite;
+}
+
+@keyframes madMax {
+    3%,
+    12%,
+    21%,
+    30%,
+    39%,
+    48%,
+    57%,
+    65%,
+    74%,
+    83%,
+    92% {
+        transform: translateY(5px) scale(1.1);
+    }
+
+    6%,
+    15%,
+    24%,
+    33%,
+    42%,
+    51%,
+    60%,
+    68%,
+    77%,
+    86%,
+    95% {
+        transform: translateY(3px) scale(0.8);
+    }
+
+    9%,
+    18%,
+    27%,
+    36%,
+    45%,
+    54%,
+    63%,
+    71%,
+    80%,
+    89%,
+    98% {
+        transform: translateY(-5px) scale(1.1);
+    }
+}
+
+.ca__fx-CoolHorizontalShake {
+    animation-name: coolHorizontalShake;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coolHorizontalShake {
+    3%,
+    21%,
+    39%,
+    57%,
+    74%,
+    92% {
+        transform: translateX(5px);
+    }
+
+    6%,
+    24%,
+    42%,
+    60%,
+    77%,
+    95% {
+        transform: translateX(3px);
+    }
+
+    9%,
+    27%,
+    45%,
+    63%,
+    80%,
+    98% {
+        transform: translateX(-5px);
+    }
+}
+
+.ca__fx-CoolVerticalShake {
+    animation-name: coolVerticalShake;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coolVerticalShake {
+    3%,
+    21%,
+    39%,
+    57%,
+    74%,
+    92% {
+        transform: translateY(5px);
+    }
+
+    6%,
+    24%,
+    42%,
+    60%,
+    77%,
+    95% {
+        transform: translateY(3px);
+    }
+
+    9%,
+    27%,
+    45%,
+    63%,
+    80%,
+    98% {
+        transform: translateY(-5px);
+    }
+}
+
+.ca__fx-QuietMad {
+    animation-name: quietMad;
+    animation-iteration-count: infinite;
+}
+
+@keyframes quietMad {
+    3%,
+    21%,
+    39%,
+    57%,
+    74%,
+    92% {
+        transform: translateY(5px) scale(1.1);
+    }
+
+    6%,
+    24%,
+    42%,
+    60%,
+    77%,
+    95% {
+        transform: translateY(3px) scale(0.8);
+    }
+
+    9%,
+    27%,
+    45%,
+    63%,
+    80%,
+    98% {
+        transform: translateY(-5px) scale(1.1);
+    }
+}
+
+.ca__fx-Vibration {
+    animation: vibration 0.1s linear infinite;
+}
+
+@keyframes vibration {
+    50% {
+        transform: skewY(1deg) skewX(-1deg) scale(1.06);
+    }
+}

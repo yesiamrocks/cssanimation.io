@@ -1,0 +1,12 @@
+/* Letter Jump */
+
+.leJump span {
+    animation-name: leJump;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leJump {
+    to {
+        transform: translateY(-20px);
+    }
+}

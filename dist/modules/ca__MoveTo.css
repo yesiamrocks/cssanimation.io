@@ -1,0 +1,47 @@
+/**
+ * Module: Move To
+ * Filename: ca__MoveTo.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__MoveTo">Your Text</div>
+ */
+
+.ca__fx-MoveToLeft {
+    animation-name: moveToLeft;
+}
+
+@keyframes moveToLeft {
+    to {
+        transform: translateX(-800px);
+    }
+}
+
+.ca__fx-MoveToRight {
+    animation-name: moveToRight;
+}
+
+@keyframes moveToRight {
+    to {
+        transform: translateX(800px);
+    }
+}
+
+.ca__fx-MoveToTop {
+    animation-name: moveToTop;
+}
+
+@keyframes moveToTop {
+    to {
+        transform: translateY(-800px);
+    }
+}
+
+.ca__fx-MoveToBottom {
+    animation-name: moveToBottom;
+}
+
+@keyframes moveToBottom {
+    to {
+        transform: translateY(800px);
+    }
+}

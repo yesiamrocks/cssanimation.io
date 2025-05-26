@@ -1,0 +1,45 @@
+/* Letter Elevate */
+
+.leElevateLeft span {
+    animation-name: leElevateLeft;
+}
+
+@keyframes leElevateLeft {
+    0% {
+        transform: translateY(100%) rotate(-20deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+
+    40% {
+        transform: rotate(20deg);
+        transform-origin: right;
+    }
+
+    65% {
+        transform: rotate(0deg);
+        transform-origin: right;
+    }
+}
+
+.leElevateRight span {
+    animation-name: leElevateRight;
+}
+
+@keyframes leElevateRight {
+    0% {
+        transform: translateY(100%) rotate(20deg);
+        transform-origin: left;
+        opacity: 0;
+    }
+
+    40% {
+        transform: rotate(-20deg);
+        transform-origin: left;
+    }
+
+    65% {
+        transform: rotate(0deg);
+        transform-origin: left;
+    }
+}

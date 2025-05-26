@@ -1,0 +1,45 @@
+/* Letter Roll From */
+
+.leRollFromLeft span {
+    animation-name: leRollFromLeft;
+}
+
+@keyframes leRollFromLeft {
+    from {
+        transform: translateX(-60px) perspective(600px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+.leRollFromRight span {
+    animation-name: leRollFromRight;
+}
+
+@keyframes leRollFromRight {
+    from {
+        transform: translateX(60px) perspective(600px) rotateY(-180deg);
+        opacity: 0;
+    }
+}
+
+.leRollFromTop span {
+    animation-name: leRollFromTop;
+}
+
+@keyframes leRollFromTop {
+    from {
+        transform: translateY(-60px) perspective(600px) rotateX(180deg);
+        opacity: 0;
+    }
+}
+
+.leRollFromBottom span {
+    animation-name: leRollFromBottom;
+}
+
+@keyframes leRollFromBottom {
+    from {
+        transform: translateY(60px) perspective(600px) rotateX(-180deg);
+        opacity: 0;
+    }
+}

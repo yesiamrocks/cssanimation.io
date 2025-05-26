@@ -1,0 +1,187 @@
+/**
+ * Module: Bounce
+ * Filename: ca__Bounce.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__Bounce">Your Text</div>
+ */
+
+.ca__fx-BounceFromTop {
+    animation-name: bounceFromTop;
+}
+
+@keyframes bounceFromTop {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: translate3d(0, 0, 0);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, -80px, 0) scale3d(1, 1.6, 1);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.ca__fx-BounceFromDown {
+    animation-name: bounceFromDown;
+}
+
+@keyframes bounceFromDown {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: translate3d(0, 0, 0);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, 80px, 0) scale3d(1, 1.2, 1);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, 4px, 0);
+    }
+}
+
+.ca__fx-BounceX {
+    animation-name: bounceX;
+}
+
+@keyframes bounceX {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale3d(1, 1, 1);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: scale3d(1.8, 1, 1);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: scale3d(1.5, 1, 1);
+    }
+
+    90% {
+        transform: scale3d(1.1, 1, 1);
+    }
+}
+
+.ca__fx-BounceY {
+    animation-name: bounceY;
+}
+
+@keyframes bounceY {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale3d(1, 1, 1);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: scale3d(1, 2, 1);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: scale3d(1, 1.5, 1);
+    }
+
+    90% {
+        transform: scale3d(1, 1.1, 1);
+    }
+}
+
+.ca__fx-BounceZoomIn {
+    animation-name: bounceZoomIn;
+}
+
+@keyframes bounceZoomIn {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: scale(1.5);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: scale(1.3);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+}
+
+.ca__fx-BounceZoomOut {
+    animation-name: bounceZoomOut;
+}
+
+@keyframes bounceZoomOut {
+    0%,
+    25%,
+    55%,
+    85%,
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+
+    41%,
+    44% {
+        animation-timing-function: ease-in;
+        transform: scale(0.3);
+    }
+
+    70% {
+        animation-timing-function: ease-in;
+        transform: scale(0.5);
+    }
+
+    90% {
+        transform: scale(0.9);
+    }
+}

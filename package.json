@@ -46,7 +46,8 @@
         "generate:map": "node scripts/gen-animation-map.mjs",
         "prefix:css": "postcss src/cssanimation.css -o dist/cssanimation.css && postcss src/cssanimation.css -o dist/cssanimation.min.css --env production",
         "prefix:utility": "postcss src/cssanimation-utility.css -o dist/cssanimation-utility.css && postcss src/cssanimation-utility.css -o dist/cssanimation-utility.min.css --env production",
-        "prefix:css:all": "npm run prefix:css && npm run prefix:utility"
+        "prefix:css:all": "npm run prefix:css && npm run prefix:utility",
+        "export:modules": "node tools/export-modules.js"
     },
     "peerDependencies": {
         "gsap": "^3.12.0"
@@ -79,7 +80,9 @@
         "./gsap-umd": "./dist/cssanimation-gsap.umd.js",
         "./letter": "./dist/ca-letteranimation.js",
         "./css": "./dist/cssanimation.css",
-        "./utility": "./dist/cssanimation-utility.css"
+        "./utility": "./dist/cssanimation-utility.css",
+        "./index.css": "./dist/modules/ca__index.css",
+        "./modules/*": "./dist/modules/*.css"
     },
     "dependencies": {
         "glob-parent": "^6.0.2",

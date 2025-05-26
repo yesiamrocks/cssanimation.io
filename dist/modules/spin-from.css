@@ -1,0 +1,65 @@
+/* Spin From */
+
+.spinFromLeft {
+    animation-name: spinFromLeft;
+}
+
+@keyframes spinFromLeft {
+    from,
+    to {
+        transform-origin: left bottom;
+    }
+
+    to {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.spinFromRight {
+    animation-name: spinFromRight;
+}
+
+@keyframes spinFromRight {
+    from,
+    to {
+        transform-origin: right bottom;
+    }
+
+    to {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+.spinFromTop {
+    animation-name: spinFromTop;
+}
+
+@keyframes spinFromTop {
+    from,
+    to {
+        transform-origin: left bottom;
+    }
+
+    to {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+.spinFromBottom {
+    animation-name: spinFromBottom;
+}
+
+@keyframes spinFromBottom {
+    from,
+    to {
+        transform-origin: right bottom;
+    }
+
+    to {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}

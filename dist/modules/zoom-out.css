@@ -1,0 +1,56 @@
+/* Zoom Out */
+
+.zoomOut {
+    animation-name: zoomOut;
+}
+
+@keyframes zoomOut {
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.zoomOutLeft {
+    animation-name: zoomOutLeft;
+}
+
+@keyframes zoomOutLeft {
+    to {
+        transform: scale(10) translateX(-50%);
+        opacity: 0;
+    }
+}
+
+.zoomOutRight {
+    animation-name: zoomOutRight;
+}
+
+@keyframes zoomOutRight {
+    to {
+        transform: scale(10) translateX(50%);
+        opacity: 0;
+    }
+}
+
+.zoomOutTop {
+    animation-name: zoomOutTop;
+}
+
+@keyframes zoomOutTop {
+    to {
+        transform: scale(10) translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.zoomOutBottom {
+    animation-name: zoomOutBottom;
+}
+
+@keyframes zoomOutBottom {
+    to {
+        transform: scale(10) translateY(50%);
+        opacity: 0;
+    }
+}

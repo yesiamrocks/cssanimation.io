@@ -1,0 +1,37 @@
+/* Letter Perspective */
+
+.lePerspectiveOutTop span {
+    animation-name: lePerspectiveOutTop;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+}
+
+@keyframes lePerspectiveOutTop {
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: perspective(500px) rotateX(90deg) translateY(-50px)
+            translateZ(50px);
+        opacity: 0;
+    }
+}
+
+.lePerspectiveOutBottom span {
+    animation-name: lePerspectiveOutBottom;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+}
+
+@keyframes lePerspectiveOutBottom {
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: perspective(500px) rotateX(90deg) translateY(50px)
+            translateZ(-50px);
+        opacity: 0;
+    }
+}

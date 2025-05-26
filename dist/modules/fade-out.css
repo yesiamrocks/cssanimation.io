@@ -1,0 +1,71 @@
+/* Fade Out */
+
+.fadeOut {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOutLeft {
+    animation-name: fadeOutLeft;
+}
+
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.fadeOutRight {
+    animation-name: fadeOutRight;
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.fadeOutTop {
+    animation-name: fadeOutTop;
+}
+
+@keyframes fadeOutTop {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.fadeOutBottom {
+    animation-name: fadeOutBottom;
+}
+
+@keyframes fadeOutBottom {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}

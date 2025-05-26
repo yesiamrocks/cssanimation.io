@@ -1,0 +1,62 @@
+/**
+ * Module: Zoom Out
+ * Filename: ca__ZoomOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__ZoomOut">Your Text</div>
+ */
+
+.ca__fx-ZoomOut {
+    animation-name: zoomOut;
+}
+
+@keyframes zoomOut {
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.ca__fx-ZoomOutLeft {
+    animation-name: zoomOutLeft;
+}
+
+@keyframes zoomOutLeft {
+    to {
+        transform: scale(10) translateX(-50%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-ZoomOutRight {
+    animation-name: zoomOutRight;
+}
+
+@keyframes zoomOutRight {
+    to {
+        transform: scale(10) translateX(50%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-ZoomOutTop {
+    animation-name: zoomOutTop;
+}
+
+@keyframes zoomOutTop {
+    to {
+        transform: scale(10) translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-ZoomOutBottom {
+    animation-name: zoomOutBottom;
+}
+
+@keyframes zoomOutBottom {
+    to {
+        transform: scale(10) translateY(50%);
+        opacity: 0;
+    }
+}

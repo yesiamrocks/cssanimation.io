@@ -1,75 +1,77 @@
-.leDoorCloseLeft span {
-  animation-name: leDoorCloseLeft;
+/* Door */
+
+.doorCloseFromLeft {
+    animation-name: doorCloseFromLeft;
 }
 
-@keyframes leDoorCloseLeft {
-  from,
-  to {
-    transform: perspective(400px);
-    transform-origin: left;
-  }
+@keyframes doorCloseFromLeft {
+    0% {
+        transform: perspective(400px) rotateY(90deg);
+        transform-origin: left;
+        opacity: 0;
+    }
 
-  from {
-    transform: rotateY(90deg);
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    50%,
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        transform-origin: left;
+        opacity: 1;
+    }
 }
 
-.leDoorOpenRight span {
-  animation-name: leDoorOpenRight;
+.doorOpenFromRight {
+    animation-name: doorOpenFromRight;
 }
 
-@keyframes leDoorOpenRight {
-  from,
-  to {
-    transform: perspective(400px);
-    transform-origin: left;
-  }
+@keyframes doorOpenFromRight {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+        transform-origin: left;
+        opacity: 1;
+    }
 
-  to {
-    transform: rotateY(90deg);
-    opacity: 0;
-  }
+    50%,
+    100% {
+        transform: perspective(400px) rotateY(90deg);
+        transform-origin: left;
+        opacity: 0;
+    }
 }
 
-.leDoorCloseRight span {
-  animation-name: leDoorCloseRight;
+.doorCloseFromRight {
+    animation-name: doorCloseFromRight;
 }
 
-@keyframes leDoorCloseRight {
-  from,
-  to {
-    transform: perspective(400px);
-    transform-origin: right;
-  }
+@keyframes doorCloseFromRight {
+    0% {
+        transform: perspective(400px) rotateY(-90deg);
+        transform-origin: right;
+        opacity: 0;
+    }
 
-  from {
-    transform: rotateY(-90deg);
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    50%,
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        transform-origin: right;
+        opacity: 1;
+    }
 }
 
-.leDoorOpenLeft span {
-  animation-name: leDoorOpenLeft;
+.doorOpenFromLeft {
+    animation-name: doorOpenFromLeft;
 }
 
-@keyframes leDoorOpenLeft {
-  from,
-  to {
-    transform: perspective(400px);
-    transform-origin: right;
-  }
+@keyframes doorOpenFromLeft {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+        transform-origin: right;
+        opacity: 1;
+    }
 
-  to {
-    transform: rotateY(-90deg);
-    opacity: 0;
-  }
+    50%,
+    100% {
+        transform: perspective(400px) rotateY(-90deg);
+        transform-origin: right;
+        opacity: 0;
+    }
 }

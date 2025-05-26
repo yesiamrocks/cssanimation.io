@@ -1,0 +1,39 @@
+/**
+ * Module: Moving Back
+ * Filename: ca__MovingBack.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__MovingBack">Your Text</div>
+ */
+
+.ca__lt-MovingBackFromRight span {
+    animation-name: leMovingBackFromRight;
+    transform-origin: bottom;
+}
+
+@keyframes leMovingBackFromRight {
+    40% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+    }
+}
+
+.ca__lt-MovingBackFromLeft span {
+    animation-name: leMovingBackFromLeft;
+    transform-origin: bottom;
+}
+
+@keyframes leMovingBackFromLeft {
+    40% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+    }
+}

@@ -1,0 +1,21 @@
+/* Pull release */
+
+.pullRelease {
+    animation-name: pullRelease;
+}
+
+@keyframes pullRelease {
+    15% {
+        transform: scale(1.8);
+    }
+}
+
+.pushRelease {
+    animation-name: pushRelease;
+}
+
+@keyframes pushRelease {
+    15% {
+        transform: scale(0.5);
+    }
+}

@@ -1,0 +1,89 @@
+/* Bounce In */
+
+.bounceInTop {
+    animation-name: bounceInTop;
+}
+
+@keyframes bounceInTop {
+    0% {
+        transform: translate3d(0, -300%, 0);
+    }
+
+    58% {
+        transform: translate3d(0, 27px, 0);
+    }
+
+    73% {
+        transform: translate3d(0, -12px, 0);
+    }
+
+    88% {
+        transform: translate3d(0, 7px, 0);
+    }
+}
+
+.bounceInBottom {
+    animation-name: bounceInBottom;
+}
+
+@keyframes bounceInBottom {
+    0% {
+        transform: translate3d(0, 300%, 0);
+    }
+
+    58% {
+        transform: translate3d(0, -27px, 0);
+    }
+
+    73% {
+        transform: translate3d(0, 12px, 0);
+    }
+
+    88% {
+        transform: translate3d(0, -8px, 0);
+    }
+}
+
+.bounceInLeft {
+    animation-name: bounceInLeft;
+}
+
+@keyframes bounceInLeft {
+    0% {
+        transform: translate3d(-300%, 0, 0);
+    }
+
+    58% {
+        transform: translate3d(27px, 0, 0);
+    }
+
+    73% {
+        transform: translate3d(-12px, 0, 0);
+    }
+
+    88% {
+        transform: translate3d(8px, 0, 0);
+    }
+}
+
+.bounceInRight {
+    animation-name: bounceInRight;
+}
+
+@keyframes bounceInRight {
+    0% {
+        transform: translate3d(300%, 0, 0);
+    }
+
+    58% {
+        transform: translate3d(-27px, 0, 0);
+    }
+
+    73% {
+        transform: translate3d(12px, 0, 0);
+    }
+
+    88% {
+        transform: translate3d(-8px, 0, 0);
+    }
+}

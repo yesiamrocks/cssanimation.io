@@ -1,0 +1,71 @@
+/* Hang On */
+
+.hangOnLeft {
+    animation-name: hangOnLeft;
+}
+
+@keyframes hangOnLeft {
+    0% {
+        transform-origin: left;
+    }
+
+    40% {
+        transform: rotate(100deg);
+        transform-origin: left;
+    }
+
+    55% {
+        transform: rotate(80deg);
+        transform-origin: left;
+    }
+
+    70% {
+        transform: rotate(95deg);
+        transform-origin: left;
+    }
+
+    85% {
+        transform: rotate(85deg);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: rotate(90deg);
+        transform-origin: left;
+    }
+}
+
+.hangOnRight {
+    animation-name: hangOnRight;
+}
+
+@keyframes hangOnRight {
+    0% {
+        transform-origin: right;
+    }
+
+    40% {
+        transform: rotate(-100deg);
+        transform-origin: right;
+    }
+
+    55% {
+        transform: rotate(-80deg);
+        transform-origin: right;
+    }
+
+    70% {
+        transform: rotate(-95deg);
+        transform-origin: right;
+    }
+
+    85% {
+        transform: rotate(-85deg);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: rotate(-90deg);
+        transform-origin: right;
+    }
+}

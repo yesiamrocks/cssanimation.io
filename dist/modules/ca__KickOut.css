@@ -1,0 +1,39 @@
+/**
+ * Module: Kick out
+ * Filename: ca__KickOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__KickOut">Your Text</div>
+ */
+
+.ca__lt-KickOutBehind span {
+    animation-name: leKickOutFront;
+    transform-origin: top;
+}
+
+@keyframes leKickOutFront {
+    40% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+    }
+}
+
+.ca__lt-KickOutFront span {
+    animation-name: leKickOutBehind;
+    transform-origin: top;
+}
+
+@keyframes leKickOutBehind {
+    40% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+    }
+}

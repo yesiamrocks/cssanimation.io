@@ -1,0 +1,66 @@
+/**
+ * Module: Blur In
+ * Filename: ca__BlurIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__BlurIn">Your Text</div>
+ */
+
+.ca__fx-BlurIn {
+    animation-name: blurIn;
+}
+
+@keyframes blurIn {
+    from {
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__fx-BlurInLeft {
+    animation-name: blurInLeft;
+}
+
+@keyframes blurInLeft {
+    from {
+        transform: translateX(100%);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__fx-BlurInRight {
+    animation-name: blurInRight;
+}
+
+@keyframes blurInRight {
+    from {
+        transform: translateX(-100%);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__fx-BlurInTop {
+    animation-name: blurInTop;
+}
+
+@keyframes blurInTop {
+    from {
+        transform: translateY(100%);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.ca__fx-BlurInBottom {
+    animation-name: blurInBottom;
+}
+
+@keyframes blurInBottom {
+    from {
+        transform: translateY(-100%);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}

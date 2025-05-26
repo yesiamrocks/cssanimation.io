@@ -1,0 +1,62 @@
+/**
+ * Module: Letter Zoom Out
+ * Filename: ca__LetterZoomOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterZoomOut">Your Text</div>
+ */
+
+.ca__lt-ZoomOut span {
+    animation-name: leZoomOut;
+}
+
+@keyframes leZoomOut {
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.ca__lt-ZoomOutLeft span {
+    animation-name: leZoomOutLeft;
+}
+
+@keyframes leZoomOutLeft {
+    to {
+        transform: scale(10) translateX(-150%);
+        opacity: 0;
+    }
+}
+
+.ca__lt-ZoomOutRight span {
+    animation-name: leZoomOutRight;
+}
+
+@keyframes leZoomOutRight {
+    to {
+        transform: scale(10) translateX(150%);
+        opacity: 0;
+    }
+}
+
+.ca__lt-ZoomOutTop span {
+    animation-name: leZoomOutTop;
+}
+
+@keyframes leZoomOutTop {
+    to {
+        transform: scale(10) translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.ca__lt-ZoomOutBottom span {
+    animation-name: leZoomOutBottom;
+}
+
+@keyframes leZoomOutBottom {
+    to {
+        transform: scale(10) translateY(50%);
+        opacity: 0;
+    }
+}

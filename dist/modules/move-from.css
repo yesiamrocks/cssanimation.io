@@ -1,0 +1,41 @@
+/* Move From */
+
+.moveFromLeft {
+    animation-name: moveFromLeft;
+}
+
+@keyframes moveFromLeft {
+    from {
+        transform: translateX(-800px);
+    }
+}
+
+.moveFromRight {
+    animation-name: moveFromRight;
+}
+
+@keyframes moveFromRight {
+    from {
+        transform: translateX(800px);
+    }
+}
+
+.moveFromTop {
+    animation-name: moveFromTop;
+}
+
+@keyframes moveFromTop {
+    from {
+        transform: translateY(-800px);
+    }
+}
+
+.moveFromBottom {
+    animation-name: moveFromBottom;
+}
+
+@keyframes moveFromBottom {
+    from {
+        transform: translateY(800px);
+    }
+}

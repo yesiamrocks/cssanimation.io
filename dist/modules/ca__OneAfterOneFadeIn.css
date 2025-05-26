@@ -1,0 +1,263 @@
+/**
+ * Module: One After One Fade in
+ * Filename: ca__OneAfterOneFadeIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__OneAfterOneFadeIn">Your Text</div>
+ */
+
+.ca__fx-OaoFadeIn span:nth-child(even) {
+    animation-name: leoaoFadeInTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes leoaoFadeInTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoFadeIn span:nth-child(odd) {
+    animation-name: leoaoFadeInBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes leoaoFadeInBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoFadeOut span:nth-child(even) {
+    animation-name: leoaoFadeOutop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes leoaoFadeOutop {
+    to {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoFadeOut span:nth-child(odd) {
+    animation-name: leoaoFadeOutBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes leoaoFadeOutBottom {
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoFlyIn span:nth-child(even) {
+    animation-name: leoaoFlyInTop;
+}
+
+@keyframes leoaoFlyInTop {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-50px);
+        animation-timing-function: ease-out;
+    }
+}
+
+.ca__fx-OaoFlyIn span:nth-child(odd) {
+    animation-name: leoaoFlyInBottom;
+}
+
+@keyframes leoaoFlyInBottom {
+    0% {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(50px);
+        animation-timing-function: ease-out;
+    }
+}
+
+.ca__fx-OaoFlyOut span:nth-child(even) {
+    animation-name: leoaoFlyOutTop;
+}
+
+@keyframes leoaoFlyOutTop {
+    30% {
+        transform: translateY(80px);
+        animation-timing-function: ease-out;
+    }
+
+    80% {
+        transform: translateY(-50px);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoFlyOut span:nth-child(odd) {
+    animation-name: leoaoFlyOutBottom;
+}
+
+@keyframes leoaoFlyOutBottom {
+    30% {
+        transform: translateY(-80px);
+        animation-timing-function: ease-out;
+    }
+
+    80% {
+        transform: translateY(50px);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateIn span:nth-child(even) {
+    animation-name: oaoRotateInTop;
+}
+
+@keyframes oaoRotateInTop {
+    from {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateIn span:nth-child(odd) {
+    animation-name: oaoRotateInBottom;
+}
+
+@keyframes oaoRotateInBottom {
+    from {
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateOut span:nth-child(even) {
+    animation-name: oaoRotateOutTop;
+}
+
+@keyframes oaoRotateOutTop {
+    to {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateOut span:nth-child(odd) {
+    animation-name: oaoRotateOutBottom;
+}
+
+@keyframes oaoRotateOutBottom {
+    to {
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateXIn span:nth-child(even) {
+    animation-name: oaoRotateXInTop;
+}
+
+@keyframes oaoRotateXInTop {
+    from {
+        transform: translateY(-100px) rotateX(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateXIn span:nth-child(odd) {
+    animation-name: oaoRotateXInBottom;
+}
+
+@keyframes oaoRotateXInBottom {
+    from {
+        transform: translateY(100px) rotateX(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateXOut span:nth-child(even) {
+    animation-name: oaoRotateXOutTop;
+}
+
+@keyframes oaoRotateXOutTop {
+    to {
+        transform: translateY(-100px) rotateX(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateXOut span:nth-child(odd) {
+    animation-name: oaoRotateXOutBottom;
+}
+
+@keyframes oaoRotateXOutBottom {
+    to {
+        transform: translateY(100px) rotateX(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateYIn span:nth-child(even) {
+    animation-name: oaoRotateYInTop;
+}
+
+@keyframes oaoRotateYInTop {
+    from {
+        transform: translateY(-100px) rotateY(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateYIn span:nth-child(odd) {
+    animation-name: oaoRotateYInBottom;
+}
+
+@keyframes oaoRotateYInBottom {
+    from {
+        transform: translateY(100px) rotateY(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateYOut span:nth-child(even) {
+    animation-name: oaoRotateYOutTop;
+}
+
+@keyframes oaoRotateYOutTop {
+    to {
+        transform: translateY(-100px) rotateY(360deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-OaoRotateYOut span:nth-child(odd) {
+    animation-name: oaoRotateYOutBottom;
+}
+
+@keyframes oaoRotateYOutBottom {
+    to {
+        transform: translateY(100px) rotateY(360deg);
+        opacity: 0;
+    }
+}

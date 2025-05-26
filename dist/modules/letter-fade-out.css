@@ -1,0 +1,71 @@
+/* Letter Fade Out */
+
+.leFadeOut span {
+    animation-name: leFadeOut;
+}
+
+@keyframes leFadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.leFadeOutLeft span {
+    animation-name: leFadeOutLeft;
+}
+
+@keyframes leFadeOutLeft {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+}
+
+.leFadeOutRight span {
+    animation-name: leFadeOutRight;
+}
+
+@keyframes leFadeOutRight {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+}
+
+.leFadeOutTop span {
+    animation-name: leFadeOutTop;
+}
+
+@keyframes leFadeOutTop {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.leFadeOutBottom span {
+    animation-name: leFadeOutBottom;
+}
+
+@keyframes leFadeOutBottom {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}

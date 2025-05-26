@@ -1,0 +1,99 @@
+/**
+ * Module: Letter Dance Out
+ * Filename: ca__LetterDanceOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterDanceOut">Your Text</div>
+ */
+
+.ca__lt-DanceOutTop span {
+    animation-name: leDanceOutTop;
+    transform-origin: top;
+}
+
+@keyframes leDanceOutTop {
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ca__lt-DanceOutMiddle span {
+    animation-name: leDanceOutMiddle;
+}
+
+@keyframes leDanceOutMiddle {
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ca__lt-DanceOutBottom span {
+    animation-name: leDanceOutBottom;
+    transform-origin: bottom;
+}
+
+@keyframes leDanceOutBottom {
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

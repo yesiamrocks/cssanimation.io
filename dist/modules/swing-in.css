@@ -1,0 +1,61 @@
+/* Swing In */
+
+.swingInLeft {
+    animation-name: swingInLeft;
+}
+
+@keyframes swingInLeft {
+    0% {
+        transform: matrix(3, 0, 0, 3, -800, 0);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: matrix(1.3, 0, 0, 1.3, 20, 0);
+    }
+}
+
+.swingInRight {
+    animation-name: swingInRight;
+}
+
+@keyframes swingInRight {
+    0% {
+        transform: matrix(3, 0, 0, 3, 800, 0);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: matrix(1.3, 0, 0, 1.3, -20, 0);
+    }
+}
+
+.swingInTop {
+    animation-name: swingInTop;
+}
+
+@keyframes swingInTop {
+    0% {
+        transform: matrix(3, 0, 0, 3, 0, -800);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: matrix(1.3, 0, 0, 1.3, 0, 20);
+    }
+}
+
+.swingInBottom {
+    animation-name: swingInBottom;
+}
+
+@keyframes swingInBottom {
+    0% {
+        transform: matrix(3, 0, 0, 3, 0, 800);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: matrix(1.3, 0, 0, 1.3, 0, -20);
+    }
+}

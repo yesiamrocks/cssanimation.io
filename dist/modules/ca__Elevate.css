@@ -1,0 +1,49 @@
+/**
+ * Module: Elevate
+ * Filename: ca__Elevate.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__Elevate">Your Text</div>
+ */
+
+.ca__fx-ElevateLeft {
+    animation-name: elevateLeft;
+}
+
+@keyframes elevateLeft {
+    0% {
+        transform: translateY(100%) rotate(-20deg);
+        transform-origin: right;
+    }
+
+    40% {
+        transform: rotate(20deg);
+        transform-origin: right;
+    }
+
+    65% {
+        transform: rotate(0deg);
+        transform-origin: right;
+    }
+}
+
+.ca__fx-ElevateRight {
+    animation-name: elevateRight;
+}
+
+@keyframes elevateRight {
+    0% {
+        transform: translateY(100%) rotate(20deg);
+        transform-origin: left;
+    }
+
+    40% {
+        transform: rotate(-20deg);
+        transform-origin: left;
+    }
+
+    65% {
+        transform: rotate(0deg);
+        transform-origin: left;
+    }
+}

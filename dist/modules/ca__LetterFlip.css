@@ -1,0 +1,91 @@
+/**
+ * Module: Letter Flip
+ * Filename: ca__LetterFlip.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterFlip">Your Text</div>
+ */
+
+.ca__lt-FlipInTop span {
+    animation-name: leFlipInTop;
+}
+
+@keyframes leFlipInTop {
+    0% {
+        transform: perspective(600px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: perspective(600px) rotateX(180deg);
+        transform-origin: 0 0;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: perspective(600px);
+    }
+}
+
+.ca__lt-FlipOutTop span {
+    animation-name: leFlipOutTop;
+}
+
+@keyframes leFlipOutTop {
+    100% {
+        transform: perspective(600px);
+        opacity: 0;
+    }
+
+    70% {
+        transform: perspective(600px) rotateX(180deg);
+        transform-origin: 0 0;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: perspective(600px);
+    }
+}
+
+.ca__lt-FlipInBottom span {
+    animation-name: leFlipInBottom;
+}
+
+@keyframes leFlipInBottom {
+    0% {
+        transform: perspective(600px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: perspective(600px) rotateX(180deg);
+        transform-origin: bottom;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: perspective(600px);
+    }
+}
+
+.ca__lt-FlipOutBottom span {
+    animation-name: leFlipOutBottom;
+}
+
+@keyframes leFlipOutBottom {
+    100% {
+        transform: perspective(600px);
+        opacity: 0;
+    }
+
+    70% {
+        transform: perspective(600px) rotateX(180deg);
+        transform-origin: bottom;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: perspective(600px);
+    }
+}

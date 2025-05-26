@@ -1,0 +1,82 @@
+/**
+ * Module: Push Release To
+ * Filename: ca__PushReleaseTo.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__PushReleaseTo">Your Text</div>
+ */
+
+.ca__fx-PushReleaseTo {
+    animation-name: pushReleaseTo;
+}
+
+@keyframes pushReleaseTo {
+    30% {
+        transform: scale(0.5, 0.5);
+    }
+
+    100% {
+        transform: scale(5, 5);
+        opacity: 0;
+    }
+}
+
+.ca__fx-PushReleaseToLeft {
+    animation-name: pushReleaseToLeft;
+}
+
+@keyframes pushReleaseToLeft {
+    30% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-PushReleaseToRight {
+    animation-name: pushReleaseToRight;
+}
+
+@keyframes pushReleaseToRight {
+    30% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-PushReleaseToTop {
+    animation-name: pushReleaseToTop;
+}
+
+@keyframes pushReleaseToTop {
+    30% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-PushReleaseToBottom {
+    animation-name: pushReleaseToBottom;
+}
+
+@keyframes pushReleaseToBottom {
+    30% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}

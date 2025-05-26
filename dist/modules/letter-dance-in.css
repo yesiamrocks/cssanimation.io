@@ -1,0 +1,93 @@
+/* Letter Dance In */
+
+.leDanceInTop span {
+    animation-name: leDanceInTop;
+    transform-origin: top;
+}
+
+@keyframes leDanceInTop {
+    0% {
+        opacity: 0;
+    }
+
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+}
+
+.leDanceInMiddle span {
+    animation-name: leDanceInMiddle;
+}
+
+@keyframes leDanceInMiddle {
+    0% {
+        opacity: 0;
+    }
+
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+}
+
+.leDanceInBottom span {
+    animation-name: leDanceInBottom;
+    transform-origin: bottom;
+}
+
+@keyframes leDanceInBottom {
+    0% {
+        opacity: 0;
+    }
+
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+}

@@ -1,0 +1,47 @@
+/**
+ * Module: Move From
+ * Filename: ca__MoveFrom.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__MoveFrom">Your Text</div>
+ */
+
+.ca__fx-MoveFromLeft {
+    animation-name: moveFromLeft;
+}
+
+@keyframes moveFromLeft {
+    from {
+        transform: translateX(-800px);
+    }
+}
+
+.ca__fx-MoveFromRight {
+    animation-name: moveFromRight;
+}
+
+@keyframes moveFromRight {
+    from {
+        transform: translateX(800px);
+    }
+}
+
+.ca__fx-MoveFromTop {
+    animation-name: moveFromTop;
+}
+
+@keyframes moveFromTop {
+    from {
+        transform: translateY(-800px);
+    }
+}
+
+.ca__fx-MoveFromBottom {
+    animation-name: moveFromBottom;
+}
+
+@keyframes moveFromBottom {
+    from {
+        transform: translateY(800px);
+    }
+}

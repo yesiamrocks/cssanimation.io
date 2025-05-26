@@ -1,0 +1,77 @@
+/**
+ * Module: Fade Out
+ * Filename: ca__FadeOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__FadeOut">Your Text</div>
+ */
+
+.ca__fx-FadeOut {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.ca__fx-FadeOutLeft {
+    animation-name: fadeOutLeft;
+}
+
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.ca__fx-FadeOutRight {
+    animation-name: fadeOutRight;
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.ca__fx-FadeOutTop {
+    animation-name: fadeOutTop;
+}
+
+@keyframes fadeOutTop {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.ca__fx-FadeOutBottom {
+    animation-name: fadeOutBottom;
+}
+
+@keyframes fadeOutBottom {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}

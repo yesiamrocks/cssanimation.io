@@ -1,0 +1,112 @@
+/* Rotation */
+
+.rotate {
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateX {
+    animation-name: rotateX;
+}
+
+@keyframes rotateX {
+    from {
+        transform: perspective(600px) rotateX(0deg);
+    }
+
+    to {
+        transform: perspective(600px) rotateX(90deg);
+    }
+}
+
+.rotateXIn {
+    animation-name: rotateXIn;
+}
+
+@keyframes rotateXIn {
+    0% {
+        transform: perspective(600px) translate3d(0, -60px, -2000px)
+            rotateX(75deg);
+        opacity: 0;
+    }
+
+    5% {
+        transform: perspective(600px) translate3d(0, -60px, -1500px)
+            rotateX(75deg);
+    }
+}
+
+.rotateXOut {
+    animation-name: rotateXOut;
+}
+
+@keyframes rotateXOut {
+    95% {
+        transform: perspective(600px) translate3d(0, -60px, -1500px)
+            rotateX(75deg);
+    }
+
+    100% {
+        transform: perspective(600px) translate3d(0, -60px, -2000px)
+            rotateX(75deg);
+        opacity: 0;
+    }
+}
+
+.rotateY {
+    animation-name: rotateY;
+}
+
+@keyframes rotateY {
+    from {
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(600px) rotateY(90deg);
+    }
+}
+
+.rotateYIn {
+    animation-name: rotateYIn;
+}
+
+@keyframes rotateYIn {
+    0% {
+        transform: perspective(600px) translate3d(0, -60px, -2000px)
+            rotateY(75deg);
+        opacity: 0;
+    }
+
+    5% {
+        transform: perspective(600px) translate3d(0, -60px, -1500px)
+            rotateY(75deg);
+    }
+}
+
+.rotateYOut {
+    animation-name: rotateYOut;
+}
+
+@keyframes rotateYOut {
+    95% {
+        transform: perspective(600px) translate3d(0, -60px, -1500px)
+            rotateY(75deg);
+    }
+
+    100% {
+        transform: perspective(600px) translate3d(0, -60px, -2000px)
+            rotateY(75deg);
+        opacity: 0;
+    }
+}

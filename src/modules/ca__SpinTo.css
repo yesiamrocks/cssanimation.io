@@ -1,0 +1,71 @@
+/**
+ * Module: Spin To
+ * Filename: ca__SpinTo.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__SpinTo">Your Text</div>
+ */
+
+.ca__fx-SpinToLeft {
+    animation-name: spinToLeft;
+}
+
+@keyframes spinToLeft {
+    from,
+    to {
+        transform-origin: left bottom;
+    }
+
+    from {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-SpinToRight {
+    animation-name: spinToRight;
+}
+
+@keyframes spinToRight {
+    from,
+    to {
+        transform-origin: right bottom;
+    }
+
+    from {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-SpinToTop {
+    animation-name: spinToTop;
+}
+
+@keyframes spinToTop {
+    from,
+    to {
+        transform-origin: left bottom;
+    }
+
+    from {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-SpinToBottom {
+    animation-name: spinToBottom;
+}
+
+@keyframes spinToBottom {
+    from,
+    to {
+        transform-origin: right bottom;
+    }
+
+    from {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}

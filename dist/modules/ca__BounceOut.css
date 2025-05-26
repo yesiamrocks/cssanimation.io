@@ -1,0 +1,123 @@
+/**
+ * Module: Bounce Out
+ * Filename: ca__BounceOut.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__BounceOut">Your Text</div>
+ */
+
+.ca__fx-BounceOutTop {
+    animation-name: bounceOutTop;
+}
+
+@keyframes bounceOutTop {
+    18%,
+    33%,
+    48% {
+        opacity: 1;
+    }
+
+    18% {
+        transform: translate3d(0, 27px, 0);
+    }
+
+    33% {
+        transform: translate3d(0, -12px, 0);
+    }
+
+    48% {
+        transform: translate3d(0, 8px, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -300%, 0);
+    }
+}
+
+.ca__fx-BounceOutBottom {
+    animation-name: bounceOutBottom;
+}
+
+@keyframes bounceOutBottom {
+    18%,
+    33%,
+    48% {
+        opacity: 1;
+    }
+
+    18% {
+        transform: translate3d(0, -27px, 0);
+    }
+
+    33% {
+        transform: translate3d(0, 12px, 0);
+    }
+
+    48% {
+        transform: translate3d(0, -8px, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 300%, 0);
+    }
+}
+
+.ca__fx-BounceOutLeft {
+    animation-name: bounceOutLeft;
+}
+
+@keyframes bounceOutLeft {
+    18%,
+    33%,
+    48% {
+        opacity: 1;
+    }
+
+    18% {
+        transform: translate3d(27px, 0, 0);
+    }
+
+    33% {
+        transform: translate3d(-12px, 0, 0);
+    }
+
+    48% {
+        transform: translate3d(8px, 0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(-300%, 0, 0);
+    }
+}
+
+.ca__fx-BounceOutRight {
+    animation-name: bounceOutRight;
+}
+
+@keyframes bounceOutRight {
+    18%,
+    33%,
+    48% {
+        opacity: 1;
+    }
+
+    18% {
+        transform: translate3d(-27px, 0, 0);
+    }
+
+    33% {
+        transform: translate3d(12px, 0, 0);
+    }
+
+    48% {
+        transform: translate3d(-8px, 0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(300%, 0, 0);
+    }
+}

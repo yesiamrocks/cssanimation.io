@@ -1,0 +1,69 @@
+/* Letter Rotation */
+
+.leRotateXZoomIn span {
+    animation-name: leRotateXZoomIn;
+}
+
+@keyframes leRotateXZoomIn {
+    0% {
+        transform: perspective(600px) translate3d(0, -60px, -2000px)
+            rotateX(75deg);
+        opacity: 0;
+    }
+
+    5% {
+        transform: perspective(600px) translate3d(0, -60px, -1500px)
+            rotateX(75deg);
+    }
+}
+
+.leRotateXZoomOut span {
+    animation-name: leRotateXZoomOut;
+}
+
+@keyframes leRotateXZoomOut {
+    95% {
+        transform: perspective(600px) translate3d(0, -60px, -1500px)
+            rotateX(75deg);
+    }
+
+    100% {
+        transform: perspective(600px) translate3d(0, -60px, -2000px)
+            rotateX(75deg);
+        opacity: 0;
+    }
+}
+
+.leRotateYZoomIn span {
+    animation-name: leRotateYZoomIn;
+}
+
+@keyframes leRotateYZoomIn {
+    0% {
+        transform: perspective(600px) translate3d(0, -60px, -2000px)
+            rotateY(75deg);
+        opacity: 0;
+    }
+
+    5% {
+        transform: perspective(600px) translate3d(0, -60px, -1500px)
+            rotateY(75deg);
+    }
+}
+
+.leRotateYZoomOut span {
+    animation-name: leRotateYZoomOut;
+}
+
+@keyframes leRotateYZoomOut {
+    95% {
+        transform: perspective(600px) translate3d(0, -60px, -1500px)
+            rotateY(75deg);
+    }
+
+    100% {
+        transform: perspective(600px) translate3d(0, -60px, -2000px)
+            rotateY(75deg);
+        opacity: 0;
+    }
+}

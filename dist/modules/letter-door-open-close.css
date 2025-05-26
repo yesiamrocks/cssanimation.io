@@ -1,0 +1,77 @@
+/* Letter Door Open & Close */
+
+.leDoorCloseLeft span {
+    animation-name: leDoorCloseLeft;
+}
+
+@keyframes leDoorCloseLeft {
+    from,
+    to {
+        transform: perspective(400px);
+        transform-origin: left;
+    }
+
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.leDoorOpenRight span {
+    animation-name: leDoorOpenRight;
+}
+
+@keyframes leDoorOpenRight {
+    from,
+    to {
+        transform: perspective(400px);
+        transform-origin: left;
+    }
+
+    to {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+}
+
+.leDoorCloseRight span {
+    animation-name: leDoorCloseRight;
+}
+
+@keyframes leDoorCloseRight {
+    from,
+    to {
+        transform: perspective(400px);
+        transform-origin: right;
+    }
+
+    from {
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.leDoorOpenLeft span {
+    animation-name: leDoorOpenLeft;
+}
+
+@keyframes leDoorOpenLeft {
+    from,
+    to {
+        transform: perspective(400px);
+        transform-origin: right;
+    }
+
+    to {
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+}

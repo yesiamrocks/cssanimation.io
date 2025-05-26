@@ -1,0 +1,67 @@
+/**
+ * Module: Rotate In
+ * Filename: ca__RotateIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__RotateIn">Your Text</div>
+ */
+
+.ca__fx-RotateInLeft {
+    animation-name: rotateInLeft;
+}
+
+@keyframes rotateInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(360deg);
+    }
+}
+
+.ca__fx-RotateInRight {
+    animation-name: rotateInRight;
+}
+
+@keyframes rotateInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(-360deg);
+    }
+}
+
+.ca__fx-RotateInTop {
+    animation-name: rotateInTop;
+}
+
+@keyframes rotateInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-400%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(360deg);
+    }
+}
+
+.ca__fx-RotateInBottom {
+    animation-name: rotateInBottom;
+}
+
+@keyframes rotateInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(400%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(360deg);
+    }
+}

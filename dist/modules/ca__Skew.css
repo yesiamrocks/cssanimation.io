@@ -1,0 +1,87 @@
+/**
+ * Module: Skew
+ * Filename: ca__Skew.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__Skew">Your Text</div>
+ */
+
+.ca__fx-SkewLeft {
+    animation-name: skewLeft;
+}
+
+@keyframes skewLeft {
+    70% {
+        transform: skewX(40deg);
+    }
+}
+
+.ca__fx-SkewRight {
+    animation-name: skewRight;
+}
+
+@keyframes skewRight {
+    70% {
+        transform: skewX(-40deg);
+    }
+}
+
+.ca__fx-SkewInLeft {
+    animation-name: skewInLeft;
+}
+
+@keyframes skewInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%) skewX(-40deg);
+    }
+
+    70% {
+        transform: skewX(-30deg);
+    }
+}
+
+.ca__fx-SkewInRight {
+    animation-name: skewInRight;
+}
+
+@keyframes skewInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%) skewX(40deg);
+    }
+
+    70% {
+        transform: skewX(30deg);
+    }
+}
+
+.ca__fx-SkewOutLeft {
+    animation-name: skewOutLeft;
+}
+
+@keyframes skewOutLeft {
+    20% {
+        transform: skewX(40deg);
+    }
+
+    100% {
+        transform: translateX(-100%) skewX(40deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-SkewOutRight {
+    animation-name: skewOutRight;
+}
+
+@keyframes skewOutRight {
+    20% {
+        transform: skewX(-40deg);
+    }
+
+    100% {
+        transform: translateX(100%) skewX(-40deg);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,71 @@
+/**
+ * Module: Letter Spin
+ * Filename: ca__LetterSpin.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterSpin">Your Text</div>
+ */
+
+.ca__lt-SpinInLeft span {
+    animation-name: leSpinInLeft;
+}
+
+@keyframes leSpinInLeft {
+    from,
+    to {
+        transform-origin: left bottom;
+    }
+
+    from {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.ca__lt-SpinInRight span {
+    animation-name: leSpinInRight;
+}
+
+@keyframes leSpinInRight {
+    from,
+    to {
+        transform-origin: right bottom;
+    }
+
+    from {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+.ca__lt-SpinOutLeft span {
+    animation-name: leSpinOutLeft;
+}
+
+@keyframes leSpinOutLeft {
+    from,
+    to {
+        transform-origin: left bottom;
+    }
+
+    to {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.ca__lt-SpinOutRight span {
+    animation-name: leSpinOutRight;
+}
+
+@keyframes leSpinOutRight {
+    from,
+    to {
+        transform-origin: right bottom;
+    }
+
+    to {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}

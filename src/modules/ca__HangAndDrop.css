@@ -1,0 +1,61 @@
+/**
+ * Module: Hang And Drop
+ * Filename: ca__HangAndDrop.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__HangAndDrop">Your Text</div>
+ */
+
+.ca__fx-HangAndDropLeft {
+    animation-name: hangAndDropLeft;
+}
+
+@keyframes hangAndDropLeft {
+    0% {
+        transform-origin: left;
+    }
+
+    50% {
+        transform: rotate(100deg);
+        transform-origin: left;
+    }
+
+    60% {
+        transform: rotate(90deg);
+        transform-origin: left;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(300px) rotate(70deg);
+        transform-origin: left;
+        opacity: 0;
+    }
+}
+
+.ca__fx-HangAndDropRight {
+    animation-name: hangAndDropRight;
+}
+
+@keyframes hangAndDropRight {
+    0% {
+        transform-origin: right;
+    }
+
+    50% {
+        transform: rotate(-100deg);
+        transform-origin: right;
+    }
+
+    60% {
+        transform: rotate(-90deg);
+        transform-origin: right;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(300px) rotate(-70deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+}

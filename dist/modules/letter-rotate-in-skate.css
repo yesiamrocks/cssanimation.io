@@ -1,0 +1,45 @@
+/* Letter Rotate In skate */
+
+.leRotateSkateInRight span {
+    animation-name: leRotateSkateInRight;
+}
+
+@keyframes leRotateSkateInRight {
+    from {
+        transform: scaleX(0.2) translateX(100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateInLeft span {
+    animation-name: leRotateSkateInLeft;
+}
+
+@keyframes leRotateSkateInLeft {
+    from {
+        transform: scaleX(0.2) translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateInTop span {
+    animation-name: leRotateSkateInTop;
+}
+
+@keyframes leRotateSkateInTop {
+    from {
+        transform: scaleY(0.2) translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.leRotateSkateInBottom span {
+    animation-name: leRotateSkateInBottom;
+}
+
+@keyframes leRotateSkateInBottom {
+    from {
+        transform: scaleY(0.2) translateY(100px);
+        opacity: 0;
+    }
+}

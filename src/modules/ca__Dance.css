@@ -1,0 +1,95 @@
+/**
+ * Module: Dance
+ * Filename: ca__Dance.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__Dance">Your Text</div>
+ */
+
+.ca__fx-DanceTop {
+    animation-name: danceTop;
+    transform-origin: top;
+}
+
+@keyframes danceTop {
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+}
+
+.ca__fx-DanceMiddle {
+    animation-name: danceMiddle;
+}
+
+@keyframes danceMiddle {
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+}
+
+.ca__fx-DanceBottom {
+    animation-name: danceBottom;
+    transform-origin: bottom;
+}
+
+@keyframes danceBottom {
+    16% {
+        transform: skew(-14deg);
+    }
+
+    33% {
+        transform: skew(12deg);
+    }
+
+    49% {
+        transform: skew(-8deg);
+    }
+
+    66% {
+        transform: skew(6deg);
+    }
+
+    83% {
+        transform: skew(-4deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cssanimation,
+    .cssanimation span {
+        animation: none !important;
+        transition: none !important;
+    }
+}

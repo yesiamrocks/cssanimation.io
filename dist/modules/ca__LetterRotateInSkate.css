@@ -1,0 +1,51 @@
+/**
+ * Module: Letter Rotate In skate
+ * Filename: ca__LetterRotateInSkate.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__LetterRotateInSkate">Your Text</div>
+ */
+
+.ca__lt-RotateSkateInRight span {
+    animation-name: leRotateSkateInRight;
+}
+
+@keyframes leRotateSkateInRight {
+    from {
+        transform: scaleX(0.2) translateX(100px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-RotateSkateInLeft span {
+    animation-name: leRotateSkateInLeft;
+}
+
+@keyframes leRotateSkateInLeft {
+    from {
+        transform: scaleX(0.2) translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-RotateSkateInTop span {
+    animation-name: leRotateSkateInTop;
+}
+
+@keyframes leRotateSkateInTop {
+    from {
+        transform: scaleY(0.2) translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.ca__lt-RotateSkateInBottom span {
+    animation-name: leRotateSkateInBottom;
+}
+
+@keyframes leRotateSkateInBottom {
+    from {
+        transform: scaleY(0.2) translateY(100px);
+        opacity: 0;
+    }
+}

@@ -1,3 +1,25 @@
+# Version: 3.0.3
+
+### Added
+
+- **Modular export system for animations**  
+  A new Node.js script automatically extracts animation blocks from `./dist/cssanimation.css` and creates:
+
+    - Individual module files using PascalCase naming (e.g., `ca__LetterFadeIn.css`)
+    - Metadata headers in each file with module info and usage examples
+
+- **`ca__index.css` auto-generated** a central file that imports all animation modules.
+
+### 📁 Example Output
+
+```bash
+./dist/modules/
+├── ca__LetterFadeIn.css
+├── ca__BounceUp.css
+├── ca__ZoomSlideLeft.css
+├── ca__index.css
+```
+
 # Version: 3.0.2
 
 ### Added

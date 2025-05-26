@@ -1,0 +1,62 @@
+/**
+ * Module: Zoom In
+ * Filename: ca__ZoomIn.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__ZoomIn">Your Text</div>
+ */
+
+.ca__fx-ZoomIn {
+    animation-name: zoomIn;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.ca__fx-ZoomInLeft {
+    animation-name: zoomInLeft;
+}
+
+@keyframes zoomInLeft {
+    from {
+        transform: scale(10) translateX(-50%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-ZoomInRight {
+    animation-name: zoomInRight;
+}
+
+@keyframes zoomInRight {
+    from {
+        transform: scale(10) translateX(50%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-ZoomInTop {
+    animation-name: zoomInTop;
+}
+
+@keyframes zoomInTop {
+    from {
+        transform: scale(10) translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.ca__fx-ZoomInBottom {
+    animation-name: zoomInBottom;
+}
+
+@keyframes zoomInBottom {
+    from {
+        transform: scale(10) translateY(50%);
+        opacity: 0;
+    }
+}

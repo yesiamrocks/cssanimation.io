@@ -1,0 +1,71 @@
+/**
+ * Module: Roll To
+ * Filename: ca__RollTo.css
+ * Description: This animation block was auto-exported from cssanimation.css
+ * Usage:
+ *   <div class="ca__RollTo">Your Text</div>
+ */
+
+.ca__fx-RollToLeft {
+    animation-name: rollToLeft;
+}
+
+@keyframes rollToLeft {
+    from {
+        transform: translateX(0) perspective(600px) rotateY(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-100%) perspective(600px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-RollToRight {
+    animation-name: rollToRight;
+}
+
+@keyframes rollToRight {
+    from {
+        transform: translateX(0) perspective(600px) rotateY(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%) perspective(600px) rotateY(-180deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-RollToTop {
+    animation-name: rollToTop;
+}
+
+@keyframes rollToTop {
+    from {
+        transform: translateY(0) perspective(600px) rotateX(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100%) perspective(600px) rotateX(180deg);
+        opacity: 0;
+    }
+}
+
+.ca__fx-RollToBottom {
+    animation-name: rollToBottom;
+}
+
+@keyframes rollToBottom {
+    to {
+        transform: translateY(0) perspective(600px) rotateX(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(100%) perspective(600px) rotateX(-180deg);
+        opacity: 0;
+    }
+}

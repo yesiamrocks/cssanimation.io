@@ -1,0 +1,51 @@
+/* Letter Hang And Drop */
+
+.leHangAndDropLeft span {
+    animation-name: leHangAndDropLeft;
+}
+
+@keyframes leHangAndDropLeft {
+    0% {
+        transform-origin: left;
+    }
+
+    50% {
+        transform: rotate(100deg);
+        transform-origin: left;
+    }
+
+    60% {
+        transform: rotate(90deg);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: translateY(800px) rotate(70deg);
+        transform-origin: left;
+    }
+}
+
+.leHangAndDropRight span {
+    animation-name: leHangAndDropRight;
+}
+
+@keyframes leHangAndDropRight {
+    0% {
+        transform-origin: right;
+    }
+
+    50% {
+        transform: rotate(-100deg);
+        transform-origin: right;
+    }
+
+    60% {
+        transform: rotate(-90deg);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: translateY(800px) rotate(-70deg);
+        transform-origin: right;
+    }
+}
