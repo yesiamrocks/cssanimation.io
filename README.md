@@ -166,8 +166,6 @@ JavaScript (Webpack/Vite/Rollup)
 import './dist/modules/ca__LetterFadeIn.css';
 ```
 
-#### Use All Animations at Once
-
 Import everything in one go using the index file:
 
 ```html
