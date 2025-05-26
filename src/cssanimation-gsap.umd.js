@@ -1,7 +1,7 @@
 (function (factory) {
-    typeof define === 'function' && define.amd ? define(factory) : factory();
-})(function () {
-    'use strict';
+    typeof define === 'function' && define.amd ? define(factory) :
+    factory();
+})((function () { 'use strict';
 
     // animations/bounce.js
     function animateBounce(el, options = {}) {
@@ -104,9 +104,7 @@
         el.innerHTML = text
             .split('')
             .map((char) =>
-                char === ' '
-                    ? ' '
-                    : `<span class="ca__gsap-letter">${char}</span>`,
+                char === ' ' ? ' ' : `<span class="ca__gsap-letter">${char}</span>`,
             )
             .join('');
 
@@ -134,16 +132,17 @@
     /**
      * Auto-generated animation map from ./src/animations
      * Run this file before building: npm run generate:map
-     *
+     * 
      * This file maps animation names (e.g., 'bounce') to exported GSAP functions (e.g., animateBounce).
      * DO NOT EDIT MANUALLY — instead, edit animation files in /src/animations/
      */
 
+
     const animationMap = {
-        bounce: animateBounce,
-        effect3D: animateEffect3D,
-        leBounce: animateLeBounce,
-        leMoveFromLeft: animateLeMoveFromLeft,
+      'bounce': animateBounce,
+      'effect3D': animateEffect3D,
+      'leBounce': animateLeBounce,
+      'leMoveFromLeft': animateLeMoveFromLeft,
     };
 
     /**
@@ -157,6 +156,7 @@
      * Description: Applies letter-by-letter CSS animations to text.
      * cssanimation.io Copyright © 2025 Shafayetul Islam Pavel
      */
+
 
     document.addEventListener('DOMContentLoaded', () => {
         // Find all elements that use the ca-gsap attribute (e.g., <div ca-gsap="bounce">)
@@ -186,9 +186,7 @@
                 console.warn(`→ Received: ${raw}`);
                 console.warn(`→ Error: ${err.message}`);
                 console.info(`💡 Fix the JSON format. Examples:`);
-                console.info(
-                    `✅ Use double quotes: '{"y": 30, "duration": 1.5}'`,
-                );
+                console.info(`✅ Use double quotes: '{"y": 30, "duration": 1.5}'`);
                 console.info(`✅ Don't use single quotes or trailing commas`);
                 console.info(
                     `✅ Always use leading zeros for decimals: 0.5 not .5`,
@@ -213,11 +211,9 @@
                     `[cssanimation.io] ⚠️ Unknown animation: "${animationName}" not found in animationMap.`,
                 );
                 el.style.outline = '2px dashed orange';
-                el.setAttribute(
-                    'title',
-                    `Unknown animation: "${animationName}"`,
-                );
+                el.setAttribute('title', `Unknown animation: "${animationName}"`);
             }
         });
     });
-});
+
+}));
