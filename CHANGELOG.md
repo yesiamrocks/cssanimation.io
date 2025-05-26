@@ -1,3 +1,33 @@
+# Version: 3.0.1
+
+### Enhancements
+
+- **PascalCase Class Prefixing**:
+    - All class names now auto-convert to PascalCase format.
+    - Helps maintain consistency, improves readability, and avoids naming collisions.
+
+### Prefixing Rules by File Type
+
+| File                       | Prefix    | Example Before   | Example After       |
+| -------------------------- | --------- | ---------------- | ------------------- |
+| `cssanimation.css`         | `ca__fx-` | `.bounce-in`     | `.ca__fx-BounceIn`  |
+| `cssanimation-utility.css` | `ca__u-`  | `.grid-helper`   | `.ca__u-GridHelper` |
+| Classes starting with `le` | `ca__lt-` | `.le-shake-text` | `.ca__lt-ShakeText` |
+
+### Safe-Guarded Classes
+
+These global classes are **excluded from prefixing**:
+
+- `.cssanimation`
+- `.cssanimation span`
+- `.infinite`
+
+### Developer Notes
+
+- Class name logic lives in `postcss/prefixer.js`
+- Ensure to run `npm run prefix:css:all` before build to apply changes
+- Follow consistent class naming in raw `.css` files to avoid malformed output
+
 # Version: 3.0.0
 
 ### Added
