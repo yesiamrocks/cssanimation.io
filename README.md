@@ -65,10 +65,10 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ### Usage Examples
 
-After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fx-fadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
+After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fx-FadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
 
 ```html
-<h1 class="cssanimation ca__fx-fadeIn">cssanimation</h1>
+<h1 class="cssanimation ca__fx-FadeIn">cssanimation</h1>
 ```
 
 _That's it! You've got a CSS animated element. Super! 🎉_
@@ -178,21 +178,21 @@ Only need fade and zoom?
 
 This includes:
 
-- `.ca__u-speed*`: Control speed
-- `.ca__u-ease*`: Easing control
-- `.ca__u-loop*`: Repeat settings
-- `.ca__u-delay*`: Add delays
+- `.ca__u-Speed*`: Control speed
+- `.ca__u-Ease*`: Easing control
+- `.ca__u-Loop*`: Repeat settings
+- `.ca__u-Delay*`: Add delays
 
 Check out the full list of utility classes with details in [`cssanimation-utilities.md`](./docs/cssanimation-reference.md#utility-classes-ungrouped).
 
 Combo Example
 
 ```html
-<h2
-    class="cssanimation ca__fx-zoomIn ca__u-speed-chill ca__u-delay-3 ca__u-ease-snappy ca__u-loop-bounce"
+<p
+    class="cssanimation ca__fx-zoomIn ca__u-SpeedChill ca__u-Delay3 ca__u-EaseSnappy ca__u-LoopTriple"
 >
     Magical Entrance!
-</h2>
+</p>
 ```
 
 <br>
