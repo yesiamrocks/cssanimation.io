@@ -178,12 +178,12 @@ Only need fade and zoom?
 
 This includes:
 
-- `.ca__u-speed-*`: Control speed
-- `.ca__u-ease-*`: Easing control
-- `.ca__u-loop-*`: Repeat settings
-- `.ca__u-delay-*`: Add delays
+- `.ca__u-speed*`: Control speed
+- `.ca__u-ease*`: Easing control
+- `.ca__u-loop*`: Repeat settings
+- `.ca__u-delay*`: Add delays
 
-Check out the full list of utility classes with details in [`cssanimation-utilities.md`](./docs/cssanimation-utilities.md).
+Check out the full list of utility classes with details in [`cssanimation-utilities.md`](./docs/cssanimation-reference.md#utility-classes-ungrouped).
 
 Combo Example
 
