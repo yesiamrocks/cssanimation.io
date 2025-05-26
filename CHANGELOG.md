@@ -1,3 +1,18 @@
+# Version: 3.0.2
+
+### Added
+
+**`ca__lt-delay` attribute support**
+Developers can now control the delay between animated letters directly from HTML markup:
+
+- Example: `<div class="ca__lt-sequence" data-ca__lt-delay="200">Hello</div>`
+- No JS changes required
+
+### Improved
+
+- Code updated to check for this attribute while preserving default delay behavior
+- Fully backward compatible
+
 # Version: 3.0.1
 
 ### Enhancements
