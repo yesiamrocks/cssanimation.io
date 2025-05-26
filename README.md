@@ -123,7 +123,7 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 <h2 class="cssanimation ca__lt-FadeIn ca__lt-random">Surprise!</h2>
 ```
 
-## Letter Animation Delay Control
+#### CSS Letter Animation Delay Control
 
 You can now customize the animation delay between letters using the `ca__lt-delay` attribute, no need to edit JavaScript!
 
