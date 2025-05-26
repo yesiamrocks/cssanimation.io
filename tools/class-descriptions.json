@@ -20,7 +20,7 @@
         "ca__flipYZoomOut": "Flips along Y axis while zooming out"
     },
     "Blur Animations": {
-        "ca__blurIn": "Blurs in from the center while fading into focus",
+        "ca__fx-BlurIn": "Blurs in from the center while fading into focus",
         "ca__blurInTop": "Blurs in from the top edge of the screen",
         "ca__blurInBottom": "Blurs in upward from the bottom",
         "ca__blurInLeft": "Blurs in from the left side",
