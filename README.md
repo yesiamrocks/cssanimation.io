@@ -75,11 +75,11 @@ _That's it! You've got a CSS animated element. Super! 🎉_
 
 ### Prefix System for CSS Animations & CSS Utilities
 
-| Prefix    | Description                                      | Example Usage                |
-| --------- | ------------------------------------------------ | ---------------------------- |
-| `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-bounce">` |
-| `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-mt-4">`    |
-| `ca__lt-` | Letter-based animations (pure CSS)               | `<h1 class="ca__lt-swing">`  |
+| Prefix    | Description                                      | Example Usage                   |
+| --------- | ------------------------------------------------ | ------------------------------- |
+| `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-BounceX">`   |
+| `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-SpeedChill">` |
+| `ca__lt-` | Letter-based animations                          | `<h1 class="ca__lt-PopOut">`    |
 
 <br>
 
@@ -87,7 +87,7 @@ _That's it! You've got a CSS animated element. Super! 🎉_
 
 Want to animate text, letter by letter?
 
-The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__lt-FadeIn`, `.ca__lt-ZoomIn`, `.ca__lt-RotateX`, etc.).
+The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__lt-FadeIn`, `.ca__lt-ZoomIn`, `.ca__lt-Snake`, etc.).
 
 **cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__lt-sequence` and `.ca__lt-random`, which must be added to any element you want to animate letter by letter.
 
@@ -125,7 +125,7 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 
 #### CSS Letter Animation Delay Control
 
-You can now customize the animation delay between letters using the `ca__lt-delay` attribute, no need to edit JavaScript!
+You can now customize the animation delay between letters using the `ca__lt-delay` **attribute**, no need to edit JavaScript!
 
 ```html
 <div class="ca__lt-sequence" ca__lt-delay="200">
