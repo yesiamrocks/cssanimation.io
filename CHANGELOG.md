@@ -18,11 +18,11 @@
 
 # Version: 3.1.0
 
-#### Added
+### Added
 
 - Automatic prefixing of GSAP animation map keys using `ca__gx-` in `gen-animation-map.mjs`
 
-#### Changed
+### Changed
 
 - Internal map generation now uses consistent naming with cssanimation.io
 - All animation names can now be referenced uniformly across utility, GSAP, and data-attribute APIs
