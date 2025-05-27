@@ -1,3 +1,21 @@
+# Version: 3.1.1
+
+### Added
+
+- `removeLetterAnimationHints()` utility in `gsap-letteranimation.js` to clean up GPU-related styles after animations complete.
+
+### Changed
+
+- Updated `animateFadeIn` and `animateFadeInLeft`:
+    - Automatically remove `will-change`, `backface-visibility`, and `transform-style` inline styles after animations.
+    - Preserves any user-provided `onComplete` callbacks.
+    - Improves memory efficiency for long-running or high-volume animation use.
+
+### Notes
+
+- Applies to both block and letter-based animations (`ca__gx-lt`).
+- No developer setup required — cleanup is built-in and automatic.
+
 # Version: 3.1.0
 
 #### Added
