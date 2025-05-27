@@ -1,23 +1,27 @@
 /**
- * Fade-in animation using gsap.fromTo() if both from/to are provided,
- * or fallback from { opacity: 0 } to defaultTo.
+ * GSAP version of `fadeInLeft` animation.
  *
  * @param {HTMLElement | Element[] | NodeList} el - Target element(s)
- * @param {Object} [options={}] - GSAP animation options
+ * @param {Object} [options={}] - Optional GSAP overrides (from, to, etc.)
  */
-export function animateFadeIn(el, options = {}) {
+export function animateFadeInLeft(el, options = {}) {
     const from = options.from || null;
     const to = options.to || null;
 
-    const defaultFrom = { opacity: 0 };
+    const defaultFrom = {
+        opacity: 0,
+        x: '-100%',
+    };
+
     const defaultTo = {
         opacity: 1,
-        duration: 1,
-        ease: 'power1.out',
+        x: 0,
+        duration: 0.8,
+        ease: 'power3.out',
         stagger: 0.05,
     };
 
-    // Helper to clean up after animation
+    // Cleanup function
     const cleanup = () => {
         if (el instanceof NodeList || Array.isArray(el)) {
             removeLetterAnimationHints(el);
@@ -34,7 +38,7 @@ export function animateFadeIn(el, options = {}) {
             ...to,
             onComplete: () => {
                 cleanup();
-                to?.onComplete?.(); // if user passed onComplete
+                to?.onComplete?.();
             },
         });
     } else if (!from && (to || Object.keys(options).length > 0)) {
@@ -52,7 +56,7 @@ export function animateFadeIn(el, options = {}) {
             typeof options.fromOpacity === 'undefined' &&
             typeof options.opacity === 'undefined'
         ) {
-            gsap.set(el, { opacity: 0 });
+            gsap.set(el, { ...defaultFrom });
         } else if (options.fromOpacity !== undefined) {
             gsap.set(el, { opacity: options.fromOpacity });
         }
@@ -61,11 +65,9 @@ export function animateFadeIn(el, options = {}) {
     } else {
         gsap.fromTo(el, defaultFrom, {
             ...defaultTo,
-            onComplete: () => {
-                cleanup();
-            },
+            onComplete: cleanup,
         });
     }
 
-    console.log('[cssanimation.io] ✅ animateFadeIn applied:', el);
+    console.log('[cssanimation.io] ✅ animateFadeInLeft applied:', el);
 }

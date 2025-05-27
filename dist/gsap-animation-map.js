@@ -6,10 +6,10 @@
  * DO NOT EDIT MANUALLY — instead, edit animation files in /src/animations/
  */
 
-import { animateAnimateFloat } from './animations/animateFloat.js';
 import { animateFadeIn } from './animations/FadeIn.js';
+import { animateFadeInLeft } from './animations/FadeInLeft.js';
 
 export const animationMap = {
-  'ca__gx-animateFloat': animateAnimateFloat,
   'ca__gx-FadeIn': animateFadeIn,
+  'ca__gx-FadeInLeft': animateFadeInLeft,
 };

@@ -15,6 +15,9 @@
 .cssanimation span {
     animation-duration: 1s;
     animation-fill-mode: both;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 .cssanimation span {

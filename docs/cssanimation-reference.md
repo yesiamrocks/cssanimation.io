@@ -362,5 +362,5 @@
 Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap="bounce">`
 
 - `FadeIn`
-- `animateFloat`
+- `FadeInLeft`
 

@@ -1,5 +1,3 @@
-// animations/animateFadeIn.js
-
 /**
  * Fade-in animation using gsap.fromTo() if both from/to are provided,
  * or fallback from { opacity: 0 } to defaultTo.
@@ -14,30 +12,59 @@ export function animateFadeIn(el, options = {}) {
     const defaultFrom = { opacity: 0 };
     const defaultTo = {
         opacity: 1,
-        duration: 50,
+        duration: 1,
         ease: 'power1.out',
         stagger: 0.05,
     };
 
+    // Helper to clean up after animation
+    const cleanup = () => {
+        if (el instanceof NodeList || Array.isArray(el)) {
+            removeLetterAnimationHints(el);
+        } else {
+            el.style.willChange = 'auto';
+            el.style.backfaceVisibility = '';
+            el.style.transformStyle = '';
+        }
+    };
+
     if (from && to) {
-        // Full fromTo specified
-        gsap.fromTo(el, from, { ...defaultTo, ...to });
+        gsap.fromTo(el, from, {
+            ...defaultTo,
+            ...to,
+            onComplete: () => {
+                cleanup();
+                to?.onComplete?.(); // if user passed onComplete
+            },
+        });
     } else if (!from && (to || Object.keys(options).length > 0)) {
-        // If user passed only to-style values (or a partial config)
         const finalTo = {
             ...defaultTo,
             ...(to || options),
+            onComplete: () => {
+                cleanup();
+                options?.onComplete?.();
+            },
         };
 
-        // Optionally set fromOpacity
-        if (options.fromOpacity !== undefined) {
+        if (
+            typeof options.from === 'undefined' &&
+            typeof options.fromOpacity === 'undefined' &&
+            typeof options.opacity === 'undefined'
+        ) {
+            gsap.set(el, { opacity: 0 });
+        } else if (options.fromOpacity !== undefined) {
             gsap.set(el, { opacity: options.fromOpacity });
         }
 
         gsap.to(el, finalTo);
     } else {
-        // No user config: use default fade fromTo
-        gsap.fromTo(el, defaultFrom, defaultTo);
+        gsap.fromTo(el, defaultFrom, {
+            ...defaultTo,
+            onComplete: () => {
+                cleanup();
+            },
+        });
     }
 
     console.log('[cssanimation.io] ✅ animateFadeIn applied:', el);
