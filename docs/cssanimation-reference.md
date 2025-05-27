@@ -361,8 +361,8 @@
 ## GSAP Data Attribute Animations
 Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap="bounce">`
 
+- `animateFloat`
 - `bounce`
-- `effect3D`
 - `leBounce`
 - `leMoveFromLeft`
 

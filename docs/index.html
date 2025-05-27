@@ -37,6 +37,22 @@
     <p class="demo" ca-gsap="leBounce">Letter Bounce</p>
     <h1 class="demo" ca-gsap="leMoveFromLeft">Animate Me</h1>
     <!-- Load GSAP from CDN -->
+
+    <!-- Using trigger + preset -->
+    <div class="ca__gt-hover" ca-gsap="bounce">Hover Me</div>
+
+    <div style="margin-top: 1000px;">gap</div>
+
+    <!-- Using both + override -->
+    <div class="ca__gt-click" ca-gsap="bounce"
+      data-gsap='{"duration": 0.5}'>Click Me</div>
+
+    <div style="margin-top: 500px;">gap</div>
+
+    <!-- Using only trigger + inline config -->
+    <div class="ca__gt-scroll" data-gsap='{"x": 50, "opacity": 1}'>Scroll
+      me</div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
 
