@@ -7,13 +7,9 @@
  */
 
 import { animateAnimateFloat } from './animations/animateFloat.js';
-import { animateBounce } from './animations/bounce.js';
-import { animateLeBounce } from './animations/leBounce.js';
-import { animateLeMoveFromLeft } from './animations/leMoveFromLeft.js';
+import { animateFadeIn } from './animations/FadeIn.js';
 
 export const animationMap = {
-  'animateFloat': animateAnimateFloat,
-  'bounce': animateBounce,
-  'leBounce': animateLeBounce,
-  'leMoveFromLeft': animateLeMoveFromLeft,
+  'ca__gx-animateFloat': animateAnimateFloat,
+  'ca__gx-FadeIn': animateFadeIn,
 };

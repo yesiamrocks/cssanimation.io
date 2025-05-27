@@ -15,7 +15,6 @@
       display: inline-block;
       padding: 20px;
       font-size: 24px;
-      background: #f0f0f0;
       margin: 10px;
       overflow: hidden;
     }
@@ -29,29 +28,26 @@
       Letter Animation Random
     </p>
 
-    <!-- Animated elements -->
-    <p class="demo" ca-gsap="bounce">
-      Bouncing Text
+    <!-- Simple fadeIn -->
+    <p class="demo" ca-gsap="ca__gx-FadeIn">Fade</p>
+
+    <!-- With from + to -->
+    <p class="demo" ca-gsap="ca__gx-FadeIn"
+      ca-gsap-options='{
+     "from": { "opacity": 0, "y": 80, "scale": 0 },
+     "to": { "opacity": 1, "y": 0, "duration": 1.5, "ease": "sine.out", "scale": 1.2}
+   }'>
+      Fade from bottom
     </p>
 
-    <p class="demo" ca-gsap="leBounce">Letter Bounce</p>
-    <h1 class="demo" ca-gsap="leMoveFromLeft">Animate Me</h1>
-    <!-- Load GSAP from CDN -->
-
-    <!-- Using trigger + preset -->
-    <div class="ca__gt-hover" ca-gsap="bounce">Hover Me</div>
-
-    <div style="margin-top: 1000px;">gap</div>
-
-    <!-- Using both + override -->
-    <div class="ca__gt-click" ca-gsap="bounce"
-      data-gsap='{"duration": 0.5}'>Click Me</div>
-
-    <div style="margin-top: 500px;">gap</div>
-
-    <!-- Using only trigger + inline config -->
-    <div class="ca__gt-scroll" data-gsap='{"x": 50, "opacity": 1}'>Scroll
-      me</div>
+    <!-- Letter-based effect -->
+    <p class="demo" ca-gsap="ca__gx-FadeIn" ca__letter="true"
+      ca-gsap-options='{
+     "from": { "opacity": 0, "y": 10 },
+     "to": { "opacity": 1, "y": 0, "duration": 1.2, "stagger": 0.3 }
+   }'>
+      Animated Letters
+    </p>
 
     <script
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>

@@ -4,7 +4,7 @@ import path from 'path';
 
 // 📁 Define the source animations directory and output map file location
 const animationDir = './src/animations';
-const outputPath = './src/generated-animation-map.js';
+const outputPath = './src/gsap-animation-map.js';
 
 // 📄 Read all files in the animations directory and filter for .js files only
 const files = fs
@@ -40,7 +40,7 @@ files.forEach((file) => {
     imports.push(`import { ${funcName} } from './animations/${base}.js';`);
 
     // 📌 Add a key-value pair to the animation map (e.g., 'bounce': animateBounce)
-    mapEntries.push(`  '${base}': ${funcName},`);
+    mapEntries.push(`  'ca__gx-${base}': ${funcName},`);
 });
 
 // 🛠 Combine everything into the final output content for the map file
