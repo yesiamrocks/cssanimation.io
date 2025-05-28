@@ -1,3 +1,18 @@
+# Version: 3.1.2
+
+### Documentation
+
+- Enhanced GSAP Letter Animation Guide
+- Added detailed usage instructions for the ca\_\_gx-lt attribute supporting sequence, reverse, and random values.
+- Includes updated examples, automatic span-wrapping explanation, and simplified ca-gsap usage syntax.
+
+### Changed
+
+- index.js now loads full cssanimation.io stack (CSS + letter animations + GSAP) in one import
+- Removed direct UMD imports from ESM entry to prevent bundler issues
+- Improved DX: using `import 'cssanimationio'` now auto-initializes animations
+- Enhanced debug tooling with optional `window.__CA_DEBUG` flag
+
 # Version: 3.1.1
 
 ### Added

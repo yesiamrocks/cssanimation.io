@@ -1,7 +1,7 @@
 /**
  * ca-letteranimation.js - Letter-by-letter animation enhancements
  * Part of cssanimation.io
- * Version: 3.0.2
+ * Version: 3.1.2
  * Author: Shafayetul Islam Pavel
  * Find me at: https://www.linkedin.com/in/shafayetul/
  * Email: hello@cssanimation.io
