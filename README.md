@@ -16,8 +16,7 @@
 
 **cssanimation.io** is a lightweight, modular **CSS animation library** designed for developers, designers, and UI ninjas. It provides over **300+ CSS and GSAP-powered plug-and-play animation** classes to bring your interfaces to life — from simple fades and zooms to dynamic letter effects and 3D transitions.
 
-You stay in control, just apply the [class names](./docs/cssanimation-reference.md) when and where you want them.
-**Zero setup. No JavaScript required. Just clean, reusable animations.**
+You stay in control, just apply the [class names](./docs/cssanimation-reference.md) when and where you want them. **Zero setup. Just clean, reusable animations.**
 
 ### Why Developers Love It
 
@@ -57,7 +56,7 @@ Include the `cssanimation.css` library into the `<head>`:
 ```html
 <head>
     <link
-        href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.css"
+        href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.min.css"
         rel="stylesheet"
     />
 </head>
@@ -65,7 +64,7 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ### Usage Examples
 
-After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fx-FadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md) or [check the website](https://cssanimation.io/getting-started.html).
+After installing `cssanimation.css` library, now add the class `.cssanimation` and the class of animation name like `.ca__fx-FadeIn` for fade in animation to an element. For list of animation class name [click here](./docs/cssanimation-reference.md).
 
 ```html
 <h1 class="cssanimation ca__fx-FadeIn">cssanimation</h1>
@@ -98,19 +97,19 @@ What Are **Sequence** and **Random** Animations?
 
 #### Step 1. Include the Script
 
-If you're using a `<script>` tag (e.g., for plain HTML), add this right **before the closing `</body>` tag**:
+You’ve already installed the cssanimation.io library, so there’s nothing else you need to do if you’re bundling it via a module system like Vite, Webpack, or using itwith a framework (React, Vue, etc.).
+
+If you’re using plain HTML without a bundler, just add the following `<script>` **before the closing `</body>` tag**:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/ca-letteranimation.js"></script>
 ```
 
-> _Note: If you're already importing the library in your JavaScript using: `import 'cssanimationio';` you can skip Step 1, as the animation script is already included in your build._
-
 #### Step 2. Add Animation classes to Your HTML
 
 | Class              | What It Does                                    |
 | ------------------ | ----------------------------------------------- |
-| `.cssanimation`    | Base class for all animations                   |
+| `.cssanimation`    | Base class for all animations (\*required)      |
 | `.ca__lt-FadeIn`   | A letter animation class (Fades in each letter) |
 | `.ca__lt-sequence` | Animates letters in order or                    |
 | `.ca__lt-random`   | Animates letters in random order                |
@@ -128,11 +127,13 @@ If you're using a `<script>` tag (e.g., for plain HTML), add this right **before
 You can now customize the animation delay between letters using the `ca__lt-delay` **attribute**, no need to edit JavaScript!
 
 ```html
-<div class="ca__lt-sequence" ca__lt-delay="200">
+<div class="cssanimation ca__lt-FadeIn ca__lt-sequence" ca__lt-delay="200">
     This will animate letter-by-letter with a 200ms step
 </div>
 
-<div class="ca__lt-random" ca__lt-delay="50">Random delay with 50ms steps</div>
+<div class="cssanimation ca__lt-FadeIn ca__lt-random" ca__lt-delay="50">
+    Random delay with 50ms steps
+</div>
 ```
 
 - `ca__lt-delay` sets the delay step in milliseconds for each letter span.
@@ -255,7 +256,7 @@ import { gsap } from 'gsap';
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
 <!-- cssanimation.io's GSAP script -->
-<script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-gsap.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-gsap.umd.min.js"></script>
 ```
 
 > Note: If you haven't already installed and imported the library in your project, make sure to do so first.
@@ -265,10 +266,10 @@ import { gsap } from 'gsap';
 Add the GSAP animation name in the `ca-gsap` data atribute like:
 
 ```html
-<h1 ca-gsap="fadeIn">cssanimation.io GSAP</h1>
+<h1 ca-gsap="ca__gx-FadeIn">cssanimation.io GSAP</h1>
 ```
 
-- `ca-gsap="fadeIn"` – selects which animation to use (from `src/animations/`)
+- `ca-gsap="ca__gx-FadeIn"` – selects which animation to use
 - `ca-gsap-options='{}'` – passes GSAP options to the animation function
 
 📌 **Tip**: Check the full list of animation class names in the [cssanimation-reference.md](./docs/cssanimation-reference.md).
