@@ -29,27 +29,57 @@ You stay in control, just apply the [class names](./docs/cssanimation-reference.
 
 ## ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue) CSS Animation Guide
 
-### Option A: Install with NPM / Yarn
+### Installation Guide
+
+#### Install via NPM
 
 ```bash
 npm i cssanimationio
-# or
-yarn add cssanimationio
 ```
 
-Import it into your file:
+#### Import Everything with One Line
 
 ```bash
 import 'cssanimationio';
 ```
 
-In your CSS/SCSS (if applicable):
+This will:
 
-```scss
-@import 'cssanimationio/dist/cssanimation.css';
+- Load all core CSS animations
+- Load all utility classes
+- Initialize the letter animation engine
+- Import all GSAP animations and make them ready to use
+
+#### Full GSAP + CSS Import (Bundler)
+
+```bash
+import 'cssanimationio/css';
+import { animationMap } from 'cssanimationio/gsap';
 ```
 
-### Option B: Install via CDN
+#### Individual Imports
+
+CSS only
+
+```bash
+import 'cssanimationio/css';           // Core CSS
+import 'cssanimationio/utility';       // Utility CSS
+```
+
+GSAP only
+
+```bash
+import { animationMap } from 'cssanimationio/gsap';
+// or use CDN/UMD from cssanimationio/gsap/min.js
+```
+
+CSS Letter Animation
+
+```bash
+import { initLetterAnimations } from 'cssanimationio/letter';
+```
+
+### Install via CDN
 
 Include the `cssanimation.css` library into the `<head>`:
 
@@ -259,8 +289,6 @@ import { gsap } from 'gsap';
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-gsap.umd.min.js"></script>
 ```
 
-> Note: If you haven't already installed and imported the library in your project, make sure to do so first.
-
 ### 2. Add Animation Classes to Your Elements
 
 Add the GSAP animation name in the `ca-gsap` data atribute like:
@@ -274,7 +302,21 @@ Add the GSAP animation name in the `ca-gsap` data atribute like:
 
 📌 **Tip**: Check the full list of animation class names in the [cssanimation-reference.md](./docs/cssanimation-reference.md).
 
-### Supported `ca-gsap-options`
+### Custom Animation Options with `ca-gsap-options`
+
+You can control GSAP animation parameters using a JSON string inside the `ca-gsap-options` attribute:
+
+```html
+<div
+    ca-gsap="ca__gx-FadeIn"
+    ca-gsap-options='{
+  "from": { "opacity": 0, "y": 80, "scale": 0 },
+  "to": { "opacity": 1, "y": 0, "duration": 1.5, "ease": "sine.out", "scale": 1.2 }
+}'
+>
+    Custom Animated Box
+</div>
+```
 
 You can use any valid GSAP properties, including:
 | Option | Example |
@@ -288,12 +330,6 @@ You can use any valid GSAP properties, including:
 | `opacity` | `"opacity": 0.7` |
 | `rotation` | `"rotation": 45` |
 | `scaleX`, `scaleY` | `"scaleX": 1.3` |
-
-```html
-<div ca-gsap="fadeIn" ca-gsap-options='{"opacity": 0, "duration": 2}'>
-    Fade in this text
-</div>
-```
 
 ### Common Mistakes
 
@@ -317,11 +353,29 @@ Correct:
 
 ### 3. GSAP Letter Animations
 
-For **letter-by-letter animation**, just use any `lt*` animation class like `.ca__gsap-leFadeIn`.
+You can apply **letter-by-letter GSAP animation**, by using the `ca__gx-lt` attribute with one of the following modes:
+
+- `sequence` – animates letters from left to right
+- `reverse` – animates letters from right to left
+- `random` – animates letters in random order
+
+Use it alongside the `ca-gsap` attribute like this:
 
 ```html
-<h1 class="cssanimation ca__gsap-leFadeIn">Amazing!</h1>
+<h2 ca-gsap="ca__gx-FadeIn" ca__gx-lt="sequence">
+    letter-by-letter GSAP animation
+</h2>
+<h2 ca-gsap="ca__gx-FadeIn" ca__gx-lt="reverse">
+    letter-by-letter GSAP animation
+</h2>
+<h2 ca-gsap="ca__gx-FadeIn" ca__gx-lt="random">
+    letter-by-letter GSAP animation
+</h2>
 ```
+
+Each letter will be automatically wrapped in a `<span>` and animated based on the chosen order mode.
+
+### 🎉 That’s It!
 
 ## CSS vs. GSAP – Which Animation Version Should You Use?
 
