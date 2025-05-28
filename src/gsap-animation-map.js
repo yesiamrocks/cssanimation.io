@@ -8,8 +8,10 @@
 
 import { animateFadeIn } from './animations/FadeIn.js';
 import { animateFadeInLeft } from './animations/FadeInLeft.js';
+import { animateFadeInRight } from './animations/FadeInRight.js';
 
 export const animationMap = {
   'ca__gx-FadeIn': animateFadeIn,
   'ca__gx-FadeInLeft': animateFadeInLeft,
+  'ca__gx-FadeInRight': animateFadeInRight,
 };
