@@ -2,18 +2,20 @@
 
 ## Blur Animations
 - `ca__fx-BlurIn` — Blurs in from the center while fading into focus
+- `ca__fx-BlurInTop` — Blurs in from the top edge of the screen
+- `ca__fx-BlurInBottom` — Blurs in upward from the bottom
+- `ca__fx-BlurInLeft` — Blurs in from the left side
+- `ca__fx-BlurInRight` — Blurs in from the right side
+- `ca__fx-BlurOut` — Blurs and fades out toward the center
+- `ca__fx-BlurOutTop` — Blurs and exits upward
+
+## Bounce Animations
+- `ca__fx-BounceFromDown` — Bounces up from below the screen
 
 ## Core Animation Classes (Ungrouped)
-- `ca__fx-BlurInBottom`
-- `ca__fx-BlurInLeft`
-- `ca__fx-BlurInRight`
-- `ca__fx-BlurInTop`
-- `ca__fx-BlurOut`
 - `ca__fx-BlurOutBottom`
 - `ca__fx-BlurOutLeft`
 - `ca__fx-BlurOutRight`
-- `ca__fx-BlurOutTop`
-- `ca__fx-BounceFromDown`
 - `ca__fx-BounceFromTop`
 - `ca__fx-BounceInBottom`
 - `ca__fx-BounceInLeft`
@@ -359,9 +361,9 @@
 - `ca__u-SpeedSnail`
 
 ## GSAP Data Attribute Animations
-Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap="bounce">`
+Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap="FadeIn">`
 
-- `FadeIn`
-- `FadeInLeft`
-- `FadeInRight`
+- `ca__gx-FadeIn`
+- `ca__gx-FadeInLeft`
+- `ca__gx-FadeInRight`
 

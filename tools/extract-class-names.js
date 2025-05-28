@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Input files to scan
+// Input files to scan for class names
 const files = ['dist/cssanimation.css', 'dist/cssanimation-utility.css'];
 
 // Section headers for output
@@ -93,19 +93,22 @@ for (const filePath of files) {
     }
 }
 
-// Step 5: GSAP animation listing
-const animationsDir = path.resolve(__dirname, '../src/animations');
-if (fs.existsSync(animationsDir)) {
-    const files = fs
-        .readdirSync(animationsDir)
-        .filter((f) => f.endsWith('.js'));
-    const names = files.map((f) => path.basename(f, '.js')).sort();
+// Step 5: GSAP animation listing (from gsap-animation-map.js)
+const gsapMapPath = path.resolve(__dirname, '../src/gsap-animation-map.js');
+if (fs.existsSync(gsapMapPath)) {
+    const content = fs.readFileSync(gsapMapPath, 'utf8');
+    const gsapClassRegex = /'ca__gx-([a-zA-Z0-9_-]+)'/g;
+    const names = new Set();
+    let match;
+    while ((match = gsapClassRegex.exec(content)) !== null) {
+        names.add(`ca__gx-${match[1]}`);
+    }
 
-    if (names.length > 0) {
+    if (names.size > 0) {
         output += '## GSAP Data Attribute Animations\n';
         output +=
-            'Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap="bounce">`\n\n';
-        names.forEach((name) => {
+            'Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap=\"FadeIn\">`\n\n';
+        [...names].sort().forEach((name) => {
             output += `- \`${name}\`\n`;
         });
         output += '\n';

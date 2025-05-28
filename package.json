@@ -75,9 +75,16 @@
         "access": "public"
     },
     "exports": {
-        ".": "./index.js",
-        "./gsap": "./dist/cssanimation-gsap.js",
-        "./gsap-umd": "./dist/cssanimation-gsap.umd.js",
+        ".": {
+            "import": "./index.js"
+        },
+        "./gsap": {
+            "import": "./dist/cssanimation-gsap.esm.js",
+            "require": "./dist/cssanimation-gsap.umd.js"
+        },
+        "./gsap/min": {
+            "require": "./dist/cssanimation-gsap.umd.min.js"
+        },
         "./letter": "./dist/ca-letteranimation.js",
         "./css": "./dist/cssanimation.css",
         "./utility": "./dist/cssanimation-utility.css",
