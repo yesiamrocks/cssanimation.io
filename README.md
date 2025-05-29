@@ -21,7 +21,7 @@ You stay in control, just apply the [class names](./reference/cssanimation-refer
 ### Why Developers Love It
 
 - **Over 300 prebuilt animations**: fade, zoom, rotate, fly, bounce, skew, and more.
-- **(GSAP support:)(https://github.com/yesiamrocks/gsapanimation)** Add powerful animations with GreenSock.
+- **[GSAP support:](https://github.com/yesiamrocks/gsapanimation)** Add powerful animations with GreenSock.
 - Animations for **text, elements and individual letters**.
 - **Easy to use**: just add a class, and your animation is live.
 - **Customizable**: tweak animation properties to fit your design.
