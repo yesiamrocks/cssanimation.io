@@ -1,7 +1,7 @@
 /**
  * ca-letteranimation.js - Letter, word, and line animation enhancements
  * Part of cssanimation.io (CSS-only version)
- * Version: 4.5.4 (Updated version number for accurate dot separator handling)
+ * Version: 4.0.1
  * Author: Shafayetul Islam Pavel
  * Description: Applies letter-by-letter, word-by-word, and line-by-line CSS animations to text.
  */
