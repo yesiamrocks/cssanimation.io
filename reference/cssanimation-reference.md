@@ -360,10 +360,3 @@
 - `ca__u-SpeedQuick`
 - `ca__u-SpeedSnail`
 
-## GSAP Data Attribute Animations
-Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap="FadeIn">`
-
-- `ca__gx-FadeIn`
-- `ca__gx-FadeInLeft`
-- `ca__gx-FadeInRight`
-

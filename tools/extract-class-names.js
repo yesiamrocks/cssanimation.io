@@ -94,28 +94,28 @@ for (const filePath of files) {
 }
 
 // Step 5: GSAP animation listing (from gsap-animation-map.js)
-const gsapMapPath = path.resolve(__dirname, '../src/gsap-animation-map.js');
-if (fs.existsSync(gsapMapPath)) {
-    const content = fs.readFileSync(gsapMapPath, 'utf8');
-    const gsapClassRegex = /'ca__gx-([a-zA-Z0-9_-]+)'/g;
-    const names = new Set();
-    let match;
-    while ((match = gsapClassRegex.exec(content)) !== null) {
-        names.add(`ca__gx-${match[1]}`);
-    }
+// const gsapMapPath = path.resolve(__dirname, '../src/gsap-animation-map.js');
+// if (fs.existsSync(gsapMapPath)) {
+//     const content = fs.readFileSync(gsapMapPath, 'utf8');
+//     const gsapClassRegex = /'ca__gx-([a-zA-Z0-9_-]+)'/g;
+//     const names = new Set();
+//     let match;
+//     while ((match = gsapClassRegex.exec(content)) !== null) {
+//         names.add(`ca__gx-${match[1]}`);
+//     }
 
-    if (names.size > 0) {
-        output += '## GSAP Data Attribute Animations\n';
-        output +=
-            'Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap=\"FadeIn\">`\n\n';
-        [...names].sort().forEach((name) => {
-            output += `- \`${name}\`\n`;
-        });
-        output += '\n';
-    }
-}
+//     if (names.size > 0) {
+//         output += '## GSAP Data Attribute Animations\n';
+//         output +=
+//             'Use these with the `ca-gsap` attribute, e.g. `<div ca-gsap=\"FadeIn\">`\n\n';
+//         [...names].sort().forEach((name) => {
+//             output += `- \`${name}\`\n`;
+//         });
+//         output += '\n';
+//     }
+// }
 
 // Step 6: Output file
-const outPath = './docs/cssanimation-reference.md';
+const outPath = './reference/cssanimation-reference.md';
 fs.writeFileSync(outPath, output, 'utf8');
 console.log(`✅ Class reference saved to ${outPath}`);

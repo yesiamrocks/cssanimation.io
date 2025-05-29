@@ -1,3 +1,24 @@
+# Version: 4.0.0
+
+## Major Update: GSAP Integration Moved to New Repo
+
+This release removes all GSAP-related code, build logic, and dependencies from the `cssanimation.io` package.
+
+**What's Changed:**
+
+- 🧹 Removed `rollup.config.js` and the `build:gsap` script
+- 🗃️ Deleted all GSAP output files from `/dist` (e.g., `cssanimation-gsap.*`)
+- 📦 Removed GSAP from `devDependencies` and `peerDependencies`
+- 🎯 Updated `package.json` exports to reflect CSS-only assets
+- 🔗 Added crosslink in `README.md` to [`gsapanimation`](https://github.com/yesiamrocks/gsapanimation) — a dedicated repo for GSAP triggers, letter animation, and ScrollTrigger support
+
+## New Structure Moving Forward:
+
+- **`cssanimation.io`**: Pure CSS animation classes.
+- **[`gsapanimation`](https://github.com/yesiamrocks/gsapanimation)**: JavaScript-based enhancements powered by GSAP
+
+This cleanup makes `cssanimation.io` lighter, faster, and more focused. Perfect for storytelling sites, Tailwind projects, and CSS-only workflows.
+
 # Version: 3.1.2
 
 ### Documentation

@@ -1,6 +1,6 @@
 {
     "name": "cssanimationio",
-    "version": "3.1.2",
+    "version": "4.0.0",
     "description": "A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.",
     "main": "index.js",
     "style": "dist/cssanimation.css",
@@ -33,7 +33,7 @@
         "LICENSE"
     ],
     "scripts": {
-        "build": "npm run generate:map && npm run prefix:css:all && npm run copy:assets && npm run build:classlist && npm run build:gsap",
+        "build": "npm run prefix:css:all && npm run copy:assets && npm run build:classlist",
         "build:css:basic": "postcss src/*.css -d dist/ --no-map",
         "prefix:css:all": "npm run prefix:css && npm run prefix:utility",
         "start": "postcss src/*.css -d dist/ --watch --no-map",
@@ -42,23 +42,14 @@
         "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
         "format:css": "prettier --write \"src/**/*.css\"",
         "build:classlist": "node tools/extract-class-names.js",
-        "build:gsap": "rollup -c",
-        "generate:map": "node scripts/gen-animation-map.mjs",
         "prefix:css": "postcss src/cssanimation.css -o dist/cssanimation.css && postcss src/cssanimation.css -o dist/cssanimation.min.css --env production",
         "prefix:utility": "postcss src/cssanimation-utility.css -o dist/cssanimation-utility.css && postcss src/cssanimation-utility.css -o dist/cssanimation-utility.min.css --env production",
         "export:modules": "node tools/export-modules.js"
     },
-    "peerDependencies": {
-        "gsap": "^3.12.0"
-    },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^28.0.3",
-        "@rollup/plugin-node-resolve": "^16.0.1",
-        "@rollup/plugin-terser": "^0.4.4",
         "autoprefixer": "^10.4.21",
         "cpx": "^1.2.1",
         "cssnano": "^7.0.7",
-        "gsap": "^3.13.0",
         "mkdirp": "^3.0.1",
         "postcss": "^8.4.31",
         "postcss-cli": "^11.0.1",
@@ -67,7 +58,6 @@
         "postcss-selector-namespace": "^1.2.2",
         "postcss-selector-prefix": "^5.0.1",
         "prettier": "^3.5.3",
-        "rollup": "^4.41.1",
         "stylelint": "^16.19.1",
         "stylelint-config-standard": "^38.0.0"
     },
@@ -77,13 +67,6 @@
     "exports": {
         ".": {
             "import": "./index.js"
-        },
-        "./gsap": {
-            "import": "./dist/cssanimation-gsap.esm.js",
-            "require": "./dist/cssanimation-gsap.umd.js"
-        },
-        "./gsap/min": {
-            "require": "./dist/cssanimation-gsap.umd.min.js"
         },
         "./css": "./dist/cssanimation.css",
         "./css/min": "./dist/cssanimation.min.css",
