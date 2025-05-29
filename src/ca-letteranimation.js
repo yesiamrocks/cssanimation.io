@@ -1,13 +1,52 @@
 /**
  * ca-letteranimation.js - Letter, word, and line animation enhancements
  * Part of cssanimation.io (CSS-only version)
- * Version: 4.4.1
+ * Version: 4.5.4 (Updated version number for accurate dot separator handling)
  * Author: Shafayetul Islam Pavel
  * Description: Applies letter-by-letter, word-by-word, and line-by-line CSS animations to text.
  */
 
 (function () {
     if (typeof window === 'undefined') return;
+
+    // --- Utility Function to get Computed Animation Duration ---
+    function getCssAnimationDuration(element, className) {
+        if (!element || !className) return null;
+
+        const tempEl = document.createElement('span');
+        tempEl.style.visibility = 'hidden';
+        tempEl.style.position = 'absolute';
+        tempEl.className = className;
+        document.body.appendChild(tempEl);
+
+        const computedStyle = window.getComputedStyle(tempEl);
+        let duration = computedStyle.getPropertyValue('animation-duration');
+
+        document.body.removeChild(tempEl);
+
+        if (duration) {
+            duration = duration.trim();
+            if (duration.endsWith('ms')) {
+                return parseFloat(duration);
+            } else if (duration.endsWith('s')) {
+                return parseFloat(duration) * 1000;
+            }
+        }
+        return null;
+    }
+    // --- End Utility Function ---
+
+    // --- Utility Function to get a single number from an attribute ---
+    function getSingleNumberAttribute(attrValue) {
+        if (attrValue) {
+            const num = Number(attrValue.trim());
+            if (!isNaN(num)) {
+                return num;
+            }
+        }
+        return null; // Return null if not a valid number
+    }
+    // --- End Utility Function ---
 
     // Inject fallback styles for animated spans
     const style = document.createElement('style');
@@ -33,7 +72,7 @@
     function animateLetters(attrName, animationType) {
         document.querySelectorAll(`[${attrName}]`).forEach((el) => {
             const delayAttr = el.getAttribute('ca__lt-delay') || '100';
-            const delaySteps = delayAttr.trim().split(/\s+/).map(Number);
+            const delaySteps = parseMultiValueDelaySteps(delayAttr, 100);
             const classList = (el.getAttribute(attrName) || 'ca__lt-letter')
                 .trim()
                 .split(/\s+/);
@@ -49,16 +88,38 @@
 
     function animateWords() {
         document.querySelectorAll('[ca__lt-word]').forEach((el) => {
-            const delayAttr = el.getAttribute('ca__lt-delay') || '120';
-            const delaySteps = delayAttr.trim().split(/\s+/).map(Number);
+            const delayAttr = el.getAttribute('ca__lt-delay') || '100';
+            const delaySteps = parseMultiValueDelaySteps(delayAttr, 100);
+
             const classList = (el.getAttribute('ca__lt-word') || 'ca__lt-word')
                 .trim()
                 .split(/\s+/);
-            el.innerHTML = processTextBy(
+
+            let baseDuration = getSingleNumberAttribute(
+                el.getAttribute('ca__lt-base-duration'),
+            );
+
+            if (baseDuration === null && classList.length > 0) {
+                const firstClassName = classList[0];
+                const detectedDuration = getCssAnimationDuration(
+                    el,
+                    firstClassName,
+                );
+                if (detectedDuration !== null) {
+                    baseDuration = detectedDuration;
+                }
+            }
+
+            if (baseDuration === null) {
+                baseDuration = 1000; // Default if nothing else is found
+            }
+
+            el.innerHTML = processSequentialBy(
                 'word',
                 el.textContent,
                 delaySteps,
                 classList,
+                baseDuration,
             );
         });
     }
@@ -66,17 +127,39 @@
     function animateLines() {
         document.querySelectorAll('[ca__lt-line]').forEach((el) => {
             const delayAttr = el.getAttribute('ca__lt-delay') || '150';
-            const delaySteps = delayAttr.trim().split(/\s+/).map(Number);
+            const delaySteps = parseMultiValueDelaySteps(delayAttr, 150);
+
             const classList = (el.getAttribute('ca__lt-line') || 'ca__lt-line')
                 .trim()
                 .split(/\s+/);
             const lineSeparator =
                 el.getAttribute('ca__lt-separator') === 'dot' ? 'dot' : 'br';
-            el.innerHTML = processTextBy(
+
+            let baseDuration = getSingleNumberAttribute(
+                el.getAttribute('ca__lt-base-duration'),
+            );
+
+            if (baseDuration === null && classList.length > 0) {
+                const firstClassName = classList[0];
+                const detectedDuration = getCssAnimationDuration(
+                    el,
+                    firstClassName,
+                );
+                if (detectedDuration !== null) {
+                    baseDuration = detectedDuration;
+                }
+            }
+
+            if (baseDuration === null) {
+                baseDuration = 1000; // Default if nothing else is found
+            }
+
+            el.innerHTML = processSequentialBy(
                 'line',
                 el.textContent,
                 delaySteps,
                 classList,
+                baseDuration,
                 lineSeparator,
             );
         });
@@ -104,7 +187,6 @@
             }
         });
 
-        const total = chars.length;
         const spans = chars.map((char, index) => {
             if (char !== ' ') {
                 const className =
@@ -151,11 +233,26 @@
         return result;
     }
 
-    function processTextBy(
+    function parseMultiValueDelaySteps(delayAttr, defaultValue) {
+        if (!delayAttr) {
+            return [defaultValue];
+        }
+        const parsed = delayAttr
+            .trim()
+            .split(/\s+/)
+            .map((x) => {
+                const num = Number(x);
+                return isNaN(num) ? defaultValue : num;
+            });
+        return parsed.length > 0 ? parsed : [defaultValue];
+    }
+
+    function processSequentialBy(
         type,
         text,
         delaySteps,
         classList,
+        baseDuration,
         lineSeparator = 'br',
     ) {
         let units = [];
@@ -163,26 +260,70 @@
         if (type === 'word') {
             units = text.split(/(\s+)/);
         } else if (type === 'line') {
-            units =
-                lineSeparator === 'dot'
-                    ? text.split(/\./).map((s) => s + '.')
-                    : text.split(/(\n|<br\s*\/?>)/);
+            if (lineSeparator === 'dot') {
+                // FIX: Smarter splitting and re-assembly for dot separator
+                // Split by capturing the dot to preserve it in the array
+                const rawParts = text.split(/(\.)/);
+                const finalUnits = [];
+                for (let i = 0; i < rawParts.length; i++) {
+                    let part = rawParts[i];
+
+                    // Skip empty parts that result from splitting (e.g., if text ends with a dot)
+                    if (part === '') continue;
+
+                    // If the current part is a text segment and the next part is a dot, combine them
+                    if (
+                        part !== '.' &&
+                        i + 1 < rawParts.length &&
+                        rawParts[i + 1] === '.'
+                    ) {
+                        finalUnits.push(part + '.');
+                        i++; // Increment 'i' to consume the dot part that was just combined
+                    } else if (part !== '.') {
+                        // It's a text part without a following dot
+                        finalUnits.push(part);
+                    }
+                    // If 'part' is '.' and it wasn't combined, it's a standalone dot that should be skipped.
+                    // The 'part !== '.' ' check handles this by only pushing non-dot parts.
+                }
+                units = finalUnits;
+            } else {
+                units = text.split(/(\n|<br\s*\/?>)/);
+            }
         }
 
+        let classAndDelayIndex = 0;
+        let animationOffset = 0;
+
         return units
-            .map((unit, index) => {
-                if (!unit.trim()) return unit;
+            .map((unit) => {
+                if (!unit.trim()) {
+                    return unit;
+                }
+
                 const className =
-                    classList[index] || classList[classList.length - 1];
-                const delay =
-                    delaySteps[index] != null
-                        ? delaySteps[index]
+                    classList[classAndDelayIndex] ||
+                    classList[classList.length - 1];
+
+                const currentUnitSpecificDelay =
+                    delaySteps[classAndDelayIndex] != null
+                        ? delaySteps[classAndDelayIndex]
                         : delaySteps[delaySteps.length - 1];
-                return `<span class="${className}" style="
-                animation-delay:${delay * index}ms;
-                -moz-animation-delay:${delay * index}ms;
-                -webkit-animation-delay:${delay * index}ms;
-            ">${unit}</span>`;
+
+                const finalAnimationDelay =
+                    animationOffset + currentUnitSpecificDelay;
+
+                const output = `<span class="${className}" style="
+                    animation-delay:${finalAnimationDelay}ms;
+                    -moz-animation-delay:${finalAnimationDelay}ms;
+                    -webkit-animation-delay:${finalAnimationDelay}ms;
+                ">${unit}</span>`;
+
+                animationOffset = finalAnimationDelay + baseDuration;
+
+                classAndDelayIndex++;
+
+                return output;
             })
             .join('');
     }

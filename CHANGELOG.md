@@ -1,3 +1,50 @@
+# Version: 4.1.0
+
+### Features
+
+- **Support for `ca__lt-duration` Attribute**
+
+    - Developers can now manually specify base animation duration using:
+        ```html
+        ca__lt-duration="2000"
+        ```
+
+- **Auto-Detect Animation Duration from CSS**
+
+    - If `ca__lt-duration` is not provided, the script will:
+        1. Read the `animation-duration` from the first animation class
+        2. Fallback to `1000ms` if unavailable
+
+- **Robust Delay Handling with `parseDelaySteps()`**
+
+    - Malformed or non-numeric delay values in `ca__lt-delay` are ignored safely
+    - Fallbacks to default values when necessary
+
+- **Improved Sequential Timing Logic**
+
+    - `processSequentialBy()` now:
+        - Adds `currentUnitDelay + baseDuration` to create true chained animations
+        - Supports precise per-unit timing (e.g. `300 500 800`)
+        - Applies consistent cumulative offset behavior across words/lines
+
+- **Better Code Readability & Maintenance**
+    - Delay and duration logic abstracted into reusable utilities
+    - Cleaner and more modular for future additions (e.g. easing, loop, scroll-trigger)
+
+---
+
+### Example Usage
+
+```html
+<h2
+    ca__lt-word="fadeIn bounce slide"
+    ca__lt-delay="300 800 200"
+    ca__lt-duration="1500"
+>
+    Each word animates with precise delay and duration
+</h2>
+```
+
 # Version: 4.0.0
 
 ## Major Update: GSAP Integration Moved to New Repo
