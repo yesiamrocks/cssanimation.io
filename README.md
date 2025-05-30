@@ -4,13 +4,7 @@
 
 <!-- Tech & Status -->
 
-![CSS](https://img.shields.io/badge/style-CSS-blue)
-[![NPM](https://img.shields.io/npm/v/cssanimationio.svg)](https://www.npmjs.com/package/cssanimationio)
-[![jsDelivr](https://data.jsdelivr.com/v1/package/gh/yesiamrocks/cssanimation.io/badge)](https://www.jsdelivr.com/package/gh/yesiamrocks/cssanimation.io)
-[![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/issues)
-[![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/stargazers)
-[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://cssanimation.io)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./docs/code_of_conduct.md)
+![CSS](https://img.shields.io/badge/style-CSS-blue) [![NPM](https://img.shields.io/npm/v/cssanimationio.svg)](https://www.npmjs.com/package/cssanimationio) [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/yesiamrocks/cssanimation.io/badge)](https://www.jsdelivr.com/package/gh/yesiamrocks/cssanimation.io) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://cssanimation.io) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./docs/code_of_conduct.md)
 
 [![GSAP Support](https://img.shields.io/badge/Also%20Supports-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://github.com/yesiamrocks/gsapanimation)
 
@@ -64,14 +58,8 @@ Include the `cssanimation.css` library into the `<head>`:
 
 ```html
 <head>
-    <link
-        href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.min.css"
-        rel="stylesheet"
-    />
-    <link
-        href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-utility.min.css"
-        rel="stylesheet"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-utility.min.css" rel="stylesheet" />
 </head>
 ```
 
@@ -95,66 +83,134 @@ _That's it! You've got a CSS animated element. Super! 🎉_
 
 <br>
 
-## How to Use CSS Letter Animations
+## CSS Text / Letter Animations
 
-Want to animate text, letter by letter?
+> Want to animate text beautifully, responsively, and with zero dependencies?
 
-The **cssanimation.io** library includes **100+ letter-based effects** (`.ca__lt-FadeIn`, `.ca__lt-ZoomIn`, `.ca__lt-Snake`, etc.).
+`ca-letteranimation.js` is a lightweight, CSS-only enhancement script that brings letter-by-letter, word-by-word, and line-by-line animations to your web projects. Designed to work seamlessly with [cssanimation.io](https://cssanimation.io), it offers a robust and customizable solution for dynamic text effects.
 
-**cssanimation.io** also includes **two exclusive types** of letter animations: `.ca__lt-sequence` and `.ca__lt-random`, which must be added to any element you want to animate letter by letter.
+### Features
 
-What Are **Sequence** and **Random** Animations?
+- Zero dependencies: Keep your project lean.
+- Highly customizable: Control animations directly with HTML attributes.
+- Animate **letters**, **words**, or **lines** independently
+- Supports **custom css animation classes**
+- Auto-detect or override animation duration using `ca__lt-duration`
+- Sequential animation logic (each unit waits for the previous to complete)
+- Includes random and reverse animation effects.
+- Handles whitespace safely and provides animation class fallbacks.
 
-- **`.ca__lt-sequence`** – Letters animate **one after another**, in order.
-- **`.ca__lt-random`** – Letters animate in a **randomized order**, adding playful motion.
+### Installation
 
-#### Step 1. Include the Script
+If you're already using `cssanimation.io` via NPM, you're all set!
 
-You’ve already installed the cssanimation.io library, so there’s nothing else you need to do if you’re bundling it via a module system like Vite, Webpack, or using itwith a framework (React, Vue, etc.).
-
-If you’re using plain HTML without a bundler, just add the following `<script>` **before the closing `</body>` tag**:
+For plain HTML, include the `ca-letteranimation.js`, script just before the closing `</body>` tag:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/ca-letteranimation.js"></script>
 ```
 
-#### Step 2. Add Animation classes to Your HTML
+### Usage Guide
 
-| Class              | What It Does                                    |
-| ------------------ | ----------------------------------------------- |
-| `.cssanimation`    | Base class for all animations (\*required)      |
-| `.ca__lt-FadeIn`   | A letter animation class (Fades in each letter) |
-| `.ca__lt-sequence` | Animates letters in order or                    |
-| `.ca__lt-random`   | Animates letters in random order                |
+Every animated text block must include the `cssanimation` class along with the `ca__lt-*` attribute that defines how it animates.
 
-```html
-<h1 class="cssanimation ca__lt-FadeIn ca__lt-sequence">cssanimation</h1>
-```
+#### 1. **Letter-by-letter Animation**. Animate text letter by letter with three distinct sequencing styles:
+
+**Sequential Letter Animation:**
 
 ```html
-<h2 class="cssanimation ca__lt-FadeIn ca__lt-random">Surprise!</h2>
+<h1 class="cssanimation" ca__lt-sequence="ca__fx-FadeIn">Letters Animate</h1>
 ```
 
-#### CSS Letter Animation Delay Control
-
-You can now customize the animation delay between letters using the `ca__lt-delay` **attribute**, no need to edit JavaScript!
+**Randomized letter order**
 
 ```html
-<div class="cssanimation ca__lt-FadeIn ca__lt-sequence" ca__lt-delay="200">
-    This will animate letter-by-letter with a 200ms step
-</div>
-
-<div class="cssanimation ca__lt-FadeIn ca__lt-random" ca__lt-delay="50">
-    Random delay with 50ms steps
-</div>
+<p class="cssanimation" ca__lt-random="ca__fx-BounceInTop">Randomized entry!</p>
 ```
 
-- `ca__lt-delay` sets the delay step in milliseconds for each letter span.
-- Works for both `.ca__lt-sequence` and `.ca__lt-random` classes.
+**Reverse (last letter first)**
 
-Browse the full list of `ca__lt` (letter-based) animation classes: [Cheatsheet on GitHub](./reference/cssanimation-reference.md#letter-abound-animations)
+```html
+<h3 class="cssanimation" ca__lt-reverse="ca__fx-MoveFromTop">Backwards Flow</h3>
+```
 
-> This feature is **exclusive to cssanimation.io** — making it perfect for creative headlines, banners, parallax effect, hero sections, and expressive UI storytelling.
+---
+
+#### 2. **Word-by-word** Animation with Delay and Custom Classes
+
+```html
+<h2
+  class="cssanimation"
+  ca__lt-word="ca__fx-FadeIn ca__fx-MoveFromTop ca__fx-MoveFromBottom ca__fx-MoveFromRight"
+  ca__lt-delay="50 100 100"
+  ca__lt-duration="500"
+>
+  Each word animates uniquely
+</h2>
+```
+
+🔥 You can assign **different animation classes and delays per word**. Delays value and class names are space-separated.
+
+---
+
+#### 3. **Line-by-line Animation**.
+
+You can split lines by periods `.` or by `<br>` / `\n`. Use `ca__lt-separator="dot"` to use the periods `.` separator.
+
+**Dot-separated lines**
+
+```html
+<p
+  class="cssanimation"
+  ca__lt-line="ca__fx-FadeIn"
+  ca__lt-delay="400 800"
+  ca__lt-duration="1000"
+  ca__lt-separator="dot"
+>
+  Step 1. Step 2. Step 3.
+</p>
+```
+
+**Line break by default (br or newline)**
+
+```html
+<p class="cssanimation" ca__lt-line="ca__fx-FadeIn">
+  First line<br />
+  Second line<br />
+  Third line
+</p>
+```
+
+You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **default behavior**.
+
+## Supported Attributes
+
+| Attribute          | Description                                                      |
+| ------------------ | ---------------------------------------------------------------- |
+| `ca__lt-sequence`  | Letter-by-letter, in order                                       |
+| `ca__lt-random`    | Letter-by-letter, randomized                                     |
+| `ca__lt-reverse`   | Letter-by-letter, reversed                                       |
+| `ca__lt-word`      | Word-by-word animation                                           |
+| `ca__lt-line`      | Line-by-line animation                                           |
+| `ca__lt-delay`     | Accepts one or more values like `100 300 500` per unit           |
+| `ca__lt-duration`  | Optional base animation duration per unit (in ms)                |
+| `ca__lt-separator` | Use `dot` to split on `.`. Default: line breaks (`<br>` or `\n`) |
+
+## Developer Tips
+
+- The `cssanimation` class is **required** to enable baseline styling.
+- You can pass fewer classes or delays than units — the last value will repeat.
+- If you pass more classes than needed, the element is skipped and a warning is logged.
+- Delay values are parsed safely, non-numeric strings fall back to defaults.
+- Animation duration is auto-detected from CSS or can be overridden manually.
+
+## 💡 Example: Full Setup
+
+```html
+<h2 class="cssanimation" ca__lt-word="fadeIn bounce slide rotate" ca__lt-delay="200 300 400" ca__lt-duration="1000">
+  Animate each word smoothly
+</h2>
+```
 
 <br>
 
@@ -223,10 +279,8 @@ Check out the full list of utility classes with details in [`cssanimation-utilit
 Combo Example
 
 ```html
-<p
-    class="cssanimation ca__fx-zoomIn ca__u-SpeedChill ca__u-Delay3 ca__u-EaseSnappy ca__u-LoopTriple"
->
-    Magical Entrance!
+<p class="cssanimation ca__fx-zoomIn ca__u-SpeedChill ca__u-Delay3 ca__u-EaseSnappy ca__u-LoopTriple">
+  Magical Entrance!
 </p>
 ```
 
@@ -251,21 +305,21 @@ Looking to go beyond CSS with scroll triggers, letter-by-letter effects, and ani
 
 ## CSS vs. GSAP – Which Animation Version Should You Use?
 
-| Feature / Capability        | **CSS Version**                      | **GSAP Version**                                      |
-| --------------------------- | ------------------------------------ | ----------------------------------------------------- |
-| 🧱 Technology               | Pure CSS                             | JavaScript (GSAP)                                     |
-| ⚡ Performance              | Great for simple UI effects          | Optimized for complex, smooth animations              |
-| 🎛 Control                  | Fine-grained control via CSS         | Fine-grained control via JS (timing, easing)          |
-| 🎞 Animation Types          | Predefined class-based animations    | Class-based with dynamic GSAP tweening                |
-| 🔤 Letter Animation Support | ✅ Sequence & Random                 | ✅ Sequence only (random coming soon)                 |
-| 🔁 Looping & Repeating      | `infinite` class                     | Full loop control via JS (e.g. `repeat`, `yoyo`)      |
-| ⚙️ Configuration            | Minimal setup                        | Script includes + optional JS tweaks                  |
-| 🎨 Customization            | Moderate (via utility classes)       | High — control properties on the fly                  |
-| 📦 Size                     | Very lightweight (no JS needed)      | Heavier due to JS dependency                          |
-| 🧩 Dependencies             | None                                 | Requires GSAP (`TweenMax`)                            |
-| 🌐 CDN Available?           | ✅ Yes                               | ✅ Yes                                                |
-| 🛠 NPM Ready?               | ✅ Yes (`cssanimationio`)            | ✅ Yes (`cssanimationio`)                             |
-| 🧠 Use Case Examples        | Hover states, hero sections, banners | Interactive animations, scroll triggers, custom flows |
+| Feature / Capability | **CSS Version** | **GSAP Version** |
+| --- | --- | --- |
+| 🧱 Technology | Pure CSS | JavaScript (GSAP) |
+| ⚡ Performance | Great for simple UI effects | Optimized for complex, smooth animations |
+| 🎛 Control | Fine-grained control via CSS | Fine-grained control via JS (timing, easing) |
+| 🎞 Animation Types | Predefined class-based animations | Class-based with dynamic GSAP tweening |
+| 🔤 Letter Animation Support | ✅ Sequence & Random | ✅ Sequence only (random coming soon) |
+| 🔁 Looping & Repeating | `infinite` class | Full loop control via JS (e.g. `repeat`, `yoyo`) |
+| ⚙️ Configuration | Minimal setup | Script includes + optional JS tweaks |
+| 🎨 Customization | Moderate (via utility classes) | High — control properties on the fly |
+| 📦 Size | Very lightweight (no JS needed) | Heavier due to JS dependency |
+| 🧩 Dependencies | None | Requires GSAP (`TweenMax`) |
+| 🌐 CDN Available? | ✅ Yes | ✅ Yes |
+| 🛠 NPM Ready? | ✅ Yes (`cssanimationio`) | ✅ Yes (`cssanimationio`) |
+| 🧠 Use Case Examples | Hover states, hero sections, banners | Interactive animations, scroll triggers, custom flows |
 
 ## Accessibility: Reduce Motion Support
 
