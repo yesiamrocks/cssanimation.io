@@ -1,0 +1,14 @@
+# Ignore all generated distribution files
+dist/**
+!dist/modules/*.css
+
+# Ignore minified styles and scripts
+*.min.css
+*.min.js
+
+# Ignore lockfiles and package metadata
+package-lock.json
+yarn.lock
+
+# node_modules
+node_modules/
