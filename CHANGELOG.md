@@ -1,6 +1,6 @@
 # Version: 4.1.0
 
-### Features
+## Features
 
 - **Support for `ca__lt-duration` Attribute**
 
@@ -33,7 +33,7 @@
 
 ---
 
-### Example Usage
+## Example Usage
 
 ```html
 <h2
