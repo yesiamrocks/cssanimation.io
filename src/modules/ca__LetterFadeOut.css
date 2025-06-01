@@ -7,71 +7,71 @@
  */
 
 .ca__lt-FadeOut span {
-    animation-name: leFadeOut;
+  animation-name: leFadeOut;
 }
 
 @keyframes leFadeOut {
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }
 
 .ca__lt-FadeOutLeft span {
-    animation-name: leFadeOutLeft;
+  animation-name: leFadeOutLeft;
 }
 
 @keyframes leFadeOutLeft {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-        transform: translateX(-60px);
-    }
+  to {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
 }
 
 .ca__lt-FadeOutRight span {
-    animation-name: leFadeOutRight;
+  animation-name: leFadeOutRight;
 }
 
 @keyframes leFadeOutRight {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-        transform: translateX(60px);
-    }
+  to {
+    opacity: 0;
+    transform: translateX(60px);
+  }
 }
 
 .ca__lt-FadeOutTop span {
-    animation-name: leFadeOutTop;
+  animation-name: leFadeOutTop;
 }
 
 @keyframes leFadeOutTop {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
 
 .ca__lt-FadeOutBottom span {
-    animation-name: leFadeOutBottom;
+  animation-name: leFadeOutBottom;
 }
 
 @keyframes leFadeOutBottom {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-        transform: translateY(100%);
-    }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 }

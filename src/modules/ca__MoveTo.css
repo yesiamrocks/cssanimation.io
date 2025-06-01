@@ -7,41 +7,41 @@
  */
 
 .ca__fx-MoveToLeft {
-    animation-name: moveToLeft;
+  animation-name: moveToLeft;
 }
 
 @keyframes moveToLeft {
-    to {
-        transform: translateX(-800px);
-    }
+  to {
+    transform: translateX(-800px);
+  }
 }
 
 .ca__fx-MoveToRight {
-    animation-name: moveToRight;
+  animation-name: moveToRight;
 }
 
 @keyframes moveToRight {
-    to {
-        transform: translateX(800px);
-    }
+  to {
+    transform: translateX(800px);
+  }
 }
 
 .ca__fx-MoveToTop {
-    animation-name: moveToTop;
+  animation-name: moveToTop;
 }
 
 @keyframes moveToTop {
-    to {
-        transform: translateY(-800px);
-    }
+  to {
+    transform: translateY(-800px);
+  }
 }
 
 .ca__fx-MoveToBottom {
-    animation-name: moveToBottom;
+  animation-name: moveToBottom;
 }
 
 @keyframes moveToBottom {
-    to {
-        transform: translateY(800px);
-    }
+  to {
+    transform: translateY(800px);
+  }
 }

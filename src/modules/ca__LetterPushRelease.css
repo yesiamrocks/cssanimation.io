@@ -7,106 +7,106 @@
  */
 
 .ca__lt-PushReleaseFrom span {
-    animation-name: lePushReleaseFrom;
+  animation-name: lePushReleaseFrom;
 }
 
 @keyframes lePushReleaseFrom {
-    0% {
-        transform: scale(3, 3);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(3, 3);
+    opacity: 0;
+  }
 
-    50% {
-        transform: scale(0.5, 0.5);
-    }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
 }
 
 .ca__lt-PushReleaseFromLeft span {
-    animation-name: lePushReleaseFromLeft;
+  animation-name: lePushReleaseFromLeft;
 }
 
 @keyframes lePushReleaseFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 
-    30% {
-        transform: translateX(100px);
-    }
+  30% {
+    transform: translateX(100px);
+  }
 }
 
 .ca__lt-PushReleaseFromTop span {
-    animation-name: lePushReleaseFromTop;
+  animation-name: lePushReleaseFromTop;
 }
 
 @keyframes lePushReleaseFromTop {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 
-    30% {
-        transform: translateY(100px);
-    }
+  30% {
+    transform: translateY(100px);
+  }
 }
 
 .ca__lt-PushReleaseFromBottom span {
-    animation-name: lePushReleaseFromBottom;
+  animation-name: lePushReleaseFromBottom;
 }
 
 @keyframes lePushReleaseFromBottom {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
-    30% {
-        transform: translateY(-100px);
-    }
+  30% {
+    transform: translateY(-100px);
+  }
 }
 
 .ca__lt-PushReleaseTo span {
-    animation-name: lePushReleaseTo;
+  animation-name: lePushReleaseTo;
 }
 
 @keyframes lePushReleaseTo {
-    30% {
-        transform: scale(0.5, 0.5);
-    }
+  30% {
+    transform: scale(0.5, 0.5);
+  }
 
-    100% {
-        transform: scale(5, 5);
-        opacity: 0;
-    }
+  100% {
+    transform: scale(5, 5);
+    opacity: 0;
+  }
 }
 
 .ca__lt-PushReleaseToTop span {
-    animation-name: lePushReleaseToTop;
+  animation-name: lePushReleaseToTop;
 }
 
 @keyframes lePushReleaseToTop {
-    30% {
-        transform: translateY(100px);
-    }
+  30% {
+    transform: translateY(100px);
+  }
 
-    100% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 }
 
 .ca__lt-PushReleaseToBottom span {
-    animation-name: lePushReleaseToBottom;
+  animation-name: lePushReleaseToBottom;
 }
 
 @keyframes lePushReleaseToBottom {
-    30% {
-        transform: translateY(-100px);
-    }
+  30% {
+    transform: translateY(-100px);
+  }
 
-    100% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 }

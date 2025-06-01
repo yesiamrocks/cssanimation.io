@@ -7,56 +7,56 @@
  */
 
 .ca__lt-ZoomIn span {
-    animation-name: leZoomIn;
+  animation-name: leZoomIn;
 }
 
 @keyframes leZoomIn {
-    from {
-        transform: scale(10);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10);
+    opacity: 0;
+  }
 }
 
 .ca__lt-ZoomInLeft span {
-    animation-name: leZoomInLeft;
+  animation-name: leZoomInLeft;
 }
 
 @keyframes leZoomInLeft {
-    from {
-        transform: scale(10) translateX(-150%);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10) translateX(-150%);
+    opacity: 0;
+  }
 }
 
 .ca__lt-ZoomInRight span {
-    animation-name: leZoomInRight;
+  animation-name: leZoomInRight;
 }
 
 @keyframes leZoomInRight {
-    from {
-        transform: scale(10) translateX(150%);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10) translateX(150%);
+    opacity: 0;
+  }
 }
 
 .ca__lt-ZoomInTop span {
-    animation-name: LetterZoomInTop;
+  animation-name: LetterZoomInTop;
 }
 
 @keyframes LetterZoomInTop {
-    from {
-        transform: scale(10) translateY(-50%);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
 }
 
 .ca__lt-ZoomInBottom span {
-    animation-name: leZoomInBottom;
+  animation-name: leZoomInBottom;
 }
 
 @keyframes leZoomInBottom {
-    from {
-        transform: scale(10) translateY(50%);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
 }

@@ -7,45 +7,45 @@
  */
 
 .ca__lt-ElevateLeft span {
-    animation-name: leElevateLeft;
+  animation-name: leElevateLeft;
 }
 
 @keyframes leElevateLeft {
-    0% {
-        transform: translateY(100%) rotate(-20deg);
-        transform-origin: right;
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(100%) rotate(-20deg);
+    transform-origin: right;
+    opacity: 0;
+  }
 
-    40% {
-        transform: rotate(20deg);
-        transform-origin: right;
-    }
+  40% {
+    transform: rotate(20deg);
+    transform-origin: right;
+  }
 
-    65% {
-        transform: rotate(0deg);
-        transform-origin: right;
-    }
+  65% {
+    transform: rotate(0deg);
+    transform-origin: right;
+  }
 }
 
 .ca__lt-ElevateRight span {
-    animation-name: leElevateRight;
+  animation-name: leElevateRight;
 }
 
 @keyframes leElevateRight {
-    0% {
-        transform: translateY(100%) rotate(20deg);
-        transform-origin: left;
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(100%) rotate(20deg);
+    transform-origin: left;
+    opacity: 0;
+  }
 
-    40% {
-        transform: rotate(-20deg);
-        transform-origin: left;
-    }
+  40% {
+    transform: rotate(-20deg);
+    transform-origin: left;
+  }
 
-    65% {
-        transform: rotate(0deg);
-        transform-origin: left;
-    }
+  65% {
+    transform: rotate(0deg);
+    transform-origin: left;
+  }
 }

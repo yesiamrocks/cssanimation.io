@@ -7,21 +7,21 @@
  */
 
 .ca__fx-PullRelease {
-    animation-name: pullRelease;
+  animation-name: pullRelease;
 }
 
 @keyframes pullRelease {
-    15% {
-        transform: scale(1.8);
-    }
+  15% {
+    transform: scale(1.8);
+  }
 }
 
 .ca__fx-PushRelease {
-    animation-name: pushRelease;
+  animation-name: pushRelease;
 }
 
 @keyframes pushRelease {
-    15% {
-        transform: scale(0.5);
-    }
+  15% {
+    transform: scale(0.5);
+  }
 }

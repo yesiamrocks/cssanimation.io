@@ -7,61 +7,61 @@
  */
 
 .ca__lt-BlurOut span {
-    animation-name: leBlurOut;
+  animation-name: leBlurOut;
 }
 
 @keyframes leBlurOut {
-    to {
-        transform: scaleX(0.2);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleX(0.2);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
 .ca__lt-BlurOutRight span {
-    animation-name: leBlurOutRight;
+  animation-name: leBlurOutRight;
 }
 
 @keyframes leBlurOutRight {
-    to {
-        transform: scaleX(0.2) translateX(100px);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleX(0.2) translateX(100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
 .ca__lt-BlurOutLeft span {
-    animation-name: leBlurOutLeft;
+  animation-name: leBlurOutLeft;
 }
 
 @keyframes leBlurOutLeft {
-    to {
-        transform: scaleX(0.2) translateX(-100px);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleX(0.2) translateX(-100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
 .ca__lt-BlurOutTop span {
-    animation-name: leBlurOutTop;
+  animation-name: leBlurOutTop;
 }
 
 @keyframes leBlurOutTop {
-    to {
-        transform: scaleY(0.2) translateY(-100px);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleY(0.2) translateY(-100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
 .ca__lt-BlurOutBottom span {
-    animation-name: leBlurOutBottom;
+  animation-name: leBlurOutBottom;
 }
 
 @keyframes leBlurOutBottom {
-    to {
-        transform: scaleY(0.2) translateY(100px);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleY(0.2) translateY(100px);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }

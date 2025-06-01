@@ -7,81 +7,81 @@
  */
 
 .ca__fx-SkewLeft {
-    animation-name: skewLeft;
+  animation-name: skewLeft;
 }
 
 @keyframes skewLeft {
-    70% {
-        transform: skewX(40deg);
-    }
+  70% {
+    transform: skewX(40deg);
+  }
 }
 
 .ca__fx-SkewRight {
-    animation-name: skewRight;
+  animation-name: skewRight;
 }
 
 @keyframes skewRight {
-    70% {
-        transform: skewX(-40deg);
-    }
+  70% {
+    transform: skewX(-40deg);
+  }
 }
 
 .ca__fx-SkewInLeft {
-    animation-name: skewInLeft;
+  animation-name: skewInLeft;
 }
 
 @keyframes skewInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%) skewX(-40deg);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) skewX(-40deg);
+  }
 
-    70% {
-        transform: skewX(-30deg);
-    }
+  70% {
+    transform: skewX(-30deg);
+  }
 }
 
 .ca__fx-SkewInRight {
-    animation-name: skewInRight;
+  animation-name: skewInRight;
 }
 
 @keyframes skewInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%) skewX(40deg);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100%) skewX(40deg);
+  }
 
-    70% {
-        transform: skewX(30deg);
-    }
+  70% {
+    transform: skewX(30deg);
+  }
 }
 
 .ca__fx-SkewOutLeft {
-    animation-name: skewOutLeft;
+  animation-name: skewOutLeft;
 }
 
 @keyframes skewOutLeft {
-    20% {
-        transform: skewX(40deg);
-    }
+  20% {
+    transform: skewX(40deg);
+  }
 
-    100% {
-        transform: translateX(-100%) skewX(40deg);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(-100%) skewX(40deg);
+    opacity: 0;
+  }
 }
 
 .ca__fx-SkewOutRight {
-    animation-name: skewOutRight;
+  animation-name: skewOutRight;
 }
 
 @keyframes skewOutRight {
-    20% {
-        transform: skewX(-40deg);
-    }
+  20% {
+    transform: skewX(-40deg);
+  }
 
-    100% {
-        transform: translateX(100%) skewX(-40deg);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(100%) skewX(-40deg);
+    opacity: 0;
+  }
 }

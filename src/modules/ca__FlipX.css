@@ -7,66 +7,66 @@
  */
 
 .ca__fx-FlipX {
-    animation-name: flipX;
+  animation-name: flipX;
 }
 
 @keyframes flipX {
-    from {
-        transform: perspective(600px) rotateX(-180deg);
-        opacity: 0;
-    }
+  from {
+    transform: perspective(600px) rotateX(-180deg);
+    opacity: 0;
+  }
 
-    to {
-        transform: perspective(600px) rotateX(-360deg);
-    }
+  to {
+    transform: perspective(600px) rotateX(-360deg);
+  }
 }
 
 .ca__fx-FlipXZoomIn {
-    animation-name: flipXZoomIn;
+  animation-name: flipXZoomIn;
 }
 
 @keyframes flipXZoomIn {
-    0% {
-        transform: perspective(600px) rotateX(0deg) scale(1);
-        animation-timing-function: ease-out;
-    }
+  0% {
+    transform: perspective(600px) rotateX(0deg) scale(1);
+    animation-timing-function: ease-out;
+  }
 
-    40% {
-        transform: perspective(600px) rotateX(-180deg) scale(1.8);
-        animation-timing-function: ease-out;
-    }
+  40% {
+    transform: perspective(600px) rotateX(-180deg) scale(1.8);
+    animation-timing-function: ease-out;
+  }
 
-    80% {
-        transform: perspective(600px) rotateX(-360deg) scale(0.7);
-        animation-timing-function: ease-in;
-    }
+  80% {
+    transform: perspective(600px) rotateX(-360deg) scale(0.7);
+    animation-timing-function: ease-in;
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .ca__fx-FlipXZoomOut {
-    animation-name: flipXZoomOut;
+  animation-name: flipXZoomOut;
 }
 
 @keyframes flipXZoomOut {
-    0% {
-        transform: perspective(600px) rotateX(0deg) scale(1);
-        animation-timing-function: ease-out;
-    }
+  0% {
+    transform: perspective(600px) rotateX(0deg) scale(1);
+    animation-timing-function: ease-out;
+  }
 
-    40% {
-        transform: perspective(600px) rotateX(180deg) scale(1.8);
-        animation-timing-function: ease-out;
-    }
+  40% {
+    transform: perspective(600px) rotateX(180deg) scale(1.8);
+    animation-timing-function: ease-out;
+  }
 
-    80% {
-        transform: perspective(600px) rotateX(360deg) scale(0.7);
-        animation-timing-function: ease-in;
-    }
+  80% {
+    transform: perspective(600px) rotateX(360deg) scale(0.7);
+    animation-timing-function: ease-in;
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }

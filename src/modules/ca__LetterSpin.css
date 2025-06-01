@@ -7,65 +7,65 @@
  */
 
 .ca__lt-SpinInLeft span {
-    animation-name: leSpinInLeft;
+  animation-name: leSpinInLeft;
 }
 
 @keyframes leSpinInLeft {
-    from,
-    to {
-        transform-origin: left bottom;
-    }
+  from,
+  to {
+    transform-origin: left bottom;
+  }
 
-    from {
-        transform: rotate(90deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
 }
 
 .ca__lt-SpinInRight span {
-    animation-name: leSpinInRight;
+  animation-name: leSpinInRight;
 }
 
 @keyframes leSpinInRight {
-    from,
-    to {
-        transform-origin: right bottom;
-    }
+  from,
+  to {
+    transform-origin: right bottom;
+  }
 
-    from {
-        transform: rotate(-90deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
 }
 
 .ca__lt-SpinOutLeft span {
-    animation-name: leSpinOutLeft;
+  animation-name: leSpinOutLeft;
 }
 
 @keyframes leSpinOutLeft {
-    from,
-    to {
-        transform-origin: left bottom;
-    }
+  from,
+  to {
+    transform-origin: left bottom;
+  }
 
-    to {
-        transform: rotate(90deg);
-        opacity: 0;
-    }
+  to {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
 }
 
 .ca__lt-SpinOutRight span {
-    animation-name: leSpinOutRight;
+  animation-name: leSpinOutRight;
 }
 
 @keyframes leSpinOutRight {
-    from,
-    to {
-        transform-origin: right bottom;
-    }
+  from,
+  to {
+    transform-origin: right bottom;
+  }
 
-    to {
-        transform: rotate(-90deg);
-        opacity: 0;
-    }
+  to {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
 }

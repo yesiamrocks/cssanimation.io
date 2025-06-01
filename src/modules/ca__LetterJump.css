@@ -7,12 +7,12 @@
  */
 
 .ca__lt-Jump span {
-    animation-name: leJump;
-    animation-iteration-count: infinite;
+  animation-name: leJump;
+  animation-iteration-count: infinite;
 }
 
 @keyframes leJump {
-    to {
-        transform: translateY(-20px);
-    }
+  to {
+    transform: translateY(-20px);
+  }
 }

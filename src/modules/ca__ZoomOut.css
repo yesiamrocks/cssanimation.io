@@ -7,56 +7,56 @@
  */
 
 .ca__fx-ZoomOut {
-    animation-name: zoomOut;
+  animation-name: zoomOut;
 }
 
 @keyframes zoomOut {
-    to {
-        transform: scale(10);
-        opacity: 0;
-    }
+  to {
+    transform: scale(10);
+    opacity: 0;
+  }
 }
 
 .ca__fx-ZoomOutLeft {
-    animation-name: zoomOutLeft;
+  animation-name: zoomOutLeft;
 }
 
 @keyframes zoomOutLeft {
-    to {
-        transform: scale(10) translateX(-50%);
-        opacity: 0;
-    }
+  to {
+    transform: scale(10) translateX(-50%);
+    opacity: 0;
+  }
 }
 
 .ca__fx-ZoomOutRight {
-    animation-name: zoomOutRight;
+  animation-name: zoomOutRight;
 }
 
 @keyframes zoomOutRight {
-    to {
-        transform: scale(10) translateX(50%);
-        opacity: 0;
-    }
+  to {
+    transform: scale(10) translateX(50%);
+    opacity: 0;
+  }
 }
 
 .ca__fx-ZoomOutTop {
-    animation-name: zoomOutTop;
+  animation-name: zoomOutTop;
 }
 
 @keyframes zoomOutTop {
-    to {
-        transform: scale(10) translateY(-50%);
-        opacity: 0;
-    }
+  to {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
 }
 
 .ca__fx-ZoomOutBottom {
-    animation-name: zoomOutBottom;
+  animation-name: zoomOutBottom;
 }
 
 @keyframes zoomOutBottom {
-    to {
-        transform: scale(10) translateY(50%);
-        opacity: 0;
-    }
+  to {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
 }

@@ -7,91 +7,91 @@
  */
 
 .ca__lt-RotateIn span {
-    animation-name: leRotateIn;
+  animation-name: leRotateIn;
 }
 
 @keyframes leRotateIn {
-    from {
-        transform: rotate(-180deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .ca__lt-RotateOut span {
-    animation-name: leRotateOut;
+  animation-name: leRotateOut;
 }
 
 @keyframes leRotateOut {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        transform: rotate(180deg);
-        opacity: 0;
-    }
+  to {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
 }
 
 .ca__lt-RotateInLeft span {
-    animation-name: leRotateInLeft;
+  animation-name: leRotateInLeft;
 }
 
 @keyframes leRotateInLeft {
-    from {
-        transform: rotate(-180deg) translateX(150px);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(-180deg) translateX(150px);
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .ca__lt-RotateOutLeft span {
-    animation-name: leRotateOutLeft;
+  animation-name: leRotateOutLeft;
 }
 
 @keyframes leRotateOutLeft {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        transform: rotate(180deg) translateX(150px);
-        opacity: 0;
-    }
+  to {
+    transform: rotate(180deg) translateX(150px);
+    opacity: 0;
+  }
 }
 
 .ca__lt-RotateInRight span {
-    animation-name: leRotateInRight;
+  animation-name: leRotateInRight;
 }
 
 @keyframes leRotateInRight {
-    from {
-        transform: rotate(-180deg) translateX(-150px);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(-180deg) translateX(-150px);
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .ca__lt-RotateOutRight span {
-    animation-name: leRotateOutRight;
+  animation-name: leRotateOutRight;
 }
 
 @keyframes leRotateOutRight {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        transform: rotate(180deg) translateX(-150px);
-        opacity: 0;
-    }
+  to {
+    transform: rotate(180deg) translateX(-150px);
+    opacity: 0;
+  }
 }

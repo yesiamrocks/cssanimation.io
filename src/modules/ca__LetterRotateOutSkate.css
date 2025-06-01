@@ -7,45 +7,45 @@
  */
 
 .ca__lt-RotateSkateOutRight span {
-    animation-name: leRotateSkateOutRight;
+  animation-name: leRotateSkateOutRight;
 }
 
 @keyframes leRotateSkateOutRight {
-    to {
-        transform: scaleX(0.2) translateX(100px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleX(0.2) translateX(100px);
+    opacity: 0;
+  }
 }
 
 .ca__lt-RotateSkateOutLeft span {
-    animation-name: leRotateSkateOutLeft;
+  animation-name: leRotateSkateOutLeft;
 }
 
 @keyframes leRotateSkateOutLeft {
-    to {
-        transform: scaleX(0.2) translateX(-100px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleX(0.2) translateX(-100px);
+    opacity: 0;
+  }
 }
 
 .ca__lt-RotateSkateOutTop span {
-    animation-name: leRotateSkateOutTop;
+  animation-name: leRotateSkateOutTop;
 }
 
 @keyframes leRotateSkateOutTop {
-    to {
-        transform: scaleY(0.2) translateY(-100px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleY(0.2) translateY(-100px);
+    opacity: 0;
+  }
 }
 
 .ca__lt-RotateSkateOutBottom span {
-    animation-name: leRotateSkateOutBottom;
+  animation-name: leRotateSkateOutBottom;
 }
 
 @keyframes leRotateSkateOutBottom {
-    to {
-        transform: scaleY(0.2) translateY(100px);
-        opacity: 0;
-    }
+  to {
+    transform: scaleY(0.2) translateY(100px);
+    opacity: 0;
+  }
 }

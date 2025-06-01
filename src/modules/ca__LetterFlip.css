@@ -7,85 +7,85 @@
  */
 
 .ca__lt-FlipInTop span {
-    animation-name: leFlipInTop;
+  animation-name: leFlipInTop;
 }
 
 @keyframes leFlipInTop {
-    0% {
-        transform: perspective(600px);
-        opacity: 0;
-    }
+  0% {
+    transform: perspective(600px);
+    opacity: 0;
+  }
 
-    30% {
-        transform: perspective(600px) rotateX(180deg);
-        transform-origin: 0 0;
-        animation-timing-function: ease-out;
-    }
+  30% {
+    transform: perspective(600px) rotateX(180deg);
+    transform-origin: 0 0;
+    animation-timing-function: ease-out;
+  }
 
-    100% {
-        transform: perspective(600px);
-    }
+  100% {
+    transform: perspective(600px);
+  }
 }
 
 .ca__lt-FlipOutTop span {
-    animation-name: leFlipOutTop;
+  animation-name: leFlipOutTop;
 }
 
 @keyframes leFlipOutTop {
-    100% {
-        transform: perspective(600px);
-        opacity: 0;
-    }
+  100% {
+    transform: perspective(600px);
+    opacity: 0;
+  }
 
-    70% {
-        transform: perspective(600px) rotateX(180deg);
-        transform-origin: 0 0;
-        animation-timing-function: ease-out;
-    }
+  70% {
+    transform: perspective(600px) rotateX(180deg);
+    transform-origin: 0 0;
+    animation-timing-function: ease-out;
+  }
 
-    100% {
-        transform: perspective(600px);
-    }
+  100% {
+    transform: perspective(600px);
+  }
 }
 
 .ca__lt-FlipInBottom span {
-    animation-name: leFlipInBottom;
+  animation-name: leFlipInBottom;
 }
 
 @keyframes leFlipInBottom {
-    0% {
-        transform: perspective(600px);
-        opacity: 0;
-    }
+  0% {
+    transform: perspective(600px);
+    opacity: 0;
+  }
 
-    30% {
-        transform: perspective(600px) rotateX(180deg);
-        transform-origin: bottom;
-        animation-timing-function: ease-out;
-    }
+  30% {
+    transform: perspective(600px) rotateX(180deg);
+    transform-origin: bottom;
+    animation-timing-function: ease-out;
+  }
 
-    100% {
-        transform: perspective(600px);
-    }
+  100% {
+    transform: perspective(600px);
+  }
 }
 
 .ca__lt-FlipOutBottom span {
-    animation-name: leFlipOutBottom;
+  animation-name: leFlipOutBottom;
 }
 
 @keyframes leFlipOutBottom {
-    100% {
-        transform: perspective(600px);
-        opacity: 0;
-    }
+  100% {
+    transform: perspective(600px);
+    opacity: 0;
+  }
 
-    70% {
-        transform: perspective(600px) rotateX(180deg);
-        transform-origin: bottom;
-        animation-timing-function: ease-out;
-    }
+  70% {
+    transform: perspective(600px) rotateX(180deg);
+    transform-origin: bottom;
+    animation-timing-function: ease-out;
+  }
 
-    100% {
-        transform: perspective(600px);
-    }
+  100% {
+    transform: perspective(600px);
+  }
 }

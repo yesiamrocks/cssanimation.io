@@ -7,77 +7,77 @@
  */
 
 .ca__lt-DoorCloseLeft span {
-    animation-name: leDoorCloseLeft;
+  animation-name: leDoorCloseLeft;
 }
 
 @keyframes leDoorCloseLeft {
-    from,
-    to {
-        transform: perspective(400px);
-        transform-origin: left;
-    }
+  from,
+  to {
+    transform: perspective(400px);
+    transform-origin: left;
+  }
 
-    from {
-        transform: rotateY(90deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .ca__lt-DoorOpenRight span {
-    animation-name: leDoorOpenRight;
+  animation-name: leDoorOpenRight;
 }
 
 @keyframes leDoorOpenRight {
-    from,
-    to {
-        transform: perspective(400px);
-        transform-origin: left;
-    }
+  from,
+  to {
+    transform: perspective(400px);
+    transform-origin: left;
+  }
 
-    to {
-        transform: rotateY(90deg);
-        opacity: 0;
-    }
+  to {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
 }
 
 .ca__lt-DoorCloseRight span {
-    animation-name: leDoorCloseRight;
+  animation-name: leDoorCloseRight;
 }
 
 @keyframes leDoorCloseRight {
-    from,
-    to {
-        transform: perspective(400px);
-        transform-origin: right;
-    }
+  from,
+  to {
+    transform: perspective(400px);
+    transform-origin: right;
+  }
 
-    from {
-        transform: rotateY(-90deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .ca__lt-DoorOpenLeft span {
-    animation-name: leDoorOpenLeft;
+  animation-name: leDoorOpenLeft;
 }
 
 @keyframes leDoorOpenLeft {
-    from,
-    to {
-        transform: perspective(400px);
-        transform-origin: right;
-    }
+  from,
+  to {
+    transform: perspective(400px);
+    transform-origin: right;
+  }
 
-    to {
-        transform: rotateY(-90deg);
-        opacity: 0;
-    }
+  to {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
 }

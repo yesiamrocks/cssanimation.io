@@ -7,37 +7,35 @@
  */
 
 .ca__fx-PerspectiveToTop {
-    animation-name: perspectiveToTop;
-    transform: perspective(500px);
-    transform-style: preserve-3d;
+  animation-name: perspectiveToTop;
+  transform: perspective(500px);
+  transform-style: preserve-3d;
 }
 
 @keyframes perspectiveToTop {
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: perspective(500px) rotateX(90deg) translateY(-50px)
-            translateZ(50px);
-        opacity: 0;
-    }
+  100% {
+    transform: perspective(500px) rotateX(90deg) translateY(-50px) translateZ(50px);
+    opacity: 0;
+  }
 }
 
 .ca__fx-PerspectiveToBottom {
-    animation-name: perspectiveToBottom;
-    transform: perspective(500px);
-    transform-style: preserve-3d;
+  animation-name: perspectiveToBottom;
+  transform: perspective(500px);
+  transform-style: preserve-3d;
 }
 
 @keyframes perspectiveToBottom {
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: perspective(500px) rotateX(90deg) translateY(50px)
-            translateZ(-50px);
-        opacity: 0;
-    }
+  100% {
+    transform: perspective(500px) rotateX(90deg) translateY(50px) translateZ(-50px);
+    opacity: 0;
+  }
 }

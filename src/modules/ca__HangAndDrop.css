@@ -7,55 +7,55 @@
  */
 
 .ca__fx-HangAndDropLeft {
-    animation-name: hangAndDropLeft;
+  animation-name: hangAndDropLeft;
 }
 
 @keyframes hangAndDropLeft {
-    0% {
-        transform-origin: left;
-    }
+  0% {
+    transform-origin: left;
+  }
 
-    50% {
-        transform: rotate(100deg);
-        transform-origin: left;
-    }
+  50% {
+    transform: rotate(100deg);
+    transform-origin: left;
+  }
 
-    60% {
-        transform: rotate(90deg);
-        transform-origin: left;
-        opacity: 1;
-    }
+  60% {
+    transform: rotate(90deg);
+    transform-origin: left;
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateY(300px) rotate(70deg);
-        transform-origin: left;
-        opacity: 0;
-    }
+  100% {
+    transform: translateY(300px) rotate(70deg);
+    transform-origin: left;
+    opacity: 0;
+  }
 }
 
 .ca__fx-HangAndDropRight {
-    animation-name: hangAndDropRight;
+  animation-name: hangAndDropRight;
 }
 
 @keyframes hangAndDropRight {
-    0% {
-        transform-origin: right;
-    }
+  0% {
+    transform-origin: right;
+  }
 
-    50% {
-        transform: rotate(-100deg);
-        transform-origin: right;
-    }
+  50% {
+    transform: rotate(-100deg);
+    transform-origin: right;
+  }
 
-    60% {
-        transform: rotate(-90deg);
-        transform-origin: right;
-        opacity: 1;
-    }
+  60% {
+    transform: rotate(-90deg);
+    transform-origin: right;
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateY(300px) rotate(-70deg);
-        transform-origin: right;
-        opacity: 0;
-    }
+  100% {
+    transform: translateY(300px) rotate(-70deg);
+    transform-origin: right;
+    opacity: 0;
+  }
 }

@@ -7,65 +7,65 @@
  */
 
 .ca__fx-SpinToLeft {
-    animation-name: spinToLeft;
+  animation-name: spinToLeft;
 }
 
 @keyframes spinToLeft {
-    from,
-    to {
-        transform-origin: left bottom;
-    }
+  from,
+  to {
+    transform-origin: left bottom;
+  }
 
-    from {
-        transform: rotate(90deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
 }
 
 .ca__fx-SpinToRight {
-    animation-name: spinToRight;
+  animation-name: spinToRight;
 }
 
 @keyframes spinToRight {
-    from,
-    to {
-        transform-origin: right bottom;
-    }
+  from,
+  to {
+    transform-origin: right bottom;
+  }
 
-    from {
-        transform: rotate(-90deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
 }
 
 .ca__fx-SpinToTop {
-    animation-name: spinToTop;
+  animation-name: spinToTop;
 }
 
 @keyframes spinToTop {
-    from,
-    to {
-        transform-origin: left bottom;
-    }
+  from,
+  to {
+    transform-origin: left bottom;
+  }
 
-    from {
-        transform: rotate(-90deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
 }
 
 .ca__fx-SpinToBottom {
-    animation-name: spinToBottom;
+  animation-name: spinToBottom;
 }
 
 @keyframes spinToBottom {
-    from,
-    to {
-        transform-origin: right bottom;
-    }
+  from,
+  to {
+    transform-origin: right bottom;
+  }
 
-    from {
-        transform: rotate(90deg);
-        opacity: 0;
-    }
+  from {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
 }

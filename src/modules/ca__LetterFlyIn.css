@@ -7,65 +7,65 @@
  */
 
 .ca__lt-FlyInTop span {
-    animation-name: leFlyInTop;
+  animation-name: leFlyInTop;
 }
 
 @keyframes leFlyInTop {
-    0% {
-        transform: translate(0, -80px);
-        opacity: 0;
-    }
+  0% {
+    transform: translate(0, -80px);
+    opacity: 0;
+  }
 
-    50% {
-        transform: translate(10px, 50px);
-        animation-timing-function: ease-in-out;
-    }
+  50% {
+    transform: translate(10px, 50px);
+    animation-timing-function: ease-in-out;
+  }
 }
 
 .ca__lt-FlyInLeft span {
-    animation-name: leFlyInLeft;
-    animation-timing-function: ease-in-out;
+  animation-name: leFlyInLeft;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes leFlyInLeft {
-    0% {
-        transform: translate(-40px, 0);
-        opacity: 0;
-    }
+  0% {
+    transform: translate(-40px, 0);
+    opacity: 0;
+  }
 
-    50% {
-        transform: translate(40px, 0);
-    }
+  50% {
+    transform: translate(40px, 0);
+  }
 }
 
 .ca__lt-FlyInRight span {
-    animation-name: leFlyInRight;
-    animation-timing-function: ease-in-out;
+  animation-name: leFlyInRight;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes leFlyInRight {
-    0% {
-        transform: translate(40px, 0);
-        opacity: 0;
-    }
+  0% {
+    transform: translate(40px, 0);
+    opacity: 0;
+  }
 
-    50% {
-        transform: translate(-40px, 0);
-    }
+  50% {
+    transform: translate(-40px, 0);
+  }
 }
 
 .ca__lt-FlyInBottom span {
-    animation-name: leFlyInBottom;
+  animation-name: leFlyInBottom;
 }
 
 @keyframes leFlyInBottom {
-    0% {
-        transform: translate(0, 80px);
-        opacity: 0;
-    }
+  0% {
+    transform: translate(0, 80px);
+    opacity: 0;
+  }
 
-    50% {
-        transform: translate(10px, -50px);
-        animation-timing-function: ease-in-out;
-    }
+  50% {
+    transform: translate(10px, -50px);
+    animation-timing-function: ease-in-out;
+  }
 }

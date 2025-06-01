@@ -7,43 +7,43 @@
  */
 
 .ca__lt-SkateX span {
-    animation-name: leScaleX;
-    animation-iteration-count: infinite;
+  animation-name: leScaleX;
+  animation-iteration-count: infinite;
 }
 
 @keyframes leScaleX {
-    50% {
-        transform: scaleX(0.4);
-    }
+  50% {
+    transform: scaleX(0.4);
+  }
 }
 
 .ca__lt-SkateY span {
-    animation-name: leSkateY;
-    animation-iteration-count: infinite;
+  animation-name: leSkateY;
+  animation-iteration-count: infinite;
 }
 
 @keyframes leSkateY {
-    50% {
-        transform: scaleY(0.4);
-    }
+  50% {
+    transform: scaleY(0.4);
+  }
 }
 
 .ca__lt-SkateXY span {
-    animation-name: leSkateXY;
-    animation-iteration-count: infinite;
-    animation-duration: 1.5s;
+  animation-name: leSkateXY;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
 }
 
 @keyframes leSkateXY {
-    25% {
-        transform: scale3d(1, 0.4, 0);
-    }
+  25% {
+    transform: scale3d(1, 0.4, 0);
+  }
 
-    50% {
-        transform: scale3d(0.4, 0.4, 1);
-    }
+  50% {
+    transform: scale3d(0.4, 0.4, 1);
+  }
 
-    75% {
-        transform: scale3d(0.4, 1, 1);
-    }
+  75% {
+    transform: scale3d(0.4, 1, 1);
+  }
 }
