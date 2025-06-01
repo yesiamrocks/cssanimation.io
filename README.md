@@ -10,7 +10,7 @@
 
 **cssanimation.io** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **300+ plug-and-play animation classes** (both pure CSS and GSAP-powered!) to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
 
-You're in control. Just apply the [class names](./reference/cssanimation-reference.md) where you want them. Zero setup. \*\*Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."
+You're in control. Just apply the [class names](./reference/cssanimation-reference.md) where you want them. Zero setup. **Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."**
 
 ## Why Developers Love It
 
@@ -22,11 +22,7 @@ You're in control. Just apply the [class names](./reference/cssanimation-referen
 - Zero JavaScript Dependencies (for CSS-only): Keep your project lean and fast.
 - Modern Dev Friendly: Works great with Tailwind CSS, React, and your favorite build tools.
 
----
-
-## ![CSS Animation](https://img.shields.io/badge/CSS-Animations-blue) CSS Animation Guide
-
-## Get Started: Installation
+## 🛠️ Get Started: Installation
 
 Choose the method that fits your workflow best.
 
@@ -36,7 +32,7 @@ Choose the method that fits your workflow best.
 npm i cssanimationio
 ```
 
-#### Import Everything (CSS Utility Classes & Letter Animation):
+#### Import Everything (Core Library, CSS Utility Classes & Letter Animation):
 
 ```bash
 import 'cssanimationio';
@@ -57,7 +53,8 @@ import 'cssanimationio/utility';
 For Letter Animations (JavaScript required for this part):
 
 ```bash
-import { initLetterAnimations } from 'cssanimationio/letter';
+//letter-by-letter, word-by-word, and line-by-line animations
+import 'cssanimationio/letter';
 ```
 
 ### Install via CDN
@@ -71,7 +68,7 @@ Quickly add **cssanimation.io** to your HTML. Include these lines in your `<head
 </head>
 ```
 
-### How to Use It
+### 🧩 How to Use It
 
 Once installed, simply add the base`.cssanimation` to your element, along with your chosen animation class like `.ca__fx-FadeIn` for fade in animation.
 
@@ -95,7 +92,7 @@ We use clear prefixes to help you find the right animation or utility class.
 
 <br>
 
-## Amazing Text & Letter Animations
+## 🔡 Amazing Text & Letter Animations
 
 > Want to animate text beautifully, responsively, and with zero dependencies (for the core CSS parts)?
 
@@ -182,7 +179,7 @@ Split lines by periods `"."` or by `<br>` / `\n`. Use `ca__lt-separator="dot"` f
 </h2>
 ```
 
-### `ca__lt-delay` in Detail
+## ⏱️ `ca__lt-delay` in Detail
 
 The `ca__lt-delay` attribute specifies the delay before each animated unit (letter, word, or line) begins its animation. The values are in milliseconds (ms).
 
@@ -202,7 +199,7 @@ The `ca__lt-delay` attribute specifies the delay before each animated unit (lett
 
 This allows you to create rhythmic or staggered entry effects easily, like `ca__lt-delay="50 100 100"` as in your example. The first unit gets 50ms delay, and all subsequent units get 100ms delay.
 
-### `ca__lt-base-duration` in Detail
+## ⌛ `ca__lt-base-duration` in Detail
 
 The `ca__lt-base-duration` attribute provides a simple way to set a global default animation duration for all units (letters, words, or lines) in milliseconds (ms).
 
@@ -220,7 +217,7 @@ This value is used to explicitly set the duration for all units, overriding any 
 
 This means `ca__lt-base-duration` gives you a convenient way to set a project-wide or component-wide default duration without needing to edit CSS.
 
-## Supported Attributes for Text Animations
+## 🏷️ Supported Attributes for Text Animations
 
 | Attribute              | Description                                                                      |
 | ---------------------- | -------------------------------------------------------------------------------- |
@@ -233,7 +230,7 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 | `ca__lt-base-duration` | Optional base animation duration per unit (in ms)                                |
 | `ca__lt-separator`     | Use `dot` to split on periods `( . )`. Default: line breaks (`<br>` or `\n`)     |
 
-## Developer Tips
+## 💡Developer Tips
 
 - The `.cssanimation` **class is always required** for baseline styling and to activate text animations.
 - You can provide fewer classes or delay values than units; the last value will simply repeat for the remaining units, making it easy to apply a pattern.
@@ -241,7 +238,7 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 - Delay and duration values are parsed safely; non-numeric strings will fall back to default behaviors to prevent errors.
 - Animation duration is determined in this order of precedence: `ca__lt-base-duration` > CSS-detected duration > internal default.
 
-## 💡 Example: Full Setup
+**Example: Full Setup**
 
 ```html
 <h2 class="cssanimation" ca__lt-word="fadeIn bounce slide rotate" ca__lt-delay="200 300 400" ca__lt-duration="1000">
@@ -251,7 +248,7 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 
 <br>
 
-## Modular Import
+## 📦 Modular Import
 
 Want to keep your bundle size minimal? Only import the effects you actually use!
 
@@ -302,7 +299,7 @@ Each module is generated from `./dist/cssanimation.css` and follows the naming c
 
 <br>
 
-## Utility Class
+## 🧰 Utility Class
 
 **cssanimation.io** also provides a powerful set of pre-built utility classes to fine-tune your animations. Use them alongside the `.cssanimation` base class and your chosen animation class.
 
@@ -314,14 +311,6 @@ This includes:
 - `.ca__u-Delay*`: Add animation delays (e.g., `.ca__u-Delay3`).
 
 Check out the full list and details in [`cssanimation-utilities.md`](./reference/cssanimation-reference.md#utility-classes-ungrouped).
-
-Combo Example
-
-```html
-<p class="cssanimation ca__fx-zoomIn ca__u-SpeedChill ca__u-Delay3 ca__u-EaseSnappy ca__u-LoopTriple">
-  Magical Entrance!
-</p>
-```
 
 ### 🎉 That’s It!
 
@@ -372,6 +361,6 @@ By default, **cssanimation.io** respects user system preferences. When `prefers-
 
 ## Contribute
 
-We welcome issues, pull requests, and suggestions! Help us make animations even more magical for everyone.
+We welcome issues, pull requests, and suggestions! 🤝 Help us make animations even more magical for everyone.
 
 ![Built with ❤️ by Pavel](https://img.shields.io/badge/built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/shafayetul/)
