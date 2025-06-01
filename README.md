@@ -10,7 +10,7 @@
 
 **cssanimation.io** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **300+ plug-and-play animation classes** (both pure CSS and GSAP-powered!) to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
 
-You're in control. Just apply the [class names](./reference/cssanimation-reference.md) where you want them. Zero setup. **Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."**
+You're in control. Just apply the [class names](./reference/cssanimation-reference.md) where you want them. **Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."**
 
 ## Why Developers Love It
 
@@ -88,7 +88,6 @@ We use clear prefixes to help you find the right animation or utility class.
 | --------- | ------------------------------------------------ | ------------------------------- |
 | `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-BounceX">`   |
 | `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-SpeedChill">` |
-| `ca__lt-` | Letter-based animations                          | `<h1 class="ca__lt-PopOut">`    |
 
 <br>
 
@@ -121,25 +120,25 @@ For plain HTML, include the `ca-letteranimation.js`, script just before your clo
 
 ### Letter Animation Usage
 
-Every animated text block needs the `cssanimation` class along with a `ca__lt-*` attribute to define how it animates.
+Every animated text block needs the `.cssanimation` class along with a `ca__lt-*` attribute to define how it animates.
 
 #### 1. Letter-by-Letter Animation
 
 Animate text one letter at a time with different sequencing styles:
 
-**Sequential (in order):** `ca__lt-sequence="[animationClass]"`
+**Sequential (in order):** `ca__lt-sequence`
 
 ```html
 <h1 class="cssanimation" ca__lt-sequence="ca__fx-FadeIn">Letters Animate</h1>
 ```
 
-**Randomized order** `ca__lt-random="[animationClass]"`
+**Randomized order** `ca__lt-random`
 
 ```html
 <p class="cssanimation" ca__lt-random="ca__fx-BounceInTop">Randomized entry!</p>
 ```
 
-**Reverse (last letter first)** `ca__lt-reverse="[animationClass]"`
+**Reverse (last letter first)** `ca__lt-reverse`
 
 ```html
 <h3 class="cssanimation" ca__lt-reverse="ca__fx-MoveFromTop">Backwards Flow</h3>
@@ -147,13 +146,13 @@ Animate text one letter at a time with different sequencing styles:
 
 ---
 
-#### 2. Word-by-Word Animation `ca__lt-word="[animationClass]"`
+#### 2. Word-by-Word Animation `ca__lt-word`
 
 ```html
 <h2 class="cssanimation" ca__lt-word="ca__fx-FadeIn">Each word animates uniquely</h2>
 ```
 
-#### 3. Line-by-line Animation `ca__lt-line="[animationClass]"`
+#### 3. Line-by-line Animation `ca__lt-line`
 
 ```html
 <p class="cssanimation" ca__lt-line="ca__fx-FadeIn">
@@ -171,12 +170,20 @@ Split lines by periods `"."` or by `<br>` / `\n`. Use `ca__lt-separator="dot"` f
 
 📌You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **default behavior**.
 
-🔥You can assign **different animation classes and delays to each word and line!** Space-separate your class names and delay values.
+### 🔥You can assign different animation classes and delays to each word and line! Space-separate your class names and delay values.
 
 ```html
 <h2 class="cssanimation" ca__lt-word="ca__fx-FadeIn ca__fx-MoveFromTop ca__fx-MoveFromBottom ca__fx-MoveFromRight">
   Each word animates uniquely
 </h2>
+```
+
+```html
+<p class="cssanimation" ca__lt-line="ca__fx-BlurIn ca__fx-BounceFromTop ca__fx-BounceX">
+  First line<br />
+  Second line<br />
+  Third line
+</p>
 ```
 
 ## ⏱️ `ca__lt-delay` in Detail
