@@ -99,7 +99,6 @@ We use clear prefixes to help you find the right animation or utility class.
 
 ### Key Features
 
-- Zero dependencies: Keep your project lean.
 - Highly customizable: Control animations directly with HTML attributes.
 - Animate **Letters**, **Words**, or **Lines**: Independent control for precise effects.
 - Supports **custom css animation classes**
@@ -126,19 +125,19 @@ Every animated text block needs the `.cssanimation` class along with a `ca__lt-*
 
 Animate text one letter at a time with different sequencing styles:
 
-**Sequential (in order):** `ca__lt-sequence`
+**➜  Sequential (in order):** `ca__lt-sequence`
 
 ```html
 <h1 class="cssanimation" ca__lt-sequence="ca__fx-FadeIn">Letters Animate</h1>
 ```
 
-**Randomized order** `ca__lt-random`
+**➜ Randomized order** `ca__lt-random`
 
 ```html
 <p class="cssanimation" ca__lt-random="ca__fx-BounceInTop">Randomized entry!</p>
 ```
 
-**Reverse (last letter first)** `ca__lt-reverse`
+**➜ Reverse (last letter first)** `ca__lt-reverse`
 
 ```html
 <h3 class="cssanimation" ca__lt-reverse="ca__fx-MoveFromTop">Backwards Flow</h3>
