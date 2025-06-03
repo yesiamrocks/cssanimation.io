@@ -6,7 +6,7 @@
  *   <div class="ca__Perspective">Your Text</div>
  */
 
-.ca__fx-PerspectiveToTop {
+.perspectiveToTop {
   animation-name: perspectiveToTop;
   transform: perspective(500px);
   transform-style: preserve-3d;
@@ -23,7 +23,7 @@
   }
 }
 
-.ca__fx-PerspectiveToBottom {
+.perspectiveToBottom {
   animation-name: perspectiveToBottom;
   transform: perspective(500px);
   transform-style: preserve-3d;

@@ -6,7 +6,7 @@
  *   <div class="ca__Shake">Your Text</div>
  */
 
-.ca__fx-PulseShake {
+.pulseShake {
   animation-name: pulseShake;
   animation-iteration-count: infinite;
 }
@@ -29,7 +29,7 @@
   }
 }
 
-.ca__fx-HorizontalShake {
+.horizontalShake {
   animation-name: horizontalShake;
   animation-iteration-count: infinite;
 }
@@ -78,7 +78,7 @@
   }
 }
 
-.ca__fx-VerticalShake {
+.verticalShake {
   animation-name: verticalShake;
   animation-iteration-count: infinite;
 }
@@ -127,7 +127,7 @@
   }
 }
 
-.ca__fx-MadMax {
+.madMax {
   animation-name: madMax;
   animation-iteration-count: infinite;
 }
@@ -176,7 +176,7 @@
   }
 }
 
-.ca__fx-CoolHorizontalShake {
+.coolHorizontalShake {
   animation-name: coolHorizontalShake;
   animation-iteration-count: infinite;
 }
@@ -210,7 +210,7 @@
   }
 }
 
-.ca__fx-CoolVerticalShake {
+.coolVerticalShake {
   animation-name: coolVerticalShake;
   animation-iteration-count: infinite;
 }
@@ -244,7 +244,7 @@
   }
 }
 
-.ca__fx-QuietMad {
+.quietMad {
   animation-name: quietMad;
   animation-iteration-count: infinite;
 }
@@ -278,7 +278,7 @@
   }
 }
 
-.ca__fx-Vibration {
+.vibration {
   animation: vibration 0.1s linear infinite;
 }
 

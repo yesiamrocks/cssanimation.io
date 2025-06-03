@@ -6,7 +6,7 @@
  *   <div class="ca__LetterFadeOut">Your Text</div>
  */
 
-.ca__lt-FadeOut span {
+.leFadeOut span {
   animation-name: leFadeOut;
 }
 
@@ -16,7 +16,7 @@
   }
 }
 
-.ca__lt-FadeOutLeft span {
+.leFadeOutLeft span {
   animation-name: leFadeOutLeft;
 }
 
@@ -31,7 +31,7 @@
   }
 }
 
-.ca__lt-FadeOutRight span {
+.leFadeOutRight span {
   animation-name: leFadeOutRight;
 }
 
@@ -46,7 +46,7 @@
   }
 }
 
-.ca__lt-FadeOutTop span {
+.leFadeOutTop span {
   animation-name: leFadeOutTop;
 }
 
@@ -61,7 +61,7 @@
   }
 }
 
-.ca__lt-FadeOutBottom span {
+.leFadeOutBottom span {
   animation-name: leFadeOutBottom;
 }
 

@@ -6,7 +6,7 @@
  *   <div class="ca__LetterSpin">Your Text</div>
  */
 
-.ca__lt-SpinInLeft span {
+.leSpinInLeft span {
   animation-name: leSpinInLeft;
 }
 
@@ -22,7 +22,7 @@
   }
 }
 
-.ca__lt-SpinInRight span {
+.leSpinInRight span {
   animation-name: leSpinInRight;
 }
 
@@ -38,7 +38,7 @@
   }
 }
 
-.ca__lt-SpinOutLeft span {
+.leSpinOutLeft span {
   animation-name: leSpinOutLeft;
 }
 
@@ -54,7 +54,7 @@
   }
 }
 
-.ca__lt-SpinOutRight span {
+.leSpinOutRight span {
   animation-name: leSpinOutRight;
 }
 

@@ -6,7 +6,7 @@
  *   <div class="ca__FadeOut">Your Text</div>
  */
 
-.ca__fx-FadeOut {
+.fadeOut {
   animation-name: fadeOut;
 }
 
@@ -16,7 +16,7 @@
   }
 }
 
-.ca__fx-FadeOutLeft {
+.fadeOutLeft {
   animation-name: fadeOutLeft;
 }
 
@@ -31,7 +31,7 @@
   }
 }
 
-.ca__fx-FadeOutRight {
+.fadeOutRight {
   animation-name: fadeOutRight;
 }
 
@@ -46,7 +46,7 @@
   }
 }
 
-.ca__fx-FadeOutTop {
+.fadeOutTop {
   animation-name: fadeOutTop;
 }
 
@@ -61,7 +61,7 @@
   }
 }
 
-.ca__fx-FadeOutBottom {
+.fadeOutBottom {
   animation-name: fadeOutBottom;
 }
 

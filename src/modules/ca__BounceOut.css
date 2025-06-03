@@ -6,7 +6,7 @@
  *   <div class="ca__BounceOut">Your Text</div>
  */
 
-.ca__fx-BounceOutTop {
+.bounceOutTop {
   animation-name: bounceOutTop;
 }
 
@@ -35,7 +35,7 @@
   }
 }
 
-.ca__fx-BounceOutBottom {
+.bounceOutBottom {
   animation-name: bounceOutBottom;
 }
 
@@ -64,7 +64,7 @@
   }
 }
 
-.ca__fx-BounceOutLeft {
+.bounceOutLeft {
   animation-name: bounceOutLeft;
 }
 
@@ -93,7 +93,7 @@
   }
 }
 
-.ca__fx-BounceOutRight {
+.bounceOutRight {
   animation-name: bounceOutRight;
 }
 

@@ -6,7 +6,7 @@
  *   <div class="ca__RotateOut">Your Text</div>
  */
 
-.ca__fx-RotateOutLeft {
+.rotateOutLeft {
   animation-name: rotateOutLeft;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__fx-RotateOutRight {
+.rotateOutRight {
   animation-name: rotateOutRight;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__fx-RotateOutTop {
+.rotateOutTop {
   animation-name: rotateOutTop;
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.ca__fx-RotateOutBottom {
+.rotateOutBottom {
   animation-name: rotateOutBottom;
 }
 

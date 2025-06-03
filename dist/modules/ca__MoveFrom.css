@@ -6,42 +6,42 @@
  *   <div class="ca__MoveFrom">Your Text</div>
  */
 
-.ca__fx-MoveFromLeft {
-    animation-name: moveFromLeft;
+.moveFromLeft {
+  animation-name: moveFromLeft;
 }
 
 @keyframes moveFromLeft {
-    from {
-        transform: translateX(-800px);
-    }
+  from {
+    transform: translateX(-800px);
+  }
 }
 
-.ca__fx-MoveFromRight {
-    animation-name: moveFromRight;
+.moveFromRight {
+  animation-name: moveFromRight;
 }
 
 @keyframes moveFromRight {
-    from {
-        transform: translateX(800px);
-    }
+  from {
+    transform: translateX(800px);
+  }
 }
 
-.ca__fx-MoveFromTop {
-    animation-name: moveFromTop;
+.moveFromTop {
+  animation-name: moveFromTop;
 }
 
 @keyframes moveFromTop {
-    from {
-        transform: translateY(-800px);
-    }
+  from {
+    transform: translateY(-800px);
+  }
 }
 
-.ca__fx-MoveFromBottom {
-    animation-name: moveFromBottom;
+.moveFromBottom {
+  animation-name: moveFromBottom;
 }
 
 @keyframes moveFromBottom {
-    from {
-        transform: translateY(800px);
-    }
+  from {
+    transform: translateY(800px);
+  }
 }

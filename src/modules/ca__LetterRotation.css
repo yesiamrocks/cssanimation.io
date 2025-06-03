@@ -6,7 +6,7 @@
  *   <div class="ca__LetterRotation">Your Text</div>
  */
 
-.ca__lt-RotateXZoomIn span {
+.leRotateXZoomIn span {
   animation-name: leRotateXZoomIn;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__lt-RotateXZoomOut span {
+.leRotateXZoomOut span {
   animation-name: leRotateXZoomOut;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__lt-RotateYZoomIn span {
+.leRotateYZoomIn span {
   animation-name: leRotateYZoomIn;
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.ca__lt-RotateYZoomOut span {
+.leRotateYZoomOut span {
   animation-name: leRotateYZoomOut;
 }
 

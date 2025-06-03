@@ -6,7 +6,7 @@
  *   <div class="ca__KickOut">Your Text</div>
  */
 
-.ca__lt-KickOutBehind span {
+.leKickOutBehind span {
   animation-name: leKickOutFront;
   transform-origin: top;
 }
@@ -22,7 +22,7 @@
   }
 }
 
-.ca__lt-KickOutFront span {
+.leKickOutFront span {
   animation-name: leKickOutBehind;
   transform-origin: top;
 }

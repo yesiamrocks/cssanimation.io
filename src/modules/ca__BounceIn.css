@@ -6,7 +6,7 @@
  *   <div class="ca__BounceIn">Your Text</div>
  */
 
-.ca__fx-BounceInTop {
+.bounceInTop {
   animation-name: bounceInTop;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__fx-BounceInBottom {
+.bounceInBottom {
   animation-name: bounceInBottom;
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-.ca__fx-BounceInLeft {
+.bounceInLeft {
   animation-name: bounceInLeft;
 }
 
@@ -72,7 +72,7 @@
   }
 }
 
-.ca__fx-BounceInRight {
+.bounceInRight {
   animation-name: bounceInRight;
 }
 

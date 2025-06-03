@@ -33,26 +33,36 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "npm run prefix:css:all && npm run copy:assets && npm run build:classlist",
+    "build": "npm run prefix:css:all && npm run copy:assets && npm run build:classlist && npm run build:animations && npm run build:animations:min && npm run generate:animation-index && npm run generate:demo",
     "build:css:basic": "postcss src/*.css -d dist/ --no-map",
-    "prefix:css:all": "npm run prefix:css && npm run prefix:utility",
     "start": "postcss src/*.css -d dist/ --watch --no-map",
     "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules && cpx \"src/animations/**/*\" dist/animations",
-    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css": "stylelint \"src/**/*.css\" --config .stylelintrc.json",
     "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
     "format:css": "prettier --write \"src/**/*.css\"",
     "build:classlist": "node tools/extract-class-names.js",
-    "prefix:css": "postcss src/cssanimation.css -o dist/cssanimation.css && postcss src/cssanimation.css -o dist/cssanimation.min.css --env production",
-    "prefix:utility": "postcss src/cssanimation-utility.css -o dist/cssanimation-utility.css && postcss src/cssanimation-utility.css -o dist/cssanimation-utility.min.css --env production",
-    "export:modules": "node tools/export-modules.js"
+    "prefix:css": "postcss src/cssanimation.css --config postcss.config.js -o dist/cssanimation.css && postcss src/cssanimation.css --config postcss.config.js -o dist/cssanimation.min.css --env production",
+    "prefix:utility": "postcss src/cssanimation-utility.css --config postcss.config.js -o dist/cssanimation-utility.css && postcss src/cssanimation-utility.css --config postcss.config.js -o dist/cssanimation-utility.min.css --env production",
+    "prefix:css:all": "npm run prefix:css && npm run prefix:utility",
+    "generate:animation-index": "node tools/build-animation-index.js",
+    "export:modules": "node tools/export-modules.js",
+    "build:animations": "postcss src/animations/ca__index.css -o src/cssanimation-index.css",
+    "build:animations:min": "cross-env CSS_BUILD=min postcss src/cssanimation-index.css -o src/cssanimation-index.min.css",
+    "generate:demo": "node tools/generate-animation-demo.js",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "autoprefixer": "^10.4.21",
     "cpx": "^1.2.1",
+    "cross-env": "^7.0.3",
     "cssnano": "^7.0.7",
+    "lint-staged": "^15.2.2",
     "mkdirp": "^3.0.1",
-    "postcss": "^8.4.31",
+    "postcss": "^8.5.4",
     "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0",
     "postcss-prefix-selector": "^2.1.1",
     "postcss-preset-env": "^10.1.6",
     "postcss-selector-namespace": "^1.2.2",
@@ -79,5 +89,16 @@
   "dependencies": {
     "glob-parent": "^6.0.2",
     "micromatch": "^4.0.8"
+  },
+  "lint-staged": {
+    "src/**/*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

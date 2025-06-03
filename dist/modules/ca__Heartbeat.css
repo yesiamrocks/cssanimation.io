@@ -6,32 +6,32 @@
  *   <div class="ca__Heartbeat">Your Text</div>
  */
 
-.ca__fx-HeartbeatSlow {
-    animation-name: heartbeatSlow;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
+.heartbeatSlow {
+  animation-name: heartbeatSlow;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
 }
 
 @keyframes heartbeatSlow {
-    35%,
-    65% {
-        transform: scale(1.2);
-    }
+  35%,
+  65% {
+    transform: scale(1.2);
+  }
 }
 
-.ca__fx-HeartbeatFast {
-    animation-name: heartbeatFast;
-    animation-iteration-count: infinite;
+.heartbeatFast {
+  animation-name: heartbeatFast;
+  animation-iteration-count: infinite;
 }
 
 @keyframes heartbeatFast {
-    14%,
-    42% {
-        transform: scale(1.3);
-    }
+  14%,
+  42% {
+    transform: scale(1.3);
+  }
 
-    28%,
-    70% {
-        transform: scale(1);
-    }
+  28%,
+  70% {
+    transform: scale(1);
+  }
 }

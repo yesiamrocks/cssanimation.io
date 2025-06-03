@@ -6,7 +6,7 @@
  *   <div class="ca__LetterPerspective">Your Text</div>
  */
 
-.ca__lt-PerspectiveOutTop span {
+.lePerspectiveOutTop span {
   animation-name: lePerspectiveOutTop;
   transform: perspective(500px);
   transform-style: preserve-3d;
@@ -23,7 +23,7 @@
   }
 }
 
-.ca__lt-PerspectiveOutBottom span {
+.lePerspectiveOutBottom span {
   animation-name: lePerspectiveOutBottom;
   transform: perspective(500px);
   transform-style: preserve-3d;

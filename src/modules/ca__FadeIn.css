@@ -6,7 +6,7 @@
  *   <div class="ca__FadeIn">Your Text</div>
  */
 
-.ca__fx-FadeIn {
+.fadeIn {
   animation-name: fadeIn;
 }
 
@@ -20,7 +20,7 @@
   }
 }
 
-.ca__fx-FadeInLeft {
+.fadeInLeft {
   animation-name: fadeInLeft;
 }
 
@@ -35,7 +35,7 @@
   }
 }
 
-.ca__fx-FadeInRight {
+.fadeInRight {
   animation-name: fadeInRight;
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-.ca__fx-FadeInTop {
+.fadeInTop {
   animation-name: fadeInTop;
 }
 
@@ -65,7 +65,7 @@
   }
 }
 
-.ca__fx-FadeInBottom {
+.fadeInBottom {
   animation-name: fadeInBottom;
 }
 

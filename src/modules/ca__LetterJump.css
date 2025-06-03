@@ -6,7 +6,7 @@
  *   <div class="ca__LetterJump">Your Text</div>
  */
 
-.ca__lt-Jump span {
+.leJump span {
   animation-name: leJump;
   animation-iteration-count: infinite;
 }

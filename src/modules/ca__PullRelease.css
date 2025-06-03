@@ -6,7 +6,7 @@
  *   <div class="ca__PullRelease">Your Text</div>
  */
 
-.ca__fx-PullRelease {
+.pullRelease {
   animation-name: pullRelease;
 }
 
@@ -16,7 +16,7 @@
   }
 }
 
-.ca__fx-PushRelease {
+.pushRelease {
   animation-name: pushRelease;
 }
 

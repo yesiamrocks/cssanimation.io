@@ -6,7 +6,7 @@
  *   <div class="ca__ZoomIn">Your Text</div>
  */
 
-.ca__fx-ZoomIn {
+.zoomIn {
   animation-name: zoomIn;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__fx-ZoomInLeft {
+.zoomInLeft {
   animation-name: zoomInLeft;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__fx-ZoomInRight {
+.zoomInRight {
   animation-name: zoomInRight;
 }
 
@@ -39,7 +39,7 @@
   }
 }
 
-.ca__fx-ZoomInTop {
+.zoomInTop {
   animation-name: zoomInTop;
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-.ca__fx-ZoomInBottom {
+.zoomInBottom {
   animation-name: zoomInBottom;
 }
 

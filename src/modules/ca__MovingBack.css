@@ -6,7 +6,7 @@
  *   <div class="ca__MovingBack">Your Text</div>
  */
 
-.ca__lt-MovingBackFromRight span {
+.leMovingBackFromRight span {
   animation-name: leMovingBackFromRight;
   transform-origin: bottom;
 }
@@ -22,7 +22,7 @@
   }
 }
 
-.ca__lt-MovingBackFromLeft span {
+.leMovingBackFromLeft span {
   animation-name: leMovingBackFromLeft;
   transform-origin: bottom;
 }

@@ -1,0 +1,50 @@
+/**
+ * Module: Kick out
+ * Filename: ca__KickOut.css
+ */
+
+.kickOutBehind {
+  animation-name: kickOutBehind;
+  transform-origin: top;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+  animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+}
+
+@keyframes kickOutBehind {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.kickOutFront {
+  animation-name: kickOutFront;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+  transform-origin: top;
+  animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+}
+
+@keyframes kickOutFront {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -6,7 +6,7 @@
  *   <div class="ca__LetterRollTo">Your Text</div>
  */
 
-.ca__lt-RollToLeft span {
+.leRollToLeft span {
   animation-name: leRollToLeft;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__lt-RollToRight span {
+.leRollToRight span {
   animation-name: leRollToRight;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__lt-RollToTop span {
+.leRollToTop span {
   animation-name: leRollToTop;
 }
 
@@ -39,7 +39,7 @@
   }
 }
 
-.ca__lt-RollToBottom span {
+.leRollToBottom span {
   animation-name: leRollToBottom;
 }
 

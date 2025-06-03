@@ -6,7 +6,7 @@
  *   <div class="ca__LetterPopUp">Your Text</div>
  */
 
-.ca__lt-PopUp span {
+.lePopUp span {
   animation-name: lePopUp;
 }
 
@@ -16,7 +16,7 @@
   }
 }
 
-.ca__lt-PopUpLeft span {
+.lePopUpLeft span {
   animation-name: lePopUpLeft;
 }
 
@@ -27,7 +27,7 @@
   }
 }
 
-.ca__lt-PopUpRight span {
+.lePopUpRight span {
   animation-name: lePopUpRight;
 }
 

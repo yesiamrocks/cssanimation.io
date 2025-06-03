@@ -16,229 +16,234 @@
  */
 
 /* Duration Utilities */
-.ca__u-SpeedBlitz {
+
+.ca__fx-speedBlitz {
   animation-duration: 0.3s !important;
 }
 
-.ca__u-SpeedQuick {
+.ca__fx-speedQuick {
   animation-duration: 0.6s !important;
 }
 
-.ca__u-SpeedChill {
+.ca__fx-speedChill {
   animation-duration: 1.2s !important;
 }
 
-.ca__u-SpeedDrift {
+.ca__fx-speedDrift {
   animation-duration: 2s !important;
 }
 
-.ca__u-SpeedSnail {
+.ca__fx-speedSnail {
   animation-duration: 3s !important;
 }
 
 /* Delay Utilities */
-.ca__u-Delay1 {
+
+.ca__fx-delay1 {
   animation-delay: 0.25s !important;
 }
 
-.ca__u-Delay2 {
+.ca__fx-delay2 {
   animation-delay: 0.5s !important;
 }
 
-.ca__u-Delay3 {
+.ca__fx-delay3 {
   animation-delay: 1s !important;
 }
 
-.ca__u-Delay5 {
+.ca__fx-delay5 {
   animation-delay: 2s !important;
 }
 
 /* Easing Utilities */
-.ca__u-EaseSmooth {
+
+.ca__fx-easeSmooth {
   animation-timing-function: ease-in-out !important;
 }
 
-.ca__u-EaseSnappy {
+.ca__fx-easeSnappy {
   animation-timing-function: cubic-bezier(0.5, 1.8, 0.5, 1) !important;
 }
 
-.ca__u-EaseChill {
+.ca__fx-easeChill {
   animation-timing-function: ease-in !important;
 }
 
-.ca__u-EasePunch {
+.ca__fx-easePunch {
   animation-timing-function: ease-out !important;
 }
 
-.ca__u-EaseLinear {
+.ca__fx-easeLinear {
   animation-timing-function: linear !important;
 }
-.ca__u-EaseSoft {
+
+.ca__fx-easeSoft {
   animation-timing-function: ease;
 }
 
-.ca__u-EaseInFast {
+.ca__fx-easeInFast {
   animation-timing-function: ease-in;
 }
 
-.ca__u-EaseOutChill {
+.ca__fx-easeOutChill {
   animation-timing-function: ease-out;
 }
 
-.ca__u-EaseSnap {
+.ca__fx-easeSnap {
   animation-timing-function: ease-in-out;
 }
 
-.ca__u-EaseBounce {
+.ca__fx-easeBounce {
   animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.ca__u-EaseElastic {
+.ca__fx-easeElastic {
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.ca__u-EaseSwoosh {
+.ca__fx-easeSwoosh {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ca__u-EaseGlide {
+.ca__fx-easeGlide {
   animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.ca__u-EaseStagger {
+.ca__fx-easeStagger {
   animation-timing-function: step-end;
 }
 
-.ca__u-EaseDrift {
+.ca__fx-easeDrift {
   animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
 }
 
-.ca__u-EaseJelly {
+.ca__fx-easeJelly {
   animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.ca__u-EasePop {
+.ca__fx-easePop {
   animation-timing-function: cubic-bezier(0.3, 1.3, 0.3, 1);
 }
 
-.ca__u-EaseRocket {
+.ca__fx-easeRocket {
   animation-timing-function: cubic-bezier(0.6, 0.05, 1, 0.95); /* Fast takeoff */
 }
 
-.ca__u-EaseGravity {
+.ca__fx-easeGravity {
   animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1); /* Slow rise, fast fall */
 }
 
-.ca__u-EaseRubber {
+.ca__fx-easeRubber {
   animation-timing-function: cubic-bezier(0.36, 0.66, 0.04, 1); /* Elastic stretch */
 }
 
-.ca__u-EaseSnappy {
+.ca__fx-easeSnappy {
   animation-timing-function: cubic-bezier(0.5, 1.5, 0.5, 1); /* Fast overshoot */
 }
 
-.ca__u-EaseBoom {
+.ca__fx-easeBoom {
   animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1.5); /* Big bounce */
 }
 
-.ca__u-EaseSlideBack {
+.ca__fx-easeSlideBack {
   animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); /* Nice backward drag */
 }
 
-.ca__u-EaseQuickStep {
+.ca__fx-easeQuickStep {
   animation-timing-function: steps(3, end); /* Stepped flick */
 }
 
-.ca__u-EaseSnapBack {
+.ca__fx-easeSnapBack {
   animation-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5); /* Overstretch snap */
 }
 
-.ca__u-EaseWhip {
+.ca__fx-easeWhip {
   animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); /* Whiplash exit */
 }
 
-.ca__u-EaseComet {
+.ca__fx-easeComet {
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1.5); /* Tail-like motion */
 }
 
-.ca__u-EaseQuick {
+.ca__fx-easeQuick {
   animation-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
 }
 
-.ca__u-EaseGentle {
+.ca__fx-easeGentle {
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.ca__u-EaseSling {
+.ca__fx-easeSling {
   animation-timing-function: cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
-.ca__u-EaseBounceHard {
+.ca__fx-easeBounceHard {
   animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-.ca__u-EaseOvershoot {
+.ca__fx-easeOvershoot {
   animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
 }
 
-.ca__u-EaseSnapZoom {
+.ca__fx-easeSnapZoom {
   animation-timing-function: cubic-bezier(0.2, 0.85, 0.5, 1);
 }
 
-.ca__u-EaseRipple {
+.ca__fx-easeRipple {
   animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-.ca__u-EasePulse {
+.ca__fx-easePulse {
   animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.ca__u-EaseStepSmooth {
+.ca__fx-easeStepSmooth {
   animation-timing-function: steps(5, end);
 }
 
-.ca__u-EaseFlow {
+.ca__fx-easeFlow {
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.ca__u-EaseWhiplash {
+.ca__fx-easeWhiplash {
   animation-timing-function: cubic-bezier(0.3, 1.5, 0.8, 1);
 }
 
-.ca__u-EasePopIn {
+.ca__fx-easePopIn {
   animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.ca__u-EaseDip {
+.ca__fx-easeDip {
   animation-timing-function: cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
-.ca__u-EaseBounceSoft {
+.ca__fx-easeBounceSoft {
   animation-timing-function: cubic-bezier(0.57, 1.45, 0.45, 1);
 }
 
-.ca__u-EaseZoomSnappy {
+.ca__fx-easeZoomSnappy {
   animation-timing-function: cubic-bezier(0.3, 0, 0.3, 1.5);
 }
 
-.ca__u-EaseBackTwist {
+.ca__fx-easeBackTwist {
   animation-timing-function: cubic-bezier(0.9, -0.6, 0.8, 1.8);
 }
 
 /* Repeating Utilities */
-.ca__u-LoopOnce {
+
+.ca__fx-loop-once {
   animation-iteration-count: 1 !important;
 }
 
-.ca__u-LoopForever {
+.ca__fx-loop-forever {
   animation-iteration-count: infinite !important;
 }
 
-.ca__u-LoopTriple {
+.ca__fx-loop-triple {
   animation-iteration-count: 3 !important;
 }
 
-.ca__u-LoopBounce {
+.ca__fx-loop-bounce {
   animation-iteration-count: infinite !important;
   animation-direction: alternate !important;
 }

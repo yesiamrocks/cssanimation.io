@@ -6,7 +6,7 @@
  *   <div class="ca__LetterPushRelease">Your Text</div>
  */
 
-.ca__lt-PushReleaseFrom span {
+.lePushReleaseFrom span {
   animation-name: lePushReleaseFrom;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__lt-PushReleaseFromLeft span {
+.lePushReleaseFromLeft span {
   animation-name: lePushReleaseFromLeft;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__lt-PushReleaseFromTop span {
+.lePushReleaseFromTop span {
   animation-name: lePushReleaseFromTop;
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.ca__lt-PushReleaseFromBottom span {
+.lePushReleaseFromBottom span {
   animation-name: lePushReleaseFromBottom;
 }
 
@@ -66,7 +66,7 @@
   }
 }
 
-.ca__lt-PushReleaseTo span {
+.lePushReleaseTo span {
   animation-name: lePushReleaseTo;
 }
 
@@ -81,7 +81,7 @@
   }
 }
 
-.ca__lt-PushReleaseToTop span {
+.lePushReleaseToTop span {
   animation-name: lePushReleaseToTop;
 }
 
@@ -96,7 +96,7 @@
   }
 }
 
-.ca__lt-PushReleaseToBottom span {
+.lePushReleaseToBottom span {
   animation-name: lePushReleaseToBottom;
 }
 

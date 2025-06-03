@@ -6,7 +6,7 @@
  *   <div class="ca__BlurIn">Your Text</div>
  */
 
-.ca__fx-BlurIn {
+.blurIn {
   animation-name: blurIn;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__fx-BlurInLeft {
+.blurInLeft {
   animation-name: blurInLeft;
 }
 
@@ -29,7 +29,7 @@
   }
 }
 
-.ca__fx-BlurInRight {
+.blurInRight {
   animation-name: blurInRight;
 }
 
@@ -41,7 +41,7 @@
   }
 }
 
-.ca__fx-BlurInTop {
+.blurInTop {
   animation-name: blurInTop;
 }
 
@@ -53,7 +53,7 @@
   }
 }
 
-.ca__fx-BlurInBottom {
+.blurInBottom {
   animation-name: blurInBottom;
 }
 

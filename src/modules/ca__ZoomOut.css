@@ -6,7 +6,7 @@
  *   <div class="ca__ZoomOut">Your Text</div>
  */
 
-.ca__fx-ZoomOut {
+.zoomOut {
   animation-name: zoomOut;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__fx-ZoomOutLeft {
+.zoomOutLeft {
   animation-name: zoomOutLeft;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__fx-ZoomOutRight {
+.zoomOutRight {
   animation-name: zoomOutRight;
 }
 
@@ -39,7 +39,7 @@
   }
 }
 
-.ca__fx-ZoomOutTop {
+.zoomOutTop {
   animation-name: zoomOutTop;
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-.ca__fx-ZoomOutBottom {
+.zoomOutBottom {
   animation-name: zoomOutBottom;
 }
 

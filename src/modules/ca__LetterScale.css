@@ -6,7 +6,7 @@
  *   <div class="ca__LetterScale">Your Text</div>
  */
 
-.ca__lt-ScaleXIn span {
+.leScaleXIn span {
   animation-name: leScaleXIn;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__lt-ScaleXOut span {
+.leScaleXOut span {
   animation-name: leScaleXOut;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__lt-ScaleYIn span {
+.leScaleYIn span {
   animation-name: leScaleYIn;
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.ca__lt-ScaleYOut span {
+.leScaleYOut span {
   animation-name: leScaleYOut;
 }
 

@@ -6,7 +6,7 @@
  *   <div class="ca__RollTo">Your Text</div>
  */
 
-.ca__fx-RollToLeft {
+.rollToLeft {
   animation-name: rollToLeft;
 }
 
@@ -22,7 +22,7 @@
   }
 }
 
-.ca__fx-RollToRight {
+.rollToRight {
   animation-name: rollToRight;
 }
 
@@ -38,7 +38,7 @@
   }
 }
 
-.ca__fx-RollToTop {
+.rollToTop {
   animation-name: rollToTop;
 }
 
@@ -54,7 +54,7 @@
   }
 }
 
-.ca__fx-RollToBottom {
+.rollToBottom {
   animation-name: rollToBottom;
 }
 

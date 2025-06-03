@@ -23,8 +23,7 @@
   transform-style: preserve-3d;
 }
 
-.cssanimation span,
-.ca__gsap-letter {
+.cssanimation span {
   display: inline-block;
 }
 

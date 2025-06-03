@@ -1,0 +1,76 @@
+/**
+ * Module: One After One Fade in
+ * Filename: ca__OneAfterOneFadeIn.css
+ */
+
+.flyInTop {
+  animation-name: flyInTop;
+}
+
+@keyframes leoaoFlyInTop {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-50px);
+    animation-timing-function: ease-out;
+  }
+}
+
+.flyInBottom {
+  animation-name: flyInBottom;
+}
+
+@keyframes flyInBottom {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(50px);
+    animation-timing-function: ease-out;
+  }
+}
+
+.flyOutTop {
+  animation-name: flyOutTop;
+}
+
+@keyframes flyOutTop {
+  30% {
+    transform: translateY(80px);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: translateY(-50px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.flyOutBottom {
+  animation-name: flyOutBottom;
+}
+
+@keyframes flyOutBottom {
+  30% {
+    transform: translateY(-80px);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: translateY(50px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

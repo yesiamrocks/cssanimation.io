@@ -6,7 +6,7 @@
  *   <div class="ca__ShockIn">Your Text</div>
  */
 
-.ca__fx-ShockZoom {
+.shockZoom {
   animation-name: shockZoom;
 }
 
@@ -24,7 +24,7 @@
   }
 }
 
-.ca__fx-ShockInLeft {
+.shockInLeft {
   animation-name: shockInLeft;
 }
 
@@ -42,7 +42,7 @@
   }
 }
 
-.ca__fx-ShockInRight {
+.shockInRight {
   animation-name: shockInRight;
 }
 
@@ -60,7 +60,7 @@
   }
 }
 
-.ca__fx-ShockInTop {
+.shockInTop {
   animation-name: shockInTop;
 }
 
@@ -78,7 +78,7 @@
   }
 }
 
-.ca__fx-ShockInBottom {
+.shockInBottom {
   animation-name: shockInBottom;
 }
 

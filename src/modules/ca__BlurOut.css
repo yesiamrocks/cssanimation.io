@@ -6,7 +6,7 @@
  *   <div class="ca__BlurOut">Your Text</div>
  */
 
-.ca__fx-BlurOut {
+.blurOut {
   animation-name: blurOut;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__fx-BlurOutLeft {
+.blurOutLeft {
   animation-name: blurOutLeft;
 }
 
@@ -37,7 +37,7 @@
   }
 }
 
-.ca__fx-BlurOutRight {
+.blurOutRight {
   animation-name: blurOutRight;
 }
 
@@ -53,7 +53,7 @@
   }
 }
 
-.ca__fx-BlurOutTop {
+.blurOutTop {
   animation-name: blurOutTop;
 }
 
@@ -69,7 +69,7 @@
   }
 }
 
-.ca__fx-BlurOutBottom {
+.blurOutBottom {
   animation-name: blurOutBottom;
 }
 

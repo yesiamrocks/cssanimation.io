@@ -1,0 +1,39 @@
+.unfoldAndRise-item {
+  animation-name: unfoldAndRise;
+  animation-duration: 1.2s;
+  perspective: 1000px; /* Perspective on the parent for a more global 3D feel */
+  perspective-origin: center bottom; /* Or center center, depending on effect */
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); /* For a bouncy finish */
+  transform-style: preserve-3d;
+  transform-origin: bottom center; /* Pivot from the bottom */
+  opacity: 0; /* Starts hidden */
+}
+
+@keyframes unfoldAndRise {
+  0% {
+    transform: rotateX(90deg) translateY(50px) scale(0.8);
+    opacity: 0;
+  }
+
+  40% {
+    /* Unfold to upright */
+    transform: rotateX(0deg) translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  60% {
+    /* Slight overshoot */
+    transform: rotateX(-5deg) translateY(-10px);
+    opacity: 1;
+  }
+
+  80% {
+    /* Settle */
+    transform: rotateX(0deg) translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

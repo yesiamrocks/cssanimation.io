@@ -6,66 +6,66 @@
  *   <div class="ca__RollFrom">Your Text</div>
  */
 
-.ca__fx-RollFromLeft {
-    animation-name: rollFromLeft;
+.rollFromLeft {
+  animation-name: rollFromLeft;
 }
 
 @keyframes rollFromLeft {
-    from {
-        transform: translateX(-100%) perspective(600px) rotateY(180deg);
-        opacity: 0;
-    }
+  from {
+    transform: translateX(-100%) perspective(600px) rotateY(180deg);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateX(0) perspective(600px) rotateY(0deg);
-        opacity: 1;
-    }
+  to {
+    transform: translateX(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
 }
 
-.ca__fx-RollFromRight {
-    animation-name: rollFromRight;
+.rollFromRight {
+  animation-name: rollFromRight;
 }
 
 @keyframes rollFromRight {
-    from {
-        transform: translateX(100%) perspective(600px) rotateY(-180deg);
-        opacity: 0;
-    }
+  from {
+    transform: translateX(100%) perspective(600px) rotateY(-180deg);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateX(0) perspective(600px) rotateY(0deg);
-        opacity: 1;
-    }
+  to {
+    transform: translateX(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
 }
 
-.ca__fx-RollFromTop {
-    animation-name: rollFromTop;
+.rollFromTop {
+  animation-name: rollFromTop;
 }
 
 @keyframes rollFromTop {
-    from {
-        transform: translateY(-100%) perspective(600px) rotateY(180deg);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(-100%) perspective(600px) rotateY(180deg);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateY(0) perspective(600px) rotateY(0deg);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
 }
 
-.ca__fx-RollFromBottom {
-    animation-name: rollFromBottom;
+.rollFromBottom {
+  animation-name: rollFromBottom;
 }
 
 @keyframes rollFromBottom {
-    from {
-        transform: translateY(100%) perspective(600px) rotateY(-180deg);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(100%) perspective(600px) rotateY(-180deg);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateY(0) perspective(600px) rotateY(0deg);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
 }

@@ -6,7 +6,7 @@
  *   <div class="ca__MoveFrom">Your Text</div>
  */
 
-.ca__fx-MoveFromLeft {
+.moveFromLeft {
   animation-name: moveFromLeft;
 }
 
@@ -16,7 +16,7 @@
   }
 }
 
-.ca__fx-MoveFromRight {
+.moveFromRight {
   animation-name: moveFromRight;
 }
 
@@ -26,7 +26,7 @@
   }
 }
 
-.ca__fx-MoveFromTop {
+.moveFromTop {
   animation-name: moveFromTop;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__fx-MoveFromBottom {
+.moveFromBottom {
   animation-name: moveFromBottom;
 }
 

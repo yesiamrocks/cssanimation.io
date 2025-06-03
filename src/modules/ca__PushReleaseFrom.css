@@ -6,7 +6,7 @@
  *   <div class="ca__PushReleaseFrom">Your Text</div>
  */
 
-.ca__fx-PushReleaseFrom {
+.pushReleaseFrom {
   animation-name: pushReleaseFrom;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__fx-PushReleaseFromLeft {
+.pushReleaseFromLeft {
   animation-name: pushReleaseFromLeft;
 }
 
@@ -35,7 +35,7 @@
   }
 }
 
-.ca__fx-PushReleaseFromRight {
+.pushReleaseFromRight {
   animation-name: pushReleaseFromRight;
 }
 
@@ -49,7 +49,7 @@
   }
 }
 
-.ca__fx-PushReleaseFromTop {
+.pushReleaseFromTop {
   animation-name: pushReleaseFromTop;
 }
 
@@ -63,7 +63,7 @@
   }
 }
 
-.ca__fx-PushReleaseFromBottom {
+.pushReleaseFromBottom {
   animation-name: pushReleaseFromBottom;
 }
 

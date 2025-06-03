@@ -6,92 +6,92 @@
  *   <div class="ca__ShockIn">Your Text</div>
  */
 
-.ca__fx-ShockZoom {
-    animation-name: shockZoom;
+.shockZoom {
+  animation-name: shockZoom;
 }
 
 @keyframes shockZoom {
-    0% {
-        transform: matrix(5, 0, 0, 5, 0, 0);
-    }
+  0% {
+    transform: matrix(5, 0, 0, 5, 0, 0);
+  }
 
-    35% {
-        transform: matrix(2, 0, 0, 2, 0, 0);
-    }
+  35% {
+    transform: matrix(2, 0, 0, 2, 0, 0);
+  }
 
-    43% {
-        transform: matrix(1, 0, 0, 1, 0, 0);
-    }
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 }
 
-.ca__fx-ShockInLeft {
-    animation-name: shockInLeft;
+.shockInLeft {
+  animation-name: shockInLeft;
 }
 
 @keyframes shockInLeft {
-    0% {
-        transform: matrix(1, 0, 0, 1, -800, 0);
-    }
+  0% {
+    transform: matrix(1, 0, 0, 1, -800, 0);
+  }
 
-    35% {
-        transform: matrix(1, 0, 0, 1, 50, 0);
-    }
+  35% {
+    transform: matrix(1, 0, 0, 1, 50, 0);
+  }
 
-    43% {
-        transform: matrix(1, 0, 0, 1, 0, 0);
-    }
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 }
 
-.ca__fx-ShockInRight {
-    animation-name: shockInRight;
+.shockInRight {
+  animation-name: shockInRight;
 }
 
 @keyframes shockInRight {
-    0% {
-        transform: matrix(1, 0, 0, 1, 800, 0);
-    }
+  0% {
+    transform: matrix(1, 0, 0, 1, 800, 0);
+  }
 
-    35% {
-        transform: matrix(1, 0, 0, 1, -50, 0);
-    }
+  35% {
+    transform: matrix(1, 0, 0, 1, -50, 0);
+  }
 
-    43% {
-        transform: matrix(1, 0, 0, 1, 0, 0);
-    }
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 }
 
-.ca__fx-ShockInTop {
-    animation-name: shockInTop;
+.shockInTop {
+  animation-name: shockInTop;
 }
 
 @keyframes shockInTop {
-    0% {
-        transform: matrix(1, 0, 0, 1, 0, -400);
-    }
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, -400);
+  }
 
-    35% {
-        transform: matrix(1, 0, 0, 1, 0, 50);
-    }
+  35% {
+    transform: matrix(1, 0, 0, 1, 0, 50);
+  }
 
-    43% {
-        transform: matrix(1, 0, 0, 1, 0, 0);
-    }
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 }
 
-.ca__fx-ShockInBottom {
-    animation-name: shockInBottom;
+.shockInBottom {
+  animation-name: shockInBottom;
 }
 
 @keyframes shockInBottom {
-    0% {
-        transform: matrix(1, 0, 0, 1, 0, 400);
-    }
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, 400);
+  }
 
-    35% {
-        transform: matrix(1, 0, 0, 1, 0, -50);
-    }
+  35% {
+    transform: matrix(1, 0, 0, 1, 0, -50);
+  }
 
-    43% {
-        transform: matrix(1, 0, 0, 1, 0, 0);
-    }
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 }

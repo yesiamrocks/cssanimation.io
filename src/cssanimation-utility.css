@@ -16,63 +16,64 @@
  */
 
 /* Duration Utilities */
-.speed-blitz {
+.speedBlitz {
   animation-duration: 0.3s !important;
 }
 
-.speed-quick {
+.speedQuick {
   animation-duration: 0.6s !important;
 }
 
-.speed-chill {
+.speedChill {
   animation-duration: 1.2s !important;
 }
 
-.speed-drift {
+.speedDrift {
   animation-duration: 2s !important;
 }
 
-.speed-snail {
+.speedSnail {
   animation-duration: 3s !important;
 }
 
 /* Delay Utilities */
-.delay-1 {
+.delay1 {
   animation-delay: 0.25s !important;
 }
 
-.delay-2 {
+.delay2 {
   animation-delay: 0.5s !important;
 }
 
-.delay-3 {
+.delay3 {
   animation-delay: 1s !important;
 }
 
-.delay-5 {
+.delay5 {
   animation-delay: 2s !important;
 }
 
 /* Easing Utilities */
-.ease-smooth {
+.easeSmooth {
   animation-timing-function: ease-in-out !important;
 }
 
-.ease-snappy {
+.easeSnappy {
   animation-timing-function: cubic-bezier(0.5, 1.8, 0.5, 1) !important;
 }
 
-.ease-chill {
+.easeChill {
   animation-timing-function: ease-in !important;
 }
 
-.ease-punch {
+.easePunch {
   animation-timing-function: ease-out !important;
 }
 
-.ease-linear {
+.easeLinear {
   animation-timing-function: linear !important;
 }
+
 .easeSoft {
   animation-timing-function: ease;
 }

@@ -6,7 +6,7 @@
  *   <div class="ca__HangOn">Your Text</div>
  */
 
-.ca__fx-HangOnLeft {
+.hangOnLeft {
   animation-name: hangOnLeft;
 }
 
@@ -41,7 +41,7 @@
   }
 }
 
-.ca__fx-HangOnRight {
+.hangOnRight {
   animation-name: hangOnRight;
 }
 

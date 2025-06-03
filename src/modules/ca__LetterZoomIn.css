@@ -6,7 +6,7 @@
  *   <div class="ca__LetterZoomIn">Your Text</div>
  */
 
-.ca__lt-ZoomIn span {
+.leZoomIn span {
   animation-name: leZoomIn;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__lt-ZoomInLeft span {
+.leZoomInLeft span {
   animation-name: leZoomInLeft;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__lt-ZoomInRight span {
+.leZoomInRight span {
   animation-name: leZoomInRight;
 }
 
@@ -39,7 +39,7 @@
   }
 }
 
-.ca__lt-ZoomInTop span {
+.leZoomInTop span {
   animation-name: LetterZoomInTop;
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-.ca__lt-ZoomInBottom span {
+.leZoomInBottom span {
   animation-name: leZoomInBottom;
 }
 

@@ -1,362 +1,422 @@
 # cssanimation.io – Animation Class Reference
 
+## Fade Animations
+- `ca__fx-fadeIn` — Fades in gently from transparent to visible
+- `ca__fx-fadeInTop` — Fades in while moving down from the top
+- `ca__fx-fadeInBottom` — Fades in while moving up from the bottom
+- `ca__fx-fadeInLeft` — Fades in while sliding in from the left
+- `ca__fx-fadeInRight` — Fades in while sliding in from the right
+- `ca__fx-fadeOut` — Fades out gradually until fully transparent
+- `ca__fx-fadeOutTop` — Fades out while moving up to the top
+- `ca__fx-fadeOutBottom` — Fades out while moving down to the bottom
+- `ca__fx-fadeOutLeft` — Fades out while sliding leftward
+- `ca__fx-fadeOutRight` — Fades out while sliding rightward
+
+## Flip Animations
+- `ca__fx-flipXZoomIn` — Flips along X axis while zooming in
+- `ca__fx-flipXZoomOut` — Flips along X axis while zooming out
+- `ca__fx-flipX` — Flips the element along the horizontal (X) axis
+- `ca__fx-flipY` — Flips the element along the vertical (Y) axis
+- `ca__fx-flipYZoomIn` — Flips along Y axis while zooming in
+- `ca__fx-flipYZoomOut` — Flips along Y axis while zooming out
+
 ## Blur Animations
-- `ca__fx-BlurIn` — Blurs in from the center while fading into focus
-- `ca__fx-BlurInTop` — Blurs in from the top edge of the screen
-- `ca__fx-BlurInBottom` — Blurs in upward from the bottom
-- `ca__fx-BlurInLeft` — Blurs in from the left side
-- `ca__fx-BlurInRight` — Blurs in from the right side
-- `ca__fx-BlurOut` — Blurs and fades out toward the center
-- `ca__fx-BlurOutTop` — Blurs and exits upward
+- `ca__fx-blurOutBottom` — Blurs and exits downward
+- `ca__fx-blurOutLeft` — Blurs and slides out to the left
+- `ca__fx-blurOutRight` — Blurs and slides out to the right
 
 ## Bounce Animations
-- `ca__fx-BounceFromDown` — Bounces up from below the screen
+- `ca__fx-bounceFromTop` — Bounces in from the top with elasticity
+- `ca__fx-bounceInTop` — Bounces in and lands from the top
+- `ca__fx-bounceInBottom` — Bounces in and rises from the bottom
+- `ca__fx-bounceInLeft` — Bounces in from the left edge
+- `ca__fx-bounceInRight` — Bounces in from the right edge
+- `ca__fx-bounceOutTop` — Bounces upward and fades out
+- `ca__fx-bounceOutBottom` — Bounces downward and fades out
+- `ca__fx-bounceOutLeft` — Bounces out to the left and disappears
+- `ca__fx-bounceOutRight` — Bounces out to the right and disappears
+- `ca__fx-bounceX` — Bounces horizontally left and right
+- `ca__fx-bounceY` — Bounces vertically up and down
+- `ca__fx-bounceZoomIn` — Zooms in while bouncing softly
+- `ca__fx-bounceZoomOut` — Zooms out with a final bounce
+
+## Dance Animations
+- `ca__fx-danceBottom` — Bounces and wiggles from the bottom with playful rhythm
+- `ca__fx-danceMiddle` — Wiggles in place around the center as if dancing
+- `ca__fx-danceTop` — Dances in from the top with a lively bounce
+
+## Door Animations
+- `ca__fx-doorCloseFromLeft` — Closes like a door swinging in from the left side
+- `ca__fx-doorCloseFromRight` — Closes like a door swinging in from the right side
+- `ca__fx-doorOpenFromLeft` — Opens like a door swinging outward from the left
+- `ca__fx-doorOpenFromRight` — Opens like a door swinging outward from the right
+
+## Cool Shake Animations
+- `ca__fx-coolHorizontalShake` — Performs a smooth, stylish shake left and right — less jittery than a classic shake
+- `ca__fx-coolVerticalShake` — Gently shakes up and down with a controlled, smooth rhythm
+
+## General FX & 3D Animations
+- `ca__fx-effect3d` — Applies a 3D depth effect using perspective and rotation
+- `ca__fx-electricity` — Twitches rapidly like a spark or electric jolt
+
+## Elevate / Hover Motions
+- `ca__fx-elevateLeft` — Lifts the element slightly while shifting it to the left
+- `ca__fx-elevateRight` — Lifts the element slightly while shifting it to the right
+
+## Hang & Drop Effects
+- `ca__fx-hangAndDropLeft` — Swings from the left like it's hanging, then drops
+- `ca__fx-hangAndDropRight` — Swings from the right and drops like a broken hook
+- `ca__fx-hangOnLeft` — Swings gently on the left edge like hanging from a rope
+- `ca__fx-hangOnRight` — Swings on the right as if hanging from the side
+
+## Heartbeat
+- `ca__fx-heartbeatFast` — Pulses quickly like a fast heartbeat
+- `ca__fx-heartbeatSlow` — Pulses slowly with a calm rhythm
+- `ca__fx-leBeat` — Each letter pulses like a heartbeat
+
+## cssanimation Special
+- `ca__fx-horizontalShake` — Shakes left and right repeatedly
+- `ca__fx-hu__hu__` — Comical fast shake like a cartoon ‘shiver’ or giggle
+
+## Letter Abound Animations
+- `ca__fx-leAboundBottom` — Each letter bounces up from the bottom energetically
+- `ca__fx-leAboundLeft` — Each letter bounces in from the left
+- `ca__fx-leAboundRight` — Each letter bounces in from the right
+- `ca__fx-leAboundTop` — Each letter bounces down from the top
+
+## Letter Blur In Animations
+- `ca__fx-leBlurIn` — Letters blur in from transparent to focused
+- `ca__fx-leBlurInTop` — Letters blur in from the top
+- `ca__fx-leBlurInBottom` — Letters blur in upward from the bottom
+- `ca__fx-leBlurInLeft` — Letters blur in from the left
+- `ca__fx-leBlurInRight` — Letters blur in from the right
+
+## Letter Blur Out Animations
+- `ca__fx-leBlurOut` — Letters blur out to become transparent
+- `ca__fx-leBlurOutTop` — Letters blur upward as they disappear
+- `ca__fx-leBlurOutBottom` — Letters blur downward and fade out
+- `ca__fx-leBlurOutLeft` — Letters blur and exit to the left
+- `ca__fx-leBlurOutRight` — Letters blur and exit to the right
+
+## Letter Bounce Animations
+- `ca__fx-leBounceFromDown` — Letters bounce up from below the baseline
+- `ca__fx-leBounceFromTop` — Letters bounce down from above
+- `ca__fx-leBounceY` — Letters bounce vertically in place
+- `ca__fx-leBounceZoomIn` — Letters bounce while scaling up
+- `ca__fx-leBounceZoomOut` — Letters bounce while shrinking away
+
+## Letter Dance Animations
+- `ca__fx-leDanceInBottom` — Letters dance in playfully from the bottom
+- `ca__fx-leDanceInMiddle` — Letters wiggle into place at center
+- `ca__fx-leDanceInTop` — Letters drop in with a dancing motion from above
+- `ca__fx-leDanceOutBottom` — Letters bounce out downward with style
+- `ca__fx-leDanceOutMiddle` — Letters shake and fade out at center
+- `ca__fx-leDanceOutTop` — Letters exit upward with a funky motion
+- `ca__fx-leCrazyCool` — Unpredictable and wild dance motion per letter
+
+## Letter Door Animations
+- `ca__fx-leDoorOpenLeft` — Each letter swings open from the left like a door
+- `ca__fx-leDoorOpenRight` — Each letter swings open from the right
+- `ca__fx-leDoorCloseLeft` — Each letter swings shut toward the left
+- `ca__fx-leDoorCloseRight` — Each letter swings shut toward the right
+
+## Letter Elevate Animations
+- `ca__fx-leElevateLeft` — Letters lift slightly while sliding left
+- `ca__fx-leElevateRight` — Letters lift while sliding to the right
+
+## Letter Fade In Animations
+- `ca__fx-leFadeIn` — Letters fade in gently from transparent to visible
+- `ca__fx-leFadeInTop` — Letters fade in while falling from the top
+- `ca__fx-leFadeInBottom` — Letters fade in while rising from below
+- `ca__fx-leFadeInLeft` — Letters fade in from the left
+- `ca__fx-leFadeInRight` — Letters fade in from the right
+
+## Letter Fade Out Animations
+- `ca__fx-leFadeOut` — Letters fade out smoothly
+- `ca__fx-leFadeOutTop` — Letters fade upward and disappear
+- `ca__fx-leFadeOutBottom` — Letters fade downward and disappear
+- `ca__fx-leFadeOutLeft` — Letters fade while exiting left
+- `ca__fx-leFadeOutRight` — Letters fade while exiting right
+
+## Letter Flip Animations
+- `ca__fx-leFlipInTop` — Each letter flips in from above like a card falling into place
+- `ca__fx-leFlipInBottom` — Each letter flips upward into view from below
+- `ca__fx-leFlipOutTop` — Each letter flips upward and disappears over the top
+- `ca__fx-leFlipOutBottom` — Each letter flips downward as it exits the screen
+
+## Letter Fly Animations
+- `ca__fx-leFlyInTop` — Each letter flies down into view from the top
+- `ca__fx-leFlyInBottom` — Each letter flies up into view from the bottom
+- `ca__fx-leFlyInLeft` — Each letter flies in from the left side
+- `ca__fx-leFlyInRight` — Each letter flies in from the right side
+- `ca__fx-leFlyOutTop` — Each letter flies upward and disappears
+- `ca__fx-leFlyOutBottom` — Each letter flies downward off screen
+- `ca__fx-leFlyOutLeft` — Each letter flies off to the left
+- `ca__fx-leFlyOutRight` — Each letter flies off to the right
+
+## Letter Hang & Drop Animations
+- `ca__fx-leHangAndDropLeft` — Each letter swings in from the left and drops with gravity
+- `ca__fx-leHangAndDropRight` — Each letter swings in from the right and drops like it’s tethered
+
+## Letter Shake / Tremble Effects
+- `ca__fx-leHorizontalShake` — Each letter shakes left and right quickly
+- `ca__fx-leHorizontalTremble` — Each letter vibrates with small horizontal trembles
+
+## Letter Impact & Energy Motions
+- `ca__fx-leJoltZoom` — Each letter jolts forward slightly while zooming in with force
+- `ca__fx-leJump` — Each letter performs a small jump in place
+- `ca__fx-leKickOutFront` — Each letter kicks outward toward the viewer with a pop
+- `ca__fx-leKickOutBehind` — Each letter kicks backward as if pulled behind
+
+## Letter Cinematic
+- `ca__fx-leMadMax` — A cinematic impact animation inspired by action titles — aggressive and bold
+- `ca__fx-leMagnify` — Each letter zooms in briefly with an enlarging lens-like effect
+- `ca__fx-lePerspectiveOutTop` — Letters shrink away into the top distance like a vanishing point
+- `ca__fx-lePerspectiveOutBottom` — Letters fall away into the bottom distance with perspective depth
+
+## Letter Movement & Reveal
+- `ca__fx-leMovingBackFromLeft` — Each letter moves in from the left while appearing farther back
+- `ca__fx-leMovingBackFromRight` — Each letter moves in from the right with distant motion
+- `ca__fx-lePeek` — Each letter peeks in subtly from behind as if hiding before entry
+- `ca__fx-leRainDrop` — Letters fall quickly with gravity like raindrops
+- `ca__fx-leRencontre` — Elegant meeting motion — letters slide in as if arriving for a rendezvous
+
+## Letter Pop & Pulse Effects
+- `ca__fx-lePopOut` — Letters pop outward toward the viewer and disappear
+- `ca__fx-lePopOutLeft` — Letters pop to the left and vanish
+- `ca__fx-lePopOutRight` — Letters pop to the right and vanish
+- `ca__fx-lePopUp` — Letters quickly pop up from below
+- `ca__fx-lePopUpLeft` — Letters pop up while shifting slightly left
+- `ca__fx-lePopUpRight` — Letters pop up while moving to the right
+- `ca__fx-lePulseShake` — Each letter pulses and vibrates slightly like a heartbeat tremor
+
+## Letter Letter Push & Release Motions
+- `ca__fx-lePushReleaseFrom` — Letters push into view and bounce back to original position
+- `ca__fx-lePushReleaseFromBottom` — Letters push up from below and release gently
+- `ca__fx-lePushReleaseFromLeft` — Letters push in from the left and fall back
+- `ca__fx-lePushReleaseFromTop` — Letters push down from the top then release
+- `ca__fx-lePushReleaseTo` — Letters push forward and disappear
+- `ca__fx-lePushReleaseToBottom` — Letters push downward and fade out
+- `ca__fx-lePushReleaseToTop` — Letters push upward and vanish
+
+## Easing Utilities
+- `ca__fx-easeSoft` — Standard easing
+- `ca__fx-easeInFast` — Fast entrance
+- `ca__fx-easeOutChill` — Gentle exit
+- `ca__fx-easeSnap` — Quick in/out transition
+- `ca__fx-easeBounce` — Bouncy entry
+- `ca__fx-easeElastic` — Elastic overshoot
+- `ca__fx-easeSwoosh` — Swooshing motion
+- `ca__fx-easeGlide` — Glide with elegance
+- `ca__fx-easeStagger` — Sudden final step
+- `ca__fx-easeDrift` — Lazy and floaty
+- `ca__fx-easeJelly` — Wobbling jelly
+- `ca__fx-easePop` — Snappy pop effect
+- `ca__fx-easeRocket` — Fast takeoff
+- `ca__fx-easeGravity` — Gravity-like bounce
+- `ca__fx-easeRubber` — Elastic stretch
+- `ca__fx-easeBoom` — Big bounce boom
+- `ca__fx-easeSlideBack` — Slides back naturally
+- `ca__fx-easeQuickStep` — Step-based snap
+- `ca__fx-easeSnapBack` — Snap with pullback
+- `ca__fx-easeWhip` — Whiplash effect
+- `ca__fx-easeComet` — Tail-like motion
+- `ca__fx-easeQuick` — Fast and sharp
+- `ca__fx-easeGentle` — Gentle acceleration
+- `ca__fx-easeSling` — Slingshot effect
+- `ca__fx-easeBounceHard` — Hard bounce impact
+- `ca__fx-easeOvershoot` — Overshooting motion
+- `ca__fx-easeSnapZoom` — Zoom-in snappily
+- `ca__fx-easeRipple` — Ripple-like motion
+- `ca__fx-easePulse` — Heartbeat rhythm
+- `ca__fx-easeStepSmooth` — Smooth stepped motion
+- `ca__fx-easeFlow` — Natural flow
+- `ca__fx-easeWhiplash` — Sharp whip effect
+- `ca__fx-easePopIn` — Subtle pop
+- `ca__fx-easeDip` — Dip and lift
+- `ca__fx-easeBounceSoft` — Soft bounce
+- `ca__fx-easeZoomSnappy` — Snappy zoom
+- `ca__fx-easeBackTwist` — Back and twist bounce
+- `ca__fx-easeSnappy` — Ease Smooth
+
+## Loop Controls
+- `ca__fx-loop-once` — Play one time (default)
+- `ca__fx-loop-forever` — Infinite repeat
+- `ca__fx-loop-triple` — 3x repeat
+- `ca__fx-loop-bounce` — Ping-pong style
 
 ## Core Animation Classes (Ungrouped)
-- `ca__fx-BlurOutBottom`
-- `ca__fx-BlurOutLeft`
-- `ca__fx-BlurOutRight`
-- `ca__fx-BounceFromTop`
-- `ca__fx-BounceInBottom`
-- `ca__fx-BounceInLeft`
-- `ca__fx-BounceInRight`
-- `ca__fx-BounceInTop`
-- `ca__fx-BounceOutBottom`
-- `ca__fx-BounceOutLeft`
-- `ca__fx-BounceOutRight`
-- `ca__fx-BounceOutTop`
-- `ca__fx-BounceX`
-- `ca__fx-BounceY`
-- `ca__fx-BounceZoomIn`
-- `ca__fx-BounceZoomOut`
-- `ca__fx-CoolHorizontalShake`
-- `ca__fx-CoolVerticalShake`
-- `ca__fx-DanceBottom`
-- `ca__fx-DanceMiddle`
-- `ca__fx-DanceTop`
-- `ca__fx-DoorCloseFromLeft`
-- `ca__fx-DoorCloseFromRight`
-- `ca__fx-DoorOpenFromLeft`
-- `ca__fx-DoorOpenFromRight`
-- `ca__fx-Effect3d`
-- `ca__fx-Electricity`
-- `ca__fx-ElevateLeft`
-- `ca__fx-ElevateRight`
-- `ca__fx-FadeIn`
-- `ca__fx-FadeInBottom`
-- `ca__fx-FadeInLeft`
-- `ca__fx-FadeInRight`
-- `ca__fx-FadeInTop`
-- `ca__fx-FadeOut`
-- `ca__fx-FadeOutBottom`
-- `ca__fx-FadeOutLeft`
-- `ca__fx-FadeOutRight`
-- `ca__fx-FadeOutTop`
-- `ca__fx-FlipX`
-- `ca__fx-FlipXZoomIn`
-- `ca__fx-FlipXZoomOut`
-- `ca__fx-FlipY`
-- `ca__fx-FlipYZoomIn`
-- `ca__fx-FlipYZoomOut`
-- `ca__fx-HangAndDropLeft`
-- `ca__fx-HangAndDropRight`
-- `ca__fx-HangOnLeft`
-- `ca__fx-HangOnRight`
-- `ca__fx-HeartbeatFast`
-- `ca__fx-HeartbeatSlow`
-- `ca__fx-HorizontalShake`
-- `ca__fx-HuHu`
-- `ca__fx-Lightning`
-- `ca__fx-MadMax`
-- `ca__fx-MoveFromBottom`
-- `ca__fx-MoveFromLeft`
-- `ca__fx-MoveFromRight`
-- `ca__fx-MoveFromTop`
-- `ca__fx-MoveToBottom`
-- `ca__fx-MoveToLeft`
-- `ca__fx-MoveToRight`
-- `ca__fx-MoveToTop`
-- `ca__fx-OaoFadeIn`
-- `ca__fx-OaoFadeOut`
-- `ca__fx-OaoFlyIn`
-- `ca__fx-OaoFlyOut`
-- `ca__fx-OaoRotateIn`
-- `ca__fx-OaoRotateOut`
-- `ca__fx-OaoRotateXIn`
-- `ca__fx-OaoRotateXOut`
-- `ca__fx-OaoRotateYIn`
-- `ca__fx-OaoRotateYOut`
-- `ca__fx-Open`
-- `ca__fx-Pepe`
-- `ca__fx-PerspectiveToBottom`
-- `ca__fx-PerspectiveToTop`
-- `ca__fx-PullRelease`
-- `ca__fx-PulseShake`
-- `ca__fx-PushRelease`
-- `ca__fx-PushReleaseFrom`
-- `ca__fx-PushReleaseFromBottom`
-- `ca__fx-PushReleaseFromLeft`
-- `ca__fx-PushReleaseFromRight`
-- `ca__fx-PushReleaseFromTop`
-- `ca__fx-PushReleaseTo`
-- `ca__fx-PushReleaseToBottom`
-- `ca__fx-PushReleaseToLeft`
-- `ca__fx-PushReleaseToRight`
-- `ca__fx-PushReleaseToTop`
-- `ca__fx-QuietMad`
-- `ca__fx-RollFromBottom`
-- `ca__fx-RollFromLeft`
-- `ca__fx-RollFromRight`
-- `ca__fx-RollFromTop`
-- `ca__fx-RollToBottom`
-- `ca__fx-RollToLeft`
-- `ca__fx-RollToRight`
-- `ca__fx-RollToTop`
-- `ca__fx-Rotate`
-- `ca__fx-RotateInBottom`
-- `ca__fx-RotateInLeft`
-- `ca__fx-RotateInRight`
-- `ca__fx-RotateInTop`
-- `ca__fx-RotateOutBottom`
-- `ca__fx-RotateOutLeft`
-- `ca__fx-RotateOutRight`
-- `ca__fx-RotateOutTop`
-- `ca__fx-RotateX`
-- `ca__fx-RotateXIn`
-- `ca__fx-RotateXOut`
-- `ca__fx-RotateY`
-- `ca__fx-RotateYIn`
-- `ca__fx-RotateYOut`
-- `ca__fx-ShockInBottom`
-- `ca__fx-ShockInLeft`
-- `ca__fx-ShockInRight`
-- `ca__fx-ShockInTop`
-- `ca__fx-ShockZoom`
-- `ca__fx-SkewInLeft`
-- `ca__fx-SkewInRight`
-- `ca__fx-SkewLeft`
-- `ca__fx-SkewOutLeft`
-- `ca__fx-SkewOutRight`
-- `ca__fx-SkewRight`
-- `ca__fx-SpinFromBottom`
-- `ca__fx-SpinFromLeft`
-- `ca__fx-SpinFromRight`
-- `ca__fx-SpinFromTop`
-- `ca__fx-SpinToBottom`
-- `ca__fx-SpinToLeft`
-- `ca__fx-SpinToRight`
-- `ca__fx-SpinToTop`
-- `ca__fx-SwingInBottom`
-- `ca__fx-SwingInLeft`
-- `ca__fx-SwingInRight`
-- `ca__fx-SwingInTop`
-- `ca__fx-Typing`
-- `ca__fx-VerticalShake`
-- `ca__fx-Vibration`
-- `ca__fx-Wipe`
-- `ca__fx-ZoomIn`
-- `ca__fx-ZoomInBottom`
-- `ca__fx-ZoomInLeft`
-- `ca__fx-ZoomInRight`
-- `ca__fx-ZoomInTop`
-- `ca__fx-ZoomOut`
-- `ca__fx-ZoomOutBottom`
-- `ca__fx-ZoomOutLeft`
-- `ca__fx-ZoomOutRight`
-- `ca__fx-ZoomOutTop`
-- `ca__lt-AboundBottom`
-- `ca__lt-AboundLeft`
-- `ca__lt-AboundRight`
-- `ca__lt-AboundTop`
-- `ca__lt-Beat`
-- `ca__lt-BlurIn`
-- `ca__lt-BlurInBottom`
-- `ca__lt-BlurInLeft`
-- `ca__lt-BlurInRight`
-- `ca__lt-BlurInTop`
-- `ca__lt-BlurOut`
-- `ca__lt-BlurOutBottom`
-- `ca__lt-BlurOutLeft`
-- `ca__lt-BlurOutRight`
-- `ca__lt-BlurOutTop`
-- `ca__lt-BounceFromDown`
-- `ca__lt-BounceFromTop`
-- `ca__lt-BounceY`
-- `ca__lt-BounceZoomIn`
-- `ca__lt-BounceZoomOut`
-- `ca__lt-CrazyCool`
-- `ca__lt-DanceInBottom`
-- `ca__lt-DanceInMiddle`
-- `ca__lt-DanceInTop`
-- `ca__lt-DanceOutBottom`
-- `ca__lt-DanceOutMiddle`
-- `ca__lt-DanceOutTop`
-- `ca__lt-DoorCloseLeft`
-- `ca__lt-DoorCloseRight`
-- `ca__lt-DoorOpenLeft`
-- `ca__lt-DoorOpenRight`
-- `ca__lt-ElevateLeft`
-- `ca__lt-ElevateRight`
-- `ca__lt-FadeIn`
-- `ca__lt-FadeInBottom`
-- `ca__lt-FadeInLeft`
-- `ca__lt-FadeInRight`
-- `ca__lt-FadeInTop`
-- `ca__lt-FadeOut`
-- `ca__lt-FadeOutBottom`
-- `ca__lt-FadeOutLeft`
-- `ca__lt-FadeOutRight`
-- `ca__lt-FadeOutTop`
-- `ca__lt-FlipInBottom`
-- `ca__lt-FlipInTop`
-- `ca__lt-FlipOutBottom`
-- `ca__lt-FlipOutTop`
-- `ca__lt-FlyInBottom`
-- `ca__lt-FlyInLeft`
-- `ca__lt-FlyInRight`
-- `ca__lt-FlyInTop`
-- `ca__lt-FlyOutBottom`
-- `ca__lt-FlyOutLeft`
-- `ca__lt-FlyOutRight`
-- `ca__lt-FlyOutTop`
-- `ca__lt-HangAndDropLeft`
-- `ca__lt-HangAndDropRight`
-- `ca__lt-HorizontalShake`
-- `ca__lt-HorizontalTremble`
-- `ca__lt-JoltZoom`
-- `ca__lt-Jump`
-- `ca__lt-KickOutBehind`
-- `ca__lt-KickOutFront`
-- `ca__lt-MadMax`
-- `ca__lt-Magnify`
-- `ca__lt-MovingBackFromLeft`
-- `ca__lt-MovingBackFromRight`
-- `ca__lt-Peek`
-- `ca__lt-PerspectiveOutBottom`
-- `ca__lt-PerspectiveOutTop`
-- `ca__lt-PopOut`
-- `ca__lt-PopOutLeft`
-- `ca__lt-PopOutRight`
-- `ca__lt-PopUp`
-- `ca__lt-PopUpLeft`
-- `ca__lt-PopUpRight`
-- `ca__lt-PulseShake`
-- `ca__lt-PushReleaseFrom`
-- `ca__lt-PushReleaseFromBottom`
-- `ca__lt-PushReleaseFromLeft`
-- `ca__lt-PushReleaseFromTop`
-- `ca__lt-PushReleaseTo`
-- `ca__lt-PushReleaseToBottom`
-- `ca__lt-PushReleaseToTop`
-- `ca__lt-RainDrop`
-- `ca__lt-Rencontre`
-- `ca__lt-RollFromBottom`
-- `ca__lt-RollFromLeft`
-- `ca__lt-RollFromRight`
-- `ca__lt-RollFromTop`
-- `ca__lt-RollToBottom`
-- `ca__lt-RollToLeft`
-- `ca__lt-RollToRight`
-- `ca__lt-RollToTop`
-- `ca__lt-RotateIn`
-- `ca__lt-RotateInLeft`
-- `ca__lt-RotateInRight`
-- `ca__lt-RotateOut`
-- `ca__lt-RotateOutLeft`
-- `ca__lt-RotateOutRight`
-- `ca__lt-RotateSkateInBottom`
-- `ca__lt-RotateSkateInLeft`
-- `ca__lt-RotateSkateInRight`
-- `ca__lt-RotateSkateInTop`
-- `ca__lt-RotateSkateOutBottom`
-- `ca__lt-RotateSkateOutLeft`
-- `ca__lt-RotateSkateOutRight`
-- `ca__lt-RotateSkateOutTop`
-- `ca__lt-RotateXZoomIn`
-- `ca__lt-RotateXZoomOut`
-- `ca__lt-RotateYZoomIn`
-- `ca__lt-RotateYZoomOut`
-- `ca__lt-ScaleXIn`
-- `ca__lt-ScaleXOut`
-- `ca__lt-ScaleYIn`
-- `ca__lt-ScaleYOut`
-- `ca__lt-SkateX`
-- `ca__lt-SkateXY`
-- `ca__lt-SkateY`
-- `ca__lt-Snake`
-- `ca__lt-SpinInLeft`
-- `ca__lt-SpinInRight`
-- `ca__lt-SpinOutLeft`
-- `ca__lt-SpinOutRight`
-- `ca__lt-VerticalShake`
-- `ca__lt-VerticalTremble`
-- `ca__lt-Vibration`
-- `ca__lt-WaterWave`
-- `ca__lt-ZoomIn`
-- `ca__lt-ZoomInBottom`
-- `ca__lt-ZoomInLeft`
-- `ca__lt-ZoomInRight`
-- `ca__lt-ZoomInTop`
-- `ca__lt-ZoomOut`
-- `ca__lt-ZoomOutBottom`
-- `ca__lt-ZoomOutLeft`
-- `ca__lt-ZoomOutRight`
-- `ca__lt-ZoomOutTop`
+- `ca__fx-blurIn`
+- `ca__fx-blurInBottom`
+- `ca__fx-blurInLeft`
+- `ca__fx-blurInRight`
+- `ca__fx-blurInTop`
+- `ca__fx-blurOut`
+- `ca__fx-blurOutTop`
+- `ca__fx-bounceFromDown`
+- `ca__fx-leRollFromBottom`
+- `ca__fx-leRollFromLeft`
+- `ca__fx-leRollFromRight`
+- `ca__fx-leRollFromTop`
+- `ca__fx-leRollToBottom`
+- `ca__fx-leRollToLeft`
+- `ca__fx-leRollToRight`
+- `ca__fx-leRollToTop`
+- `ca__fx-leRotateIn`
+- `ca__fx-leRotateInLeft`
+- `ca__fx-leRotateInRight`
+- `ca__fx-leRotateOut`
+- `ca__fx-leRotateOutLeft`
+- `ca__fx-leRotateOutRight`
+- `ca__fx-leRotateSkateInBottom`
+- `ca__fx-leRotateSkateInLeft`
+- `ca__fx-leRotateSkateInRight`
+- `ca__fx-leRotateSkateInTop`
+- `ca__fx-leRotateSkateOutBottom`
+- `ca__fx-leRotateSkateOutLeft`
+- `ca__fx-leRotateSkateOutRight`
+- `ca__fx-leRotateSkateOutTop`
+- `ca__fx-leRotateXZoomIn`
+- `ca__fx-leRotateXZoomOut`
+- `ca__fx-leRotateYZoomIn`
+- `ca__fx-leRotateYZoomOut`
+- `ca__fx-leScaleXIn`
+- `ca__fx-leScaleXOut`
+- `ca__fx-leScaleYIn`
+- `ca__fx-leScaleYOut`
+- `ca__fx-leSkateX`
+- `ca__fx-leSkateXY`
+- `ca__fx-leSkateY`
+- `ca__fx-leSnake`
+- `ca__fx-leSpinInLeft`
+- `ca__fx-leSpinInRight`
+- `ca__fx-leSpinOutLeft`
+- `ca__fx-leSpinOutRight`
+- `ca__fx-leVerticalShake`
+- `ca__fx-leVerticalTremble`
+- `ca__fx-leVibration`
+- `ca__fx-leWaterWave`
+- `ca__fx-leZoomIn`
+- `ca__fx-leZoomInBottom`
+- `ca__fx-leZoomInLeft`
+- `ca__fx-leZoomInRight`
+- `ca__fx-leZoomInTop`
+- `ca__fx-leZoomOut`
+- `ca__fx-leZoomOutBottom`
+- `ca__fx-leZoomOutLeft`
+- `ca__fx-leZoomOutRight`
+- `ca__fx-leZoomOutTop`
+- `ca__fx-lightning`
+- `ca__fx-madMax`
+- `ca__fx-moveFromBottom`
+- `ca__fx-moveFromLeft`
+- `ca__fx-moveFromRight`
+- `ca__fx-moveFromTop`
+- `ca__fx-moveToBottom`
+- `ca__fx-moveToLeft`
+- `ca__fx-moveToRight`
+- `ca__fx-moveToTop`
+- `ca__fx-oaoFadeIn`
+- `ca__fx-oaoFadeOut`
+- `ca__fx-oaoFlyIn`
+- `ca__fx-oaoFlyOut`
+- `ca__fx-oaoRotateIn`
+- `ca__fx-oaoRotateOut`
+- `ca__fx-oaoRotateXIn`
+- `ca__fx-oaoRotateXOut`
+- `ca__fx-oaoRotateYIn`
+- `ca__fx-oaoRotateYOut`
+- `ca__fx-open`
+- `ca__fx-pepe`
+- `ca__fx-perspectiveToBottom`
+- `ca__fx-perspectiveToTop`
+- `ca__fx-pullRelease`
+- `ca__fx-pulseShake`
+- `ca__fx-pushRelease`
+- `ca__fx-pushReleaseFrom`
+- `ca__fx-pushReleaseFromBottom`
+- `ca__fx-pushReleaseFromLeft`
+- `ca__fx-pushReleaseFromRight`
+- `ca__fx-pushReleaseFromTop`
+- `ca__fx-pushReleaseTo`
+- `ca__fx-pushReleaseToBottom`
+- `ca__fx-pushReleaseToLeft`
+- `ca__fx-pushReleaseToRight`
+- `ca__fx-pushReleaseToTop`
+- `ca__fx-quietMad`
+- `ca__fx-rollFromBottom`
+- `ca__fx-rollFromLeft`
+- `ca__fx-rollFromRight`
+- `ca__fx-rollFromTop`
+- `ca__fx-rollToBottom`
+- `ca__fx-rollToLeft`
+- `ca__fx-rollToRight`
+- `ca__fx-rollToTop`
+- `ca__fx-rotate`
+- `ca__fx-rotateInBottom`
+- `ca__fx-rotateInLeft`
+- `ca__fx-rotateInRight`
+- `ca__fx-rotateInTop`
+- `ca__fx-rotateOutBottom`
+- `ca__fx-rotateOutLeft`
+- `ca__fx-rotateOutRight`
+- `ca__fx-rotateOutTop`
+- `ca__fx-rotateX`
+- `ca__fx-rotateXIn`
+- `ca__fx-rotateXOut`
+- `ca__fx-rotateY`
+- `ca__fx-rotateYIn`
+- `ca__fx-rotateYOut`
+- `ca__fx-shockInBottom`
+- `ca__fx-shockInLeft`
+- `ca__fx-shockInRight`
+- `ca__fx-shockInTop`
+- `ca__fx-shockZoom`
+- `ca__fx-skewInLeft`
+- `ca__fx-skewInRight`
+- `ca__fx-skewLeft`
+- `ca__fx-skewOutLeft`
+- `ca__fx-skewOutRight`
+- `ca__fx-skewRight`
+- `ca__fx-spinFromBottom`
+- `ca__fx-spinFromLeft`
+- `ca__fx-spinFromRight`
+- `ca__fx-spinFromTop`
+- `ca__fx-spinToBottom`
+- `ca__fx-spinToLeft`
+- `ca__fx-spinToRight`
+- `ca__fx-spinToTop`
+- `ca__fx-swingInBottom`
+- `ca__fx-swingInLeft`
+- `ca__fx-swingInRight`
+- `ca__fx-swingInTop`
+- `ca__fx-typing`
+- `ca__fx-verticalShake`
+- `ca__fx-vibration`
+- `ca__fx-wipe`
+- `ca__fx-zoomIn`
+- `ca__fx-zoomInBottom`
+- `ca__fx-zoomInLeft`
+- `ca__fx-zoomInRight`
+- `ca__fx-zoomInTop`
+- `ca__fx-zoomOut`
+- `ca__fx-zoomOutBottom`
+- `ca__fx-zoomOutLeft`
+- `ca__fx-zoomOutRight`
+- `ca__fx-zoomOutTop`
 
 ## Utility Classes (Ungrouped)
-- `ca__u-Delay1`
-- `ca__u-Delay2`
-- `ca__u-Delay3`
-- `ca__u-Delay5`
-- `ca__u-EaseBackTwist`
-- `ca__u-EaseBoom`
-- `ca__u-EaseBounce`
-- `ca__u-EaseBounceHard`
-- `ca__u-EaseBounceSoft`
-- `ca__u-EaseChill`
-- `ca__u-EaseComet`
-- `ca__u-EaseDip`
-- `ca__u-EaseDrift`
-- `ca__u-EaseElastic`
-- `ca__u-EaseFlow`
-- `ca__u-EaseGentle`
-- `ca__u-EaseGlide`
-- `ca__u-EaseGravity`
-- `ca__u-EaseInFast`
-- `ca__u-EaseJelly`
-- `ca__u-EaseLinear`
-- `ca__u-EaseOutChill`
-- `ca__u-EaseOvershoot`
-- `ca__u-EasePop`
-- `ca__u-EasePopIn`
-- `ca__u-EasePulse`
-- `ca__u-EasePunch`
-- `ca__u-EaseQuick`
-- `ca__u-EaseQuickStep`
-- `ca__u-EaseRipple`
-- `ca__u-EaseRocket`
-- `ca__u-EaseRubber`
-- `ca__u-EaseSlideBack`
-- `ca__u-EaseSling`
-- `ca__u-EaseSmooth`
-- `ca__u-EaseSnap`
-- `ca__u-EaseSnapBack`
-- `ca__u-EaseSnapZoom`
-- `ca__u-EaseSnappy`
-- `ca__u-EaseSoft`
-- `ca__u-EaseStagger`
-- `ca__u-EaseStepSmooth`
-- `ca__u-EaseSwoosh`
-- `ca__u-EaseWhip`
-- `ca__u-EaseWhiplash`
-- `ca__u-EaseZoomSnappy`
-- `ca__u-LoopBounce`
-- `ca__u-LoopForever`
-- `ca__u-LoopOnce`
-- `ca__u-LoopTriple`
-- `ca__u-SpeedBlitz`
-- `ca__u-SpeedChill`
-- `ca__u-SpeedDrift`
-- `ca__u-SpeedQuick`
-- `ca__u-SpeedSnail`
+- `ca__fx-delay1`
+- `ca__fx-delay2`
+- `ca__fx-delay3`
+- `ca__fx-delay5`
+- `ca__fx-easeChill`
+- `ca__fx-easeLinear`
+- `ca__fx-easePunch`
+- `ca__fx-easeSmooth`
+- `ca__fx-speedBlitz`
+- `ca__fx-speedChill`
+- `ca__fx-speedDrift`
+- `ca__fx-speedQuick`
+- `ca__fx-speedSnail`
 

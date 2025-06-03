@@ -6,7 +6,7 @@
  *   <div class="ca__LetterRotateOutSkate">Your Text</div>
  */
 
-.ca__lt-RotateSkateOutRight span {
+.leRotateSkateOutRight span {
   animation-name: leRotateSkateOutRight;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__lt-RotateSkateOutLeft span {
+.leRotateSkateOutLeft span {
   animation-name: leRotateSkateOutLeft;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__lt-RotateSkateOutTop span {
+.leRotateSkateOutTop span {
   animation-name: leRotateSkateOutTop;
 }
 
@@ -39,7 +39,7 @@
   }
 }
 
-.ca__lt-RotateSkateOutBottom span {
+.leRotateSkateOutBottom span {
   animation-name: leRotateSkateOutBottom;
 }
 

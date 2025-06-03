@@ -6,7 +6,7 @@
  *   <div class="ca__Dance">Your Text</div>
  */
 
-.ca__fx-DanceTop {
+.danceTop {
   animation-name: danceTop;
   transform-origin: top;
 }
@@ -33,7 +33,7 @@
   }
 }
 
-.ca__fx-DanceMiddle {
+.danceMiddle {
   animation-name: danceMiddle;
 }
 
@@ -59,7 +59,7 @@
   }
 }
 
-.ca__fx-DanceBottom {
+.danceBottom {
   animation-name: danceBottom;
   transform-origin: bottom;
 }

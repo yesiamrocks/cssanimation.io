@@ -6,7 +6,7 @@
  *   <div class="ca__LetterRotate">Your Text</div>
  */
 
-.ca__lt-RotateIn span {
+.leRotateIn span {
   animation-name: leRotateIn;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__lt-RotateOut span {
+.leRotateOut span {
   animation-name: leRotateOut;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__lt-RotateInLeft span {
+.leRotateInLeft span {
   animation-name: leRotateInLeft;
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.ca__lt-RotateOutLeft span {
+.leRotateOutLeft span {
   animation-name: leRotateOutLeft;
 }
 
@@ -66,7 +66,7 @@
   }
 }
 
-.ca__lt-RotateInRight span {
+.leRotateInRight span {
   animation-name: leRotateInRight;
 }
 
@@ -81,7 +81,7 @@
   }
 }
 
-.ca__lt-RotateOutRight span {
+.leRotateOutRight span {
   animation-name: leRotateOutRight;
 }
 

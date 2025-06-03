@@ -6,7 +6,7 @@
  *   <div class="ca__LetterFlip">Your Text</div>
  */
 
-.ca__lt-FlipInTop span {
+.leFlipInTop span {
   animation-name: leFlipInTop;
 }
 
@@ -27,7 +27,7 @@
   }
 }
 
-.ca__lt-FlipOutTop span {
+.leFlipOutTop span {
   animation-name: leFlipOutTop;
 }
 
@@ -48,7 +48,7 @@
   }
 }
 
-.ca__lt-FlipInBottom span {
+.leFlipInBottom span {
   animation-name: leFlipInBottom;
 }
 
@@ -69,7 +69,7 @@
   }
 }
 
-.ca__lt-FlipOutBottom span {
+.leFlipOutBottom span {
   animation-name: leFlipOutBottom;
 }
 

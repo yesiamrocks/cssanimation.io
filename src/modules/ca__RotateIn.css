@@ -6,7 +6,7 @@
  *   <div class="ca__RotateIn">Your Text</div>
  */
 
-.ca__fx-RotateInLeft {
+.rotateInLeft {
   animation-name: rotateInLeft;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__fx-RotateInRight {
+.rotateInRight {
   animation-name: rotateInRight;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__fx-RotateInTop {
+.rotateInTop {
   animation-name: rotateInTop;
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.ca__fx-RotateInBottom {
+.rotateInBottom {
   animation-name: rotateInBottom;
 }
 

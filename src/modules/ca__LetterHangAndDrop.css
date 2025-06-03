@@ -6,7 +6,7 @@
  *   <div class="ca__LetterHangAndDrop">Your Text</div>
  */
 
-.ca__lt-HangAndDropLeft span {
+.leHangAndDropLeft span {
   animation-name: leHangAndDropLeft;
 }
 
@@ -31,7 +31,7 @@
   }
 }
 
-.ca__lt-HangAndDropRight span {
+.leHangAndDropRight span {
   animation-name: leHangAndDropRight;
 }
 

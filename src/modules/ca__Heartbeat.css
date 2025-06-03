@@ -6,7 +6,7 @@
  *   <div class="ca__Heartbeat">Your Text</div>
  */
 
-.ca__fx-HeartbeatSlow {
+.heartbeatSlow {
   animation-name: heartbeatSlow;
   animation-iteration-count: infinite;
   animation-duration: 0.5s;
@@ -19,7 +19,7 @@
   }
 }
 
-.ca__fx-HeartbeatFast {
+.heartbeatFast {
   animation-name: heartbeatFast;
   animation-iteration-count: infinite;
 }

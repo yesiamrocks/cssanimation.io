@@ -6,7 +6,7 @@
  *   <div class="ca__LetterSkate">Your Text</div>
  */
 
-.ca__lt-SkateX span {
+.leSkateX span {
   animation-name: leScaleX;
   animation-iteration-count: infinite;
 }
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__lt-SkateY span {
+.leSkateY span {
   animation-name: leSkateY;
   animation-iteration-count: infinite;
 }
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__lt-SkateXY span {
+.leSkateXY span {
   animation-name: leSkateXY;
   animation-iteration-count: infinite;
   animation-duration: 1.5s;

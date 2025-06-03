@@ -6,7 +6,7 @@
  *   <div class="ca__Bounce">Your Text</div>
  */
 
-.ca__fx-BounceFromTop {
+.bounceFromTop {
   animation-name: bounceFromTop;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__fx-BounceFromDown {
+.bounceFromDown {
   animation-name: bounceFromDown;
 }
 
@@ -66,7 +66,7 @@
   }
 }
 
-.ca__fx-BounceX {
+.bounceX {
   animation-name: bounceX;
 }
 
@@ -96,7 +96,7 @@
   }
 }
 
-.ca__fx-BounceY {
+.bounceY {
   animation-name: bounceY;
 }
 
@@ -126,7 +126,7 @@
   }
 }
 
-.ca__fx-BounceZoomIn {
+.bounceZoomIn {
   animation-name: bounceZoomIn;
 }
 
@@ -156,7 +156,7 @@
   }
 }
 
-.ca__fx-BounceZoomOut {
+.bounceZoomOut {
   animation-name: bounceZoomOut;
 }
 

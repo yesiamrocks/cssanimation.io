@@ -6,7 +6,7 @@
  *   <div class="ca__LetterDoorOpenClose">Your Text</div>
  */
 
-.ca__lt-DoorCloseLeft span {
+.leDoorCloseLeft span {
   animation-name: leDoorCloseLeft;
 }
 
@@ -27,7 +27,7 @@
   }
 }
 
-.ca__lt-DoorOpenRight span {
+.leDoorOpenRight span {
   animation-name: leDoorOpenRight;
 }
 
@@ -44,7 +44,7 @@
   }
 }
 
-.ca__lt-DoorCloseRight span {
+.leDoorCloseRight span {
   animation-name: leDoorCloseRight;
 }
 
@@ -65,7 +65,7 @@
   }
 }
 
-.ca__lt-DoorOpenLeft span {
+.leDoorOpenLeft span {
   animation-name: leDoorOpenLeft;
 }
 

@@ -6,7 +6,7 @@
  *   <div class="ca__HangAndDrop">Your Text</div>
  */
 
-.ca__fx-HangAndDropLeft {
+.hangAndDropLeft {
   animation-name: hangAndDropLeft;
 }
 
@@ -33,7 +33,7 @@
   }
 }
 
-.ca__fx-HangAndDropRight {
+.hangAndDropRight {
   animation-name: hangAndDropRight;
 }
 

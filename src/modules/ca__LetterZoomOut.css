@@ -6,7 +6,7 @@
  *   <div class="ca__LetterZoomOut">Your Text</div>
  */
 
-.ca__lt-ZoomOut span {
+.leZoomOut span {
   animation-name: leZoomOut;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__lt-ZoomOutLeft span {
+.leZoomOutLeft span {
   animation-name: leZoomOutLeft;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__lt-ZoomOutRight span {
+.leZoomOutRight span {
   animation-name: leZoomOutRight;
 }
 
@@ -39,7 +39,7 @@
   }
 }
 
-.ca__lt-ZoomOutTop span {
+.leZoomOutTop span {
   animation-name: leZoomOutTop;
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-.ca__lt-ZoomOutBottom span {
+.leZoomOutBottom span {
   animation-name: leZoomOutBottom;
 }
 

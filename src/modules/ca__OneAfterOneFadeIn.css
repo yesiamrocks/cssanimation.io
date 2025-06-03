@@ -6,7 +6,7 @@
  *   <div class="ca__OneAfterOneFadeIn">Your Text</div>
  */
 
-.ca__fx-OaoFadeIn span:nth-child(even) {
+.oaoFadeIn span:nth-child(even) {
   animation-name: leoaoFadeInTop;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
@@ -19,7 +19,7 @@
   }
 }
 
-.ca__fx-OaoFadeIn span:nth-child(odd) {
+.oaoFadeIn span:nth-child(odd) {
   animation-name: leoaoFadeInBottom;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
@@ -32,7 +32,7 @@
   }
 }
 
-.ca__fx-OaoFadeOut span:nth-child(even) {
+.oaoFadeOut span:nth-child(even) {
   animation-name: leoaoFadeOutop;
   animation-duration: 0.7s;
   animation-timing-function: ease-in;
@@ -45,7 +45,7 @@
   }
 }
 
-.ca__fx-OaoFadeOut span:nth-child(odd) {
+.oaoFadeOut span:nth-child(odd) {
   animation-name: leoaoFadeOutBottom;
   animation-duration: 0.7s;
   animation-timing-function: ease-in;
@@ -58,7 +58,7 @@
   }
 }
 
-.ca__fx-OaoFlyIn span:nth-child(even) {
+.oaoFlyIn span:nth-child(even) {
   animation-name: leoaoFlyInTop;
 }
 
@@ -74,7 +74,7 @@
   }
 }
 
-.ca__fx-OaoFlyIn span:nth-child(odd) {
+.oaoFlyIn span:nth-child(odd) {
   animation-name: leoaoFlyInBottom;
 }
 
@@ -90,7 +90,7 @@
   }
 }
 
-.ca__fx-OaoFlyOut span:nth-child(even) {
+.oaoFlyOut span:nth-child(even) {
   animation-name: leoaoFlyOutTop;
 }
 
@@ -110,7 +110,7 @@
   }
 }
 
-.ca__fx-OaoFlyOut span:nth-child(odd) {
+.oaoFlyOut span:nth-child(odd) {
   animation-name: leoaoFlyOutBottom;
 }
 
@@ -130,7 +130,7 @@
   }
 }
 
-.ca__fx-OaoRotateIn span:nth-child(even) {
+.oaoRotateIn span:nth-child(even) {
   animation-name: oaoRotateInTop;
 }
 
@@ -141,7 +141,7 @@
   }
 }
 
-.ca__fx-OaoRotateIn span:nth-child(odd) {
+.oaoRotateIn span:nth-child(odd) {
   animation-name: oaoRotateInBottom;
 }
 
@@ -152,7 +152,7 @@
   }
 }
 
-.ca__fx-OaoRotateOut span:nth-child(even) {
+.oaoRotateOut span:nth-child(even) {
   animation-name: oaoRotateOutTop;
 }
 
@@ -163,7 +163,7 @@
   }
 }
 
-.ca__fx-OaoRotateOut span:nth-child(odd) {
+.oaoRotateOut span:nth-child(odd) {
   animation-name: oaoRotateOutBottom;
 }
 
@@ -174,7 +174,7 @@
   }
 }
 
-.ca__fx-OaoRotateXIn span:nth-child(even) {
+.oaoRotateXIn span:nth-child(even) {
   animation-name: oaoRotateXInTop;
 }
 
@@ -185,7 +185,7 @@
   }
 }
 
-.ca__fx-OaoRotateXIn span:nth-child(odd) {
+.oaoRotateXIn span:nth-child(odd) {
   animation-name: oaoRotateXInBottom;
 }
 
@@ -196,7 +196,7 @@
   }
 }
 
-.ca__fx-OaoRotateXOut span:nth-child(even) {
+.oaoRotateXOut span:nth-child(even) {
   animation-name: oaoRotateXOutTop;
 }
 
@@ -207,7 +207,7 @@
   }
 }
 
-.ca__fx-OaoRotateXOut span:nth-child(odd) {
+.oaoRotateXOut span:nth-child(odd) {
   animation-name: oaoRotateXOutBottom;
 }
 
@@ -218,7 +218,7 @@
   }
 }
 
-.ca__fx-OaoRotateYIn span:nth-child(even) {
+.oaoRotateYIn span:nth-child(even) {
   animation-name: oaoRotateYInTop;
 }
 
@@ -229,7 +229,7 @@
   }
 }
 
-.ca__fx-OaoRotateYIn span:nth-child(odd) {
+.oaoRotateYIn span:nth-child(odd) {
   animation-name: oaoRotateYInBottom;
 }
 
@@ -240,7 +240,7 @@
   }
 }
 
-.ca__fx-OaoRotateYOut span:nth-child(even) {
+.oaoRotateYOut span:nth-child(even) {
   animation-name: oaoRotateYOutTop;
 }
 
@@ -251,7 +251,7 @@
   }
 }
 
-.ca__fx-OaoRotateYOut span:nth-child(odd) {
+.oaoRotateYOut span:nth-child(odd) {
   animation-name: oaoRotateYOutBottom;
 }
 

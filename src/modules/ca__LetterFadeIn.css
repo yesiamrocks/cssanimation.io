@@ -6,7 +6,7 @@
  *   <div class="ca__LetterFadeIn">Your Text</div>
  */
 
-.ca__lt-FadeIn span {
+.leFadeIn span {
   animation-name: leFadeIn;
 }
 
@@ -20,7 +20,7 @@
   }
 }
 
-.ca__lt-FadeInLeft span {
+.leFadeInLeft span {
   animation-name: leFadeInLeft;
 }
 
@@ -35,7 +35,7 @@
   }
 }
 
-.ca__lt-FadeInRight span {
+.leFadeInRight span {
   animation-name: leFadeInRight;
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-.ca__lt-FadeInTop span {
+.leFadeInTop span {
   animation-name: leFadeInTop;
 }
 
@@ -65,7 +65,7 @@
   }
 }
 
-.ca__lt-FadeInBottom span {
+.leFadeInBottom span {
   animation-name: leFadeInBottom;
 }
 

@@ -6,7 +6,7 @@
  *   <div class="ca__LetterBlurIn">Your Text</div>
  */
 
-.ca__lt-BlurIn span {
+.leBlurIn span {
   animation-name: leBlurIn;
 }
 
@@ -18,7 +18,7 @@
   }
 }
 
-.ca__lt-BlurInRight span {
+.leBlurInRight span {
   animation-name: leBlurInRight;
 }
 
@@ -30,7 +30,7 @@
   }
 }
 
-.ca__lt-BlurInLeft span {
+.leBlurInLeft span {
   animation-name: leBlurInLeft;
 }
 
@@ -42,7 +42,7 @@
   }
 }
 
-.ca__lt-BlurInTop span {
+.leBlurInTop span {
   animation-name: leBlurInTop;
 }
 
@@ -54,7 +54,7 @@
   }
 }
 
-.ca__lt-BlurInBottom span {
+.leBlurInBottom span {
   animation-name: leBlurInBottom;
 }
 

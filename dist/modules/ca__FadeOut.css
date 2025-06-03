@@ -6,72 +6,72 @@
  *   <div class="ca__FadeOut">Your Text</div>
  */
 
-.ca__fx-FadeOut {
-    animation-name: fadeOut;
+.fadeOut {
+  animation-name: fadeOut;
 }
 
 @keyframes fadeOut {
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }
 
-.ca__fx-FadeOutLeft {
-    animation-name: fadeOutLeft;
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
 }
 
 @keyframes fadeOutLeft {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
-.ca__fx-FadeOutRight {
-    animation-name: fadeOutRight;
+.fadeOutRight {
+  animation-name: fadeOutRight;
 }
 
 @keyframes fadeOutRight {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-        transform: translateX(100%);
-    }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 }
 
-.ca__fx-FadeOutTop {
-    animation-name: fadeOutTop;
+.fadeOutTop {
+  animation-name: fadeOutTop;
 }
 
 @keyframes fadeOutTop {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
 
-.ca__fx-FadeOutBottom {
-    animation-name: fadeOutBottom;
+.fadeOutBottom {
+  animation-name: fadeOutBottom;
 }
 
 @keyframes fadeOutBottom {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-        transform: translateY(100%);
-    }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 }

@@ -6,7 +6,7 @@
  *   <div class="ca__LetterBlurOut">Your Text</div>
  */
 
-.ca__lt-BlurOut span {
+.leBlurOut span {
   animation-name: leBlurOut;
 }
 
@@ -18,7 +18,7 @@
   }
 }
 
-.ca__lt-BlurOutRight span {
+.leBlurOutRight span {
   animation-name: leBlurOutRight;
 }
 
@@ -30,7 +30,7 @@
   }
 }
 
-.ca__lt-BlurOutLeft span {
+.leBlurOutLeft span {
   animation-name: leBlurOutLeft;
 }
 
@@ -42,7 +42,7 @@
   }
 }
 
-.ca__lt-BlurOutTop span {
+.leBlurOutTop span {
   animation-name: leBlurOutTop;
 }
 
@@ -54,7 +54,7 @@
   }
 }
 
-.ca__lt-BlurOutBottom span {
+.leBlurOutBottom span {
   animation-name: leBlurOutBottom;
 }
 

@@ -6,7 +6,7 @@
  *   <div class="ca__LetterShake">Your Text</div>
  */
 
-.ca__lt-Rencontre span {
+.leRencontre span {
   animation: leRencontre 0.4s;
   animation-iteration-count: infinite;
 }
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__lt-PulseShake span {
+.lePulseShake span {
   animation-name: lePulseShake;
   animation-iteration-count: infinite;
 }
@@ -51,7 +51,7 @@
   }
 }
 
-.ca__lt-HorizontalShake span {
+.leHorizontalShake span {
   animation-name: leHorizontalShake;
   animation-iteration-count: infinite;
 }
@@ -100,7 +100,7 @@
   }
 }
 
-.ca__lt-VerticalShake span {
+.leVerticalShake span {
   animation-name: leVerticalShake;
   animation-iteration-count: infinite;
 }
@@ -149,7 +149,7 @@
   }
 }
 
-.ca__lt-MadMax span {
+.leMadMax span {
   animation-name: leMadMax;
   animation-iteration-count: infinite;
 }
@@ -198,7 +198,7 @@
   }
 }
 
-.ca__lt-HorizontalTremble span {
+.leHorizontalTremble span {
   animation-name: leHorizontalTremble;
   animation-iteration-count: infinite;
 }
@@ -232,7 +232,7 @@
   }
 }
 
-.ca__lt-VerticalTremble span {
+.leVerticalTremble span {
   animation-name: leVerticalTremble;
   animation-iteration-count: infinite;
 }
@@ -266,7 +266,7 @@
   }
 }
 
-.ca__lt-CrazyCool span {
+.leCrazyCool span {
   animation-name: leCrazyCool;
   animation-iteration-count: infinite;
 }
@@ -300,7 +300,7 @@
   }
 }
 
-.ca__lt-Vibration span {
+.leVibration span {
   animation: leVibration 0.1s linear infinite;
 }
 

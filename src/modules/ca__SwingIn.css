@@ -6,7 +6,7 @@
  *   <div class="ca__SwingIn">Your Text</div>
  */
 
-.ca__fx-SwingInLeft {
+.swingInLeft {
   animation-name: swingInLeft;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__fx-SwingInRight {
+.swingInRight {
   animation-name: swingInRight;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__fx-SwingInTop {
+.swingInTop {
   animation-name: swingInTop;
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.ca__fx-SwingInBottom {
+.swingInBottom {
   animation-name: swingInBottom;
 }
 

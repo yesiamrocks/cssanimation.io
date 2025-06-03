@@ -1,1 +1,249 @@
-.ca__u-SpeedBlitz{animation-duration:.3s!important}.ca__u-SpeedQuick{animation-duration:.6s!important}.ca__u-SpeedChill{animation-duration:1.2s!important}.ca__u-SpeedDrift{animation-duration:2s!important}.ca__u-SpeedSnail{animation-duration:3s!important}.ca__u-Delay1{animation-delay:.25s!important}.ca__u-Delay2{animation-delay:.5s!important}.ca__u-Delay3{animation-delay:1s!important}.ca__u-Delay5{animation-delay:2s!important}.ca__u-EaseSmooth{animation-timing-function:ease-in-out!important}.ca__u-EaseSnappy{animation-timing-function:cubic-bezier(.5,1.8,.5,1)!important}.ca__u-EaseChill{animation-timing-function:ease-in!important}.ca__u-EasePunch{animation-timing-function:ease-out!important}.ca__u-EaseLinear{animation-timing-function:linear!important}.ca__u-EaseSoft{animation-timing-function:ease}.ca__u-EaseInFast{animation-timing-function:ease-in}.ca__u-EaseOutChill{animation-timing-function:ease-out}.ca__u-EaseSnap{animation-timing-function:ease-in-out}.ca__u-EaseBounce{animation-timing-function:cubic-bezier(.34,1.56,.64,1)}.ca__u-EaseElastic{animation-timing-function:cubic-bezier(.68,-.55,.27,1.55)}.ca__u-EaseSwoosh{animation-timing-function:cubic-bezier(.4,0,.2,1)}.ca__u-EaseGlide{animation-timing-function:cubic-bezier(.25,1,.5,1)}.ca__u-EaseStagger{animation-timing-function:step-end}.ca__u-EaseDrift{animation-timing-function:cubic-bezier(.55,.06,.68,.19)}.ca__u-EaseJelly{animation-timing-function:cubic-bezier(.76,0,.24,1)}.ca__u-EasePop{animation-timing-function:cubic-bezier(.3,1.3,.3,1)}.ca__u-EaseRocket{animation-timing-function:cubic-bezier(.6,.05,1,.95)}.ca__u-EaseGravity{animation-timing-function:cubic-bezier(.8,0,.2,1)}.ca__u-EaseRubber{animation-timing-function:cubic-bezier(.36,.66,.04,1)}.ca__u-EaseSnappy{animation-timing-function:cubic-bezier(.5,1.5,.5,1)}.ca__u-EaseBoom{animation-timing-function:cubic-bezier(.7,0,.3,1.5)}.ca__u-EaseSlideBack{animation-timing-function:cubic-bezier(.33,1,.68,1)}.ca__u-EaseQuickStep{animation-timing-function:steps(3)}.ca__u-EaseSnapBack{animation-timing-function:cubic-bezier(.5,-.5,.5,1.5)}.ca__u-EaseWhip{animation-timing-function:cubic-bezier(.6,-.28,.735,.045)}.ca__u-EaseComet{animation-timing-function:cubic-bezier(.2,.8,.4,1.5)}.ca__u-EaseQuick{animation-timing-function:cubic-bezier(.5,0,.75,0)}.ca__u-EaseGentle{animation-timing-function:ease}.ca__u-EaseSling{animation-timing-function:cubic-bezier(.6,-.28,.74,.05)}.ca__u-EaseBounceHard{animation-timing-function:cubic-bezier(.68,-.6,.32,1.6)}.ca__u-EaseOvershoot{animation-timing-function:cubic-bezier(.8,0,1,1)}.ca__u-EaseSnapZoom{animation-timing-function:cubic-bezier(.2,.85,.5,1)}.ca__u-EaseRipple{animation-timing-function:cubic-bezier(.65,.05,.36,1)}.ca__u-EasePulse{animation-timing-function:cubic-bezier(.47,0,.745,.715)}.ca__u-EaseStepSmooth{animation-timing-function:steps(5)}.ca__u-EaseFlow{animation-timing-function:cubic-bezier(.25,.46,.45,.94)}.ca__u-EaseWhiplash{animation-timing-function:cubic-bezier(.3,1.5,.8,1)}.ca__u-EasePopIn{animation-timing-function:cubic-bezier(.65,0,.35,1)}.ca__u-EaseDip{animation-timing-function:cubic-bezier(.47,1.64,.41,.8)}.ca__u-EaseBounceSoft{animation-timing-function:cubic-bezier(.57,1.45,.45,1)}.ca__u-EaseZoomSnappy{animation-timing-function:cubic-bezier(.3,0,.3,1.5)}.ca__u-EaseBackTwist{animation-timing-function:cubic-bezier(.9,-.6,.8,1.8)}.ca__u-LoopOnce{animation-iteration-count:1!important}.ca__u-LoopForever{animation-iteration-count:infinite!important}.ca__u-LoopTriple{animation-iteration-count:3!important}.ca__u-LoopBounce{animation-direction:alternate!important;animation-iteration-count:infinite!important}
+/**
+ * cssanimation-utilities.css - Utility classes for enhanced animation control and responsiveness.
+ * Part of: cssanimation.io
+ * Version: 4.1.0
+ *
+ * Author: Shafayetul Islam Pavel
+ * LinkedIn: https://www.linkedin.com/in/shafayetul/
+ * Email: hello@cssanimation.io
+ * GitHub: https://github.com/yesiamrocks/cssanimation.io
+ *
+ * Title: Utility Classes for CSS Animation Control and Responsiveness.
+ * Description: A collection of helper classes for managing animation duration, delay, 
+ * fill modes, and responsive adjustments, designed to complement core animation styles.
+ *
+ * © 2025 Shafayetul Islam Pavel – All rights reserved.
+ */
+
+/* Duration Utilities */
+
+.ca__fx-speedBlitz {
+  animation-duration: 0.3s !important;
+}
+
+.ca__fx-speedQuick {
+  animation-duration: 0.6s !important;
+}
+
+.ca__fx-speedChill {
+  animation-duration: 1.2s !important;
+}
+
+.ca__fx-speedDrift {
+  animation-duration: 2s !important;
+}
+
+.ca__fx-speedSnail {
+  animation-duration: 3s !important;
+}
+
+/* Delay Utilities */
+
+.ca__fx-delay1 {
+  animation-delay: 0.25s !important;
+}
+
+.ca__fx-delay2 {
+  animation-delay: 0.5s !important;
+}
+
+.ca__fx-delay3 {
+  animation-delay: 1s !important;
+}
+
+.ca__fx-delay5 {
+  animation-delay: 2s !important;
+}
+
+/* Easing Utilities */
+
+.ca__fx-easeSmooth {
+  animation-timing-function: ease-in-out !important;
+}
+
+.ca__fx-easeSnappy {
+  animation-timing-function: cubic-bezier(0.5, 1.8, 0.5, 1) !important;
+}
+
+.ca__fx-easeChill {
+  animation-timing-function: ease-in !important;
+}
+
+.ca__fx-easePunch {
+  animation-timing-function: ease-out !important;
+}
+
+.ca__fx-easeLinear {
+  animation-timing-function: linear !important;
+}
+
+.ca__fx-easeSoft {
+  animation-timing-function: ease;
+}
+
+.ca__fx-easeInFast {
+  animation-timing-function: ease-in;
+}
+
+.ca__fx-easeOutChill {
+  animation-timing-function: ease-out;
+}
+
+.ca__fx-easeSnap {
+  animation-timing-function: ease-in-out;
+}
+
+.ca__fx-easeBounce {
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ca__fx-easeElastic {
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.ca__fx-easeSwoosh {
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ca__fx-easeGlide {
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.ca__fx-easeStagger {
+  animation-timing-function: step-end;
+}
+
+.ca__fx-easeDrift {
+  animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+
+.ca__fx-easeJelly {
+  animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.ca__fx-easePop {
+  animation-timing-function: cubic-bezier(0.3, 1.3, 0.3, 1);
+}
+
+.ca__fx-easeRocket {
+  animation-timing-function: cubic-bezier(0.6, 0.05, 1, 0.95); /* Fast takeoff */
+}
+
+.ca__fx-easeGravity {
+  animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1); /* Slow rise, fast fall */
+}
+
+.ca__fx-easeRubber {
+  animation-timing-function: cubic-bezier(0.36, 0.66, 0.04, 1); /* Elastic stretch */
+}
+
+.ca__fx-easeSnappy {
+  animation-timing-function: cubic-bezier(0.5, 1.5, 0.5, 1); /* Fast overshoot */
+}
+
+.ca__fx-easeBoom {
+  animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1.5); /* Big bounce */
+}
+
+.ca__fx-easeSlideBack {
+  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); /* Nice backward drag */
+}
+
+.ca__fx-easeQuickStep {
+  animation-timing-function: steps(3, end); /* Stepped flick */
+}
+
+.ca__fx-easeSnapBack {
+  animation-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5); /* Overstretch snap */
+}
+
+.ca__fx-easeWhip {
+  animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); /* Whiplash exit */
+}
+
+.ca__fx-easeComet {
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1.5); /* Tail-like motion */
+}
+
+.ca__fx-easeQuick {
+  animation-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
+}
+
+.ca__fx-easeGentle {
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.ca__fx-easeSling {
+  animation-timing-function: cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.ca__fx-easeBounceHard {
+  animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.ca__fx-easeOvershoot {
+  animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+}
+
+.ca__fx-easeSnapZoom {
+  animation-timing-function: cubic-bezier(0.2, 0.85, 0.5, 1);
+}
+
+.ca__fx-easeRipple {
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.ca__fx-easePulse {
+  animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.ca__fx-easeStepSmooth {
+  animation-timing-function: steps(5, end);
+}
+
+.ca__fx-easeFlow {
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.ca__fx-easeWhiplash {
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.8, 1);
+}
+
+.ca__fx-easePopIn {
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.ca__fx-easeDip {
+  animation-timing-function: cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.ca__fx-easeBounceSoft {
+  animation-timing-function: cubic-bezier(0.57, 1.45, 0.45, 1);
+}
+
+.ca__fx-easeZoomSnappy {
+  animation-timing-function: cubic-bezier(0.3, 0, 0.3, 1.5);
+}
+
+.ca__fx-easeBackTwist {
+  animation-timing-function: cubic-bezier(0.9, -0.6, 0.8, 1.8);
+}
+
+/* Repeating Utilities */
+
+.ca__fx-loop-once {
+  animation-iteration-count: 1 !important;
+}
+
+.ca__fx-loop-forever {
+  animation-iteration-count: infinite !important;
+}
+
+.ca__fx-loop-triple {
+  animation-iteration-count: 3 !important;
+}
+
+.ca__fx-loop-bounce {
+  animation-iteration-count: infinite !important;
+  animation-direction: alternate !important;
+}

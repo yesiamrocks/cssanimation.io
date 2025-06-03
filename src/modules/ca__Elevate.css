@@ -6,7 +6,7 @@
  *   <div class="ca__Elevate">Your Text</div>
  */
 
-.ca__fx-ElevateLeft {
+.elevateLeft {
   animation-name: elevateLeft;
 }
 
@@ -27,7 +27,7 @@
   }
 }
 
-.ca__fx-ElevateRight {
+.elevateRight {
   animation-name: elevateRight;
 }
 

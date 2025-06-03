@@ -6,7 +6,7 @@
  *   <div class="ca__Door">Your Text</div>
  */
 
-.ca__fx-DoorCloseFromLeft {
+.doorCloseFromLeft {
   animation-name: doorCloseFromLeft;
 }
 
@@ -25,7 +25,7 @@
   }
 }
 
-.ca__fx-DoorOpenFromRight {
+.doorOpenFromRight {
   animation-name: doorOpenFromRight;
 }
 
@@ -44,7 +44,7 @@
   }
 }
 
-.ca__fx-DoorCloseFromRight {
+.doorCloseFromRight {
   animation-name: doorCloseFromRight;
 }
 
@@ -63,7 +63,7 @@
   }
 }
 
-.ca__fx-DoorOpenFromLeft {
+.doorOpenFromLeft {
   animation-name: doorOpenFromLeft;
 }
 

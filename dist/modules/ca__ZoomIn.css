@@ -6,57 +6,57 @@
  *   <div class="ca__ZoomIn">Your Text</div>
  */
 
-.ca__fx-ZoomIn {
-    animation-name: zoomIn;
+.zoomIn {
+  animation-name: zoomIn;
 }
 
 @keyframes zoomIn {
-    from {
-        transform: scale(10);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10);
+    opacity: 0;
+  }
 }
 
-.ca__fx-ZoomInLeft {
-    animation-name: zoomInLeft;
+.zoomInLeft {
+  animation-name: zoomInLeft;
 }
 
 @keyframes zoomInLeft {
-    from {
-        transform: scale(10) translateX(-50%);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10) translateX(-50%);
+    opacity: 0;
+  }
 }
 
-.ca__fx-ZoomInRight {
-    animation-name: zoomInRight;
+.zoomInRight {
+  animation-name: zoomInRight;
 }
 
 @keyframes zoomInRight {
-    from {
-        transform: scale(10) translateX(50%);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10) translateX(50%);
+    opacity: 0;
+  }
 }
 
-.ca__fx-ZoomInTop {
-    animation-name: zoomInTop;
+.zoomInTop {
+  animation-name: zoomInTop;
 }
 
 @keyframes zoomInTop {
-    from {
-        transform: scale(10) translateY(-50%);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
 }
 
-.ca__fx-ZoomInBottom {
-    animation-name: zoomInBottom;
+.zoomInBottom {
+  animation-name: zoomInBottom;
 }
 
 @keyframes zoomInBottom {
-    from {
-        transform: scale(10) translateY(50%);
-        opacity: 0;
-    }
+  from {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
 }

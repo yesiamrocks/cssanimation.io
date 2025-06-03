@@ -6,7 +6,7 @@
  *   <div class="ca__LetterFly">Your Text</div>
  */
 
-.ca__lt-AboundTop span {
+.leAboundTop span {
   animation-name: leAboundTop;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.ca__lt-AboundBottom span {
+.leAboundBottom span {
   animation-name: leAboundBottom;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.ca__lt-AboundLeft span {
+.leAboundLeft span {
   animation-name: leAboundLeft;
 }
 
@@ -39,7 +39,7 @@
   }
 }
 
-.ca__lt-AboundRight span {
+.leAboundRight span {
   animation-name: leAboundRight;
 }
 

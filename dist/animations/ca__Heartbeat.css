@@ -1,0 +1,41 @@
+/**
+ * Module: Heartbeat
+ * Filename: ca__Heartbeat.css
+ */
+
+.heartbeatSlow {
+  animation-name: heartbeatSlow;
+  animation-duration: 0.5s;
+  animation-iteration-count: var(--cssanimation-infinite);
+}
+
+@keyframes heartbeatSlow {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  35%,
+  65% {
+    transform: scale(1.2);
+  }
+}
+
+.heartbeatFast {
+  animation-name: heartbeatFast;
+  animation-iteration-count: var(--cssanimation-infinite);
+}
+
+@keyframes heartbeatFast {
+  0%,
+  28%,
+  70%,
+  100% {
+    transform: scale(1);
+  }
+
+  14%,
+  42% {
+    transform: scale(1.3);
+  }
+}

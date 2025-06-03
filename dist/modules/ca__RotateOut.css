@@ -6,62 +6,62 @@
  *   <div class="ca__RotateOut">Your Text</div>
  */
 
-.ca__fx-RotateOutLeft {
-    animation-name: rotateOutLeft;
+.rotateOutLeft {
+  animation-name: rotateOutLeft;
 }
 
 @keyframes rotateOutLeft {
-    from {
-        transform: translateX(0) rotate(360deg);
-    }
+  from {
+    transform: translateX(0) rotate(360deg);
+  }
 
-    to {
-        transform: translateX(-800px) rotate(0deg);
-        opacity: 0;
-    }
+  to {
+    transform: translateX(-800px) rotate(0deg);
+    opacity: 0;
+  }
 }
 
-.ca__fx-RotateOutRight {
-    animation-name: rotateOutRight;
+.rotateOutRight {
+  animation-name: rotateOutRight;
 }
 
 @keyframes rotateOutRight {
-    from {
-        transform: translateX(0) rotate(-360deg);
-    }
+  from {
+    transform: translateX(0) rotate(-360deg);
+  }
 
-    to {
-        transform: translateX(800px) rotate(0deg);
-        opacity: 0;
-    }
+  to {
+    transform: translateX(800px) rotate(0deg);
+    opacity: 0;
+  }
 }
 
-.ca__fx-RotateOutTop {
-    animation-name: rotateOutTop;
+.rotateOutTop {
+  animation-name: rotateOutTop;
 }
 
 @keyframes rotateOutTop {
-    from {
-        transform: translateX(0) rotate(360deg);
-    }
+  from {
+    transform: translateX(0) rotate(360deg);
+  }
 
-    to {
-        transform: translateY(-800px) rotate(0deg);
-        opacity: 0;
-    }
+  to {
+    transform: translateY(-800px) rotate(0deg);
+    opacity: 0;
+  }
 }
 
-.ca__fx-RotateOutBottom {
-    animation-name: rotateOutBottom;
+.rotateOutBottom {
+  animation-name: rotateOutBottom;
 }
 
 @keyframes rotateOutBottom {
-    from {
-        transform: translateX(0) rotate(360deg);
-    }
+  from {
+    transform: translateX(0) rotate(360deg);
+  }
 
-    to {
-        transform: translateY(800px) rotate(0deg);
-        opacity: 0;
-    }
+  to {
+    transform: translateY(800px) rotate(0deg);
+    opacity: 0;
+  }
 }

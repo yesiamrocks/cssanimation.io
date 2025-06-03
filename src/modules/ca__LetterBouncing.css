@@ -6,7 +6,7 @@
  *   <div class="ca__LetterBouncing">Your Text</div>
  */
 
-.ca__lt-BounceFromTop span {
+.leBounceFromTop span {
   animation-name: leBounceFromTop;
 }
 
@@ -36,7 +36,7 @@
   }
 }
 
-.ca__lt-BounceFromDown span {
+.leBounceFromDown span {
   animation-name: leBounceFromDown;
 }
 
@@ -66,7 +66,7 @@
   }
 }
 
-.ca__lt-BounceY span {
+.leBounceY span {
   animation-name: leBounceY;
 }
 
@@ -96,7 +96,7 @@
   }
 }
 
-.ca__lt-BounceZoomIn span {
+.leBounceZoomIn span {
   animation-name: leBounceZoomIn;
 }
 
@@ -126,7 +126,7 @@
   }
 }
 
-.ca__lt-BounceZoomOut span {
+.leBounceZoomOut span {
   animation-name: leBounceZoomOut;
 }
 

@@ -6,7 +6,7 @@
  *   <div class="ca__LetterFlyIn">Your Text</div>
  */
 
-.ca__lt-FlyInTop span {
+.leFlyInTop span {
   animation-name: leFlyInTop;
 }
 
@@ -22,7 +22,7 @@
   }
 }
 
-.ca__lt-FlyInLeft span {
+.leFlyInLeft span {
   animation-name: leFlyInLeft;
   animation-timing-function: ease-in-out;
 }
@@ -38,7 +38,7 @@
   }
 }
 
-.ca__lt-FlyInRight span {
+.leFlyInRight span {
   animation-name: leFlyInRight;
   animation-timing-function: ease-in-out;
 }
@@ -54,7 +54,7 @@
   }
 }
 
-.ca__lt-FlyInBottom span {
+.leFlyInBottom span {
   animation-name: leFlyInBottom;
 }
 

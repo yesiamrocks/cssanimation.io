@@ -6,7 +6,7 @@
  *   <div class="ca__Rotation">Your Text</div>
  */
 
-.ca__fx-Rotate {
+.rotate {
   animation-name: rotate;
   animation-timing-function: ease-in-out;
 }
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__fx-RotateX {
+.rotateX {
   animation-name: rotateX;
 }
 
@@ -35,7 +35,7 @@
   }
 }
 
-.ca__fx-RotateXIn {
+.rotateXIn {
   animation-name: rotateXIn;
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-.ca__fx-RotateXOut {
+.rotateXOut {
   animation-name: rotateXOut;
 }
 
@@ -65,7 +65,7 @@
   }
 }
 
-.ca__fx-RotateY {
+.rotateY {
   animation-name: rotateY;
 }
 
@@ -79,7 +79,7 @@
   }
 }
 
-.ca__fx-RotateYIn {
+.rotateYIn {
   animation-name: rotateYIn;
 }
 
@@ -94,7 +94,7 @@
   }
 }
 
-.ca__fx-RotateYOut {
+.rotateYOut {
   animation-name: rotateYOut;
 }
 

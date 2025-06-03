@@ -6,61 +6,61 @@
  *   <div class="ca__BlurIn">Your Text</div>
  */
 
-.ca__fx-BlurIn {
-    animation-name: blurIn;
+.blurIn {
+  animation-name: blurIn;
 }
 
 @keyframes blurIn {
-    from {
-        filter: blur(20px);
-        opacity: 0;
-    }
+  from {
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
-.ca__fx-BlurInLeft {
-    animation-name: blurInLeft;
+.blurInLeft {
+  animation-name: blurInLeft;
 }
 
 @keyframes blurInLeft {
-    from {
-        transform: translateX(100%);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  from {
+    transform: translateX(100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
-.ca__fx-BlurInRight {
-    animation-name: blurInRight;
+.blurInRight {
+  animation-name: blurInRight;
 }
 
 @keyframes blurInRight {
-    from {
-        transform: translateX(-100%);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  from {
+    transform: translateX(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
-.ca__fx-BlurInTop {
-    animation-name: blurInTop;
+.blurInTop {
+  animation-name: blurInTop;
 }
 
 @keyframes blurInTop {
-    from {
-        transform: translateY(100%);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }
 
-.ca__fx-BlurInBottom {
-    animation-name: blurInBottom;
+.blurInBottom {
+  animation-name: blurInBottom;
 }
 
 @keyframes blurInBottom {
-    from {
-        transform: translateY(-100%);
-        filter: blur(20px);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
 }

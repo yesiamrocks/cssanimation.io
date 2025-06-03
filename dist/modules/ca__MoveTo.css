@@ -6,42 +6,42 @@
  *   <div class="ca__MoveTo">Your Text</div>
  */
 
-.ca__fx-MoveToLeft {
-    animation-name: moveToLeft;
+.moveToLeft {
+  animation-name: moveToLeft;
 }
 
 @keyframes moveToLeft {
-    to {
-        transform: translateX(-800px);
-    }
+  to {
+    transform: translateX(-800px);
+  }
 }
 
-.ca__fx-MoveToRight {
-    animation-name: moveToRight;
+.moveToRight {
+  animation-name: moveToRight;
 }
 
 @keyframes moveToRight {
-    to {
-        transform: translateX(800px);
-    }
+  to {
+    transform: translateX(800px);
+  }
 }
 
-.ca__fx-MoveToTop {
-    animation-name: moveToTop;
+.moveToTop {
+  animation-name: moveToTop;
 }
 
 @keyframes moveToTop {
-    to {
-        transform: translateY(-800px);
-    }
+  to {
+    transform: translateY(-800px);
+  }
 }
 
-.ca__fx-MoveToBottom {
-    animation-name: moveToBottom;
+.moveToBottom {
+  animation-name: moveToBottom;
 }
 
 @keyframes moveToBottom {
-    to {
-        transform: translateY(800px);
-    }
+  to {
+    transform: translateY(800px);
+  }
 }

@@ -6,7 +6,7 @@
  *   <div class="ca__Skew">Your Text</div>
  */
 
-.ca__fx-SkewLeft {
+.skewLeft {
   animation-name: skewLeft;
 }
 
@@ -16,7 +16,7 @@
   }
 }
 
-.ca__fx-SkewRight {
+.skewRight {
   animation-name: skewRight;
 }
 
@@ -26,7 +26,7 @@
   }
 }
 
-.ca__fx-SkewInLeft {
+.skewInLeft {
   animation-name: skewInLeft;
 }
 
@@ -41,7 +41,7 @@
   }
 }
 
-.ca__fx-SkewInRight {
+.skewInRight {
   animation-name: skewInRight;
 }
 
@@ -56,7 +56,7 @@
   }
 }
 
-.ca__fx-SkewOutLeft {
+.skewOutLeft {
   animation-name: skewOutLeft;
 }
 
@@ -71,7 +71,7 @@
   }
 }
 
-.ca__fx-SkewOutRight {
+.skewOutRight {
   animation-name: skewOutRight;
 }
 

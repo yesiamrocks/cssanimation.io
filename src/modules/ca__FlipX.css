@@ -6,7 +6,7 @@
  *   <div class="ca__FlipX">Your Text</div>
  */
 
-.ca__fx-FlipX {
+.flipX {
   animation-name: flipX;
 }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.ca__fx-FlipXZoomIn {
+.flipXZoomIn {
   animation-name: flipXZoomIn;
 }
 
@@ -46,7 +46,7 @@
   }
 }
 
-.ca__fx-FlipXZoomOut {
+.flipXZoomOut {
   animation-name: flipXZoomOut;
 }
 

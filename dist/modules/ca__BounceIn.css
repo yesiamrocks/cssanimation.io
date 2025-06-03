@@ -6,90 +6,90 @@
  *   <div class="ca__BounceIn">Your Text</div>
  */
 
-.ca__fx-BounceInTop {
-    animation-name: bounceInTop;
+.bounceInTop {
+  animation-name: bounceInTop;
 }
 
 @keyframes bounceInTop {
-    0% {
-        transform: translate3d(0, -300%, 0);
-    }
+  0% {
+    transform: translate3d(0, -300%, 0);
+  }
 
-    58% {
-        transform: translate3d(0, 27px, 0);
-    }
+  58% {
+    transform: translate3d(0, 27px, 0);
+  }
 
-    73% {
-        transform: translate3d(0, -12px, 0);
-    }
+  73% {
+    transform: translate3d(0, -12px, 0);
+  }
 
-    88% {
-        transform: translate3d(0, 7px, 0);
-    }
+  88% {
+    transform: translate3d(0, 7px, 0);
+  }
 }
 
-.ca__fx-BounceInBottom {
-    animation-name: bounceInBottom;
+.bounceInBottom {
+  animation-name: bounceInBottom;
 }
 
 @keyframes bounceInBottom {
-    0% {
-        transform: translate3d(0, 300%, 0);
-    }
+  0% {
+    transform: translate3d(0, 300%, 0);
+  }
 
-    58% {
-        transform: translate3d(0, -27px, 0);
-    }
+  58% {
+    transform: translate3d(0, -27px, 0);
+  }
 
-    73% {
-        transform: translate3d(0, 12px, 0);
-    }
+  73% {
+    transform: translate3d(0, 12px, 0);
+  }
 
-    88% {
-        transform: translate3d(0, -8px, 0);
-    }
+  88% {
+    transform: translate3d(0, -8px, 0);
+  }
 }
 
-.ca__fx-BounceInLeft {
-    animation-name: bounceInLeft;
+.bounceInLeft {
+  animation-name: bounceInLeft;
 }
 
 @keyframes bounceInLeft {
-    0% {
-        transform: translate3d(-300%, 0, 0);
-    }
+  0% {
+    transform: translate3d(-300%, 0, 0);
+  }
 
-    58% {
-        transform: translate3d(27px, 0, 0);
-    }
+  58% {
+    transform: translate3d(27px, 0, 0);
+  }
 
-    73% {
-        transform: translate3d(-12px, 0, 0);
-    }
+  73% {
+    transform: translate3d(-12px, 0, 0);
+  }
 
-    88% {
-        transform: translate3d(8px, 0, 0);
-    }
+  88% {
+    transform: translate3d(8px, 0, 0);
+  }
 }
 
-.ca__fx-BounceInRight {
-    animation-name: bounceInRight;
+.bounceInRight {
+  animation-name: bounceInRight;
 }
 
 @keyframes bounceInRight {
-    0% {
-        transform: translate3d(300%, 0, 0);
-    }
+  0% {
+    transform: translate3d(300%, 0, 0);
+  }
 
-    58% {
-        transform: translate3d(-27px, 0, 0);
-    }
+  58% {
+    transform: translate3d(-27px, 0, 0);
+  }
 
-    73% {
-        transform: translate3d(12px, 0, 0);
-    }
+  73% {
+    transform: translate3d(12px, 0, 0);
+  }
 
-    88% {
-        transform: translate3d(-8px, 0, 0);
-    }
+  88% {
+    transform: translate3d(-8px, 0, 0);
+  }
 }

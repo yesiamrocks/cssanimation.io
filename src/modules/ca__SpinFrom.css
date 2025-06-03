@@ -6,7 +6,7 @@
  *   <div class="ca__SpinFrom">Your Text</div>
  */
 
-.ca__fx-SpinFromLeft {
+.spinFromLeft {
   animation-name: spinFromLeft;
 }
 
@@ -22,7 +22,7 @@
   }
 }
 
-.ca__fx-SpinFromRight {
+.spinFromRight {
   animation-name: spinFromRight;
 }
 
@@ -38,7 +38,7 @@
   }
 }
 
-.ca__fx-SpinFromTop {
+.spinFromTop {
   animation-name: spinFromTop;
 }
 
@@ -54,7 +54,7 @@
   }
 }
 
-.ca__fx-SpinFromBottom {
+.spinFromBottom {
   animation-name: spinFromBottom;
 }
 

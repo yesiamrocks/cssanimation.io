@@ -6,17 +6,17 @@
  *   <div class="ca__Striking">Your Text</div>
  */
 
-.ca__fx-HuHu {
+.hu__hu__ {
   animation: hu__hu__ infinite 2s ease-in-out;
 }
 
-@keyframes hu__hu__ {
+@keyframes hu__hu_ {
   50% {
     transform: translateY(30px);
   }
 }
 
-.ca__lt-Snake span {
+.leSnake span {
   animation: leSnake 1.5s ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -32,7 +32,7 @@
   }
 }
 
-.ca__lt-Peek span {
+.lePeek span {
   animation-name: lePeek;
 }
 
@@ -46,7 +46,7 @@
   }
 }
 
-.ca__fx-Effect3d {
+.effect3d {
   animation-name: effect3d;
 }
 
@@ -58,17 +58,17 @@
       0 3px 0 #bbb,
       0 4px 0 #b9b9b9,
       0 5px 0 #aaa,
-      0 6px 1px rgba(0, 0, 0, 0.1),
-      0 0 5px rgba(0, 0, 0, 0.1),
-      0 1px 3px rgba(0, 0, 0, 0.3),
-      0 3px 5px rgba(0, 0, 0, 0.2),
-      0 5px 10px rgba(0, 0, 0, 0.25),
-      0 10px 10px rgba(0, 0, 0, 0.2),
-      0 20px 20px rgba(0, 0, 0, 0.15);
+      0 6px 1px rgb(0 0 0 / 10%),
+      0 0 5px rgb(0 0 0 / 10%),
+      0 1px 3px rgb(0 0 0 / 30%),
+      0 3px 5px rgb(0 0 0 / 20%),
+      0 5px 10px rgb(0 0 0 / 25%),
+      0 10px 10px rgb(0 0 0 / 20%),
+      0 20px 20px rgb(0 0 0 / 15%);
   }
 }
 
-.ca__lt-RainDrop span {
+.leRainDrop span {
   animation-name: leRainDrop;
   animation-iteration-count: infinite;
 }
@@ -106,7 +106,7 @@
   }
 }
 
-.ca__fx-Pepe {
+.pepe {
   animation-name: pepe;
   animation-iteration-count: infinite;
 }
@@ -126,7 +126,7 @@
   }
 }
 
-.ca__lt-WaterWave span {
+.leWaterWave span {
   animation: leWaterWave 0.2s linear infinite;
 }
 
@@ -136,7 +136,7 @@
   }
 }
 
-.ca__fx-Lightning {
+.lightning {
   animation-name: lightning;
 }
 
@@ -153,7 +153,7 @@
   }
 }
 
-.ca__lt-JoltZoom span {
+.leJoltZoom span {
   animation-name: leJoltZoom;
 }
 
@@ -171,7 +171,7 @@
   }
 }
 
-.ca__fx-Typing {
+.typing {
   width: 473px;
   overflow: hidden;
   white-space: nowrap;
@@ -193,7 +193,7 @@
   }
 }
 
-.ca__fx-Electricity {
+.electricity {
   animation-name: electricity;
   animation-iteration-count: infinite;
 }
@@ -250,7 +250,7 @@
   }
 }
 
-.ca__fx-Wipe {
+.wipe {
   width: 473px;
   overflow: hidden;
   margin: 0 auto;
@@ -264,7 +264,7 @@
   }
 }
 
-.ca__fx-Open {
+.open {
   width: 473px;
   margin: 0 auto;
   overflow: hidden;
@@ -278,7 +278,7 @@
   }
 }
 
-.ca__lt-Magnify span {
+.leMagnify span {
   animation-name: leMagnify;
 }
 
@@ -289,7 +289,7 @@
   }
 }
 
-.ca__lt-Beat span {
+.leBeat span {
   animation-name: leBeat;
 }
 

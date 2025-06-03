@@ -6,7 +6,7 @@
  *   <div class="ca__LetterDanceIn">Your Text</div>
  */
 
-.ca__lt-DanceInTop span {
+.leDanceInTop span {
   animation-name: leDanceInTop;
   transform-origin: top;
 }
@@ -37,7 +37,7 @@
   }
 }
 
-.ca__lt-DanceInMiddle span {
+.leDanceInMiddle span {
   animation-name: leDanceInMiddle;
 }
 
@@ -67,7 +67,7 @@
   }
 }
 
-.ca__lt-DanceInBottom span {
+.leDanceInBottom span {
   animation-name: leDanceInBottom;
   transform-origin: bottom;
 }
