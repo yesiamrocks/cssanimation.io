@@ -1,3 +1,8 @@
+/**
+ * Module: Spotlights
+ * Filename: ca__Spotlights.css
+ */
+
 .unfoldAndRise {
   animation-name: unfoldAndRise;
   perspective: 1000px;
@@ -34,11 +39,6 @@
     opacity: 1;
   }
 }
-
-/**
- * Module: Striking
- * Filename: ca__Striking.css
- */
 
 .hu__hu__ {
   animation: hu__hu__ infinite 2s ease-in-out;

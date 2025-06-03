@@ -57,3 +57,22 @@
     opacity: 0;
   }
 }
+
+.zoomOutRotateUp {
+  animation: zoomOutRotateUp ease-out;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes zoomOutRotateUp {
+  0% {
+    transform: perspective(700px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
+    opacity: 0;
+  }
+}

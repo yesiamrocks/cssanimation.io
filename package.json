@@ -48,8 +48,7 @@
     "export:modules": "node tools/export-modules.js",
     "build:animations": "postcss src/animations/ca__index.css -o src/cssanimation-index.css",
     "build:animations:min": "cross-env CSS_BUILD=min postcss src/cssanimation-index.css -o src/cssanimation-index.min.css",
-    "generate:demo": "node tools/generate-animation-demo.js",
-    "prepare": "husky install"
+    "generate:demo": "node tools/generate-animation-demo.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",

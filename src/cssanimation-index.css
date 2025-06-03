@@ -946,6 +946,25 @@
   }
 }
 
+.ca__fx-tiltFadeBack {
+  animation: tiltFadeBack 1s cubic-bezier(0.45, 0, 0.55, 1) forwards;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+@keyframes tiltFadeBack {
+  0% {
+    transform: perspective(800px) rotateX(0deg) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(40deg) translateZ(-100px);
+    opacity: 0;
+  }
+}
+
 /**
  * Module: Flip X
  * Filename: ca__FlipX.css
@@ -1022,6 +1041,82 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+.ca__fx-flipOutLeft {
+  animation-name: flipOutLeft;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipOutLeft {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateY(-90deg) translateX(-60px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipOutRight {
+  animation-name: flipOutRight;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipOutRight {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateY(90deg) translateX(60px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipOutXLeft {
+  animation-name: flipOutXLeft;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipOutXLeft {
+  0% {
+    transform: perspective(600px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateX(-90deg) translateX(-60px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipOutXRight {
+  animation-name: flipOutXRight;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipOutXRight {
+  0% {
+    transform: perspective(600px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateX(90deg) translateX(60px);
+    opacity: 0;
   }
 }
 
@@ -2786,6 +2881,11 @@
   }
 }
 
+/**
+ * Module: Spotlights
+ * Filename: ca__Spotlights.css
+ */
+
 .ca__fx-unfoldAndRise {
   animation-name: unfoldAndRise;
   perspective: 1000px;
@@ -2822,11 +2922,6 @@
     opacity: 1;
   }
 }
-
-/**
- * Module: Striking
- * Filename: ca__Striking.css
- */
 
 .ca__fx-hu__hu__ {
   animation: hu__hu__ infinite 2s ease-in-out;
@@ -3308,6 +3403,25 @@
 @keyframes zoomOutBottom {
   to {
     transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutRotateUp {
+  animation: zoomOutRotateUp ease-out;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes zoomOutRotateUp {
+  0% {
+    transform: perspective(700px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
     opacity: 0;
   }
 }

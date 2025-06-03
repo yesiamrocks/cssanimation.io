@@ -72,3 +72,22 @@
     transform: translateY(100%);
   }
 }
+
+.tiltFadeBack {
+  animation: tiltFadeBack 1s cubic-bezier(0.45, 0, 0.55, 1) forwards;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+@keyframes tiltFadeBack {
+  0% {
+    transform: perspective(800px) rotateX(0deg) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(40deg) translateZ(-100px);
+    opacity: 0;
+  }
+}
