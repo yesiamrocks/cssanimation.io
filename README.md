@@ -125,7 +125,7 @@ Every animated text block needs the `.cssanimation` class along with a `ca__lt-*
 
 Animate text one letter at a time with different sequencing styles:
 
-**➜  Sequential (in order):** `ca__lt-sequence`
+**➜ Sequential (in order):** `ca__lt-sequence`
 
 ```html
 <h1 class="cssanimation" ca__lt-sequence="ca__fx-FadeIn">Letters Animate</h1>
@@ -167,7 +167,7 @@ Split lines by periods `"."` or by `<br>` / `\n`. Use `ca__lt-separator="dot"` f
 <p class="cssanimation" ca__lt-line="ca__fx-FadeIn" ca__lt-separator="dot">Step 1. Step 2. Step 3.</p>
 ```
 
-📌You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **default behavior**.
+You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **default behavior**.
 
 ### 🔥You can assign different animation classes and delays to each word and line! Space-separate your class names and delay values.
 
@@ -184,6 +184,8 @@ Split lines by periods `"."` or by `<br>` / `\n`. Use `ca__lt-separator="dot"` f
   Third line
 </p>
 ```
+
+<br><br>
 
 ## ⏱️ `ca__lt-delay` in Detail
 
@@ -204,6 +206,8 @@ The `ca__lt-delay` attribute specifies the delay before each animated unit (lett
 ```
 
 This allows you to create rhythmic or staggered entry effects easily, like `ca__lt-delay="50 100 100"` as in your example. The first unit gets 50ms delay, and all subsequent units get 100ms delay.
+
+<br><br>
 
 ## ⌛ `ca__lt-base-duration` in Detail
 
@@ -338,6 +342,8 @@ Looking to go beyond CSS with scroll triggers, advanced sequencing, and even mor
 ```
 
 [Explore GSAPAnimation for more magic»](https://github.com/yesiamrocks/gsapanimation)
+
+<br><br>
 
 ## CSS vs. GSAP – Which Animation Version Should You Use?
 

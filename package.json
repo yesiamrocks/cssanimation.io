@@ -33,7 +33,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "npm run prefix:css:all && npm run copy:assets && npm run build:classlist && npm run build:animations && npm run build:animations:min && npm run generate:animation-index && npm run generate:demo",
+    "build": "npm run prefix:css:all && npm run copy:assets && npm run build:classlist && npm run build:animations && npm run build:animations:min && npm run generate:animation-index && npm run generate:demo && npm run generate:animation-preview",
     "build:css:basic": "postcss src/*.css -d dist/ --no-map",
     "start": "postcss src/*.css -d dist/ --watch --no-map",
     "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules && cpx \"src/animations/**/*\" dist/animations",
@@ -48,7 +48,8 @@
     "export:modules": "node tools/export-modules.js",
     "build:animations": "postcss src/animations/ca__index.css -o src/cssanimation-index.css",
     "build:animations:min": "cross-env CSS_BUILD=min postcss src/cssanimation-index.css -o src/cssanimation-index.min.css",
-    "generate:demo": "node tools/generate-animation-demo.js"
+    "generate:demo": "node tools/generate-animation-demo.js",
+    "generate:animation-preview": "node tools/generate-animation-preview.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
