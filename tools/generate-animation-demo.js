@@ -62,7 +62,7 @@ const htmlContent = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA Animation Gallery</title>
-    <link rel="stylesheet" href="./dist/cssanimation.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/yesiamrocks/cssanimation.io/refs/heads/master/dist/cssanimation.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
