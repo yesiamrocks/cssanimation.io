@@ -1,7 +1,7 @@
 /**
  * ca-letteranimation.js - Letter, word, and line animation enhancements
  * Part of: cssanimation.io
- * Version: 4.1.0
+ * Version: 5.0.0
  *
  * Author: Shafayetul Islam Pavel
  * LinkedIn: https://www.linkedin.com/in/shafayetul/

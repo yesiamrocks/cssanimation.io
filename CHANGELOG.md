@@ -1,47 +1,108 @@
+# Version: 5.0.0
+
+## Major Text Animation Overhaul
+
+## New Features
+
+- Letter-by-Letter, Word-by-Word, and Line-by-Line Animations Introducing granular text animations:
+  - **Letter-by-Letter Animation**: Animate each letter sequentially, randomly, or in reverse.
+  - **Word-by-Word Animation**: Animate text one word at a time.
+  - **Line-by-Line Animation**: Animate text line by line, with support for custom separators.
+- **Flexible Animation Class Support**: No longer limited to `.ca__le*` classes. Now, any CSS animation class can be used with text animations, providing greater flexibility.
+- **Enhanced Timing Control** with `ca__lt-delay` and `ca__lt-base-duration` Fine-tune animation timing:
+  - `ca__lt-delay`: Specify delays (in milliseconds) for each unit (letter, word, or line).
+  - `ca__lt-base-duration`: Set a base duration for animations, overriding default durations.
+
+### Example Usage
+
+```html
+<h1 class="cssanimation" ca__lt-sequence="ca__fx-FadeIn">Animate Me</h1>
+
+<p class="cssanimation" ca__lt-word="ca__fx-SlideUp" ca__lt-delay="100">Word by word animation with delay</p>
+
+<h2 class="cssanimation" ca__lt-line="ca__fx-FlipIn" ca__lt-separator="dot">First sentence. Second sentence.</h2>
+```
+
+## Migration Instructions
+
+Version 5.0.0 introduces a significant overhaul of how text-based animations (Letter-by-Letter, Word-by-Word, Line-by-Line) are configured. This version moves away from a reliance on the `.ca__le*`CSS class to a more flexible and powerful attribute-based approach.
+
+- **Simplified HTML Markup**: Previously, letter animations required `.ca__le*` classes. Now, simply add the `ca__lt-*` attribute to your HTML elements:
+
+Previous
+
+```html
+<h1 class="cssanimation ca__lt-FadeIn sequence">Animate Me</h1>
+```
+
+Now
+
+```html
+<h1 class="cssanimation" ca__lt-sequence="ca__fx-FadeIn">Animate Me</h1>
+```
+
+## Attribute-Based Control
+
+New animation control attributes: Customize animations directly in HTML using attributes:
+
+- `ca__lt-sequence`: Animate letters in order
+- `ca__lt-random`: Animate letters randomly
+- `ca__lt-reverse`: Animate letters in reverse
+- `ca__lt-word`: Word-by-word animation
+- `ca__lt-line`: Line-by-line animation
+- `ca__lt-delay`: Delay between items in `ms`
+- `ca__lt-base-duration`: Override default duration
+- `ca__lt-separator`: Define custom separators for line animations (e.g., `"dot"` for periods).
+
+## Additional Enhancements
+
+- **Improved Documentation**: Comprehensive guides and examples are available in the [README](https://github.com/yesiamrocks/cssanimation.io#readme), detailing usage and customization options.
+- **Demo Page Updates**: The [demo page now showcases](https://yesiamrocks.github.io/cssanimation.io/animation-demo.html) the new animation features with updated examples and interactive previews.
+
+For detailed examples and further information, please refer to the [official documentation](https://github.com/yesiamrocks/cssanimation.io#readme).
+
+[Let me know](https://github.com/yesiamrocks/cssanimation.io/discussions) if you need assistance with integrating these new features into your project!
+
 # Version: 4.1.0
 
 ## Features
 
 - **Support for `ca__lt-duration` Attribute**
 
-    - Developers can now manually specify base animation duration using:
-        ```html
-        ca__lt-duration="2000"
-        ```
+  - Developers can now manually specify base animation duration using:
+    ```html
+    ca__lt-duration="2000"
+    ```
 
 - **Auto-Detect Animation Duration from CSS**
 
-    - If `ca__lt-duration` is not provided, the script will:
-        1. Read the `animation-duration` from the first animation class
-        2. Fallback to `1000ms` if unavailable
+  - If `ca__lt-duration` is not provided, the script will:
+    1. Read the `animation-duration` from the first animation class
+    2. Fallback to `1000ms` if unavailable
 
 - **Robust Delay Handling with `parseDelaySteps()`**
 
-    - Malformed or non-numeric delay values in `ca__lt-delay` are ignored safely
-    - Fallbacks to default values when necessary
+  - Malformed or non-numeric delay values in `ca__lt-delay` are ignored safely
+  - Fallbacks to default values when necessary
 
 - **Improved Sequential Timing Logic**
 
-    - `processSequentialBy()` now:
-        - Adds `currentUnitDelay + baseDuration` to create true chained animations
-        - Supports precise per-unit timing (e.g. `300 500 800`)
-        - Applies consistent cumulative offset behavior across words/lines
+  - `processSequentialBy()` now:
+    - Adds `currentUnitDelay + baseDuration` to create true chained animations
+    - Supports precise per-unit timing (e.g. `300 500 800`)
+    - Applies consistent cumulative offset behavior across words/lines
 
 - **Better Code Readability & Maintenance**
-    - Delay and duration logic abstracted into reusable utilities
-    - Cleaner and more modular for future additions (e.g. easing, loop, scroll-trigger)
+  - Delay and duration logic abstracted into reusable utilities
+  - Cleaner and more modular for future additions (e.g. easing, loop, scroll-trigger)
 
 ---
 
 ## Example Usage
 
 ```html
-<h2
-    ca__lt-word="fadeIn bounce slide"
-    ca__lt-delay="300 800 200"
-    ca__lt-duration="1500"
->
-    Each word animates with precise delay and duration
+<h2 ca__lt-word="fadeIn bounce slide" ca__lt-delay="300 800 200" ca__lt-duration="1500">
+  Each word animates with precise delay and duration
 </h2>
 ```
 
@@ -90,9 +151,9 @@ This cleanup makes `cssanimation.io` lighter, faster, and more focused. Perfect 
 ### Changed
 
 - Updated `animateFadeIn` and `animateFadeInLeft`:
-    - Automatically remove `will-change`, `backface-visibility`, and `transform-style` inline styles after animations.
-    - Preserves any user-provided `onComplete` callbacks.
-    - Improves memory efficiency for long-running or high-volume animation use.
+  - Automatically remove `will-change`, `backface-visibility`, and `transform-style` inline styles after animations.
+  - Preserves any user-provided `onComplete` callbacks.
+  - Improves memory efficiency for long-running or high-volume animation use.
 
 ### Notes
 
@@ -117,8 +178,8 @@ This cleanup makes `cssanimation.io` lighter, faster, and more focused. Perfect 
 - **Modular export system for animations**  
   A new Node.js script automatically extracts animation blocks from `./dist/cssanimation.css` and creates:
 
-    - Individual module files using PascalCase naming (e.g., `ca__LetterFadeIn.css`)
-    - Metadata headers in each file with module info and usage examples
+  - Individual module files using PascalCase naming (e.g., `ca__LetterFadeIn.css`)
+  - Metadata headers in each file with module info and usage examples
 
 - **`ca__index.css` auto-generated** a central file that imports all animation modules.
 
@@ -136,8 +197,7 @@ This cleanup makes `cssanimation.io` lighter, faster, and more focused. Perfect 
 
 ### Added
 
-**`ca__lt-delay` attribute support**
-Developers can now control the delay between animated letters directly from HTML markup:
+**`ca__lt-delay` attribute support** Developers can now control the delay between animated letters directly from HTML markup:
 
 - Example: `<div class="ca__lt-sequence" ca__lt-delay="200">Hello</div>`
 - No JS changes required
@@ -152,8 +212,8 @@ Developers can now control the delay between animated letters directly from HTML
 ### Enhancements
 
 - **PascalCase Class Prefixing**:
-    - All class names now auto-convert to PascalCase format.
-    - Helps maintain consistency, improves readability, and avoids naming collisions.
+  - All class names now auto-convert to PascalCase format.
+  - Helps maintain consistency, improves readability, and avoids naming collisions.
 
 ### Prefixing Rules by File Type
 
@@ -182,34 +242,30 @@ These global classes are **excluded from prefixing**:
 ### Added
 
 - **GSAP Animation Engine**: Introduced a new modular engine (`cssanimation-gsap.js`) that enables GSAP-powered animations using HTML attributes.
-    - Usage via `data-gsap="bounce"` and `data-gsap-options='{ "y": 30, "duration": 1.5 }'`
-    - Supports all GSAP animation properties like `x`, `y`, `opacity`, `scale`, `ease`, `repeat`, etc.
-    - Compatible with Vite, Webpack, and plain HTML via UMD build.
+  - Usage via `data-gsap="bounce"` and `data-gsap-options='{ "y": 30, "duration": 1.5 }'`
+  - Supports all GSAP animation properties like `x`, `y`, `opacity`, `scale`, `ease`, `repeat`, etc.
+  - Compatible with Vite, Webpack, and plain HTML via UMD build.
 - **Generated Animation Map**: Auto-generated `generated-animation-map.js` maps `data-gsap` names to animation functions for scalable modularity.
 - **Error Handling**: Robust JSON validation for `data-gsap-options` with helpful console messages to aid developers.
 - **New NPM Build Targets**:
-    - `dist/ca__gsap/cssanimation-gsap.umd.js` – UMD-compatible build for browser use
-    - `src/animations/` – Modular animation definitions
+  - `dist/ca__gsap/cssanimation-gsap.umd.js` – UMD-compatible build for browser use
+  - `src/animations/` – Modular animation definitions
 - **Developer Tools**:
-    - Auto-copying of `animations` and `ca__gsap` folders in build
-    - Added `generate:map` script to manage animation mapping
-    - Improved `package.json` scripts and dev dependencies
+  - Auto-copying of `animations` and `ca__gsap` folders in build
+  - Added `generate:map` script to manage animation mapping
+  - Improved `package.json` scripts and dev dependencies
 
 ### Changed
 
 - Restructured `src/animations/` to follow one-module-per-animation best practice.
 - Added `gsap` as a `peerDependency` to avoid forced version locks.
 - Updated README with GSAP usage examples for:
-    - NPM + Vite/ESM setup
-    - Plain HTML via `<script>` + CDN
+  - NPM + Vite/ESM setup
+  - Plain HTML via `<script>` + CDN
 
 ### Breaking Changes
 
-- **GSAP is now a required peer dependency**. Developers must install GSAP themselves:
-  `bash
-npm install cssanimationio gsap
-`
-  <br>
+- **GSAP is now a required peer dependency**. Developers must install GSAP themselves: `bash npm install cssanimationio gsap ` <br>
 
 # Version: 2.2.1
 
@@ -256,40 +312,36 @@ npm install cssanimationio gsap
 
 - Fully tested in latest versions of:
 
-    - Chrome, Firefox, Safari, Edge, Opera
-    - iOS & Android mobile browsers
+  - Chrome, Firefox, Safari, Edge, Opera
+  - iOS & Android mobile browsers
 
 - Compatible with:
-    - **React** (via `useEffect` or DOM `ref`)
-    - **jQuery**
-    - **Vanilla JS / Web Components**
+  - **React** (via `useEffect` or DOM `ref`)
+  - **jQuery**
+  - **Vanilla JS / Web Components**
 
 ### Migration Notes
 
 - Replace old class references:
 
-    ```diff
-    - <div class="sequence">
-    - <div class="random">
-    * <div class="ca__sequence">
-    * <div class="ca__random">
-    ```
+  ```diff
+  - <div class="sequence">
+  - <div class="random">
+  * <div class="ca__sequence">
+  * <div class="ca__random">
+  ```
 
 # Version: v2.0.4
 
 ### Production Build & Modular Structure Refinement
 
-**Released:** May 2025
-**Tag:** `v2.0.4`
-**Focus:** Clean publish, modular structure, and future-friendly folder refactor
+**Released:** May 2025 **Tag:** `v2.0.4` **Focus:** Clean publish, modular structure, and future-friendly folder refactor
 
 ### What’s New
 
-- **Dist-Only Publishing to NPM**
-  Package is now cleaner and production-focused. Only the `dist/` folder is published, reducing size and removing dev clutter.
+- **Dist-Only Publishing to NPM** Package is now cleaner and production-focused. Only the `dist/` folder is published, reducing size and removing dev clutter.
 
-- **New Folder Structure**
-  Modular CSS animations (e.g., `fade.css`, `rotate.css`, `zoom.css`) have been moved into a new `dist/modules/` directory for better organization.
+- **New Folder Structure** Modular CSS animations (e.g., `fade.css`, `rotate.css`, `zoom.css`) have been moved into a new `dist/modules/` directory for better organization.
 
 <br>
 
@@ -297,9 +349,7 @@ npm install cssanimationio gsap
 
 ### Production-Ready Build – Only `dist/` Published
 
-**Released:** May 2025
-**Tag:** `v2.0.3`
-**Focus:** Clean publish and future-friendly folder refactor
+**Released:** May 2025 **Tag:** `v2.0.3` **Focus:** Clean publish and future-friendly folder refactor
 
 ### Release Summary
 
@@ -307,10 +357,8 @@ This release refines the package for real-world usage and distribution by publis
 
 ### What’s New in v2.0.3:
 
-- **`dist/`-only NPM package**
-  Reduced package size by excluding source files, configs, and dev tools — only production-ready assets are now shipped.
-- **Cleaned Up File Structure**
-  Improved maintainability by restructuring with a modular CSS build system and separating utility/animation modules.
+- **`dist/`-only NPM package** Reduced package size by excluding source files, configs, and dev tools — only production-ready assets are now shipped.
+- **Cleaned Up File Structure** Improved maintainability by restructuring with a modular CSS build system and separating utility/animation modules.
 
 ### Optimized NPM Publish
 
