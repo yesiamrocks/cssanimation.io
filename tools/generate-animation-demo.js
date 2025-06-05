@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const cssFilePath = path.resolve(__dirname, '../src/cssanimation-index.css');
+const cssFilePath = path.resolve(__dirname, '../src/cssanimation.css');
 const outputHtmlPath = path.resolve(__dirname, '../docs/animation-demo.html');
 const animationGroupsPath = path.resolve(__dirname, './animation-groups.json'); // Path to the JSON file
 
@@ -62,7 +62,7 @@ const htmlContent = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA Animation Gallery</title>
-    <link rel="stylesheet" href="../src/cssanimation-index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.min.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>

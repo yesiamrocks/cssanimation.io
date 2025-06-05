@@ -33,7 +33,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "npm run prefix:css:all && npm run copy:assets && npm run build:classlist && npm run build:animations && npm run build:animations:min && npm run generate:animation-index && npm run generate:demo && npm run generate:animation-preview",
+    "build": "npm run build:animations && npm run build:animations:min && npm run prefix:css:all && npm run copy:assets && npm run build:classlist && npm run generate:animation-index && npm run generate:demo && npm run generate:animation-preview",
     "build:css:basic": "postcss src/*.css -d dist/ --no-map",
     "start": "postcss src/*.css -d dist/ --watch --no-map",
     "copy:assets": "cpx \"src/*.js\" dist/ && cpx \"src/*.md\" dist/ && cpx \"src/modules/**/*\" dist/modules && cpx \"src/animations/**/*\" dist/animations",
@@ -41,13 +41,13 @@
     "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
     "format:css": "prettier --write \"src/**/*.css\"",
     "build:classlist": "node tools/extract-class-names.js",
-    "prefix:css": "postcss src/cssanimation.css --config postcss.config.js -o dist/cssanimation.css && postcss src/cssanimation.css --config postcss.config.js -o dist/cssanimation.min.css --env production",
-    "prefix:utility": "postcss src/cssanimation-utility.css --config postcss.config.js -o dist/cssanimation-utility.css && postcss src/cssanimation-utility.css --config postcss.config.js -o dist/cssanimation-utility.min.css --env production",
+    "prefix:css": "postcss src/cssanimation.css --config postcss.config.js -o dist/cssanimation.css && cross-env CSS_BUILD=min postcss src/cssanimation.css --config postcss.config.js -o dist/cssanimation.min.css",
+    "prefix:utility": "postcss src/cssanimation-utility.css --config postcss.config.js -o dist/cssanimation-utility.css && cross-env CSS_BUILD=min postcss src/cssanimation-utility.css --config postcss.config.js -o dist/cssanimation-utility.min.css",
     "prefix:css:all": "npm run prefix:css && npm run prefix:utility",
     "generate:animation-index": "node tools/build-animation-index.js",
     "export:modules": "node tools/export-modules.js",
-    "build:animations": "postcss src/animations/ca__index.css -o src/cssanimation-index.css",
-    "build:animations:min": "cross-env CSS_BUILD=min postcss src/cssanimation-index.css -o src/cssanimation-index.min.css",
+    "build:animations": "postcss src/animations/ca__index.css -o src/cssanimation.css",
+    "build:animations:min": "cross-env CSS_BUILD=min postcss src/cssanimation.css -o src/cssanimation.min.css",
     "generate:demo": "node tools/generate-animation-demo.js",
     "generate:animation-preview": "node tools/generate-animation-preview.js"
   },

@@ -20,6 +20,7 @@ module.exports = {
         'custom-properties': false, // ✅ prevent fallback duplication
       },
     }),
+    // Conditionally include cssnano only when CSS_BUILD is 'min'
     ...(isMinified ? [require('cssnano')()] : []),
   ],
 };

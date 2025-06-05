@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Paths
-const cssFilePath = path.resolve(__dirname, '../src/cssanimation-index.css');
+const cssFilePath = path.resolve(__dirname, '../src/cssanimation.css');
 const groupConfigPath = path.resolve(__dirname, './animation-groups.json');
 const outputHtmlPath = path.resolve(__dirname, '../docs/animation-preview.html');
 

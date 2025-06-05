@@ -1,8 +1,0 @@
-.cssanimation {
-  animation-duration: var(--cssanimation-duration);
-  animation-fill-mode: var(--cssanimation-fill-mode);
-}
-
-.infinite {
-  animation-iteration-count: var(--cssanimation-infinite);
-}
