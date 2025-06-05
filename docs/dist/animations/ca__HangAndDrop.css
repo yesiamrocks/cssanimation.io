@@ -1,0 +1,70 @@
+/**
+ * Module: Hang And Drop
+ * Filename: ca__HangAndDrop.css
+ */
+
+.hangAndDropLeft {
+  animation-name: hangAndDropLeft;
+  transform-origin: left;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes hangAndDropLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(100deg);
+  }
+
+  60% {
+    transform: rotate(90deg);
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.4;
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: translateY(600%) rotate(120deg) scale(0.95);
+    opacity: 0;
+  }
+}
+
+.hangAndDropRight {
+  animation-name: hangAndDropRight;
+  transform-origin: right;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes hangAndDropRight {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-100deg);
+  }
+
+  60% {
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.4;
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: translateY(600%) rotate(-120deg) scale(0.95);
+    opacity: 0;
+  }
+}

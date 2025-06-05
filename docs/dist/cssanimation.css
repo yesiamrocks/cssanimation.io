@@ -1,0 +1,3427 @@
+/* Auto-generated index of all CA animations */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/**
+ * Module: Blur In
+ * Filename: ca__BlurIn.css
+ */
+
+.ca__fx-blurIn {
+  animation-name: blurIn;
+}
+
+@keyframes blurIn {
+  from {
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurInLeft {
+  animation-name: blurInLeft;
+}
+
+@keyframes blurInLeft {
+  from {
+    transform: translateX(100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurInRight {
+  animation-name: blurInRight;
+}
+
+@keyframes blurInRight {
+  from {
+    transform: translateX(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurInTop {
+  animation-name: blurInTop;
+}
+
+@keyframes blurInTop {
+  from {
+    transform: translateY(100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurInBottom {
+  animation-name: blurInBottom;
+}
+
+@keyframes blurInBottom {
+  from {
+    transform: translateY(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Blur Out
+ * Filename: ca__BlurOut.css
+ */
+
+.ca__fx-blurOut {
+  animation-name: blurOut;
+}
+
+@keyframes blurOut {
+  85%,
+  100% {
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurOutLeft {
+  animation-name: blurOutLeft;
+}
+
+@keyframes blurOutLeft {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurOutRight {
+  animation-name: blurOutRight;
+}
+
+@keyframes blurOutRight {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurOutTop {
+  animation-name: blurOutTop;
+}
+
+@keyframes blurOutTop {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurOutBottom {
+  animation-name: blurOutBottom;
+}
+
+@keyframes blurOutBottom {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Bounce
+ * Filename: ca__Bounce.css
+ */
+
+.ca__fx-bounceFromTop {
+  animation-name: bounceFromTop;
+}
+
+@keyframes bounceFromTop {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, -80px, 0) scale3d(1, 1.6, 1);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.ca__fx-bounceFromDown {
+  animation-name: bounceFromDown;
+}
+
+@keyframes bounceFromDown {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, 80px, 0) scale3d(1, 1.2, 1);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+
+.ca__fx-bounceX {
+  animation-name: bounceX;
+}
+
+@keyframes bounceX {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale3d(1, 1, 1);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: scale3d(1.8, 1, 1);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale3d(1.5, 1, 1);
+  }
+
+  90% {
+    transform: scale3d(1.1, 1, 1);
+  }
+}
+
+.ca__fx-bounceY {
+  animation-name: bounceY;
+}
+
+@keyframes bounceY {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale3d(1, 1, 1);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: scale3d(1, 2, 1);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale3d(1, 1.5, 1);
+  }
+
+  90% {
+    transform: scale3d(1, 1.1, 1);
+  }
+}
+
+.ca__fx-bounceZoomIn {
+  animation-name: bounceZoomIn;
+}
+
+@keyframes bounceZoomIn {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: scale(1.5);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale(1.3);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+}
+
+.ca__fx-bounceZoomOut {
+  animation-name: bounceZoomOut;
+}
+
+@keyframes bounceZoomOut {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: scale(0.3);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale(0.5);
+  }
+
+  90% {
+    transform: scale(0.9);
+  }
+}
+
+/**
+ * Module: Bounce In
+ * Filename: ca__BounceIn.css
+ */
+
+.ca__fx-bounceInTop {
+  animation-name: bounceInTop;
+}
+
+@keyframes bounceInTop {
+  0% {
+    transform: translate3d(0, -300%, 0);
+  }
+
+  58% {
+    transform: translate3d(0, 27px, 0);
+  }
+
+  73% {
+    transform: translate3d(0, -12px, 0);
+  }
+
+  88% {
+    transform: translate3d(0, 7px, 0);
+  }
+}
+
+.ca__fx-bounceInBottom {
+  animation-name: bounceInBottom;
+}
+
+@keyframes bounceInBottom {
+  0% {
+    transform: translate3d(0, 300%, 0);
+  }
+
+  58% {
+    transform: translate3d(0, -27px, 0);
+  }
+
+  73% {
+    transform: translate3d(0, 12px, 0);
+  }
+
+  88% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+.ca__fx-bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+@keyframes bounceInLeft {
+  0% {
+    transform: translate3d(-300%, 0, 0);
+  }
+
+  58% {
+    transform: translate3d(27px, 0, 0);
+  }
+
+  73% {
+    transform: translate3d(-12px, 0, 0);
+  }
+
+  88% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+
+.ca__fx-bounceInRight {
+  animation-name: bounceInRight;
+}
+
+@keyframes bounceInRight {
+  0% {
+    transform: translate3d(300%, 0, 0);
+  }
+
+  58% {
+    transform: translate3d(-27px, 0, 0);
+  }
+
+  73% {
+    transform: translate3d(12px, 0, 0);
+  }
+
+  88% {
+    transform: translate3d(-8px, 0, 0);
+  }
+}
+
+/**
+ * Module: Bounce Out
+ * Filename: ca__BounceOut.css
+ */
+
+.ca__fx-bounceOutTop {
+  animation-name: bounceOutTop;
+}
+
+@keyframes bounceOutTop {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+
+  18% {
+    transform: translate3d(0, 27px, 0);
+  }
+
+  33% {
+    transform: translate3d(0, -12px, 0);
+  }
+
+  48% {
+    transform: translate3d(0, 8px, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -300%, 0);
+  }
+}
+
+.ca__fx-bounceOutBottom {
+  animation-name: bounceOutBottom;
+}
+
+@keyframes bounceOutBottom {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+
+  18% {
+    transform: translate3d(0, -27px, 0);
+  }
+
+  33% {
+    transform: translate3d(0, 12px, 0);
+  }
+
+  48% {
+    transform: translate3d(0, -8px, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 300%, 0);
+  }
+}
+
+.ca__fx-bounceOutLeft {
+  animation-name: bounceOutLeft;
+}
+
+@keyframes bounceOutLeft {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+
+  18% {
+    transform: translate3d(27px, 0, 0);
+  }
+
+  33% {
+    transform: translate3d(-12px, 0, 0);
+  }
+
+  48% {
+    transform: translate3d(8px, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(-300%, 0, 0);
+  }
+}
+
+.ca__fx-bounceOutRight {
+  animation-name: bounceOutRight;
+}
+
+@keyframes bounceOutRight {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+
+  18% {
+    transform: translate3d(-27px, 0, 0);
+  }
+
+  33% {
+    transform: translate3d(12px, 0, 0);
+  }
+
+  48% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(300%, 0, 0);
+  }
+}
+
+/**
+ * Module: Dance
+ * Filename: ca__Dance.css
+ */
+
+.ca__fx-danceTop {
+  animation-name: danceTop;
+  transform-origin: top;
+}
+
+@keyframes danceTop {
+  16% {
+    transform: skew(-14deg);
+  }
+
+  33% {
+    transform: skew(12deg);
+  }
+
+  49% {
+    transform: skew(-8deg);
+  }
+
+  66% {
+    transform: skew(6deg);
+  }
+
+  83% {
+    transform: skew(-4deg);
+  }
+}
+
+.ca__fx-danceMiddle {
+  animation-name: danceMiddle;
+}
+
+@keyframes danceMiddle {
+  16% {
+    transform: skew(-14deg);
+  }
+
+  33% {
+    transform: skew(12deg);
+  }
+
+  49% {
+    transform: skew(-8deg);
+  }
+
+  66% {
+    transform: skew(6deg);
+  }
+
+  83% {
+    transform: skew(-4deg);
+  }
+}
+
+.ca__fx-danceBottom {
+  animation-name: danceBottom;
+  transform-origin: bottom;
+}
+
+@keyframes danceBottom {
+  16% {
+    transform: skew(-14deg);
+  }
+
+  33% {
+    transform: skew(12deg);
+  }
+
+  49% {
+    transform: skew(-8deg);
+  }
+
+  66% {
+    transform: skew(6deg);
+  }
+
+  83% {
+    transform: skew(-4deg);
+  }
+}
+
+/**
+ * Module: Door
+ * Filename: ca__Door.css
+ */
+
+.ca__fx-doorCloseFromLeft {
+  animation-name: doorCloseFromLeft;
+}
+
+@keyframes doorCloseFromLeft {
+  0% {
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: left;
+    opacity: 0;
+  }
+
+  50%,
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    transform-origin: left;
+    opacity: 1;
+  }
+}
+
+.ca__fx-doorOpenFromRight {
+  animation-name: doorOpenFromRight;
+}
+
+@keyframes doorOpenFromRight {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+    transform-origin: left;
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: left;
+    opacity: 0;
+  }
+}
+
+.ca__fx-doorCloseFromRight {
+  animation-name: doorCloseFromRight;
+}
+
+@keyframes doorCloseFromRight {
+  0% {
+    transform: perspective(400px) rotateY(-90deg);
+    transform-origin: right;
+    opacity: 0;
+  }
+
+  50%,
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    transform-origin: right;
+    opacity: 1;
+  }
+}
+
+.ca__fx-doorOpenFromLeft {
+  animation-name: doorOpenFromLeft;
+}
+
+@keyframes doorOpenFromLeft {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+    transform-origin: right;
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    transform: perspective(400px) rotateY(-90deg);
+    transform-origin: right;
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Elevate
+ * Filename: ca__Elevate.css
+ */
+
+.ca__fx-elevateLeft {
+  animation-name: elevateLeft;
+}
+
+@keyframes elevateLeft {
+  0% {
+    transform: translateY(100%) rotate(-20deg);
+    transform-origin: right;
+  }
+
+  40% {
+    transform: rotate(20deg);
+    transform-origin: right;
+  }
+
+  65% {
+    transform: rotate(0deg);
+    transform-origin: right;
+  }
+}
+
+.ca__fx-elevateRight {
+  animation-name: elevateRight;
+}
+
+@keyframes elevateRight {
+  0% {
+    transform: translateY(100%) rotate(20deg);
+    transform-origin: left;
+  }
+
+  40% {
+    transform: rotate(-20deg);
+    transform-origin: left;
+  }
+
+  65% {
+    transform: rotate(0deg);
+    transform-origin: left;
+  }
+}
+
+/**
+ * Module: Fade in
+ * Filename: ca__FadeIn.css
+ */
+
+.ca__fx-fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.ca__fx-fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.ca__fx-fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.ca__fx-fadeInTop {
+  animation-name: fadeInTop;
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.ca__fx-fadeInBottom {
+  animation-name: fadeInBottom;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/**
+ * Module: Fade Out
+ * Filename: ca__FadeOut.css
+ */
+
+.ca__fx-fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.ca__fx-fadeOutLeft {
+  animation-name: fadeOutLeft;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.ca__fx-fadeOutRight {
+  animation-name: fadeOutRight;
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.ca__fx-fadeOutTop {
+  animation-name: fadeOutTop;
+}
+
+@keyframes fadeOutTop {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.ca__fx-fadeOutBottom {
+  animation-name: fadeOutBottom;
+}
+
+@keyframes fadeOutBottom {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+.ca__fx-tiltFadeBack {
+  animation: tiltFadeBack 1s cubic-bezier(0.45, 0, 0.55, 1) forwards;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+@keyframes tiltFadeBack {
+  0% {
+    transform: perspective(800px) rotateX(0deg) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(40deg) translateZ(-100px);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Flip X
+ * Filename: ca__FlipX.css
+ */
+
+.ca__fx-flipX {
+  animation-name: flipX;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipX {
+  from {
+    transform: perspective(600px) rotateX(-180deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: perspective(600px) rotateX(-360deg);
+  }
+}
+
+.ca__fx-flipXZoomIn {
+  animation-name: flipXZoomIn;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipXZoomIn {
+  0% {
+    transform: perspective(600px) rotateX(0deg) scale(1);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(600px) rotateX(-180deg) scale(1.8);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: perspective(600px) rotateX(-360deg) scale(0.7);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ca__fx-flipXZoomOut {
+  animation-name: flipXZoomOut;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipXZoomOut {
+  0% {
+    transform: perspective(600px) rotateX(0deg) scale(1);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(600px) rotateX(180deg) scale(1.8);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: perspective(600px) rotateX(360deg) scale(0.7);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ca__fx-flipOutLeft {
+  animation-name: flipOutLeft;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipOutLeft {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateY(-90deg) translateX(-60px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipOutRight {
+  animation-name: flipOutRight;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipOutRight {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateY(90deg) translateX(60px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipOutXLeft {
+  animation-name: flipOutXLeft;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipOutXLeft {
+  0% {
+    transform: perspective(600px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateX(-90deg) translateX(-60px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipOutXRight {
+  animation-name: flipOutXRight;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipOutXRight {
+  0% {
+    transform: perspective(600px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateX(90deg) translateX(60px);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Flip Y
+ * Filename: ca__FlipY.css
+ */
+
+.ca__fx-flipY {
+  animation-name: flipY;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipY {
+  from {
+    transform: perspective(600px) rotateY(180deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
+
+.ca__fx-flipYZoomIn {
+  animation-name: flipYZoomIn;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipYZoomIn {
+  0% {
+    transform: perspective(600px) rotateY(0deg) scale(1);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(600px) rotateY(180deg) scale(1.6);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: perspective(600px) rotateY(360deg) scale(0.7);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ca__fx-flipYZoomOut {
+  animation-name: flipYZoomOut;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes flipYZoomOut {
+  0% {
+    transform: perspective(600px) rotateY(0deg) scale(1);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(600px) rotateY(180deg) scale(0.6);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: perspective(600px) rotateY(360deg) scale(1.8);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/**
+ * Module: One After One Fade in
+ * Filename: ca__OneAfterOneFadeIn.css
+ */
+
+.ca__fx-flyInTop {
+  animation-name: flyInTop;
+}
+
+@keyframes flyInTop {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-50px);
+    animation-timing-function: ease-out;
+  }
+}
+
+.ca__fx-flyInBottom {
+  animation-name: flyInBottom;
+}
+
+@keyframes flyInBottom {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(50px);
+    animation-timing-function: ease-out;
+  }
+}
+
+.ca__fx-flyOutTop {
+  animation-name: flyOutTop;
+}
+
+@keyframes flyOutTop {
+  30% {
+    transform: translateY(80px);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: translateY(-50px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-flyOutBottom {
+  animation-name: flyOutBottom;
+}
+
+@keyframes flyOutBottom {
+  30% {
+    transform: translateY(-80px);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: translateY(50px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Hang And Drop
+ * Filename: ca__HangAndDrop.css
+ */
+
+.ca__fx-hangAndDropLeft {
+  animation-name: hangAndDropLeft;
+  transform-origin: left;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes hangAndDropLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(100deg);
+  }
+
+  60% {
+    transform: rotate(90deg);
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.4;
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: translateY(600%) rotate(120deg) scale(0.95);
+    opacity: 0;
+  }
+}
+
+.ca__fx-hangAndDropRight {
+  animation-name: hangAndDropRight;
+  transform-origin: right;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes hangAndDropRight {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-100deg);
+  }
+
+  60% {
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.4;
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: translateY(600%) rotate(-120deg) scale(0.95);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Hang On
+ * Filename: ca__HangOn.css
+ */
+
+.ca__fx-hangOnLeft {
+  animation-name: hangOnLeft;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+  transform-origin: left;
+}
+
+@keyframes hangOnLeft {
+  0% {
+    transform: rotate(0);
+  }
+
+  40% {
+    transform: rotate(100deg);
+  }
+
+  55% {
+    transform: rotate(80deg);
+  }
+
+  70% {
+    transform: rotate(95deg);
+  }
+
+  85% {
+    transform: rotate(85deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.ca__fx-hangOnRight {
+  animation-name: hangOnRight;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+  transform-origin: right;
+}
+
+@keyframes hangOnRight {
+  0% {
+    transform: rotate(0);
+  }
+
+  40% {
+    transform: rotate(-100deg);
+  }
+
+  55% {
+    transform: rotate(-80deg);
+  }
+
+  70% {
+    transform: rotate(-95deg);
+  }
+
+  85% {
+    transform: rotate(-85deg);
+  }
+
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+/**
+ * Module: Heartbeat
+ * Filename: ca__Heartbeat.css
+ */
+
+.ca__fx-heartbeatSlow {
+  animation-name: heartbeatSlow;
+  animation-duration: 0.5s;
+  animation-iteration-count: var(--cssanimation-infinite);
+}
+
+@keyframes heartbeatSlow {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  35%,
+  65% {
+    transform: scale(1.2);
+  }
+}
+
+.ca__fx-heartbeatFast {
+  animation-name: heartbeatFast;
+  animation-iteration-count: var(--cssanimation-infinite);
+}
+
+@keyframes heartbeatFast {
+  0%,
+  28%,
+  70%,
+  100% {
+    transform: scale(1);
+  }
+
+  14%,
+  42% {
+    transform: scale(1.3);
+  }
+}
+
+/**
+ * Module: Kick out
+ * Filename: ca__KickOut.css
+ */
+
+.ca__fx-kickOutBehind {
+  animation-name: kickOutBehind;
+  transform-origin: top;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+  animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+}
+
+@keyframes kickOutBehind {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ca__fx-kickOutFront {
+  animation-name: kickOutFront;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+  transform-origin: top;
+  animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+}
+
+@keyframes kickOutFront {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/**
+ * Module: Move From
+ * Filename: ca__MoveFrom.css
+ */
+
+.ca__fx-moveFromLeft {
+  animation-name: moveFromLeft;
+}
+
+@keyframes moveFromLeft {
+  from {
+    transform: translateX(var(--move-distance, -800px));
+  }
+}
+
+.ca__fx-moveFromRight {
+  animation-name: moveFromRight;
+}
+
+@keyframes moveFromRight {
+  from {
+    transform: translateX(var(--move-distance, 800px));
+  }
+}
+
+.ca__fx-moveFromTop {
+  animation-name: moveFromTop;
+}
+
+@keyframes moveFromTop {
+  from {
+    transform: translateY(var(--move-distance, -800px));
+  }
+}
+
+.ca__fx-moveFromBottom {
+  animation-name: moveFromBottom;
+}
+
+@keyframes moveFromBottom {
+  from {
+    transform: translateY(var(--move-distance, 800px));
+  }
+}
+
+/**
+ * Module: Move To
+ * Filename: ca__MoveTo.css
+ */
+
+.ca__fx-moveToLeft {
+  animation-name: moveToLeft;
+}
+
+@keyframes moveToLeft {
+  to {
+    transform: translateX(var(--move-distance, -800px));
+  }
+}
+
+.ca__fx-moveToRight {
+  animation-name: moveToRight;
+}
+
+@keyframes moveToRight {
+  to {
+    transform: translateX(var(--move-distance, 800px));
+  }
+}
+
+.ca__fx-moveToTop {
+  animation-name: moveToTop;
+}
+
+@keyframes moveToTop {
+  to {
+    transform: translateY(var(--move-distance, -800px));
+  }
+}
+
+.ca__fx-moveToBottom {
+  animation-name: moveToBottom;
+}
+
+@keyframes moveToBottom {
+  to {
+    transform: translateY(var(--move-distance, 800px));
+  }
+}
+
+/**
+ * Module: Moving Back
+ * Filename: ca__MovingBack.css
+ */
+
+.ca__fx-leMovingBackFromRight span {
+  animation-name: leMovingBackFromRight;
+  transform-origin: bottom;
+}
+
+@keyframes leMovingBackFromRight {
+  40% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+  }
+}
+
+.ca__fx-leMovingBackFromLeft span {
+  animation-name: leMovingBackFromLeft;
+  transform-origin: bottom;
+}
+
+@keyframes leMovingBackFromLeft {
+  40% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+  }
+}
+
+/**
+ * Module: Perspective
+ * Filename: ca__Perspective.css
+ */
+
+.ca__fx-perspectiveToTop {
+  animation-name: perspectiveToTop;
+  transform: perspective(500px);
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes perspectiveToTop {
+  0% {
+    transform: perspective(500px) rotateX(0deg) translateY(0) translateZ(0);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(500px) rotateX(90deg) translateY(-100px) translateZ(-150px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-perspectiveToBottom {
+  animation-name: perspectiveToBottom;
+  transform: perspective(500px);
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes perspectiveToBottom {
+  0% {
+    transform: perspective(500px) rotateX(0deg) translateY(0) translateZ(0);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(500px) rotateX(-90deg) translateY(100px) translateZ(-150px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-bounceInFromBottom {
+  animation-name: bounceInFromBottom;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Can be customized for different bounce feels */
+}
+
+@keyframes bounceInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Starts far below */
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-20%); /* Bounces up higher than final position */
+  }
+
+  80% {
+    transform: translateY(5%); /* Bounces down slightly */
+  }
+
+  100% {
+    transform: translateY(0); /* Settles at final position */
+    opacity: 1;
+  }
+}
+
+/**
+ * Module: Pull release
+ * Filename: ca__PullRelease.css
+ */
+
+.ca__fx-pullRelease {
+  animation-name: pullRelease;
+}
+
+@keyframes pullRelease {
+  15% {
+    transform: scale(1.8);
+  }
+}
+
+.ca__fx-pushRelease {
+  animation-name: pushRelease;
+}
+
+@keyframes pushRelease {
+  15% {
+    transform: scale(0.5);
+  }
+}
+
+/**
+ * Module: Push Release From
+ * Filename: ca__PushReleaseFrom.css
+ */
+
+.ca__fx-pushReleaseFrom {
+  animation-name: pushReleaseFrom;
+}
+
+@keyframes pushReleaseFrom {
+  0% {
+    transform: scale(3, 3);
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.ca__fx-pushReleaseFromLeft {
+  animation-name: pushReleaseFromLeft;
+}
+
+@keyframes pushReleaseFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  30% {
+    transform: translateX(100px);
+  }
+}
+
+.ca__fx-pushReleaseFromRight {
+  animation-name: pushReleaseFromRight;
+}
+
+@keyframes pushReleaseFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  30% {
+    transform: translateX(-100px);
+  }
+}
+
+.ca__fx-pushReleaseFromTop {
+  animation-name: pushReleaseFromTop;
+}
+
+@keyframes pushReleaseFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  30% {
+    transform: translateY(100px);
+  }
+}
+
+.ca__fx-pushReleaseFromBottom {
+  animation-name: pushReleaseFromBottom;
+}
+
+@keyframes pushReleaseFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  30% {
+    transform: translateY(-100px);
+  }
+}
+
+/**
+ * Module: Push Release To
+ * Filename: ca__PushReleaseTo.css
+ */
+
+.ca__fx-pushReleaseTo {
+  animation-name: pushReleaseTo;
+}
+
+@keyframes pushReleaseTo {
+  30% {
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    transform: scale(5, 5);
+    opacity: 0;
+  }
+}
+
+.ca__fx-pushReleaseToLeft {
+  animation-name: pushReleaseToLeft;
+}
+
+@keyframes pushReleaseToLeft {
+  30% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-pushReleaseToRight {
+  animation-name: pushReleaseToRight;
+}
+
+@keyframes pushReleaseToRight {
+  30% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-pushReleaseToTop {
+  animation-name: pushReleaseToTop;
+}
+
+@keyframes pushReleaseToTop {
+  30% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-pushReleaseToBottom {
+  animation-name: pushReleaseToBottom;
+}
+
+@keyframes pushReleaseToBottom {
+  30% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Roll From
+ * Filename: ca__RollFrom.css
+ */
+
+.ca__fx-rollFromLeft {
+  animation-name: rollFromLeft;
+}
+
+@keyframes rollFromLeft {
+  from {
+    transform: translateX(-100%) perspective(600px) rotateY(180deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.ca__fx-rollFromRight {
+  animation-name: rollFromRight;
+}
+
+@keyframes rollFromRight {
+  from {
+    transform: translateX(100%) perspective(600px) rotateY(-180deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.ca__fx-rollFromTop {
+  animation-name: rollFromTop;
+}
+
+@keyframes rollFromTop {
+  from {
+    transform: translateY(-100%) perspective(600px) rotateY(180deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.ca__fx-rollFromBottom {
+  animation-name: rollFromBottom;
+}
+
+@keyframes rollFromBottom {
+  from {
+    transform: translateY(100%) perspective(600px) rotateY(-180deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/**
+ * Module: Roll To
+ * Filename: ca__RollTo.css
+ */
+
+.ca__fx-rollToLeft {
+  animation-name: rollToLeft;
+}
+
+@keyframes rollToLeft {
+  from {
+    transform: translateX(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-100%) perspective(600px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-rollToRight {
+  animation-name: rollToRight;
+}
+
+@keyframes rollToRight {
+  from {
+    transform: translateX(0) perspective(600px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%) perspective(600px) rotateY(-180deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-rollToTop {
+  animation-name: rollToTop;
+}
+
+@keyframes rollToTop {
+  from {
+    transform: translateY(0) perspective(600px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-100%) perspective(600px) rotateX(180deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-rollToBottom {
+  animation-name: rollToBottom;
+}
+
+@keyframes rollToBottom {
+  to {
+    transform: translateY(0) perspective(600px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(100%) perspective(600px) rotateX(-180deg);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Rotate In
+ * Filename: ca__RotateIn.css
+ */
+
+.ca__fx-rotateInLeft {
+  animation-name: rotateInLeft;
+}
+
+@keyframes rotateInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+.ca__fx-rotateInRight {
+  animation-name: rotateInRight;
+}
+
+@keyframes rotateInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(0) rotate(-360deg);
+  }
+}
+
+.ca__fx-rotateInTop {
+  animation-name: rotateInTop;
+}
+
+@keyframes rotateInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-400%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+.ca__fx-rotateInBottom {
+  animation-name: rotateInBottom;
+}
+
+@keyframes rotateInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(400%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+/**
+ * Module: Rotate Out
+ * Filename: ca__RotateOut.css
+ */
+
+.ca__fx-rotateOutLeft {
+  animation-name: rotateOutLeft;
+}
+
+@keyframes rotateOutLeft {
+  from {
+    transform: translateX(0) rotate(360deg);
+  }
+
+  to {
+    transform: translateX(-800px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-rotateOutRight {
+  animation-name: rotateOutRight;
+}
+
+@keyframes rotateOutRight {
+  from {
+    transform: translateX(0) rotate(-360deg);
+  }
+
+  to {
+    transform: translateX(800px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-rotateOutTop {
+  animation-name: rotateOutTop;
+}
+
+@keyframes rotateOutTop {
+  from {
+    transform: translateX(0) rotate(360deg);
+  }
+
+  to {
+    transform: translateY(-800px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-rotateOutBottom {
+  animation-name: rotateOutBottom;
+}
+
+@keyframes rotateOutBottom {
+  from {
+    transform: translateX(0) rotate(360deg);
+  }
+
+  to {
+    transform: translateY(800px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Rotation
+ * Filename: ca__Rotation.css
+ */
+
+.ca__fx-rotate {
+  animation-name: rotate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ca__fx-rotateX {
+  animation-name: rotateX;
+}
+
+@keyframes rotateX {
+  from {
+    transform: perspective(600px) rotateX(0deg);
+  }
+
+  to {
+    transform: perspective(600px) rotateX(90deg);
+  }
+}
+
+.ca__fx-rotateXIn {
+  animation-name: rotateXIn;
+}
+
+@keyframes rotateXIn {
+  0% {
+    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateX(75deg);
+    opacity: 0;
+  }
+
+  5% {
+    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg);
+  }
+}
+
+.ca__fx-rotateXOut {
+  animation-name: rotateXOut;
+}
+
+@keyframes rotateXOut {
+  95% {
+    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg);
+  }
+
+  100% {
+    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateX(75deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-rotateY {
+  animation-name: rotateY;
+}
+
+@keyframes rotateY {
+  from {
+    transform: perspective(600px) rotateY(0deg);
+  }
+
+  to {
+    transform: perspective(600px) rotateY(90deg);
+  }
+}
+
+.ca__fx-rotateYIn {
+  animation-name: rotateYIn;
+}
+
+@keyframes rotateYIn {
+  0% {
+    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
+    opacity: 0;
+  }
+
+  5% {
+    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg);
+  }
+}
+
+.ca__fx-rotateYOut {
+  animation-name: rotateYOut;
+}
+
+@keyframes rotateYOut {
+  95% {
+    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg);
+  }
+
+  100% {
+    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Shake
+ * Filename: ca__Shake.css
+ */
+
+.ca__fx-pulseShake {
+  animation-name: pulseShake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseShake {
+  90% {
+    transform: scale(1);
+  }
+
+  92% {
+    transform: scale(1.2);
+  }
+
+  96% {
+    transform: scale(1, 1);
+  }
+
+  98% {
+    transform: scale(1.1);
+  }
+}
+
+.ca__fx-horizontalShake {
+  animation-name: horizontalShake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes horizontalShake {
+  3%,
+  12%,
+  21%,
+  30%,
+  39%,
+  48%,
+  57%,
+  65%,
+  74%,
+  83%,
+  92% {
+    transform: translateX(5px);
+  }
+
+  6%,
+  15%,
+  24%,
+  33%,
+  42%,
+  51%,
+  60%,
+  68%,
+  77%,
+  86%,
+  95% {
+    transform: translateX(3px);
+  }
+
+  9%,
+  18%,
+  27%,
+  36%,
+  45%,
+  54%,
+  63%,
+  71%,
+  80%,
+  89%,
+  98% {
+    transform: translateX(-5px);
+  }
+}
+
+.ca__fx-verticalShake {
+  animation-name: verticalShake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes verticalShake {
+  3%,
+  12%,
+  21%,
+  30%,
+  39%,
+  48%,
+  57%,
+  65%,
+  74%,
+  83%,
+  92% {
+    transform: translateY(5px);
+  }
+
+  6%,
+  15%,
+  24%,
+  33%,
+  42%,
+  51%,
+  60%,
+  68%,
+  77%,
+  86%,
+  95% {
+    transform: translateY(3px);
+  }
+
+  9%,
+  18%,
+  27%,
+  36%,
+  45%,
+  54%,
+  63%,
+  71%,
+  80%,
+  89%,
+  98% {
+    transform: translateY(-5px);
+  }
+}
+
+.ca__fx-madMax {
+  animation-name: madMax;
+  animation-iteration-count: infinite;
+}
+
+@keyframes madMax {
+  3%,
+  12%,
+  21%,
+  30%,
+  39%,
+  48%,
+  57%,
+  65%,
+  74%,
+  83%,
+  92% {
+    transform: translateY(5px) scale(1.1);
+  }
+
+  6%,
+  15%,
+  24%,
+  33%,
+  42%,
+  51%,
+  60%,
+  68%,
+  77%,
+  86%,
+  95% {
+    transform: translateY(3px) scale(0.8);
+  }
+
+  9%,
+  18%,
+  27%,
+  36%,
+  45%,
+  54%,
+  63%,
+  71%,
+  80%,
+  89%,
+  98% {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+
+.ca__fx-coolHorizontalShake {
+  animation-name: coolHorizontalShake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes coolHorizontalShake {
+  3%,
+  21%,
+  39%,
+  57%,
+  74%,
+  92% {
+    transform: translateX(5px);
+  }
+
+  6%,
+  24%,
+  42%,
+  60%,
+  77%,
+  95% {
+    transform: translateX(3px);
+  }
+
+  9%,
+  27%,
+  45%,
+  63%,
+  80%,
+  98% {
+    transform: translateX(-5px);
+  }
+}
+
+.ca__fx-coolVerticalShake {
+  animation-name: coolVerticalShake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes coolVerticalShake {
+  3%,
+  21%,
+  39%,
+  57%,
+  74%,
+  92% {
+    transform: translateY(5px);
+  }
+
+  6%,
+  24%,
+  42%,
+  60%,
+  77%,
+  95% {
+    transform: translateY(3px);
+  }
+
+  9%,
+  27%,
+  45%,
+  63%,
+  80%,
+  98% {
+    transform: translateY(-5px);
+  }
+}
+
+.ca__fx-quietMad {
+  animation-name: quietMad;
+  animation-iteration-count: infinite;
+}
+
+@keyframes quietMad {
+  3%,
+  21%,
+  39%,
+  57%,
+  74%,
+  92% {
+    transform: translateY(5px) scale(1.1);
+  }
+
+  6%,
+  24%,
+  42%,
+  60%,
+  77%,
+  95% {
+    transform: translateY(3px) scale(0.8);
+  }
+
+  9%,
+  27%,
+  45%,
+  63%,
+  80%,
+  98% {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+
+.ca__fx-vibration {
+  animation: vibration 0.1s linear infinite;
+}
+
+@keyframes vibration {
+  50% {
+    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+  }
+}
+
+/**
+ * Module: Shock In
+ * Filename: ca__ShockIn.css
+ */
+
+.ca__fx-shockZoom {
+  animation-name: shockZoom;
+}
+
+@keyframes shockZoom {
+  0% {
+    transform: matrix(5, 0, 0, 5, 0, 0);
+  }
+
+  35% {
+    transform: matrix(2, 0, 0, 2, 0, 0);
+  }
+
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.ca__fx-shockInLeft {
+  animation-name: shockInLeft;
+}
+
+@keyframes shockInLeft {
+  0% {
+    transform: matrix(1, 0, 0, 1, -800, 0);
+  }
+
+  35% {
+    transform: matrix(1, 0, 0, 1, 50, 0);
+  }
+
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.ca__fx-shockInRight {
+  animation-name: shockInRight;
+}
+
+@keyframes shockInRight {
+  0% {
+    transform: matrix(1, 0, 0, 1, 800, 0);
+  }
+
+  35% {
+    transform: matrix(1, 0, 0, 1, -50, 0);
+  }
+
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.ca__fx-shockInTop {
+  animation-name: shockInTop;
+}
+
+@keyframes shockInTop {
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, -400);
+  }
+
+  35% {
+    transform: matrix(1, 0, 0, 1, 0, 50);
+  }
+
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.ca__fx-shockInBottom {
+  animation-name: shockInBottom;
+}
+
+@keyframes shockInBottom {
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, 400);
+  }
+
+  35% {
+    transform: matrix(1, 0, 0, 1, 0, -50);
+  }
+
+  43% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+/**
+ * Module: Skew
+ * Filename: ca__Skew.css
+ */
+
+.ca__fx-skewLeft {
+  animation-name: skewLeft;
+}
+
+@keyframes skewLeft {
+  70% {
+    transform: skewX(40deg);
+  }
+}
+
+.ca__fx-skewRight {
+  animation-name: skewRight;
+}
+
+@keyframes skewRight {
+  70% {
+    transform: skewX(-40deg);
+  }
+}
+
+.ca__fx-skewInLeft {
+  animation-name: skewInLeft;
+}
+
+@keyframes skewInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) skewX(-40deg);
+  }
+
+  70% {
+    transform: skewX(-30deg);
+  }
+}
+
+.ca__fx-skewInRight {
+  animation-name: skewInRight;
+}
+
+@keyframes skewInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) skewX(40deg);
+  }
+
+  70% {
+    transform: skewX(30deg);
+  }
+}
+
+.ca__fx-skewOutLeft {
+  animation-name: skewOutLeft;
+}
+
+@keyframes skewOutLeft {
+  20% {
+    transform: skewX(40deg);
+  }
+
+  100% {
+    transform: translateX(-100%) skewX(40deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-skewOutRight {
+  animation-name: skewOutRight;
+}
+
+@keyframes skewOutRight {
+  20% {
+    transform: skewX(-40deg);
+  }
+
+  100% {
+    transform: translateX(100%) skewX(-40deg);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Spin From
+ * Filename: ca__SpinFrom.css
+ */
+
+.ca__fx-spinFromLeft {
+  animation-name: spinFromLeft;
+}
+
+@keyframes spinFromLeft {
+  from,
+  to {
+    transform-origin: left bottom;
+  }
+
+  to {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-spinFromRight {
+  animation-name: spinFromRight;
+}
+
+@keyframes spinFromRight {
+  from,
+  to {
+    transform-origin: right bottom;
+  }
+
+  to {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-spinFromTop {
+  animation-name: spinFromTop;
+}
+
+@keyframes spinFromTop {
+  from,
+  to {
+    transform-origin: left bottom;
+  }
+
+  to {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-spinFromBottom {
+  animation-name: spinFromBottom;
+}
+
+@keyframes spinFromBottom {
+  from,
+  to {
+    transform-origin: right bottom;
+  }
+
+  to {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Spin To
+ * Filename: ca__SpinTo.css
+ */
+
+.ca__fx-spinToLeft {
+  animation-name: spinToLeft;
+}
+
+@keyframes spinToLeft {
+  from,
+  to {
+    transform-origin: left bottom;
+  }
+
+  from {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-spinToRight {
+  animation-name: spinToRight;
+}
+
+@keyframes spinToRight {
+  from,
+  to {
+    transform-origin: right bottom;
+  }
+
+  from {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-spinToTop {
+  animation-name: spinToTop;
+}
+
+@keyframes spinToTop {
+  from,
+  to {
+    transform-origin: left bottom;
+  }
+
+  from {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-spinToBottom {
+  animation-name: spinToBottom;
+}
+
+@keyframes spinToBottom {
+  from,
+  to {
+    transform-origin: right bottom;
+  }
+
+  from {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Spotlights
+ * Filename: ca__Spotlights.css
+ */
+
+.ca__fx-unfoldAndRise {
+  animation-name: unfoldAndRise;
+  perspective: 1000px;
+  perspective-origin: center bottom;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: bottom center;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes unfoldAndRise {
+  0% {
+    transform: rotateX(90deg) translateY(50px) scale(0.8);
+    opacity: 0;
+  }
+
+  40% {
+    transform: rotateX(0deg) translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotateX(-5deg) translateY(-10px);
+    opacity: 1;
+  }
+
+  80% {
+    transform: rotateX(0deg) translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.ca__fx-hu__hu__ {
+  animation: hu__hu__ infinite 2s ease-in-out;
+}
+
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+.ca__fx-sake {
+  animation: Snake 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes snake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+.ca__fx-lePeek {
+  animation-name: lePeek;
+}
+
+@keyframes lePeek {
+  25% {
+    transform: rotateX(30deg) translateY(10px) rotate(-13deg);
+  }
+
+  50% {
+    transform: translateY(-22px) rotate(3deg) scale(1.1);
+  }
+}
+
+.ca__fx-effect3d {
+  animation-name: effect3d;
+}
+
+@keyframes effect3d {
+  to {
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0, 0, 0, 0.1),
+      0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3),
+      0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.ca__fx-leRainDrop {
+  animation-name: leRainDrop;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leRainDrop {
+  0%,
+  25%,
+  55%,
+  75%,
+  87%,
+  97%,
+  100% {
+    transform: scaleX(1);
+  }
+
+  26%,
+  56%,
+  76% {
+    transform: scaleX(1.3) scaleY(0.8);
+  }
+
+  31%,
+  61%,
+  81% {
+    transform: scaleX(0.8) scaleY(1.2);
+  }
+
+  76%,
+  88% {
+    transform: scaleX(1.2);
+  }
+
+  98% {
+    transform: scaleX(1.1);
+  }
+}
+
+.ca__fx-pepe {
+  animation-name: pepe;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pepe {
+  0%,
+  33%,
+  66%,
+  100% {
+    transform: rotate(4deg);
+  }
+
+  16%,
+  50%,
+  83% {
+    transform: rotate(-4deg);
+  }
+}
+
+.ca__fx-leWaterWave {
+  animation: leWaterWave 0.2s linear infinite;
+}
+
+@keyframes leWaterWave {
+  50% {
+    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+  }
+}
+
+.ca__fx-lightning {
+  animation-name: lightning;
+}
+
+@keyframes lightning {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-leJoltZoom {
+  animation-name: leJoltZoom;
+}
+
+@keyframes leJoltZoom {
+  10% {
+    font-size: 140%;
+  }
+
+  40% {
+    font-size: 80%;
+  }
+
+  100% {
+    font-size: 100%;
+  }
+}
+
+.ca__fx-typing {
+  width: 473px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #7e2ea0;
+  animation:
+    typing 2s steps(12, end),
+    cursor 0.2s steps(12, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.ca__fx-electricity {
+  animation-name: electricity;
+  animation-iteration-count: infinite;
+}
+
+@keyframes electricity {
+  0%,
+  37%,
+  67%,
+  85%,
+  93% {
+    transform: translateY(30px);
+  }
+
+  4%,
+  64%,
+  88% {
+    transform: translateY(10px);
+  }
+
+  8%,
+  24%,
+  32%,
+  44% {
+    transform: translateY(5px);
+  }
+
+  12%,
+  52%,
+  60%,
+  20% {
+    transform: translateY(10px);
+  }
+
+  16%,
+  40% {
+    transform: translateY(5px);
+  }
+
+  28%,
+  56% {
+    transform: translateY(10px);
+  }
+
+  48%,
+  72%,
+  80%,
+  96% {
+    transform: translateY(30px);
+  }
+
+  76%,
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.ca__fx-wipe {
+  width: 473px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: inline-flex;
+  animation-name: wipe;
+}
+
+@keyframes wipe {
+  to {
+    width: 0;
+  }
+}
+
+.ca__fx-open {
+  width: 473px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-flex;
+  animation-name: open;
+}
+
+@keyframes open {
+  from {
+    width: 0;
+  }
+}
+
+.ca__fx-leMagnify {
+  animation-name: leMagnify;
+}
+
+@keyframes leMagnify {
+  50% {
+    transform: scale(1.8);
+    letter-spacing: 26px;
+  }
+}
+
+.ca__fx-leBeat {
+  animation-name: leBeat;
+}
+
+@keyframes leBeat {
+  14%,
+  42% {
+    transform: scale(1.3);
+  }
+
+  28%,
+  70% {
+    transform: scale(1);
+  }
+}
+
+/**
+ * Module: Swing In
+ * Filename: ca__SwingIn.css
+ */
+
+.ca__fx-swingInLeft {
+  animation-name: swingInLeft;
+}
+
+@keyframes swingInLeft {
+  0% {
+    transform: matrix(3, 0, 0, 3, -800, 0);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: matrix(1.3, 0, 0, 1.3, 20, 0);
+  }
+}
+
+.ca__fx-swingInRight {
+  animation-name: swingInRight;
+}
+
+@keyframes swingInRight {
+  0% {
+    transform: matrix(3, 0, 0, 3, 800, 0);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: matrix(1.3, 0, 0, 1.3, -20, 0);
+  }
+}
+
+.ca__fx-swingInTop {
+  animation-name: swingInTop;
+}
+
+@keyframes swingInTop {
+  0% {
+    transform: matrix(3, 0, 0, 3, 0, -800);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: matrix(1.3, 0, 0, 1.3, 0, 20);
+  }
+}
+
+.ca__fx-swingInBottom {
+  animation-name: swingInBottom;
+}
+
+@keyframes swingInBottom {
+  0% {
+    transform: matrix(3, 0, 0, 3, 0, 800);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: matrix(1.3, 0, 0, 1.3, 0, -20);
+  }
+}
+
+/**
+ * Module: Zoom In
+ * Filename: ca__ZoomIn.css
+ */
+
+.ca__fx-zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomInLeft {
+  animation-name: zoomInLeft;
+}
+
+@keyframes zoomInLeft {
+  from {
+    transform: scale(10) translateX(-50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomInRight {
+  animation-name: zoomInRight;
+}
+
+@keyframes zoomInRight {
+  from {
+    transform: scale(10) translateX(50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomInTop {
+  animation-name: zoomInTop;
+}
+
+@keyframes zoomInTop {
+  from {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomInBottom {
+  animation-name: zoomInBottom;
+}
+
+@keyframes zoomInBottom {
+  from {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+}
+
+/**
+ * Module: Zoom Out
+ * Filename: ca__ZoomOut.css
+ */
+
+.ca__fx-zoomOut {
+  animation-name: zoomOut;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutLeft {
+  animation-name: zoomOutLeft;
+}
+
+@keyframes zoomOutLeft {
+  to {
+    transform: scale(10) translateX(-50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutRight {
+  animation-name: zoomOutRight;
+}
+
+@keyframes zoomOutRight {
+  to {
+    transform: scale(10) translateX(50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutTop {
+  animation-name: zoomOutTop;
+}
+
+@keyframes zoomOutTop {
+  to {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutBottom {
+  animation-name: zoomOutBottom;
+}
+
+@keyframes zoomOutBottom {
+  to {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutRotateUp {
+  animation-name: zoomOutRotateUp;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes zoomOutRotateUp {
+  0% {
+    transform: perspective(700px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
+    opacity: 0;
+  }
+}

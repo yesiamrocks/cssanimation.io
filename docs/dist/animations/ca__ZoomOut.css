@@ -1,0 +1,78 @@
+/**
+ * Module: Zoom Out
+ * Filename: ca__ZoomOut.css
+ */
+
+.zoomOut {
+  animation-name: zoomOut;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+
+.zoomOutLeft {
+  animation-name: zoomOutLeft;
+}
+
+@keyframes zoomOutLeft {
+  to {
+    transform: scale(10) translateX(-50%);
+    opacity: 0;
+  }
+}
+
+.zoomOutRight {
+  animation-name: zoomOutRight;
+}
+
+@keyframes zoomOutRight {
+  to {
+    transform: scale(10) translateX(50%);
+    opacity: 0;
+  }
+}
+
+.zoomOutTop {
+  animation-name: zoomOutTop;
+}
+
+@keyframes zoomOutTop {
+  to {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
+}
+
+.zoomOutBottom {
+  animation-name: zoomOutBottom;
+}
+
+@keyframes zoomOutBottom {
+  to {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+}
+
+.zoomOutRotateUp {
+  animation-name: zoomOutRotateUp;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes zoomOutRotateUp {
+  0% {
+    transform: perspective(700px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
+    opacity: 0;
+  }
+}
