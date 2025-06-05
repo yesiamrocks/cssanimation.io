@@ -37,7 +37,7 @@
  * Filename: ca__BlurIn.css
  */
 
-.ca__fx-ca__fx-blurIn {
+.ca__fx-blurIn {
   animation-name: blurIn;
 }
 
@@ -48,7 +48,7 @@
   }
 }
 
-.ca__fx-ca__fx-blurInLeft {
+.ca__fx-blurInLeft {
   animation-name: blurInLeft;
 }
 
@@ -60,7 +60,7 @@
   }
 }
 
-.ca__fx-ca__fx-blurInRight {
+.ca__fx-blurInRight {
   animation-name: blurInRight;
 }
 
@@ -72,7 +72,7 @@
   }
 }
 
-.ca__fx-ca__fx-blurInTop {
+.ca__fx-blurInTop {
   animation-name: blurInTop;
 }
 
@@ -84,7 +84,7 @@
   }
 }
 
-.ca__fx-ca__fx-blurInBottom {
+.ca__fx-blurInBottom {
   animation-name: blurInBottom;
 }
 
@@ -101,7 +101,7 @@
  * Filename: ca__BlurOut.css
  */
 
-.ca__fx-ca__fx-blurOut {
+.ca__fx-blurOut {
   animation-name: blurOut;
 }
 
@@ -116,7 +116,7 @@
   }
 }
 
-.ca__fx-ca__fx-blurOutLeft {
+.ca__fx-blurOutLeft {
   animation-name: blurOutLeft;
 }
 
@@ -132,7 +132,7 @@
   }
 }
 
-.ca__fx-ca__fx-blurOutRight {
+.ca__fx-blurOutRight {
   animation-name: blurOutRight;
 }
 
@@ -148,7 +148,7 @@
   }
 }
 
-.ca__fx-ca__fx-blurOutTop {
+.ca__fx-blurOutTop {
   animation-name: blurOutTop;
 }
 
@@ -164,7 +164,7 @@
   }
 }
 
-.ca__fx-ca__fx-blurOutBottom {
+.ca__fx-blurOutBottom {
   animation-name: blurOutBottom;
 }
 
@@ -185,7 +185,7 @@
  * Filename: ca__Bounce.css
  */
 
-.ca__fx-ca__fx-bounceFromTop {
+.ca__fx-bounceFromTop {
   animation-name: bounceFromTop;
 }
 
@@ -215,7 +215,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceFromDown {
+.ca__fx-bounceFromDown {
   animation-name: bounceFromDown;
 }
 
@@ -245,7 +245,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceX {
+.ca__fx-bounceX {
   animation-name: bounceX;
 }
 
@@ -275,7 +275,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceY {
+.ca__fx-bounceY {
   animation-name: bounceY;
 }
 
@@ -305,7 +305,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceZoomIn {
+.ca__fx-bounceZoomIn {
   animation-name: bounceZoomIn;
 }
 
@@ -335,7 +335,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceZoomOut {
+.ca__fx-bounceZoomOut {
   animation-name: bounceZoomOut;
 }
 
@@ -370,7 +370,7 @@
  * Filename: ca__BounceIn.css
  */
 
-.ca__fx-ca__fx-bounceInTop {
+.ca__fx-bounceInTop {
   animation-name: bounceInTop;
 }
 
@@ -392,7 +392,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceInBottom {
+.ca__fx-bounceInBottom {
   animation-name: bounceInBottom;
 }
 
@@ -414,7 +414,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceInLeft {
+.ca__fx-bounceInLeft {
   animation-name: bounceInLeft;
 }
 
@@ -436,7 +436,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceInRight {
+.ca__fx-bounceInRight {
   animation-name: bounceInRight;
 }
 
@@ -463,7 +463,7 @@
  * Filename: ca__BounceOut.css
  */
 
-.ca__fx-ca__fx-bounceOutTop {
+.ca__fx-bounceOutTop {
   animation-name: bounceOutTop;
 }
 
@@ -492,7 +492,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceOutBottom {
+.ca__fx-bounceOutBottom {
   animation-name: bounceOutBottom;
 }
 
@@ -521,7 +521,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceOutLeft {
+.ca__fx-bounceOutLeft {
   animation-name: bounceOutLeft;
 }
 
@@ -550,7 +550,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceOutRight {
+.ca__fx-bounceOutRight {
   animation-name: bounceOutRight;
 }
 
@@ -584,7 +584,7 @@
  * Filename: ca__Dance.css
  */
 
-.ca__fx-ca__fx-danceTop {
+.ca__fx-danceTop {
   animation-name: danceTop;
   transform-origin: top;
 }
@@ -611,7 +611,7 @@
   }
 }
 
-.ca__fx-ca__fx-danceMiddle {
+.ca__fx-danceMiddle {
   animation-name: danceMiddle;
 }
 
@@ -637,7 +637,7 @@
   }
 }
 
-.ca__fx-ca__fx-danceBottom {
+.ca__fx-danceBottom {
   animation-name: danceBottom;
   transform-origin: bottom;
 }
@@ -669,7 +669,7 @@
  * Filename: ca__Door.css
  */
 
-.ca__fx-ca__fx-doorCloseFromLeft {
+.ca__fx-doorCloseFromLeft {
   animation-name: doorCloseFromLeft;
 }
 
@@ -688,7 +688,7 @@
   }
 }
 
-.ca__fx-ca__fx-doorOpenFromRight {
+.ca__fx-doorOpenFromRight {
   animation-name: doorOpenFromRight;
 }
 
@@ -707,7 +707,7 @@
   }
 }
 
-.ca__fx-ca__fx-doorCloseFromRight {
+.ca__fx-doorCloseFromRight {
   animation-name: doorCloseFromRight;
 }
 
@@ -726,7 +726,7 @@
   }
 }
 
-.ca__fx-ca__fx-doorOpenFromLeft {
+.ca__fx-doorOpenFromLeft {
   animation-name: doorOpenFromLeft;
 }
 
@@ -750,7 +750,7 @@
  * Filename: ca__Elevate.css
  */
 
-.ca__fx-ca__fx-elevateLeft {
+.ca__fx-elevateLeft {
   animation-name: elevateLeft;
 }
 
@@ -771,7 +771,7 @@
   }
 }
 
-.ca__fx-ca__fx-elevateRight {
+.ca__fx-elevateRight {
   animation-name: elevateRight;
 }
 
@@ -797,7 +797,7 @@
  * Filename: ca__FadeIn.css
  */
 
-.ca__fx-ca__fx-fadeIn {
+.ca__fx-fadeIn {
   animation-name: fadeIn;
 }
 
@@ -811,7 +811,7 @@
   }
 }
 
-.ca__fx-ca__fx-fadeInLeft {
+.ca__fx-fadeInLeft {
   animation-name: fadeInLeft;
 }
 
@@ -826,7 +826,7 @@
   }
 }
 
-.ca__fx-ca__fx-fadeInRight {
+.ca__fx-fadeInRight {
   animation-name: fadeInRight;
 }
 
@@ -841,7 +841,7 @@
   }
 }
 
-.ca__fx-ca__fx-fadeInTop {
+.ca__fx-fadeInTop {
   animation-name: fadeInTop;
 }
 
@@ -856,7 +856,7 @@
   }
 }
 
-.ca__fx-ca__fx-fadeInBottom {
+.ca__fx-fadeInBottom {
   animation-name: fadeInBottom;
 }
 
@@ -876,7 +876,7 @@
  * Filename: ca__FadeOut.css
  */
 
-.ca__fx-ca__fx-fadeOut {
+.ca__fx-fadeOut {
   animation-name: fadeOut;
 }
 
@@ -886,7 +886,7 @@
   }
 }
 
-.ca__fx-ca__fx-fadeOutLeft {
+.ca__fx-fadeOutLeft {
   animation-name: fadeOutLeft;
 }
 
@@ -901,7 +901,7 @@
   }
 }
 
-.ca__fx-ca__fx-fadeOutRight {
+.ca__fx-fadeOutRight {
   animation-name: fadeOutRight;
 }
 
@@ -916,7 +916,7 @@
   }
 }
 
-.ca__fx-ca__fx-fadeOutTop {
+.ca__fx-fadeOutTop {
   animation-name: fadeOutTop;
 }
 
@@ -931,7 +931,7 @@
   }
 }
 
-.ca__fx-ca__fx-fadeOutBottom {
+.ca__fx-fadeOutBottom {
   animation-name: fadeOutBottom;
 }
 
@@ -946,7 +946,7 @@
   }
 }
 
-.ca__fx-ca__fx-tiltFadeBack {
+.ca__fx-tiltFadeBack {
   animation: tiltFadeBack 1s cubic-bezier(0.45, 0, 0.55, 1) forwards;
   transform-style: preserve-3d;
   backface-visibility: hidden;
@@ -970,7 +970,7 @@
  * Filename: ca__FlipX.css
  */
 
-.ca__fx-ca__fx-flipX {
+.ca__fx-flipX {
   animation-name: flipX;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -988,7 +988,7 @@
   }
 }
 
-.ca__fx-ca__fx-flipXZoomIn {
+.ca__fx-flipXZoomIn {
   animation-name: flipXZoomIn;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1016,7 +1016,7 @@
   }
 }
 
-.ca__fx-ca__fx-flipXZoomOut {
+.ca__fx-flipXZoomOut {
   animation-name: flipXZoomOut;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1044,7 +1044,7 @@
   }
 }
 
-.ca__fx-ca__fx-flipOutLeft {
+.ca__fx-flipOutLeft {
   animation-name: flipOutLeft;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1063,7 +1063,7 @@
   }
 }
 
-.ca__fx-ca__fx-flipOutRight {
+.ca__fx-flipOutRight {
   animation-name: flipOutRight;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1082,7 +1082,7 @@
   }
 }
 
-.ca__fx-ca__fx-flipOutXLeft {
+.ca__fx-flipOutXLeft {
   animation-name: flipOutXLeft;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1101,7 +1101,7 @@
   }
 }
 
-.ca__fx-ca__fx-flipOutXRight {
+.ca__fx-flipOutXRight {
   animation-name: flipOutXRight;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1125,7 +1125,7 @@
  * Filename: ca__FlipY.css
  */
 
-.ca__fx-ca__fx-flipY {
+.ca__fx-flipY {
   animation-name: flipY;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1143,7 +1143,7 @@
   }
 }
 
-.ca__fx-ca__fx-flipYZoomIn {
+.ca__fx-flipYZoomIn {
   animation-name: flipYZoomIn;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1171,7 +1171,7 @@
   }
 }
 
-.ca__fx-ca__fx-flipYZoomOut {
+.ca__fx-flipYZoomOut {
   animation-name: flipYZoomOut;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1204,7 +1204,7 @@
  * Filename: ca__OneAfterOneFadeIn.css
  */
 
-.ca__fx-ca__fx-flyInTop {
+.ca__fx-flyInTop {
   animation-name: flyInTop;
 }
 
@@ -1220,7 +1220,7 @@
   }
 }
 
-.ca__fx-ca__fx-flyInBottom {
+.ca__fx-flyInBottom {
   animation-name: flyInBottom;
 }
 
@@ -1236,7 +1236,7 @@
   }
 }
 
-.ca__fx-ca__fx-flyOutTop {
+.ca__fx-flyOutTop {
   animation-name: flyOutTop;
 }
 
@@ -1256,7 +1256,7 @@
   }
 }
 
-.ca__fx-ca__fx-flyOutBottom {
+.ca__fx-flyOutBottom {
   animation-name: flyOutBottom;
 }
 
@@ -1281,7 +1281,7 @@
  * Filename: ca__HangAndDrop.css
  */
 
-.ca__fx-ca__fx-hangAndDropLeft {
+.ca__fx-hangAndDropLeft {
   animation-name: hangAndDropLeft;
   transform-origin: left;
   backface-visibility: var(--cssanimation-backface-visibility);
@@ -1314,7 +1314,7 @@
   }
 }
 
-.ca__fx-ca__fx-hangAndDropRight {
+.ca__fx-hangAndDropRight {
   animation-name: hangAndDropRight;
   transform-origin: right;
   backface-visibility: var(--cssanimation-backface-visibility);
@@ -1352,7 +1352,7 @@
  * Filename: ca__HangOn.css
  */
 
-.ca__fx-ca__fx-hangOnLeft {
+.ca__fx-hangOnLeft {
   animation-name: hangOnLeft;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1386,7 +1386,7 @@
   }
 }
 
-.ca__fx-ca__fx-hangOnRight {
+.ca__fx-hangOnRight {
   animation-name: hangOnRight;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1425,7 +1425,7 @@
  * Filename: ca__Heartbeat.css
  */
 
-.ca__fx-ca__fx-heartbeatSlow {
+.ca__fx-heartbeatSlow {
   animation-name: heartbeatSlow;
   animation-duration: 0.5s;
   animation-iteration-count: var(--cssanimation-infinite);
@@ -1443,7 +1443,7 @@
   }
 }
 
-.ca__fx-ca__fx-heartbeatFast {
+.ca__fx-heartbeatFast {
   animation-name: heartbeatFast;
   animation-iteration-count: var(--cssanimation-infinite);
 }
@@ -1467,7 +1467,7 @@
  * Filename: ca__KickOut.css
  */
 
-.ca__fx-ca__fx-kickOutBehind {
+.ca__fx-kickOutBehind {
   animation-name: kickOutBehind;
   transform-origin: top;
   backface-visibility: var(--cssanimation-backface-visibility);
@@ -1490,7 +1490,7 @@
   }
 }
 
-.ca__fx-ca__fx-kickOutFront {
+.ca__fx-kickOutFront {
   animation-name: kickOutFront;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
@@ -1518,7 +1518,7 @@
  * Filename: ca__MoveFrom.css
  */
 
-.ca__fx-ca__fx-moveFromLeft {
+.ca__fx-moveFromLeft {
   animation-name: moveFromLeft;
 }
 
@@ -1528,7 +1528,7 @@
   }
 }
 
-.ca__fx-ca__fx-moveFromRight {
+.ca__fx-moveFromRight {
   animation-name: moveFromRight;
 }
 
@@ -1538,7 +1538,7 @@
   }
 }
 
-.ca__fx-ca__fx-moveFromTop {
+.ca__fx-moveFromTop {
   animation-name: moveFromTop;
 }
 
@@ -1548,7 +1548,7 @@
   }
 }
 
-.ca__fx-ca__fx-moveFromBottom {
+.ca__fx-moveFromBottom {
   animation-name: moveFromBottom;
 }
 
@@ -1563,7 +1563,7 @@
  * Filename: ca__MoveTo.css
  */
 
-.ca__fx-ca__fx-moveToLeft {
+.ca__fx-moveToLeft {
   animation-name: moveToLeft;
 }
 
@@ -1573,7 +1573,7 @@
   }
 }
 
-.ca__fx-ca__fx-moveToRight {
+.ca__fx-moveToRight {
   animation-name: moveToRight;
 }
 
@@ -1583,7 +1583,7 @@
   }
 }
 
-.ca__fx-ca__fx-moveToTop {
+.ca__fx-moveToTop {
   animation-name: moveToTop;
 }
 
@@ -1593,7 +1593,7 @@
   }
 }
 
-.ca__fx-ca__fx-moveToBottom {
+.ca__fx-moveToBottom {
   animation-name: moveToBottom;
 }
 
@@ -1608,7 +1608,7 @@
  * Filename: ca__MovingBack.css
  */
 
-.ca__fx-ca__fx-leMovingBackFromRight span {
+.ca__fx-leMovingBackFromRight span {
   animation-name: leMovingBackFromRight;
   transform-origin: bottom;
 }
@@ -1624,7 +1624,7 @@
   }
 }
 
-.ca__fx-ca__fx-leMovingBackFromLeft span {
+.ca__fx-leMovingBackFromLeft span {
   animation-name: leMovingBackFromLeft;
   transform-origin: bottom;
 }
@@ -1645,7 +1645,7 @@
  * Filename: ca__Perspective.css
  */
 
-.ca__fx-ca__fx-perspectiveToTop {
+.ca__fx-perspectiveToTop {
   animation-name: perspectiveToTop;
   transform: perspective(500px);
   backface-visibility: var(--cssanimation-backface-visibility);
@@ -1669,7 +1669,7 @@
   }
 }
 
-.ca__fx-ca__fx-perspectiveToBottom {
+.ca__fx-perspectiveToBottom {
   animation-name: perspectiveToBottom;
   transform: perspective(500px);
   backface-visibility: var(--cssanimation-backface-visibility);
@@ -1693,7 +1693,7 @@
   }
 }
 
-.ca__fx-ca__fx-bounceInFromBottom {
+.ca__fx-bounceInFromBottom {
   animation-name: bounceInFromBottom;
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Can be customized for different bounce feels */
 }
@@ -1724,7 +1724,7 @@
  * Filename: ca__PullRelease.css
  */
 
-.ca__fx-ca__fx-pullRelease {
+.ca__fx-pullRelease {
   animation-name: pullRelease;
 }
 
@@ -1734,7 +1734,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushRelease {
+.ca__fx-pushRelease {
   animation-name: pushRelease;
 }
 
@@ -1749,7 +1749,7 @@
  * Filename: ca__PushReleaseFrom.css
  */
 
-.ca__fx-ca__fx-pushReleaseFrom {
+.ca__fx-pushReleaseFrom {
   animation-name: pushReleaseFrom;
 }
 
@@ -1764,7 +1764,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushReleaseFromLeft {
+.ca__fx-pushReleaseFromLeft {
   animation-name: pushReleaseFromLeft;
 }
 
@@ -1778,7 +1778,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushReleaseFromRight {
+.ca__fx-pushReleaseFromRight {
   animation-name: pushReleaseFromRight;
 }
 
@@ -1792,7 +1792,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushReleaseFromTop {
+.ca__fx-pushReleaseFromTop {
   animation-name: pushReleaseFromTop;
 }
 
@@ -1806,7 +1806,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushReleaseFromBottom {
+.ca__fx-pushReleaseFromBottom {
   animation-name: pushReleaseFromBottom;
 }
 
@@ -1825,7 +1825,7 @@
  * Filename: ca__PushReleaseTo.css
  */
 
-.ca__fx-ca__fx-pushReleaseTo {
+.ca__fx-pushReleaseTo {
   animation-name: pushReleaseTo;
 }
 
@@ -1840,7 +1840,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushReleaseToLeft {
+.ca__fx-pushReleaseToLeft {
   animation-name: pushReleaseToLeft;
 }
 
@@ -1855,7 +1855,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushReleaseToRight {
+.ca__fx-pushReleaseToRight {
   animation-name: pushReleaseToRight;
 }
 
@@ -1870,7 +1870,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushReleaseToTop {
+.ca__fx-pushReleaseToTop {
   animation-name: pushReleaseToTop;
 }
 
@@ -1885,7 +1885,7 @@
   }
 }
 
-.ca__fx-ca__fx-pushReleaseToBottom {
+.ca__fx-pushReleaseToBottom {
   animation-name: pushReleaseToBottom;
 }
 
@@ -1905,7 +1905,7 @@
  * Filename: ca__RollFrom.css
  */
 
-.ca__fx-ca__fx-rollFromLeft {
+.ca__fx-rollFromLeft {
   animation-name: rollFromLeft;
 }
 
@@ -1921,7 +1921,7 @@
   }
 }
 
-.ca__fx-ca__fx-rollFromRight {
+.ca__fx-rollFromRight {
   animation-name: rollFromRight;
 }
 
@@ -1937,7 +1937,7 @@
   }
 }
 
-.ca__fx-ca__fx-rollFromTop {
+.ca__fx-rollFromTop {
   animation-name: rollFromTop;
 }
 
@@ -1953,7 +1953,7 @@
   }
 }
 
-.ca__fx-ca__fx-rollFromBottom {
+.ca__fx-rollFromBottom {
   animation-name: rollFromBottom;
 }
 
@@ -1974,7 +1974,7 @@
  * Filename: ca__RollTo.css
  */
 
-.ca__fx-ca__fx-rollToLeft {
+.ca__fx-rollToLeft {
   animation-name: rollToLeft;
 }
 
@@ -1990,7 +1990,7 @@
   }
 }
 
-.ca__fx-ca__fx-rollToRight {
+.ca__fx-rollToRight {
   animation-name: rollToRight;
 }
 
@@ -2006,7 +2006,7 @@
   }
 }
 
-.ca__fx-ca__fx-rollToTop {
+.ca__fx-rollToTop {
   animation-name: rollToTop;
 }
 
@@ -2022,7 +2022,7 @@
   }
 }
 
-.ca__fx-ca__fx-rollToBottom {
+.ca__fx-rollToBottom {
   animation-name: rollToBottom;
 }
 
@@ -2043,7 +2043,7 @@
  * Filename: ca__RotateIn.css
  */
 
-.ca__fx-ca__fx-rotateInLeft {
+.ca__fx-rotateInLeft {
   animation-name: rotateInLeft;
 }
 
@@ -2058,7 +2058,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateInRight {
+.ca__fx-rotateInRight {
   animation-name: rotateInRight;
 }
 
@@ -2073,7 +2073,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateInTop {
+.ca__fx-rotateInTop {
   animation-name: rotateInTop;
 }
 
@@ -2088,7 +2088,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateInBottom {
+.ca__fx-rotateInBottom {
   animation-name: rotateInBottom;
 }
 
@@ -2108,7 +2108,7 @@
  * Filename: ca__RotateOut.css
  */
 
-.ca__fx-ca__fx-rotateOutLeft {
+.ca__fx-rotateOutLeft {
   animation-name: rotateOutLeft;
 }
 
@@ -2123,7 +2123,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateOutRight {
+.ca__fx-rotateOutRight {
   animation-name: rotateOutRight;
 }
 
@@ -2138,7 +2138,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateOutTop {
+.ca__fx-rotateOutTop {
   animation-name: rotateOutTop;
 }
 
@@ -2153,7 +2153,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateOutBottom {
+.ca__fx-rotateOutBottom {
   animation-name: rotateOutBottom;
 }
 
@@ -2173,7 +2173,7 @@
  * Filename: ca__Rotation.css
  */
 
-.ca__fx-ca__fx-rotate {
+.ca__fx-rotate {
   animation-name: rotate;
   animation-timing-function: ease-in-out;
 }
@@ -2188,7 +2188,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateX {
+.ca__fx-rotateX {
   animation-name: rotateX;
 }
 
@@ -2202,7 +2202,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateXIn {
+.ca__fx-rotateXIn {
   animation-name: rotateXIn;
 }
 
@@ -2217,7 +2217,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateXOut {
+.ca__fx-rotateXOut {
   animation-name: rotateXOut;
 }
 
@@ -2232,7 +2232,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateY {
+.ca__fx-rotateY {
   animation-name: rotateY;
 }
 
@@ -2246,7 +2246,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateYIn {
+.ca__fx-rotateYIn {
   animation-name: rotateYIn;
 }
 
@@ -2261,7 +2261,7 @@
   }
 }
 
-.ca__fx-ca__fx-rotateYOut {
+.ca__fx-rotateYOut {
   animation-name: rotateYOut;
 }
 
@@ -2281,7 +2281,7 @@
  * Filename: ca__Shake.css
  */
 
-.ca__fx-ca__fx-pulseShake {
+.ca__fx-pulseShake {
   animation-name: pulseShake;
   animation-iteration-count: infinite;
 }
@@ -2304,7 +2304,7 @@
   }
 }
 
-.ca__fx-ca__fx-horizontalShake {
+.ca__fx-horizontalShake {
   animation-name: horizontalShake;
   animation-iteration-count: infinite;
 }
@@ -2353,7 +2353,7 @@
   }
 }
 
-.ca__fx-ca__fx-verticalShake {
+.ca__fx-verticalShake {
   animation-name: verticalShake;
   animation-iteration-count: infinite;
 }
@@ -2402,7 +2402,7 @@
   }
 }
 
-.ca__fx-ca__fx-madMax {
+.ca__fx-madMax {
   animation-name: madMax;
   animation-iteration-count: infinite;
 }
@@ -2451,7 +2451,7 @@
   }
 }
 
-.ca__fx-ca__fx-coolHorizontalShake {
+.ca__fx-coolHorizontalShake {
   animation-name: coolHorizontalShake;
   animation-iteration-count: infinite;
 }
@@ -2485,7 +2485,7 @@
   }
 }
 
-.ca__fx-ca__fx-coolVerticalShake {
+.ca__fx-coolVerticalShake {
   animation-name: coolVerticalShake;
   animation-iteration-count: infinite;
 }
@@ -2519,7 +2519,7 @@
   }
 }
 
-.ca__fx-ca__fx-quietMad {
+.ca__fx-quietMad {
   animation-name: quietMad;
   animation-iteration-count: infinite;
 }
@@ -2553,7 +2553,7 @@
   }
 }
 
-.ca__fx-ca__fx-vibration {
+.ca__fx-vibration {
   animation: vibration 0.1s linear infinite;
 }
 
@@ -2568,7 +2568,7 @@
  * Filename: ca__ShockIn.css
  */
 
-.ca__fx-ca__fx-shockZoom {
+.ca__fx-shockZoom {
   animation-name: shockZoom;
 }
 
@@ -2586,7 +2586,7 @@
   }
 }
 
-.ca__fx-ca__fx-shockInLeft {
+.ca__fx-shockInLeft {
   animation-name: shockInLeft;
 }
 
@@ -2604,7 +2604,7 @@
   }
 }
 
-.ca__fx-ca__fx-shockInRight {
+.ca__fx-shockInRight {
   animation-name: shockInRight;
 }
 
@@ -2622,7 +2622,7 @@
   }
 }
 
-.ca__fx-ca__fx-shockInTop {
+.ca__fx-shockInTop {
   animation-name: shockInTop;
 }
 
@@ -2640,7 +2640,7 @@
   }
 }
 
-.ca__fx-ca__fx-shockInBottom {
+.ca__fx-shockInBottom {
   animation-name: shockInBottom;
 }
 
@@ -2663,7 +2663,7 @@
  * Filename: ca__Skew.css
  */
 
-.ca__fx-ca__fx-skewLeft {
+.ca__fx-skewLeft {
   animation-name: skewLeft;
 }
 
@@ -2673,7 +2673,7 @@
   }
 }
 
-.ca__fx-ca__fx-skewRight {
+.ca__fx-skewRight {
   animation-name: skewRight;
 }
 
@@ -2683,7 +2683,7 @@
   }
 }
 
-.ca__fx-ca__fx-skewInLeft {
+.ca__fx-skewInLeft {
   animation-name: skewInLeft;
 }
 
@@ -2698,7 +2698,7 @@
   }
 }
 
-.ca__fx-ca__fx-skewInRight {
+.ca__fx-skewInRight {
   animation-name: skewInRight;
 }
 
@@ -2713,7 +2713,7 @@
   }
 }
 
-.ca__fx-ca__fx-skewOutLeft {
+.ca__fx-skewOutLeft {
   animation-name: skewOutLeft;
 }
 
@@ -2728,7 +2728,7 @@
   }
 }
 
-.ca__fx-ca__fx-skewOutRight {
+.ca__fx-skewOutRight {
   animation-name: skewOutRight;
 }
 
@@ -2748,7 +2748,7 @@
  * Filename: ca__SpinFrom.css
  */
 
-.ca__fx-ca__fx-spinFromLeft {
+.ca__fx-spinFromLeft {
   animation-name: spinFromLeft;
 }
 
@@ -2764,7 +2764,7 @@
   }
 }
 
-.ca__fx-ca__fx-spinFromRight {
+.ca__fx-spinFromRight {
   animation-name: spinFromRight;
 }
 
@@ -2780,7 +2780,7 @@
   }
 }
 
-.ca__fx-ca__fx-spinFromTop {
+.ca__fx-spinFromTop {
   animation-name: spinFromTop;
 }
 
@@ -2796,7 +2796,7 @@
   }
 }
 
-.ca__fx-ca__fx-spinFromBottom {
+.ca__fx-spinFromBottom {
   animation-name: spinFromBottom;
 }
 
@@ -2817,7 +2817,7 @@
  * Filename: ca__SpinTo.css
  */
 
-.ca__fx-ca__fx-spinToLeft {
+.ca__fx-spinToLeft {
   animation-name: spinToLeft;
 }
 
@@ -2833,7 +2833,7 @@
   }
 }
 
-.ca__fx-ca__fx-spinToRight {
+.ca__fx-spinToRight {
   animation-name: spinToRight;
 }
 
@@ -2849,7 +2849,7 @@
   }
 }
 
-.ca__fx-ca__fx-spinToTop {
+.ca__fx-spinToTop {
   animation-name: spinToTop;
 }
 
@@ -2865,7 +2865,7 @@
   }
 }
 
-.ca__fx-ca__fx-spinToBottom {
+.ca__fx-spinToBottom {
   animation-name: spinToBottom;
 }
 
@@ -2886,7 +2886,7 @@
  * Filename: ca__Spotlights.css
  */
 
-.ca__fx-ca__fx-unfoldAndRise {
+.ca__fx-unfoldAndRise {
   animation-name: unfoldAndRise;
   perspective: 1000px;
   perspective-origin: center bottom;
@@ -2923,7 +2923,7 @@
   }
 }
 
-.ca__fx-ca__fx-hu__hu__ {
+.ca__fx-hu__hu__ {
   animation: hu__hu__ infinite 2s ease-in-out;
 }
 
@@ -2933,7 +2933,7 @@
   }
 }
 
-.ca__fx-ca__fx-sake {
+.ca__fx-sake {
   animation: Snake 1.5s ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -2949,7 +2949,7 @@
   }
 }
 
-.ca__fx-ca__fx-lePeek {
+.ca__fx-lePeek {
   animation-name: lePeek;
 }
 
@@ -2963,7 +2963,7 @@
   }
 }
 
-.ca__fx-ca__fx-effect3d {
+.ca__fx-effect3d {
   animation-name: effect3d;
 }
 
@@ -2985,7 +2985,7 @@
   }
 }
 
-.ca__fx-ca__fx-leRainDrop {
+.ca__fx-leRainDrop {
   animation-name: leRainDrop;
   animation-iteration-count: infinite;
 }
@@ -3023,7 +3023,7 @@
   }
 }
 
-.ca__fx-ca__fx-pepe {
+.ca__fx-pepe {
   animation-name: pepe;
   animation-iteration-count: infinite;
 }
@@ -3043,7 +3043,7 @@
   }
 }
 
-.ca__fx-ca__fx-leWaterWave {
+.ca__fx-leWaterWave {
   animation: leWaterWave 0.2s linear infinite;
 }
 
@@ -3053,7 +3053,7 @@
   }
 }
 
-.ca__fx-ca__fx-lightning {
+.ca__fx-lightning {
   animation-name: lightning;
 }
 
@@ -3070,7 +3070,7 @@
   }
 }
 
-.ca__fx-ca__fx-leJoltZoom {
+.ca__fx-leJoltZoom {
   animation-name: leJoltZoom;
 }
 
@@ -3088,7 +3088,7 @@
   }
 }
 
-.ca__fx-ca__fx-typing {
+.ca__fx-typing {
   width: 473px;
   overflow: hidden;
   white-space: nowrap;
@@ -3110,7 +3110,7 @@
   }
 }
 
-.ca__fx-ca__fx-electricity {
+.ca__fx-electricity {
   animation-name: electricity;
   animation-iteration-count: infinite;
 }
@@ -3167,7 +3167,7 @@
   }
 }
 
-.ca__fx-ca__fx-wipe {
+.ca__fx-wipe {
   width: 473px;
   overflow: hidden;
   margin: 0 auto;
@@ -3181,7 +3181,7 @@
   }
 }
 
-.ca__fx-ca__fx-open {
+.ca__fx-open {
   width: 473px;
   margin: 0 auto;
   overflow: hidden;
@@ -3195,7 +3195,7 @@
   }
 }
 
-.ca__fx-ca__fx-leMagnify {
+.ca__fx-leMagnify {
   animation-name: leMagnify;
 }
 
@@ -3206,7 +3206,7 @@
   }
 }
 
-.ca__fx-ca__fx-leBeat {
+.ca__fx-leBeat {
   animation-name: leBeat;
 }
 
@@ -3227,7 +3227,7 @@
  * Filename: ca__SwingIn.css
  */
 
-.ca__fx-ca__fx-swingInLeft {
+.ca__fx-swingInLeft {
   animation-name: swingInLeft;
 }
 
@@ -3242,7 +3242,7 @@
   }
 }
 
-.ca__fx-ca__fx-swingInRight {
+.ca__fx-swingInRight {
   animation-name: swingInRight;
 }
 
@@ -3257,7 +3257,7 @@
   }
 }
 
-.ca__fx-ca__fx-swingInTop {
+.ca__fx-swingInTop {
   animation-name: swingInTop;
 }
 
@@ -3272,7 +3272,7 @@
   }
 }
 
-.ca__fx-ca__fx-swingInBottom {
+.ca__fx-swingInBottom {
   animation-name: swingInBottom;
 }
 
@@ -3292,7 +3292,7 @@
  * Filename: ca__ZoomIn.css
  */
 
-.ca__fx-ca__fx-zoomIn {
+.ca__fx-zoomIn {
   animation-name: zoomIn;
 }
 
@@ -3303,7 +3303,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomInLeft {
+.ca__fx-zoomInLeft {
   animation-name: zoomInLeft;
 }
 
@@ -3314,7 +3314,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomInRight {
+.ca__fx-zoomInRight {
   animation-name: zoomInRight;
 }
 
@@ -3325,7 +3325,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomInTop {
+.ca__fx-zoomInTop {
   animation-name: zoomInTop;
 }
 
@@ -3336,7 +3336,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomInBottom {
+.ca__fx-zoomInBottom {
   animation-name: zoomInBottom;
 }
 
@@ -3352,7 +3352,7 @@
  * Filename: ca__ZoomOut.css
  */
 
-.ca__fx-ca__fx-zoomOut {
+.ca__fx-zoomOut {
   animation-name: zoomOut;
 }
 
@@ -3363,7 +3363,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomOutLeft {
+.ca__fx-zoomOutLeft {
   animation-name: zoomOutLeft;
 }
 
@@ -3374,7 +3374,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomOutRight {
+.ca__fx-zoomOutRight {
   animation-name: zoomOutRight;
 }
 
@@ -3385,7 +3385,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomOutTop {
+.ca__fx-zoomOutTop {
   animation-name: zoomOutTop;
 }
 
@@ -3396,7 +3396,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomOutBottom {
+.ca__fx-zoomOutBottom {
   animation-name: zoomOutBottom;
 }
 
@@ -3407,7 +3407,7 @@
   }
 }
 
-.ca__fx-ca__fx-zoomOutRotateUp {
+.ca__fx-zoomOutRotateUp {
   animation: zoomOutRotateUp ease-out;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);

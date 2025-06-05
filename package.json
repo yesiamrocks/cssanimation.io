@@ -46,7 +46,7 @@
     "prefix:css:all": "npm run prefix:css && npm run prefix:utility",
     "generate:animation-index": "node tools/build-animation-index.js",
     "export:modules": "node tools/export-modules.js",
-    "build:animations": "postcss src/animations/ca__index.css -o src/cssanimation.css",
+    "build:animations": "postcss src/animations/cssanimation-index.css -o src/cssanimation.css",
     "build:animations:min": "cross-env CSS_BUILD=min postcss src/cssanimation.css -o src/cssanimation.min.css",
     "generate:demo": "node tools/generate-animation-demo.js",
     "generate:animation-preview": "node tools/generate-animation-preview.js"
@@ -65,7 +65,7 @@
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.0",
     "postcss-prefix-selector": "^2.1.1",
-    "postcss-preset-env": "^10.1.6",
+    "postcss-preset-env": "^10.2.0",
     "postcss-selector-namespace": "^1.2.2",
     "postcss-selector-prefix": "^5.0.1",
     "prettier": "^3.5.3",
