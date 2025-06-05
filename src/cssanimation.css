@@ -3408,7 +3408,7 @@
 }
 
 .zoomOutRotateUp {
-  animation: zoomOutRotateUp ease-out;
+  animation-name: zoomOutRotateUp;
   backface-visibility: var(--cssanimation-backface-visibility);
   transform-style: var(--cssanimation-transform-style);
   will-change: var(--cssanimation-will-change);
