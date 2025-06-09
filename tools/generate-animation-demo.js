@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 // 3. Adjust all path.resolve calls to use the new __dirname
 const cssFilePath = path.resolve(__dirname, '../dist/cssanimation.css');
-const outputHtmlPath = path.resolve(__dirname, '../docs/animation-demo.html');
+const outputHtmlPath = path.resolve(__dirname, '../docs/cssanimation-demo.html');
 const animationGroupsPath = path.resolve(__dirname, './animation-groups.json'); // Path to the JSON file
 
 let cssContent = '';

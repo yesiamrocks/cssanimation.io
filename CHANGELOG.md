@@ -1,3 +1,25 @@
+## Version 5.1.0 - 2025-06-09
+
+## Features
+
+- **Modernized JavaScript Build Pipeline:**
+  - Introduced **Rollup.js** for efficient JavaScript bundling, resulting in smaller, optimized output files.
+  - Integrated **Terser** via `@rollup/plugin-terser` for robust JavaScript minification.
+  - Automatically injects dynamic, versioned header comments (parsed from `package.json`) into both un-minified (`.js`) and minified (`.min.js`) output files.
+- **Infrastructure Modernization (ES Modules):**
+  - Project-wide migration of all internal Node.js build and utility scripts to **ES Module (`import`/`export`) syntax**. This includes `postcss.config.js`, and all scripts within the `tools/` directory (`extract-class-names.js`, `build-animation-index.js`, `generate-animation-demo.js`, `generate-animation-preview.js`).
+
+## Refactor
+
+- **ES Module Conversion:** All affected Node.js scripts were refactored from CommonJS `require()` to ES Module `import` syntax.
+- **Path Resolution:** Standardized file path resolution within scripts using `import.meta.url` and `path.resolve(__dirname, ...)`, replacing older CommonJS `__dirname` patterns for compatibility and robustness.
+- **Header Comment Consistency:** Ensured both CSS and JavaScript build processes output header comments in the universally recognized `/*!` format for reliable preservation by minifiers.
+
+## Fixes
+
+- **Build Script Errors:** Resolved `ReferenceError: require is not defined` errors that occurred after setting `"type": "module"` in `package.json`.
+- **Missing Headers:** Fixed issues preventing the dynamic header comment block from being correctly added and preserved in both minified CSS and JavaScript output files.
+
 # Version: 5.0.0
 
 ## Major Text Animation Overhaul
