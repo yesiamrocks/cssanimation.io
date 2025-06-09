@@ -1,6 +1,15 @@
-const fs = require('fs');
-const path = require('path');
+// tools/generate-animation-demo.js
 
+// 1. Change `require()` to `import` statements
+import fs from 'fs';
+import path from 'path';
+import {fileURLToPath} from 'url'; // Needed to construct __dirname equivalent
+
+// 2. Define __filename and __dirname equivalents for path resolution
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// 3. Adjust all path.resolve calls to use the new __dirname
 const cssFilePath = path.resolve(__dirname, '../dist/cssanimation.css');
 const outputHtmlPath = path.resolve(__dirname, '../docs/animation-demo.html');
 const animationGroupsPath = path.resolve(__dirname, './animation-groups.json'); // Path to the JSON file
@@ -62,7 +71,7 @@ const htmlContent = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA Animation Gallery</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/yesiamrocks/cssanimation.io/refs/heads/master/dist/cssanimation.css">
+    <link rel="stylesheet" href="./dist/cssanimation.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>

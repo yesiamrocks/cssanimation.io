@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Auto-generated index of all CA animations */
 
 :root {
@@ -10,23 +12,6 @@
   --cssanimation-display: inline-block;
   --move-distance: -800px;
 }
-
-/**
- * cssanimation.css – Core animation styles and keyframes
- * Part of: cssanimation.io
- * Version: 5.0.0
- *
- * Author: Shafayetul Islam Pavel
- * LinkedIn: https://www.linkedin.com/in/shafayetul/
- * Email: hello@cssanimation.io
- * GitHub: https://github.com/yesiamrocks/cssanimation.io
- *
- * Title: Core Animation Styles and Keyframe Definitions for cssanimation.io.
- * Description: Contains the fundamental CSS animation classes, keyframe definitions,
- * and essential styling that form the base of the cssanimation.io library.
- *
- * © 2025 Shafayetul Islam Pavel – All rights reserved.
- */
 
 .cssanimation {
   animation-duration: var(--cssanimation-duration, 1s);

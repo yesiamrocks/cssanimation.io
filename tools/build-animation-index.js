@@ -1,6 +1,15 @@
-const fs = require('fs');
-const path = require('path');
+// tools/build-animation-index.js
 
+// 1. Change `require()` to `import` statements
+import fs from 'fs';
+import path from 'path';
+import {fileURLToPath} from 'url'; // Needed to construct __dirname equivalent
+
+// 2. Define __filename and __dirname equivalents for path resolution
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// 3. Adjust all path.resolve calls to use the new __dirname
 const animationsDir = path.resolve(__dirname, '../src/animations');
 const outputFile = path.resolve(animationsDir, 'cssanimation-index.css');
 
@@ -22,5 +31,6 @@ const allImports = [...pinnedImports, ...files];
 const header = `/* Auto-generated index of all CA animations */\n\n`;
 const imports = allImports.map((file) => `@import './${file}';`).join('\n');
 
+// 4. Adjust fs.writeFileSync to use the resolved output path
 fs.writeFileSync(outputFile, header + imports + '\n');
 console.log(`✅ Generated cssanimation-index.css with ${allImports.length} imports.`);

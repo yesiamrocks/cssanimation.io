@@ -349,7 +349,7 @@ Looking to go beyond CSS with scroll triggers, advanced sequencing, and even mor
 
 | Feature / Capability | **CSS Version** | **GSAP Version** |
 | --- | --- | --- |
-| 🧱 Technology | Pure CSS | JavaScript (GSAP) |
+| 🧱 **Technology** | Pure CSS | JavaScript (GSAP) |
 | ⚡ Performance | Great for simple UI effects | Optimized for complex, smooth animations |
 | 🎛 Control | Fine-grained control via CSS | Fine-grained control via JS (timing, easing) |
 | 🎞 Animation Types | Predefined class-based animations | Class-based with dynamic GSAP tweening |

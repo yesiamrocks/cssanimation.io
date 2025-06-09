@@ -1,20 +1,3 @@
-/**
- * ca-letteranimation.js - Letter, word, and line animation enhancements
- * Part of: cssanimation.io
- * Version: 5.0.0
- *
- * Author: Shafayetul Islam Pavel
- * LinkedIn: https://www.linkedin.com/in/shafayetul/
- * Email: hello@cssanimation.io
- * GitHub: https://github.com/yesiamrocks/cssanimation.io
- *
- * Title: A lightweight, CSS-only enhancement script for text animations.
- * Description: Provides dynamic letter-by-letter, word-by-word, and line-by-line animation
- * capabilities, enhancing HTML elements with customizable text effects via HTML attributes.
- *
- * © 2025 Shafayetul Islam Pavel – All rights reserved.
- */
-
 (function () {
   if (typeof window === 'undefined') return;
 
