@@ -1,0 +1,57 @@
+/*!
+ * Module: zoomOutRotateUp Animation
+ * Usage: <div class="cssanimation ca__fx-zoomOutRotateUp">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-zoomOutRotateUp {
+  animation-name: zoomOutRotateUp;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes zoomOutRotateUp {
+  0% {
+    transform: perspective(700px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
+    opacity: 0;
+  }
+}

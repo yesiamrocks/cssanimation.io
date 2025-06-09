@@ -1,4 +1,28 @@
-## Version 5.1.0 - 2025-06-09
+# 5.1.1
+
+### Fixes
+
+- **Build Script Compatibility:**
+  - Resolved `ReferenceError: require is not defined` errors across all Node.js utility scripts (e.g., `postcss.config.js`, `tools/extract-class-names.js`, `tools/build-animation-index.js`, `tools/generate-animation-demo.js`, `tools/generate-animation-preview.js`, `tools/export-modules.js`).
+  - This was achieved by either converting scripts to full ES Module syntax or explicitly marking them as CommonJS (`.cjs`) where required by specific tool loaders (like `stylelint.config.cjs`).
+  - Standardized internal file path resolution to use `import.meta.url` and `path.resolve(__dirname, ...)` for consistent behavior in ES Module environments.
+- **Stylelint Configuration & Execution:**
+  - Fixed `ERR_REQUIRE_CYCLE_MODULE` error by ensuring `stylelint.config.js` was correctly named `stylelint.config.cjs` and reverted to CommonJS export syntax for `cosmiconfig` compatibility.
+  - Resolved `Error: ENOENT: no such file or directory` by updating `package.json` scripts to correctly reference `stylelint.config.cjs`.
+  - Addressed `Unknown rule no-empty-first-line` by removing the unrecognized rule from the configuration.
+  - Disabled the `keyframe-block-no-duplicate-selectors` rule to prevent unnecessary linting errors in compiled animation keyframes.
+  - Corrected `import-notation` errors in `dist/modules/ca__modules-index.css` by updating `tools/export-modules.js` to generate `@import url(...)` syntax.
+- **CSS Generation & Linting Exclusions:**
+  - Updated `tools/export-modules.js` to automatically inject `/* stylelint-disable */` and `/* stylelint-enable */` comments around foundational CSS blocks (`:root`, `.cssanimation`, `.cssanimation span`, `.infinite`, `@media (prefers-reduced-motion: reduce)`) in all generated module files (`src/modules/*.css`). This allows for targeted linting of animation-specific rules while ignoring universal styles.
+  - Cleaned up `dist/cssanimation.css` to resolve a `CssSyntaxError: All rules have already been disabled` by removing conflicting Stylelint disable comments.
+
+### Build System Improvements
+
+- **Targeted Linting:** Stylelint now exclusively targets compiled, un-minified CSS files within the `dist` folder (`dist/**/*.css`), automatically ignoring `.min.css` files globally.
+- **Refined Class Pattern:** The `selector-class-pattern` in Stylelint configuration is now strictly applied to prefixed `ca__` classes, matching the output of the PostCSS build process.
+- **Streamlined Module Export:** The `tools/export-modules.js` script provides a more robust and automated process for separating animations into individual CSS files, including common base styles and meta-comments.
+
+# Version 5.1.0 - 2025-06-09
 
 ## Features
 

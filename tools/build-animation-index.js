@@ -28,9 +28,8 @@ files.sort();
 const allImports = [...pinnedImports, ...files];
 
 // Build CSS content
-const header = `/* Auto-generated index of all CA animations */\n\n`;
 const imports = allImports.map((file) => `@import './${file}';`).join('\n');
 
 // 4. Adjust fs.writeFileSync to use the resolved output path
-fs.writeFileSync(outputFile, header + imports + '\n');
+fs.writeFileSync(outputFile, imports + '\n');
 console.log(`✅ Generated cssanimation-index.css with ${allImports.length} imports.`);
