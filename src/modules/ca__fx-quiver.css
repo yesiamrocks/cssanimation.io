@@ -1,6 +1,6 @@
 /*!
- * Module: wooble Animation
- * Usage: <div class="cssanimation ca__fx-wooble">Your Content</div>
+ * Module: quiver Animation
+ * Usage: <div class="cssanimation ca__fx-quiver">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,30 +37,35 @@
 }
 /* stylelint-enable */
 
-.ca__fx-wooble {
-  animation-name: wooble;
-  transform-origin: center;
+.ca__fx-quiver {
+  animation: quiver var(--quiver-duration, 0.3s) infinite ease-in-out both;
 }
 
-@keyframes wooble {
+@keyframes quiver {
   0%,
   100% {
-    transform: skewX(0deg);
+    transform: translate(0, 0);
   }
-
-  20% {
-    transform: skewX(-10deg);
+  25% {
+    transform: translate(var(--quiver-intensity, 1px), 0);
   }
-
-  40% {
-    transform: skewX(8deg);
+  50% {
+    transform: translate(0, var(--quiver-intensity, 1px));
   }
-
-  60% {
-    transform: skewX(-6deg);
+  75% {
+    transform: translate(calc(var(--quiver-intensity, 1px) * -1), 0);
   }
-
-  80% {
-    transform: skewX(4deg);
-  }
+}
+/*------------------------------------------------------------------------------
+  3) Tremor
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-tremor
+ * a slower, more pronounced shake
+ * vars:
+ *   --tremor-duration  (default: 0.6s)
+ *   --tremor-intensity (default: 4px)
+ */
+.ca__fx-tremor {
+  animation: tremor var(--tremor-duration, 0.6s) infinite ease-in-out both;
 }

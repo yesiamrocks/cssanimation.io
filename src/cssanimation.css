@@ -2283,6 +2283,54 @@
     transform: skewY(1deg) skewX(-1deg) scale(1.06);
   }
 }
+.jitter {
+  animation: jitter var(--jitter-duration, 0.5s) infinite ease-in-out both;
+}
+@keyframes jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), var(--jitter-intensity, 2px));
+  }
+
+  20% {
+    transform: translate(var(--jitter-intensity, 2px), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  30% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  40% {
+    transform: translate(var(--jitter-intensity, 2px), var(--jitter-intensity, 2px));
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), var(--jitter-intensity, 2px));
+  }
+
+  70% {
+    transform: translate(var(--jitter-intensity, 2px), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  80% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  90% {
+    transform: translate(var(--jitter-intensity, 2px), var(--jitter-intensity, 2px));
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
 /**
  * Module: Shock In
  * Filename: ca__ShockIn.css
@@ -2856,58 +2904,65 @@
     transform: scaleY(1.05) translateY(-2px); /* Slight overshoot */
   }
 }
-.vibrate {
-  animation-name: vibrate var(--vibrate-duration, 0.5s);
+.jello {
+  animation: jello var(--jello-duration, 0.9s) both;
 }
-@keyframes vibrate {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  10% {
-    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), var(--vibrate-intensity, 2px));
-  }
-
-  20% {
-    transform: translate(var(--vibrate-intensity, 2px), calc(var(--vibrate-intensity, 2px) * -1));
+@keyframes jello {
+  0%,
+  100% {
+    transform: none;
   }
 
   30% {
-    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), calc(var(--vibrate-intensity, 2px) * -1));
+    transform: skewX(-12.5deg) skewY(-12.5deg);
   }
 
   40% {
-    transform: translate(var(--vibrate-intensity, 2px), var(--vibrate-intensity, 2px));
+    transform: skewX(6.25deg) skewY(6.25deg);
   }
 
   50% {
-    transform: translate(0, 0);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
   }
 
-  60% {
-    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), var(--vibrate-intensity, 2px));
+  65% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
   }
 
-  70% {
-    transform: translate(var(--vibrate-intensity, 2px), calc(var(--vibrate-intensity, 2px) * -1));
-  }
-
-  80% {
-    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), calc(var(--vibrate-intensity, 2px) * -1));
-  }
-
-  90% {
-    transform: translate(var(--vibrate-intensity, 2px), var(--vibrate-intensity, 2px));
-  }
-
-  100% {
-    transform: translate(0, 0);
+  75% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
 }
 /**
  * Module: Swing In
  * Filename: ca__SwingIn.css
  */
+.swing {
+  transform-origin: top center;
+  animation: swing var(--swing-duration, 1s) ease-in-out infinite;
+}
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+}
 .swingInLeft {
   animation-name: swingInLeft;
 }
@@ -3073,5 +3128,215 @@
   100% {
     transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
     opacity: 0;
+  }
+}
+/*------------------------------------------------------------------------------
+  1) Jiggle
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-jiggle
+ * a playful back-and-forth shake with rotation
+ * vars:
+ *   --jiggle-duration (default: 0.8s)
+ *   --jiggle-intensity (default: 2px)
+ *   --jiggle-rotate    (default: 1deg)
+ */
+.jiggle {
+  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
+}
+@keyframes jiggle {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+  20% {
+    transform: translateX(var(--jiggle-intensity, 2px)) rotate(var(--jiggle-rotate, 1deg));
+  }
+  40% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * -1)) rotate(calc(var(--jiggle-rotate, 1deg) * -1));
+  }
+  60% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * 0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * 0.5));
+  }
+  80% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * -0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * -0.5));
+  }
+}
+/*------------------------------------------------------------------------------
+  2) Quiver
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-quiver
+ * a very subtle trembling effect
+ * vars:
+ *   --quiver-duration  (default: 0.3s)
+ *   --quiver-intensity (default: 1px)
+ */
+.quiver {
+  animation: quiver var(--quiver-duration, 0.3s) infinite ease-in-out both;
+}
+@keyframes quiver {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(var(--quiver-intensity, 1px), 0);
+  }
+  50% {
+    transform: translate(0, var(--quiver-intensity, 1px));
+  }
+  75% {
+    transform: translate(calc(var(--quiver-intensity, 1px) * -1), 0);
+  }
+}
+/*------------------------------------------------------------------------------
+  3) Tremor
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-tremor
+ * a slower, more pronounced shake
+ * vars:
+ *   --tremor-duration  (default: 0.6s)
+ *   --tremor-intensity (default: 4px)
+ */
+.tremor {
+  animation: tremor var(--tremor-duration, 0.6s) infinite ease-in-out both;
+}
+@keyframes tremor {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(var(--tremor-intensity, 4px), var(--tremor-intensity, 4px));
+  }
+  40% {
+    transform: translate(calc(var(--tremor-intensity, 4px) * -1), var(--tremor-intensity, 4px));
+  }
+  60% {
+    transform: translate(var(--tremor-intensity, 4px), calc(var(--tremor-intensity, 4px) * -1));
+  }
+  80% {
+    transform: translate(calc(var(--tremor-intensity, 4px) * -1), calc(var(--tremor-intensity, 4px) * -1));
+  }
+}
+/*------------------------------------------------------------------------------
+  4) Rumble
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-rumble
+ * a quick, heavier shake with slight rotation
+ * vars:
+ *   --rumble-duration  (default: 0.4s)
+ *   --rumble-intensity (default: 6px)
+ *   --rumble-rotate    (default: 2deg)
+ */
+.rumble {
+  animation: rumble var(--rumble-duration, 0.4s) infinite ease-in-out both;
+}
+@keyframes rumble {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+  10% {
+    transform: translate(var(--rumble-intensity, 6px), var(--rumble-intensity, 6px)) rotate(var(--rumble-rotate, 2deg));
+  }
+  30% {
+    transform: translate(calc(var(--rumble-intensity, 6px) * -1), var(--rumble-intensity, 6px))
+      rotate(calc(var(--rumble-rotate, 2deg) * -1));
+  }
+  50% {
+    transform: translate(var(--rumble-intensity, 6px), calc(var(--rumble-intensity, 6px) * -1))
+      rotate(var(--rumble-rotate, 2deg));
+  }
+  70% {
+    transform: translate(calc(var(--rumble-intensity, 6px) * -1), calc(var(--rumble-intensity, 6px) * -1))
+      rotate(calc(var(--rumble-rotate, 2deg) * -1));
+  }
+}
+/*------------------------------------------------------------------------------
+  5) Wiggle
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-wiggle
+ * a smooth side-to-side rotation
+ * vars:
+ *   --wiggle-duration (default: 1s)
+ *   --wiggle-angle    (default: 4deg)
+ */
+.wiggle {
+  transform-origin: center center;
+  animation: wiggle var(--wiggle-duration, 1s) ease-in-out infinite both;
+}
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+  50% {
+    transform: rotate(calc(var(--wiggle-angle, 4deg) * -1));
+  }
+  75% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+}
+/*------------------------------------------------------------------------------
+  6) Rattle
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-rattle
+ * a fast, jittery shake
+ * vars:
+ *   --rattle-duration  (default: 0.2s)
+ *   --rattle-intensity (default: 3px)
+ */
+.rattle {
+  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
+}
+@keyframes rattle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(var(--rattle-intensity, 3px));
+  }
+  40%,
+  80% {
+    transform: translateX(calc(var(--rattle-intensity, 3px) * -1));
+  }
+}
+/*------------------------------------------------------------------------------
+  7) Buzz
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-buzz
+ * a very rapid, tiny vibration
+ * vars:
+ *   --buzz-duration    (default: 0.1s)
+ *   --buzz-intensity   (default: 1px)
+ */
+.buzz {
+  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
+}
+@keyframes buzz {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(var(--buzz-intensity, 1px), var(--buzz-intensity, 1px));
+  }
+  50% {
+    transform: translate(calc(var(--buzz-intensity, 1px) * -1), var(--buzz-intensity, 1px));
+  }
+  75% {
+    transform: translate(var(--buzz-intensity, 1px), calc(var(--buzz-intensity, 1px) * -1));
   }
 }

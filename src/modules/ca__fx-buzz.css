@@ -1,6 +1,6 @@
 /*!
- * Module: wooble Animation
- * Usage: <div class="cssanimation ca__fx-wooble">Your Content</div>
+ * Module: buzz Animation
+ * Usage: <div class="cssanimation ca__fx-buzz">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,30 +37,22 @@
 }
 /* stylelint-enable */
 
-.ca__fx-wooble {
-  animation-name: wooble;
-  transform-origin: center;
+.ca__fx-buzz {
+  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
 }
 
-@keyframes wooble {
+@keyframes buzz {
   0%,
   100% {
-    transform: skewX(0deg);
+    transform: translate(0, 0);
   }
-
-  20% {
-    transform: skewX(-10deg);
+  25% {
+    transform: translate(var(--buzz-intensity, 1px), var(--buzz-intensity, 1px));
   }
-
-  40% {
-    transform: skewX(8deg);
+  50% {
+    transform: translate(calc(var(--buzz-intensity, 1px) * -1), var(--buzz-intensity, 1px));
   }
-
-  60% {
-    transform: skewX(-6deg);
-  }
-
-  80% {
-    transform: skewX(4deg);
+  75% {
+    transform: translate(var(--buzz-intensity, 1px), calc(var(--buzz-intensity, 1px) * -1));
   }
 }

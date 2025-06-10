@@ -1,6 +1,6 @@
 /*!
- * Module: wooble Animation
- * Usage: <div class="cssanimation ca__fx-wooble">Your Content</div>
+ * Module: jello Animation
+ * Usage: <div class="cssanimation ca__fx-jello">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,30 +37,41 @@
 }
 /* stylelint-enable */
 
-.ca__fx-wooble {
-  animation-name: wooble;
-  transform-origin: center;
+.ca__fx-jello {
+  animation: jello var(--jello-duration, 0.9s) both;
 }
 
-@keyframes wooble {
+@keyframes jello {
   0%,
   100% {
-    transform: skewX(0deg);
+    transform: none;
   }
 
-  20% {
-    transform: skewX(-10deg);
+  30% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
   }
 
   40% {
-    transform: skewX(8deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
   }
 
-  60% {
-    transform: skewX(-6deg);
+  50% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
   }
 
-  80% {
-    transform: skewX(4deg);
+  65% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
   }
+
+  75% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+}
+/**
+ * Module: Swing In
+ * Filename: ca__SwingIn.css
+ */
+.ca__fx-swing {
+  transform-origin: top center;
+  animation: swing var(--swing-duration, 1s) ease-in-out infinite;
 }

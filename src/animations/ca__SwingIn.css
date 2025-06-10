@@ -3,6 +3,34 @@
  * Filename: ca__SwingIn.css
  */
 
+.swing {
+  transform-origin: top center;
+  animation: swing var(--swing-duration, 1s) ease-in-out infinite;
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
 .swingInLeft {
   animation-name: swingInLeft;
 }

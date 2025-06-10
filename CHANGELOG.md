@@ -1,3 +1,18 @@
+# 5.2.1
+
+## Added
+
+- ✨ **New Vibe Animations Group** (`ca__fx-*`) — subtle to intense shake/motion effects:
+  - `ca__fx-jiggle` — playful wobble with tilt
+  - `ca__fx-quiver` — light trembling
+  - `ca__fx-tremor` — slow, heavy shaking
+  - `ca__fx-rumble` — rapid seismic jitter with rotation
+  - `ca__fx-wiggle` — smooth side-to-side rocking
+  - `ca__fx-rattle` — short, rapid left/right vibration
+  - `ca__fx-buzz` — tight, fast micro-movement (like a phone vibration)
+
+> All effects use pure CSS with customizable `--duration` and `--intensity` variables for full control.
+
 # 5.1.1
 
 ### Fixes

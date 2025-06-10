@@ -46,10 +46,3 @@
     transform: skewY(1deg) skewX(-1deg) scale(1.06);
   }
 }
-/**
- * Module: Shock In
- * Filename: ca__ShockIn.css
- */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
-}

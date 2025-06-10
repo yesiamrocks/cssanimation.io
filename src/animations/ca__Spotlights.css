@@ -322,52 +322,33 @@
   }
 }
 
-.vibrate {
-  animation-name: vibrate var(--vibrate-duration, 0.5s);
+.jello {
+  animation: jello var(--jello-duration, 0.9s) both;
 }
 
-@keyframes vibrate {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  10% {
-    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), var(--vibrate-intensity, 2px));
-  }
-
-  20% {
-    transform: translate(var(--vibrate-intensity, 2px), calc(var(--vibrate-intensity, 2px) * -1));
+@keyframes jello {
+  0%,
+  100% {
+    transform: none;
   }
 
   30% {
-    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), calc(var(--vibrate-intensity, 2px) * -1));
+    transform: skewX(-12.5deg) skewY(-12.5deg);
   }
 
   40% {
-    transform: translate(var(--vibrate-intensity, 2px), var(--vibrate-intensity, 2px));
+    transform: skewX(6.25deg) skewY(6.25deg);
   }
 
   50% {
-    transform: translate(0, 0);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
   }
 
-  60% {
-    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), var(--vibrate-intensity, 2px));
+  65% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
   }
 
-  70% {
-    transform: translate(var(--vibrate-intensity, 2px), calc(var(--vibrate-intensity, 2px) * -1));
-  }
-
-  80% {
-    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), calc(var(--vibrate-intensity, 2px) * -1));
-  }
-
-  90% {
-    transform: translate(var(--vibrate-intensity, 2px), var(--vibrate-intensity, 2px));
-  }
-
-  100% {
-    transform: translate(0, 0);
+  75% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
 }

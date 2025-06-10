@@ -1,6 +1,6 @@
 /*!
- * Module: wooble Animation
- * Usage: <div class="cssanimation ca__fx-wooble">Your Content</div>
+ * Module: swing Animation
+ * Usage: <div class="cssanimation ca__fx-swing">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,30 +37,30 @@
 }
 /* stylelint-enable */
 
-.ca__fx-wooble {
-  animation-name: wooble;
-  transform-origin: center;
+.ca__fx-swing {
+  transform-origin: top center;
+  animation: swing var(--swing-duration, 1s) ease-in-out infinite;
 }
 
-@keyframes wooble {
+@keyframes swing {
   0%,
   100% {
-    transform: skewX(0deg);
+    transform: rotate(0deg);
   }
 
   20% {
-    transform: skewX(-10deg);
+    transform: rotate(15deg);
   }
 
   40% {
-    transform: skewX(8deg);
+    transform: rotate(-10deg);
   }
 
   60% {
-    transform: skewX(-6deg);
+    transform: rotate(5deg);
   }
 
   80% {
-    transform: skewX(4deg);
+    transform: rotate(-5deg);
   }
 }

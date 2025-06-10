@@ -1,6 +1,6 @@
 /*!
- * Module: wooble Animation
- * Usage: <div class="cssanimation ca__fx-wooble">Your Content</div>
+ * Module: wiggle Animation
+ * Usage: <div class="cssanimation ca__fx-wiggle">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,30 +37,36 @@
 }
 /* stylelint-enable */
 
-.ca__fx-wooble {
-  animation-name: wooble;
-  transform-origin: center;
+.ca__fx-wiggle {
+  transform-origin: center center;
+  animation: wiggle var(--wiggle-duration, 1s) ease-in-out infinite both;
 }
 
-@keyframes wooble {
+@keyframes wiggle {
   0%,
   100% {
-    transform: skewX(0deg);
+    transform: rotate(0deg);
   }
-
-  20% {
-    transform: skewX(-10deg);
+  25% {
+    transform: rotate(var(--wiggle-angle, 4deg));
   }
-
-  40% {
-    transform: skewX(8deg);
+  50% {
+    transform: rotate(calc(var(--wiggle-angle, 4deg) * -1));
   }
-
-  60% {
-    transform: skewX(-6deg);
+  75% {
+    transform: rotate(var(--wiggle-angle, 4deg));
   }
-
-  80% {
-    transform: skewX(4deg);
-  }
+}
+/*------------------------------------------------------------------------------
+  6) Rattle
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-rattle
+ * a fast, jittery shake
+ * vars:
+ *   --rattle-duration  (default: 0.2s)
+ *   --rattle-intensity (default: 3px)
+ */
+.ca__fx-rattle {
+  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
 }

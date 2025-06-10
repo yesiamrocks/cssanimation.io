@@ -1,6 +1,6 @@
 /*!
- * Module: zoomOutRotateUp Animation
- * Usage: <div class="cssanimation ca__fx-zoomOutRotateUp">Your Content</div>
+ * Module: jiggle Animation
+ * Usage: <div class="cssanimation ca__fx-jiggle">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,35 +37,38 @@
 }
 /* stylelint-enable */
 
-.ca__fx-zoomOutRotateUp {
-  animation-name: zoomOutRotateUp;
-  backface-visibility: var(--cssanimation-backface-visibility);
-  transform-style: var(--cssanimation-transform-style);
-  will-change: var(--cssanimation-will-change);
+.ca__fx-jiggle {
+  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
 }
 
-@keyframes zoomOutRotateUp {
-  0% {
-    transform: perspective(700px) rotateX(0deg) scale(1);
-    opacity: 1;
-  }
-
+@keyframes jiggle {
+  0%,
   100% {
-    transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
-    opacity: 0;
+    transform: translateX(0) rotate(0);
+  }
+  20% {
+    transform: translateX(var(--jiggle-intensity, 2px)) rotate(var(--jiggle-rotate, 1deg));
+  }
+  40% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * -1)) rotate(calc(var(--jiggle-rotate, 1deg) * -1));
+  }
+  60% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * 0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * 0.5));
+  }
+  80% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * -0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * -0.5));
   }
 }
 /*------------------------------------------------------------------------------
-  1) Jiggle
+  2) Quiver
 ------------------------------------------------------------------------------*/
 /**
- * ca__fx-jiggle
- * a playful back-and-forth shake with rotation
+ * ca__fx-quiver
+ * a very subtle trembling effect
  * vars:
- *   --jiggle-duration (default: 0.8s)
- *   --jiggle-intensity (default: 2px)
- *   --jiggle-rotate    (default: 1deg)
+ *   --quiver-duration  (default: 0.3s)
+ *   --quiver-intensity (default: 1px)
  */
-.ca__fx-jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
+.ca__fx-quiver {
+  animation: quiver var(--quiver-duration, 0.3s) infinite ease-in-out both;
 }

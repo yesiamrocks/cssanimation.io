@@ -1,6 +1,6 @@
 /*!
- * Module: zoomOutRotateUp Animation
- * Usage: <div class="cssanimation ca__fx-zoomOutRotateUp">Your Content</div>
+ * Module: tremor Animation
+ * Usage: <div class="cssanimation ca__fx-tremor">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,35 +37,39 @@
 }
 /* stylelint-enable */
 
-.ca__fx-zoomOutRotateUp {
-  animation-name: zoomOutRotateUp;
-  backface-visibility: var(--cssanimation-backface-visibility);
-  transform-style: var(--cssanimation-transform-style);
-  will-change: var(--cssanimation-will-change);
+.ca__fx-tremor {
+  animation: tremor var(--tremor-duration, 0.6s) infinite ease-in-out both;
 }
 
-@keyframes zoomOutRotateUp {
-  0% {
-    transform: perspective(700px) rotateX(0deg) scale(1);
-    opacity: 1;
-  }
-
+@keyframes tremor {
+  0%,
   100% {
-    transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
-    opacity: 0;
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(var(--tremor-intensity, 4px), var(--tremor-intensity, 4px));
+  }
+  40% {
+    transform: translate(calc(var(--tremor-intensity, 4px) * -1), var(--tremor-intensity, 4px));
+  }
+  60% {
+    transform: translate(var(--tremor-intensity, 4px), calc(var(--tremor-intensity, 4px) * -1));
+  }
+  80% {
+    transform: translate(calc(var(--tremor-intensity, 4px) * -1), calc(var(--tremor-intensity, 4px) * -1));
   }
 }
 /*------------------------------------------------------------------------------
-  1) Jiggle
+  4) Rumble
 ------------------------------------------------------------------------------*/
 /**
- * ca__fx-jiggle
- * a playful back-and-forth shake with rotation
+ * ca__fx-rumble
+ * a quick, heavier shake with slight rotation
  * vars:
- *   --jiggle-duration (default: 0.8s)
- *   --jiggle-intensity (default: 2px)
- *   --jiggle-rotate    (default: 1deg)
+ *   --rumble-duration  (default: 0.4s)
+ *   --rumble-intensity (default: 6px)
+ *   --rumble-rotate    (default: 2deg)
  */
-.ca__fx-jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
+.ca__fx-rumble {
+  animation: rumble var(--rumble-duration, 0.4s) infinite ease-in-out both;
 }

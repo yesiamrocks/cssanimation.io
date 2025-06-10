@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-vibrate {
-  animation: vibrate var(--vibrate-duration, 0.5s) infinite ease-in-out both;
+  animation-name: vibrate var(--vibrate-duration, 0.5s);
 }
 
 @keyframes vibrate {

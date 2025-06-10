@@ -1,6 +1,6 @@
 /*!
- * Module: wooble Animation
- * Usage: <div class="cssanimation ca__fx-wooble">Your Content</div>
+ * Module: rattle Animation
+ * Usage: <div class="cssanimation ca__fx-rattle">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,30 +37,34 @@
 }
 /* stylelint-enable */
 
-.ca__fx-wooble {
-  animation-name: wooble;
-  transform-origin: center;
+.ca__fx-rattle {
+  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
 }
 
-@keyframes wooble {
+@keyframes rattle {
   0%,
   100% {
-    transform: skewX(0deg);
+    transform: translateX(0);
   }
-
-  20% {
-    transform: skewX(-10deg);
-  }
-
-  40% {
-    transform: skewX(8deg);
-  }
-
+  20%,
   60% {
-    transform: skewX(-6deg);
+    transform: translateX(var(--rattle-intensity, 3px));
   }
-
+  40%,
   80% {
-    transform: skewX(4deg);
+    transform: translateX(calc(var(--rattle-intensity, 3px) * -1));
   }
+}
+/*------------------------------------------------------------------------------
+  7) Buzz
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-buzz
+ * a very rapid, tiny vibration
+ * vars:
+ *   --buzz-duration    (default: 0.1s)
+ *   --buzz-intensity   (default: 1px)
+ */
+.ca__fx-buzz {
+  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
 }

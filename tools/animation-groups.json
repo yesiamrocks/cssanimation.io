@@ -194,5 +194,15 @@
     "ca__fx-waveBand",
     "ca__fx-effect3d",
     "ca__fx-sake"
+  ],
+  "Quake & Quiver Series": [
+    "ca__fx-jitter",
+    "ca__fx-jiggle",
+    "ca__fx-quiver",
+    "ca__fx-tremor",
+    "ca__fx-rumble",
+    "ca__fx-wiggle",
+    "ca__fx-rattle",
+    "ca__fx-buzz"
   ]
 }

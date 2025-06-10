@@ -168,7 +168,7 @@
         </div>
 
         <div id="categories" class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 px-2 sm:px-4">
-            <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out active" data-category="All">All (170)</button>
+            <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out active" data-category="All">All (179)</button>
             
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Blur Effects">Blur Effects (10)</button>
                     
@@ -192,6 +192,8 @@
                     
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Pull & Push">Pull & Push (12)</button>
                     
+                        <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Quake & Quiver Series">Quake & Quiver Series (8)</button>
+                    
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Roll & Spin">Roll & Spin (16)</button>
                     
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Rotate Animations">Rotate Animations (15)</button>
@@ -202,7 +204,7 @@
                     
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Zoom Effects">Zoom Effects (11)</button>
                     
-                        <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Other">Other (1)</button>
+                        <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Other">Other (2)</button>
                     
         </div>
 
@@ -2404,6 +2406,24 @@
                             </button>                                
                         </div>                            
                     </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Quake & Quiver Series" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-jitter')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-jitter">
+                            Share
+                            <span id="share-feedback-ca__fx-jitter" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-jitter w-full mt-6 rounded-md" id="ca__fx-jitter" onclick="replay('ca__fx-jitter')">
+                            ca__fx-jitter
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-jitter" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-jitter">ca__fx-jitter</code>
+                            <button onclick="copyToClipboard('ca__fx-jitter')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-jitter">
+                                Copy
+                                <span id="feedback-ca__fx-jitter" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
                     <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Shock & Swing" tabindex="0">
                         <button onclick="shareAnimation('ca__fx-shockZoom')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-shockZoom">
                             Share
@@ -2981,20 +3001,38 @@
                         </div>                            
                     </div>
                     <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Other" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-vibrate')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-vibrate">
+                        <button onclick="shareAnimation('ca__fx-jello')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-jello">
                             Share
-                            <span id="share-feedback-ca__fx-vibrate" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                            <span id="share-feedback-ca__fx-jello" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                         </button>
 
-                        <div class="preview cssanimation ca__fx-vibrate w-full mt-6 rounded-md" id="ca__fx-vibrate" onclick="replay('ca__fx-vibrate')">
-                            ca__fx-vibrate
+                        <div class="preview cssanimation ca__fx-jello w-full mt-6 rounded-md" id="ca__fx-jello" onclick="replay('ca__fx-jello')">
+                            ca__fx-jello
                         </div>
                         
                         <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-vibrate" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-vibrate">ca__fx-vibrate</code>
-                            <button onclick="copyToClipboard('ca__fx-vibrate')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-vibrate">
+                            <code id="code-ca__fx-jello" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-jello">ca__fx-jello</code>
+                            <button onclick="copyToClipboard('ca__fx-jello')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-jello">
                                 Copy
-                                <span id="feedback-ca__fx-vibrate" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                <span id="feedback-ca__fx-jello" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Other" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swing')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swing">
+                            Share
+                            <span id="share-feedback-ca__fx-swing" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swing w-full mt-6 rounded-md" id="ca__fx-swing" onclick="replay('ca__fx-swing')">
+                            ca__fx-swing
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swing" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swing">ca__fx-swing</code>
+                            <button onclick="copyToClipboard('ca__fx-swing')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swing">
+                                Copy
+                                <span id="feedback-ca__fx-swing" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                             </button>                                
                         </div>                            
                     </div>
@@ -3265,6 +3303,132 @@
                             <button onclick="copyToClipboard('ca__fx-zoomOutRotateUp')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-zoomOutRotateUp">
                                 Copy
                                 <span id="feedback-ca__fx-zoomOutRotateUp" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Quake & Quiver Series" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-jiggle')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-jiggle">
+                            Share
+                            <span id="share-feedback-ca__fx-jiggle" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-jiggle w-full mt-6 rounded-md" id="ca__fx-jiggle" onclick="replay('ca__fx-jiggle')">
+                            ca__fx-jiggle
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-jiggle" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-jiggle">ca__fx-jiggle</code>
+                            <button onclick="copyToClipboard('ca__fx-jiggle')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-jiggle">
+                                Copy
+                                <span id="feedback-ca__fx-jiggle" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Quake & Quiver Series" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-quiver')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-quiver">
+                            Share
+                            <span id="share-feedback-ca__fx-quiver" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-quiver w-full mt-6 rounded-md" id="ca__fx-quiver" onclick="replay('ca__fx-quiver')">
+                            ca__fx-quiver
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-quiver" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-quiver">ca__fx-quiver</code>
+                            <button onclick="copyToClipboard('ca__fx-quiver')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-quiver">
+                                Copy
+                                <span id="feedback-ca__fx-quiver" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Quake & Quiver Series" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-tremor')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-tremor">
+                            Share
+                            <span id="share-feedback-ca__fx-tremor" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-tremor w-full mt-6 rounded-md" id="ca__fx-tremor" onclick="replay('ca__fx-tremor')">
+                            ca__fx-tremor
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-tremor" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-tremor">ca__fx-tremor</code>
+                            <button onclick="copyToClipboard('ca__fx-tremor')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-tremor">
+                                Copy
+                                <span id="feedback-ca__fx-tremor" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Quake & Quiver Series" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-rumble')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-rumble">
+                            Share
+                            <span id="share-feedback-ca__fx-rumble" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-rumble w-full mt-6 rounded-md" id="ca__fx-rumble" onclick="replay('ca__fx-rumble')">
+                            ca__fx-rumble
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-rumble" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-rumble">ca__fx-rumble</code>
+                            <button onclick="copyToClipboard('ca__fx-rumble')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-rumble">
+                                Copy
+                                <span id="feedback-ca__fx-rumble" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Quake & Quiver Series" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-wiggle')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-wiggle">
+                            Share
+                            <span id="share-feedback-ca__fx-wiggle" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-wiggle w-full mt-6 rounded-md" id="ca__fx-wiggle" onclick="replay('ca__fx-wiggle')">
+                            ca__fx-wiggle
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-wiggle" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-wiggle">ca__fx-wiggle</code>
+                            <button onclick="copyToClipboard('ca__fx-wiggle')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-wiggle">
+                                Copy
+                                <span id="feedback-ca__fx-wiggle" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Quake & Quiver Series" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-rattle')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-rattle">
+                            Share
+                            <span id="share-feedback-ca__fx-rattle" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-rattle w-full mt-6 rounded-md" id="ca__fx-rattle" onclick="replay('ca__fx-rattle')">
+                            ca__fx-rattle
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-rattle" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-rattle">ca__fx-rattle</code>
+                            <button onclick="copyToClipboard('ca__fx-rattle')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-rattle">
+                                Copy
+                                <span id="feedback-ca__fx-rattle" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Quake & Quiver Series" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-buzz')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-buzz">
+                            Share
+                            <span id="share-feedback-ca__fx-buzz" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-buzz w-full mt-6 rounded-md" id="ca__fx-buzz" onclick="replay('ca__fx-buzz')">
+                            ca__fx-buzz
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-buzz" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-buzz">ca__fx-buzz</code>
+                            <button onclick="copyToClipboard('ca__fx-buzz')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-buzz">
+                                Copy
+                                <span id="feedback-ca__fx-buzz" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                             </button>                                
                         </div>                            
                     </div>
