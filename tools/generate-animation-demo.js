@@ -197,7 +197,7 @@ const htmlContent = `<!DOCTYPE html>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 p-6 transition-colors duration-300 ease-in-out">
     <div class="max-w-7xl mx-auto">
         <div class="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-700 dark:text-blue-300 text-center sm:text-left">cssanimation.io — Animation Gallery</h1>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-700 dark:text-blue-300 text-center sm:text-left">Explore CSS Animations</h1>
 
             <div class="flex items-center space-x-4 w-full sm:w-auto justify-center">
                 <input
