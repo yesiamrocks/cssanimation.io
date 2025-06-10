@@ -37,11 +37,6 @@
 }
 /* stylelint-enable */
 
-.ca__fx-leRainDrop {
-  animation-name: leRainDrop;
-  animation-iteration-count: infinite;
-}
-
 @keyframes leRainDrop {
   0%,
   25%,

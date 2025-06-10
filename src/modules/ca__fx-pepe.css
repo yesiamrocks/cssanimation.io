@@ -39,7 +39,6 @@
 
 .ca__fx-pepe {
   animation-name: pepe;
-  animation-iteration-count: infinite;
 }
 
 @keyframes pepe {

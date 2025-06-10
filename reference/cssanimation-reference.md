@@ -72,23 +72,14 @@
 ## Heartbeat
 - `ca__fx-heartbeatFast` — Pulses quickly like a fast heartbeat
 - `ca__fx-heartbeatSlow` — Pulses slowly with a calm rhythm
-- `ca__fx-leBeat` — Each letter pulses like a heartbeat
 
 ## cssanimation Special
 - `ca__fx-horizontalShake` — Shakes left and right repeatedly
 - `ca__fx-hu__hu__` — Comical fast shake like a cartoon ‘shiver’ or giggle
 
-## Letter Impact & Energy Motions
-- `ca__fx-leJoltZoom` — Each letter jolts forward slightly while zooming in with force
-
-## Letter Cinematic
-- `ca__fx-leMagnify` — Each letter zooms in briefly with an enlarging lens-like effect
-
 ## Letter Movement & Reveal
 - `ca__fx-leMovingBackFromLeft` — Each letter moves in from the left while appearing farther back
 - `ca__fx-leMovingBackFromRight` — Each letter moves in from the right with distant motion
-- `ca__fx-lePeek` — Each letter peeks in subtly from behind as if hiding before entry
-- `ca__fx-leRainDrop` — Letters fall quickly with gravity like raindrops
 
 ## Core Animation Classes (Ungrouped)
 - `ca__fx-blurIn`
@@ -108,9 +99,10 @@
 - `ca__fx-flyInTop`
 - `ca__fx-flyOutBottom`
 - `ca__fx-flyOutTop`
+- `ca__fx-jigglypop`
+- `ca__fx-joltZoom`
 - `ca__fx-kickOutBehind`
 - `ca__fx-kickOutFront`
-- `ca__fx-leWaterWave`
 - `ca__fx-lightning`
 - `ca__fx-madMax`
 - `ca__fx-moveFromBottom`
@@ -121,7 +113,7 @@
 - `ca__fx-moveToLeft`
 - `ca__fx-moveToRight`
 - `ca__fx-moveToTop`
-- `ca__fx-open`
+- `ca__fx-peekpeek`
 - `ca__fx-pepe`
 - `ca__fx-perspectiveToBottom`
 - `ca__fx-perspectiveToTop`
@@ -182,16 +174,18 @@
 - `ca__fx-spinToLeft`
 - `ca__fx-spinToRight`
 - `ca__fx-spinToTop`
+- `ca__fx-squishBoing`
 - `ca__fx-swingInBottom`
 - `ca__fx-swingInLeft`
 - `ca__fx-swingInRight`
 - `ca__fx-swingInTop`
 - `ca__fx-tiltFadeBack`
-- `ca__fx-typing`
 - `ca__fx-unfoldAndRise`
 - `ca__fx-verticalShake`
+- `ca__fx-vibrate`
 - `ca__fx-vibration`
-- `ca__fx-wipe`
+- `ca__fx-waveBand`
+- `ca__fx-wooble`
 - `ca__fx-zoomIn`
 - `ca__fx-zoomInBottom`
 - `ca__fx-zoomInLeft`

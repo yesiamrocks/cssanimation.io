@@ -24,28 +24,46 @@ try {
 }
 
 let animationCategories = new Map();
-let allDefinedAnimationClasses = new Set(); // To track all classes defined in JSON
+let allDefinedAnimationClassesInJson = new Set(); // To track all classes defined in JSON
+let animationCounts = new Map(); // New: To store counts for each category
 
 try {
   const groupsRawData = fs.readFileSync(animationGroupsPath, 'utf-8');
   const groupsJson = JSON.parse(groupsRawData);
 
-  // Populate animationCategories Map from JSON
+  // Populate animationCategories Map from JSON and count animations
   for (const categoryName in groupsJson) {
     const classesInGroup = groupsJson[categoryName];
     animationCategories.set(categoryName, classesInGroup);
-    classesInGroup.forEach((cls) => allDefinedAnimationClasses.add(cls));
-  }
-
-  // Ensure 'Other' category exists, if not already present in the JSON
-  if (!animationCategories.has('Other')) {
-    animationCategories.set('Other', []);
+    animationCounts.set(categoryName, classesInGroup.length); // Initialize count for explicitly defined categories
+    classesInGroup.forEach((cls) => allDefinedAnimationClassesInJson.add(cls));
   }
 } catch (error) {
   console.error(`Error reading or parsing animation-groups.json at ${animationGroupsPath}:`, error);
-  // If the file is missing or invalid, initialize with a default 'Other'
-  animationCategories.clear();
-  animationCategories.set('Other', []); // Fallback to a single 'Other' category
+  // If the file is missing or invalid, categories map will be cleared or remain empty
+}
+
+// Extract all .ca__fx-* classes from CSS
+const allCssAnimationClassNames = Array.from(new Set(cssContent.match(/\.ca__fx-[a-zA-Z0-9_-]+/g) || [])).map((cls) =>
+  cls.slice(1),
+); // remove dot
+
+// New: Identify animations not explicitly categorized
+let uncategorizedAnimations = [];
+allCssAnimationClassNames.forEach((cls) => {
+  if (!allDefinedAnimationClassesInJson.has(cls)) {
+    uncategorizedAnimations.push(cls);
+  }
+});
+
+// Add 'Other' category if there are uncategorized animations
+if (uncategorizedAnimations.length > 0) {
+  animationCategories.set('Other', uncategorizedAnimations);
+  animationCounts.set('Other', uncategorizedAnimations.length);
+} else {
+  // Ensure 'Other' is not present in the map if there are no uncategorized animations
+  animationCategories.delete('Other');
+  animationCounts.delete('Other');
 }
 
 // Helper to get category for a given class name
@@ -55,14 +73,12 @@ function getCategoryForClass(className) {
       return category;
     }
   }
-  // If the class is not found in any defined category, assign to 'Other'
+  // If the class is not found in any defined category (including 'Other' if it exists),
+  // it means it's a CSS animation but not in animation-groups.json, and 'Other' is also empty.
+  // In this edge case, we'll still assign it to 'Other' for the data-category attribute,
+  // but the button might not be rendered if 'Other' has 0 count.
   return 'Other';
 }
-
-// Extract all .ca__fx-* classes from CSS
-const allCssAnimationClassNames = Array.from(new Set(cssContent.match(/\.ca__fx-[a-zA-Z0-9_-]+/g) || [])).map((cls) =>
-  cls.slice(1),
-); // remove dot
 
 // Generate HTML
 const htmlContent = `<!DOCTYPE html>
@@ -103,16 +119,7 @@ const htmlContent = `<!DOCTYPE html>
             border-color: #475569;
             color: #cbd5e1;
         }
-        .code-display {
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            background-color: #e2e8f0; /* Light background for code in light mode */
-            color: #1e293b;
-            font-size: 0.875rem;
-            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-            /* Ensure code wraps */
-            white-space: normal; /* Allow text to wrap */
-            word-break: break-all; /* Break long words */
-        }
+        
         /* Dark mode adjustments for code display */
         .dark .code-display {
             background-color: #1a202c;
@@ -128,7 +135,7 @@ const htmlContent = `<!DOCTYPE html>
             opacity: 1;
         }
         .category-button.active {
-            background-color: #2563eb; /* Blue 600 */
+            background-color: #6d28d9; /* Blue 600 */
             color: #ffffff;
         }
         .dark .category-button.active {
@@ -197,11 +204,11 @@ const htmlContent = `<!DOCTYPE html>
                     type="text"
                     id="search-input"
                     placeholder="Search animations..."
-                    class="flex-grow px-4 py-2 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300 ease-in-out"
+                    class="flex-grow px-4 py-2 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
                 />
                 <button
                     id="theme-toggle"
-                    class="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300 ease-in-out"
+                    class="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
                     aria-label="Toggle Dark Mode"
                 >
                     <svg
@@ -212,7 +219,7 @@ const htmlContent = `<!DOCTYPE html>
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <path
-                            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8 0 1010.586 10.586z"
+                            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
                         ></path>
                     </svg>
                     <svg
@@ -239,18 +246,28 @@ const htmlContent = `<!DOCTYPE html>
                 type="text"
                 id="custom-preview-text"
                 placeholder="Enter custom text for previews..."
-                class="flex-grow px-4 py-2 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300 ease-in-out max-w-sm"
+                class="flex-grow px-4 py-2 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out max-w-sm"
             />
         </div>
 
         <div id="categories" class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 px-2 sm:px-4">
-            <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300 ease-in-out active" data-category="All">All</button>
+            <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out active" data-category="All">All (${allCssAnimationClassNames.length})</button>
             ${Array.from(animationCategories.keys())
-              .map(
-                (category) => `
-                <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300 ease-in-out" data-category="${category}">${category}</button>
-            `,
-              )
+              .sort((a, b) => {
+                // Custom sort function to place 'Other' at the end
+                if (a === 'Other') return 1; // 'Other' comes after 'b'
+                if (b === 'Other') return -1; // 'b' comes after 'Other'
+                return a.localeCompare(b); // For all other categories, sort alphabetically
+              })
+              .map((category) => {
+                const count = animationCounts.get(category) || 0;
+                if (count > 0) {
+                  return `
+                        <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="${category}">${category} (${count})</button>
+                    `;
+                }
+                return '';
+              })
               .join('')}
         </div>
 
@@ -260,21 +277,23 @@ const htmlContent = `<!DOCTYPE html>
                 const fullClass = `cssanimation ${cls}`;
                 const category = getCategoryForClass(cls);
                 return `
-                    <div class="animation-box bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="${category}" tabindex="0">
-                        <div class="preview ${fullClass} w-full rounded-md" id="${cls}" onclick="replay('${cls}')">
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="${category}" tabindex="0">
+                        <button onclick="shareAnimation('${cls}')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ${cls}">
+                            Share
+                            <span id="share-feedback-${cls}" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview ${fullClass} w-full mt-6 rounded-md" id="${cls}" onclick="replay('${cls}')">
                             ${cls}
                         </div>
-                        <code class="m" id="code-${cls}" class="code-display w-full p-2 mb-3 text-center sm:text-left rounded-md">${fullClass}</code>
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mb-4">
-                            <button onclick="copyToClipboard('${cls}')" class="relative px-4 py-2 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ${cls}">
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-${cls}" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="${fullClass}">${cls}</code>
+                            <button onclick="copyToClipboard('${cls}')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ${cls}">
                                 Copy
                                 <span id="feedback-${cls}" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>
-                            <button onclick="shareAnimation('${cls}')" class="relative px-4 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 group" aria-label="Share direct link for ${cls}">
-                                Share
-                                <span id="share-feedback-${cls}" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                            </button>
-                        </div>                      
+                            </button>                                
+                        </div>                            
                     </div>`;
               })
               .join('')}
@@ -402,7 +421,7 @@ const htmlContent = `<!DOCTYPE html>
             const currentFocused = document.querySelector('.animation-box.focused');
             if (currentFocused) {
                 currentFocused.classList.remove('focused');
-                currentFocused.classList.remove('ring-2', 'ring-blue-500', 'ring-offset-2', 'ring-offset-gray-100', 'dark:ring-offset-gray-900');
+                currentFocused.classList.remove('ring-2', 'ring-violet-500', 'ring-offset-2', 'ring-offset-gray-100', 'dark:ring-offset-gray-900');
             }
         }
 
@@ -543,14 +562,15 @@ const htmlContent = `<!DOCTYPE html>
             }, 5000); // 5000 milliseconds = 5 seconds
 
             // Remove previous focus highlight and add to the currently replayed box
-            document.querySelectorAll('.animation-box').forEach(box => box.classList.remove('ring-2', 'ring-blue-500', 'ring-offset-2', 'ring-offset-gray-100', 'dark:ring-offset-gray-900'));
-            el.closest('.animation-box').classList.add('ring-2', 'ring-blue-500', 'ring-offset-2', 'ring-offset-gray-100', 'dark:ring-offset-gray-900');
+            document.querySelectorAll('.animation-box').forEach(box => box.classList.remove('ring-2', 'ring-violet-500', 'ring-offset-2', 'ring-offset-gray-100', 'dark:ring-offset-gray-900'));
+            el.closest('.animation-box').classList.add('ring-2', 'ring-violet-500', 'ring-offset-2', 'ring-offset-gray-100', 'dark:ring-offset-gray-900');
             
             updateURLParams({ animation: className });
         }
 
         function copyToClipboard(id) {
-            const text = document.getElementById("code-" + id).textContent;
+            // Get the full class from the data-full-class attribute
+            const text = document.getElementById("code-" + id).dataset.fullClass; 
             const feedbackEl = document.getElementById("feedback-" + id);
 
             navigator.clipboard.writeText(text).then(() => {

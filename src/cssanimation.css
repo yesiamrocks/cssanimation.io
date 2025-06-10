@@ -2607,8 +2607,7 @@
   }
 }
 .sake {
-  animation: Snake 1.5s ease-in-out;
-  animation-iteration-count: infinite;
+  animation-name: snake;
 }
 @keyframes snake {
   0%,
@@ -2620,10 +2619,10 @@
     transform: translateY(30px);
   }
 }
-.lePeek {
-  animation-name: lePeek;
+.peekpeek {
+  animation-name: peekpeek;
 }
-@keyframes lePeek {
+@keyframes peekpeek {
   25% {
     transform: rotateX(30deg) translateY(10px) rotate(-13deg);
   }
@@ -2652,45 +2651,8 @@
       0 20px 20px rgba(0, 0, 0, 0.15);
   }
 }
-.leRainDrop {
-  animation-name: leRainDrop;
-  animation-iteration-count: infinite;
-}
-@keyframes leRainDrop {
-  0%,
-  25%,
-  55%,
-  75%,
-  87%,
-  97%,
-  100% {
-    transform: scaleX(1);
-  }
-
-  26%,
-  56%,
-  76% {
-    transform: scaleX(1.3) scaleY(0.8);
-  }
-
-  31%,
-  61%,
-  81% {
-    transform: scaleX(0.8) scaleY(1.2);
-  }
-
-  76%,
-  88% {
-    transform: scaleX(1.2);
-  }
-
-  98% {
-    transform: scaleX(1.1);
-  }
-}
 .pepe {
   animation-name: pepe;
-  animation-iteration-count: infinite;
 }
 @keyframes pepe {
   0%,
@@ -2704,14 +2666,6 @@
   50%,
   83% {
     transform: rotate(-4deg);
-  }
-}
-.leWaterWave {
-  animation: leWaterWave 0.2s linear infinite;
-}
-@keyframes leWaterWave {
-  50% {
-    transform: skewY(1deg) skewX(-1deg) scale(1.06);
   }
 }
 .lightning {
@@ -2729,10 +2683,10 @@
     opacity: 0;
   }
 }
-.leJoltZoom {
-  animation-name: leJoltZoom;
+.joltZoom {
+  animation-name: joltZoom;
 }
-@keyframes leJoltZoom {
+@keyframes joltZoom {
   10% {
     font-size: 140%;
   }
@@ -2743,25 +2697,6 @@
 
   100% {
     font-size: 100%;
-  }
-}
-.typing {
-  width: 473px;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid #7e2ea0;
-  animation:
-    typing 2s steps(12, end),
-    cursor 0.2s steps(12, end) infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes cursor {
-  50% {
-    border-color: transparent;
   }
 }
 .electricity {
@@ -2819,51 +2754,154 @@
     transform: translateY(40px);
   }
 }
-.wipe {
-  width: 473px;
-  overflow: hidden;
-  margin: 0 auto;
-  display: inline-flex;
-  animation-name: wipe;
+.squishBoing {
+  animation-name: squishBoing;
+  transform-origin: bottom center;
 }
-@keyframes wipe {
-  to {
-    width: 0;
-  }
-}
-.open {
-  width: 473px;
-  margin: 0 auto;
-  overflow: hidden;
-  display: inline-flex;
-  animation-name: open;
-}
-@keyframes open {
-  from {
-    width: 0;
-  }
-}
-.leMagnify {
-  animation-name: leMagnify;
-}
-@keyframes leMagnify {
-  50% {
-    transform: scale(1.8);
-    letter-spacing: 26px;
-  }
-}
-.leBeat {
-  animation-name: leBeat;
-}
-@keyframes leBeat {
-  14%,
-  42% {
-    transform: scale(1.3);
+@keyframes squishBoing {
+  0% {
+    transform: scale(1, 1);
   }
 
-  28%,
+  25% {
+    transform: scale(1.1, 0.8);
+  } /* Squish down and slightly wider */
+
+  50% {
+    transform: scale(0.9, 1.2);
+  } /* Stretch up and slightly narrower */
+
+  75% {
+    transform: scale(1.05, 0.95);
+  } /* Overshoot slightly */
+
+  100% {
+    transform: scale(1, 1);
+  } /* Return to normal */
+}
+.jigglypop {
+  animation-name: jigglypop;
+}
+@keyframes jigglypop {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(-5deg);
+  }
+
+  30% {
+    transform: rotate(5deg);
+  }
+
+  45% {
+    transform: rotate(-3deg);
+  }
+
+  60% {
+    transform: rotate(3deg);
+  }
+
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+.wooble {
+  animation-name: wooble;
+  transform-origin: center;
+}
+@keyframes wooble {
+  0%,
+  100% {
+    transform: skewX(0deg);
+  }
+
+  20% {
+    transform: skewX(-10deg);
+  }
+
+  40% {
+    transform: skewX(8deg);
+  }
+
+  60% {
+    transform: skewX(-6deg);
+  }
+
+  80% {
+    transform: skewX(4deg);
+  }
+}
+.waveBand {
+  animation-name: waveBand;
+  transform-origin: center center;
+}
+@keyframes waveBand {
+  0%,
+  100% {
+    transform: scaleY(1) translateY(0); /* Normal state */
+  }
+
+  25% {
+    transform: scaleY(1.1) translateY(-5px); /* Stretch vertically and move up slightly */
+  }
+
+  50% {
+    transform: scaleY(0.9) translateY(5px); /* Compress vertically and move down */
+  }
+
+  75% {
+    transform: scaleY(1.05) translateY(-2px); /* Slight overshoot */
+  }
+}
+.vibrate {
+  animation-name: vibrate var(--vibrate-duration, 0.5s);
+}
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), var(--vibrate-intensity, 2px));
+  }
+
+  20% {
+    transform: translate(var(--vibrate-intensity, 2px), calc(var(--vibrate-intensity, 2px) * -1));
+  }
+
+  30% {
+    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), calc(var(--vibrate-intensity, 2px) * -1));
+  }
+
+  40% {
+    transform: translate(var(--vibrate-intensity, 2px), var(--vibrate-intensity, 2px));
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), var(--vibrate-intensity, 2px));
+  }
+
   70% {
-    transform: scale(1);
+    transform: translate(var(--vibrate-intensity, 2px), calc(var(--vibrate-intensity, 2px) * -1));
+  }
+
+  80% {
+    transform: translate(calc(var(--vibrate-intensity, 2px) * -1), calc(var(--vibrate-intensity, 2px) * -1));
+  }
+
+  90% {
+    transform: translate(var(--vibrate-intensity, 2px), var(--vibrate-intensity, 2px));
+  }
+
+  100% {
+    transform: translate(0, 0);
   }
 }
 /**

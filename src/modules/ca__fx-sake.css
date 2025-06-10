@@ -38,6 +38,5 @@
 /* stylelint-enable */
 
 .ca__fx-sake {
-  animation: Snake 1.5s ease-in-out;
-  animation-iteration-count: infinite;
+  animation-name: snake;
 }

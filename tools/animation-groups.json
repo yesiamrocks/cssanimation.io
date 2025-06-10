@@ -183,19 +183,16 @@
   "Spotlight": [
     "ca__fx-unfoldAndRise",
     "ca__fx-hu__hu__",
-    "ca__fx-sake",
-    "ca__fx-lePeek",
-    "ca__fx-effect3d",
-    "ca__fx-leRainDrop",
+    "ca__fx-peekpeek",
     "ca__fx-pepe",
-    "ca__fx-leWaterWave",
     "ca__fx-lightning",
-    "ca__fx-leJoltZoom",
-    "ca__fx-typing",
+    "ca__fx-joltZoom",
     "ca__fx-electricity",
-    "ca__fx-wipe",
-    "ca__fx-open",
-    "ca__fx-leMagnify",
-    "ca__fx-leBeat"
+    "ca__fx-squishBoing",
+    "ca__fx-jigglypop",
+    "ca__fx-wooble",
+    "ca__fx-waveBand",
+    "ca__fx-effect3d",
+    "ca__fx-sake"
   ]
 }

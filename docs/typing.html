@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS-Only Typing Animation</title>
+        <style>
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    font-family: 'Courier New', Courier, monospace;
+    color: #61dafb;
+    overflow: hidden; /* Hide overflow to prevent scrollbar during animation */
+}
+
+.typing-container {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.typing-text {
+    /* The text itself */
+    white-space: nowrap; /* Keep the text on a single line */
+    overflow: hidden;    /* Hide the overflowing text */
+    border-right: 3px solid; /* The blinking cursor */
+    font-size: 2em;
+    width: 0;            /* Start with zero width */
+    animation:
+        typing 4s steps(5, end) forwards, /* Type out the text */
+        blink-caret .75s step-end infinite; /* Blinking cursor */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% } /* Expand width to reveal text */
+}
+
+/* Keyframes for the blinking cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #61dafb; }
+}
+
+/* Explanation of values: */
+/* typing 4s steps(43, end) forwards */
+/* - 4s: The total duration of the typing animation.
+/* - steps(43, end): This is crucial. 43 is the number of characters in "This is a typing animation using CSS only.".
+/* You need to count the characters (including spaces and punctuation).
+/* 'end' means the animation ends on the last step.
+/* - forwards: The animation will retain the style values from the last keyframe (i.e., width: 100%).
+/*
+/* blink-caret .75s step-end infinite */
+/* - .75s: The duration of one blink cycle.
+/* - step-end: Makes the animation jump instantly to the next state, creating a sharp blink.
+/* - infinite: The cursor will blink forever. */
+  </style>
+    </head>
+    <body>
+
+        <!--
+    data-text = the actual text you want to type
+    --text-length = length of that text (number of characters)
+    --typing-duration = how long the typing animation lasts (e.g. 4s)
+  -->
+        <div
+            class="typing-container"
+            style="--text-length: 5; --typing-duration: 10s;"
+            data-text="Hello">Hello</div>
+
+        <div class="typing-container">
+            <p class="typing-text">hello</p>
+        </div>
+    </body>
+</html>
