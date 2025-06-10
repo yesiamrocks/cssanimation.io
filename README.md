@@ -8,13 +8,13 @@
 
 [![GSAP Support](https://img.shields.io/badge/Also%20Supports-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://github.com/yesiamrocks/gsapanimation)
 
-**cssanimation.io** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **300+ plug-and-play animation classes** (both pure CSS and GSAP-powered!) to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
+**cssanimation.io** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** (both pure CSS and GSAP-powered!) to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
 
-You're in control. Just apply the [class names](./reference/cssanimation-reference.md) where you want them. **Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."**
+You're in control. Just apply the [class names](https://yesiamrocks.github.io/cssanimation.io/cssanimation-demo.html) where you want them. **Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."**
 
 ## Why Developers Love It
 
-- **300+ Pre-built Animations:** Easily add fades, zooms, rotates, bounces, skews, and much more.
+- **Extensive Library of Pre-built Animations:** Easily add fades, zooms, rotates, bounces, skews, and much more.
 - **[GSAP support:](https://github.com/yesiamrocks/gsapanimation)** Integrate powerful animations with GreenSock for advanced control.
 - Text, Element, & Letter Animations: Bring life to individual letters, words, or entire elements.
 - Super Easy to Use: Just add a class and your animation is live. Seriously!
@@ -78,7 +78,7 @@ Once installed, simply add the base`.cssanimation` to your element, along with y
 
 _That's it! You've got a CSS animated element. Super! 🎉_
 
-For list of animation class name [click here](./reference/cssanimation-reference.md).
+For the demo and list of animation class name [click here](https://yesiamrocks.github.io/cssanimation.io/cssanimation-demo.html).
 
 ### Understanding Our Class Prefixes
 
@@ -95,13 +95,12 @@ We use clear prefixes to help you find the right animation or utility class.
 
 > Want to animate text beautifully, responsively, and with zero dependencies (for the core CSS parts)?
 
-`ca-letteranimation.js` is a lightweight, CSS-only enhancement script that brings letter-by-letter, word-by-word, and line-by-line animations to your projects. It's designed to work seamlessly with [cssanimation.io](https://cssanimation.io), for robust and customizable text effects.
+`ca-letteranimation.js` plugin is a lightweight, CSS-only enhancement script that brings **letter-by-letter, word-by-word, and line-by-line** animations to your projects. It's designed to work seamlessly with [cssanimation.io](https://cssanimation.io), for robust and customizable text effects.
 
 ### Key Features
 
 - Highly customizable: Control animations directly with HTML attributes.
-- Animate **Letters**, **Words**, or **Lines**: Independent control for precise effects.
-- Supports **custom css animation classes**
+- Animate **Letters**, **Words**, and **Lines**: Independent control for precise effects.
 - Custom CSS Animation Classes: Use any cssanimation.io class you like.
 - Sequential Animation Logic: Units wait for the previous one to complete.
 - Random & Reverse Effects: Get creative with animation order.
@@ -109,9 +108,9 @@ We use clear prefixes to help you find the right animation or utility class.
 
 ### Letter Animation Installation
 
-If you're already using **cssanimation.io** via NPM, you're all set!
+_If you're already using **cssanimation.io** via NPM, you're all set!_
 
-For plain HTML, include the `ca-letteranimation.js`, script just before your closing `</body>` tag:
+For plain HTML, include the `ca-letteranimation.js`, plugin just before your closing `</body>` tag:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/ca-letteranimation.js"></script>
@@ -227,7 +226,7 @@ This value is used to explicitly set the duration for all units, overriding any 
 
 This means `ca__lt-base-duration` gives you a convenient way to set a project-wide or component-wide default duration without needing to edit CSS.
 
-## 🏷️ Supported Attributes for Text Animations
+## 🏷️ Supported Attributes for Text Animations Plugin
 
 | Attribute              | Description                                                                      |
 | ---------------------- | -------------------------------------------------------------------------------- |
@@ -271,41 +270,27 @@ HTML
 CSS or SCSS
 
 ```CSS
-@import './dist/modules/ca__FadeIn.css';
+@import './dist/modules/ca__fx-fadeIn.css';
 ```
 
 JavaScript (Webpack/Vite/Rollup)
 
 ```js
-import './dist/modules/ca__FadeIn.css';
-```
-
-You can also import everything at once using the index file:
-
-```html
-<link rel="stylesheet" href="./dist/modules/ca__index.css" />
-```
-
-```js
-import './dist/modules/ca__index.css';
+import './dist/modules/ca__fx-fadeIn.css';
 ```
 
 #### Available Modules
 
-Each module is generated from `./dist/cssanimation.css` and follows the naming convention: `ca__[AnimationName].css` (PascalCase). Check out the `./dist/modules/` folder to see them all!
+Each module is generated from `./dist/cssanimation.css` and follows the naming convention: `ca__fx-[animationName].css`. Check out the `./dist/modules/` folder to see them all!
 
-| Module          | File                             |
-| --------------- | -------------------------------- |
-| Blur In         | `./dist/modules/ca__BlurIn.css`  |
-| Blur Out        | `./dist/modules/ca__BlurOut.css` |
-| Bounce          | `./dist/modules/ca__Bounce.css`  |
-| Door Open Close | `./dist/modules/ca__Door.css`    |
-| Dance           | `./dist/modules/ca__Dance.css`   |
-| ...and more     | See `./dist/modules/` folder     |
-
-- Each file is generated from `./dist/modules/cssanimation.css`
-- Follows the naming convention: `ca__[AnimationName].css` (PascalCase)
-- `ca__index.css` imports all animation modules
+| Module      | File                                    |
+| ----------- | --------------------------------------- |
+| Blur In     | `./dist/modules/ca__fx-blurIn.css`      |
+| Blur Out    | `./dist/modules/ca__fx-blurOutLeft.css` |
+| Jello       | `./dist/modules/ca__fx-jello.css`       |
+| Jitter      | `./dist/modules/ca__fx-jitter.css`      |
+| Quiver      | `./dist/modules/ca__fx-quiver.css`      |
+| ...and more | See `./dist/modules/` folder            |
 
 <br>
 
@@ -315,10 +300,10 @@ Each module is generated from `./dist/cssanimation.css` and follows the naming c
 
 This includes:
 
-- `.ca__u-Speed*`: Control animation speed (e.g., `.ca__u-SpeedChill`).
-- `.ca__u-Ease*`: Set easing functions (e.g., `.ca__u-EaseSnappy`).
-- `.ca__u-Loop*`: Define repeat settings (e.g., `.ca__u-LoopTriple`).
-- `.ca__u-Delay*`: Add animation delays (e.g., `.ca__u-Delay3`).
+- `.ca__u-speed*`: Control animation speed (e.g., `.ca__u-speedChill`).
+- `.ca__u-ease*`: Set easing functions (e.g., `.ca__u-easeSnappy`).
+- `.ca__u-loop*`: Define repeat settings (e.g., `.ca__u-loopTriple`).
+- `.ca__u-delay*`: Add animation delays (e.g., `.ca__u-delay3`).
 
 Check out the full list and details in [`cssanimation-utilities.md`](./reference/cssanimation-reference.md#utility-classes-ungrouped).
 
@@ -349,19 +334,19 @@ Looking to go beyond CSS with scroll triggers, advanced sequencing, and even mor
 
 | Feature / Capability | **CSS Version** | **GSAP Version** |
 | --- | --- | --- |
-| 🧱 **Technology** | Pure CSS | JavaScript (GSAP) |
-| ⚡ Performance | Great for simple UI effects | Optimized for complex, smooth animations |
-| 🎛 Control | Fine-grained control via CSS | Fine-grained control via JS (timing, easing) |
-| 🎞 Animation Types | Predefined class-based animations | Class-based with dynamic GSAP tweening |
-| 🔤 Letter Animation Support | ✅ Sequence & Random | ✅ Sequence only (random coming soon) |
-| 🔁 Looping & Repeating | `infinite` class | Full loop control via JS (e.g. `repeat`, `yoyo`) |
-| ⚙️ Configuration | Minimal setup | Script includes + optional JS tweaks |
-| 🎨 Customization | Moderate (via utility classes) | High — control properties on the fly |
-| 📦 Size | Very lightweight (no JS needed) | Heavier due to JS dependency |
-| 🧩 Dependencies | None | Requires GSAP (`TweenMax`) |
-| 🌐 CDN Available? | ✅ Yes | ✅ Yes |
-| 🛠 NPM Ready? | ✅ Yes (`cssanimationio`) | ✅ Yes (`cssanimationio`) |
-| 🧠 Use Case Examples | Hover states, hero sections, banners | Interactive animations, scroll triggers, custom flows |
+| Technology | Pure CSS | JavaScript (GSAP) |
+| Performance | Great for simple UI effects | Optimized for complex, smooth animations |
+| Control | Fine-grained control via CSS | Fine-grained control via JS (timing, easing) |
+| Animation Types | Predefined class-based animations | Class-based with dynamic GSAP tweening |
+| Letter Animation Support | ✅ Sequence & Random | ✅ Sequence only (random coming soon) |
+| Looping & Repeating | `infinite` class | Full loop control via JS (e.g. `repeat`, `yoyo`) |
+| Configuration | Minimal setup | Script includes + optional JS tweaks |
+| Customization | Moderate (via utility classes) | High — control properties on the fly |
+| Size | Very lightweight (no JS needed) | Heavier due to JS dependency |
+| Dependencies | None | Requires GSAP (`TweenMax`) |
+| CDN Available? | ✅ Yes | ✅ Yes |
+| NPM Ready? | ✅ Yes (`cssanimationio`) | ✅ Yes (`cssanimationio`) |
+| Use Case Examples | Hover states, hero sections, banners | Interactive animations, scroll triggers, custom flows |
 
 ## Accessibility: Respecting User Preferences
 
