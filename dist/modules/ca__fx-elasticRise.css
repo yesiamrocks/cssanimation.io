@@ -1,6 +1,6 @@
 /*!
- * Module: bounceFromDown Animation
- * Usage: <div class="cssanimation ca__fx-bounceFromDown">Your Content</div>
+ * Module: elasticRise Animation
+ * Usage: <div class="cssanimation ca__fx-elasticRise">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,39 +37,28 @@
 }
 /* stylelint-enable */
 
-.ca__fx-bounceFromDown {
-  animation-name: bounceFromDown;
+.ca__fx-elasticRise {
+  animation: elasticRise var(--elastic-duration, 1s) ease-out both;
 }
 
-@keyframes bounceFromDown {
-  0%,
-  25%,
-  55%,
-  85%,
+@keyframes elasticRise {
+  0% {
+    transform: scaleY(1) translateY(0);
+  }
+
+  40% {
+    transform: scaleY(0.9) translateY(calc(var(--elastic-height, 1.5rem) * -1.2));
+  }
+
+  60% {
+    transform: scaleY(1.1) translateY(calc(var(--elastic-height, 1.5rem) * 0.3));
+  }
+
+  80% {
+    transform: scaleY(0.95) translateY(calc(var(--elastic-height, 1.5rem) * -0.1));
+  }
+
   100% {
-    animation-timing-function: ease-out;
-    transform: translate3d(0, 0, 0);
+    transform: scaleY(1) translateY(0);
   }
-
-  41%,
-  44% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 80px, 0) scale3d(1, 1.2, 1);
-  }
-
-  70% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 20px, 0);
-  }
-
-  90% {
-    transform: translate3d(0, 4px, 0);
-  }
-}
-/**
- * Module: Bounce Out
- * Filename: ca__BounceOut.css
- */
-.ca__fx-bounceOutTop {
-  animation-name: bounceOutTop;
 }

@@ -1,6 +1,6 @@
 /*!
- * Module: bounceFromDown Animation
- * Usage: <div class="cssanimation ca__fx-bounceFromDown">Your Content</div>
+ * Module: spring Animation
+ * Usage: <div class="cssanimation ca__fx-spring">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,39 +37,17 @@
 }
 /* stylelint-enable */
 
-.ca__fx-bounceFromDown {
-  animation-name: bounceFromDown;
+.ca__fx-spring {
+  animation: spring var(--spring-duration, 0.6s) cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
 }
 
-@keyframes bounceFromDown {
+@keyframes spring {
   0%,
-  25%,
-  55%,
-  85%,
   100% {
-    animation-timing-function: ease-out;
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
   }
 
-  41%,
-  44% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 80px, 0) scale3d(1, 1.2, 1);
+  50% {
+    transform: translateY(calc(var(--spring-height, 1rem) * -1));
   }
-
-  70% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 20px, 0);
-  }
-
-  90% {
-    transform: translate3d(0, 4px, 0);
-  }
-}
-/**
- * Module: Bounce Out
- * Filename: ca__BounceOut.css
- */
-.ca__fx-bounceOutTop {
-  animation-name: bounceOutTop;
 }

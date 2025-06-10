@@ -56,6 +56,6 @@
  * Module: Bounce
  * Filename: ca__Bounce.css
  */
-.ca__fx-bounceFromTop {
-  animation-name: bounceFromTop;
+.ca__fx-bounceX {
+  animation-name: bounceX;
 }

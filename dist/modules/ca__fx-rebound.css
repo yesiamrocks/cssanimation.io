@@ -1,6 +1,6 @@
 /*!
- * Module: bounceFromDown Animation
- * Usage: <div class="cssanimation ca__fx-bounceFromDown">Your Content</div>
+ * Module: rebound Animation
+ * Usage: <div class="cssanimation ca__fx-rebound">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,39 +37,25 @@
 }
 /* stylelint-enable */
 
-.ca__fx-bounceFromDown {
-  animation-name: bounceFromDown;
+.ca__fx-rebound {
+  animation: rebound var(--rebound-duration, 0.7s) ease-in-out infinite;
 }
 
-@keyframes bounceFromDown {
+@keyframes rebound {
   0%,
-  25%,
-  55%,
-  85%,
   100% {
-    animation-timing-function: ease-out;
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
   }
 
-  41%,
-  44% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 80px, 0) scale3d(1, 1.2, 1);
+  20% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * -1));
   }
 
-  70% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 20px, 0);
+  40% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * 0.5));
   }
 
-  90% {
-    transform: translate3d(0, 4px, 0);
+  60% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * -0.3));
   }
-}
-/**
- * Module: Bounce Out
- * Filename: ca__BounceOut.css
- */
-.ca__fx-bounceOutTop {
-  animation-name: bounceOutTop;
 }
