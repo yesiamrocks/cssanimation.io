@@ -1,6 +1,6 @@
 /*!
- * Module: vibration Animation
- * Usage: <div class="cssanimation ca__fx-vibration">Your Content</div>
+ * Module: spring Animation
+ * Usage: <div class="cssanimation ca__fx-spring">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,19 +37,17 @@
 }
 /* stylelint-enable */
 
-.ca__fx-vibration {
-  animation: vibration 0.1s linear infinite;
+.ca__fx-spring {
+  animation: spring var(--spring-duration, 0.6s) cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
 }
 
-@keyframes vibration {
-  50% {
-    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+@keyframes spring {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-}
-/**
- * Module: Shock In
- * Filename: ca__ShockIn.css
- */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
+
+  50% {
+    transform: translateY(calc(var(--spring-height, 1rem) * -1));
+  }
 }

@@ -3,66 +3,6 @@
  * Filename: ca__Bounce.css
  */
 
-.bounceFromTop {
-  animation-name: bounceFromTop;
-}
-
-@keyframes bounceFromTop {
-  0%,
-  25%,
-  55%,
-  85%,
-  100% {
-    animation-timing-function: ease-out;
-    transform: translate3d(0, 0, 0);
-  }
-
-  41%,
-  44% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, -80px, 0) scale3d(1, 1.6, 1);
-  }
-
-  70% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, -20px, 0);
-  }
-
-  90% {
-    transform: translate3d(0, -4px, 0);
-  }
-}
-
-.bounceFromDown {
-  animation-name: bounceFromDown;
-}
-
-@keyframes bounceFromDown {
-  0%,
-  25%,
-  55%,
-  85%,
-  100% {
-    animation-timing-function: ease-out;
-    transform: translate3d(0, 0, 0);
-  }
-
-  41%,
-  44% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 80px, 0) scale3d(1, 1.2, 1);
-  }
-
-  70% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 20px, 0);
-  }
-
-  90% {
-    transform: translate3d(0, 4px, 0);
-  }
-}
-
 .bounceX {
   animation-name: bounceX;
 }
@@ -180,5 +120,210 @@
 
   90% {
     transform: scale(0.9);
+  }
+}
+
+.spring {
+  animation: spring var(--spring-duration, 0.6s) cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+@keyframes spring {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(calc(var(--spring-height, 1rem) * -1));
+  }
+}
+
+.boing {
+  animation: boing var(--boing-duration, 0.9s) cubic-bezier(0.28, 1.5, 0.68, 1) infinite;
+}
+
+@keyframes boing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(calc(var(--boing-height, 1rem) * -1.1));
+  }
+
+  50% {
+    transform: translateY(calc(var(--boing-height, 1rem) * 0.3));
+  }
+
+  70% {
+    transform: translateY(calc(var(--boing-height, 1rem) * -0.5));
+  }
+
+  90% {
+    transform: translateY(calc(var(--boing-height, 1rem) * 0.15));
+  }
+}
+
+.hop {
+  animation: hop var(--hop-duration, 0.5s) ease-out infinite;
+}
+
+@keyframes hop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(calc(var(--hop-height, 0.8rem) * -1));
+  }
+}
+
+.lift {
+  animation: lift var(--lift-duration, 1.2s) ease-in-out infinite;
+}
+
+@keyframes lift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(calc(var(--lift-height, 10px) * -1));
+  }
+}
+
+.popUp {
+  animation: popUp var(--popUp-duration, 0.5s) ease-out both;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.95) translateY(0);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.05) translateY(calc(var(--popUp-height, 8px) * -1));
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(0.98) translateY(calc(var(--popUp-height, 8px) * -0.3));
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.rebound {
+  animation: rebound var(--rebound-duration, 0.7s) ease-in-out infinite;
+}
+
+@keyframes rebound {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * -1));
+  }
+
+  40% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * 0.5));
+  }
+
+  60% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * -0.3));
+  }
+}
+
+.jump {
+  animation: jump var(--jump-duration, 0.6s) ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(calc(var(--jump-height, 1.2rem) * -1));
+  }
+}
+
+.launch {
+  animation: launch var(--launch-duration, 0.8s) ease-out infinite;
+}
+
+@keyframes launch {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(calc(var(--launch-height, 2rem) * -1.2));
+  }
+
+  40% {
+    transform: translateY(calc(var(--launch-height, 2rem) * 0.5));
+  }
+
+  60% {
+    transform: translateY(calc(var(--launch-height, 2rem) * -0.3));
+  }
+
+  80% {
+    transform: translateY(calc(var(--launch-height, 2rem) * 0.15));
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.elasticRise {
+  animation: elasticRise var(--elastic-duration, 1s) ease-out both;
+}
+
+@keyframes elasticRise {
+  0% {
+    transform: scaleY(1) translateY(0);
+  }
+
+  40% {
+    transform: scaleY(0.9) translateY(calc(var(--elastic-height, 1.5rem) * -1.2));
+  }
+
+  60% {
+    transform: scaleY(1.1) translateY(calc(var(--elastic-height, 1.5rem) * 0.3));
+  }
+
+  80% {
+    transform: scaleY(0.95) translateY(calc(var(--elastic-height, 1.5rem) * -0.1));
+  }
+
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+.levitate {
+  animation: levitate var(--levitate-duration, 2s) ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(calc(var(--levitate-height, 0.6rem) * -1));
   }
 }

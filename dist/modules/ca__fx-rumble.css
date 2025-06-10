@@ -46,33 +46,23 @@
   100% {
     transform: translate(0, 0) rotate(0);
   }
+
   10% {
     transform: translate(var(--rumble-intensity, 6px), var(--rumble-intensity, 6px)) rotate(var(--rumble-rotate, 2deg));
   }
+
   30% {
     transform: translate(calc(var(--rumble-intensity, 6px) * -1), var(--rumble-intensity, 6px))
       rotate(calc(var(--rumble-rotate, 2deg) * -1));
   }
+
   50% {
     transform: translate(var(--rumble-intensity, 6px), calc(var(--rumble-intensity, 6px) * -1))
       rotate(var(--rumble-rotate, 2deg));
   }
+
   70% {
     transform: translate(calc(var(--rumble-intensity, 6px) * -1), calc(var(--rumble-intensity, 6px) * -1))
       rotate(calc(var(--rumble-rotate, 2deg) * -1));
   }
-}
-/*------------------------------------------------------------------------------
-  5) Wiggle
-------------------------------------------------------------------------------*/
-/**
- * ca__fx-wiggle
- * a smooth side-to-side rotation
- * vars:
- *   --wiggle-duration (default: 1s)
- *   --wiggle-angle    (default: 4deg)
- */
-.ca__fx-wiggle {
-  transform-origin: center center;
-  animation: wiggle var(--wiggle-duration, 1s) ease-in-out infinite both;
 }

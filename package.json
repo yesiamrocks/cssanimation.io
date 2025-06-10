@@ -1,6 +1,6 @@
 {
   "name": "cssanimationio",
-  "version": "5.2.1",
+  "version": "5.3.0",
   "description": "A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.",
   "main": "index.js",
   "style": "dist/cssanimation.css",

@@ -1,6 +1,6 @@
 /*!
- * Module: vibration Animation
- * Usage: <div class="cssanimation ca__fx-vibration">Your Content</div>
+ * Module: popUp Animation
+ * Usage: <div class="cssanimation ca__fx-popUp">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,19 +37,26 @@
 }
 /* stylelint-enable */
 
-.ca__fx-vibration {
-  animation: vibration 0.1s linear infinite;
+.ca__fx-popUp {
+  animation: popUp var(--popUp-duration, 0.5s) ease-out both;
 }
 
-@keyframes vibration {
-  50% {
-    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+@keyframes popUp {
+  0% {
+    transform: scale(0.95) translateY(0);
+    opacity: 0;
   }
-}
-/**
- * Module: Shock In
- * Filename: ca__ShockIn.css
- */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
+
+  60% {
+    transform: scale(1.05) translateY(calc(var(--popUp-height, 8px) * -1));
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(0.98) translateY(calc(var(--popUp-height, 8px) * -0.3));
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+  }
 }

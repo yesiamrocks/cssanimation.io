@@ -89,9 +89,11 @@
 - `ca__fx-blurInTop`
 - `ca__fx-blurOut`
 - `ca__fx-blurOutTop`
+- `ca__fx-boing`
 - `ca__fx-bounceFromDown`
 - `ca__fx-bounceInFromBottom`
 - `ca__fx-buzz`
+- `ca__fx-elasticRise`
 - `ca__fx-flipOutLeft`
 - `ca__fx-flipOutRight`
 - `ca__fx-flipOutXLeft`
@@ -100,13 +102,18 @@
 - `ca__fx-flyInTop`
 - `ca__fx-flyOutBottom`
 - `ca__fx-flyOutTop`
+- `ca__fx-hop`
 - `ca__fx-jello`
 - `ca__fx-jiggle`
 - `ca__fx-jigglypop`
 - `ca__fx-jitter`
 - `ca__fx-joltZoom`
+- `ca__fx-jump`
 - `ca__fx-kickOutBehind`
 - `ca__fx-kickOutFront`
+- `ca__fx-launch`
+- `ca__fx-levitate`
+- `ca__fx-lift`
 - `ca__fx-lightning`
 - `ca__fx-madMax`
 - `ca__fx-moveFromBottom`
@@ -121,6 +128,7 @@
 - `ca__fx-pepe`
 - `ca__fx-perspectiveToBottom`
 - `ca__fx-perspectiveToTop`
+- `ca__fx-popUp`
 - `ca__fx-pullRelease`
 - `ca__fx-pulseShake`
 - `ca__fx-pushRelease`
@@ -137,6 +145,7 @@
 - `ca__fx-quietMad`
 - `ca__fx-quiver`
 - `ca__fx-rattle`
+- `ca__fx-rebound`
 - `ca__fx-rollFromBottom`
 - `ca__fx-rollFromLeft`
 - `ca__fx-rollFromRight`
@@ -181,6 +190,7 @@
 - `ca__fx-spinToLeft`
 - `ca__fx-spinToRight`
 - `ca__fx-spinToTop`
+- `ca__fx-spring`
 - `ca__fx-squishBoing`
 - `ca__fx-swing`
 - `ca__fx-swingInBottom`

@@ -46,25 +46,14 @@
   100% {
     transform: translateX(0);
   }
+
   20%,
   60% {
     transform: translateX(var(--rattle-intensity, 3px));
   }
+
   40%,
   80% {
     transform: translateX(calc(var(--rattle-intensity, 3px) * -1));
   }
-}
-/*------------------------------------------------------------------------------
-  7) Buzz
-------------------------------------------------------------------------------*/
-/**
- * ca__fx-buzz
- * a very rapid, tiny vibration
- * vars:
- *   --buzz-duration    (default: 0.1s)
- *   --buzz-intensity   (default: 1px)
- */
-.ca__fx-buzz {
-  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
 }

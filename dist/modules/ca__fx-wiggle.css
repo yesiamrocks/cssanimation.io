@@ -47,26 +47,16 @@
   100% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(var(--wiggle-angle, 4deg));
   }
+
   50% {
     transform: rotate(calc(var(--wiggle-angle, 4deg) * -1));
   }
+
   75% {
     transform: rotate(var(--wiggle-angle, 4deg));
   }
-}
-/*------------------------------------------------------------------------------
-  6) Rattle
-------------------------------------------------------------------------------*/
-/**
- * ca__fx-rattle
- * a fast, jittery shake
- * vars:
- *   --rattle-duration  (default: 0.2s)
- *   --rattle-intensity (default: 3px)
- */
-.ca__fx-rattle {
-  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
 }

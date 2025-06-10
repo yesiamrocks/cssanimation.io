@@ -1,6 +1,6 @@
 /*!
- * Module: vibration Animation
- * Usage: <div class="cssanimation ca__fx-vibration">Your Content</div>
+ * Module: hop Animation
+ * Usage: <div class="cssanimation ca__fx-hop">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,19 +37,17 @@
 }
 /* stylelint-enable */
 
-.ca__fx-vibration {
-  animation: vibration 0.1s linear infinite;
+.ca__fx-hop {
+  animation: hop var(--hop-duration, 0.5s) ease-out infinite;
 }
 
-@keyframes vibration {
-  50% {
-    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+@keyframes hop {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-}
-/**
- * Module: Shock In
- * Filename: ca__ShockIn.css
- */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
+
+  40% {
+    transform: translateY(calc(var(--hop-height, 0.8rem) * -1));
+  }
 }

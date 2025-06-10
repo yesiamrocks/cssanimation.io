@@ -1,6 +1,6 @@
 /*!
- * Module: vibration Animation
- * Usage: <div class="cssanimation ca__fx-vibration">Your Content</div>
+ * Module: levitate Animation
+ * Usage: <div class="cssanimation ca__fx-levitate">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,19 +37,24 @@
 }
 /* stylelint-enable */
 
-.ca__fx-vibration {
-  animation: vibration 0.1s linear infinite;
+.ca__fx-levitate {
+  animation: levitate var(--levitate-duration, 2s) ease-in-out infinite;
 }
 
-@keyframes vibration {
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
   50% {
-    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+    transform: translateY(calc(var(--levitate-height, 0.6rem) * -1));
   }
 }
 /**
- * Module: Shock In
- * Filename: ca__ShockIn.css
+ * Module: Bounce In
+ * Filename: ca__BounceIn.css
  */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
+.ca__fx-bounceInTop {
+  animation-name: bounceInTop;
 }

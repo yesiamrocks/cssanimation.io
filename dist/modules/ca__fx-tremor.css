@@ -46,30 +46,20 @@
   100% {
     transform: translate(0, 0);
   }
+
   20% {
     transform: translate(var(--tremor-intensity, 4px), var(--tremor-intensity, 4px));
   }
+
   40% {
     transform: translate(calc(var(--tremor-intensity, 4px) * -1), var(--tremor-intensity, 4px));
   }
+
   60% {
     transform: translate(var(--tremor-intensity, 4px), calc(var(--tremor-intensity, 4px) * -1));
   }
+
   80% {
     transform: translate(calc(var(--tremor-intensity, 4px) * -1), calc(var(--tremor-intensity, 4px) * -1));
   }
-}
-/*------------------------------------------------------------------------------
-  4) Rumble
-------------------------------------------------------------------------------*/
-/**
- * ca__fx-rumble
- * a quick, heavier shake with slight rotation
- * vars:
- *   --rumble-duration  (default: 0.4s)
- *   --rumble-intensity (default: 6px)
- *   --rumble-rotate    (default: 2deg)
- */
-.ca__fx-rumble {
-  animation: rumble var(--rumble-duration, 0.4s) infinite ease-in-out both;
 }

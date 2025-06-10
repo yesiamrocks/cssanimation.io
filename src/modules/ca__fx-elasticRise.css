@@ -1,6 +1,6 @@
 /*!
- * Module: vibration Animation
- * Usage: <div class="cssanimation ca__fx-vibration">Your Content</div>
+ * Module: elasticRise Animation
+ * Usage: <div class="cssanimation ca__fx-elasticRise">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,19 +37,28 @@
 }
 /* stylelint-enable */
 
-.ca__fx-vibration {
-  animation: vibration 0.1s linear infinite;
+.ca__fx-elasticRise {
+  animation: elasticRise var(--elastic-duration, 1s) ease-out both;
 }
 
-@keyframes vibration {
-  50% {
-    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+@keyframes elasticRise {
+  0% {
+    transform: scaleY(1) translateY(0);
   }
-}
-/**
- * Module: Shock In
- * Filename: ca__ShockIn.css
- */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
+
+  40% {
+    transform: scaleY(0.9) translateY(calc(var(--elastic-height, 1.5rem) * -1.2));
+  }
+
+  60% {
+    transform: scaleY(1.1) translateY(calc(var(--elastic-height, 1.5rem) * 0.3));
+  }
+
+  80% {
+    transform: scaleY(0.95) translateY(calc(var(--elastic-height, 1.5rem) * -0.1));
+  }
+
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
 }

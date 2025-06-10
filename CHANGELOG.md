@@ -1,4 +1,23 @@
-# 5.2.1
+## [5.3.0] – 2025-06-10
+
+### Added
+
+🎯 **Bounce Animation Suite** — 10 new motion effects inspired by natural movement, UI interaction, and playful energy:
+
+- `ca__fx-spring` — quick springy bounce with snappy return
+- `ca__fx-boing` — exaggerated cartoon-style bounce
+- `ca__fx-hop` — fast and light hop
+- `ca__fx-lift` — elegant upward float and return
+- `ca__fx-popUp` — subtle UI-style pop (great for buttons, tooltips)
+- `ca__fx-rebound` — bounce + recoil like a soft collision
+- `ca__fx-jump` — straight vertical jump motion
+- `ca__fx-launch` — powerful upward launch with overshoot
+- `ca__fx-elasticRise` — squishy bounce using vertical scaling
+- `ca__fx-levitate` — smooth infinite hovering/levitation
+
+> All animations are pure CSS and support timing/intensity overrides via CSS variables for easy theming and control.
+
+## 5.2.1
 
 ## Added
 
@@ -13,7 +32,7 @@
 
 > All effects use pure CSS with customizable `--duration` and `--intensity` variables for full control.
 
-# 5.1.1
+## 5.1.1
 
 ### Fixes
 

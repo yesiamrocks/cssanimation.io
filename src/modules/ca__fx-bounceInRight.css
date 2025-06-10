@@ -58,10 +58,3 @@
     transform: translate3d(-8px, 0, 0);
   }
 }
-/**
- * Module: Bounce Out
- * Filename: ca__BounceOut.css
- */
-.ca__fx-bounceOutTop {
-  animation-name: bounceOutTop;
-}
