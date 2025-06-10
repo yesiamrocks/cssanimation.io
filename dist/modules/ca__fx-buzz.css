@@ -1,6 +1,6 @@
 /*!
- * Module: vibration Animation
- * Usage: <div class="cssanimation ca__fx-vibration">Your Content</div>
+ * Module: buzz Animation
+ * Usage: <div class="cssanimation ca__fx-buzz">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,19 +37,22 @@
 }
 /* stylelint-enable */
 
-.ca__fx-vibration {
-  animation: vibration 0.1s linear infinite;
+.ca__fx-buzz {
+  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
 }
 
-@keyframes vibration {
-  50% {
-    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+@keyframes buzz {
+  0%,
+  100% {
+    transform: translate(0, 0);
   }
-}
-/**
- * Module: Shock In
- * Filename: ca__ShockIn.css
- */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
+  25% {
+    transform: translate(var(--buzz-intensity, 1px), var(--buzz-intensity, 1px));
+  }
+  50% {
+    transform: translate(calc(var(--buzz-intensity, 1px) * -1), var(--buzz-intensity, 1px));
+  }
+  75% {
+    transform: translate(var(--buzz-intensity, 1px), calc(var(--buzz-intensity, 1px) * -1));
+  }
 }

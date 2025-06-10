@@ -46,20 +46,29 @@
   100% {
     transform: translateX(0) rotate(0);
   }
-
   20% {
     transform: translateX(var(--jiggle-intensity, 2px)) rotate(var(--jiggle-rotate, 1deg));
   }
-
   40% {
     transform: translateX(calc(var(--jiggle-intensity, 2px) * -1)) rotate(calc(var(--jiggle-rotate, 1deg) * -1));
   }
-
   60% {
     transform: translateX(calc(var(--jiggle-intensity, 2px) * 0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * 0.5));
   }
-
   80% {
     transform: translateX(calc(var(--jiggle-intensity, 2px) * -0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * -0.5));
   }
+}
+/*------------------------------------------------------------------------------
+  2) Quiver
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-quiver
+ * a very subtle trembling effect
+ * vars:
+ *   --quiver-duration  (default: 0.3s)
+ *   --quiver-intensity (default: 1px)
+ */
+.ca__fx-quiver {
+  animation: quiver var(--quiver-duration, 0.3s) infinite ease-in-out both;
 }

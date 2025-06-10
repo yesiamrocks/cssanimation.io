@@ -227,3 +227,60 @@
     transform: translate(0, 0);
   }
 }
+
+.electricity {
+  animation-name: electricity;
+  animation-iteration-count: infinite;
+}
+
+@keyframes electricity {
+  0%,
+  37%,
+  67%,
+  85%,
+  93% {
+    transform: translateY(30px);
+  }
+
+  4%,
+  64%,
+  88% {
+    transform: translateY(10px);
+  }
+
+  8%,
+  24%,
+  32%,
+  44% {
+    transform: translateY(5px);
+  }
+
+  12%,
+  52%,
+  60%,
+  20% {
+    transform: translateY(10px);
+  }
+
+  16%,
+  40% {
+    transform: translateY(5px);
+  }
+
+  28%,
+  56% {
+    transform: translateY(10px);
+  }
+
+  48%,
+  72%,
+  80%,
+  96% {
+    transform: translateY(30px);
+  }
+
+  76%,
+  100% {
+    transform: translateY(40px);
+  }
+}

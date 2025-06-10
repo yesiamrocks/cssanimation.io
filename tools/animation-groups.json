@@ -157,6 +157,7 @@
     "ca__fx-rotateYOut"
   ],
   "Shock & Swing": [
+    "ca__fx-swing",
     "ca__fx-shockZoom",
     "ca__fx-shockInLeft",
     "ca__fx-shockInRight",
@@ -182,12 +183,13 @@
   ],
   "Spotlight": [
     "ca__fx-unfoldAndRise",
+    "ca__fx-jello",
+    "ca__fx-effect3d",
     "ca__fx-hu__hu__",
     "ca__fx-peekpeek",
     "ca__fx-pepe",
     "ca__fx-lightning",
     "ca__fx-joltZoom",
-    "ca__fx-electricity",
     "ca__fx-squishBoing",
     "ca__fx-jigglypop",
     "ca__fx-wooble",
@@ -203,6 +205,7 @@
     "ca__fx-rumble",
     "ca__fx-wiggle",
     "ca__fx-rattle",
+    "ca__fx-electricity",
     "ca__fx-buzz"
   ]
 }

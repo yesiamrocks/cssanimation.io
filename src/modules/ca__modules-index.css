@@ -118,7 +118,6 @@
 @import url('./ca__fx-coolVerticalShake.css');
 @import url('./ca__fx-quietMad.css');
 @import url('./ca__fx-vibration.css');
-@import url('./ca__fx-jitter.css');
 @import url('./ca__fx-shockZoom.css');
 @import url('./ca__fx-shockInLeft.css');
 @import url('./ca__fx-shockInRight.css');
@@ -146,7 +145,6 @@
 @import url('./ca__fx-pepe.css');
 @import url('./ca__fx-lightning.css');
 @import url('./ca__fx-joltZoom.css');
-@import url('./ca__fx-electricity.css');
 @import url('./ca__fx-squishBoing.css');
 @import url('./ca__fx-jigglypop.css');
 @import url('./ca__fx-wooble.css');
@@ -175,6 +173,8 @@
 @import url('./ca__fx-wiggle.css');
 @import url('./ca__fx-rattle.css');
 @import url('./ca__fx-buzz.css');
+@import url('./ca__fx-jitter.css');
+@import url('./ca__fx-electricity.css');
 @import url('./ca__fx-leMovingBackFromRight.css');
 @import url('./ca__fx-leMovingBackFromLeft.css');
 @import url('./ca__fx-snake.css');

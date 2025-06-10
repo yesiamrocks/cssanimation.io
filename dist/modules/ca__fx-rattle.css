@@ -1,6 +1,6 @@
 /*!
- * Module: vibration Animation
- * Usage: <div class="cssanimation ca__fx-vibration">Your Content</div>
+ * Module: rattle Animation
+ * Usage: <div class="cssanimation ca__fx-rattle">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,19 +37,34 @@
 }
 /* stylelint-enable */
 
-.ca__fx-vibration {
-  animation: vibration 0.1s linear infinite;
+.ca__fx-rattle {
+  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
 }
 
-@keyframes vibration {
-  50% {
-    transform: skewY(1deg) skewX(-1deg) scale(1.06);
+@keyframes rattle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(var(--rattle-intensity, 3px));
+  }
+  40%,
+  80% {
+    transform: translateX(calc(var(--rattle-intensity, 3px) * -1));
   }
 }
+/*------------------------------------------------------------------------------
+  7) Buzz
+------------------------------------------------------------------------------*/
 /**
- * Module: Shock In
- * Filename: ca__ShockIn.css
+ * ca__fx-buzz
+ * a very rapid, tiny vibration
+ * vars:
+ *   --buzz-duration    (default: 0.1s)
+ *   --buzz-intensity   (default: 1px)
  */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
+.ca__fx-buzz {
+  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
 }

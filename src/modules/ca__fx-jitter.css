@@ -86,10 +86,3 @@
     transform: translate(0, 0);
   }
 }
-/**
- * Module: Shock In
- * Filename: ca__ShockIn.css
- */
-.ca__fx-shockZoom {
-  animation-name: shockZoom;
-}

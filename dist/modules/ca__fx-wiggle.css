@@ -1,6 +1,6 @@
 /*!
- * Module: rattle Animation
- * Usage: <div class="cssanimation ca__fx-rattle">Your Content</div>
+ * Module: wiggle Animation
+ * Usage: <div class="cssanimation ca__fx-wiggle">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,23 +37,36 @@
 }
 /* stylelint-enable */
 
-.ca__fx-rattle {
-  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
+.ca__fx-wiggle {
+  transform-origin: center center;
+  animation: wiggle var(--wiggle-duration, 1s) ease-in-out infinite both;
 }
 
-@keyframes rattle {
+@keyframes wiggle {
   0%,
   100% {
-    transform: translateX(0);
+    transform: rotate(0deg);
   }
-
-  20%,
-  60% {
-    transform: translateX(var(--rattle-intensity, 3px));
+  25% {
+    transform: rotate(var(--wiggle-angle, 4deg));
   }
-
-  40%,
-  80% {
-    transform: translateX(calc(var(--rattle-intensity, 3px) * -1));
+  50% {
+    transform: rotate(calc(var(--wiggle-angle, 4deg) * -1));
   }
+  75% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+}
+/*------------------------------------------------------------------------------
+  6) Rattle
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-rattle
+ * a fast, jittery shake
+ * vars:
+ *   --rattle-duration  (default: 0.2s)
+ *   --rattle-intensity (default: 3px)
+ */
+.ca__fx-rattle {
+  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
 }

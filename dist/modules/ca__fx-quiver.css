@@ -1,6 +1,6 @@
 /*!
- * Module: rumble Animation
- * Usage: <div class="cssanimation ca__fx-rumble">Your Content</div>
+ * Module: quiver Animation
+ * Usage: <div class="cssanimation ca__fx-quiver">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,32 +37,35 @@
 }
 /* stylelint-enable */
 
-.ca__fx-rumble {
-  animation: rumble var(--rumble-duration, 0.4s) infinite ease-in-out both;
+.ca__fx-quiver {
+  animation: quiver var(--quiver-duration, 0.3s) infinite ease-in-out both;
 }
 
-@keyframes rumble {
+@keyframes quiver {
   0%,
   100% {
-    transform: translate(0, 0) rotate(0);
+    transform: translate(0, 0);
   }
-
-  10% {
-    transform: translate(var(--rumble-intensity, 6px), var(--rumble-intensity, 6px)) rotate(var(--rumble-rotate, 2deg));
+  25% {
+    transform: translate(var(--quiver-intensity, 1px), 0);
   }
-
-  30% {
-    transform: translate(calc(var(--rumble-intensity, 6px) * -1), var(--rumble-intensity, 6px))
-      rotate(calc(var(--rumble-rotate, 2deg) * -1));
-  }
-
   50% {
-    transform: translate(var(--rumble-intensity, 6px), calc(var(--rumble-intensity, 6px) * -1))
-      rotate(var(--rumble-rotate, 2deg));
+    transform: translate(0, var(--quiver-intensity, 1px));
   }
-
-  70% {
-    transform: translate(calc(var(--rumble-intensity, 6px) * -1), calc(var(--rumble-intensity, 6px) * -1))
-      rotate(calc(var(--rumble-rotate, 2deg) * -1));
+  75% {
+    transform: translate(calc(var(--quiver-intensity, 1px) * -1), 0);
   }
+}
+/*------------------------------------------------------------------------------
+  3) Tremor
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-tremor
+ * a slower, more pronounced shake
+ * vars:
+ *   --tremor-duration  (default: 0.6s)
+ *   --tremor-intensity (default: 4px)
+ */
+.ca__fx-tremor {
+  animation: tremor var(--tremor-duration, 0.6s) infinite ease-in-out both;
 }

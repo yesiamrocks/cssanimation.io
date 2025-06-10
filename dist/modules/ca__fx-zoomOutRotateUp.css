@@ -55,3 +55,17 @@
     opacity: 0;
   }
 }
+/*------------------------------------------------------------------------------
+  1) Jiggle
+------------------------------------------------------------------------------*/
+/**
+ * ca__fx-jiggle
+ * a playful back-and-forth shake with rotation
+ * vars:
+ *   --jiggle-duration (default: 0.8s)
+ *   --jiggle-intensity (default: 2px)
+ *   --jiggle-rotate    (default: 1deg)
+ */
+.ca__fx-jiggle {
+  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
+}

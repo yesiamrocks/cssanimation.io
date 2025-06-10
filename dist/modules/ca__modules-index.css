@@ -168,6 +168,13 @@
 @import url('./ca__fx-zoomOutTop.css');
 @import url('./ca__fx-zoomOutBottom.css');
 @import url('./ca__fx-zoomOutRotateUp.css');
+@import url('./ca__fx-jiggle.css');
+@import url('./ca__fx-quiver.css');
+@import url('./ca__fx-tremor.css');
+@import url('./ca__fx-rumble.css');
+@import url('./ca__fx-wiggle.css');
+@import url('./ca__fx-rattle.css');
+@import url('./ca__fx-buzz.css');
 @import url('./ca__fx-leMovingBackFromRight.css');
 @import url('./ca__fx-leMovingBackFromLeft.css');
 @import url('./ca__fx-snake.css');
