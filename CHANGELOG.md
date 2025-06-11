@@ -1,3 +1,49 @@
+## [v5.5.0] - 2025-06-11
+
+### New Features
+
+- **Live Preview Support**  
+  Introduced the ability to dynamically reapply `caLetterAnimation(el)` on elements. This enables live animation previews when DOM or attribute values change, perfect for visual editors or dev playgrounds.
+
+- **Runtime Reinitialization**  
+  `caLetterAnimation` can now safely be re-invoked on the same element. All animation units (letters, words, lines) are recalculated and replayed based on current attributes.
+
+- **Dynamic Attribute Parsing**  
+  Automatically parses and updates:
+
+  - `ca__lt-sequence`
+  - `ca__lt-random`
+  - `ca__lt-reverse`
+  - `ca__lt-word`
+  - `ca__lt-line`
+
+- **`ca__lt-separator Support`**  
+  When `ca__lt-line` is used, users can now add `ca__lt-separator="dot"` to animate lines split by `.` instead of `<br>` or `\n`.
+
+- **Multi-Class + Delay Handling**  
+  Accepts multiple space-separated animation classes (e.g., `ca__fx-FadeIn ca__fx-BounceIn`) and delay sequences (`100 200 300`) mapped across units.
+
+- **Global Duration Control**  
+  Full support for `ca__lt-base-duration` allows global timing override (in milliseconds), improving consistency across animations.
+
+
+### Improvements
+
+- Safer attribute parsing and fallback logic to prevent JS errors.
+- Improved compatibility with design tools and runtime environments.
+- Modularized internal logic for future extensibility.
+
+
+### Developer Notes
+
+This release powers use cases like:
+
+- UI animation playgrounds
+- Visual text preview builders
+- Runtime-reactive design systems
+
+It works seamlessly in both static and JS-driven environments, with no dependencies beyond the base CSS.
+
 ## [5.4.0] - 2025-06-11
 
 ### Added
