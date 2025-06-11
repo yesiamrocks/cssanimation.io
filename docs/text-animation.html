@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSAnimation Text Preview Generator</title>
+        <link rel="stylesheet" href="./dist/cssanimation.css">
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .control-group {
+            margin-bottom: 15px;
+        }
+        /* Style for fieldset/legend to look like previous label */
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        legend {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+            padding: 0; /* Remove default legend padding */
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        /* Specific labels for radio buttons to be inline */
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .preview-area {
+            text-align: center;
+            border: 2px dashed #ccc;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .preview-area #previewText {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            overflow-wrap: break-word;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #separatorOptions {
+            display: none;
+        }
+        /* Your inline CSS animations */
+        .cssanimation {
+            display: inline-block;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .cssanimation span {
+            display: inline-block;
+        }
+
+        .ca__fx-blurIn {
+            animation-name: blurIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes blurIn {
+            from {
+                filter: blur(20px);
+                opacity: 0;
+            }
+            to {
+                filter: blur(0);
+                opacity: 1;
+            }
+        }
+
+        .ca__fx-blurOut {
+            animation-name: blurOut;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes blurOut {
+            0% {
+                opacity: 1;
+                filter: blur(0px);
+            }
+            100% {
+                opacity: 0;
+                filter: blur(20px);
+            }
+        }
+
+        .ca__fx-blurOutLeft {
+            animation-name: blurOutLeft;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes blurOutLeft {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+                filter: blur(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(-50px);
+                filter: blur(10px);
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>CSSAnimation Text Preview Generator</h1>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="demoText">Demo Text:</label>
+                    <textarea
+                        id="demoText">CSSAnimation Letters Animate</textarea>
+                </div>
+
+                <div class="control-group">
+                    <fieldset>
+                        <legend>Animation Type:</legend>
+                        <div class="checkbox-group">
+                            <input type="radio" id="lt-sequence"
+                                name="animationType" value="ca__lt-sequence"
+                                checked>
+                            <label for="lt-sequence">Letter Sequence</label><br>
+                            <input type="radio" id="lt-random"
+                                name="animationType" value="ca__lt-random">
+                            <label for="lt-random">Letter Random</label><br>
+                            <input type="radio" id="lt-reverse"
+                                name="animationType" value="ca__lt-reverse">
+                            <label for="lt-reverse">Letter Reverse</label><br>
+                            <input type="radio" id="lt-word"
+                                name="animationType" value="ca__lt-word">
+                            <label for="lt-word">Word-by-Word</label><br>
+                            <input type="radio" id="lt-line"
+                                name="animationType" value="ca__lt-line">
+                            <label for="lt-line">Line-by-Line</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="control-group">
+                    <label for="animationClasses">Animation Classes (Ctrl/Cmd
+                        click for multiple):</label>
+                    <select id="animationClasses" multiple size="5">
+                    </select>
+                    <small>Hold Ctrl/Cmd to select multiple.</small>
+                </div>
+
+                <div class="control-group">
+                    <label for="delay">Delay (ms, space-separated):</label>
+                    <input type="text" id="delay" value="0">
+                </div>
+
+                <div class="control-group">
+                    <label for="baseDuration">Base Duration (ms):</label>
+                    <input type="text" id="baseDuration" value>
+                </div>
+
+                <div class="control-group" id="separatorOptions">
+                    <label for="separator">Line Separator:</label>
+                    <select id="separator">
+                        <option value>Default (br/newline)</option>
+                        <option value="dot">Dot (.)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="applyAnimation">Apply & Replay Animation</button>
+
+            <div class="preview-area">
+                <h1 id="previewText" class="cssanimation">CSSAnimation Letters
+                    Animate</h1>
+            </div>
+        </div>
+
+        <script src="./dist/ca-letteranimation.js"></script>
+
+        <script type="module">
+        import { animationClasses } from './animationClasses.js'; // Adjust path if needed
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const previewTextElement = document.getElementById('previewText'); // Now can be const
+            const previewArea = previewTextElement.parentNode; // Get the parent for initial placement
+
+            const demoTextarea = document.getElementById('demoText');
+            const animationTypeRadios = document.querySelectorAll('input[name="animationType"]');
+            const animationClassesSelect = document.getElementById('animationClasses');
+            const delayInput = document.getElementById('delay');
+            const baseDurationInput = document.getElementById('baseDuration');
+            const separatorOptionsDiv = document.getElementById('separatorOptions');
+            const separatorSelect = document.getElementById('separator');
+            const applyAnimationButton = document.getElementById('applyAnimation');
+
+            function populateAnimationClassesDropdown() {
+                animationClassesSelect.innerHTML = '';
+                animationClasses.forEach(cls => {
+                    const option = document.createElement('option');
+                    option.value = cls;
+                    option.textContent = cls;
+                    animationClassesSelect.appendChild(option);
+                });
+
+                const defaultOption = Array.from(animationClassesSelect.options).find(opt => opt.value === 'ca__fx-FadeIn');
+                if (defaultOption) {
+                    defaultOption.selected = true;
+                } else if (animationClassesSelect.options.length > 0) {
+                    animationClassesSelect.options[0].selected = true;
+                }
+            }
+            
+            function ensureCssanimationBaseStyles() {
+                const styleEl = document.getElementById('ca-base-styles');
+                if (!styleEl) {
+                    const newStyleEl = document.createElement('style');
+                    newStyleEl.id = 'ca-base-styles';
+                    newStyleEl.textContent = `
+                        .cssanimation span {
+                            animation-duration: var(--cssanimation-duration, 1s);
+                            animation-fill-mode: var(--cssanimation-fill-mode, both);
+                            display: var(--cssanimation-display, inline-block);
+                        }
+                    `;
+                    document.head.appendChild(newStyleEl);
+                }
+            }
+
+
+            function updatePreview() {
+                console.log('--- updatePreview called ---');
+
+                let selectedAnimationType = ''; // This will be one of 'ca__lt-sequence', 'ca__lt-word', etc.
+                animationTypeRadios.forEach(radio => {
+                    if (radio.checked) {
+                        selectedAnimationType = radio.value;
+                    }
+                });
+                console.log('Selected Animation Type:', selectedAnimationType);
+
+                const selectedAnimationClasses = Array.from(animationClassesSelect.selectedOptions)
+                                                     .map(option => option.value)
+                                                     .join(' ');
+                console.log('Animation Classes for attribute:', selectedAnimationClasses);
+
+
+                const delayValue = delayInput.value.trim();
+                const baseDurationValue = baseDurationInput.value.trim();
+                const separatorValue = separatorSelect.value.trim();
+
+                console.log('Delay:', delayValue, 'Duration:', baseDurationValue, 'Separator:', separatorValue);
+
+                const newTextContent = demoTextarea.value;
+
+
+                // --- APPLY ATTRIBUTES AND REINIT DIRECTLY ---
+                // We are no longer removing and re-adding the element here.
+                // Instead, we trust the reinit function in ca-letteranimation.js
+                // to handle clearing existing spans and re-applying.
+
+                // Clear all existing ca__lt-* attributes
+                const attributesToRemove = [
+                    'ca__lt-sequence', 'ca__lt-random', 'ca__lt-reverse',
+                    'ca__lt-word', 'ca__lt-line', 'ca__lt-delay',
+                    'ca__lt-base-duration', 'ca__lt-separator'
+                ];
+                attributesToRemove.forEach(attr => previewTextElement.removeAttribute(attr));
+                console.log('Cleared existing ca__lt attributes on previewTextElement.');
+
+                // Set the selected animation type attribute
+                if (selectedAnimationType && selectedAnimationClasses) {
+                    previewTextElement.setAttribute(selectedAnimationType, selectedAnimationClasses);
+                    console.log(`Set animation type attribute: ${selectedAnimationType} = "${selectedAnimationClasses}"`);
+                }
+
+                // Apply other attributes (delay, duration, separator)
+                if (delayValue) {
+                    previewTextElement.setAttribute('ca__lt-delay', delayValue);
+                    console.log(`Set attribute: ca__lt-delay = "${delayValue}"`);
+                } else {
+                    previewTextElement.removeAttribute('ca__lt-delay'); // Explicitly remove if empty
+                }
+
+                if (baseDurationValue) {
+                    previewTextElement.setAttribute('ca__lt-base-duration', baseDurationValue);
+                    console.log(`Set attribute: ca__lt-base-duration = "${baseDurationValue}"`);
+                } else {
+                    previewTextElement.removeAttribute('ca__lt-base-duration'); // Explicitly remove if empty
+                }
+
+                if (selectedAnimationType === 'ca__lt-line' && separatorValue) { // Only apply separator if line animation
+                    previewTextElement.setAttribute('ca__lt-separator', separatorValue);
+                    console.log(`Set attribute: ca__lt-separator = "${separatorValue}"`);
+                } else {
+                    previewTextElement.removeAttribute('ca__lt-separator'); // Explicitly remove if empty or not line animation
+                }
+
+                // IMPORTANT: Update the _originalTextContent property with the latest text from the textarea
+                previewTextElement._originalTextContent = newTextContent;
+                console.log('Updated _originalTextContent on previewTextElement:', previewTextElement._originalTextContent);
+
+
+                // --- CRITICAL STEP: Call the library's exposed reinit function for THIS element ---
+                if (window.CSSAnimationLetter && typeof window.CSSAnimationLetter.reinit === 'function') {
+                    console.log('Calling window.CSSAnimationLetter.reinit() for previewTextElement.');
+                    window.CSSAnimationLetter.reinit(previewTextElement); // Pass the specific element
+                } else {
+                    console.warn('window.CSSAnimationLetter.reinit is not available or not a function. Animation may not re-trigger.');
+                    // Fallback to class toggling, but less reliable
+                    previewTextElement.classList.remove('cssanimation');
+                    void previewTextElement.offsetWidth;
+                    previewTextElement.classList.add('cssanimation');
+                }
+
+                console.log('Re-animation trigger attempt complete.');
+            }
+
+            // --- Event Listeners ---
+            demoTextarea.addEventListener('input', updatePreview);
+
+            animationTypeRadios.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    if (radio.value === 'ca__lt-line') {
+                        separatorOptionsDiv.style.display = 'block';
+                    } else {
+                        separatorOptionsDiv.style.display = 'none';
+                        separatorSelect.value = '';
+                    }
+                    updatePreview();
+                });
+            });
+
+            animationClassesSelect.addEventListener('change', updatePreview);
+            delayInput.addEventListener('input', updatePreview);
+            baseDurationInput.addEventListener('input', updatePreview);
+            separatorSelect.addEventListener('change', updatePreview);
+            applyAnimationButton.addEventListener('click', updatePreview);
+
+            // --- Initial Setup ---
+            populateAnimationClassesDropdown();
+            ensureCssanimationBaseStyles();
+            updatePreview(); // Initial call to set up and play the first animation
+        });
+        </script>
+    </body>
+</html>

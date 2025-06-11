@@ -49,6 +49,7 @@
     "generate:demo": "node tools/generate-animation-demo.js",
     "generate:animation-preview": "node tools/generate-animation-preview.js",
     "export:modules": "node tools/export-modules.js",
+    "prebuild": "node tools/generate-classes.js",
     "start": "postcss src/*.css -d dist/ --watch"
   },
   "devDependencies": {
