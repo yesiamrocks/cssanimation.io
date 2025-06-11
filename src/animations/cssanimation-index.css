@@ -8,6 +8,7 @@
 @import './ca__Dance.css';
 @import './ca__Door.css';
 @import './ca__Elevate.css';
+@import './ca__Engagement.css';
 @import './ca__FadeIn.css';
 @import './ca__FadeOut.css';
 @import './ca__FlipX.css';
@@ -38,4 +39,5 @@
 @import './ca__SwingIn.css';
 @import './ca__ZoomIn.css';
 @import './ca__ZoomOut.css';
+@import './ca__elastic.css';
 @import './ca__quake.css';

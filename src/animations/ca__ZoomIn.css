@@ -57,3 +57,23 @@
     opacity: 0;
   }
 }
+
+.snapZoom {
+  animation: snapZoom var(--duration, 1s) cubic-bezier(0.4, 1.8, 0.6, 1) both;
+}
+
+@keyframes snapZoom {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

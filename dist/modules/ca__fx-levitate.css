@@ -51,10 +51,3 @@
     transform: translateY(calc(var(--levitate-height, 0.6rem) * -1));
   }
 }
-/**
- * Module: Bounce In
- * Filename: ca__BounceIn.css
- */
-.ca__fx-bounceInTop {
-  animation-name: bounceInTop;
-}

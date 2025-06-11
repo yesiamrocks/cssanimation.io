@@ -47,10 +47,3 @@
     opacity: 0;
   }
 }
-/**
- * Module: Zoom Out
- * Filename: ca__ZoomOut.css
- */
-.ca__fx-zoomOut {
-  animation-name: zoomOut;
-}

@@ -55,15 +55,3 @@
     transform: scale(1.3);
   }
 }
-/**
- * Module: Kick out
- * Filename: ca__KickOut.css
- */
-.ca__fx-kickOutBehind {
-  animation-name: kickOutBehind;
-  transform-origin: top;
-  backface-visibility: var(--cssanimation-backface-visibility);
-  transform-style: var(--cssanimation-transform-style);
-  will-change: var(--cssanimation-will-change);
-  animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
-}

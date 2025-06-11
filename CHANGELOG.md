@@ -1,3 +1,19 @@
+## [5.4.0] - 2025-06-11
+
+### Added
+
+- **New Elastic CSS Animations:** Introduced 10 new, unique, and highly responsive CSS-only elastic animations for enhanced UI interactivity.
+  - `elasticBounce`: A classic bounce effect, ideal for elements appearing or landing.
+  - `springyEffect`: A generalized spring-like scale and squash effect.
+  - `wobbleAnimation`: Horizontal translational wobble with slight rotation.
+  - `jiggleTransform`: A playful rotation and subtle scale jiggle.
+  - `stretchCollapse`: Vertical stretch and subsequent subtle collapse effect.
+  - `reboundMotion`: Upward movement followed by a firm rebound to origin.
+  - `snapBackEase`: An expanding entrance with a subtle overshoot and snap back.
+  - `flexiShrink`: A quick shrink animation with an elastic overshoot.
+  - `bouncyScale`: A large scale-in effect with a pronounced bounce at the end.
+  - `pulseElastic`: A continuously pulsing elastic effect, suitable for attention-grabbing elements.
+
 ## [5.3.0] – 2025-06-10
 
 ### Added

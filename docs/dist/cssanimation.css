@@ -2,8 +2,8 @@
 /*!* @preserve
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
-* Version: 5.2.1
-* Built: 2025-06-10 09:52:01 UTC
+* Version: 5.3.0
+* Built: 2025-06-11 05:53:07 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -433,30 +433,6 @@
     transform: translateY(0);
   }
 }
-.ca__fx-elasticRise {
-  animation: elasticRise var(--elastic-duration, 1s) ease-out both;
-}
-@keyframes elasticRise {
-  0% {
-    transform: scaleY(1) translateY(0);
-  }
-
-  40% {
-    transform: scaleY(0.9) translateY(calc(var(--elastic-height, 1.5rem) * -1.2));
-  }
-
-  60% {
-    transform: scaleY(1.1) translateY(calc(var(--elastic-height, 1.5rem) * 0.3));
-  }
-
-  80% {
-    transform: scaleY(0.95) translateY(calc(var(--elastic-height, 1.5rem) * -0.1));
-  }
-
-  100% {
-    transform: scaleY(1) translateY(0);
-  }
-}
 .ca__fx-levitate {
   animation: levitate var(--levitate-duration, 2s) ease-in-out infinite;
 }
@@ -468,6 +444,34 @@
 
   50% {
     transform: translateY(calc(var(--levitate-height, 0.6rem) * -1));
+  }
+}
+.ca__fx-jitterJump {
+  animation: jitterJump 1.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+@keyframes jitterJump {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+
+  20% {
+    transform: translateY(-40px) scale(1.1, 0.9);
+  } /* Jump up with squash */
+
+  40% {
+    transform: translateY(0) scale(0.9, 1.1);
+  } /* Land with stretch */
+
+  60% {
+    transform: translateY(-20px) scale(1.05, 0.95);
+  } /* Smaller rebound */
+
+  80% {
+    transform: translateY(0) scale(0.98, 1.02);
+  } /* Settle */
+
+  100% {
+    transform: translateY(0) scale(1, 1);
   }
 }
 /**
@@ -912,6 +916,40 @@
   65% {
     transform: rotate(0deg);
     transform-origin: left;
+  }
+}
+.ca__fx-wobble {
+  animation-name: wobble;
+  transform-origin: center;
+}
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
+  }
+
+  30% {
+    transform: translateX(20%) rotate(3deg);
+  }
+
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+
+  90% {
+    transform: translateX(2%) rotate(0.5deg);
   }
 }
 /**
@@ -1512,6 +1550,44 @@
   14%,
   42% {
     transform: scale(1.3);
+  }
+}
+.ca__fx-elasticPulse {
+  animation: elasticPulse var(--duration, 1.2s) ease-in-out infinite;
+}
+@keyframes elasticPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.1);
+  }
+
+  60% {
+    transform: scale(0.95);
+  }
+}
+.ca__fx-pulseShake {
+  animation-name: pulseShake;
+  animation-iteration-count: infinite;
+}
+@keyframes pulseShake {
+  90% {
+    transform: scale(1);
+  }
+
+  92% {
+    transform: scale(1.2);
+  }
+
+  96% {
+    transform: scale(1, 1);
+  }
+
+  98% {
+    transform: scale(1.1);
   }
 }
 /**
@@ -2219,27 +2295,6 @@
  * Module: Shake
  * Filename: ca__Shake.css
  */
-.ca__fx-pulseShake {
-  animation-name: pulseShake;
-  animation-iteration-count: infinite;
-}
-@keyframes pulseShake {
-  90% {
-    transform: scale(1);
-  }
-
-  92% {
-    transform: scale(1.2);
-  }
-
-  96% {
-    transform: scale(1, 1);
-  }
-
-  98% {
-    transform: scale(1.1);
-  }
-}
 .ca__fx-horizontalShake {
   animation-name: horizontalShake;
   animation-iteration-count: infinite;
@@ -3163,6 +3218,24 @@
     opacity: 0;
   }
 }
+.ca__fx-snapZoom {
+  animation: snapZoom var(--duration, 1s) cubic-bezier(0.4, 1.8, 0.6, 1) both;
+}
+@keyframes snapZoom {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 /**
  * Module: Zoom Out
  * Filename: ca__ZoomOut.css
@@ -3228,6 +3301,449 @@
     transform: perspective(700px) rotateX(80deg) scale(0.3) translateY(-80px);
     opacity: 0;
   }
+}
+.ca__fx-elasticArise {
+  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: bottom center; /* Important for vertical scaling */
+}
+@keyframes elasticArise {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  20% {
+    transform: translateY(-40px) scaleY(1.2); /* Rise with stretch */
+  }
+
+  40% {
+    transform: translateY(0) scaleY(0.9); /* Settle with slight squash */
+  }
+
+  60% {
+    transform: translateY(-15px) scaleY(1.05); /* Smaller elastic bounce */
+  }
+
+  80% {
+    transform: translateY(0) scaleY(0.98);
+  }
+}
+.ca__fx-elasticRise {
+  animation: elasticRise var(--elastic-duration, 1s) ease-out both;
+}
+@keyframes elasticRise {
+  0% {
+    transform: scaleY(1) translateY(0);
+  }
+
+  40% {
+    transform: scaleY(0.9) translateY(calc(var(--elastic-height, 1.5rem) * -1.2));
+  }
+
+  60% {
+    transform: scaleY(1.1) translateY(calc(var(--elastic-height, 1.5rem) * 0.3));
+  }
+
+  80% {
+    transform: scaleY(0.95) translateY(calc(var(--elastic-height, 1.5rem) * -0.1));
+  }
+
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}
+.ca__fx-elasticStretch {
+  animation: elasticStretch var(--duration, 1s) ease-out both;
+}
+@keyframes elasticStretch {
+  0% {
+    transform: scaleX(1);
+  }
+
+  30% {
+    transform: scaleX(1.4);
+  }
+
+  50% {
+    transform: scaleX(0.85);
+  }
+
+  70% {
+    transform: scaleX(1.15);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+.ca__fx-elasticBounce {
+  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+@keyframes elasticBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1.5rem);
+  }
+}
+.ca__fx-elasticSquash {
+  animation: elasticSquash var(--duration, 0.7s) ease-out both;
+}
+@keyframes elasticSquash {
+  0% {
+    transform: scaleY(1);
+  }
+
+  40% {
+    transform: scaleY(0.5) scaleX(1.3);
+  }
+
+  60% {
+    transform: scaleY(1.2) scaleX(0.9);
+  }
+
+  80% {
+    transform: scaleY(0.95) scaleX(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-elasticIn {
+  animation: elasticIn var(--duration, 0.6s) ease-out both;
+}
+@keyframes elasticIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-rubberPop {
+  animation: rubberPop var(--duration, 0.7s) ease-out both;
+}
+@keyframes rubberPop {
+  0% {
+    transform: scale(0.3);
+  }
+
+  40% {
+    transform: scale(1.25);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  80% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-squishLift {
+  animation: squishLift var(--duration, 0.8s) ease-in-out both;
+}
+@keyframes squishLift {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  30% {
+    transform: translateY(-1.2rem) scaleY(1.3);
+  }
+
+  60% {
+    transform: translateY(0.5rem) scaleY(0.9);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+.ca__fx-flubberBounce {
+  animation: flubberBounce var(--duration, 1s) ease-in-out both;
+}
+@keyframes flubberBounce {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  20% {
+    transform: scale(1.2, 0.8);
+  }
+
+  40% {
+    transform: scale(0.8, 1.2);
+  }
+
+  60% {
+    transform: scale(1.1, 0.9);
+  }
+
+  80% {
+    transform: scale(0.95, 1.05);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.ca__fx-boingScale {
+  animation: boingScale var(--duration, 0.9s) ease-out both;
+}
+@keyframes boingScale {
+  0% {
+    transform: scale(0.5);
+  }
+
+  30% {
+    transform: scale(1.3);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-slinkyDrop {
+  animation: slinkyDrop var(--duration, 1s) ease-in both;
+}
+@keyframes slinkyDrop {
+  0% {
+    transform: translateY(-120%);
+    scale: 1 0.8;
+  }
+
+  40% {
+    transform: translateY(20%) scale(1, 1.2);
+  }
+
+  60% {
+    transform: translateY(-10%) scale(1, 0.95);
+  }
+
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+.ca__fx-elasticBounce {
+  animation: elasticBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  transform-origin: bottom center; /* Important for bouncing */
+}
+@keyframes elasticBounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  20% {
+    transform: translateY(-30px) scaleX(1.05) scaleY(0.95);
+  }
+
+  40% {
+    transform: translateY(0) scaleX(0.98) scaleY(1.02);
+  }
+
+  60% {
+    transform: translateY(-15px) scaleX(1.02) scaleY(0.98);
+  }
+
+  80% {
+    transform: translateY(0) scaleX(0.99) scaleY(1.01);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+.ca__fx-springyEffect {
+  animation: springyEffect 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@keyframes springyEffect {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1, 0.9);
+  }
+
+  50% {
+    transform: scale(0.95, 1.05);
+  }
+
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-jiggleTransform {
+  animation: jiggleTransformKeyframes 0.7s ease-in-out forwards;
+  transform-origin: center;
+}
+@keyframes jiggleTransformKeyframes {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  15% {
+    transform: rotate(-3deg) scale(1.02);
+  }
+
+  30% {
+    transform: rotate(3deg) scale(0.98);
+  }
+
+  45% {
+    transform: rotate(-2deg) scale(1.01);
+  }
+
+  60% {
+    transform: rotate(2deg) scale(0.99);
+  }
+
+  75% {
+    transform: rotate(-1deg) scale(1);
+  }
+}
+.ca__fx-stretchCollapse {
+  animation: stretchCollapse 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  transform-origin: center;
+}
+@keyframes stretchCollapse {
+  0% {
+    transform: scaleY(1);
+  }
+
+  25% {
+    transform: scaleY(1.3);
+  } /* Stretch */
+
+  50% {
+    transform: scaleY(0.7);
+  } /* Collapse */
+
+  75% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+.ca__fx-reboundMotion {
+  animation: reboundMotion 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  transform-origin: bottom center; /* For vertical rebound */
+}
+@keyframes reboundMotion {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  } /* Move up */
+
+  100% {
+    transform: translateY(0);
+  } /* Rebound with overshoot */
+}
+.ca__fx-snapBackEase {
+  animation: snapBackEase 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+@keyframes snapBackEase {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-flexiShrink {
+  animation: flexiShrink 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+@keyframes flexiShrink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  } /* Shrink */
+
+  75% {
+    transform: scale(1.05);
+  } /* Overshoot */
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-bouncyScale {
+  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both; /* Custom for strong bounce */
+}
+/* bouncyScale */
+@keyframes bouncyScale {
+  0% {
+    transform: scale(0.5);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  80% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-pulseElastic {
+  animation: pulseElastic 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate; /* Infinite for pulsing */
+}
+@keyframes pulseElastic {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  } /* Pulse out */
+
+  75% {
+    transform: scale(0.95);
+  } /* Slightly inward */
 }
 /**
  * Module: Quake & Quiver Series

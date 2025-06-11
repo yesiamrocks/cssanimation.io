@@ -12,22 +12,61 @@
     "ca__fx-blurOutBottom"
   ],
   "Bounce Animations": [
-    "ca__fx-bounceFromTop",
-    "ca__fx-bounceFromDown",
     "ca__fx-bounceX",
     "ca__fx-bounceY",
+    "ca__fx-bounceZoomIn",
+    "ca__fx-bounceZoomOut",
+    "ca__fx-spring",
+    "ca__fx-boing",
+    "ca__fx-hop",
+    "ca__fx-lift",
+    "ca__fx-popUp",
+    "ca__fx-rebound",
+    "ca__fx-jump",
+    "ca__fx-launch",
+    "ca__fx-jitterJump",
+    "ca__fx-levitate"
+  ],
+  "Bounce In": [
+    "ca__fx-bounceFromTop",
+    "ca__fx-bounceFromDown",
     "ca__fx-bounceZoomIn",
     "ca__fx-bounceZoomOut",
     "ca__fx-bounceInTop",
     "ca__fx-bounceInBottom",
     "ca__fx-bounceInLeft",
     "ca__fx-bounceInRight",
+    "ca__fx-bounceInFromBottom"
+  ],
+  "Bounce Out": [
     "ca__fx-bounceOutTop",
     "ca__fx-bounceOutBottom",
     "ca__fx-bounceOutLeft",
     "ca__fx-bounceOutRight",
     "ca__fx-bounceInFromBottom"
   ],
+  "Elastic": [
+    "ca__fx-elasticArise",
+    "ca__fx-elasticRise",
+    "ca__fx-elasticStretch",
+    "ca__fx-elasticBounce",
+    "ca__fx-elasticSquash",
+    "ca__fx-elasticIn",
+    "ca__fx-rubberPop",
+    "ca__fx-squishLift",
+    "ca__fx-flubberBounce",
+    "ca__fx-springyEffect",
+    "ca__fx-jiggleTransform",
+    "ca__fx-stretchCollapse",
+    "ca__fx-reboundMotion",
+    "ca__fx-snapBackEase",
+    "ca__fx-flexiShrink",
+    "ca__fx-bouncyScale",
+    "ca__fx-pulseElastic",
+    "ca__fx-boingScale",
+    "ca__fx-slinkyDrop"
+  ],
+  "Engagement": ["ca__fx-wobble"],
   "Dance & Skew": [
     "ca__fx-danceTop",
     "ca__fx-danceMiddle",
@@ -81,10 +120,9 @@
     "ca__fx-flipYZoomOut"
   ],
   "Fly In/Out": ["ca__fx-flyInTop", "ca__fx-flyInBottom", "ca__fx-flyOutTop", "ca__fx-flyOutBottom"],
-  "Heartbeat & Shake": [
-    "ca__fx-heartbeatSlow",
-    "ca__fx-heartbeatFast",
-    "ca__fx-pulseShake",
+  "Heartbeat": ["ca__fx-heartbeatSlow", "ca__fx-heartbeatFast", "ca__fx-pulseShake", "ca__fx-elasticPulse"],
+
+  "Shake": [
     "ca__fx-horizontalShake",
     "ca__fx-verticalShake",
     "ca__fx-madMax",
@@ -93,6 +131,7 @@
     "ca__fx-quietMad",
     "ca__fx-vibration"
   ],
+
   "Kick & Move": [
     "ca__fx-kickOutBehind",
     "ca__fx-kickOutFront",
@@ -179,6 +218,7 @@
     "ca__fx-zoomOutRight",
     "ca__fx-zoomOutTop",
     "ca__fx-zoomOutBottom",
+    "ca__fx-snapZoom",
     "ca__fx-zoomOutRotateUp"
   ],
   "Spotlight": [

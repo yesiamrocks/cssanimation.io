@@ -57,10 +57,3 @@
     transform-origin: left;
   }
 }
-/**
- * Module: Fade in
- * Filename: ca__FadeIn.css
- */
-.ca__fx-fadeIn {
-  animation-name: fadeIn;
-}

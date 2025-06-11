@@ -147,12 +147,12 @@ const htmlContent = `<!DOCTYPE html>
             position: fixed;
             bottom: 1.5rem; /* 24px */
             right: 1.5rem; /* 24px */
-            background-color: #2563eb; /* Blue 600 */
+            background-color: #6d28d9; /* Blue 600 */
             color: white;
             padding: 0.75rem; /* 12px */
             border-radius: 9999px; /* Full circle */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             opacity: 0;
             pointer-events: none; /* Hidden and not clickable when opacity is 0 */
             z-index: 1000; /* Ensure it's above other content */
@@ -163,8 +163,8 @@ const htmlContent = `<!DOCTYPE html>
             transform: translateY(0);
         }
         #scroll-to-top-btn:hover {
-            background-color: #1d4ed8; /* Blue 700 */
-            transform: translateY(-2px);
+            background-color: #8b5cf6; /* Blue 700 */
+            transform: translateY(-5px);
         }
 
         /* Improved category button layout adjustments */
@@ -188,9 +188,8 @@ const htmlContent = `<!DOCTYPE html>
 
         /* Keyboard focus style */
         .animation-box.focused {
-            outline: 3px solid #60a5fa; /* Tailwind blue-400 */
+            outline: 3px solid #7c3aed; /* Tailwind blue-400 */
             outline-offset: 2px;
-            box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.5); /* Matching shadow for consistency */
         }
     </style>
 </head>
@@ -237,7 +236,7 @@ const htmlContent = `<!DOCTYPE html>
             </div>
         </div>
         <p class="text-lg text-center mb-8 text-gray-600 dark:text-gray-400">
-            Click on any animation to replay, or use the "Copy" button to grab the class.
+            Click on any animation to replay, and use the "Copy" button to grab the class.
         </p>
 
         <div class="custom-preview-controls">
@@ -283,7 +282,7 @@ const htmlContent = `<!DOCTYPE html>
                             <span id="share-feedback-${cls}" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                         </button>
 
-                        <div class="preview ${fullClass} w-full mt-6 rounded-md" id="${cls}" onclick="replay('${cls}')">
+                        <div class="preview ${fullClass} w-full mt-6 rounded-md shadow-2xl" id="${cls}" onclick="replay('${cls}')">
                             ${cls}
                         </div>
                         

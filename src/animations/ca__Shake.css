@@ -3,29 +3,6 @@
  * Filename: ca__Shake.css
  */
 
-.pulseShake {
-  animation-name: pulseShake;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulseShake {
-  90% {
-    transform: scale(1);
-  }
-
-  92% {
-    transform: scale(1.2);
-  }
-
-  96% {
-    transform: scale(1, 1);
-  }
-
-  98% {
-    transform: scale(1.1);
-  }
-}
-
 .horizontalShake {
   animation-name: horizontalShake;
   animation-iteration-count: infinite;
