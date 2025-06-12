@@ -901,11 +901,11 @@
     transform-origin: left;
   }
 }
-.wobble {
-  animation-name: wobble;
+.bobble {
+  animation-name: bobble;
   transform-origin: center;
 }
-@keyframes wobble {
+@keyframes bobble {
   0%,
   100% {
     transform: translateX(0%);

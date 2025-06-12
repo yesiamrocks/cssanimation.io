@@ -1,324 +1,370 @@
-(function () {
-  if (typeof window === 'undefined') return;
+/*!
+ * ca-letteranimation.js - Letter, word, and line animation enhancements
+ * Part of: https://cssanimation.io/
+ * Version: 5.6.0
+ *
+ * Author: Shafayetul Islam Pavel
+ * LinkedIn: https://www.linkedin.com/in/shafayetul/
+ * Email: hello@cssanimation.io
+ * GitHub: https://github.com/yesiamrocks/cssanimation.io
+ *
+ * Title: A lightweight, CSS-only enhancement script for text animations.
+ * Description: Provides dynamic letter-by-letter, word-by-word, and line-by-line animation
+ * capabilities, enhancing HTML elements with customizable text effects via HTML attributes.
+ *
+ * © 2025 Shafayetul Islam Pavel – All rights reserved.
+ */
+(function (factory) {
+  typeof define === 'function' && define.amd ? define(factory) :
+  factory();
+})((function () { 'use strict';
 
-  // --- Utility Function to get Computed Animation Duration ---
-  function getCssAnimationDuration(element, className) {
-    if (!element || !className) return null;
+  (function () {
+    if (typeof window === 'undefined') return;
 
-    const tempEl = document.createElement('span');
-    tempEl.style.visibility = 'hidden';
-    tempEl.style.position = 'absolute';
-    tempEl.className = className;
-    document.body.appendChild(tempEl);
+    // --- Utility Function to get Computed Animation Duration ---
+    function getCssAnimationDuration(element, className) {
+      if (!element || !className) return null;
 
-    const computedStyle = window.getComputedStyle(tempEl);
-    let duration = computedStyle.getPropertyValue('animation-duration');
+      const tempEl = document.createElement('span');
+      tempEl.style.visibility = 'hidden';
+      tempEl.style.position = 'absolute';
+      tempEl.className = className;
+      document.body.appendChild(tempEl);
 
-    document.body.removeChild(tempEl);
+      const computedStyle = window.getComputedStyle(tempEl);
+      let duration = computedStyle.getPropertyValue('animation-duration');
 
-    if (duration) {
-      duration = duration.trim();
-      if (duration.endsWith('ms')) {
-        return parseFloat(duration);
-      } else if (duration.endsWith('s')) {
-        return parseFloat(duration) * 1000;
+      document.body.removeChild(tempEl);
+
+      if (duration) {
+        duration = duration.trim();
+        if (duration.endsWith('ms')) {
+          return parseFloat(duration);
+        } else if (duration.endsWith('s')) {
+          return parseFloat(duration) * 1000;
+        }
       }
+      return null;
     }
-    return null;
-  }
-  // --- End Utility Function ---
+    // --- End Utility Function ---
 
-  // --- Utility Function to get a single number from an attribute ---
-  function getSingleNumberAttribute(attrValue) {
-    if (attrValue) {
-      const num = Number(attrValue.trim());
-      if (!isNaN(num)) {
-        return num;
+    // --- Utility Function to get a single number from an attribute ---
+    function getSingleNumberAttribute(attrValue) {
+      if (attrValue) {
+        const num = Number(attrValue.trim());
+        if (!isNaN(num)) {
+          return num;
+        }
       }
+      return null; // Return null if not a valid number
     }
-    return null; // Return null if not a valid number
-  }
-  // --- End Utility Function ---
+    // --- End Utility Function ---
 
-  // Inject fallback styles for animated spans
-  const style = document.createElement('style');
-  style.textContent = `
+    // Inject fallback styles for animated spans
+    const style = document.createElement('style');
+    style.textContent = `
         .ca__lt-letter, .ca__lt-word, .ca__lt-line {
             display: inline-block;
-            animation-duration: 1s; /* Ensure a default duration */
-            animation-fill-mode: both; /* Ensure elements stay in final state */
+            animation-duration: 1s;
+            animation-fill-mode: both;
         }
     `;
-  document.head.appendChild(style);
+    document.head.appendChild(style);
 
-  // Expose the re-initialization function globally for specific elements
-  window.CSSAnimationLetter = window.CSSAnimationLetter || {};
-  window.CSSAnimationLetter.reinit = reinitSingleElement; // Our new exposed function
+    // Expose initLetterAnimations globally
+    // This makes it callable from your custom script (index.html)
+    window.CSSAnimationLetter = window.CSSAnimationLetter || {}; // Ensure it exists
+    window.CSSAnimationLetter.init = initLetterAnimations; // Assign the function
 
-  window.addEventListener('DOMContentLoaded', () => {
-    // Initial setup on DOMContentLoaded
-    document
-      .querySelectorAll(
-        '.cssanimation[ca__lt-sequence], .cssanimation[ca__lt-random], .cssanimation[ca__lt-reverse], .cssanimation[ca__lt-word], .cssanimation[ca__lt-line]',
-      )
-      .forEach((el) => reinitSingleElement(el)); // Initialize all recognized elements
-  });
-
-  // Function to reinitialize a single element
-  function reinitSingleElement(el) {
-    if (!el || !el.classList.contains('cssanimation')) {
-      console.warn('CSSAnimationLetter.reinit called on non-cssanimation element or invalid element.', el);
-      return;
-    }
-
-    // Capture the original text content (this is key for re-processing)
-    // If it's already set by our preview generator, use that.
-    // Otherwise, capture its current text content.
-    const originalText = el._originalTextContent || el.textContent;
-    el._originalTextContent = originalText; // Ensure it's stored for future reinit calls
-
-    // Clear existing inner HTML to remove old spans before re-processing
-    el.innerHTML = '';
-    // Re-set the textContent to allow the processing functions to work cleanly
-    el.textContent = originalText;
-
-    // Determine which animation type attribute is present
-    let animationTypeAttr = null;
-    let animationTypeName = null;
-
-    if (el.hasAttribute('ca__lt-sequence')) {
-      animationTypeAttr = el.getAttribute('ca__lt-sequence');
-      animationTypeName = 'sequence';
-    } else if (el.hasAttribute('ca__lt-random')) {
-      animationTypeAttr = el.getAttribute('ca__lt-random');
-      animationTypeName = 'random';
-    } else if (el.hasAttribute('ca__lt-reverse')) {
-      animationTypeAttr = el.getAttribute('ca__lt-reverse');
-      animationTypeName = 'reverse';
-    } else if (el.hasAttribute('ca__lt-word')) {
-      animationTypeAttr = el.getAttribute('ca__lt-word');
-      animationTypeName = 'word';
-    } else if (el.hasAttribute('ca__lt-line')) {
-      animationTypeAttr = el.getAttribute('ca__lt-line');
-      animationTypeName = 'line';
-    } else {
-      console.warn('CSSAnimationLetter: Element has .cssanimation but no ca__lt-* animation type attribute.', el);
-      return; // No animation type specified
-    }
-
-    // Parse common attributes
-    const delayAttr = el.getAttribute('ca__lt-delay') || '100';
-    const delaySteps = parseMultiValueDelaySteps(delayAttr, 100);
-    const classList = (animationTypeAttr || '').trim().split(/\s+/).filter(Boolean); // Filter out empty strings
-
-    if (classList.length === 0) {
-      // Fallback if no classes are provided
-      console.warn("CSSAnimationLetter: No animation classes found for element. Using 'ca__fx-FadeIn'.", el);
-      classList.push('ca__fx-FadeIn');
-    }
-
-    let baseDuration = getSingleNumberAttribute(el.getAttribute('ca__lt-base-duration'));
-    if (baseDuration === null) {
-      const detectedDuration = getCssAnimationDuration(el, classList[0]);
-      if (detectedDuration !== null) {
-        baseDuration = detectedDuration;
-      } else {
-        baseDuration = 1000; // Default if nothing else is found
-      }
-    }
-
-    // Trigger the appropriate processing function
-    let animatedHtml = '';
-    if (['sequence', 'random', 'reverse'].includes(animationTypeName)) {
-      animatedHtml = processTextNodes(el, animationTypeName, delaySteps, classList).join('');
-    } else if (animationTypeName === 'word') {
-      animatedHtml = processSequentialBy('word', originalText, delaySteps, classList, baseDuration);
-    } else if (animationTypeName === 'line') {
-      const lineSeparator = el.getAttribute('ca__lt-separator') === 'dot' ? 'dot' : 'br';
-      animatedHtml = processSequentialBy('line', originalText, delaySteps, classList, baseDuration, lineSeparator);
-    }
-
-    el.innerHTML = animatedHtml;
-  }
-
-  // --- The original processing functions (no changes here, they are called by reinitSingleElement) ---
-
-  function processTextNodes(node, animationType, delaySteps, classList) {
-    const result = [];
-    const chars = [];
-
-    node.childNodes.forEach((child) => {
-      if (child.nodeType === Node.TEXT_NODE) {
-        chars.push(...child.textContent);
-      } else if (child.nodeType === Node.ELEMENT_NODE) {
-        const wrapper = document.createElement(child.tagName);
-        for (const attr of child.attributes) {
-          wrapper.setAttribute(attr.name, attr.value);
-        }
-        wrapper.innerHTML = processTextNodes(child, animationType, delaySteps, classList).join('');
-        result.push(wrapper.outerHTML);
-      }
+    window.addEventListener('DOMContentLoaded', () => {
+      initLetterAnimations(); // Initial call on DOMContentLoaded
     });
 
-    const spans = chars.map((char, index) => {
-      if (char !== ' ') {
-        const className = classList[index % classList.length] || classList[classList.length - 1];
-        const delay =
-          delaySteps[index % delaySteps.length] != null
-            ? delaySteps[index % delaySteps.length]
-            : delaySteps[delaySteps.length - 1];
-        return `<span class="ca__lt-letter ${className}" style="
+    // Main initialization function for letter animations
+    function initLetterAnimations() {
+      // Re-run animation functions for all relevant elements
+      animateLetters('ca__lt-sequence', 'sequence');
+      animateLetters('ca__lt-random', 'random');
+      animateLetters('ca__lt-reverse', 'reverse');
+      animateWords();
+      animateLines();
+    }
+
+    function animateLetters(attrName, animationType) {
+      // Only process elements that are part of .cssanimation for text effects
+      document.querySelectorAll(`.cssanimation[${attrName}]`).forEach((el) => {
+        // Store original content if not already stored, to allow re-processing
+        if (!el._originalTextContent) {
+          el._originalTextContent = el.textContent;
+        } else {
+          // Reset to original content before re-processing to prevent nested spans
+          el.textContent = el._originalTextContent;
+        }
+
+        const delayAttr = el.getAttribute('ca__lt-delay') || '100';
+        const delaySteps = parseMultiValueDelaySteps(delayAttr, 100);
+        const classList = (el.getAttribute(attrName) || 'ca__lt-letter').trim().split(/\s+/);
+        const animated = processTextNodes(el, animationType, delaySteps, classList);
+        el.innerHTML = animated.join('');
+      });
+    }
+
+    function animateWords() {
+      document.querySelectorAll('.cssanimation[ca__lt-word]').forEach((el) => {
+        // Store original content if not already stored, to allow re-processing
+        if (!el._originalTextContent) {
+          el._originalTextContent = el.textContent;
+        } else {
+          el.textContent = el._originalTextContent;
+        }
+
+        const delayAttr = el.getAttribute('ca__lt-delay') || '100';
+        const delaySteps = parseMultiValueDelaySteps(delayAttr, 100);
+
+        const classList = (el.getAttribute('ca__lt-word') || 'ca__lt-word').trim().split(/\s+/);
+
+        let baseDuration = getSingleNumberAttribute(el.getAttribute('ca__lt-base-duration'));
+
+        if (baseDuration === null && classList.length > 0) {
+          const firstClassName = classList[0];
+          const detectedDuration = getCssAnimationDuration(el, firstClassName);
+          if (detectedDuration !== null) {
+            baseDuration = detectedDuration;
+          }
+        }
+
+        if (baseDuration === null) {
+          baseDuration = 1000; // Default if nothing else is found
+        }
+
+        el.innerHTML = processSequentialBy('word', el.textContent, delaySteps, classList, baseDuration);
+      });
+    }
+
+    function animateLines() {
+      document.querySelectorAll('.cssanimation[ca__lt-line]').forEach((el) => {
+        // Store original content if not already stored, to allow re-processing
+        if (!el._originalTextContent) {
+          el._originalTextContent = el.textContent;
+        } else {
+          el.textContent = el._originalTextContent;
+        }
+
+        const delayAttr = el.getAttribute('ca__lt-delay') || '150';
+        const delaySteps = parseMultiValueDelaySteps(delayAttr, 150);
+
+        const classList = (el.getAttribute('ca__lt-line') || 'ca__lt-line').trim().split(/\s+/);
+        const lineSeparator = el.getAttribute('ca__lt-separator') === 'dot' ? 'dot' : 'br';
+
+        let baseDuration = getSingleNumberAttribute(el.getAttribute('ca__lt-base-duration'));
+
+        if (baseDuration === null && classList.length > 0) {
+          const firstClassName = classList[0];
+          const detectedDuration = getCssAnimationDuration(el, firstClassName);
+          if (detectedDuration !== null) {
+            baseDuration = detectedDuration;
+          }
+        }
+
+        if (baseDuration === null) {
+          baseDuration = 1000; // Default if nothing else is found
+        }
+
+        el.innerHTML = processSequentialBy('line', el.textContent, delaySteps, classList, baseDuration, lineSeparator);
+      });
+    }
+
+    function processTextNodes(node, animationType, delaySteps, classList) {
+      const result = [];
+      const chars = [];
+
+      node.childNodes.forEach((child) => {
+        if (child.nodeType === Node.TEXT_NODE) {
+          chars.push(...child.textContent);
+        } else if (child.nodeType === Node.ELEMENT_NODE) {
+          // Handle child elements (like <b>, <i> inside the animated text)
+          const wrapper = document.createElement(child.tagName);
+          for (const attr of child.attributes) {
+            wrapper.setAttribute(attr.name, attr.value);
+          }
+          // Recursively process text nodes within the child element
+          wrapper.innerHTML = processTextNodes(child, animationType, delaySteps, classList).join('');
+          result.push(wrapper.outerHTML);
+        }
+      });
+
+      const spans = chars.map((char, index) => {
+        if (char !== ' ') {
+          const className = classList[index % classList.length] || classList[classList.length - 1]; // Use modulo for class list
+          const delay =
+            delaySteps[index % delaySteps.length] != null
+              ? delaySteps[index % delaySteps.length]
+              : delaySteps[delaySteps.length - 1];
+          return `<span class="ca__lt-letter ${className}" style="
                         animation-delay:${delay * index}ms;
                         -moz-animation-delay:${delay * index}ms;
                         -webkit-animation-delay:${delay * index}ms;
                     ">${char}</span>`;
-      }
-      return ' ';
-    });
-
-    if (animationType === 'random') {
-      const nonSpaceSpans = spans.filter((s) => s.trim() !== '');
-      const spaceSpans = spans.filter((s) => s.trim() === '');
-
-      const indices = nonSpaceSpans.map((_, i) => i);
-      shuffle(indices);
-
-      const randomizedAnimatedSpans = Array(nonSpaceSpans.length).fill('');
-      indices.forEach((originalIndex, newSequentialIndex) => {
-        randomizedAnimatedSpans[originalIndex] = nonSpaceSpans[originalIndex].replace(
-          /animation-delay:\d+ms/g,
-          `animation-delay:${delaySteps[delaySteps.length - 1] * newSequentialIndex}ms`,
-        );
+        }
+        return ' '; // Preserve spaces outside of spans
       });
 
-      let currentNonSpaceIndex = 0;
-      let finalResult = [];
-      for (const s of spans) {
-        if (s.trim() !== '') {
-          finalResult.push(randomizedAnimatedSpans[currentNonSpaceIndex]);
-          currentNonSpaceIndex++;
-        } else {
-          finalResult.push(s);
-        }
-      }
-      result.push(finalResult.join(''));
-    } else if (animationType === 'reverse') {
-      const nonSpaceSpans = spans.filter((s) => s.trim() !== '');
-      const numAnimated = nonSpaceSpans.length;
+      if (animationType === 'random') {
+        const nonSpaceSpans = spans.filter((s) => s.trim() !== ''); // Only shuffle actual animated spans
+        spans.filter((s) => s.trim() === '');
 
-      const reversedAnimatedSpans = nonSpaceSpans.map((span, i) =>
-        span.replace(
-          /animation-delay:\d+ms/g,
-          `animation-delay:${delaySteps[delaySteps.length - 1] * (numAnimated - 1 - i)}ms`,
-        ),
-      );
+        const indices = nonSpaceSpans.map((_, i) => i);
+        shuffle(indices);
 
-      let currentNonSpaceIndex = 0;
-      let finalResult = [];
-      for (const s of spans) {
-        if (s.trim() !== '') {
-          finalResult.push(reversedAnimatedSpans[currentNonSpaceIndex]);
-          currentNonSpaceIndex++;
-        } else {
-          finalResult.push(s);
-        }
-      }
-      result.push(finalResult.join(''));
-    } else {
-      // sequence
-      result.push(spans.join(''));
-    }
+        const randomizedAnimatedSpans = Array(nonSpaceSpans.length).fill('');
+        indices.forEach((originalIndex, newSequentialIndex) => {
+          randomizedAnimatedSpans[originalIndex] = nonSpaceSpans[originalIndex].replace(
+            /animation-delay:\d+ms/g,
+            `animation-delay:${delaySteps[delaySteps.length - 1] * newSequentialIndex}ms`,
+          );
+        });
 
-    return result;
-  }
-
-  function parseMultiValueDelaySteps(delayAttr, defaultValue) {
-    if (!delayAttr) {
-      return [defaultValue];
-    }
-    const parsed = delayAttr
-      .trim()
-      .split(/\s+/)
-      .map((x) => {
-        const num = Number(x);
-        return isNaN(num) ? defaultValue : num;
-      });
-    return parsed.length > 0 ? parsed : [defaultValue];
-  }
-
-  function processSequentialBy(type, text, delaySteps, classList, baseDuration, lineSeparator = 'br') {
-    let units = [];
-    const originalText = text;
-
-    if (type === 'word') {
-      units = originalText.split(/(\s+)/);
-    } else if (type === 'line') {
-      if (lineSeparator === 'dot') {
-        const rawParts = originalText.split(/(\.)/);
-        const finalUnits = [];
-        for (let i = 0; i < rawParts.length; i++) {
-          let part = rawParts[i].trim();
-
-          if (part === '') continue;
-
-          if (part !== '.' && i + 1 < rawParts.length && rawParts[i + 1] === '.') {
-            finalUnits.push(part + '.');
-            i++;
-          } else if (part !== '.') {
-            finalUnits.push(part);
+        // Reconstruct the full string including spaces in their original positions
+        let currentNonSpaceIndex = 0;
+        let finalResult = [];
+        for (const s of spans) {
+          if (s.trim() !== '') {
+            finalResult.push(randomizedAnimatedSpans[currentNonSpaceIndex]);
+            currentNonSpaceIndex++;
+          } else {
+            finalResult.push(s); // Add space back
           }
         }
-        units = finalUnits;
+        result.push(finalResult.join(''));
+      } else if (animationType === 'reverse') {
+        const nonSpaceSpans = spans.filter((s) => s.trim() !== '');
+        const numAnimated = nonSpaceSpans.length;
+
+        const reversedAnimatedSpans = nonSpaceSpans.map((span, i) =>
+          span.replace(
+            /animation-delay:\d+ms/g,
+            `animation-delay:${delaySteps[delaySteps.length - 1] * (numAnimated - 1 - i)}ms`,
+          ),
+        );
+
+        let currentNonSpaceIndex = 0;
+        let finalResult = [];
+        for (const s of spans) {
+          if (s.trim() !== '') {
+            finalResult.push(reversedAnimatedSpans[currentNonSpaceIndex]);
+            currentNonSpaceIndex++;
+          } else {
+            finalResult.push(s);
+          }
+        }
+        result.push(finalResult.join(''));
       } else {
-        units = originalText.split(/(\n|<br\s*\/?>)/);
+        // sequence
+        result.push(spans.join(''));
       }
+
+      return result;
     }
 
-    let animatedContent = [];
-    let classAndDelayIndex = 0;
-    let animationOffset = 0;
-
-    units.forEach((unit) => {
-      if (!unit.trim() && unit !== '\n' && !/<br\s*\/?>/.test(unit)) {
-        animatedContent.push(unit);
-        return;
+    function parseMultiValueDelaySteps(delayAttr, defaultValue) {
+      if (!delayAttr) {
+        return [defaultValue];
       }
-      if (unit === '\n' || /<br\s*\/?>/.test(unit)) {
-        animatedContent.push(unit);
-        return;
+      const parsed = delayAttr
+        .trim()
+        .split(/\s+/)
+        .map((x) => {
+          const num = Number(x);
+          return isNaN(num) ? defaultValue : num;
+        });
+      return parsed.length > 0 ? parsed : [defaultValue];
+    }
+
+    function processSequentialBy(type, text, delaySteps, classList, baseDuration, lineSeparator = 'br') {
+      let units = [];
+      const originalText = text; // Keep original text for splitting
+
+      if (type === 'word') {
+        units = originalText.split(/(\s+)/); // Capture spaces to re-insert them
+      } else if (type === 'line') {
+        if (lineSeparator === 'dot') {
+          // Split by capturing the dot to preserve it in the array
+          const rawParts = originalText.split(/(\.)/);
+          const finalUnits = [];
+          for (let i = 0; i < rawParts.length; i++) {
+            let part = rawParts[i].trim(); // Trim parts for cleaner logic
+
+            if (part === '') continue; // Skip empty parts from split (e.g., "word." -> ["word", ".", ""])
+
+            // If the current part is text and the next is a dot, combine them
+            if (part !== '.' && i + 1 < rawParts.length && rawParts[i + 1] === '.') {
+              finalUnits.push(part + '.');
+              i++; // Skip the next dot as it's been consumed
+            } else if (part !== '.') {
+              // It's a text part without a following dot
+              finalUnits.push(part);
+            }
+            // If 'part' is '.', it's a standalone dot that shouldn't be animated as a separate unit
+            // unless it's the *only* content. Assuming units are meaningful segments.
+          }
+          units = finalUnits;
+        } else {
+          // Default line break
+          units = originalText.split(/(\n|<br\s*\/?>)/); // Split by newline or <br>, capture to retain
+        }
       }
 
-      const className = classList[classAndDelayIndex % classList.length] || classList[classList.length - 1];
+      let animatedContent = [];
+      let classAndDelayIndex = 0;
+      let animationOffset = 0; // Cumulative delay for sequential animations
 
-      const currentUnitSpecificDelay =
-        delaySteps[classAndDelayIndex % delaySteps.length] != null
-          ? delaySteps[classAndDelayIndex % delaySteps.length]
-          : delaySteps[delaySteps.length - 1];
+      units.forEach((unit) => {
+        // Skip whitespace or empty captured separators if they are not meant to be animated units
+        if (!unit.trim() && unit !== '\n' && !/<br\s*\/?>/.test(unit)) {
+          animatedContent.push(unit); // Add back un-animated spaces/empty strings
+          return;
+        }
+        // If it's a line break, push it as is, not wrapped in a span
+        if (unit === '\n' || /<br\s*\/?>/.test(unit)) {
+          animatedContent.push(unit);
+          return;
+        }
 
-      const finalAnimationDelay = animationOffset + currentUnitSpecificDelay;
+        const className = classList[classAndDelayIndex % classList.length] || classList[classList.length - 1];
 
-      const spanClass = type === 'word' ? 'ca__lt-word' : 'ca__lt-line';
+        const currentUnitSpecificDelay =
+          delaySteps[classAndDelayIndex % delaySteps.length] != null
+            ? delaySteps[classAndDelayIndex % delaySteps.length]
+            : delaySteps[delaySteps.length - 1];
 
-      const output = `<span class="${spanClass} ${className}" style="
+        const finalAnimationDelay = animationOffset + currentUnitSpecificDelay;
+
+        // Add appropriate class for words/lines
+        const spanClass = type === 'word' ? 'ca__lt-word' : 'ca__lt-line';
+
+        const output = `<span class="${spanClass} ${className}" style="
                         animation-delay:${finalAnimationDelay}ms;
                         -moz-animation-delay:${finalAnimationDelay}ms;
                         -webkit-animation-delay:${finalAnimationDelay}ms;
                     ">${unit}</span>`;
 
-      animatedContent.push(output);
+        animatedContent.push(output);
 
-      animationOffset = finalAnimationDelay + baseDuration;
+        animationOffset = finalAnimationDelay + baseDuration; // Accumulate delay for next unit
 
-      classAndDelayIndex++;
-    });
+        classAndDelayIndex++; // Move to next class/delay in sequence
+      });
 
-    return animatedContent.join('');
-  }
-
-  function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+      return animatedContent.join('');
     }
-  }
-})();
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+  })();
+
+}));

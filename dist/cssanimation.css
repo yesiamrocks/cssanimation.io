@@ -2,8 +2,8 @@
 /*!* @preserve
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
-* Version: 5.5.0
-* Built: 2025-06-11 15:56:22 UTC
+* Version: 5.6.0
+* Built: 2025-06-12 07:37:50 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -918,11 +918,11 @@
     transform-origin: left;
   }
 }
-.ca__fx-wobble {
-  animation-name: wobble;
+.ca__fx-bobble {
+  animation-name: bobble;
   transform-origin: center;
 }
-@keyframes wobble {
+@keyframes bobble {
   0%,
   100% {
     transform: translateX(0%);

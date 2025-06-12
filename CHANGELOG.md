@@ -1,3 +1,34 @@
+## [5.6.0] - 2025-06-12
+
+### Added
+
+- **Text Animation Preview Generator:**
+  - Live, interactive preview of text and letter animations.
+  - Animation control panel: Pause/Play, Restart, and Speed (duration/delay multiplier) controls.
+  - Search functionality for `ca__fx-*` animation classes.
+  - Shareable URL generation to encode and load specific animation configurations.
+  - Copyable HTML code snippet display for easy integration into projects.
+  - Dark/Light mode theme toggle with user preference persistence.
+  - Improved UI/UX using Tailwind CSS.
+  - Footer with dynamic current year.
+  - Placeholder text for Delay input for better guidance.
+
+### Changed
+
+- **Preview Generator Logic (`index.html`):**
+  - Switched to a robust re-initialization strategy that correctly updates attributes and calls `window.CSSAnimationLetter.reinit(element)`.
+  - Centralized state management for UI elements to enable URL encoding/decoding.
+  - All UI elements are now styled exclusively with Tailwind CSS utility classes.
+  - Animation keyframes and base `.cssanimation` rules are maintained in a minimal inline `<style>` block for demo robustness.
+
+### Fixed
+
+- Resolved issues where animations would not consistently re-trigger or change after updating animation classes or other settings in the preview.
+- Corrected the visibility of the "Line Separator" option, ensuring it only appears when "Line-by-Line" animation type is selected.
+- Ensured the "Generated HTML Code" textarea correctly displays the current animation's HTML.
+- Fixed the functionality of the Dark/Light mode theme switch button.
+- Addressed accessibility warning regarding form labels by using `<fieldset>` and `<legend>`.
+
 ## [v5.5.0] - 2025-06-11
 
 ### New Features
@@ -26,13 +57,11 @@
 - **Global Duration Control**  
   Full support for `ca__lt-base-duration` allows global timing override (in milliseconds), improving consistency across animations.
 
-
 ### Improvements
 
 - Safer attribute parsing and fallback logic to prevent JS errors.
 - Improved compatibility with design tools and runtime environments.
 - Modularized internal logic for future extensibility.
-
 
 ### Developer Notes
 

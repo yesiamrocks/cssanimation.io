@@ -89,6 +89,7 @@
 - `ca__fx-blurInTop`
 - `ca__fx-blurOut`
 - `ca__fx-blurOutTop`
+- `ca__fx-bobble`
 - `ca__fx-boing`
 - `ca__fx-boingScale`
 - `ca__fx-bounceFromDown`
@@ -225,7 +226,6 @@
 - `ca__fx-vibration`
 - `ca__fx-waveBand`
 - `ca__fx-wiggle`
-- `ca__fx-wobble`
 - `ca__fx-wooble`
 - `ca__fx-zoomIn`
 - `ca__fx-zoomInBottom`

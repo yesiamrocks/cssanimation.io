@@ -184,6 +184,8 @@ You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **d
 </p>
 ```
 
+[Check out this Text & Letter Animations Preview Tool to easily generate the animation code for your text.](https://yesiamrocks.github.io/cssanimation.io/text-animation.html)
+
 <br><br>
 
 ## ⏱️ `ca__lt-delay` in Detail
