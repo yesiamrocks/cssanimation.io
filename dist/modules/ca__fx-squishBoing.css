@@ -63,3 +63,10 @@
     transform: scale(1, 1);
   } /* Return to normal */
 }
+/**
+ * Module: Quake & Quiver Series
+ * Filename: ca__quake.css
+ */
+.ca__fx-jiggle {
+  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
+}

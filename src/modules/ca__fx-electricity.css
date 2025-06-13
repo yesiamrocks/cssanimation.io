@@ -93,3 +93,10 @@
     transform: translateY(40px);
   }
 }
+/**
+ * Module: Text Animation
+ * Filename: ca__text.css
+ */
+.ca__fx-effect3d {
+  animation-name: effect3d;
+}

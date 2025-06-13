@@ -63,10 +63,12 @@
     "ca__fx-flexiShrink",
     "ca__fx-bouncyScale",
     "ca__fx-pulseElastic",
+    "ca__fx-squishBoing",
+    "ca__fx-rubber",
     "ca__fx-boingScale",
     "ca__fx-slinkyDrop"
   ],
-  "Engagement": ["ca__fx-wobble"],
+  "Engagement": ["ca__fx-bobble", "ca__fx-jelly", "ca__fx-perspectiveTilt", "ca__fx-jello", "ca__fx-waveBand"],
   "Dance & Skew": [
     "ca__fx-danceTop",
     "ca__fx-danceMiddle",
@@ -223,19 +225,25 @@
   ],
   "Spotlight": [
     "ca__fx-unfoldAndRise",
-    "ca__fx-jello",
-    "ca__fx-effect3d",
     "ca__fx-hu__hu__",
     "ca__fx-peekpeek",
     "ca__fx-pepe",
     "ca__fx-lightning",
     "ca__fx-joltZoom",
-    "ca__fx-squishBoing",
     "ca__fx-jigglypop",
     "ca__fx-wooble",
-    "ca__fx-waveBand",
+    "ca__fx-colorFlicker"
+  ],
+
+  "Text Animation": [
     "ca__fx-effect3d",
-    "ca__fx-sake"
+    "ca__fx-spring",
+    "ca__fx-neonGlow",
+    "ca__fx-colorPulse",
+    "ca__fx-trackExpand",
+    "ca__fx-trackCollapse",
+    "ca__fx-gradienText",
+    "ca__fx-rainbowText"
   ],
   "Quake & Quiver Series": [
     "ca__fx-jitter",

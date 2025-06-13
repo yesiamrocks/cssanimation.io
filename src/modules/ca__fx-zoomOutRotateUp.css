@@ -55,3 +55,11 @@
     opacity: 0;
   }
 }
+/**
+ * Module: Elastic Animation
+ * Filename: ca__elastic.css
+ */
+.ca__fx-elasticArise {
+  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: bottom center; /* Important for vertical scaling */
+}

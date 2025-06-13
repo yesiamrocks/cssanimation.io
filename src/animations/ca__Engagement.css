@@ -33,3 +33,94 @@
     transform: translateX(2%) rotate(0.5deg);
   }
 }
+
+.jelly {
+  animation-name: jelly;
+}
+
+@keyframes jelly {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.perspectiveTilt {
+  animation-name: perspectiveTilt;
+}
+
+@keyframes perspectiveTilt {
+  50% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+}
+
+.jello {
+  animation: jello var(--jello-duration, 0.9s) both;
+}
+
+@keyframes jello {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  30% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  40% {
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  50% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  65% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  75% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+}
+
+.waveBand {
+  animation-name: waveBand;
+  transform-origin: center center;
+}
+
+@keyframes waveBand {
+  0%,
+  100% {
+    transform: scaleY(1) translateY(0); /* Normal state */
+  }
+
+  25% {
+    transform: scaleY(1.1) translateY(-5px); /* Stretch vertically and move up slightly */
+  }
+
+  50% {
+    transform: scaleY(0.9) translateY(5px); /* Compress vertically and move down */
+  }
+
+  75% {
+    transform: scaleY(1.05) translateY(-2px); /* Slight overshoot */
+  }
+}

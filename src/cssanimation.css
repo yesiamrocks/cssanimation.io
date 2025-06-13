@@ -935,6 +935,89 @@
     transform: translateX(2%) rotate(0.5deg);
   }
 }
+.jelly {
+  animation-name: jelly;
+}
+@keyframes jelly {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.perspectiveTilt {
+  animation-name: perspectiveTilt;
+}
+@keyframes perspectiveTilt {
+  50% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+}
+.jello {
+  animation: jello var(--jello-duration, 0.9s) both;
+}
+@keyframes jello {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  30% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  40% {
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  50% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  65% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  75% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+}
+.waveBand {
+  animation-name: waveBand;
+  transform-origin: center center;
+}
+@keyframes waveBand {
+  0%,
+  100% {
+    transform: scaleY(1) translateY(0); /* Normal state */
+  }
+
+  25% {
+    transform: scaleY(1.1) translateY(-5px); /* Stretch vertically and move up slightly */
+  }
+
+  50% {
+    transform: scaleY(0.9) translateY(5px); /* Compress vertically and move down */
+  }
+
+  75% {
+    transform: scaleY(1.05) translateY(-2px); /* Slight overshoot */
+  }
+}
 /**
  * Module: Fade in
  * Filename: ca__FadeIn.css
@@ -2846,19 +2929,6 @@
     transform: translateY(30px);
   }
 }
-.sake {
-  animation-name: snake;
-}
-@keyframes snake {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(30px);
-  }
-}
 .peekpeek {
   animation-name: peekpeek;
 }
@@ -2869,26 +2939,6 @@
 
   50% {
     transform: translateY(-22px) rotate(3deg) scale(1.1);
-  }
-}
-.effect3d {
-  animation-name: effect3d;
-}
-@keyframes effect3d {
-  to {
-    text-shadow:
-      0 1px 0 #ccc,
-      0 2px 0 #c9c9c9,
-      0 3px 0 #bbb,
-      0 4px 0 #b9b9b9,
-      0 5px 0 #aaa,
-      0 6px 1px rgba(0, 0, 0, 0.1),
-      0 0 5px rgba(0, 0, 0, 0.1),
-      0 1px 3px rgba(0, 0, 0, 0.3),
-      0 3px 5px rgba(0, 0, 0, 0.2),
-      0 5px 10px rgba(0, 0, 0, 0.25),
-      0 10px 10px rgba(0, 0, 0, 0.2),
-      0 20px 20px rgba(0, 0, 0, 0.15);
   }
 }
 .pepe {
@@ -2938,31 +2988,6 @@
   100% {
     font-size: 100%;
   }
-}
-.squishBoing {
-  animation-name: squishBoing;
-  transform-origin: bottom center;
-}
-@keyframes squishBoing {
-  0% {
-    transform: scale(1, 1);
-  }
-
-  25% {
-    transform: scale(1.1, 0.8);
-  } /* Squish down and slightly wider */
-
-  50% {
-    transform: scale(0.9, 1.2);
-  } /* Stretch up and slightly narrower */
-
-  75% {
-    transform: scale(1.05, 0.95);
-  } /* Overshoot slightly */
-
-  100% {
-    transform: scale(1, 1);
-  } /* Return to normal */
 }
 .jigglypop {
   animation-name: jigglypop;
@@ -3019,55 +3044,26 @@
     transform: skewX(4deg);
   }
 }
-.waveBand {
-  animation-name: waveBand;
-  transform-origin: center center;
+.colorFlicker {
+  animation: flicker 1s infinite;
 }
-@keyframes waveBand {
+@keyframes flicker {
   0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
   100% {
-    transform: scaleY(1) translateY(0); /* Normal state */
+    opacity: 1;
   }
 
-  25% {
-    transform: scaleY(1.1) translateY(-5px); /* Stretch vertically and move up slightly */
-  }
-
-  50% {
-    transform: scaleY(0.9) translateY(5px); /* Compress vertically and move down */
-  }
-
-  75% {
-    transform: scaleY(1.05) translateY(-2px); /* Slight overshoot */
-  }
-}
-.jello {
-  animation: jello var(--jello-duration, 0.9s) both;
-}
-@keyframes jello {
-  0%,
-  100% {
-    transform: none;
-  }
-
-  30% {
-    transform: skewX(-12.5deg) skewY(-12.5deg);
-  }
-
-  40% {
-    transform: skewX(6.25deg) skewY(6.25deg);
-  }
-
-  50% {
-    transform: skewX(-3.125deg) skewY(-3.125deg);
-  }
-
-  65% {
-    transform: skewX(1.5625deg) skewY(1.5625deg);
-  }
-
-  75% {
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  20%,
+  22%,
+  24%,
+  55% {
+    opacity: 0.3;
   }
 }
 /**
@@ -3285,6 +3281,10 @@
     opacity: 0;
   }
 }
+/**
+ * Module: Elastic Animation
+ * Filename: ca__elastic.css
+ */
 .elasticArise {
   animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   transform-origin: bottom center; /* Important for vertical scaling */
@@ -3728,6 +3728,63 @@
     transform: scale(0.95);
   } /* Slightly inward */
 }
+.rubber {
+  animation: rubber 0.8s ease-out;
+}
+@keyframes rubber {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.squishBoing {
+  animation-name: squishBoing;
+  transform-origin: bottom center;
+}
+@keyframes squishBoing {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(1.1, 0.8);
+  } /* Squish down and slightly wider */
+
+  50% {
+    transform: scale(0.9, 1.2);
+  } /* Stretch up and slightly narrower */
+
+  75% {
+    transform: scale(1.05, 0.95);
+  } /* Overshoot slightly */
+
+  100% {
+    transform: scale(1, 1);
+  } /* Return to normal */
+}
 /**
  * Module: Quake & Quiver Series
  * Filename: ca__quake.css
@@ -3994,5 +4051,157 @@
   76%,
   100% {
     transform: translateY(40px);
+  }
+}
+/**
+ * Module: Text Animation
+ * Filename: ca__text.css
+ */
+.effect3d {
+  animation-name: effect3d;
+}
+@keyframes effect3d {
+  to {
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0, 0, 0, 0.1),
+      0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3),
+      0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+.spring {
+  animation-name: springy;
+}
+@keyframes springy {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.4, 0.6);
+  }
+
+  50% {
+    transform: scale(0.8, 1.3);
+  }
+
+  70% {
+    transform: scale(1.2, 0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.neonGlow {
+  animation: neonGlow 1.5s ease-in-out infinite;
+}
+@keyframes neonGlow {
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #f0f,
+      0 0 20px #f0f;
+  }
+
+  50% {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #0ff,
+      0 0 30px #0ff;
+  }
+}
+.colorPulse {
+  animation: colorPulse 2s ease-in-out infinite;
+}
+@keyframes colorPulse {
+  0%,
+  100% {
+    color: #fff;
+  }
+
+  50% {
+    color: #ff4081;
+  }
+}
+.trackExpand {
+  animation-name: trackExpand;
+}
+@keyframes trackExpand {
+  0% {
+    transform: translateX(0);
+    letter-spacing: 0;
+  }
+
+  100% {
+    transform: translateX(5px);
+    letter-spacing: 0.5em;
+  }
+}
+.trackCollapse {
+  animation-name: trackCollapse;
+}
+@keyframes trackCollapse {
+  0% {
+    transform: translateX(5px);
+    letter-spacing: 0.5em;
+  }
+
+  100% {
+    transform: translateX(0);
+    letter-spacing: 0;
+  }
+}
+.gradienText {
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 3s linear infinite;
+  background-size: 200%;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+.rainbowText {
+  animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+
+  20% {
+    color: orange;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  60% {
+    color: green;
+  }
+
+  80% {
+    color: blue;
+  }
+
+  100% {
+    color: violet;
   }
 }

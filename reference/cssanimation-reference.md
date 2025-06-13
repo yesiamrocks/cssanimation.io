@@ -96,6 +96,8 @@
 - `ca__fx-bounceInFromBottom`
 - `ca__fx-bouncyScale`
 - `ca__fx-buzz`
+- `ca__fx-colorFlicker`
+- `ca__fx-colorPulse`
 - `ca__fx-elasticArise`
 - `ca__fx-elasticBounce`
 - `ca__fx-elasticIn`
@@ -113,8 +115,10 @@
 - `ca__fx-flyInTop`
 - `ca__fx-flyOutBottom`
 - `ca__fx-flyOutTop`
+- `ca__fx-gradienText`
 - `ca__fx-hop`
 - `ca__fx-jello`
+- `ca__fx-jelly`
 - `ca__fx-jiggle`
 - `ca__fx-jiggleTransform`
 - `ca__fx-jigglypop`
@@ -137,8 +141,10 @@
 - `ca__fx-moveToLeft`
 - `ca__fx-moveToRight`
 - `ca__fx-moveToTop`
+- `ca__fx-neonGlow`
 - `ca__fx-peekpeek`
 - `ca__fx-pepe`
+- `ca__fx-perspectiveTilt`
 - `ca__fx-perspectiveToBottom`
 - `ca__fx-perspectiveToTop`
 - `ca__fx-popUp`
@@ -158,6 +164,7 @@
 - `ca__fx-pushReleaseToTop`
 - `ca__fx-quietMad`
 - `ca__fx-quiver`
+- `ca__fx-rainbowText`
 - `ca__fx-rattle`
 - `ca__fx-rebound`
 - `ca__fx-reboundMotion`
@@ -184,9 +191,9 @@
 - `ca__fx-rotateY`
 - `ca__fx-rotateYIn`
 - `ca__fx-rotateYOut`
+- `ca__fx-rubber`
 - `ca__fx-rubberPop`
 - `ca__fx-rumble`
-- `ca__fx-sake`
 - `ca__fx-shockInBottom`
 - `ca__fx-shockInLeft`
 - `ca__fx-shockInRight`
@@ -220,6 +227,8 @@
 - `ca__fx-swingInRight`
 - `ca__fx-swingInTop`
 - `ca__fx-tiltFadeBack`
+- `ca__fx-trackCollapse`
+- `ca__fx-trackExpand`
 - `ca__fx-tremor`
 - `ca__fx-unfoldAndRise`
 - `ca__fx-verticalShake`

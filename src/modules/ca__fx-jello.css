@@ -67,11 +67,3 @@
     transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
 }
-/**
- * Module: Swing In
- * Filename: ca__SwingIn.css
- */
-.ca__fx-swing {
-  transform-origin: top center;
-  animation: swing var(--swing-duration, 1s) ease-in-out infinite;
-}

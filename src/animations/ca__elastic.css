@@ -1,3 +1,8 @@
+/**
+ * Module: Elastic Animation
+ * Filename: ca__elastic.css
+ */
+
 .elasticArise {
   animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   transform-origin: bottom center; /* Important for vertical scaling */
@@ -478,4 +483,65 @@
   75% {
     transform: scale(0.95);
   } /* Slightly inward */
+}
+
+.rubber {
+  animation: rubber 0.8s ease-out;
+}
+
+@keyframes rubber {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.squishBoing {
+  animation-name: squishBoing;
+  transform-origin: bottom center;
+}
+
+@keyframes squishBoing {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(1.1, 0.8);
+  } /* Squish down and slightly wider */
+
+  50% {
+    transform: scale(0.9, 1.2);
+  } /* Stretch up and slightly narrower */
+
+  75% {
+    transform: scale(1.05, 0.95);
+  } /* Overshoot slightly */
+
+  100% {
+    transform: scale(1, 1);
+  } /* Return to normal */
 }

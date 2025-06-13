@@ -193,8 +193,8 @@ const htmlContent = `<!DOCTYPE html>
         }
     </style>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 p-6 transition-colors duration-300 ease-in-out">
-    <div class="max-w-7xl mx-auto">
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 ease-in-out">
+    <div class="max-w-7xl mx-auto pt-6 pb-6">
         <div class="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
             <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-700 dark:text-blue-300 text-center sm:text-left">Explore CSS Animations</h1>
 
@@ -304,6 +304,13 @@ const htmlContent = `<!DOCTYPE html>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
         </svg>
     </button>
+
+    <footer style="text-align: center; padding: 2rem 1rem; font-size: 0.875rem; color: #888;">
+        <p>
+            Made with ❤️ by <a href="https://www.linkedin.com/in/shafayetul/" target="_blank" rel="noopener noreferrer" style="color: #555;">Shafayetul Islam Pavel</a> — 
+            <a href="https://cssanimation.io" target="_blank" rel="noopener noreferrer" style="color: #555;">cssanimation.io</a>
+        </p>
+    </footer>
 
     <script>
         const gallery = document.getElementById('gallery');

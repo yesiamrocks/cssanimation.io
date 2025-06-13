@@ -50,21 +50,6 @@
   }
 }
 
-.sake {
-  animation-name: snake;
-}
-
-@keyframes snake {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(30px);
-  }
-}
-
 .peekpeek {
   animation-name: peekpeek;
 }
@@ -76,28 +61,6 @@
 
   50% {
     transform: translateY(-22px) rotate(3deg) scale(1.1);
-  }
-}
-
-.effect3d {
-  animation-name: effect3d;
-}
-
-@keyframes effect3d {
-  to {
-    text-shadow:
-      0 1px 0 #ccc,
-      0 2px 0 #c9c9c9,
-      0 3px 0 #bbb,
-      0 4px 0 #b9b9b9,
-      0 5px 0 #aaa,
-      0 6px 1px rgb(0 0 0 / 10%),
-      0 0 5px rgb(0 0 0 / 10%),
-      0 1px 3px rgb(0 0 0 / 30%),
-      0 3px 5px rgb(0 0 0 / 20%),
-      0 5px 10px rgb(0 0 0 / 25%),
-      0 10px 10px rgb(0 0 0 / 20%),
-      0 20px 20px rgb(0 0 0 / 15%);
   }
 }
 
@@ -153,33 +116,6 @@
   100% {
     font-size: 100%;
   }
-}
-
-.squishBoing {
-  animation-name: squishBoing;
-  transform-origin: bottom center;
-}
-
-@keyframes squishBoing {
-  0% {
-    transform: scale(1, 1);
-  }
-
-  25% {
-    transform: scale(1.1, 0.8);
-  } /* Squish down and slightly wider */
-
-  50% {
-    transform: scale(0.9, 1.2);
-  } /* Stretch up and slightly narrower */
-
-  75% {
-    transform: scale(1.05, 0.95);
-  } /* Overshoot slightly */
-
-  100% {
-    transform: scale(1, 1);
-  } /* Return to normal */
 }
 
 .jigglypop {
@@ -241,57 +177,26 @@
   }
 }
 
-.waveBand {
-  animation-name: waveBand;
-  transform-origin: center center;
+.colorFlicker {
+  animation: flicker 1s infinite;
 }
 
-@keyframes waveBand {
+@keyframes flicker {
   0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
   100% {
-    transform: scaleY(1) translateY(0); /* Normal state */
+    opacity: 1;
   }
 
-  25% {
-    transform: scaleY(1.1) translateY(-5px); /* Stretch vertically and move up slightly */
-  }
-
-  50% {
-    transform: scaleY(0.9) translateY(5px); /* Compress vertically and move down */
-  }
-
-  75% {
-    transform: scaleY(1.05) translateY(-2px); /* Slight overshoot */
-  }
-}
-
-.jello {
-  animation: jello var(--jello-duration, 0.9s) both;
-}
-
-@keyframes jello {
-  0%,
-  100% {
-    transform: none;
-  }
-
-  30% {
-    transform: skewX(-12.5deg) skewY(-12.5deg);
-  }
-
-  40% {
-    transform: skewX(6.25deg) skewY(6.25deg);
-  }
-
-  50% {
-    transform: skewX(-3.125deg) skewY(-3.125deg);
-  }
-
-  65% {
-    transform: skewX(1.5625deg) skewY(1.5625deg);
-  }
-
-  75% {
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  20%,
+  22%,
+  24%,
+  55% {
+    opacity: 0.3;
   }
 }

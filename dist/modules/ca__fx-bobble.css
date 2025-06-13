@@ -72,10 +72,3 @@
     transform: translateX(2%) rotate(0.5deg);
   }
 }
-/**
- * Module: Fade in
- * Filename: ca__FadeIn.css
- */
-.ca__fx-fadeIn {
-  animation-name: fadeIn;
-}
