@@ -1,6 +1,6 @@
-# CSS Animation Library for Developers and Ninjas — cssanimation.io
+# CSS Animation Library for Developers and Ninjas
 
-> A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.
+> A Powerful CSS Animation Library for Advanced Motion Design.
 
 <!-- Tech & Status -->
 
@@ -8,7 +8,7 @@
 
 [![GSAP Support](https://img.shields.io/badge/Also%20Supports-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://github.com/yesiamrocks/gsapanimation)
 
-**cssanimation** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** (both pure CSS and GSAP-powered!) to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
+**cssanimation** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
 
 You're in control. Just apply the [class names](https://yesiamrocks.github.io/cssanimation/cssanimation-demo.html) where you want them. **Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."**
 
