@@ -4,13 +4,13 @@
 
 <!-- Tech & Status -->
 
-![CSS](https://img.shields.io/badge/style-CSS-blue) [![NPM](https://img.shields.io/npm/v/cssanimationio.svg)](https://www.npmjs.com/package/cssanimationio) [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/yesiamrocks/cssanimation.io/badge)](https://www.jsdelivr.com/package/gh/yesiamrocks/cssanimation.io) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation.io)](https://github.com/yesiamrocks/cssanimation.io/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://cssanimation.io) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./docs/code_of_conduct.md)
+![CSS](https://img.shields.io/badge/style-CSS-blue) [![NPM](https://img.shields.io/npm/v/cssanimation.svg)](https://www.npmjs.com/package/cssanimation) [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/yesiamrocks/cssanimation/badge)](https://www.jsdelivr.com/package/gh/yesiamrocks/cssanimation) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://cssanimation) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./docs/code_of_conduct.md)
 
 [![GSAP Support](https://img.shields.io/badge/Also%20Supports-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://github.com/yesiamrocks/gsapanimation)
 
-**cssanimation.io** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** (both pure CSS and GSAP-powered!) to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
+**cssanimation** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** (both pure CSS and GSAP-powered!) to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
 
-You're in control. Just apply the [class names](https://yesiamrocks.github.io/cssanimation.io/cssanimation-demo.html) where you want them. **Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."**
+You're in control. Just apply the [class names](https://yesiamrocks.github.io/cssanimation/cssanimation-demo.html) where you want them. **Zero setup. No JavaScript needed (unless you want GSAP). Just clean, reusable animations that "just work."**
 
 ## Why Developers Love It
 
@@ -107,7 +107,7 @@ We use clear prefixes to help you find the right animation or utility class.
 
 - Highly customizable: Control animations directly with HTML attributes.
 - Animate **Letters**, **Words**, and **Lines**: Independent control for precise effects.
-- Custom CSS Animation Classes: Use any cssanimation.io class you like.
+- Custom CSS Animation Classes: Use any cssanimation class you like.
 - Sequential Animation Logic: Units wait for the previous one to complete.
 - Random & Reverse Effects: Get creative with animation order.
 - Smart Handling: Safely handles whitespace and provides animation class fallbacks.
@@ -119,7 +119,7 @@ _If you're already using **cssanimation.io** via NPM, you're all set!_
 For plain HTML, include the `ca-letteranimation.js`, plugin just before your closing `</body>` tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/ca-letteranimation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/ca-letteranimation.js"></script>
 ```
 
 ### Letter Animation Usage
@@ -190,7 +190,7 @@ You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **d
 </p>
 ```
 
-[Check out this Text & Letter Animations Preview Tool to easily generate the animation code for your text.](https://yesiamrocks.github.io/cssanimation.io/text-animation.html)
+[Check out this Text & Letter Animations Preview Tool to easily generate the animation code for your text.](https://yesiamrocks.github.io/cssanimation/text-animation.html)
 
 <br><br>
 
@@ -336,7 +336,7 @@ Looking to go beyond CSS with scroll triggers, advanced sequencing, and even mor
 - Zero-setup: Plug-and-play with any HTML — no complex JS setup needed.
 
 ```html
-<h1 ca-gsap="ca__gx-FadeIn" ca__gx-lt="sequence">cssanimation.io GSAP</h1>
+<h1 ca-gsap="ca__gx-FadeIn" ca__gx-lt="sequence">cssanimation GSAP</h1>
 ```
 
 [Explore GSAPAnimation for more magic»](https://github.com/yesiamrocks/gsapanimation)
@@ -358,16 +358,16 @@ Looking to go beyond CSS with scroll triggers, advanced sequencing, and even mor
 | Size | Very lightweight (no JS needed) | Heavier due to JS dependency |
 | Dependencies | None | Requires GSAP (`TweenMax`) |
 | CDN Available? | ✅ Yes | ✅ Yes |
-| NPM Ready? | ✅ Yes (`cssanimationio`) | ✅ Yes (`cssanimationio`) |
+| NPM Ready? | ✅ Yes (`cssanimation`) | ✅ Yes (`cssanimation`) |
 | Use Case Examples | Hover states, hero sections, banners | Interactive animations, scroll triggers, custom flows |
 
 ## Accessibility: Respecting User Preferences
 
-By default, **cssanimation.io** respects user system preferences. When `prefers-reduced-motion: reduce` is enabled in a user's operating system settings, animations are automatically turned off for a more comfortable user experience.
+By default, **cssanimation** respects user system preferences. When `prefers-reduced-motion: reduce` is enabled in a user's operating system settings, animations are automatically turned off for a more comfortable user experience.
 
 ## License
 
-**cssanimation.io** is licensed under the [Parity Public License](https://paritylicense.com/).
+**cssanimation** is licensed under the [Parity Public License](https://paritylicense.com/).
 
 ## Contribute
 
