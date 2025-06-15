@@ -206,19 +206,19 @@
 }
 
 /* Repeating Utilities */
-.loop-once {
+.loopOnce {
   animation-iteration-count: 1 !important;
 }
 
-.loop-forever {
+.loopForever {
   animation-iteration-count: infinite !important;
 }
 
-.loop-triple {
+.loopTriple {
   animation-iteration-count: 3 !important;
 }
 
-.loop-bounce {
+.loopBounce {
   animation-iteration-count: infinite !important;
   animation-direction: alternate !important;
 }
