@@ -1,6 +1,6 @@
 {
-  "name": "cssanimationio",
-  "version": "5.6.0",
+  "name": "cssanimation",
+  "version": "5.7.0",
   "description": "A Powerful CSS Animation Library with GSAP Support for Advanced Motion Design.",
   "main": "index.js",
   "style": "dist/cssanimation.css",
@@ -20,10 +20,10 @@
   "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yesiamrocks/cssanimation.io.git"
+    "url": "git+https://github.com/yesiamrocks/cssanimation.git"
   },
   "bugs": {
-    "url": "https://github.com/yesiamrocks/cssanimation.io/issues"
+    "url": "https://github.com/yesiamrocks/cssanimation/issues"
   },
   "homepage": "https://cssanimation.io/",
   "files": [
