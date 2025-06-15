@@ -32,9 +32,9 @@ const headerMap = {
 * Author: ${parsedAuthor}
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
 * Email: hello@cssanimation.io
-* GitHub: https://github.com/yesiamrocks/cssanimation.io
+* GitHub: https://github.com/yesiamrocks/cssanimation
 *
-* Title: Core Animation Styles and Keyframe Definitions for cssanimation.io.
+* Title: Core Animation Styles and Keyframe Definitions for cssanimation.
 * Description: Contains the fundamental CSS animation classes, keyframe definitions,
 * and essential styling that form the base of the cssanimation.io library.
 *
@@ -50,7 +50,7 @@ const headerMap = {
 * Author: ${parsedAuthor}
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
 * Email: hello@cssanimation.io
-* GitHub: https://github.com/yesiamrocks/cssanimation.io
+* GitHub: https://github.com/yesiamrocks/cssanimation
 *
 * Title: Utility Classes for CSS Animation Control and Responsiveness.
 * Description: A collection of helper classes for managing animation duration, delay,

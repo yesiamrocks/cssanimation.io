@@ -29,13 +29,13 @@ Choose the method that fits your workflow best.
 #### Install via NPM
 
 ```bash
-npm i cssanimationio
+npm i @hellouxpavel/cssanimation
 ```
 
 #### Import Everything (Core Library, CSS Utility Classes & Letter Animation):
 
 ```bash
-import 'cssanimationio';
+import '@hellouxpavel/cssanimation';
 ```
 
 #### Individual Imports (if you only need specific parts):
@@ -44,17 +44,17 @@ CSS only
 
 ```bash
 // Core CSS animations
-import 'cssanimationio/css';
+import '@hellouxpavel/cssanimation/css';
 
 // Utility CSS classes (like speed, delay, easing)
-import 'cssanimationio/utility';
+import '@hellouxpavel/cssanimation/utility';
 ```
 
 For Letter Animations (JavaScript required for this part):
 
 ```bash
 //letter-by-letter, word-by-word, and line-by-line animations
-import 'cssanimationio/letter';
+import '@hellouxpavel/cssanimation/letter';
 ```
 
 ### Install via CDN
@@ -63,8 +63,14 @@ Quickly add **cssanimation.io** to your HTML. Include these lines in your `<head
 
 ```html
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/cssanimationio@latest/dist/cssanimation-utility.min.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation-utility.min.css"
+    rel="stylesheet"
+  />
 </head>
 ```
 
@@ -73,7 +79,7 @@ Quickly add **cssanimation.io** to your HTML. Include these lines in your `<head
 Once installed, simply add the base`.cssanimation` to your element, along with your chosen animation class like `.ca__fx-FadeIn` for fade in animation.
 
 ```html
-<h1 class="cssanimation ca__fx-FadeIn">cssanimation</h1>
+<h1 class="cssanimation ca__fx-fadeIn">cssanimation</h1>
 ```
 
 _That's it! You've got a CSS animated element. Super! 🎉_
@@ -86,8 +92,8 @@ We use clear prefixes to help you find the right animation or utility class.
 
 | Prefix    | Description                                      | Example Usage                   |
 | --------- | ------------------------------------------------ | ------------------------------- |
-| `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-BounceX">`   |
-| `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-SpeedChill">` |
+| `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-bounceX">`   |
+| `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-speedChill">` |
 
 <br>
 
@@ -127,19 +133,19 @@ Animate text one letter at a time with different sequencing styles:
 **➜ Sequential (in order):** `ca__lt-sequence`
 
 ```html
-<h1 class="cssanimation" ca__lt-sequence="ca__fx-FadeIn">Letters Animate</h1>
+<h1 class="cssanimation" ca__lt-sequence="ca__fx-fadeIn">Letters Animate</h1>
 ```
 
 **➜ Randomized order** `ca__lt-random`
 
 ```html
-<p class="cssanimation" ca__lt-random="ca__fx-BounceInTop">Randomized entry!</p>
+<p class="cssanimation" ca__lt-random="ca__fx-bounceInTop">Randomized entry!</p>
 ```
 
 **➜ Reverse (last letter first)** `ca__lt-reverse`
 
 ```html
-<h3 class="cssanimation" ca__lt-reverse="ca__fx-MoveFromTop">Backwards Flow</h3>
+<h3 class="cssanimation" ca__lt-reverse="ca__fx-moveFromTop">Backwards Flow</h3>
 ```
 
 ---
@@ -147,13 +153,13 @@ Animate text one letter at a time with different sequencing styles:
 #### 2. Word-by-Word Animation `ca__lt-word`
 
 ```html
-<h2 class="cssanimation" ca__lt-word="ca__fx-FadeIn">Each word animates uniquely</h2>
+<h2 class="cssanimation" ca__lt-word="ca__fx-fadeIn">Each word animates uniquely</h2>
 ```
 
 #### 3. Line-by-line Animation `ca__lt-line`
 
 ```html
-<p class="cssanimation" ca__lt-line="ca__fx-FadeIn">
+<p class="cssanimation" ca__lt-line="ca__fx-fadeIn">
   First line<br />
   Second line<br />
   Third line
@@ -163,7 +169,7 @@ Animate text one letter at a time with different sequencing styles:
 Split lines by periods `"."` or by `<br>` / `\n`. Use `ca__lt-separator="dot"` for period separation.
 
 ```html
-<p class="cssanimation" ca__lt-line="ca__fx-FadeIn" ca__lt-separator="dot">Step 1. Step 2. Step 3.</p>
+<p class="cssanimation" ca__lt-line="ca__fx-fadeIn" ca__lt-separator="dot">Step 1. Step 2. Step 3.</p>
 ```
 
 You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **default behavior**.
@@ -171,13 +177,13 @@ You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **d
 ### 🔥You can assign different animation classes and delays to each word and line! Space-separate your class names and delay values.
 
 ```html
-<h2 class="cssanimation" ca__lt-word="ca__fx-FadeIn ca__fx-MoveFromTop ca__fx-MoveFromBottom ca__fx-MoveFromRight">
+<h2 class="cssanimation" ca__lt-word="ca__fx-fadeIn ca__fx-moveFromTop ca__fx-moveFromBottom ca__fx-moveFromRight">
   Each word animates uniquely
 </h2>
 ```
 
 ```html
-<p class="cssanimation" ca__lt-line="ca__fx-BlurIn ca__fx-BounceFromTop ca__fx-BounceX">
+<p class="cssanimation" ca__lt-line="ca__fx-blurIn ca__fx-bounceFromTop ca__fx-bounceX">
   First line<br />
   Second line<br />
   Third line
@@ -195,13 +201,13 @@ The `ca__lt-delay` attribute specifies the delay before each animated unit (lett
 **Single Value:** If you provide a single value, that delay will be applied to every unit.
 
 ```html
-<h1 class="cssanimation" ca__lt-sequence="ca__fx-FadeIn" ca__lt-delay="100">Each letter delays by 100ms</h1>
+<h1 class="cssanimation" ca__lt-sequence="ca__fx-fadeIn" ca__lt-delay="100">Each letter delays by 100ms</h1>
 ```
 
 **Multiple Values:** This is where it gets powerful! You can provide multiple space-separated values. These values will be applied sequentially to each unit. If you provide fewer delay values than there are units, the last delay value will repeat for the remaining units.
 
 ```html
-<h2 class="cssanimation" ca__lt-word="ca__fx-FadeIn" ca__lt-delay="0 200 400">
+<h2 class="cssanimation" ca__lt-word="ca__fx-fadeIn" ca__lt-delay="0 200 400">
   First word, then 200ms, then 400ms, then 400ms
 </h2>
 ```
@@ -217,7 +223,7 @@ The `ca__lt-base-duration` attribute provides a simple way to set a global defau
 This value is used to explicitly set the duration for all units, overriding any `animation-duration` or `transition-duration` that might be detected from the CSS classes applied to the element.
 
 ```html
-<h3 class="cssanimation" ca__lt-sequence="ca__fx-PopIn" ca__lt-base-duration="750">Global base duration</h3>
+<h3 class="cssanimation" ca__lt-sequence="ca__fx-fadeIn" ca__lt-base-duration="750">Global base duration</h3>
 ```
 
 **Precedence:**
@@ -252,7 +258,12 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 **Example: Full Setup**
 
 ```html
-<h2 class="cssanimation" ca__lt-word="fadeIn bounce slide rotate" ca__lt-delay="200 300 400" ca__lt-duration="1000">
+<h2
+  class="cssanimation"
+  ca__lt-word="ca__fx-fadeIn ca__fx-fadeInLeft ca__fx-slinkyDrop ca__fx-jiggleTransform"
+  ca__lt-delay="200 300 400"
+  ca__lt-duration="1000"
+>
   Animate each word smoothly
 </h2>
 ```
@@ -317,7 +328,7 @@ Looking to go beyond CSS with scroll triggers, advanced sequencing, and even mor
 
 ### 👉 Check out [**GSAPAnimation**](https://github.com/yesiamrocks/gsapanimation)
 
-> It's a lightweight GSAP toolkit built to extend `cssanimation.io` with JavaScript superpowers.
+> It's a lightweight GSAP toolkit built to extend `cssanimation` with JavaScript superpowers.
 
 - `ca__gx-FadeIn`: Our "Gold Standard" GSAP animations.
 - `ca-gsap-options='{}'`: Easily pass GSAP options directly to your animation functions.
