@@ -295,10 +295,10 @@
 - `ca__u-easeWhip`
 - `ca__u-easeWhiplash`
 - `ca__u-easeZoomSnappy`
-- `ca__u-loop-bounce`
-- `ca__u-loop-forever`
-- `ca__u-loop-once`
-- `ca__u-loop-triple`
+- `ca__u-loopBounce`
+- `ca__u-loopForever`
+- `ca__u-loopOnce`
+- `ca__u-loopTriple`
 - `ca__u-speedBlitz`
 - `ca__u-speedChill`
 - `ca__u-speedDrift`

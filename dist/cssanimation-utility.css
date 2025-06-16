@@ -2,13 +2,13 @@
 /*!* @preserve
 * cssanimation-utilities.css - Utility classes for enhanced animation control and responsiveness.
 * Part of: https://cssanimation.io/
-* Version: 5.7.0
-* Built: 2025-06-15 08:56:01 UTC
+* Version: 5.7.2
+* Built: 2025-06-16 10:19:52 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
 * Email: hello@cssanimation.io
-* GitHub: https://github.com/yesiamrocks/cssanimation.io
+* GitHub: https://github.com/yesiamrocks/cssanimation
 *
 * Title: Utility Classes for CSS Animation Control and Responsiveness.
 * Description: A collection of helper classes for managing animation duration, delay,
@@ -173,16 +173,16 @@
   animation-timing-function: cubic-bezier(0.9, -0.6, 0.8, 1.8);
 }
 /* Repeating Utilities */
-.ca__u-loop-once {
+.ca__u-loopOnce {
   animation-iteration-count: 1 !important;
 }
-.ca__u-loop-forever {
+.ca__u-loopForever {
   animation-iteration-count: infinite !important;
 }
-.ca__u-loop-triple {
+.ca__u-loopTriple {
   animation-iteration-count: 3 !important;
 }
-.ca__u-loop-bounce {
+.ca__u-loopBounce {
   animation-iteration-count: infinite !important;
   animation-direction: alternate !important;
 }

@@ -1,0 +1,72 @@
+/*!
+ * Module: coolVerticalShake Animation
+ * Usage: <div class="cssanimation ca__fx-coolVerticalShake">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-coolVerticalShake {
+  animation-name: coolVerticalShake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes coolVerticalShake {
+  3%,
+  21%,
+  39%,
+  57%,
+  74%,
+  92% {
+    transform: translateY(5px);
+  }
+
+  6%,
+  24%,
+  42%,
+  60%,
+  77%,
+  95% {
+    transform: translateY(3px);
+  }
+
+  9%,
+  27%,
+  45%,
+  63%,
+  80%,
+  98% {
+    transform: translateY(-5px);
+  }
+}
