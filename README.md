@@ -343,24 +343,6 @@ Looking to go beyond CSS with scroll triggers, advanced sequencing, and even mor
 
 <br><br>
 
-## CSS vs. GSAP – Which Animation Version Should You Use?
-
-| Feature / Capability | **CSS Version** | **GSAP Version** |
-| --- | --- | --- |
-| Technology | Pure CSS | JavaScript (GSAP) |
-| Performance | Great for simple UI effects | Optimized for complex, smooth animations |
-| Control | Fine-grained control via CSS | Fine-grained control via JS (timing, easing) |
-| Animation Types | Predefined class-based animations | Class-based with dynamic GSAP tweening |
-| Letter Animation Support | ✅ Sequence & Random | ✅ Sequence only (random coming soon) |
-| Looping & Repeating | `infinite` class | Full loop control via JS (e.g. `repeat`, `yoyo`) |
-| Configuration | Minimal setup | Script includes + optional JS tweaks |
-| Customization | Moderate (via utility classes) | High — control properties on the fly |
-| Size | Very lightweight (no JS needed) | Heavier due to JS dependency |
-| Dependencies | None | Requires GSAP (`TweenMax`) |
-| CDN Available? | ✅ Yes | ✅ Yes |
-| NPM Ready? | ✅ Yes (`cssanimation`) | ✅ Yes (`cssanimation`) |
-| Use Case Examples | Hover states, hero sections, banners | Interactive animations, scroll triggers, custom flows |
-
 ## Accessibility: Respecting User Preferences
 
 By default, **cssanimation** respects user system preferences. When `prefers-reduced-motion: reduce` is enabled in a user's operating system settings, animations are automatically turned off for a more comfortable user experience.
