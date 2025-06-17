@@ -30,10 +30,12 @@ Choose the method that fits your workflow best.
 
 ```bash
 npm i @hellouxpavel/cssanimation
+```
 
-// Or install with Yarn
+#### Or install with Yarn
+
+```bash
 yarn add @hellouxpavel/cssanimation
-
 ```
 
 #### Import Everything (Core Library, CSS Utility Classes & Letter Animation):
