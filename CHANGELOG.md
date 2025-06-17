@@ -1,3 +1,19 @@
+## [5.7.3] - 2025-06-17
+
+### Badge Enhancements
+
+- Updated all badges to use consistent `style=for-the-badge` format for improved visual style
+- Fixed broken jsDelivr badge display (replaced API link with working shields.io badge)
+- Added fallback to unpkg CDN link for reliable access to assets
+- Centered badge block using HTML for improved alignment in GitHub README
+- Updated "Made with ❤️" and "Built with ❤️ by Pavel" with visible icons and bold style
+- Improved LinkedIn badge with clear label and style match
+
+### Cleanup
+
+- Removed Contributor Covenant badge for visual simplification (Code of Conduct remains in project)
+- Reorganized badge layout for better readability
+
 ## [5.7.1] - 2025-06-17
 
 ### Documentation
