@@ -1,3 +1,11 @@
+## [5.7.1] - 2025-06-17
+
+### Documentation
+
+- Restructured and cleaned up the `docs/` folder
+- Updated all usage guides and examples to reflect the new `cssanimation` naming
+- Fixed outdated links and removed legacy `.io` references
+
 ## [5.7.0] - 2025-06-17
 
 ### Rebrand
