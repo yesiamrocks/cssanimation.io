@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>CSS-Only Typing Animation</title>
+        <meta charset="UTF-8" />
+        <title>Trigger Animation Fix</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css">
         <style>
-   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #282c34;
-    font-family: 'Courier New', Courier, monospace;
-    color: #61dafb;
-    overflow: hidden; /* Hide overflow to prevent scrollbar during animation */
-}
+    /* :root {
+      --cssanimation-duration: 1s;
+      --cssanimation-fill-mode: both;
+      --cssanimation-infinite: infinite;
+      --cssanimation-backface-visibility: hidden;
+      --cssanimation-transform-style: preserve-3d;
+      --cssanimation-will-change: transform, opacity;
+      --cssanimation-display: inline-block;
+      --move-distance: -800px;
+    }
 
-.typing-container {
-    padding: 20px;
-    background-color: #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    .cssanimation {
+      animation-duration: var(--cssanimation-duration, 1s);
+      animation-fill-mode: var(--cssanimation-fill-mode, both);
+    }
 
-.typing-text {
-    /* The text itself */
-    white-space: nowrap; /* Keep the text on a single line */
-    overflow: hidden;    /* Hide the overflowing text */
-    border-right: 3px solid; /* The blinking cursor */
-    font-size: 2em;
-    width: 0;            /* Start with zero width */
-    animation:
-        typing 4s steps(5, end) forwards, /* Type out the text */
-        blink-caret .75s step-end infinite; /* Blinking cursor */
-}
+    .cssanimation span {
+      display: var(--cssanimation-display, inline-block);
+    }
 
-/* Keyframes for the typing animation */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% } /* Expand width to reveal text */
-}
+    .infinite {
+      animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+    }
 
-/* Keyframes for the blinking cursor */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #61dafb; }
-}
+    .ca__fx-bounceX {
+      animation-name: bounceX;
+    }
 
-/* Explanation of values: */
-/* typing 4s steps(43, end) forwards */
-/* - 4s: The total duration of the typing animation.
-/* - steps(43, end): This is crucial. 43 is the number of characters in "This is a typing animation using CSS only.".
-/* You need to count the characters (including spaces and punctuation).
-/* 'end' means the animation ends on the last step.
-/* - forwards: The animation will retain the style values from the last keyframe (i.e., width: 100%).
-/*
-/* blink-caret .75s step-end infinite */
-/* - .75s: The duration of one blink cycle.
-/* - step-end: Makes the animation jump instantly to the next state, creating a sharp blink.
-/* - infinite: The cursor will blink forever. */
+    @keyframes bounceX {
+      0%   { transform: translateX(0); }
+      25%  { transform: translateX(-10px); }
+      50%  { transform: translateX(10px); }
+      75%  { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    } */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #282c34;
+      font-family: 'Courier New', Courier, monospace;
+      color: #61dafb;
+    }
+
+    .demo-box {
+      padding: 1rem 2rem;
+      background: #444;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .demo-box:hover {
+      background: #555;
+    }
   </style>
     </head>
     <body>
 
-        <!--
-    data-text = the actual text you want to type
-    --text-length = length of that text (number of characters)
-    --typing-duration = how long the typing animation lasts (e.g. 4s)
-  -->
         <div
-            class="typing-container"
-            style="--text-length: 5; --typing-duration: 10s;"
-            data-text="Hello">Hello</div>
-
-        <div class="typing-container">
-            <p class="typing-text">hello</p>
+            class="demo-box"
+            data-ca-trigger="mouseup"
+            data-ca-class="cssanimation ca__fx-bounceX"
+            data-ca-reset="true">
+            Click to Animate Again
         </div>
+
+        <input
+            type="text"
+            placeholder="Focus me"
+            style="padding: 0.5rem; margin: 1rem; border: 2px solid #888; border-radius: 4px;"
+            data-ca-trigger="focus"
+            data-ca-class="cssanimation ca__fx-fadeIn"
+            data-ca-reset="true" />
+
+        <input
+            type="text"
+            placeholder="Blur me"
+            style="padding: 0.5rem; margin: 1rem; border: 2px solid #888; border-radius: 4px;"
+            data-ca-trigger="blur"
+            data-ca-class="cssanimation ca__fx-shockZoom"
+            data-ca-reset="true" />
+
+        <script src="./ca-trigger.js"></script>
+
     </body>
 </html>
