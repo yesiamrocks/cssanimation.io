@@ -107,6 +107,8 @@ We use clear prefixes to help you find the right animation or utility class.
 
 > Want to animate text beautifully, responsively, and with zero dependencies (for the core CSS parts)?
 
+![npm](https://img.shields.io/npm/dw/@hellouxpavel/cssanimation) ![jsDelivr](https://data.jsdelivr.com/v1/package/npm/@hellouxpavel/cssanimation/badge) [![View Demo](https://img.shields.io/badge/🎬%20Live-Demo-green)](https://yesiamrocks.github.io/cssanimation/text-animation.html)
+
 `ca-letteranimation.js` plugin is a lightweight, CSS-only enhancement script that brings **letter-by-letter, word-by-word, and line-by-line** animations to your projects. It's designed to work seamlessly with [cssanimation.io](https://cssanimation.io), for robust and customizable text effects.
 
 ### Key Features
