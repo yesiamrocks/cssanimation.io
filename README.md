@@ -4,7 +4,7 @@
 
 <!-- Tech & Status -->
 
-![CSS](https://img.shields.io/badge/style-CSS-blue) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/yesiamrocks/cssanimation/badge)](https://www.jsdelivr.com/package/gh/yesiamrocks/cssanimation) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://yesiamrocks.github.io/cssanimation/cssanimation-demo.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md) ![Made with Love](https://img.shields.io/badge/made%20with-%E2%9D%A4%EF%B8%8F-red)
+![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) [![jsDelivr](https://data.jsdelivr.com/v1/package/npm/@hellouxpavel/cssanimation/badge?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/cssanimation-demo.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)](CODE_OF_CONDUCT.md) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge)
 
 [![GSAP Support](https://img.shields.io/badge/Also%20Supports-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://github.com/yesiamrocks/gsapanimation)
 
@@ -107,7 +107,7 @@ We use clear prefixes to help you find the right animation or utility class.
 
 > Want to animate text beautifully, responsively, and with zero dependencies (for the core CSS parts)?
 
-![npm](https://img.shields.io/npm/dw/@hellouxpavel/cssanimation) ![jsDelivr](https://data.jsdelivr.com/v1/package/npm/@hellouxpavel/cssanimation/badge) [![View Demo](https://img.shields.io/badge/🎬%20Live-Demo-green)](https://yesiamrocks.github.io/cssanimation/text-animation.html)
+![npm](https://img.shields.io/npm/dw/@hellouxpavel/cssanimation?style=for-the-badge) ![jsDelivr](https://data.jsdelivr.com/v1/package/npm/@hellouxpavel/cssanimation/badge?style=for-the-badge) [![View Demo](https://img.shields.io/badge/🎬%20Live-Demo-green?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/text-animation.html)
 
 `ca-letteranimation.js` plugin is a lightweight, CSS-only enhancement script that brings **letter-by-letter, word-by-word, and line-by-line** animations to your projects. It's designed to work seamlessly with [cssanimation.io](https://cssanimation.io), for robust and customizable text effects.
 
@@ -363,4 +363,4 @@ By default, **cssanimation** respects user system preferences. When `prefers-red
 
 We welcome issues, pull requests, and suggestions! 🤝 Help us make animations even more magical for everyone.
 
-![Built with ❤️ by Pavel](https://img.shields.io/badge/built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/shafayetul/)
+![Built with ❤️ by Pavel](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange?style=for-the-badge) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/shafayetul/)
