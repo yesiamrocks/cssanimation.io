@@ -1,3 +1,17 @@
+## [5.7.0] - 2025-06-17
+
+### Rebrand
+
+- **cssanimation.io is now officially cssanimation**
+- All visual, textual, and metadata references updated to reflect the rebrand
+- Updated site footer, titles, descriptions, and social share content
+- Documentation rewritten to drop `.io` suffix and promote cssanimation as a platform
+- No changes to core classnames or APIs — functionality remains backward compatible
+
+### Note
+
+If you're referencing the project, please use **cssanimation** going forward (no `.io`).
+
 ## [5.6.0] - 2025-06-12
 
 ### Added
