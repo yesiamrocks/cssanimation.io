@@ -1,3 +1,18 @@
+## [6.1.0] – 2025-06-18
+
+### Added
+
+- Wildcard key matching via `data-ca-key="prefix*"` (e.g. `arrow*`)
+- Modifier key support like `ctrl+z`, `shift+a`, `alt+enter`
+- Custom event matching now includes `customEvent` JS dispatches
+- Dev mode toggle (`window.__CA_DEBUG = true`) for logging diagnostics
+- Support for multi-key combinations in `data-ca-key` string
+
+### Improved
+
+- Refined internal event logic to support flexible combinations
+- Added developer-friendly documentation and debug messages
+
 ## [6.0.0] - 2025-06-18
 
 ### Added

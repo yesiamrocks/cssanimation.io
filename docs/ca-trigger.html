@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ca-trigger.js – All Trigger Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- cssanimation.io Plugin -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css" />
+
+    <!-- Highlight.js for syntax highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+
+  <body
+    class="bg-zinc-900 text-white min-h-screen px-4 py-8 font-sans transition-colors duration-300">
+    <div class="max-w-3xl mx-auto space-y-10">
+      <!-- Header -->
+      <header class="text-center">
+        <h1 class="text-3xl font-bold text-cyan-400">🔧 ca-trigger.js Demo</h1>
+        <p class="text-gray-300 mt-2">
+          Explore all supported <code>data-ca-trigger</code> types. Toggle theme
+          or copy examples.
+        </p>
+        <button
+          id="toggleTheme"
+          class="mt-4 px-4 py-2 text-sm font-medium rounded bg-gray-800 text-cyan-300 hover:bg-gray-700">
+          🌓 Toggle Dark/Light
+        </button>
+      </header>
+
+      <!-- Trigger Example Sections -->
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🔘 click</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="click" data-ca-class="ca__fx-wiggle"
+          data-ca-reset="true">
+          Click Me
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-click">&lt;div
+  class="cssanimation"
+  data-ca-trigger="click"
+  data-ca-class="ca__fx-wiggle"
+  data-ca-reset="true"&gt;
+  Click Me
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-click')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🖱️ mouseenter /
+          mouseleave</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="mouseenter,mouseleave"
+          data-ca-class="ca__fx-elasticStretch" data-ca-reset="true">
+          Hover In / Out
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-hover">&lt;div
+  class="cssanimation"
+  data-ca-trigger="mouseenter,mouseleave"
+  data-ca-class="ca__fx-elasticStretch"
+  data-ca-reset="true"&gt;
+  Hover In / Out
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-hover')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🖱️ mousedown</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="mousedown" data-ca-class="ca__fx-squishLift"
+          data-ca-reset="true">
+          Hold Mouse Down
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-down">&lt;div
+  class="cssanimation"
+  data-ca-trigger="mousedown"
+  data-ca-class="ca__fx-squishLift"
+  data-ca-reset="true"&gt;
+  Hold Mouse Down
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-down')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🖱️ mouseup</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="mouseup" data-ca-class="ca__fx-flubberBounce"
+          data-ca-reset="true">
+          Release Mouse
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-up">&lt;div
+  class="cssanimation"
+  data-ca-trigger="mouseup"
+  data-ca-class="ca__fx-flubberBounce"
+  data-ca-reset="true"&gt;
+  Release Mouse
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-up')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🖱️ dblclick</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="dblclick" data-ca-class="ca__fx-jiggleTransform"
+          data-ca-reset="true">
+          Double Click Me
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-dblclick">&lt;div
+  class="cssanimation"
+  data-ca-trigger="dblclick"
+  data-ca-class="ca__fx-jiggleTransform"
+  data-ca-reset="true"&gt;
+  Double Click Me
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-dblclick')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🧠 focus</h2>
+        <input type="text" placeholder="Focus Me"
+          class="bg-zinc-800 text-white border border-zinc-600 rounded px-4 py-2 w-full cssanimation"
+          data-ca-trigger="focus" data-ca-class="ca__fx-lightning"
+          data-ca-reset="true" />
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-focus">&lt;input
+  type="text"
+  class="cssanimation"
+  placeholder="Focus Me"
+  data-ca-trigger="focus"
+  data-ca-class="ca__fx-lightning"
+  data-ca-reset="true" /&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-focus')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">👋 blur</h2>
+        <input type="text" placeholder="Then Blur Me"
+          class="bg-zinc-800 text-white border border-zinc-600 rounded px-4 py-2 w-full cssanimation"
+          data-ca-trigger="blur" data-ca-class="ca__fx-flyInBottom"
+          data-ca-reset="true" />
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-blur">&lt;input
+  type="text"
+  class="cssanimation"
+  placeholder="Then Blur Me"
+  data-ca-trigger="blur"
+  data-ca-class="ca__fx-flyInBottom"
+  data-ca-reset="true" /&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-blur')">📋 Copy</button>
+        </div>
+      </section>
+
+      <!-- Custom Trigger: Right Click (contextmenu) -->
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🖱️ contextmenu
+          (right-click)</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="contextmenu"
+          data-ca-class="ca__fx-jiggleTransform"
+          data-ca-reset="true">
+          Right-click Me
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-contextmenu">&lt;div
+  class="cssanimation"
+  data-ca-trigger="contextmenu"
+  data-ca-class="ca__fx-jiggleTransform"
+  data-ca-reset="true"&gt;
+  Right-click Me
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-contextmenu')">📋 Copy</button>
+        </div>
+      </section>
+
+      <!-- Custom Trigger: Keydown (Enter) -->
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">⌨️ keydown
+          (Enter)</h2>
+        <input
+          type="text"
+          placeholder="Press Enter"
+          class="bg-zinc-800 text-white border border-zinc-600 rounded px-4 py-2 w-full cssanimation"
+          data-ca-trigger="keydown"
+          data-ca-key="Enter"
+          data-ca-class="ca__fx-bounceX"
+          data-ca-reset="true" />
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-keydown">&lt;input
+  type="text"
+  class="cssanimation"
+  placeholder="Press Enter"
+  data-ca-trigger="keydown"
+  data-ca-key="Enter"
+  data-ca-class="ca__fx-bounceX"
+  data-ca-reset="true" /&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-keydown')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🔤 keyup
+          (Enter)</h2>
+        <input type="text" placeholder="Key up Enter"
+          class="bg-zinc-800 text-white border border-zinc-600 rounded px-4 py-2 w-full cssanimation"
+          data-ca-trigger="keyup" data-ca-key="Enter"
+          data-ca-class="ca__fx-bounceX" data-ca-reset="true" />
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-keyup">&lt;input
+  type="text"
+  class="cssanimation"
+  placeholder="Key up Enter"
+  data-ca-trigger="keyup"
+  data-ca-key="Enter"
+  data-ca-class="ca__fx-bounceX"
+  data-ca-reset="true" /&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-keyup')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🤚 touchstart</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="touchstart" data-ca-class="ca__fx-jumpSpin"
+          data-ca-reset="true">
+          Touch Me (start)
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-touchstart">&lt;div
+  class="cssanimation"
+  data-ca-trigger="touchstart"
+  data-ca-class="ca__fx-jumpSpin"
+  data-ca-reset="true"&gt;
+  Touch Me (start)
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-touchstart')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">👆 touchend</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="touchend" data-ca-class="ca__fx-popRotate"
+          data-ca-reset="true">
+          Touch Me (end)
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-touchend">&lt;div
+  class="cssanimation"
+  data-ca-trigger="touchend"
+  data-ca-class="ca__fx-popRotate"
+  data-ca-reset="true"&gt;
+  Touch Me (end)
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-touchend')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🎞️
+          animationend</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation ca__fx-flipY"
+          data-ca-trigger="animationend" data-ca-class="ca__fx-bounceX"
+          data-ca-reset="true">
+          Fires After Wiggle
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-animationend">&lt;div
+  class="cssanimation ca__fx-wiggle"
+  data-ca-trigger="animationend"
+  data-ca-class="ca__fx-bounceX"
+  data-ca-reset="true"&gt;
+  Fires After Wiggle
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-animationend')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🎬
+          transitionend</h2>
+        <div
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation transition-all duration-300 hover:translate-x-4"
+          data-ca-trigger="transitionend" data-ca-class="ca__fx-lightning"
+          data-ca-reset="true">
+          Move Me
+        </div>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-transitionend">&lt;div
+  class="cssanimation transition-all duration-300 hover:translate-x-4"
+  data-ca-trigger="transitionend"
+  data-ca-class="ca__fx-lightning"
+  data-ca-reset="true"&gt;
+  Move Me
+&lt;/div&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-transitionend')">📋 Copy</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">⌨️ input</h2>
+        <input type="text" placeholder="Type here"
+          class="bg-zinc-800 text-white border border-zinc-600 rounded px-4 py-2 w-full cssanimation"
+          data-ca-trigger="input" data-ca-class="ca__fx-flyInBottom"
+          data-ca-reset="true" />
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-input">&lt;input
+  type="text"
+  class="cssanimation"
+  placeholder="Type here"
+  data-ca-trigger="input"
+  data-ca-class="ca__fx-flyInBottom"
+  data-ca-reset="true" /&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-input')">📋 Copy</button>
+        </div>
+      </section>
+
+      <!-- Custom JS Event Trigger -->
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🛠️
+          customEvent</h2>
+        <div id="customEventBox"
+          class="bg-zinc-800 border border-zinc-700 px-4 py-3 rounded cursor-pointer cssanimation"
+          data-ca-trigger="customEvent"
+          data-ca-class="ca__fx-flip"
+          data-ca-reset="true">
+          Will animate on customEvent
+        </div>
+        <button
+          onclick="document.getElementById('customEventBox').dispatchEvent(new Event('customEvent'))"
+          class="mt-2 px-3 py-1 text-xs bg-cyan-600 text-white rounded hover:bg-cyan-700">
+          🔘 Dispatch customEvent
+        </button>
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-custom-event">&lt;div
+  class="cssanimation"
+  data-ca-trigger="customEvent"
+  data-ca-class="ca__fx-flip"
+  data-ca-reset="true"&gt;
+  Will animate on customEvent
+&lt;/div&gt;
+
+&lt;script&gt;
+  document.getElementById('customEventBox')
+    .dispatchEvent(new Event('customEvent'));
+&lt;/script&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-custom-event')">📋 Copy</button>
+        </div>
+      </section>
+
+      <!-- Multi-Key keydown Trigger -->
+      <section>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">🎹 keydown
+          (multiple keys: Enter, Escape)</h2>
+        <input type="text" placeholder="Press Enter or Escape"
+          class="bg-zinc-800 text-white border border-zinc-600 rounded px-4 py-2 w-full cssanimation"
+          data-ca-trigger="keydown"
+          data-ca-key="Enter,Escape,ctrl+z,shift+a,en*"
+          data-ca-class="ca__fx-bounceY"
+          data-ca-reset="true" />
+        <div class="relative mt-2">
+          <pre><code class="language-html" id="code-keydown-multi">&lt;input
+  type="text"
+  class="cssanimation"
+  placeholder="Press Enter or Escape"
+  data-ca-trigger="keydown"
+  data-ca-key="Enter,Escape,ctrl+z,shift+a,en*"
+  data-ca-class="ca__fx-bounceY"
+  data-ca-reset="true" /&gt;</code></pre>
+          <button
+            class="absolute top-2 right-2 px-2 py-1 text-xs bg-slate-700 text-cyan-300 rounded hover:bg-slate-600"
+            onclick="copyCode('code-keydown-multi')">📋 Copy</button>
+        </div>
+      </section>
+
+      <footer
+        class="text-center text-sm text-zinc-500 mt-12 pt-6 border-t border-zinc-800">
+        Built with 💙 by <a href="https://github.com/yesiamrocks"
+          class="underline hover:text-cyan-400">Pavel</a>
+        &middot; <code>ca-trigger.js</code>
+      </footer>
+    </div>
+
+    <!-- ca-trigger.js Plugin -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/plugins/ca-trigger.js"></script>
+
+    <!-- JS: Copy-to-Clipboard + Theme Toggle -->
+    <script>
+      function copyCode(id) {
+        const code = document.getElementById(id).textContent.trim();
+        navigator.clipboard.writeText(code).then(() => {
+          const btn = document.querySelector(`button[onclick="copyCode('${id}')"]`);
+          const original = btn.innerHTML;
+          btn.innerHTML = "✅ Copied!";
+          setTimeout(() => (btn.innerHTML = original), 1200);
+        });
+      }
+
+      document.getElementById("toggleTheme").addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+        document.body.classList.toggle("bg-white");
+        document.body.classList.toggle("text-black");
+        document.body.classList.toggle("bg-zinc-900");
+        document.body.classList.toggle("text-white");
+      });
+    </script>
+  </body>
+</html>
