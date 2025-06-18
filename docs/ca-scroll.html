@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ca-scroll.js Demo</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css" />
+        <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .box {
+      padding: 2rem 3rem;
+      background: #111;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 1.5rem;
+    }
+
+    [ca-scroll] {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    [ca-scroll].ca-animate {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .cssanimation {
+      animation-play-state: paused;
+    }
+
+    .cssanimation.ca-animate {
+      animation-play-state: running;
+    }
+  </style>
+    </head>
+    <body>
+
+        <section>
+            <div class="box">Scroll down to see animations ⬇️</div>
+        </section>
+
+        <section>
+            <div class="box cssanimation ca__fx-blurIn" ca-scroll>
+                ✨ Basic Scroll Animation (blurIn)
+            </div>
+        </section>
+
+        <section>
+            <div class="box cssanimation ca__fx-blurInLeft" ca-scroll
+                ca-scroll-offset="300">
+                🎯 Custom Offset (300px)
+            </div>
+        </section>
+
+        <section>
+            <div class="box cssanimation ca__fx-blurInRight" ca-scroll
+                ca-delay="0.5s" ca-duration="1.5s">
+                ⏳ Delayed + Extended Animation
+            </div>
+        </section>
+
+        <section>
+            <div class="box cssanimation ca__fx-bounceInTop" ca-scroll
+                ca-scroll-repeat="true" ca-duration="5s">
+                ♻️ Repeats every scroll-in
+            </div>
+
+            <div class="cssanimation ca__fx-bounceInTop" ca-scroll
+                ca-scroll-repeat="true" ca-delay="5s">
+                I animate like AOS!
+            </div>
+        </section>
+
+        <section>
+            <div class="box">⬆️ Scroll up to trigger repeat animation
+                again</div>
+        </section>
+
+        <!-- ca-scroll.js plugin -->
+        <script src="../src/plugins/ca-scroll.js"></script>
+
+        <!-- Enable debug mode -->
+        <script>
+    window.__CA_DEBUG = true;
+  </script>
+
+    </body>
+</html>

@@ -214,9 +214,7 @@ You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **d
 
 [Check out this Text & Letter Animations Preview Tool to easily generate the animation code for your text.](https://yesiamrocks.github.io/cssanimation/text-animation.html)
 
-<br><br>
-
-### ⏱️ `ca__lt-delay` in Detail
+### `ca__lt-delay` in Detail
 
 The `ca__lt-delay` attribute specifies the delay before each animated unit (letter, word, or line) begins its animation. The values are in milliseconds (ms).
 
@@ -236,9 +234,7 @@ The `ca__lt-delay` attribute specifies the delay before each animated unit (lett
 
 This allows you to create rhythmic or staggered entry effects easily, like `ca__lt-delay="50 100 100"` as in your example. The first unit gets 50ms delay, and all subsequent units get 100ms delay.
 
-<br><br>
-
-### ⌛ `ca__lt-base-duration` in Detail
+### `ca__lt-base-duration` in Detail
 
 The `ca__lt-base-duration` attribute provides a simple way to set a global default animation duration for all units (letters, words, or lines) in milliseconds (ms).
 
