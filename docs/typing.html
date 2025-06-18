@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Trigger Animation Fix</title>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css">
-        <style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trigger Animation Fix</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css">
+    <style>
     /* :root {
       --cssanimation-duration: 1s;
       --cssanimation-fill-mode: both;
@@ -65,34 +65,34 @@
       background: #555;
     }
   </style>
-    </head>
-    <body>
+  </head>
+  <body>
 
-        <div
-            class="demo-box"
-            data-ca-trigger="mouseup"
-            data-ca-class="cssanimation ca__fx-bounceX"
-            data-ca-reset="true">
-            Click to Animate Again
-        </div>
+    <div
+      class="demo-box cssanimation"
+      data-ca-trigger="mouseup"
+      data-ca-class="ca__fx-bounceX"
+      data-ca-reset="true">
+      Click to Animate Again
+    </div>
 
-        <input
-            type="text"
-            placeholder="Focus me"
-            style="padding: 0.5rem; margin: 1rem; border: 2px solid #888; border-radius: 4px;"
-            data-ca-trigger="focus"
-            data-ca-class="cssanimation ca__fx-fadeIn"
-            data-ca-reset="true" />
+    <input
+      type="text"
+      placeholder="Focus me"
+      style="padding: 0.5rem; margin: 1rem; border: 2px solid #888; border-radius: 4px;"
+      data-ca-trigger="focus"
+      data-ca-class="cssanimation ca__fx-fadeIn"
+      data-ca-reset="true" />
 
-        <input
-            type="text"
-            placeholder="Blur me"
-            style="padding: 0.5rem; margin: 1rem; border: 2px solid #888; border-radius: 4px;"
-            data-ca-trigger="blur"
-            data-ca-class="cssanimation ca__fx-shockZoom"
-            data-ca-reset="true" />
+    <input
+      type="text"
+      placeholder="Blur me"
+      style="padding: 0.5rem; margin: 1rem; border: 2px solid #888; border-radius: 4px;"
+      data-ca-trigger="blur"
+      data-ca-class="ca__fx-shockZoom"
+      data-ca-reset="true" />
 
-        <script src="./ca-trigger.js"></script>
+    <script src="../dist/plugins/ca-trigger.js"></script>
 
-    </body>
+  </body>
 </html>

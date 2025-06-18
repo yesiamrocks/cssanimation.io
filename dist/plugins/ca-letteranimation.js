@@ -1,19 +1,17 @@
 /*!
- * ca-letteranimation.js - Letter, word, and line animation enhancements
- * Part of: https://cssanimation.io/
- * Version: 5.7.3
- *
- * Author: Shafayetul Islam Pavel
- * LinkedIn: https://www.linkedin.com/in/shafayetul/
- * Email: hello@cssanimation.io
- * GitHub: https://github.com/yesiamrocks/cssanimation
- *
- * Title: A lightweight, CSS-only enhancement script for text animations.
- * Description: Provides dynamic letter-by-letter, word-by-word, and line-by-line animation
- * capabilities, enhancing HTML elements with customizable text effects via HTML attributes.
- *
- * © 2025 Shafayetul Islam Pavel – All rights reserved.
- */
+ * ca-letteranimation.js
+ * Title: Letter, word, and line animation enhancements
+ * Description: Provides dynamic letter-by-letter, word-by-word, and line-by-line animation capabilities, enhancing HTML elements with customizable text effects via HTML attributes.
+ * Part of: https://cssanimation.io/
+ * Version: 5.7.3
+ *
+ * Author: Shafayetul Islam Pavel
+ * LinkedIn: https://www.linkedin.com/in/shafayetul/
+ * Email: hello@cssanimation.io
+ * GitHub: https://github.com/yesiamrocks/cssanimation
+ *
+ * © 2025 Shafayetul Islam Pavel – All rights reserved.
+ */
 (function (factory) {
   typeof define === 'function' && define.amd ? define(factory) :
   factory();

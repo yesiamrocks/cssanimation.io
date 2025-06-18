@@ -65,7 +65,7 @@ import '@hellouxpavel/cssanimation/letter';
 
 ### Install via CDN
 
-Quickly add **cssanimation.io** to your HTML. Include these lines in your `<head>`tag:
+Quickly add **cssanimation** to your HTML. Include these lines in your `<head>`tag:
 
 ```html
 <head>
@@ -105,11 +105,9 @@ We use clear prefixes to help you find the right animation or utility class.
 
 ## 🔡 Amazing Text & Letter Animations
 
-> Want to animate text beautifully, responsively, and with zero dependencies (for the core CSS parts)?
-
 ![npm](https://img.shields.io/npm/dw/@hellouxpavel/cssanimation?style=for-the-badge) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![View Demo](https://img.shields.io/badge/🎬%20Live-Demo-green?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/text-animation.html)
 
-`ca-letteranimation.js` plugin is a lightweight, CSS-only enhancement script that brings **letter-by-letter, word-by-word, and line-by-line** animations to your projects. It's designed to work seamlessly with [cssanimation.io](https://cssanimation.io), for robust and customizable text effects.
+`ca-letteranimation.js` plugin is a lightweight, CSS-only enhancement script that brings **letter-by-letter, word-by-word, and line-by-line** animations to your projects. It's designed to work seamlessly with [cssanimation](https://cssanimation.io), for robust and customizable text effects.
 
 ### Key Features
 
@@ -120,9 +118,18 @@ We use clear prefixes to help you find the right animation or utility class.
 - Random & Reverse Effects: Get creative with animation order.
 - Smart Handling: Safely handles whitespace and provides animation class fallbacks.
 
+### ⚠️ Migration Notice (v5.7.3)
+
+As of version `6.0.0`, all plugins are now organized under a unified directory:
+
+- Previous location: `dist/ca-letteranimation.js`
+- New location: `dist/plugins/ca-letteranimation.js`
+
+If you're using this plugin via `<script>`, be sure to update your path accordingly.
+
 ### Letter Animation Installation
 
-_If you're already using **cssanimation.io** via NPM, you're all set!_
+_If you're already using **cssanimation** via NPM, you're all set!_
 
 For plain HTML, include the `ca-letteranimation.js`, plugin just before your closing `</body>` tag:
 
@@ -202,7 +209,7 @@ You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **d
 
 <br><br>
 
-## ⏱️ `ca__lt-delay` in Detail
+### ⏱️ `ca__lt-delay` in Detail
 
 The `ca__lt-delay` attribute specifies the delay before each animated unit (letter, word, or line) begins its animation. The values are in milliseconds (ms).
 
@@ -224,7 +231,7 @@ This allows you to create rhythmic or staggered entry effects easily, like `ca__
 
 <br><br>
 
-## ⌛ `ca__lt-base-duration` in Detail
+### ⌛ `ca__lt-base-duration` in Detail
 
 The `ca__lt-base-duration` attribute provides a simple way to set a global default animation duration for all units (letters, words, or lines) in milliseconds (ms).
 
@@ -242,7 +249,7 @@ This value is used to explicitly set the duration for all units, overriding any 
 
 This means `ca__lt-base-duration` gives you a convenient way to set a project-wide or component-wide default duration without needing to edit CSS.
 
-## 🏷️ Supported Attributes for Text Animations Plugin
+### 🏷️ Supported Attributes for Text Animations Plugin
 
 | Attribute              | Description                                                                      |
 | ---------------------- | -------------------------------------------------------------------------------- |
@@ -255,7 +262,7 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 | `ca__lt-base-duration` | Optional base animation duration per unit (in ms)                                |
 | `ca__lt-separator`     | Use `dot` to split on periods `( . )`. Default: line breaks (`<br>` or `\n`)     |
 
-## 💡Developer Tips
+### 💡Developer Tips
 
 - The `.cssanimation` **class is always required** for baseline styling and to activate text animations.
 - You can provide fewer classes or delay values than units; the last value will simply repeat for the remaining units, making it easy to apply a pattern.
@@ -276,7 +283,102 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 </h2>
 ```
 
-<br>
+<br><br>
+
+## Trigger-based Animation Control
+
+Enable trigger-based animations using simple `data-` attributes. This plugin works seamlessly with `cssanimation.css` classes and lets you apply them on user interactions like `click`, `hover`, etc.
+
+### Include the Plugin
+
+_If you're already using cssanimation via NPM, you're all set!_
+
+For plain HTML, include the ca-letteranimation.js, plugin just before your closing </body> tag:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/plugins/ca-trigger.js"></script>
+```
+
+Add HTML Markup
+
+```html
+<div class="cssanimation" data-ca-trigger="click" data-ca-class="ca__fx-bounceX" data-ca-reset="true">
+  Click to Animate
+</div>
+```
+
+### Supported Triggers
+
+You can animate elements using the following trigger types via `data-ca-trigger`:
+
+| Trigger      | Fires On                           |
+| ------------ | ---------------------------------- |
+| `click`      | When the element is clicked        |
+| `mouseenter` | When the cursor enters the element |
+| `mouseleave` | When the cursor leaves the element |
+| `mousedown`  | When mouse button is pressed       |
+| `mouseup`    | When mouse button is released      |
+| `focus`      | When input receives focus          |
+| `blur`       | When input loses focus             |
+| `dblclick`   | On double-click                    |
+
+**You can combine multiple triggers using a comma:**
+
+```html
+data-ca-trigger="mouseenter,mouseleave"
+```
+
+### Attributes Reference
+
+| Attribute              | Description                                                           |
+| ---------------------- | --------------------------------------------------------------------- |
+| `data-ca-trigger`      | Required. One or more DOM events to trigger the animation.            |
+| `data-ca-class`        | Required. Animation class(es) to add. Separate multiple with a space. |
+| `data-ca-reset="true"` | Optional. Removes class after animation ends (allows re-triggering).  |
+| `data-ca-delay`        | Optional. Adds `animation-delay` (e.g. `"0.5s"`).                     |
+| `data-ca-duration`     | Optional. Adds `animation-duration` (e.g. `"2s"`).                    |
+
+### Example: Hover with Delay and Reset
+
+```html
+<div
+  class="cssanimation"
+  data-ca-trigger="mouseenter"
+  data-ca-class="cssanimation ca-fadeIn"
+  data-ca-delay="0.5s"
+  data-ca-duration="2s"
+  data-ca-reset="true"
+>
+  Hover me to fade in
+</div>
+```
+
+### Global Disable (Optional)
+
+To disable all animations globally (e.g., for accessibility/testing), set:
+
+```js
+window.__CA_TRIGGER_DISABLED = true;
+```
+
+To re-enable:
+
+```js
+window.__CA_TRIGGER_DISABLED = false;
+caTrigger.init(); // Re-initialize manually
+```
+
+### Integration Tips
+
+- Core class `.cssanimation` is mandatory to use.
+- Avoid using the same data-ca-trigger on deeply nested elements to prevent event conflicts. <br><br>
+
+### Plugin Architecture Summary
+
+- Written in vanilla JS (no dependencies)
+- Supports multiple triggers and classes
+- Respects animation timing via native CSS
+- Easy to drop in any project
 
 ## 📦 Modular Import
 
@@ -317,7 +419,7 @@ Each module is generated from `./dist/cssanimation.css` and follows the naming c
 
 ## 🧰 Utility Class
 
-**cssanimation.io** also provides a powerful set of pre-built utility classes to fine-tune your animations. Use them alongside the `.cssanimation` base class and your chosen animation class.
+**cssanimation** also provides a powerful set of pre-built utility classes to fine-tune your animations. Use them alongside the `.cssanimation` base class and your chosen animation class.
 
 This includes:
 

@@ -1,3 +1,32 @@
+## [6.0.0] - 2025-06-18
+
+### Added
+
+- Support for `mouseup`, `focus`, and `blur` triggers in `ca-trigger.js`
+- Documentation updates for input-based interaction triggers
+- New demo elements to test `mouseup`, `focus`, and `blur` directly
+
+### Changed
+
+- Minor internal improvements to event attachment logic in `ca-trigger.js`
+- 🚚 Moved `ca-letteranimation.js` from `dist/` to `dist/plugins/` for consistent plugin organization
+
+### Notice
+
+> ⚠️ If you're importing `ca-letteranimation.js` or `ca-letteranimation.min.js`, please update your import paths:
+>
+> **Old path:**
+>
+> ```html
+> <script src="dist/ca-letteranimation.js"></script>
+> ```
+>
+> **New path:**
+>
+> ```html
+> <script src="dist/plugins/ca-letteranimation.js"></script>
+> ```
+
 ## [5.7.3] - 2025-06-17
 
 ### Badge Enhancements
