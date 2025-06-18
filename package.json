@@ -1,6 +1,6 @@
 {
   "name": "@hellouxpavel/cssanimation",
-  "version": "5.7.3",
+  "version": "6.0.0",
   "description": "A Powerful CSS Animation Library for Advanced Motion Design.",
   "main": "index.js",
   "style": "dist/cssanimation.css",
@@ -83,11 +83,18 @@
       "import": "./index.js"
     },
     "./css": "./dist/cssanimation.css",
+    "./css.min": "./dist/cssanimation.min.css",
     "./css/min": "./dist/cssanimation.min.css",
     "./utility": "./dist/cssanimation-utility.css",
+    "./utility.min": "./dist/cssanimation-utility.min.css",
     "./utility/min": "./dist/cssanimation-utility.min.css",
-    "./letter": "./dist/ca-letteranimation.js",
-    "./index.css": "./dist/modules/ca__index.css",
+    "./letter": "./dist/plugins/ca-letteranimation.js",
+    "./letter.min": "./dist/plugins/ca-letteranimation.min.js",
+    "./letter/min": "./dist/plugins/ca-letteranimation.min.js",
+    "./trigger": "./dist/plugins/ca-trigger.js",
+    "./trigger.min": "./dist/plugins/ca-trigger.min.js",
+    "./trigger/min": "./dist/plugins/ca-trigger.min.js",
+    "./modules-index": "./dist/modules/ca__modules-index.css",
     "./modules/*": "./dist/modules/*.css"
   },
   "dependencies": {

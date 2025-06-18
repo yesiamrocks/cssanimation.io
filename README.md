@@ -63,6 +63,13 @@ For Letter Animations (JavaScript required for this part):
 import '@hellouxpavel/cssanimation/letter';
 ```
 
+For Letter Animations (JavaScript required for this part):
+
+```bash
+//Trigger-based animation control for HTML elements
+import '@hellouxpavel/cssanimation/trigger';
+```
+
 ### Install via CDN
 
 Quickly add **cssanimation** to your HTML. Include these lines in your `<head>`tag:
@@ -134,7 +141,7 @@ _If you're already using **cssanimation** via NPM, you're all set!_
 For plain HTML, include the `ca-letteranimation.js`, plugin just before your closing `</body>` tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/ca-letteranimation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/plugins/ca-letteranimation.js"></script>
 ```
 
 ### Letter Animation Usage
