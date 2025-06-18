@@ -292,7 +292,7 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 
 <br><br>
 
-## Trigger-based Animation Control
+## 🖱️ Trigger-based Animation Control
 
 Enable trigger-based animations using simple `data-ca-trigger` attributes. This plugin works seamlessly with `cssanimation.css` classes and lets you apply them on user interactions. It supports mouse, keyboard, touch, and custom event triggers — with optional animation control via delay, duration, reset, and key filters.
 

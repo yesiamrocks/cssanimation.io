@@ -2,8 +2,8 @@
 /*!* @preserve
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
-* Version: 6.0.0
-* Built: 2025-06-18 14:04:43 UTC
+* Version: 6.1.0
+* Built: 2025-06-18 14:27:17 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -3907,7 +3907,7 @@
 }
 .ca__fx-wiggle {
   transform-origin: center center;
-  animation: wiggle var(--wiggle-duration, 1s) ease-in-out infinite both;
+  animation: wiggle var(--wiggle-duration, 1s) ease-in-out both;
 }
 @keyframes wiggle {
   0%,
