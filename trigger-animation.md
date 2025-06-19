@@ -151,3 +151,5 @@ caTrigger.init(); // Re-initialize manually
 - Supports multiple triggers and classes
 - Respects animation timing via native CSS
 - Easy to drop in any project
+
+[← Return to the main README](./README.md)

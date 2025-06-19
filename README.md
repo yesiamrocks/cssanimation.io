@@ -168,11 +168,21 @@ Check out the full list and details in [`cssanimation-utilities.md`](./reference
 
 Each plugin in this library is designed to be lightweight, flexible, and easy to integrate — whether you're building UI transitions, scroll effects, or expressive text animations.
 
-### Text & Letter Animations Plugin
+### `ca-letteranimation.js` Text & Letter Animations Plugin
 
 With the `ca-letteranimation.js` plugin Bring your typography to life with letter-by-letter, word-by-word, and line-by-line animations.
 
 👉 [Explore all animation and docs](./text-animation.md)
+
+---
+
+### `ca-trigger.js` Trigger-based Animation Control
+
+Take full control of when animations happen.
+
+The `ca-trigger.js` plugin lets you trigger any cssanimation effect using simple HTML attributes tied to user interactions like clicks, key presses, or custom events. It's lightweight, flexible, and perfect for interactive UI moments.
+
+👉 [Explore Trigger-based Animation docs](./trigger-animation.md)
 
 <br><br>
 

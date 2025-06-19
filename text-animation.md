@@ -153,14 +153,6 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 | `ca__lt-base-duration` | Optional base animation duration per unit (in ms)                                |
 | `ca__lt-separator`     | Use `dot` to split on periods `( . )`. Default: line breaks (`<br>` or `\n`)     |
 
-### 💡Developer Tips
-
-- The `.cssanimation` **class is always required** for baseline styling and to activate text animations.
-- You can provide fewer classes or delay values than units; the last value will simply repeat for the remaining units, making it easy to apply a pattern.
-- If you pass more classes or values than needed, the extra elements are skipped, and a warning might be logged to your console to help with debugging.
-- Delay and duration values are parsed safely; non-numeric strings will fall back to default behaviors to prevent errors.
-- Animation duration is determined in this order of precedence: `ca__lt-base-duration` > CSS-detected duration > internal default.
-
 **Example: Full Setup**
 
 ```html
@@ -173,3 +165,13 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
   Animate each word smoothly
 </h2>
 ```
+
+### 💡Developer Tips
+
+- The `.cssanimation` **class is always required** for baseline styling and to activate text animations.
+- You can provide fewer classes or delay values than units; the last value will simply repeat for the remaining units, making it easy to apply a pattern.
+- If you pass more classes or values than needed, the extra elements are skipped, and a warning might be logged to your console to help with debugging.
+- Delay and duration values are parsed safely; non-numeric strings will fall back to default behaviors to prevent errors.
+- Animation duration is determined in this order of precedence: `ca__lt-base-duration` > CSS-detected duration > internal default.
+
+[← Return to the main README](./README.md)
