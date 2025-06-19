@@ -1,104 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ca-scroll.js Demo</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css" />
-        <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-Scroll Demo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Optional: Enable debug mode for ca-scroll.js
+        window.__CA_DEBUG = true;
 
-    section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 1px solid #eee;
-    }
+        // NEW: Global CA-Scroll Settings
+        // Configure these to change default behavior across all ca-scroll elements.
+        window.__CA_SETTINGS = {
+            offset: 120,    // Default distance to the element when triggering the animation (pixels from bottom of viewport)
+            mobile: true,  // Trigger animations on mobile devices (true/false)
+            live: true     // Globally enable/disable all ca-scroll animations (true/false)
+        };
+    </script>
+    <!-- Link to the CSSAnimation.io library -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css"
+      rel="stylesheet" />
+    <style>
+        /* Custom Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
 
-    .box {
-      padding: 2rem 3rem;
-      background: #111;
-      color: #fff;
-      border-radius: 10px;
-      font-size: 1.5rem;
-    }
+        /* General element styling for the demo */
+        .demo-box {
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 0.75rem; /* rounded-xl */
+            margin-bottom: 2rem; /* mb-8 */
+            padding: 1.5rem; /* p-6 */
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+        }
 
-    [ca-scroll] {
-      opacity: 0;
-      pointer-events: none;
-    }
+        /* Ensure enough scrollable content */
+        .spacer {
+            height: 60vh; /* Adjust as needed */
+        }
 
-    [ca-scroll].ca-animate {
-      opacity: 1;
-      pointer-events: auto;
-    }
+        /* Custom animation for data-ca-animation-class */
+        .my-custom-bounceX {
+            animation: custom-bounceX both 1s;
+        }
 
-    .cssanimation {
-      animation-play-state: paused;
-    }
+        @keyframes custom-bounceX {
+            0%,
+            25%,
+            55%,
+            85%,
+            100% {
+                animation-timing-function: ease-out;
+                transform: scale3d(1, 1, 1);
+            }
+            15% {
+                transform: scale3d(0.9, 0.9, 0.9) translateY(-30px);
+            }
+            35% {
+                transform: scale3d(1.1, 1.1, 1.1) translateY(-15px);
+            }
+            65% {
+                transform: scale3d(0.95, 0.95, 0.95) translateY(-5px);
+            }
+            90% {
+                transform: scale3d(1.02, 1.02, 1.02) translateY(-2px);
+            }
+        }
 
-    .cssanimation.ca-animate {
-      animation-play-state: running;
-    }
-  </style>
-    </head>
-    <body>
+        /* Example custom toggle class (non-animated for simple state change) */
+        .my-initial-hidden {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased p-4 sm:p-6 lg:p-8">
 
-        <section>
-            <div class="box">Scroll down to see animations ⬇️</div>
-        </section>
+    <div class="max-w-4xl mx-auto py-8">
+      <h1
+        class="text-4xl font-bold text-center mb-12 text-gray-900">CA-Scroll
+        Animation Demo</h1>
+      <p class="text-lg text-center text-gray-600 mb-10">
+        Scroll down to see various elements animate into view.
+        Observe the different effects, delays, durations, and repeatability.
+        Open your browser's console to see debug logs.
+      </p>
 
-        <section>
-            <div class="box cssanimation ca__fx-blurIn" ca-scroll>
-                ✨ Basic Scroll Animation (blurIn)
-            </div>
-        </section>
+      <!-- Spacer to ensure initial scrolling -->
+      <div class="spacer bg-transparent"></div>
 
-        <section>
-            <div class="box cssanimation ca__fx-blurInLeft" ca-scroll
-                ca-scroll-offset="300">
-                🎯 Custom Offset (300px)
-            </div>
-        </section>
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800">Global Settings in
+          Effect</h2>
+        <p class="text-gray-700 mb-4">
+          Current global offset is set to <code
+            class="bg-gray-200 p-1 rounded">120px</code>.
+          Elements in this section will trigger when they are 120px from the
+          bottom of the viewport
+          unless overridden by a <code
+            class="bg-gray-200 p-1 rounded">ca-scroll-offset</code> attribute.
+        </p>
+        <div ca-scroll
+          class="cssanimation ca__fx-fadeInTop demo-box bg-blue-100 border-blue-300 text-blue-800">
+          Fade In Top (Uses Global Offset)
+        </div>
+        <div ca-scroll
+          class="cssanimation ca__fx-fadeInBottom demo-box bg-blue-100 border-blue-300 text-blue-800">
+          Fade In Bottom (Uses Global Offset)
+        </div>
+      </section>
 
-        <section>
-            <div class="box cssanimation ca__fx-blurInRight" ca-scroll
-                ca-delay="0.5s" ca-duration="1.5s">
-                ⏳ Delayed + Extended Animation
-            </div>
-        </section>
+      <div class="spacer bg-transparent"></div>
 
-        <section>
-            <div class="box cssanimation ca__fx-bounceInTop" ca-scroll
-                ca-scroll-repeat="true" ca-duration="5s">
-                ♻️ Repeats every scroll-in
-            </div>
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800">1. Basic
+          CSSAnimation Effects</h2>
+        <p class="text-gray-700 mb-4">Elements using default <code
+            class="bg-gray-200 p-1 rounded">cssanimation.min.css</code>
+          classes.</p>
+        <div ca-scroll
+          class="cssanimation ca__fx-fadeInTop demo-box bg-blue-100 border-blue-300 text-blue-800">
+          Fade In Top
+        </div>
+        <div ca-scroll
+          class="cssanimation ca__fx-fadeInBottom demo-box bg-blue-100 border-blue-300 text-blue-800">
+          Fade In Bottom
+        </div>
+      </section>
 
-            <div class="cssanimation ca__fx-bounceInTop" ca-scroll
-                ca-scroll-repeat="true" ca-delay="5s">
-                I animate like AOS!
-            </div>
-        </section>
+      <div class="spacer bg-transparent"></div>
 
-        <section>
-            <div class="box">⬆️ Scroll up to trigger repeat animation
-                again</div>
-        </section>
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800">2. CSSAnimation
+          with Element-Specific Offset</h2>
+        <p class="text-gray-700 mb-4">Elements animate when they are a certain
+          offset from the bottom of the viewport, overriding the global
+          setting.</p>
+        <div ca-scroll ca-scroll-offset="50"
+          class="cssanimation ca__fx-blurIn demo-box bg-green-100 border-green-300 text-green-800">
+          Blur In (Offset 50px, overrides global)
+        </div>
+        <div ca-scroll ca-scroll-offset="200"
+          class="cssanimation ca__fx-flyInTop demo-box bg-green-100 border-green-300 text-green-800">
+          Fly In Top (Offset 200px, overrides global)
+        </div>
+      </section>
 
-        <!-- ca-scroll.js plugin -->
-        <script src="../src/plugins/ca-scroll.js"></script>
+      <div class="spacer bg-transparent"></div>
 
-        <!-- Enable debug mode -->
-        <script>
-    window.__CA_DEBUG = true;
-  </script>
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800">3. Repeatable
+          Animations</h2>
+        <p class="text-gray-700 mb-4">These elements will animate every time
+          they enter the viewport. Scroll them out and back in!</p>
+        <div ca-scroll ca-scroll-repeat="true"
+          class="cssanimation ca__fx-moveFromLeft demo-box bg-purple-100 border-purple-300 text-purple-800">
+          Repeatable Move From Left
+        </div>
+        <div ca-scroll ca-scroll-repeat="true" ca-delay="1s"
+          class="cssanimation ca__fx-danceTop demo-box bg-purple-100 border-purple-300 text-purple-800">
+          Repeatable Dance Top (with 1s Delay)
+        </div>
+      </section>
 
-    </body>
+      <div class="spacer bg-transparent"></div>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800">4. Delay and
+          Duration (Element-Specific)</h2>
+        <p class="text-gray-700 mb-4">Custom animation delays and durations
+          applied to CSSAnimation effects, overriding any global defaults.</p>
+        <div ca-scroll ca-delay="1s"
+          class="cssanimation ca__fx-bobble demo-box bg-yellow-100 border-yellow-300 text-yellow-800">
+          Bobble with 1s Delay
+        </div>
+        <div ca-scroll ca-duration="2s"
+          class="cssanimation ca__fx-jello demo-box bg-yellow-100 border-yellow-300 text-yellow-800">
+          Jello with 2s Duration
+        </div>
+        <div ca-scroll ca-delay="0.5s" ca-duration="1.2s"
+          class="cssanimation ca__fx-waveBand demo-box bg-yellow-100 border-yellow-300 text-yellow-800">
+          Wave Band with 0.5s Delay & 1.2s Duration
+        </div>
+      </section>
+
+      <div class="spacer bg-transparent"></div>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800">5. New Feature:
+          Custom Animation Class</h2>
+        <p class="text-gray-700 mb-4">Using <code
+            class="bg-gray-200 p-1 rounded">data-ca-animation-class</code> to
+          apply a custom defined <code
+            class="bg-gray-200 p-1 rounded">@keyframes</code> animation.</p>
+        <div ca-scroll data-ca-animation-class="my-custom-bounceX"
+          class="demo-box bg-red-100 border-red-300 text-red-800">
+          Custom BounceX (using data-ca-animation-class)
+        </div>
+      </section>
+
+      <div class="spacer bg-transparent"></div>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800">6. New Feature:
+          Toggle Class</h2>
+        <p class="text-gray-700 mb-4">This element starts with <code
+            class="bg-gray-200 p-1 rounded">my-initial-hidden</code> (making it
+          hidden and shifted left) and this class is removed when in view. It
+          reapplies when scrolled out (because it's repeatable).</p>
+        <div ca-scroll ca-scroll-repeat="true"
+          data-ca-animation-class="ca__fx-moveFromTop"
+          data-ca-toggle-class="my-initial-hidden"
+          class="demo-box bg-indigo-100 border-indigo-300 text-indigo-800">
+          Toggle Class Example (Starts Hidden, repeatable)
+        </div>
+        <p class="text-gray-700 mt-8 mb-4">Here's an example using a
+          CSSAnimation class as a toggle. Note that the animation will be paused
+          initially.</p>
+        <div ca-scroll ca-scroll-repeat="true"
+          data-ca-animation-class="ca__fx-danceTop"
+          data-ca-toggle-class="ca__fx-moveFromLeft"
+          class="demo-box bg-pink-100 border-pink-300 text-pink-800">
+          Toggle Class Example (using ca__fx-moveFromLeft as toggle, repeatable)
+        </div>
+      </section>
+
+      <div class="spacer bg-transparent"></div>
+      <div class="spacer bg-transparent"></div>
+
+      <section class="text-center py-10 text-gray-600">
+        <p>End of Demo</p>
+      </section>
+    </div>
+
+    <!-- The ca-scroll.js script needs to be at the end of the body -->
+    <script>
+        // ca-scroll.js — AOS-style scroll animation handler for cssanimation.io (self-contained, no manual CSS)
+
+        (function () {
+            // --- Constants ---
+            const ATTR_PREFIX = 'ca-scroll';
+            const ATTR_OFFSET = `${ATTR_PREFIX}-offset`;
+            const ATTR_REPEAT = `${ATTR_PREFIX}-repeat`;
+            const ATTR_DELAY = 'ca-delay';
+            const ATTR_DURATION = 'ca-duration';
+            const ATTR_ANIMATION_CLASS = `${ATTR_PREFIX}-animation-class`;
+            const ATTR_TOGGLE_CLASS = `${ATTR_PREFIX}-toggle-class`;
+
+            const CLASS_ANIMATE = 'ca-animate';
+            const CLASS_CSSANIMATION = 'cssanimation';
+            const PREFIX_FX = 'ca__fx-';
+
+            const DEFAULT_THRESHOLD = 0.15;
+            const DEFAULT_TRANSITION_DURATION = '0.6s';
+            const DEFAULT_TRANSITION_TIMING_FUNCTION = 'ease';
+
+            // Global Settings Defaults and Key for user overrides
+            const GLOBAL_DEFAULT_OFFSET = 0; // Default offset if no global setting or element attribute
+            const GLOBAL_DEFAULT_MOBILE_ENABLED = true;
+            const GLOBAL_DEFAULT_LIVE_ENABLED = true;
+            const GLOBAL_SETTINGS_KEY = '__CA_SETTINGS'; // Key for window[GLOBAL_SETTINGS_KEY]
+
+            const DEBUG = window.__CA_DEBUG || false;
+
+            let activeObservers = [];
+            let globalSettings = {}; // Will store the merged global settings
+
+            // --- Helper Functions ---
+
+            /**
+             * Checks if the current device is likely a mobile device.
+             * @returns {boolean} True if it's a mobile device, false otherwise.
+             */
+            function isMobileDevice() {
+                return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent);
+            }
+
+            /**
+             * Injects the necessary CSS styles for scroll animations.
+             * Ensures the style block is only injected once.
+             */
+            function injectCAScrollStyles() {
+                if (document.getElementById(`${ATTR_PREFIX}-style`)) {
+                    return;
+                }
+
+                const style = document.createElement('style');
+                style.id = `${ATTR_PREFIX}-style`;
+                style.textContent = `
+                    [${ATTR_PREFIX}] {
+                        visibility: hidden;
+                        transition-property: opacity, transform;
+                        transition-timing-function: ${DEFAULT_TRANSITION_TIMING_FUNCTION};
+                        transition-duration: ${DEFAULT_TRANSITION_DURATION};
+                    }
+
+                    [${ATTR_PREFIX}].${CLASS_ANIMATE} {
+                        visibility: visible;
+                    }
+
+                    .${CLASS_CSSANIMATION} {
+                        animation-play-state: paused;
+                    }
+
+                    .${CLASS_CSSANIMATION}.${CLASS_ANIMATE} {
+                        animation-play-state: running;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+
+            /**
+             * Logs messages to the console if debug mode is enabled.
+             * @param {...any} args - Arguments to log.
+             */
+            function log(...args) {
+                if (DEBUG) {
+                    console.log(`[${ATTR_PREFIX}]`, ...args);
+                }
+            }
+
+            /**
+             * Retrieves an attribute value from an element, returning a default if not found.
+             * @param {Element} el - The DOM element.
+             * @param {string} attrName - The name of the attribute.
+             * @param {string} defaultValue - The default value to return if the attribute is not found.
+             * @returns {string} The attribute value or the default value.
+             */
+            function getAttributeValue(el, attrName, defaultValue = '') {
+                return el.getAttribute(attrName) || defaultValue;
+            }
+
+            /**
+             * Determines the animation effect class for an element.
+             * Prioritizes `data-ca-animation-class` over `ca__fx-` prefix.
+             * @param {Element} el - The DOM element.
+             * @returns {string|null} The animation class or null if not found.
+             */
+            function getAnimationClass(el) {
+                const customClass = getAttributeValue(el, ATTR_ANIMATION_CLASS);
+                if (customClass) {
+                    return customClass;
+                }
+                return Array.from(el.classList).find((cls) => cls.startsWith(PREFIX_FX));
+            }
+
+            /**
+             * Prepares an element for animation by storing its animation class and applying initial toggle class.
+             * Also ensures the 'cssanimation' class is present for animation control.
+             * @param {Element} el - The DOM element.
+             */
+            function prepareElement(el) {
+                const animationClass = getAnimationClass(el);
+                if (animationClass) {
+                    el.dataset.caAnimationClass = animationClass;
+                    el.classList.add(CLASS_CSSANIMATION); // Crucial for play/pause control
+                } else {
+                    log('Warning: Element', el, 'has', ATTR_PREFIX, 'but no explicit animation class found (e.g.,', PREFIX_FX, 'or', ATTR_ANIMATION_CLASS, '). Using default transitions.');
+                }
+
+                const toggleClass = getAttributeValue(el, ATTR_TOGGLE_CLASS);
+                if (toggleClass) {
+                    el.dataset.caToggleClass = toggleClass;
+                    el.classList.add(toggleClass); // Apply toggle class initially
+                    if (!el.classList.contains(CLASS_CSSANIMATION)) {
+                         el.classList.add(CLASS_CSSANIMATION); // Ensure cssanimation class is there if toggle class is an animation
+                    }
+                }
+            }
+
+            /**
+             * Applies animation styles and classes to an element.
+             * Uses element-specific delay/duration if present, otherwise no inline style is set (CSS will take over).
+             * @param {Element} el - The DOM element to animate.
+             */
+            function animateElement(el) {
+                // Get element-specific delay and duration attributes
+                const delay = getAttributeValue(el, ATTR_DELAY);
+                const duration = getAttributeValue(el, ATTR_DURATION);
+                const animationClass = el.dataset.caAnimationClass;
+                const toggleClass = el.dataset.caToggleClass;
+
+                // Apply element-specific delay/duration if they exist
+                el.style.transitionDelay = delay;
+                el.style.animationDelay = delay;
+                el.style.transitionDuration = duration;
+                el.style.animationDuration = duration;
+
+
+                if (toggleClass) {
+                    el.classList.remove(toggleClass); // Remove toggle class when animating
+                }
+
+                if (animationClass) {
+                    el.classList.add(animationClass);
+                }
+                el.classList.add(CLASS_ANIMATE);
+                log('Animating element:', el);
+            }
+
+            /**
+             * Resets animation styles and classes on an element.
+             * @param {Element} el - The DOM element to reset.
+             */
+            function resetElement(el) {
+                const animationClass = el.dataset.caAnimationClass;
+                const toggleClass = el.dataset.caToggleClass;
+
+                if (animationClass) {
+                    el.classList.remove(animationClass);
+                }
+                el.classList.remove(CLASS_ANIMATE);
+
+                // Clear inline styles for delay/duration so CSS rules (or defaults) can take over again
+                el.style.transitionDelay = '';
+                el.style.animationDelay = '';
+                el.style.transitionDuration = '';
+                el.style.animationDuration = '';
+
+                if (toggleClass) {
+                    el.classList.add(toggleClass); // Re-apply toggle class when out of view
+                }
+                log('Resetting element:', el);
+            }
+
+            /**
+             * Initializes the scroll animation logic.
+             * This function can be called multiple times safely.
+             */
+            function initCAScroll() {
+                // Disconnect previous observers if re-initializing
+                activeObservers.forEach(observer => observer.disconnect());
+                activeObservers = [];
+
+                // Merge global settings with user-defined overrides
+                globalSettings = {
+                    offset: GLOBAL_DEFAULT_OFFSET,
+                    mobile: GLOBAL_DEFAULT_MOBILE_ENABLED,
+                    live: GLOBAL_DEFAULT_LIVE_ENABLED,
+                    ...(window[GLOBAL_SETTINGS_KEY] || {})
+                };
+
+                if (!globalSettings.live) {
+                    log('Global animations are disabled via', GLOBAL_SETTINGS_KEY, '. Script not initializing.');
+                    return;
+                }
+
+                if (!globalSettings.mobile && isMobileDevice()) {
+                    log('Animations disabled on mobile via', GLOBAL_SETTINGS_KEY, '. Script not initializing.');
+                    return;
+                }
+
+                injectCAScrollStyles();
+
+                const elements = document.querySelectorAll(`[${ATTR_PREFIX}]`);
+                if (!elements.length) {
+                    log('No elements with', ATTR_PREFIX, 'found.');
+                    return;
+                }
+
+                // Group elements by their effective offset for efficient observer creation
+                const groupedElements = {};
+                elements.forEach((el) => {
+                    prepareElement(el);
+                    // Element's offset attribute takes precedence, then global setting, then default
+                    const offset = getAttributeValue(el, ATTR_OFFSET, String(globalSettings.offset));
+                    if (!groupedElements[offset]) {
+                        groupedElements[offset] = [];
+                    }
+                    groupedElements[offset].push(el);
+                });
+
+                // Create an Intersection Observer for each unique offset
+                Object.entries(groupedElements).forEach(([offset, els]) => {
+                    const rootMarginPx = parseInt(offset, 10);
+                    // Negative rootMargin makes the intersection happen earlier when scrolling down
+                    const rootMargin = `0px 0px -${rootMarginPx}px 0px`;
+
+                    const observer = new IntersectionObserver(
+                        (entries) => {
+                            entries.forEach((entry) => {
+                                const el = entry.target;
+                                const repeat = getAttributeValue(el, ATTR_REPEAT) === 'true';
+
+                                if (entry.isIntersecting) {
+                                    animateElement(el);
+                                    if (!repeat) {
+                                        observer.unobserve(el); // Stop observing if not repeatable
+                                    }
+                                } else {
+                                    if (repeat) {
+                                        resetElement(el); // Reset if repeatable and out of view
+                                    }
+                                }
+                            });
+                        },
+                        {
+                            root: null, // relative to the viewport
+                            rootMargin,
+                            threshold: DEFAULT_THRESHOLD,
+                        },
+                    );
+
+                    els.forEach((el) => {
+                        observer.observe(el);
+                        log('Observing element with offset:', offset, el);
+                    });
+                    activeObservers.push(observer); // Store observer for potential disconnection
+                });
+            }
+
+            // --- Initialization ---
+            // Initialize when the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', initCAScroll);
+
+            // Expose initCAScroll to the global scope for manual re-initialization (e.g., after AJAX content loads)
+            window.initCAScroll = initCAScroll;
+        })();
+    </script>
+  </body>
 </html>
