@@ -88,7 +88,7 @@ Split lines by periods `"."` or by `<br>` / `\n`. Use `ca__lt-separator="dot"` f
 
 You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **default behavior**.
 
-## 🔥You can assign different animation classes and delays to each word and line! Space-separate your class names and delay values.
+**🔥You can assign different animation classes and delays to each word and line! Space-separate your class names and delay values.**
 
 ```html
 <h2 class="cssanimation" ca__lt-word="ca__fx-fadeIn ca__fx-moveFromTop ca__fx-moveFromBottom ca__fx-moveFromRight">
@@ -144,7 +144,7 @@ This value is used to explicitly set the duration for all units, overriding any 
 
 This means `ca__lt-base-duration` gives you a convenient way to set a project-wide or component-wide default duration without needing to edit CSS.
 
-## 🏷️ Supported Attributes for Text Animations Plugin
+## Supported Attributes for Text Animations Plugin
 
 | Attribute              | Description                                                                      |
 | ---------------------- | -------------------------------------------------------------------------------- |
@@ -170,7 +170,7 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 </h2>
 ```
 
-## 💡Developer Tips
+## Developer Tips
 
 - The `.cssanimation` **class is always required** for baseline styling and to activate text animations.
 - You can provide fewer classes or delay values than units; the last value will simply repeat for the remaining units, making it easy to apply a pattern.
