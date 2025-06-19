@@ -1,10 +1,10 @@
-## 🖱️ Trigger-based Animation Control
+# 🖱️ Trigger-based Animation Control
 
 ![Plugin](https://img.shields.io/badge/Type-Plugin-4B9CE2?style=for-the-badge) ![Vanilla JS](https://img.shields.io/badge/JS-Vanilla%20JS-brightgreen?style=for-the-badge) ![No Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey?style=for-the-badge) ![npm](https://img.shields.io/npm/dw/@hellouxpavel/cssanimation?style=for-the-badge) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![View Demo](https://img.shields.io/badge/🎬%20Live-Demo-green?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/ca-trigger.html)
 
 Enable trigger-based animations using simple `data-ca-trigger` attributes. This plugin works seamlessly with `cssanimation.css` classes and lets you apply them on user interactions. It supports mouse, keyboard, touch, and custom event triggers — with optional animation control via delay, duration, reset, and key filters.
 
-### Features
+## Features
 
 - Multiple animation triggers: click, mouseenter, keydown, blur, etc.
 - Attribute-based configuration with no JavaScript required
@@ -14,11 +14,11 @@ Enable trigger-based animations using simple `data-ca-trigger` attributes. This 
 - Global enable/disable toggle
 - Dev mode with logs and diagnostics
 
-### Try It Live
+## Try It Live
 
 Explore all supported triggers and features in the interactive playground: 👉 [Live Demo](https://yesiamrocks.github.io/cssanimation/ca-trigger.html)
 
-### Include the Plugin
+## Include the Plugin
 
 _If you're already using cssanimation via NPM, you're all set!_
 
@@ -36,7 +36,7 @@ Add `data-ca-*` attributes to your element:
 </div>
 ```
 
-### Supported Triggers
+## Supported Triggers
 
 You can animate elements using the following trigger types via `data-ca-trigger`:
 
@@ -63,7 +63,7 @@ You can animate elements using the following trigger types via `data-ca-trigger`
 
 > `data-ca-trigger="mouseenter,click,keydown"`
 
-### Attributes Reference
+## Attributes Reference
 
 | Attribute              | Description                                                           |
 | ---------------------- | --------------------------------------------------------------------- |
@@ -73,7 +73,7 @@ You can animate elements using the following trigger types via `data-ca-trigger`
 | `data-ca-delay`        | Optional. Adds `animation-delay` (e.g. `"0.5s"`).                     |
 | `data-ca-duration`     | Optional. Adds `animation-duration` (e.g. `"2s"`).                    |
 
-### Example: Hover with Delay and Reset
+## Example: Hover with Delay and Reset
 
 ```html
 <div
@@ -88,7 +88,7 @@ You can animate elements using the following trigger types via `data-ca-trigger`
 </div>
 ```
 
-### data-ca-key
+## data-ca-key
 
 Limit animations to specific key presses:
 
@@ -96,19 +96,19 @@ Limit animations to specific key presses:
 <input data-ca-trigger="keydown" data-ca-key="Enter,Escape" data-ca-class="ca__fx-bounce" />
 ```
 
-### Modifier Support
+## Modifier Support
 
 `data-ca-key="ctrl+z, shift+a, alt+x"`
 
-### Wildcard Support
+## Wildcard Support
 
 `data-ca-key="en*, arrow*"`
 
-### Trigger Animation Reset: Reset the animation class after it finishes:
+## Trigger Animation Reset: Reset the animation class after it finishes:
 
 `data-ca-reset="true"`
 
-### Timing Controls
+## Timing Controls
 
 - `data-ca-delay="0.2s"`
 - `data-ca-duration="1.5s"`
@@ -127,7 +127,7 @@ document.getElementById('myBox').dispatchEvent(new Event('customEvent'));
 <div id="myBox" data-ca-trigger="customEvent" data-ca-class="ca__fx-pop"></div>
 ```
 
-### Global Disable (Optional)
+## Global Disable (Optional)
 
 To disable all animations globally (e.g., for accessibility/testing), set:
 
@@ -142,12 +142,12 @@ window.__CA_TRIGGER_DISABLED = false;
 caTrigger.init(); // Re-initialize manually
 ```
 
-### Integration Tips
+## Integration Tips
 
 - Core class `.cssanimation` is mandatory to use.
 - Avoid using the same data-ca-trigger on deeply nested elements to prevent event conflicts. <br><br>
 
-### Plugin Architecture Summary
+## Plugin Architecture Summary
 
 - Written in vanilla JS (no dependencies)
 - Supports multiple triggers and classes

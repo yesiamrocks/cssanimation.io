@@ -1,10 +1,10 @@
-## 🔡 Amazing Text & Letter Animations
+# 🔡 Amazing Text & Letter Animations
 
 ![Plugin](https://img.shields.io/badge/Type-Plugin-4B9CE2?style=for-the-badge) ![Vanilla JS](https://img.shields.io/badge/JS-Vanilla%20JS-brightgreen?style=for-the-badge) ![No Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey?style=for-the-badge) ![npm](https://img.shields.io/npm/dw/@hellouxpavel/cssanimation?style=for-the-badge) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![View Demo](https://img.shields.io/badge/🎬%20Live-Demo-green?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/text-animation.html)
 
 `ca-letteranimation.js` plugin is a lightweight, CSS-only enhancement script that brings **letter-by-letter, word-by-word, and line-by-line** animations to your projects. It's designed to work seamlessly with [cssanimation](https://cssanimation.io), for robust and customizable text effects.
 
-### Key Features
+## Key Features
 
 - Highly customizable: Control animations directly with HTML attributes.
 - Animate **Letters**, **Words**, and **Lines**: Independent control for precise effects.
@@ -13,7 +13,9 @@
 - Random & Reverse Effects: Get creative with animation order.
 - Smart Handling: Safely handles whitespace and provides animation class fallbacks.
 
-### ⚠️ Migration Notice (v5.7.3)
+---
+
+## ⚠️ Migration Notice (v5.7.3) ⚠️
 
 As of version `6.0.0`, all plugins are now organized under a unified directory:
 
@@ -22,7 +24,9 @@ As of version `6.0.0`, all plugins are now organized under a unified directory:
 
 If you're using this plugin via `<script>`, be sure to update your path accordingly.
 
-### Letter Animation Installation
+---
+
+## Letter Animation Installation
 
 _If you're already using **cssanimation** via NPM, you're all set!_
 
@@ -32,11 +36,11 @@ For plain HTML, include the `ca-letteranimation.js`, plugin just before your clo
 <script src="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/plugins/ca-letteranimation.js"></script>
 ```
 
-### Letter Animation Usage
+## Letter Animation Usage
 
 Every animated text block needs the `.cssanimation` class along with a `ca__lt-*` attribute to define how it animates.
 
-#### 1. Letter-by-Letter Animation
+### 1. Letter-by-Letter Animation
 
 Animate text one letter at a time with different sequencing styles:
 
@@ -60,13 +64,13 @@ Animate text one letter at a time with different sequencing styles:
 
 ---
 
-#### 2. Word-by-Word Animation `ca__lt-word`
+### 2. Word-by-Word Animation `ca__lt-word`
 
 ```html
 <h2 class="cssanimation" ca__lt-word="ca__fx-fadeIn">Each word animates uniquely</h2>
 ```
 
-#### 3. Line-by-line Animation `ca__lt-line`
+### 3. Line-by-line Animation `ca__lt-line`
 
 ```html
 <p class="cssanimation" ca__lt-line="ca__fx-fadeIn">
@@ -84,7 +88,7 @@ Split lines by periods `"."` or by `<br>` / `\n`. Use `ca__lt-separator="dot"` f
 
 You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **default behavior**.
 
-### 🔥You can assign different animation classes and delays to each word and line! Space-separate your class names and delay values.
+## 🔥You can assign different animation classes and delays to each word and line! Space-separate your class names and delay values.
 
 ```html
 <h2 class="cssanimation" ca__lt-word="ca__fx-fadeIn ca__fx-moveFromTop ca__fx-moveFromBottom ca__fx-moveFromRight">
@@ -102,7 +106,7 @@ You don't need to add `ca__lt-separator` for `<br>` or newlines, this is the **d
 
 [Check out this Text & Letter Animations Preview Tool to easily generate the animation code for your text.](https://yesiamrocks.github.io/cssanimation/text-animation.html)
 
-### `ca__lt-delay` in Detail
+## `ca__lt-delay` in Detail
 
 The `ca__lt-delay` attribute specifies the delay before each animated unit (letter, word, or line) begins its animation. The values are in milliseconds (ms).
 
@@ -122,7 +126,7 @@ The `ca__lt-delay` attribute specifies the delay before each animated unit (lett
 
 This allows you to create rhythmic or staggered entry effects easily, like `ca__lt-delay="50 100 100"` as in your example. The first unit gets 50ms delay, and all subsequent units get 100ms delay.
 
-### `ca__lt-base-duration` in Detail
+## `ca__lt-base-duration` in Detail
 
 The `ca__lt-base-duration` attribute provides a simple way to set a global default animation duration for all units (letters, words, or lines) in milliseconds (ms).
 
@@ -140,7 +144,7 @@ This value is used to explicitly set the duration for all units, overriding any 
 
 This means `ca__lt-base-duration` gives you a convenient way to set a project-wide or component-wide default duration without needing to edit CSS.
 
-### 🏷️ Supported Attributes for Text Animations Plugin
+## 🏷️ Supported Attributes for Text Animations Plugin
 
 | Attribute              | Description                                                                      |
 | ---------------------- | -------------------------------------------------------------------------------- |
@@ -166,7 +170,7 @@ This means `ca__lt-base-duration` gives you a convenient way to set a project-wi
 </h2>
 ```
 
-### 💡Developer Tips
+## 💡Developer Tips
 
 - The `.cssanimation` **class is always required** for baseline styling and to activate text animations.
 - You can provide fewer classes or delay values than units; the last value will simply repeat for the remaining units, making it easy to apply a pattern.
