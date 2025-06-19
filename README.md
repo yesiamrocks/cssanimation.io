@@ -108,8 +108,6 @@ We use clear prefixes to help you find the right animation or utility class.
 | `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-bounceX">`   |
 | `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-speedChill">` |
 
-<br>
-
 ## 📦 Modular Import
 
 Want to keep your bundle size minimal? Only import the effects you actually use!
@@ -144,8 +142,6 @@ Each module is generated from `./dist/cssanimation.css` and follows the naming c
 | Jitter      | `./dist/modules/ca__fx-jitter.css`      |
 | Quiver      | `./dist/modules/ca__fx-quiver.css`      |
 | ...and more | See `./dist/modules/` folder            |
-
-<br>
 
 ## 🧰 Utility Class
 

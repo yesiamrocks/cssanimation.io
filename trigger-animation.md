@@ -1,5 +1,7 @@
 ## 🖱️ Trigger-based Animation Control
 
+![Plugin](https://img.shields.io/badge/Type-Plugin-4B9CE2?style=for-the-badge) ![Vanilla JS](https://img.shields.io/badge/JS-Vanilla%20JS-brightgreen?style=for-the-badge) ![No Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey?style=for-the-badge) ![npm](https://img.shields.io/npm/dw/@hellouxpavel/cssanimation?style=for-the-badge) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![View Demo](https://img.shields.io/badge/🎬%20Live-Demo-green?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/ca-trigger.html)
+
 Enable trigger-based animations using simple `data-ca-trigger` attributes. This plugin works seamlessly with `cssanimation.css` classes and lets you apply them on user interactions. It supports mouse, keyboard, touch, and custom event triggers — with optional animation control via delay, duration, reset, and key filters.
 
 ### Features
