@@ -3,7 +3,7 @@
  * Title: Letter, word, and line animation enhancements
  * Description: Provides dynamic letter-by-letter, word-by-word, and line-by-line animation capabilities, enhancing HTML elements with customizable text effects via HTML attributes.
  * Part of: https://cssanimation.io/
- * Version: 6.1.0
+ * Version: 6.3.0
  *
  * Author: Shafayetul Islam Pavel
  * LinkedIn: https://www.linkedin.com/in/shafayetul/

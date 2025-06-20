@@ -57,10 +57,11 @@
   }
 }
 /**
- * Module: Swing In
- * Filename: ca__SwingIn.css
+ * Module: Swing
+ * Filename: ca_Swing.css
  */
 .ca__fx-swing {
+  animation-name: swing;
+  animation-timing-function: ease-in-out;
   transform-origin: top center;
-  animation: swing var(--swing-duration, 1s) ease-in-out infinite;
 }

@@ -140,10 +140,39 @@
     "ca__fx-moveToLeft",
     "ca__fx-moveToRight",
     "ca__fx-moveToTop",
-    "ca__fx-moveToBottom",
-    "ca__fx-leMovingBackFromRight",
-    "ca__fx-leMovingBackFromLeft"
+    "ca__fx-moveToBottom"
   ],
+
+  "Swing": [
+    "ca__fx-swing",
+    "ca__fx-swingIn",
+    "ca__fx-swingOut",
+    "ca__fx-swingZoom",
+    "ca__fx-swingPop",
+    "ca__fx-swingSkew",
+    "ca__fx-swingInFromRight",
+    "ca__fx-swingInFromLeft",
+    "ca__fx-swingInFromTop",
+    "ca__fx-swingInFromBottom",
+    "ca__fx-swingOutToRight",
+    "ca__fx-swingOutToLeft",
+    "ca__fx-swingOutToTop",
+    "ca__fx-swingOutToBottom",
+    "ca__fx-swingInFromRight",
+    "ca__fx-swingInFromLeft",
+    "ca__fx-swingDrop",
+    "ca__fx-swingDropSoft",
+    "ca__fx-swingDropHard",
+    "ca__fx-swingDropBounce",
+    "ca__fx-swingDropTwist",
+    "ca__fx-swingDropElastic",
+    "ca__fx-swingDropChain",
+    "ca__fx-swingDropHover",
+    "ca__fx-swingDropKite",
+    "ca__fx-swingDropSnap",
+    "ca__fx-swingDropMagnet"
+  ],
+
   "Pull & Push": [
     "ca__fx-pullRelease",
     "ca__fx-pushRelease",

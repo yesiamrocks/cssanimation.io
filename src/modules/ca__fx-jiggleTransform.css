@@ -38,6 +38,33 @@
 /* stylelint-enable */
 
 .ca__fx-jiggleTransform {
-  animation: jiggleTransformKeyframes 0.7s ease-in-out forwards;
+  animation: jiggleTransform 0.7s ease-in-out forwards;
   transform-origin: center;
+}
+
+@keyframes jiggleTransform {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  15% {
+    transform: rotate(-3deg) scale(1.02);
+  }
+
+  30% {
+    transform: rotate(3deg) scale(0.98);
+  }
+
+  45% {
+    transform: rotate(-2deg) scale(1.01);
+  }
+
+  60% {
+    transform: rotate(2deg) scale(0.99);
+  }
+
+  75% {
+    transform: rotate(-1deg) scale(1);
+  }
 }

@@ -59,11 +59,3 @@
     transform: rotate(0deg);
   }
 }
-/**
- * Module: Move From
- * Filename: ca__MoveFrom.css
- */
-.ca__fx-moveFromLeft {
-  animation-name: moveFromLeft;
-  animation-timing-function: ease-out;
-}

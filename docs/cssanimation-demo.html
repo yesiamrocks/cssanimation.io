@@ -167,7 +167,7 @@
         </div>
 
         <div id="categories" class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 px-2 sm:px-4">
-            <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out active" data-category="All">All (220)</button>
+            <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out active" data-category="All">All (248)</button>
             
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Blur Effects">Blur Effects (10)</button>
                     
@@ -207,13 +207,17 @@
                     
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Shock & Swing">Shock & Swing (10)</button>
                     
-                        <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Slide In & Out">Slide In & Out (10)</button>
+                        <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Slide In & Out">Slide In & Out (8)</button>
                     
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Spotlight">Spotlight (11)</button>
+                    
+                        <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Swing">Swing (27)</button>
                     
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Text Animation">Text Animation (8)</button>
                     
                         <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Zoom Effects">Zoom Effects (14)</button>
+                    
+                        <button class="category-button px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out" data-category="Other">Other (6)</button>
                     
         </div>
 
@@ -954,6 +958,384 @@
                             <button onclick="copyToClipboard('ca__fx-doorOpenFromLeft')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-doorOpenFromLeft">
                                 Copy
                                 <span id="feedback-ca__fx-doorOpenFromLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-elasticArise')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticArise">
+                            Share
+                            <span id="share-feedback-ca__fx-elasticArise" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-elasticArise w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticArise" onclick="replay('ca__fx-elasticArise')">
+                            ca__fx-elasticArise
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-elasticArise" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticArise">ca__fx-elasticArise</code>
+                            <button onclick="copyToClipboard('ca__fx-elasticArise')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticArise">
+                                Copy
+                                <span id="feedback-ca__fx-elasticArise" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-elasticRise')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticRise">
+                            Share
+                            <span id="share-feedback-ca__fx-elasticRise" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-elasticRise w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticRise" onclick="replay('ca__fx-elasticRise')">
+                            ca__fx-elasticRise
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-elasticRise" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticRise">ca__fx-elasticRise</code>
+                            <button onclick="copyToClipboard('ca__fx-elasticRise')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticRise">
+                                Copy
+                                <span id="feedback-ca__fx-elasticRise" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-elasticStretch')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticStretch">
+                            Share
+                            <span id="share-feedback-ca__fx-elasticStretch" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-elasticStretch w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticStretch" onclick="replay('ca__fx-elasticStretch')">
+                            ca__fx-elasticStretch
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-elasticStretch" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticStretch">ca__fx-elasticStretch</code>
+                            <button onclick="copyToClipboard('ca__fx-elasticStretch')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticStretch">
+                                Copy
+                                <span id="feedback-ca__fx-elasticStretch" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-elasticBounce')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticBounce">
+                            Share
+                            <span id="share-feedback-ca__fx-elasticBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-elasticBounce w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticBounce" onclick="replay('ca__fx-elasticBounce')">
+                            ca__fx-elasticBounce
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-elasticBounce" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticBounce">ca__fx-elasticBounce</code>
+                            <button onclick="copyToClipboard('ca__fx-elasticBounce')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticBounce">
+                                Copy
+                                <span id="feedback-ca__fx-elasticBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-elasticSquash')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticSquash">
+                            Share
+                            <span id="share-feedback-ca__fx-elasticSquash" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-elasticSquash w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticSquash" onclick="replay('ca__fx-elasticSquash')">
+                            ca__fx-elasticSquash
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-elasticSquash" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticSquash">ca__fx-elasticSquash</code>
+                            <button onclick="copyToClipboard('ca__fx-elasticSquash')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticSquash">
+                                Copy
+                                <span id="feedback-ca__fx-elasticSquash" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-elasticIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticIn">
+                            Share
+                            <span id="share-feedback-ca__fx-elasticIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-elasticIn w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticIn" onclick="replay('ca__fx-elasticIn')">
+                            ca__fx-elasticIn
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-elasticIn" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticIn">ca__fx-elasticIn</code>
+                            <button onclick="copyToClipboard('ca__fx-elasticIn')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticIn">
+                                Copy
+                                <span id="feedback-ca__fx-elasticIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-rubberPop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-rubberPop">
+                            Share
+                            <span id="share-feedback-ca__fx-rubberPop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-rubberPop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-rubberPop" onclick="replay('ca__fx-rubberPop')">
+                            ca__fx-rubberPop
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-rubberPop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-rubberPop">ca__fx-rubberPop</code>
+                            <button onclick="copyToClipboard('ca__fx-rubberPop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-rubberPop">
+                                Copy
+                                <span id="feedback-ca__fx-rubberPop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-squishLift')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-squishLift">
+                            Share
+                            <span id="share-feedback-ca__fx-squishLift" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-squishLift w-full mt-6 rounded-md shadow-2xl" id="ca__fx-squishLift" onclick="replay('ca__fx-squishLift')">
+                            ca__fx-squishLift
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-squishLift" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-squishLift">ca__fx-squishLift</code>
+                            <button onclick="copyToClipboard('ca__fx-squishLift')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-squishLift">
+                                Copy
+                                <span id="feedback-ca__fx-squishLift" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-flubberBounce')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-flubberBounce">
+                            Share
+                            <span id="share-feedback-ca__fx-flubberBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-flubberBounce w-full mt-6 rounded-md shadow-2xl" id="ca__fx-flubberBounce" onclick="replay('ca__fx-flubberBounce')">
+                            ca__fx-flubberBounce
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-flubberBounce" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-flubberBounce">ca__fx-flubberBounce</code>
+                            <button onclick="copyToClipboard('ca__fx-flubberBounce')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-flubberBounce">
+                                Copy
+                                <span id="feedback-ca__fx-flubberBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-boingScale')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-boingScale">
+                            Share
+                            <span id="share-feedback-ca__fx-boingScale" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-boingScale w-full mt-6 rounded-md shadow-2xl" id="ca__fx-boingScale" onclick="replay('ca__fx-boingScale')">
+                            ca__fx-boingScale
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-boingScale" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-boingScale">ca__fx-boingScale</code>
+                            <button onclick="copyToClipboard('ca__fx-boingScale')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-boingScale">
+                                Copy
+                                <span id="feedback-ca__fx-boingScale" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-slinkyDrop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-slinkyDrop">
+                            Share
+                            <span id="share-feedback-ca__fx-slinkyDrop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-slinkyDrop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-slinkyDrop" onclick="replay('ca__fx-slinkyDrop')">
+                            ca__fx-slinkyDrop
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-slinkyDrop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-slinkyDrop">ca__fx-slinkyDrop</code>
+                            <button onclick="copyToClipboard('ca__fx-slinkyDrop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-slinkyDrop">
+                                Copy
+                                <span id="feedback-ca__fx-slinkyDrop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-springyEffect')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-springyEffect">
+                            Share
+                            <span id="share-feedback-ca__fx-springyEffect" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-springyEffect w-full mt-6 rounded-md shadow-2xl" id="ca__fx-springyEffect" onclick="replay('ca__fx-springyEffect')">
+                            ca__fx-springyEffect
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-springyEffect" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-springyEffect">ca__fx-springyEffect</code>
+                            <button onclick="copyToClipboard('ca__fx-springyEffect')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-springyEffect">
+                                Copy
+                                <span id="feedback-ca__fx-springyEffect" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-jiggleTransform')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-jiggleTransform">
+                            Share
+                            <span id="share-feedback-ca__fx-jiggleTransform" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-jiggleTransform w-full mt-6 rounded-md shadow-2xl" id="ca__fx-jiggleTransform" onclick="replay('ca__fx-jiggleTransform')">
+                            ca__fx-jiggleTransform
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-jiggleTransform" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-jiggleTransform">ca__fx-jiggleTransform</code>
+                            <button onclick="copyToClipboard('ca__fx-jiggleTransform')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-jiggleTransform">
+                                Copy
+                                <span id="feedback-ca__fx-jiggleTransform" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-stretchCollapse')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stretchCollapse">
+                            Share
+                            <span id="share-feedback-ca__fx-stretchCollapse" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-stretchCollapse w-full mt-6 rounded-md shadow-2xl" id="ca__fx-stretchCollapse" onclick="replay('ca__fx-stretchCollapse')">
+                            ca__fx-stretchCollapse
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-stretchCollapse" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-stretchCollapse">ca__fx-stretchCollapse</code>
+                            <button onclick="copyToClipboard('ca__fx-stretchCollapse')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stretchCollapse">
+                                Copy
+                                <span id="feedback-ca__fx-stretchCollapse" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-reboundMotion')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-reboundMotion">
+                            Share
+                            <span id="share-feedback-ca__fx-reboundMotion" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-reboundMotion w-full mt-6 rounded-md shadow-2xl" id="ca__fx-reboundMotion" onclick="replay('ca__fx-reboundMotion')">
+                            ca__fx-reboundMotion
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-reboundMotion" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-reboundMotion">ca__fx-reboundMotion</code>
+                            <button onclick="copyToClipboard('ca__fx-reboundMotion')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-reboundMotion">
+                                Copy
+                                <span id="feedback-ca__fx-reboundMotion" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-snapBackEase')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-snapBackEase">
+                            Share
+                            <span id="share-feedback-ca__fx-snapBackEase" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-snapBackEase w-full mt-6 rounded-md shadow-2xl" id="ca__fx-snapBackEase" onclick="replay('ca__fx-snapBackEase')">
+                            ca__fx-snapBackEase
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-snapBackEase" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-snapBackEase">ca__fx-snapBackEase</code>
+                            <button onclick="copyToClipboard('ca__fx-snapBackEase')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-snapBackEase">
+                                Copy
+                                <span id="feedback-ca__fx-snapBackEase" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-flexiShrink')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-flexiShrink">
+                            Share
+                            <span id="share-feedback-ca__fx-flexiShrink" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-flexiShrink w-full mt-6 rounded-md shadow-2xl" id="ca__fx-flexiShrink" onclick="replay('ca__fx-flexiShrink')">
+                            ca__fx-flexiShrink
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-flexiShrink" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-flexiShrink">ca__fx-flexiShrink</code>
+                            <button onclick="copyToClipboard('ca__fx-flexiShrink')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-flexiShrink">
+                                Copy
+                                <span id="feedback-ca__fx-flexiShrink" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-bouncyScale')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-bouncyScale">
+                            Share
+                            <span id="share-feedback-ca__fx-bouncyScale" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-bouncyScale w-full mt-6 rounded-md shadow-2xl" id="ca__fx-bouncyScale" onclick="replay('ca__fx-bouncyScale')">
+                            ca__fx-bouncyScale
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-bouncyScale" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-bouncyScale">ca__fx-bouncyScale</code>
+                            <button onclick="copyToClipboard('ca__fx-bouncyScale')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-bouncyScale">
+                                Copy
+                                <span id="feedback-ca__fx-bouncyScale" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-pulseElastic')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-pulseElastic">
+                            Share
+                            <span id="share-feedback-ca__fx-pulseElastic" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-pulseElastic w-full mt-6 rounded-md shadow-2xl" id="ca__fx-pulseElastic" onclick="replay('ca__fx-pulseElastic')">
+                            ca__fx-pulseElastic
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-pulseElastic" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-pulseElastic">ca__fx-pulseElastic</code>
+                            <button onclick="copyToClipboard('ca__fx-pulseElastic')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-pulseElastic">
+                                Copy
+                                <span id="feedback-ca__fx-pulseElastic" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-rubber')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-rubber">
+                            Share
+                            <span id="share-feedback-ca__fx-rubber" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-rubber w-full mt-6 rounded-md shadow-2xl" id="ca__fx-rubber" onclick="replay('ca__fx-rubber')">
+                            ca__fx-rubber
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-rubber" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-rubber">ca__fx-rubber</code>
+                            <button onclick="copyToClipboard('ca__fx-rubber')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-rubber">
+                                Copy
+                                <span id="feedback-ca__fx-rubber" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-squishBoing')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-squishBoing">
+                            Share
+                            <span id="share-feedback-ca__fx-squishBoing" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-squishBoing w-full mt-6 rounded-md shadow-2xl" id="ca__fx-squishBoing" onclick="replay('ca__fx-squishBoing')">
+                            ca__fx-squishBoing
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-squishBoing" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-squishBoing">ca__fx-squishBoing</code>
+                            <button onclick="copyToClipboard('ca__fx-squishBoing')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-squishBoing">
+                                Copy
+                                <span id="feedback-ca__fx-squishBoing" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                             </button>                                
                         </div>                            
                     </div>
@@ -1713,6 +2095,96 @@
                             </button>                                
                         </div>                            
                     </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Other" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-ca__kiteFloatInRight')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__kiteFloatInRight">
+                            Share
+                            <span id="share-feedback-ca__fx-ca__kiteFloatInRight" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-ca__kiteFloatInRight w-full mt-6 rounded-md shadow-2xl" id="ca__fx-ca__kiteFloatInRight" onclick="replay('ca__fx-ca__kiteFloatInRight')">
+                            ca__fx-ca__kiteFloatInRight
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-ca__kiteFloatInRight" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-ca__kiteFloatInRight">ca__fx-ca__kiteFloatInRight</code>
+                            <button onclick="copyToClipboard('ca__fx-ca__kiteFloatInRight')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__kiteFloatInRight">
+                                Copy
+                                <span id="feedback-ca__fx-ca__kiteFloatInRight" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Other" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-ca__kiteFloatInLeft')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__kiteFloatInLeft">
+                            Share
+                            <span id="share-feedback-ca__fx-ca__kiteFloatInLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-ca__kiteFloatInLeft w-full mt-6 rounded-md shadow-2xl" id="ca__fx-ca__kiteFloatInLeft" onclick="replay('ca__fx-ca__kiteFloatInLeft')">
+                            ca__fx-ca__kiteFloatInLeft
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-ca__kiteFloatInLeft" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-ca__kiteFloatInLeft">ca__fx-ca__kiteFloatInLeft</code>
+                            <button onclick="copyToClipboard('ca__fx-ca__kiteFloatInLeft')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__kiteFloatInLeft">
+                                Copy
+                                <span id="feedback-ca__fx-ca__kiteFloatInLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Other" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-ca__kiteHoverLoop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__kiteHoverLoop">
+                            Share
+                            <span id="share-feedback-ca__fx-ca__kiteHoverLoop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-ca__kiteHoverLoop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-ca__kiteHoverLoop" onclick="replay('ca__fx-ca__kiteHoverLoop')">
+                            ca__fx-ca__kiteHoverLoop
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-ca__kiteHoverLoop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-ca__kiteHoverLoop">ca__fx-ca__kiteHoverLoop</code>
+                            <button onclick="copyToClipboard('ca__fx-ca__kiteHoverLoop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__kiteHoverLoop">
+                                Copy
+                                <span id="feedback-ca__fx-ca__kiteHoverLoop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Other" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-ca__kiteEntrySnap')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__kiteEntrySnap">
+                            Share
+                            <span id="share-feedback-ca__fx-ca__kiteEntrySnap" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-ca__kiteEntrySnap w-full mt-6 rounded-md shadow-2xl" id="ca__fx-ca__kiteEntrySnap" onclick="replay('ca__fx-ca__kiteEntrySnap')">
+                            ca__fx-ca__kiteEntrySnap
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-ca__kiteEntrySnap" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-ca__kiteEntrySnap">ca__fx-ca__kiteEntrySnap</code>
+                            <button onclick="copyToClipboard('ca__fx-ca__kiteEntrySnap')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__kiteEntrySnap">
+                                Copy
+                                <span id="feedback-ca__fx-ca__kiteEntrySnap" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Other" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-ca__kiteWaveExit')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__kiteWaveExit">
+                            Share
+                            <span id="share-feedback-ca__fx-ca__kiteWaveExit" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-ca__kiteWaveExit w-full mt-6 rounded-md shadow-2xl" id="ca__fx-ca__kiteWaveExit" onclick="replay('ca__fx-ca__kiteWaveExit')">
+                            ca__fx-ca__kiteWaveExit
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-ca__kiteWaveExit" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-ca__kiteWaveExit">ca__fx-ca__kiteWaveExit</code>
+                            <button onclick="copyToClipboard('ca__fx-ca__kiteWaveExit')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__kiteWaveExit">
+                                Copy
+                                <span id="feedback-ca__fx-ca__kiteWaveExit" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
                     <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Slide In & Out" tabindex="0">
                         <button onclick="shareAnimation('ca__fx-moveFromLeft')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-moveFromLeft">
                             Share
@@ -1854,42 +2326,6 @@
                             <button onclick="copyToClipboard('ca__fx-moveToBottom')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-moveToBottom">
                                 Copy
                                 <span id="feedback-ca__fx-moveToBottom" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Slide In & Out" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-leMovingBackFromRight')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-leMovingBackFromRight">
-                            Share
-                            <span id="share-feedback-ca__fx-leMovingBackFromRight" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-leMovingBackFromRight w-full mt-6 rounded-md shadow-2xl" id="ca__fx-leMovingBackFromRight" onclick="replay('ca__fx-leMovingBackFromRight')">
-                            ca__fx-leMovingBackFromRight
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-leMovingBackFromRight" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-leMovingBackFromRight">ca__fx-leMovingBackFromRight</code>
-                            <button onclick="copyToClipboard('ca__fx-leMovingBackFromRight')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-leMovingBackFromRight">
-                                Copy
-                                <span id="feedback-ca__fx-leMovingBackFromRight" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Slide In & Out" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-leMovingBackFromLeft')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-leMovingBackFromLeft">
-                            Share
-                            <span id="share-feedback-ca__fx-leMovingBackFromLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-leMovingBackFromLeft w-full mt-6 rounded-md shadow-2xl" id="ca__fx-leMovingBackFromLeft" onclick="replay('ca__fx-leMovingBackFromLeft')">
-                            ca__fx-leMovingBackFromLeft
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-leMovingBackFromLeft" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-leMovingBackFromLeft">ca__fx-leMovingBackFromLeft</code>
-                            <button onclick="copyToClipboard('ca__fx-leMovingBackFromLeft')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-leMovingBackFromLeft">
-                                Copy
-                                <span id="feedback-ca__fx-leMovingBackFromLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                             </button>                                
                         </div>                            
                     </div>
@@ -3207,7 +3643,7 @@
                             </button>                                
                         </div>                            
                     </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Shock & Swing" tabindex="0">
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
                         <button onclick="shareAnimation('ca__fx-swing')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swing">
                             Share
                             <span id="share-feedback-ca__fx-swing" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
@@ -3222,6 +3658,456 @@
                             <button onclick="copyToClipboard('ca__fx-swing')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swing">
                                 Copy
                                 <span id="feedback-ca__fx-swing" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingIn">
+                            Share
+                            <span id="share-feedback-ca__fx-swingIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingIn w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingIn" onclick="replay('ca__fx-swingIn')">
+                            ca__fx-swingIn
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingIn" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingIn">ca__fx-swingIn</code>
+                            <button onclick="copyToClipboard('ca__fx-swingIn')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingIn">
+                                Copy
+                                <span id="feedback-ca__fx-swingIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingOut">
+                            Share
+                            <span id="share-feedback-ca__fx-swingOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingOut w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingOut" onclick="replay('ca__fx-swingOut')">
+                            ca__fx-swingOut
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingOut" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingOut">ca__fx-swingOut</code>
+                            <button onclick="copyToClipboard('ca__fx-swingOut')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingOut">
+                                Copy
+                                <span id="feedback-ca__fx-swingOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Other" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingUp')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingUp">
+                            Share
+                            <span id="share-feedback-ca__fx-swingUp" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingUp w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingUp" onclick="replay('ca__fx-swingUp')">
+                            ca__fx-swingUp
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingUp" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingUp">ca__fx-swingUp</code>
+                            <button onclick="copyToClipboard('ca__fx-swingUp')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingUp">
+                                Copy
+                                <span id="feedback-ca__fx-swingUp" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingZoom')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingZoom">
+                            Share
+                            <span id="share-feedback-ca__fx-swingZoom" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingZoom w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingZoom" onclick="replay('ca__fx-swingZoom')">
+                            ca__fx-swingZoom
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingZoom" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingZoom">ca__fx-swingZoom</code>
+                            <button onclick="copyToClipboard('ca__fx-swingZoom')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingZoom">
+                                Copy
+                                <span id="feedback-ca__fx-swingZoom" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingPop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingPop">
+                            Share
+                            <span id="share-feedback-ca__fx-swingPop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingPop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingPop" onclick="replay('ca__fx-swingPop')">
+                            ca__fx-swingPop
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingPop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingPop">ca__fx-swingPop</code>
+                            <button onclick="copyToClipboard('ca__fx-swingPop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingPop">
+                                Copy
+                                <span id="feedback-ca__fx-swingPop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingSkew')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingSkew">
+                            Share
+                            <span id="share-feedback-ca__fx-swingSkew" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingSkew w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingSkew" onclick="replay('ca__fx-swingSkew')">
+                            ca__fx-swingSkew
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingSkew" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingSkew">ca__fx-swingSkew</code>
+                            <button onclick="copyToClipboard('ca__fx-swingSkew')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingSkew">
+                                Copy
+                                <span id="feedback-ca__fx-swingSkew" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingInFromRight')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingInFromRight">
+                            Share
+                            <span id="share-feedback-ca__fx-swingInFromRight" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingInFromRight w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingInFromRight" onclick="replay('ca__fx-swingInFromRight')">
+                            ca__fx-swingInFromRight
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingInFromRight" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingInFromRight">ca__fx-swingInFromRight</code>
+                            <button onclick="copyToClipboard('ca__fx-swingInFromRight')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingInFromRight">
+                                Copy
+                                <span id="feedback-ca__fx-swingInFromRight" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingInFromLeft')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingInFromLeft">
+                            Share
+                            <span id="share-feedback-ca__fx-swingInFromLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingInFromLeft w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingInFromLeft" onclick="replay('ca__fx-swingInFromLeft')">
+                            ca__fx-swingInFromLeft
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingInFromLeft" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingInFromLeft">ca__fx-swingInFromLeft</code>
+                            <button onclick="copyToClipboard('ca__fx-swingInFromLeft')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingInFromLeft">
+                                Copy
+                                <span id="feedback-ca__fx-swingInFromLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingInFromTop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingInFromTop">
+                            Share
+                            <span id="share-feedback-ca__fx-swingInFromTop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingInFromTop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingInFromTop" onclick="replay('ca__fx-swingInFromTop')">
+                            ca__fx-swingInFromTop
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingInFromTop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingInFromTop">ca__fx-swingInFromTop</code>
+                            <button onclick="copyToClipboard('ca__fx-swingInFromTop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingInFromTop">
+                                Copy
+                                <span id="feedback-ca__fx-swingInFromTop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingInFromBottom')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingInFromBottom">
+                            Share
+                            <span id="share-feedback-ca__fx-swingInFromBottom" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingInFromBottom w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingInFromBottom" onclick="replay('ca__fx-swingInFromBottom')">
+                            ca__fx-swingInFromBottom
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingInFromBottom" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingInFromBottom">ca__fx-swingInFromBottom</code>
+                            <button onclick="copyToClipboard('ca__fx-swingInFromBottom')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingInFromBottom">
+                                Copy
+                                <span id="feedback-ca__fx-swingInFromBottom" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingOutToRight')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingOutToRight">
+                            Share
+                            <span id="share-feedback-ca__fx-swingOutToRight" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingOutToRight w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingOutToRight" onclick="replay('ca__fx-swingOutToRight')">
+                            ca__fx-swingOutToRight
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingOutToRight" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingOutToRight">ca__fx-swingOutToRight</code>
+                            <button onclick="copyToClipboard('ca__fx-swingOutToRight')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingOutToRight">
+                                Copy
+                                <span id="feedback-ca__fx-swingOutToRight" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingOutToLeft')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingOutToLeft">
+                            Share
+                            <span id="share-feedback-ca__fx-swingOutToLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingOutToLeft w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingOutToLeft" onclick="replay('ca__fx-swingOutToLeft')">
+                            ca__fx-swingOutToLeft
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingOutToLeft" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingOutToLeft">ca__fx-swingOutToLeft</code>
+                            <button onclick="copyToClipboard('ca__fx-swingOutToLeft')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingOutToLeft">
+                                Copy
+                                <span id="feedback-ca__fx-swingOutToLeft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingOutToTop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingOutToTop">
+                            Share
+                            <span id="share-feedback-ca__fx-swingOutToTop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingOutToTop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingOutToTop" onclick="replay('ca__fx-swingOutToTop')">
+                            ca__fx-swingOutToTop
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingOutToTop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingOutToTop">ca__fx-swingOutToTop</code>
+                            <button onclick="copyToClipboard('ca__fx-swingOutToTop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingOutToTop">
+                                Copy
+                                <span id="feedback-ca__fx-swingOutToTop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingOutToBottom')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingOutToBottom">
+                            Share
+                            <span id="share-feedback-ca__fx-swingOutToBottom" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingOutToBottom w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingOutToBottom" onclick="replay('ca__fx-swingOutToBottom')">
+                            ca__fx-swingOutToBottom
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingOutToBottom" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingOutToBottom">ca__fx-swingOutToBottom</code>
+                            <button onclick="copyToClipboard('ca__fx-swingOutToBottom')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingOutToBottom">
+                                Copy
+                                <span id="feedback-ca__fx-swingOutToBottom" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDrop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDrop">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDrop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDrop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDrop" onclick="replay('ca__fx-swingDrop')">
+                            ca__fx-swingDrop
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDrop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDrop">ca__fx-swingDrop</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDrop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDrop">
+                                Copy
+                                <span id="feedback-ca__fx-swingDrop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropSoft')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropSoft">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropSoft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropSoft w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropSoft" onclick="replay('ca__fx-swingDropSoft')">
+                            ca__fx-swingDropSoft
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropSoft" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropSoft">ca__fx-swingDropSoft</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropSoft')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropSoft">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropSoft" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropHard')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropHard">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropHard" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropHard w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropHard" onclick="replay('ca__fx-swingDropHard')">
+                            ca__fx-swingDropHard
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropHard" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropHard">ca__fx-swingDropHard</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropHard')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropHard">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropHard" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropBounce')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropBounce">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropBounce w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropBounce" onclick="replay('ca__fx-swingDropBounce')">
+                            ca__fx-swingDropBounce
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropBounce" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropBounce">ca__fx-swingDropBounce</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropBounce')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropBounce">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropTwist')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropTwist">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropTwist" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropTwist w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropTwist" onclick="replay('ca__fx-swingDropTwist')">
+                            ca__fx-swingDropTwist
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropTwist" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropTwist">ca__fx-swingDropTwist</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropTwist')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropTwist">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropTwist" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropElastic')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropElastic">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropElastic" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropElastic w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropElastic" onclick="replay('ca__fx-swingDropElastic')">
+                            ca__fx-swingDropElastic
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropElastic" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropElastic">ca__fx-swingDropElastic</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropElastic')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropElastic">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropElastic" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropChain')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropChain">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropChain" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropChain w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropChain" onclick="replay('ca__fx-swingDropChain')">
+                            ca__fx-swingDropChain
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropChain" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropChain">ca__fx-swingDropChain</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropChain')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropChain">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropChain" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropHover')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropHover">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropHover" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropHover w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropHover" onclick="replay('ca__fx-swingDropHover')">
+                            ca__fx-swingDropHover
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropHover" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropHover">ca__fx-swingDropHover</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropHover')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropHover">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropHover" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropKite')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropKite">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropKite" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropKite w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropKite" onclick="replay('ca__fx-swingDropKite')">
+                            ca__fx-swingDropKite
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropKite" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropKite">ca__fx-swingDropKite</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropKite')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropKite">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropKite" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropSnap')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropSnap">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropSnap" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropSnap w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropSnap" onclick="replay('ca__fx-swingDropSnap')">
+                            ca__fx-swingDropSnap
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropSnap" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropSnap">ca__fx-swingDropSnap</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropSnap')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropSnap">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropSnap" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                            </button>                                
+                        </div>                            
+                    </div>
+                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Swing" tabindex="0">
+                        <button onclick="shareAnimation('ca__fx-swingDropMagnet')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-swingDropMagnet">
+                            Share
+                            <span id="share-feedback-ca__fx-swingDropMagnet" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                        </button>
+
+                        <div class="preview cssanimation ca__fx-swingDropMagnet w-full mt-6 rounded-md shadow-2xl" id="ca__fx-swingDropMagnet" onclick="replay('ca__fx-swingDropMagnet')">
+                            ca__fx-swingDropMagnet
+                        </div>
+                        
+                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
+                            <code id="code-ca__fx-swingDropMagnet" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-swingDropMagnet">ca__fx-swingDropMagnet</code>
+                            <button onclick="copyToClipboard('ca__fx-swingDropMagnet')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-swingDropMagnet">
+                                Copy
+                                <span id="feedback-ca__fx-swingDropMagnet" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                             </button>                                
                         </div>                            
                     </div>
@@ -3510,384 +4396,6 @@
                             <button onclick="copyToClipboard('ca__fx-zoomOutRotateUp')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-zoomOutRotateUp">
                                 Copy
                                 <span id="feedback-ca__fx-zoomOutRotateUp" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-elasticArise')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticArise">
-                            Share
-                            <span id="share-feedback-ca__fx-elasticArise" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-elasticArise w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticArise" onclick="replay('ca__fx-elasticArise')">
-                            ca__fx-elasticArise
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-elasticArise" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticArise">ca__fx-elasticArise</code>
-                            <button onclick="copyToClipboard('ca__fx-elasticArise')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticArise">
-                                Copy
-                                <span id="feedback-ca__fx-elasticArise" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-elasticRise')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticRise">
-                            Share
-                            <span id="share-feedback-ca__fx-elasticRise" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-elasticRise w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticRise" onclick="replay('ca__fx-elasticRise')">
-                            ca__fx-elasticRise
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-elasticRise" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticRise">ca__fx-elasticRise</code>
-                            <button onclick="copyToClipboard('ca__fx-elasticRise')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticRise">
-                                Copy
-                                <span id="feedback-ca__fx-elasticRise" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-elasticStretch')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticStretch">
-                            Share
-                            <span id="share-feedback-ca__fx-elasticStretch" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-elasticStretch w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticStretch" onclick="replay('ca__fx-elasticStretch')">
-                            ca__fx-elasticStretch
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-elasticStretch" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticStretch">ca__fx-elasticStretch</code>
-                            <button onclick="copyToClipboard('ca__fx-elasticStretch')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticStretch">
-                                Copy
-                                <span id="feedback-ca__fx-elasticStretch" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-elasticBounce')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticBounce">
-                            Share
-                            <span id="share-feedback-ca__fx-elasticBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-elasticBounce w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticBounce" onclick="replay('ca__fx-elasticBounce')">
-                            ca__fx-elasticBounce
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-elasticBounce" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticBounce">ca__fx-elasticBounce</code>
-                            <button onclick="copyToClipboard('ca__fx-elasticBounce')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticBounce">
-                                Copy
-                                <span id="feedback-ca__fx-elasticBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-elasticSquash')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticSquash">
-                            Share
-                            <span id="share-feedback-ca__fx-elasticSquash" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-elasticSquash w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticSquash" onclick="replay('ca__fx-elasticSquash')">
-                            ca__fx-elasticSquash
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-elasticSquash" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticSquash">ca__fx-elasticSquash</code>
-                            <button onclick="copyToClipboard('ca__fx-elasticSquash')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticSquash">
-                                Copy
-                                <span id="feedback-ca__fx-elasticSquash" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-elasticIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-elasticIn">
-                            Share
-                            <span id="share-feedback-ca__fx-elasticIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-elasticIn w-full mt-6 rounded-md shadow-2xl" id="ca__fx-elasticIn" onclick="replay('ca__fx-elasticIn')">
-                            ca__fx-elasticIn
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-elasticIn" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-elasticIn">ca__fx-elasticIn</code>
-                            <button onclick="copyToClipboard('ca__fx-elasticIn')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-elasticIn">
-                                Copy
-                                <span id="feedback-ca__fx-elasticIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-rubberPop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-rubberPop">
-                            Share
-                            <span id="share-feedback-ca__fx-rubberPop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-rubberPop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-rubberPop" onclick="replay('ca__fx-rubberPop')">
-                            ca__fx-rubberPop
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-rubberPop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-rubberPop">ca__fx-rubberPop</code>
-                            <button onclick="copyToClipboard('ca__fx-rubberPop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-rubberPop">
-                                Copy
-                                <span id="feedback-ca__fx-rubberPop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-squishLift')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-squishLift">
-                            Share
-                            <span id="share-feedback-ca__fx-squishLift" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-squishLift w-full mt-6 rounded-md shadow-2xl" id="ca__fx-squishLift" onclick="replay('ca__fx-squishLift')">
-                            ca__fx-squishLift
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-squishLift" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-squishLift">ca__fx-squishLift</code>
-                            <button onclick="copyToClipboard('ca__fx-squishLift')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-squishLift">
-                                Copy
-                                <span id="feedback-ca__fx-squishLift" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-flubberBounce')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-flubberBounce">
-                            Share
-                            <span id="share-feedback-ca__fx-flubberBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-flubberBounce w-full mt-6 rounded-md shadow-2xl" id="ca__fx-flubberBounce" onclick="replay('ca__fx-flubberBounce')">
-                            ca__fx-flubberBounce
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-flubberBounce" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-flubberBounce">ca__fx-flubberBounce</code>
-                            <button onclick="copyToClipboard('ca__fx-flubberBounce')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-flubberBounce">
-                                Copy
-                                <span id="feedback-ca__fx-flubberBounce" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-boingScale')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-boingScale">
-                            Share
-                            <span id="share-feedback-ca__fx-boingScale" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-boingScale w-full mt-6 rounded-md shadow-2xl" id="ca__fx-boingScale" onclick="replay('ca__fx-boingScale')">
-                            ca__fx-boingScale
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-boingScale" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-boingScale">ca__fx-boingScale</code>
-                            <button onclick="copyToClipboard('ca__fx-boingScale')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-boingScale">
-                                Copy
-                                <span id="feedback-ca__fx-boingScale" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-slinkyDrop')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-slinkyDrop">
-                            Share
-                            <span id="share-feedback-ca__fx-slinkyDrop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-slinkyDrop w-full mt-6 rounded-md shadow-2xl" id="ca__fx-slinkyDrop" onclick="replay('ca__fx-slinkyDrop')">
-                            ca__fx-slinkyDrop
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-slinkyDrop" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-slinkyDrop">ca__fx-slinkyDrop</code>
-                            <button onclick="copyToClipboard('ca__fx-slinkyDrop')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-slinkyDrop">
-                                Copy
-                                <span id="feedback-ca__fx-slinkyDrop" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-springyEffect')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-springyEffect">
-                            Share
-                            <span id="share-feedback-ca__fx-springyEffect" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-springyEffect w-full mt-6 rounded-md shadow-2xl" id="ca__fx-springyEffect" onclick="replay('ca__fx-springyEffect')">
-                            ca__fx-springyEffect
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-springyEffect" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-springyEffect">ca__fx-springyEffect</code>
-                            <button onclick="copyToClipboard('ca__fx-springyEffect')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-springyEffect">
-                                Copy
-                                <span id="feedback-ca__fx-springyEffect" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-jiggleTransform')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-jiggleTransform">
-                            Share
-                            <span id="share-feedback-ca__fx-jiggleTransform" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-jiggleTransform w-full mt-6 rounded-md shadow-2xl" id="ca__fx-jiggleTransform" onclick="replay('ca__fx-jiggleTransform')">
-                            ca__fx-jiggleTransform
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-jiggleTransform" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-jiggleTransform">ca__fx-jiggleTransform</code>
-                            <button onclick="copyToClipboard('ca__fx-jiggleTransform')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-jiggleTransform">
-                                Copy
-                                <span id="feedback-ca__fx-jiggleTransform" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-stretchCollapse')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stretchCollapse">
-                            Share
-                            <span id="share-feedback-ca__fx-stretchCollapse" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-stretchCollapse w-full mt-6 rounded-md shadow-2xl" id="ca__fx-stretchCollapse" onclick="replay('ca__fx-stretchCollapse')">
-                            ca__fx-stretchCollapse
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-stretchCollapse" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-stretchCollapse">ca__fx-stretchCollapse</code>
-                            <button onclick="copyToClipboard('ca__fx-stretchCollapse')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stretchCollapse">
-                                Copy
-                                <span id="feedback-ca__fx-stretchCollapse" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-reboundMotion')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-reboundMotion">
-                            Share
-                            <span id="share-feedback-ca__fx-reboundMotion" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-reboundMotion w-full mt-6 rounded-md shadow-2xl" id="ca__fx-reboundMotion" onclick="replay('ca__fx-reboundMotion')">
-                            ca__fx-reboundMotion
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-reboundMotion" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-reboundMotion">ca__fx-reboundMotion</code>
-                            <button onclick="copyToClipboard('ca__fx-reboundMotion')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-reboundMotion">
-                                Copy
-                                <span id="feedback-ca__fx-reboundMotion" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-snapBackEase')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-snapBackEase">
-                            Share
-                            <span id="share-feedback-ca__fx-snapBackEase" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-snapBackEase w-full mt-6 rounded-md shadow-2xl" id="ca__fx-snapBackEase" onclick="replay('ca__fx-snapBackEase')">
-                            ca__fx-snapBackEase
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-snapBackEase" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-snapBackEase">ca__fx-snapBackEase</code>
-                            <button onclick="copyToClipboard('ca__fx-snapBackEase')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-snapBackEase">
-                                Copy
-                                <span id="feedback-ca__fx-snapBackEase" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-flexiShrink')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-flexiShrink">
-                            Share
-                            <span id="share-feedback-ca__fx-flexiShrink" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-flexiShrink w-full mt-6 rounded-md shadow-2xl" id="ca__fx-flexiShrink" onclick="replay('ca__fx-flexiShrink')">
-                            ca__fx-flexiShrink
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-flexiShrink" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-flexiShrink">ca__fx-flexiShrink</code>
-                            <button onclick="copyToClipboard('ca__fx-flexiShrink')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-flexiShrink">
-                                Copy
-                                <span id="feedback-ca__fx-flexiShrink" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-bouncyScale')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-bouncyScale">
-                            Share
-                            <span id="share-feedback-ca__fx-bouncyScale" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-bouncyScale w-full mt-6 rounded-md shadow-2xl" id="ca__fx-bouncyScale" onclick="replay('ca__fx-bouncyScale')">
-                            ca__fx-bouncyScale
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-bouncyScale" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-bouncyScale">ca__fx-bouncyScale</code>
-                            <button onclick="copyToClipboard('ca__fx-bouncyScale')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-bouncyScale">
-                                Copy
-                                <span id="feedback-ca__fx-bouncyScale" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-pulseElastic')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-pulseElastic">
-                            Share
-                            <span id="share-feedback-ca__fx-pulseElastic" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-pulseElastic w-full mt-6 rounded-md shadow-2xl" id="ca__fx-pulseElastic" onclick="replay('ca__fx-pulseElastic')">
-                            ca__fx-pulseElastic
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-pulseElastic" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-pulseElastic">ca__fx-pulseElastic</code>
-                            <button onclick="copyToClipboard('ca__fx-pulseElastic')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-pulseElastic">
-                                Copy
-                                <span id="feedback-ca__fx-pulseElastic" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-rubber')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-rubber">
-                            Share
-                            <span id="share-feedback-ca__fx-rubber" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-rubber w-full mt-6 rounded-md shadow-2xl" id="ca__fx-rubber" onclick="replay('ca__fx-rubber')">
-                            ca__fx-rubber
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-rubber" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-rubber">ca__fx-rubber</code>
-                            <button onclick="copyToClipboard('ca__fx-rubber')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-rubber">
-                                Copy
-                                <span id="feedback-ca__fx-rubber" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                            </button>                                
-                        </div>                            
-                    </div>
-                    <div class="animation-box relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out" data-category="Elastic" tabindex="0">
-                        <button onclick="shareAnimation('ca__fx-squishBoing')" class="absolute top-0 right-0 px-1 py-1 bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-squishBoing">
-                            Share
-                            <span id="share-feedback-ca__fx-squishBoing" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                        </button>
-
-                        <div class="preview cssanimation ca__fx-squishBoing w-full mt-6 rounded-md shadow-2xl" id="ca__fx-squishBoing" onclick="replay('ca__fx-squishBoing')">
-                            ca__fx-squishBoing
-                        </div>
-                        
-                        <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
-                            <code id="code-ca__fx-squishBoing" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="cssanimation ca__fx-squishBoing">ca__fx-squishBoing</code>
-                            <button onclick="copyToClipboard('ca__fx-squishBoing')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-squishBoing">
-                                Copy
-                                <span id="feedback-ca__fx-squishBoing" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                             </button>                                
                         </div>                            
                     </div>

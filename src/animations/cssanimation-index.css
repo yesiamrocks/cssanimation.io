@@ -7,6 +7,7 @@
 @import './ca__BounceOut.css';
 @import './ca__Dance.css';
 @import './ca__Door.css';
+@import './ca__Elastic.css';
 @import './ca__Elevate.css';
 @import './ca__Engagement.css';
 @import './ca__FadeIn.css';
@@ -18,9 +19,9 @@
 @import './ca__HangOn.css';
 @import './ca__Heartbeat.css';
 @import './ca__KickOut.css';
+@import './ca__Kite.css';
 @import './ca__MoveFrom.css';
 @import './ca__MoveTo.css';
-@import './ca__MovingBack.css';
 @import './ca__Perspective.css';
 @import './ca__PullRelease.css';
 @import './ca__PushReleaseFrom.css';
@@ -36,9 +37,9 @@
 @import './ca__SpinFrom.css';
 @import './ca__SpinTo.css';
 @import './ca__Spotlights.css';
+@import './ca__Swing.css';
 @import './ca__SwingIn.css';
 @import './ca__ZoomIn.css';
 @import './ca__ZoomOut.css';
-@import './ca__elastic.css';
 @import './ca__quake.css';
 @import './ca__text.css';

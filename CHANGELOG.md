@@ -1,3 +1,20 @@
+## [6.3.0] - 2025-06-20
+
+### Added
+
+- New Swing animation module in `ca_Swing.css` featuring 30+ expressive swing-based animations.
+- Animations include entrance, exit, and drop effects with directionality and physical exaggeration:
+  - Basic: `ca__fx-swing`, `ca__fx-swingIn`, `ca__fx-swingOut`, `ca__fx-swingUp`, `ca__fx-swingZoom`, `ca__fx-swingPop`, `ca__fx-swingSkew`
+  - Directional entrances: `ca__fx-swingInFromRight`, `ca__fx-swingInFromLeft`, `ca__fx-swingInFromTop`, `ca__fx-swingInFromBottom`
+  - Directional exits: `ca__fx-swingOutToRight`, `ca__fx-swingOutToLeft`, `ca__fx-swingOutToTop`, `ca__fx-swingOutToBottom`
+  - Drop effects: `ca__fx-swingDrop`, `ca__fx-swingDropSoft`, `ca__fx-swingDropHard`, `ca__fx-swingDropBounce`, `ca__fx-swingDropTwist`, `ca__fx-swingDropElastic`, `ca__fx-swingDropChain`, `ca__fx-swingDropHover`, `ca__fx-swingDropKite`, `ca__fx-swingDropSnap`, `ca__fx-swingDropMagnet`
+
+These animations provide more dynamic, physics-inspired motion suitable for UI components, modals, cards, or microinteractions.
+
+## [6.2.0] – 2025-06-20
+
+This release focuses on enhancing the visual appeal and smoothness of our existing "Move" animation utility classes. We've refined the `.ca__fx-moveFromRight`, `.ca__fx-moveFromTop`, `.ca__fx-moveFromBottom`, `.ca__fx-moveToLeft`, `ca__fx-moveToRight`, `ca__fx-moveToTop` and `ca__fx-moveToBottom`, animations to provide a more attractive and fluid user experience.
+
 ## [6.1.0] – 2025-06-18
 
 ### Added

@@ -56,10 +56,9 @@
   }
 }
 /**
- * Module: Elastic Animation
- * Filename: ca__elastic.css
+ * Module: Quake & Quiver Series
+ * Filename: ca__quake.css
  */
-.ca__fx-elasticArise {
-  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
-  transform-origin: bottom center; /* Important for vertical scaling */
+.ca__fx-jiggle {
+  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
 }

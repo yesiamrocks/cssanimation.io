@@ -72,10 +72,6 @@
 - `ca__fx-horizontalShake` — Shakes left and right repeatedly
 - `ca__fx-hu__hu__` — Comical fast shake like a cartoon ‘shiver’ or giggle
 
-## Letter Movement & Reveal
-- `ca__fx-leMovingBackFromLeft` — Each letter moves in from the left while appearing farther back
-- `ca__fx-leMovingBackFromRight` — Each letter moves in from the right with distant motion
-
 ## Core Animation Classes (Ungrouped)
 - `ca__fx-blurIn`
 - `ca__fx-blurInFromBottom`
@@ -94,6 +90,11 @@
 - `ca__fx-bounceInFromBottom`
 - `ca__fx-bouncyScale`
 - `ca__fx-buzz`
+- `ca__fx-ca__kiteEntrySnap`
+- `ca__fx-ca__kiteFloatInLeft`
+- `ca__fx-ca__kiteFloatInRight`
+- `ca__fx-ca__kiteHoverLoop`
+- `ca__fx-ca__kiteWaveExit`
 - `ca__fx-colorFlicker`
 - `ca__fx-colorPulse`
 - `ca__fx-elasticArise`
@@ -220,10 +221,35 @@
 - `ca__fx-squishLift`
 - `ca__fx-stretchCollapse`
 - `ca__fx-swing`
+- `ca__fx-swingDrop`
+- `ca__fx-swingDropBounce`
+- `ca__fx-swingDropChain`
+- `ca__fx-swingDropElastic`
+- `ca__fx-swingDropHard`
+- `ca__fx-swingDropHover`
+- `ca__fx-swingDropKite`
+- `ca__fx-swingDropMagnet`
+- `ca__fx-swingDropSnap`
+- `ca__fx-swingDropSoft`
+- `ca__fx-swingDropTwist`
+- `ca__fx-swingIn`
 - `ca__fx-swingInBottom`
+- `ca__fx-swingInFromBottom`
+- `ca__fx-swingInFromLeft`
+- `ca__fx-swingInFromRight`
+- `ca__fx-swingInFromTop`
 - `ca__fx-swingInLeft`
 - `ca__fx-swingInRight`
 - `ca__fx-swingInTop`
+- `ca__fx-swingOut`
+- `ca__fx-swingOutToBottom`
+- `ca__fx-swingOutToLeft`
+- `ca__fx-swingOutToRight`
+- `ca__fx-swingOutToTop`
+- `ca__fx-swingPop`
+- `ca__fx-swingSkew`
+- `ca__fx-swingUp`
+- `ca__fx-swingZoom`
 - `ca__fx-tiltFadeBack`
 - `ca__fx-trackCollapse`
 - `ca__fx-trackExpand`

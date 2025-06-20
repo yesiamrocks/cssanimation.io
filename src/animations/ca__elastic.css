@@ -325,11 +325,11 @@
 }
 
 .jiggleTransform {
-  animation: jiggleTransformKeyframes 0.7s ease-in-out forwards;
+  animation: jiggleTransform 0.7s ease-in-out forwards;
   transform-origin: center;
 }
 
-@keyframes jiggleTransformKeyframes {
+@keyframes jiggleTransform {
   0%,
   100% {
     transform: rotate(0deg) scale(1);
