@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-quiver {
-  animation: quiver var(--quiver-duration, 0.3s) infinite ease-in-out both;
+  animation: quiver var(--quiver-duration, 0.3s) ease-in-out infinite both;
 }
 
 @keyframes quiver {

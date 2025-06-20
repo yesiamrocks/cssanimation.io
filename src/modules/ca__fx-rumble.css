@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-rumble {
-  animation: rumble var(--rumble-duration, 0.4s) infinite ease-in-out both;
+  animation: rumble var(--rumble-duration, 0.4s) ease-in-out both;
 }
 
 @keyframes rumble {

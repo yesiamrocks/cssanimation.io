@@ -37,13 +37,9 @@
 }
 /* stylelint-enable */
 
-.ca__fx-blurInBottom {
-  animation-name: blurInBottom;
-}
-
 @keyframes blurInBottom {
   from {
-    transform: translateY(-100%);
+    transform: translateY(100%);
     filter: blur(20px);
     opacity: 0;
   }

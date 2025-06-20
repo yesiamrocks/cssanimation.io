@@ -4,7 +4,7 @@
  */
 
 .elasticArise {
-  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
   transform-origin: bottom center; /* Important for vertical scaling */
 }
 
@@ -84,7 +84,7 @@
 }
 
 .elasticBounce {
-  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 @keyframes elasticBounce {
@@ -444,7 +444,7 @@
   }
 }
 .bouncyScale {
-  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both; /* Custom for strong bounce */
+  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both;
 }
 
 /* bouncyScale */

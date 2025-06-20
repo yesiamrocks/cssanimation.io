@@ -65,4 +65,5 @@
  */
 .ca__fx-moveFromLeft {
   animation-name: moveFromLeft;
+  animation-timing-function: ease-out;
 }

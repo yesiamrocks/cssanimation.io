@@ -1,6 +1,16 @@
 # CA-Scroll.js Developer Guide
 
-**ca-scroll.js** is a lightweight, AOS-style JavaScript library for triggering CSS animations and transitions based on scroll position. It's designed to be self-contained and offers both global settings and element-specific overrides.
+**`ca-scroll.js`** is a lightweight JavaScript plugin that brings CSS animations to life as elements enter the viewport. It's designed for effortless integration, allowing you to create engaging, dynamic web experiences with simple HTML attributes and powerful customization.
+
+## Key Features
+
+- Simple Setup: Apply animations on scroll with minimal HTML attributes.
+- Global & Element Control: Configure default behavior with `window.__CA_SETTINGS` (offset, mobile, live) and override on specific elements (`ca-scroll-offset, - - -  ca-delay, ca-duration`).
+- Repeatable Animations: Control if animations re-trigger (`ca-scroll-repeat="true"`).
+- Flexible Animation Classes: Use **cssanimation's** `ca__fx-` classes or your custom `@keyframe`s via `data-ca-animation-class`.
+- Toggle States: Define `data-ca-toggle-class` for custom initial and reset styles when out of view.
+- Dynamic Content Ready: Re-initialize with `window.initCAScroll()` for new DOM elements.
+- Debug Mode: `window.__CA_DEBUG = true` provides detailed console logging.
 
 ## 📚 Table of Contents
 
@@ -204,3 +214,12 @@ To enable verbose debug output:
 ```
 
 Check the browser console (`F12`) for logs.
+
+## Developer Tips for Better Animations
+
+- Prioritize Performance: Use `transform` and `opacity` for smooth animations; avoid animating layout properties.
+- Stagger with Delays: Apply `ca-delay` for sequential, visually appealing element entrances.
+- Strategic Offset: Fine-tune `ca-scroll-offset` to make animations appear at the most natural time.
+- Smooth Resets: Utilize `data-ca-toggle-class` with `ca-scroll-repeat` for elegant "out-of-view" transitions.
+- Cross-Device Testing: Always check responsiveness and mobile performance, using the **mobile** setting if needed.
+- Leverage Debugging: Use `window.__CA_DEBUG` to quickly understand and troubleshoot animation behavior.

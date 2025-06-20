@@ -37,13 +37,9 @@
 }
 /* stylelint-enable */
 
-.ca__fx-blurInTop {
-  animation-name: blurInTop;
-}
-
 @keyframes blurInTop {
   from {
-    transform: translateY(100%);
+    transform: translateY(-100%);
     filter: blur(20px);
     opacity: 0;
   }

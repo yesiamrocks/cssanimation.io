@@ -1,15 +1,15 @@
 {
   "Blur Effects": [
     "ca__fx-blurIn",
-    "ca__fx-blurInLeft",
-    "ca__fx-blurInRight",
-    "ca__fx-blurInTop",
-    "ca__fx-blurInBottom",
+    "ca__fx-blurInfromLeft",
+    "ca__fx-blurInFromRight",
+    "ca__fx-blurInFromTop",
+    "ca__fx-blurInFromBottom",
     "ca__fx-blurOut",
-    "ca__fx-blurOutLeft",
-    "ca__fx-blurOutRight",
-    "ca__fx-blurOutTop",
-    "ca__fx-blurOutBottom"
+    "ca__fx-blurOutToLeft",
+    "ca__fx-blurOutToRight",
+    "ca__fx-blurOutToTop",
+    "ca__fx-blurOutToBottom"
   ],
   "Bounce Animations": [
     "ca__fx-bounceX",
@@ -30,8 +30,6 @@
   "Bounce In": [
     "ca__fx-bounceFromTop",
     "ca__fx-bounceFromDown",
-    "ca__fx-bounceZoomIn",
-    "ca__fx-bounceZoomOut",
     "ca__fx-bounceInTop",
     "ca__fx-bounceInBottom",
     "ca__fx-bounceInLeft",
@@ -96,7 +94,7 @@
     "ca__fx-hangOnLeft",
     "ca__fx-hangOnRight"
   ],
-  "Fade Animations": [
+  "Fade Content": [
     "ca__fx-fadeIn",
     "ca__fx-fadeInLeft",
     "ca__fx-fadeInRight",
@@ -134,9 +132,7 @@
     "ca__fx-vibration"
   ],
 
-  "Kick & Move": [
-    "ca__fx-kickOutBehind",
-    "ca__fx-kickOutFront",
+  "Slide In & Out": [
     "ca__fx-moveFromLeft",
     "ca__fx-moveFromRight",
     "ca__fx-moveFromTop",
@@ -221,7 +217,9 @@
     "ca__fx-zoomOutTop",
     "ca__fx-zoomOutBottom",
     "ca__fx-snapZoom",
-    "ca__fx-zoomOutRotateUp"
+    "ca__fx-zoomOutRotateUp",
+    "ca__fx-bounceZoomIn",
+    "ca__fx-bounceZoomOut"
   ],
   "Spotlight": [
     "ca__fx-unfoldAndRise",
@@ -232,6 +230,8 @@
     "ca__fx-joltZoom",
     "ca__fx-jigglypop",
     "ca__fx-wooble",
+    "ca__fx-kickOutBehind",
+    "ca__fx-kickOutFront",
     "ca__fx-colorFlicker"
   ],
 

@@ -37,15 +37,11 @@
 }
 /* stylelint-enable */
 
-.ca__fx-blurOutBottom {
-  animation-name: blurOutBottom;
-}
-
 @keyframes blurOutBottom {
   85%,
   100% {
     filter: blur(20px);
-    transform: translateY(-100%);
+    transform: translateY(100%);
   }
 
   100% {

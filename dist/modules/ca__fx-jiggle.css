@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
+  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
 }
 
 @keyframes jiggle {

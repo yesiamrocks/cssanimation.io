@@ -39,42 +39,42 @@
     opacity: 0;
   }
 }
-.blurInLeft {
+.blurInfromLeft {
   animation-name: blurInLeft;
 }
 @keyframes blurInLeft {
-  from {
-    transform: translateX(100%);
-    filter: blur(20px);
-    opacity: 0;
-  }
-}
-.blurInRight {
-  animation-name: blurInRight;
-}
-@keyframes blurInRight {
   from {
     transform: translateX(-100%);
     filter: blur(20px);
     opacity: 0;
   }
 }
-.blurInTop {
-  animation-name: blurInTop;
+.blurInFromRight {
+  animation-name: blurInRight;
 }
-@keyframes blurInTop {
+@keyframes blurInRight {
   from {
-    transform: translateY(100%);
+    transform: translateX(100%);
     filter: blur(20px);
     opacity: 0;
   }
 }
-.blurInBottom {
+.blurInFromTop {
+  animation-name: blurInTop;
+}
+@keyframes blurInTop {
+  from {
+    transform: translateY(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+.blurInFromBottom {
   animation-name: blurInBottom;
 }
 @keyframes blurInBottom {
   from {
-    transform: translateY(-100%);
+    transform: translateY(100%);
     filter: blur(20px);
     opacity: 0;
   }
@@ -96,24 +96,10 @@
     opacity: 0;
   }
 }
-.blurOutLeft {
+.blurOutToLeft {
   animation-name: blurOutLeft;
 }
 @keyframes blurOutLeft {
-  85%,
-  100% {
-    filter: blur(20px);
-    transform: translateX(100%);
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-.blurOutRight {
-  animation-name: blurOutRight;
-}
-@keyframes blurOutRight {
   85%,
   100% {
     filter: blur(20px);
@@ -124,28 +110,42 @@
     opacity: 0;
   }
 }
-.blurOutTop {
-  animation-name: blurOutTop;
+.blurOutToRight {
+  animation-name: blurOutRight;
 }
-@keyframes blurOutTop {
+@keyframes blurOutRight {
   85%,
   100% {
     filter: blur(20px);
-    transform: translateY(100%);
+    transform: translateX(100%);
   }
 
   100% {
     opacity: 0;
   }
 }
-.blurOutBottom {
+.blurOutToTop {
+  animation-name: blurOutTop;
+}
+@keyframes blurOutTop {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+.blurOutToBottom {
   animation-name: blurOutBottom;
 }
 @keyframes blurOutBottom {
   85%,
   100% {
     filter: blur(20px);
-    transform: translateY(-100%);
+    transform: translateY(100%);
   }
 
   100% {
@@ -1708,34 +1708,38 @@
  */
 .moveFromLeft {
   animation-name: moveFromLeft;
+  animation-timing-function: ease-out;
 }
 @keyframes moveFromLeft {
   from {
-    transform: translateX(var(--move-distance, -800px));
+    transform: translateX(-200%);
   }
 }
 .moveFromRight {
   animation-name: moveFromRight;
+  animation-timing-function: ease-out;
 }
 @keyframes moveFromRight {
   from {
-    transform: translateX(var(--move-distance, 800px));
+    transform: translateX(200%);
   }
 }
 .moveFromTop {
   animation-name: moveFromTop;
+  animation-timing-function: ease-out;
 }
 @keyframes moveFromTop {
   from {
-    transform: translateY(var(--move-distance, -800px));
+    transform: translateY(-200%);
   }
 }
 .moveFromBottom {
   animation-name: moveFromBottom;
+  animation-timing-function: ease-out;
 }
 @keyframes moveFromBottom {
   from {
-    transform: translateY(var(--move-distance, 800px));
+    transform: translateY(200%);
   }
 }
 /**
@@ -1744,34 +1748,38 @@
  */
 .moveToLeft {
   animation-name: moveToLeft;
+  animation-timing-function: ease-out;
 }
 @keyframes moveToLeft {
   to {
-    transform: translateX(var(--move-distance, -800px));
+    transform: translateX(200%);
   }
 }
 .moveToRight {
   animation-name: moveToRight;
+  animation-timing-function: ease-out;
 }
 @keyframes moveToRight {
   to {
-    transform: translateX(var(--move-distance, 800px));
+    transform: translateX(-200%);
   }
 }
 .moveToTop {
   animation-name: moveToTop;
+  animation-timing-function: ease-out;
 }
 @keyframes moveToTop {
   to {
-    transform: translateY(var(--move-distance, -800px));
+    transform: translateY(-200%);
   }
 }
 .moveToBottom {
   animation-name: moveToBottom;
+  animation-timing-function: ease-out;
 }
 @keyframes moveToBottom {
   to {
-    transform: translateY(var(--move-distance, 800px));
+    transform: translateY(200%);
   }
 }
 /**
@@ -3286,7 +3294,7 @@
  * Filename: ca__elastic.css
  */
 .elasticArise {
-  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
   transform-origin: bottom center; /* Important for vertical scaling */
 }
 @keyframes elasticArise {
@@ -3360,7 +3368,7 @@
   }
 }
 .elasticBounce {
-  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 @keyframes elasticBounce {
   0%,
@@ -3691,7 +3699,7 @@
   }
 }
 .bouncyScale {
-  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both; /* Custom for strong bounce */
+  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both;
 }
 /* bouncyScale */
 @keyframes bouncyScale {
@@ -3790,7 +3798,7 @@
  * Filename: ca__quake.css
  */
 .jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
+  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
 }
 @keyframes jiggle {
   0%,
@@ -3815,7 +3823,7 @@
   }
 }
 .quiver {
-  animation: quiver var(--quiver-duration, 0.3s) infinite ease-in-out both;
+  animation: quiver var(--quiver-duration, 0.3s) ease-in-out infinite both;
 }
 @keyframes quiver {
   0%,
@@ -3836,7 +3844,7 @@
   }
 }
 .tremor {
-  animation: tremor var(--tremor-duration, 0.6s) infinite ease-in-out both;
+  animation: tremor var(--tremor-duration, 0.6s) ease-in-out both;
 }
 @keyframes tremor {
   0%,
@@ -3861,7 +3869,7 @@
   }
 }
 .rumble {
-  animation: rumble var(--rumble-duration, 0.4s) infinite ease-in-out both;
+  animation: rumble var(--rumble-duration, 0.4s) ease-in-out both;
 }
 @keyframes rumble {
   0%,
@@ -3911,7 +3919,7 @@
   }
 }
 .rattle {
-  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
+  animation: rattle var(--rattle-duration, 0.2s) ease-in-out both;
 }
 @keyframes rattle {
   0%,
@@ -3930,7 +3938,7 @@
   }
 }
 .buzz {
-  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
+  animation: buzz var(--buzz-duration, 0.1s) linear both infinite;
 }
 @keyframes buzz {
   0%,
@@ -3951,7 +3959,7 @@
   }
 }
 .jitter {
-  animation: jitter var(--jitter-duration, 0.5s) infinite ease-in-out both;
+  animation: jitter var(--jitter-duration, 0.5s) ease-in-out both;
 }
 @keyframes jitter {
   0% {

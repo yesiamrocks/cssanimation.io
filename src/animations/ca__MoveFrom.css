@@ -5,40 +5,44 @@
 
 .moveFromLeft {
   animation-name: moveFromLeft;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveFromLeft {
   from {
-    transform: translateX(var(--move-distance, -800px));
+    transform: translateX(-200%);
   }
 }
 
 .moveFromRight {
   animation-name: moveFromRight;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveFromRight {
   from {
-    transform: translateX(var(--move-distance, 800px));
+    transform: translateX(200%);
   }
 }
 
 .moveFromTop {
   animation-name: moveFromTop;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveFromTop {
   from {
-    transform: translateY(var(--move-distance, -800px));
+    transform: translateY(-200%);
   }
 }
 
 .moveFromBottom {
   animation-name: moveFromBottom;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveFromBottom {
   from {
-    transform: translateY(var(--move-distance, 800px));
+    transform: translateY(200%);
   }
 }

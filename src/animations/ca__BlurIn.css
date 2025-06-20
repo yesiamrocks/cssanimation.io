@@ -14,23 +14,11 @@
   }
 }
 
-.blurInLeft {
+.blurInfromLeft {
   animation-name: blurInLeft;
 }
 
 @keyframes blurInLeft {
-  from {
-    transform: translateX(100%);
-    filter: blur(20px);
-    opacity: 0;
-  }
-}
-
-.blurInRight {
-  animation-name: blurInRight;
-}
-
-@keyframes blurInRight {
   from {
     transform: translateX(-100%);
     filter: blur(20px);
@@ -38,25 +26,37 @@
   }
 }
 
-.blurInTop {
-  animation-name: blurInTop;
+.blurInFromRight {
+  animation-name: blurInRight;
 }
 
-@keyframes blurInTop {
+@keyframes blurInRight {
   from {
-    transform: translateY(100%);
+    transform: translateX(100%);
     filter: blur(20px);
     opacity: 0;
   }
 }
 
-.blurInBottom {
+.blurInFromTop {
+  animation-name: blurInTop;
+}
+
+@keyframes blurInTop {
+  from {
+    transform: translateY(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.blurInFromBottom {
   animation-name: blurInBottom;
 }
 
 @keyframes blurInBottom {
   from {
-    transform: translateY(-100%);
+    transform: translateY(100%);
     filter: blur(20px);
     opacity: 0;
   }

@@ -39,10 +39,11 @@
 
 .ca__fx-moveToTop {
   animation-name: moveToTop;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveToTop {
   to {
-    transform: translateY(var(--move-distance, -800px));
+    transform: translateY(-200%);
   }
 }

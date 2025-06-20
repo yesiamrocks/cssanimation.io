@@ -39,11 +39,12 @@
 
 .ca__fx-moveToBottom {
   animation-name: moveToBottom;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveToBottom {
   to {
-    transform: translateY(var(--move-distance, 800px));
+    transform: translateY(200%);
   }
 }
 /**

@@ -3,7 +3,7 @@
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
 * Version: 6.1.0
-* Built: 2025-06-18 14:27:17 UTC
+* Built: 2025-06-20 12:24:12 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -56,42 +56,42 @@
     opacity: 0;
   }
 }
-.ca__fx-blurInLeft {
+.ca__fx-blurInfromLeft {
   animation-name: blurInLeft;
 }
 @keyframes blurInLeft {
-  from {
-    transform: translateX(100%);
-    filter: blur(20px);
-    opacity: 0;
-  }
-}
-.ca__fx-blurInRight {
-  animation-name: blurInRight;
-}
-@keyframes blurInRight {
   from {
     transform: translateX(-100%);
     filter: blur(20px);
     opacity: 0;
   }
 }
-.ca__fx-blurInTop {
-  animation-name: blurInTop;
+.ca__fx-blurInFromRight {
+  animation-name: blurInRight;
 }
-@keyframes blurInTop {
+@keyframes blurInRight {
   from {
-    transform: translateY(100%);
+    transform: translateX(100%);
     filter: blur(20px);
     opacity: 0;
   }
 }
-.ca__fx-blurInBottom {
+.ca__fx-blurInFromTop {
+  animation-name: blurInTop;
+}
+@keyframes blurInTop {
+  from {
+    transform: translateY(-100%);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+.ca__fx-blurInFromBottom {
   animation-name: blurInBottom;
 }
 @keyframes blurInBottom {
   from {
-    transform: translateY(-100%);
+    transform: translateY(100%);
     filter: blur(20px);
     opacity: 0;
   }
@@ -113,24 +113,10 @@
     opacity: 0;
   }
 }
-.ca__fx-blurOutLeft {
+.ca__fx-blurOutToLeft {
   animation-name: blurOutLeft;
 }
 @keyframes blurOutLeft {
-  85%,
-  100% {
-    filter: blur(20px);
-    transform: translateX(100%);
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-.ca__fx-blurOutRight {
-  animation-name: blurOutRight;
-}
-@keyframes blurOutRight {
   85%,
   100% {
     filter: blur(20px);
@@ -141,28 +127,42 @@
     opacity: 0;
   }
 }
-.ca__fx-blurOutTop {
-  animation-name: blurOutTop;
+.ca__fx-blurOutToRight {
+  animation-name: blurOutRight;
 }
-@keyframes blurOutTop {
+@keyframes blurOutRight {
   85%,
   100% {
     filter: blur(20px);
-    transform: translateY(100%);
+    transform: translateX(100%);
   }
 
   100% {
     opacity: 0;
   }
 }
-.ca__fx-blurOutBottom {
+.ca__fx-blurOutToTop {
+  animation-name: blurOutTop;
+}
+@keyframes blurOutTop {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+.ca__fx-blurOutToBottom {
   animation-name: blurOutBottom;
 }
 @keyframes blurOutBottom {
   85%,
   100% {
     filter: blur(20px);
-    transform: translateY(-100%);
+    transform: translateY(100%);
   }
 
   100% {
@@ -1725,34 +1725,38 @@
  */
 .ca__fx-moveFromLeft {
   animation-name: moveFromLeft;
+  animation-timing-function: ease-out;
 }
 @keyframes moveFromLeft {
   from {
-    transform: translateX(var(--move-distance, -800px));
+    transform: translateX(-200%);
   }
 }
 .ca__fx-moveFromRight {
   animation-name: moveFromRight;
+  animation-timing-function: ease-out;
 }
 @keyframes moveFromRight {
   from {
-    transform: translateX(var(--move-distance, 800px));
+    transform: translateX(200%);
   }
 }
 .ca__fx-moveFromTop {
   animation-name: moveFromTop;
+  animation-timing-function: ease-out;
 }
 @keyframes moveFromTop {
   from {
-    transform: translateY(var(--move-distance, -800px));
+    transform: translateY(-200%);
   }
 }
 .ca__fx-moveFromBottom {
   animation-name: moveFromBottom;
+  animation-timing-function: ease-out;
 }
 @keyframes moveFromBottom {
   from {
-    transform: translateY(var(--move-distance, 800px));
+    transform: translateY(200%);
   }
 }
 /**
@@ -1761,34 +1765,38 @@
  */
 .ca__fx-moveToLeft {
   animation-name: moveToLeft;
+  animation-timing-function: ease-out;
 }
 @keyframes moveToLeft {
   to {
-    transform: translateX(var(--move-distance, -800px));
+    transform: translateX(200%);
   }
 }
 .ca__fx-moveToRight {
   animation-name: moveToRight;
+  animation-timing-function: ease-out;
 }
 @keyframes moveToRight {
   to {
-    transform: translateX(var(--move-distance, 800px));
+    transform: translateX(-200%);
   }
 }
 .ca__fx-moveToTop {
   animation-name: moveToTop;
+  animation-timing-function: ease-out;
 }
 @keyframes moveToTop {
   to {
-    transform: translateY(var(--move-distance, -800px));
+    transform: translateY(-200%);
   }
 }
 .ca__fx-moveToBottom {
   animation-name: moveToBottom;
+  animation-timing-function: ease-out;
 }
 @keyframes moveToBottom {
   to {
-    transform: translateY(var(--move-distance, 800px));
+    transform: translateY(200%);
   }
 }
 /**
@@ -3303,7 +3311,7 @@
  * Filename: ca__elastic.css
  */
 .ca__fx-elasticArise {
-  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
   transform-origin: bottom center; /* Important for vertical scaling */
 }
 @keyframes elasticArise {
@@ -3377,7 +3385,7 @@
   }
 }
 .ca__fx-elasticBounce {
-  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 @keyframes elasticBounce {
   0%,
@@ -3708,7 +3716,7 @@
   }
 }
 .ca__fx-bouncyScale {
-  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both; /* Custom for strong bounce */
+  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both;
 }
 /* bouncyScale */
 @keyframes bouncyScale {
@@ -3807,7 +3815,7 @@
  * Filename: ca__quake.css
  */
 .ca__fx-jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) infinite ease-in-out both;
+  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
 }
 @keyframes jiggle {
   0%,
@@ -3832,7 +3840,7 @@
   }
 }
 .ca__fx-quiver {
-  animation: quiver var(--quiver-duration, 0.3s) infinite ease-in-out both;
+  animation: quiver var(--quiver-duration, 0.3s) ease-in-out infinite both;
 }
 @keyframes quiver {
   0%,
@@ -3853,7 +3861,7 @@
   }
 }
 .ca__fx-tremor {
-  animation: tremor var(--tremor-duration, 0.6s) infinite ease-in-out both;
+  animation: tremor var(--tremor-duration, 0.6s) ease-in-out both;
 }
 @keyframes tremor {
   0%,
@@ -3878,7 +3886,7 @@
   }
 }
 .ca__fx-rumble {
-  animation: rumble var(--rumble-duration, 0.4s) infinite ease-in-out both;
+  animation: rumble var(--rumble-duration, 0.4s) ease-in-out both;
 }
 @keyframes rumble {
   0%,
@@ -3928,7 +3936,7 @@
   }
 }
 .ca__fx-rattle {
-  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
+  animation: rattle var(--rattle-duration, 0.2s) ease-in-out both;
 }
 @keyframes rattle {
   0%,
@@ -3947,7 +3955,7 @@
   }
 }
 .ca__fx-buzz {
-  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
+  animation: buzz var(--buzz-duration, 0.1s) linear both infinite;
 }
 @keyframes buzz {
   0%,
@@ -3968,7 +3976,7 @@
   }
 }
 .ca__fx-jitter {
-  animation: jitter var(--jitter-duration, 0.5s) infinite ease-in-out both;
+  animation: jitter var(--jitter-duration, 0.5s) ease-in-out both;
 }
 @keyframes jitter {
   0% {

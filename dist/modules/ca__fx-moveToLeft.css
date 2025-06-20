@@ -39,10 +39,11 @@
 
 .ca__fx-moveToLeft {
   animation-name: moveToLeft;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveToLeft {
   to {
-    transform: translateX(var(--move-distance, -800px));
+    transform: translateX(200%);
   }
 }

@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-jitter {
-  animation: jitter var(--jitter-duration, 0.5s) infinite ease-in-out both;
+  animation: jitter var(--jitter-duration, 0.5s) ease-in-out both;
 }
 
 @keyframes jitter {

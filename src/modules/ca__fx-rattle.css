@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-rattle {
-  animation: rattle var(--rattle-duration, 0.2s) infinite ease-in-out both;
+  animation: rattle var(--rattle-duration, 0.2s) ease-in-out both;
 }
 
 @keyframes rattle {

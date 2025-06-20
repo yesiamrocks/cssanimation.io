@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-buzz {
-  animation: buzz var(--buzz-duration, 0.1s) infinite linear both;
+  animation: buzz var(--buzz-duration, 0.1s) linear both infinite;
 }
 
 @keyframes buzz {

@@ -20,11 +20,6 @@
 - `ca__fx-flipYZoomIn` — Flips along Y axis while zooming in
 - `ca__fx-flipYZoomOut` — Flips along Y axis while zooming out
 
-## Blur Animations
-- `ca__fx-blurOutBottom` — Blurs and exits downward
-- `ca__fx-blurOutLeft` — Blurs and slides out to the left
-- `ca__fx-blurOutRight` — Blurs and slides out to the right
-
 ## Bounce Animations
 - `ca__fx-bounceFromTop` — Bounces in from the top with elasticity
 - `ca__fx-bounceInTop` — Bounces in and lands from the top
@@ -83,12 +78,15 @@
 
 ## Core Animation Classes (Ungrouped)
 - `ca__fx-blurIn`
-- `ca__fx-blurInBottom`
-- `ca__fx-blurInLeft`
-- `ca__fx-blurInRight`
-- `ca__fx-blurInTop`
+- `ca__fx-blurInFromBottom`
+- `ca__fx-blurInFromRight`
+- `ca__fx-blurInFromTop`
+- `ca__fx-blurInfromLeft`
 - `ca__fx-blurOut`
-- `ca__fx-blurOutTop`
+- `ca__fx-blurOutToBottom`
+- `ca__fx-blurOutToLeft`
+- `ca__fx-blurOutToRight`
+- `ca__fx-blurOutToTop`
 - `ca__fx-bobble`
 - `ca__fx-boing`
 - `ca__fx-boingScale`

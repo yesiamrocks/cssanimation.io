@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-tremor {
-  animation: tremor var(--tremor-duration, 0.6s) infinite ease-in-out both;
+  animation: tremor var(--tremor-duration, 0.6s) ease-in-out both;
 }
 
 @keyframes tremor {

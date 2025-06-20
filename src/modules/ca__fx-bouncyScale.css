@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-bouncyScale {
-  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both; /* Custom for strong bounce */
+  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both;
 }
 
 @keyframes bouncyScale {

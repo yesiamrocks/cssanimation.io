@@ -39,7 +39,7 @@
 
 .ca__fx-wiggle {
   transform-origin: center center;
-  animation: wiggle var(--wiggle-duration, 1s) ease-in-out infinite both;
+  animation: wiggle var(--wiggle-duration, 1s) ease-in-out both;
 }
 
 @keyframes wiggle {

@@ -39,10 +39,11 @@
 
 .ca__fx-moveFromRight {
   animation-name: moveFromRight;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveFromRight {
   from {
-    transform: translateX(var(--move-distance, 800px));
+    transform: translateX(200%);
   }
 }
