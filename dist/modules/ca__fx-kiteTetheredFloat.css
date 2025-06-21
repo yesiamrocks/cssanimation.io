@@ -1,0 +1,69 @@
+/*!
+ * Module: kiteTetheredFloat Animation
+ * Usage: <div class="cssanimation ca__fx-kiteTetheredFloat">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-kiteTetheredFloat {
+  animation-name: kiteTetheredFloat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteTetheredFloat {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-5%) rotate(2deg);
+  }
+
+  50% {
+    transform: translateY(3%) rotate(-2deg);
+  }
+
+  75% {
+    transform: translateY(-3%) rotate(1.5deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}

@@ -59,3 +59,12 @@
     transform: rotate(0deg);
   }
 }
+/**
+ * Module: kite Animation
+ * Filename: ca__Kite.css
+ */
+.ca__fx-kiteFloatInRight {
+  animation-name: kiteFloatInRight;
+  transform-origin: top left;
+  will-change: transform, opacity;
+}

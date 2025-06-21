@@ -56,12 +56,12 @@
   }
 }
 /**
- * Module: Flip X
- * Filename: ca__FlipX.css
+ * Module: FlipTwist Animation
+ * Filename: ca__FlipTwist.css
  */
-.ca__fx-flipX {
-  animation-name: flipX;
-  backface-visibility: var(--cssanimation-backface-visibility);
-  transform-style: var(--cssanimation-transform-style);
-  will-change: var(--cssanimation-will-change);
+.ca__fx-flipTwistRight {
+  animation-name: flipTwistRight;
+  transform-origin: center right;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
 }

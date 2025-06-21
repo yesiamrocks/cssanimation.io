@@ -3,7 +3,7 @@
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
 * Version: 6.3.0
-* Built: 2025-06-20 16:37:49 UTC
+* Built: 2025-06-21 05:45:48 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -1689,6 +1689,365 @@
   }
 }
 /**
+ * Module: FlipTwist Animation
+ * Filename: ca__FlipTwist.css
+ */
+.ca__fx-flipTwistRight {
+  animation-name: flipTwistRight;
+  transform-origin: center right;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistRight {
+  0% {
+    transform: perspective(1000px) rotateY(90deg) rotateZ(-25deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: perspective(1000px) rotateY(-10deg) rotateZ(5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
+  }
+}
+.ca__fx-flipTwistLeft {
+  animation-name: flipTwistLeft;
+  transform-origin: center left;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistLeft {
+  0% {
+    transform: perspective(1000px) rotateY(-90deg) rotateZ(25deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: perspective(1000px) rotateY(10deg) rotateZ(-5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
+  }
+}
+.ca__fx-flipTwistTop {
+  animation-name: flipTwistTop;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistTop {
+  0% {
+    transform: perspective(800px) rotateX(90deg) rotateZ(20deg) translateY(-80%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(800px) rotateX(-10deg) rotateZ(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(0deg) rotateZ(0deg);
+  }
+}
+.ca__fx-flipTwistBottom {
+  animation-name: flipTwistBottom;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistBottom {
+  0% {
+    transform: perspective(800px) rotateX(-90deg) rotateZ(-20deg) translateY(80%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(800px) rotateX(10deg) rotateZ(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(0deg) rotateZ(0deg);
+  }
+}
+.ca__fx-flipTwistPop {
+  animation-name: flipTwistPop;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistPop {
+  0% {
+    transform: perspective(600px) rotateY(60deg) rotateZ(-10deg) scale(0.8);
+    opacity: 0;
+  }
+
+  60% {
+    transform: perspective(600px) rotateY(-10deg) rotateZ(5deg) scale(1.05);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateY(0deg) rotateZ(0deg) scale(1);
+  }
+}
+.ca__fx-flipTwistCombo {
+  animation-name: flipTwistCombo;
+  animation-duration: 1.5s;
+  transform-origin: top right;
+  will-change: transform, opacity;
+  animation-timing-function: cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+@keyframes flipTwistCombo {
+  0% {
+    transform: perspective(1000px) rotateX(90deg) rotateY(60deg) rotateZ(-30deg) translate(50%, -100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0%, 0%);
+  }
+}
+.ca__fx-flipTwistVertical {
+  animation-name: flipTwistVertical;
+  transform-origin: center top;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistVertical {
+  0% {
+    transform: perspective(900px) rotateX(-90deg) rotateZ(15deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(900px) rotateX(15deg) rotateZ(-5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(900px) rotateX(0deg) rotateZ(0deg);
+  }
+}
+.ca__fx-flipTwistDiagonal {
+  animation-name: flipTwistDiagonal;
+  transform-origin: top right;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistDiagonal {
+  0% {
+    transform: perspective(1000px) rotateX(-60deg) rotateY(60deg) rotateZ(25deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotateX(10deg) rotateY(-10deg) rotateZ(-5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+.ca__fx-flipTwistSlam {
+  animation-name: flipTwistSlam;
+  transform-origin: center left;
+  will-change: transform, opacity;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.4, 1);
+}
+@keyframes flipTwistSlam {
+  0% {
+    transform: perspective(800px) rotateY(-120deg) rotateZ(20deg);
+    opacity: 0;
+  }
+
+  70% {
+    transform: rotateY(15deg) rotateZ(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(0deg) rotateZ(0deg);
+  }
+}
+.ca__fx-flipTwistZoom {
+  animation-name: flipTwistZoom;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistZoom {
+  0% {
+    transform: perspective(1000px) rotateY(75deg) scale(1.3);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateY(-15deg) scale(0.95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(0deg) scale(1);
+  }
+}
+.ca__fx-flipTwistDrop {
+  animation-name: flipTwistDrop;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistDrop {
+  0% {
+    transform: perspective(800px) rotateX(80deg) translateY(-80%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotateX(-15deg) translateY(5%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0deg) translateY(0%);
+  }
+}
+.ca__fx-flipTwistTiltIn {
+  animation-name: flipTwistTiltIn;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistTiltIn {
+  0% {
+    transform: perspective(900px) rotateY(90deg) rotateZ(-30deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: rotateY(-20deg) rotateZ(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(0deg) rotateZ(0deg);
+  }
+}
+.ca__fx-flipTwistHover {
+  display: inline-block;
+  transform-origin: center;
+  transition:
+    transform 0.5s ease, opacity 0.5s ease;
+}
+.ca__fx-flipTwistHover:hover {
+  transform: perspective(800px) rotateY(15deg) rotateZ(-5deg) scale(1.05);
+  opacity: 0.95;
+}
+.ca__fx-flipTwistTiltHover {
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.4s ease-in-out;
+}
+.ca__fx-flipTwistTiltHover:hover {
+  transform: perspective(900px) rotateZ(10deg) rotateY(20deg);
+}
+.ca__fx-flipTwistZoomHover {
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.6s ease-out;
+}
+.ca__fx-flipTwistZoomHover:hover {
+  transform: perspective(1000px) rotateY(-15deg) scale(1.1);
+}
+.ca__fx-flipTwistOutRight {
+  animation-name: flipTwistOutRight;
+  transform-origin: center right;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistOutRight {
+  0% {
+    transform: rotateY(0deg) rotateZ(0deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotateY(-20deg) rotateZ(10deg);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: rotateY(90deg) rotateZ(-15deg);
+    opacity: 0;
+  }
+}
+.ca__fx-flipTwistOutLeft {
+  animation-name: flipTwistOutLeft;
+  transform-origin: center left;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistOutLeft {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotateY(20deg) rotateZ(-10deg);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: rotateY(-90deg) rotateZ(10deg);
+    opacity: 0;
+  }
+}
+.ca__fx-flipTwistOutTop {
+  animation-name: flipTwistOutTop;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistOutTop {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotateX(20deg);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: rotateX(-90deg) translateY(-60%);
+    opacity: 0;
+  }
+}
+.ca__fx-flipTwistOutZoom {
+  animation-name: flipTwistOutZoom;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes flipTwistOutZoom {
+  0% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotateY(-15deg) scale(0.9);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: rotateY(75deg) scale(0.5);
+    opacity: 0;
+  }
+}
+/**
  * Module: Flip X
  * Filename: ca__FlipX.css
  */
@@ -2223,122 +2582,374 @@
     transform: rotate(0deg);
   }
 }
-.ca__fx-ca__kiteFloatInRight {
-  animation-name: ca__kiteFloatInRight;
-  animation-duration: 1.4s;
-  animation-fill-mode: both;
+/**
+ * Module: kite Animation
+ * Filename: ca__Kite.css
+ */
+.ca__fx-kiteFloatInRight {
+  animation-name: kiteFloatInRight;
   transform-origin: top left;
+  will-change: transform, opacity;
 }
-@keyframes ca__kiteFloatInRight {
+@keyframes kiteFloatInRight {
   0% {
     transform: translate(80%, -100%) rotate(15deg);
     opacity: 0;
   }
+
   30% {
     transform: translate(-10%, 20%) rotate(-10deg);
     opacity: 1;
   }
+
   60% {
     transform: translate(5%, -10%) rotate(6deg);
   }
+
   80% {
     transform: translate(-2%, 5%) rotate(-3deg);
   }
+
   100% {
     transform: translate(0%, 0%) rotate(0deg);
   }
 }
-.ca__fx-ca__kiteFloatInLeft {
-  animation-name: ca__kiteFloatInLeft;
-  animation-duration: 1.4s;
-  animation-fill-mode: both;
+.ca__fx-kiteFloatInLeft {
+  animation-name: kiteFloatInLeft;
   transform-origin: top right;
+  will-change: transform, opacity;
 }
-@keyframes ca__kiteFloatInLeft {
+@keyframes kiteFloatInLeft {
   0% {
     transform: translate(-80%, -100%) rotate(-15deg);
     opacity: 0;
   }
+
   30% {
     transform: translate(10%, 20%) rotate(10deg);
     opacity: 1;
   }
+
   60% {
     transform: translate(-5%, -10%) rotate(-6deg);
   }
+
   80% {
     transform: translate(2%, 5%) rotate(3deg);
   }
+
   100% {
     transform: translate(0%, 0%) rotate(0deg);
   }
 }
-.ca__fx-ca__kiteHoverLoop {
-  animation-name: ca__kiteHoverLoop;
-  animation-duration: 3s;
+.ca__fx-kiteHoverLoop {
+  animation-name: kiteHoverLoop;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   transform-origin: center;
+  will-change: transform;
 }
-@keyframes ca__kiteHoverLoop {
+@keyframes kiteHoverLoop {
   0% {
     transform: translateY(0%) rotate(0deg);
   }
+
   25% {
     transform: translateY(-4%) rotate(2deg);
   }
+
   50% {
     transform: translateY(2%) rotate(-3deg);
   }
+
   75% {
     transform: translateY(-3%) rotate(1.5deg);
   }
+
   100% {
     transform: translateY(0%) rotate(0deg);
   }
 }
-.ca__fx-ca__kiteEntrySnap {
-  animation-name: ca__kiteEntrySnap;
-  animation-duration: 0.9s;
-  animation-fill-mode: both;
+.ca__fx-kiteEntrySnap {
+  animation-name: kiteEntrySnap;
   transform-origin: center top;
   animation-timing-function: cubic-bezier(0.25, 0.9, 0.4, 1.4);
+  will-change: transform, opacity;
 }
-@keyframes ca__kiteEntrySnap {
+@keyframes kiteEntrySnap {
   0% {
     transform: translateY(-100%) rotate(20deg);
     opacity: 0;
   }
+
   50% {
     transform: translateY(10%) rotate(-10deg);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0%) rotate(0deg);
   }
 }
-.ca__fx-ca__kiteWaveExit {
-  animation-name: ca__kiteWaveExit;
-  animation-duration: 1.1s;
-  animation-fill-mode: forwards;
+.ca__fx-kiteWaveExit {
+  animation-name: kiteWaveExit;
   transform-origin: bottom left;
   animation-timing-function: ease-in;
+  will-change: transform, opacity;
 }
-@keyframes ca__kiteWaveExit {
+@keyframes kiteWaveExit {
   0% {
     transform: translate(0%, 0%) rotate(0deg);
     opacity: 1;
   }
+
   30% {
     transform: translate(-10%, -10%) rotate(-10deg);
   }
+
   70% {
     transform: translate(20%, -80%) rotate(25deg);
     opacity: 0.5;
   }
+
   100% {
     transform: translate(50%, -120%) rotate(40deg);
     opacity: 0;
+  }
+}
+.ca__fx-kiteWhipIn {
+  animation-name: kiteWhipIn;
+  transform-origin: top left;
+  animation-timing-function: cubic-bezier(0.4, -0.3, 0.7, 1.8);
+  will-change: transform, opacity;
+}
+@keyframes kiteWhipIn {
+  0% {
+    transform: translate(-150%, -80%) rotate(-35deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate(10%, 10%) rotate(15deg);
+    opacity: 1;
+  }
+
+  85% {
+    transform: translate(-5%, -5%) rotate(-7deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+.ca__fx-kiteSwingEntry {
+  animation-name: kiteSwingEntry;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes kiteSwingEntry {
+  0% {
+    transform: translate(-60%, -100%) rotate(-80deg) scale(0.6);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translate(10%, 10%) rotate(30deg) scale(1.05);
+    opacity: 1;
+  }
+
+  70% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+}
+.ca__fx-kiteIdleFloat {
+  animation-name: kiteIdleFloat;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes kiteIdleFloat {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+
+  20% {
+    transform: translateY(-4%) rotate(2deg);
+  }
+
+  40% {
+    transform: translateY(3%) rotate(-1.5deg);
+  }
+
+  60% {
+    transform: translateY(-2%) rotate(2deg);
+  }
+
+  80% {
+    transform: translateY(1%) rotate(-1deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+.ca__fx-kiteExitLift {
+  animation-name: kiteExitLift;
+  animation-timing-function: ease-in;
+  transform-origin: bottom right;
+  will-change: transform, opacity;
+}
+@keyframes kiteExitLift {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(10%, -30%) rotate(15deg);
+    opacity: 0.8;
+  }
+
+  80% {
+    transform: translate(-20%, -90%) rotate(-25deg);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translate(40%, -150%) rotate(45deg);
+    opacity: 0;
+  }
+}
+.ca__fx-kiteSnapBounceIn {
+  animation-name: kiteSnapBounceIn;
+  animation-timing-function: cubic-bezier(0.45, 1.5, 0.55, 1);
+  transform-origin: center top;
+  will-change: transform, opacity;
+}
+@keyframes kiteSnapBounceIn {
+  0% {
+    transform: translateY(-150%) rotate(25deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(10%) rotate(-10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(-5%) rotate(5deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+.ca__fx-kiteFlipTwist {
+  animation-name: kiteFlipTwist;
+  transform-origin: center;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes kiteFlipTwist {
+  0% {
+    transform: perspective(800px) rotateX(90deg) rotateZ(-45deg) translateY(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(800px) rotateX(-30deg) rotateZ(10deg) translateY(10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(0deg) rotateZ(0deg) translateY(0%);
+  }
+}
+.ca__fx-kiteTetheredFloat {
+  animation-name: kiteTetheredFloat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes kiteTetheredFloat {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-5%) rotate(2deg);
+  }
+
+  50% {
+    transform: translateY(3%) rotate(-2deg);
+  }
+
+  75% {
+    transform: translateY(-3%) rotate(1.5deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+.ca__fx-kiteCollapse {
+  animation-name: kiteCollapse;
+  transform-origin: top center;
+  animation-timing-function: ease-in;
+  will-change: transform, opacity;
+}
+@keyframes kiteCollapse {
+  0% {
+    transform: rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+
+  30% {
+    transform: rotate(20deg) translateY(20%);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotate(-60deg) translateY(60%) scale(0.8);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: rotate(90deg) translateY(120%) scale(0.5);
+    opacity: 0;
+  }
+}
+.ca__fx-kiteDragDrop {
+  animation-name: kiteDragDrop;
+  transform-origin: top center;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+  will-change: transform, opacity;
+}
+@keyframes kiteDragDrop {
+  0% {
+    transform: translateY(-80%) rotate(15deg) scale(1.05);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(5%) rotate(-8deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(-3%) rotate(4deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg) scale(1);
   }
 }
 /**

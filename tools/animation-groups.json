@@ -120,6 +120,23 @@
     "ca__fx-flipYZoomOut"
   ],
   "Fly In/Out": ["ca__fx-flyInTop", "ca__fx-flyInBottom", "ca__fx-flyOutTop", "ca__fx-flyOutBottom"],
+  "Kite": [
+    "ca__fx-kiteFloatInRight",
+    "ca__fx-kiteFloatInLeft",
+    "ca__fx-kiteHoverLoop",
+    "ca__fx-kiteEntrySnap",
+    "ca__fx-kiteWaveExit",
+    "ca__fx-kiteWhipIn",
+    "ca__fx-kiteSwingEntry",
+    "ca__fx-kiteIdleFloat",
+    "ca__fx-kiteExitLift",
+    "ca__fx-kiteSnapBounceIn",
+    "ca__fx-kiteFlipTwist",
+    "ca__fx-kiteTetheredFloat",
+    "ca__fx-kiteCollapse",
+    "ca__fx-kiteDragDrop"
+  ],
+
   "Heartbeat": ["ca__fx-heartbeatSlow", "ca__fx-heartbeatFast", "ca__fx-pulseShake", "ca__fx-elasticPulse"],
 
   "Shake": [
@@ -145,6 +162,7 @@
 
   "Swing": [
     "ca__fx-swing",
+    "ca__fx-swingUp",
     "ca__fx-swingIn",
     "ca__fx-swingOut",
     "ca__fx-swingZoom",

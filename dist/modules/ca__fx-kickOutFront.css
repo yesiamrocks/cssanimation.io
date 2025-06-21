@@ -60,10 +60,11 @@
   }
 }
 /**
- * Module: Move From
- * Filename: ca__MoveFrom.css
+ * Module: kite Animation
+ * Filename: ca__Kite.css
  */
-.ca__fx-moveFromLeft {
-  animation-name: moveFromLeft;
-  animation-timing-function: ease-out;
+.ca__fx-kiteFloatInRight {
+  animation-name: kiteFloatInRight;
+  transform-origin: top left;
+  will-change: transform, opacity;
 }

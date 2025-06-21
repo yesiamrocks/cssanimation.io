@@ -288,7 +288,7 @@ const htmlContent = `<!DOCTYPE html>
                         
                         <div class="flex space-x-2 flex-shrink-0 justify-center mt-6 mb-4">
                             <code id="code-${cls}" class="font-mono w-full text-sm bg-gray-200 text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200" data-full-class="${fullClass}">${cls}</code>
-                            <button onclick="copyToClipboard('${cls}')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-600 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 group" aria-label="Copy code for ${cls}">
+                            <button onclick="copyToClipboard('${cls}')" class="relative px-4 py-2 bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ${cls}">
                                 Copy
                                 <span id="feedback-${cls}" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                             </button>                                
@@ -307,7 +307,7 @@ const htmlContent = `<!DOCTYPE html>
 
     <footer style="text-align: center; padding: 2rem 1rem; font-size: 0.875rem; color: #888;">
         <p>
-            Made with ❤️ by <a href="https://www.linkedin.com/in/shafayetul/" target="_blank" rel="noopener noreferrer" style="color: #555;">Shafayetul Islam Pavel</a> — 
+            Made with ❤️ by <a href="https://www.linkedin.com/in/shafayetul/" target="_blank" rel="noopener noreferrer" style="color: #555;">Pavel</a> — 
             <a href="https://cssanimation.io" target="_blank" rel="noopener noreferrer" style="color: #555;">cssanimation.io</a>
         </p>
     </footer>
