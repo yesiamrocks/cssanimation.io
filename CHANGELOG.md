@@ -1,3 +1,34 @@
+## [6.4.0] - 2025-06-18
+
+### ✨ Added
+
+- FlipTwist entry animations:
+
+  - `ca__fx-flipTwistVertical`
+  - `ca__fx-flipTwistDiagonal`
+  - `ca__fx-flipTwistSlam`
+  - `ca__fx-flipTwistZoom`
+  - `ca__fx-flipTwistDrop`
+  - `ca__fx-flipTwistTiltIn`
+
+- FlipTwist hover variants:
+
+  - `ca__fx-flipTwistHover`
+  - `ca__fx-flipTwistTiltHover`
+  - `ca__fx-flipTwistZoomHover`
+
+- FlipTwist exit animations:
+  - `ca__fx-flipTwistOutRight`
+  - `ca__fx-flipTwistOutLeft`
+  - `ca__fx-flipTwistOutTop`
+  - `ca__fx-flipTwistOutZoom`
+
+### 🧠 Notes
+
+- All animations use `transform` and `opacity` for optimal GPU performance
+- Hover variants use `transition` for smooth interactivity
+- Exit animations are ideal for use with JS-based UI removal or ScrollTrigger
+
 ## [6.3.0] - 2025-06-20
 
 ### Added
