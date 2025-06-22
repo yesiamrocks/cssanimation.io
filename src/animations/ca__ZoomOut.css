@@ -76,3 +76,41 @@
     opacity: 0;
   }
 }
+
+.zoomPingExit {
+  animation-name: zoomPingExit;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoomPingExit {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.zoomToTarget {
+  animation: zoomToTarget 1.1s ease-out forwards;
+  transform-origin: center center;
+}
+
+@keyframes zoomToTarget {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1.2) translate(0, -10px);
+  }
+
+  100% {
+    transform: scale(0.8) translate(10px, 20px);
+    opacity: 0;
+  }
+}

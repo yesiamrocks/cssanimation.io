@@ -150,21 +150,29 @@
     "ca__fx-glitchExit",
     "ca__fx-glitchJitter",
     "ca__fx-glitchSlice",
+    "ca__fx-glitchSliceYank",
+    "ca__fx-glitchSliceExitSharp",
+    "ca__fx-glitchSliceInSharp",
+    "ca__fx-glitchSliceInTilt",
+    "ca__fx-glitchSliceTilt",
+    "ca__fx-glitchSliceExitTilt",
+    "ca__fx-glitchSliceCrack",
+    "ca__fx-glitchSliceExitCollapse",
+    "ca__fx-glitchSliceInCollapse",
+    "ca__fx-glitchSliceDrop",
+    "ca__fx-glitchSliceStagger",
     "ca__fx-glitchFlash",
+    "ca__fx-glitchCompressIn",
     "ca__fx-glitchCollapseOut",
     "ca__fx-glitchMatrixWave",
     "ca__fx-hologramPulse",
     "ca__fx-scanlineSweep",
     "ca__fx-typewriterCorrupt",
     "ca__fx-hologramWarp",
-    "ca__fx-glitchSliceYank",
-    "ca__fx-glitchSliceExitSharp",
-    "ca__fx-glitchSliceTilt",
-    "ca__fx-glitchSliceExitTilt",
-    "ca__fx-glitchSliceCrack",
-    "ca__fx-glitchSliceExitCollapse",
-    "ca__fx-glitchSliceDrop",
-    "ca__fx-glitchSliceStagger"
+    "ca__fx-glitchDecodePulse",
+    "ca__fx-glitchScanBurst",
+    "ca__fx-hudAlertGlitch",
+    "ca__fx-glitchSequence"
   ],
   "Magical": [
     "ca__fx-sparklePopIn",
@@ -277,7 +285,19 @@
     "ca__fx-swingDropSnap",
     "ca__fx-swingDropMagnet"
   ],
-
+  "Sci-Fi UI": [
+    "ca__fx-targetLockOn",
+    "ca__fx-hudPing",
+    "ca__fx-swingIn",
+    "ca__fx-hudScanExit",
+    "ca__fx-dataTypeCascade",
+    "ca__fx-corruptTextScramble",
+    "ca__fx-corruptTextOffset",
+    "ca__fx-dataTypeCascadeOut",
+    "ca__fx-initiateSequenceOut",
+    "ca__fx-criticalBreach",
+    "ca__fx-hudReticleExpand"
+  ],
   "Pull & Push": [
     "ca__fx-pullRelease",
     "ca__fx-pushRelease",
@@ -353,7 +373,9 @@
     "ca__fx-snapZoom",
     "ca__fx-zoomOutRotateUp",
     "ca__fx-bounceZoomIn",
-    "ca__fx-bounceZoomOut"
+    "ca__fx-bounceZoomOut",
+    "ca__fx-zoomPingExit",
+    "ca__fx-zoomToTarget"
   ],
   "Spotlight": [
     "ca__fx-unfoldAndRise",

@@ -66,10 +66,10 @@
   }
 }
 /**
- * Module: Dance
- * Filename: ca__Dance.css
+ * Module: Clip-Path Animations 
+ * Filename: ca__Clip-Path.css
  */
-.ca__fx-danceTop {
-  animation-name: danceTop;
-  transform-origin: top;
+.ca__fx-clipCircleExpandIn {
+  animation: clipCircleExpandIn 1s ease-out both;
+  clip-path: circle(0% at 50% 50%);
 }

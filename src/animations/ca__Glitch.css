@@ -200,6 +200,35 @@
   }
 }
 
+.glitchSliceInCollapse {
+  animation-name: glitchSliceInCollapse;
+  animation-timing-function: ease-out;
+}
+
+@keyframes glitchSliceInCollapse {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    clip-path: inset(100% 0 0 0);
+  }
+
+  40% {
+    transform: scaleY(0.6);
+    clip-path: inset(60% 0 10% 0);
+  }
+
+  70% {
+    transform: scaleY(0.9);
+    clip-path: inset(20% 0 20% 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
 .glitchMatrixWave {
   animation: glitchMatrixWave 1.5s infinite ease-in-out;
 }
@@ -379,6 +408,35 @@
   }
 }
 
+.glitchSliceInSharp {
+  animation-name: glitchSliceInSharp;
+  animation-timing-function: ease-out;
+}
+
+@keyframes glitchSliceInSharp {
+  0% {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+    transform: translateX(-10px);
+  }
+
+  40% {
+    clip-path: inset(60% 0 10% 0);
+    transform: translateX(6px);
+  }
+
+  70% {
+    clip-path: inset(30% 0 30% 0);
+    transform: translateX(-4px);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+  }
+}
+
 .glitchSliceExitSharp {
   animation: glitchSliceExitSharp 0.8s ease-in forwards;
 }
@@ -435,6 +493,29 @@
   100% {
     clip-path: inset(0 0 0 0);
     transform: skew(0deg, 0deg);
+  }
+}
+
+.glitchSliceInTilt {
+  animation-name: glitchSliceInTilt;
+}
+
+@keyframes glitchSliceInTilt {
+  0% {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+    transform: skew(8deg, -2deg) scaleY(0.8);
+  }
+
+  50% {
+    clip-path: inset(60% 0 10% 0);
+    transform: skew(-5deg, 1deg);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: skew(0, 0) scaleY(1);
   }
 }
 
@@ -582,5 +663,129 @@
   100% {
     clip-path: inset(0 0 0 0);
     transform: none;
+  }
+}
+
+.glitchCompressIn {
+  animation-name: glitchCompressIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+@keyframes glitchCompressIn {
+  0% {
+    transform: scale(1.4, 0.6);
+    filter: blur(6px) brightness(0.2);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.05, 0.95);
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    filter: none;
+    opacity: 1;
+  }
+}
+
+.glitchDecodePulse {
+  animation: glitchDecodePulse 1.3s ease-out both;
+  letter-spacing: 0.05em;
+}
+
+@keyframes glitchDecodePulse {
+  0% {
+    filter: grayscale(1) brightness(0.3);
+    transform: scale(1.05) skewX(-5deg);
+    opacity: 0;
+  }
+
+  40% {
+    filter: hue-rotate(90deg);
+    opacity: 0.6;
+  }
+
+  70% {
+    filter: none;
+    transform: scale(1) skewX(0);
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: normal;
+  }
+}
+
+.glitchScanBurst {
+  animation: glitchScanBurst 1.4s ease-out both;
+}
+
+@keyframes glitchScanBurst {
+  0% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    transform: scaleY(1.1);
+    filter: brightness(0.1);
+    opacity: 0;
+  }
+
+  30% {
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+    filter: hue-rotate(60deg);
+  }
+
+  60% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    filter: brightness(1.2);
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+
+.hudAlertGlitch {
+  animation: hudAlertGlitch 0.6s infinite steps(2, end);
+  color: #ff4444;
+}
+
+@keyframes hudAlertGlitch {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translate(-2px, 2px);
+  }
+}
+
+.glitchSequence {
+  animation: initiateSequence 1.2s steps(3, end) forwards;
+  color: #00f9ff;
+  text-shadow: 0 0 4px #00f9ff;
+}
+
+@keyframes initiateSequence {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }

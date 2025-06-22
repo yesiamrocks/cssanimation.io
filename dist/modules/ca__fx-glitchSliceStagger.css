@@ -68,14 +68,3 @@
     transform: none;
   }
 }
-/**
- * Module: Hang And Drop
- * Filename: ca__HangAndDrop.css
- */
-.ca__fx-hangAndDropLeft {
-  animation-name: hangAndDropLeft;
-  transform-origin: left;
-  backface-visibility: var(--cssanimation-backface-visibility);
-  transform-style: var(--cssanimation-transform-style);
-  will-change: var(--cssanimation-will-change);
-}
