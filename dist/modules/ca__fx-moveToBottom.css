@@ -48,13 +48,12 @@
   }
 }
 /**
- * Module: Perspective
- * Filename: ca__Perspective.css
+ * Module: Nature
+ * Filename: ca__Nature.css
  */
-.ca__fx-perspectiveToTop {
-  animation-name: perspectiveToTop;
-  transform: perspective(500px);
-  backface-visibility: var(--cssanimation-backface-visibility);
-  transform-style: var(--cssanimation-transform-style);
-  will-change: var(--cssanimation-will-change);
+.ca__fx-petalDrop {
+  animation-name: petalDrop;
+  animation-timing-function: ease-out;
+  transform-origin: top center;
+  will-change: transform, opacity;
 }

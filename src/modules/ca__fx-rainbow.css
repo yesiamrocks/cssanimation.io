@@ -62,3 +62,10 @@
     color: violet;
   }
 }
+/**
+ * Module: Zoom In
+ * Filename: ca__ZoomIn.css
+ */
+.ca__fx-zoomIn {
+  animation-name: zoomIn;
+}

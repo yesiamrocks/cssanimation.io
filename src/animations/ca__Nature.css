@@ -1,0 +1,92 @@
+/**
+ * Module: Nature
+ * Filename: ca__Nature.css
+ */
+.petalDrop {
+  animation-name: petalDrop;
+  animation-timing-function: ease-out;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+
+@keyframes petalDrop {
+  0% {
+    transform: translateY(-100%) rotateZ(15deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(30%) rotateZ(-10deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(90%) rotateZ(5deg);
+  }
+
+  100% {
+    transform: translateY(120%) rotateZ(0deg);
+    opacity: 0;
+  }
+}
+
+.petalLiftOut {
+  animation-name: petalLiftOut;
+  animation-timing-function: ease-in;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+
+@keyframes petalLiftOut {
+  0% {
+    transform: translateY(0%) rotateZ(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100%) rotateZ(-20deg);
+    opacity: 0;
+  }
+}
+
+.leafFloatIn {
+  animation-name: leafFloatIn;
+  animation-timing-function: ease-out;
+  transform-origin: top left;
+  will-change: transform, opacity;
+}
+
+@keyframes leafFloatIn {
+  0% {
+    transform: translateX(-60%) rotate(-45deg) scale(0.8);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(10%) rotate(20deg) scale(1.05);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+  }
+}
+
+.leafFloatAway {
+  animation-name: leafFloatAway;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes leafFloatAway {
+  0% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(80%) rotate(45deg) scale(0.6);
+    opacity: 0;
+  }
+}

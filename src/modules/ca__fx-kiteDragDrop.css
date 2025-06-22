@@ -64,10 +64,13 @@
   }
 }
 /**
- * Module: Move From
- * Filename: ca__MoveFrom.css
+ * Module: Magical FX Pack
+ * Filename: ca__imaginative.css
  */
-.ca__fx-moveFromLeft {
-  animation-name: moveFromLeft;
+.ca__fx-sparklePopIn {
+  animation-name: sparklePopIn;
   animation-timing-function: ease-out;
+  transform-origin: center;
+  filter: brightness(1.5);
+  will-change: transform, opacity;
 }

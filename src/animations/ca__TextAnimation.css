@@ -119,15 +119,15 @@
   }
 }
 
-.gradienText {
+.gradientText {
   background: linear-gradient(90deg, #ff0080, #7928ca);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: moveGradient 3s linear infinite;
+  animation: gradientText 3s linear infinite;
   background-size: 200%;
 }
 
-@keyframes moveGradient {
+@keyframes gradientText {
   0% {
     background-position: 0%;
   }

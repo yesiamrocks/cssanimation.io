@@ -7,6 +7,7 @@
 @import './ca__BounceOut.css';
 @import './ca__Dance.css';
 @import './ca__Door.css';
+@import './ca__Dramatic.css';
 @import './ca__Elastic.css';
 @import './ca__Elevate.css';
 @import './ca__Engagement.css';
@@ -16,14 +17,19 @@
 @import './ca__FlipX.css';
 @import './ca__FlipY.css';
 @import './ca__Fly.css';
+@import './ca__Glitch.css';
 @import './ca__HangAndDrop.css';
 @import './ca__HangOn.css';
 @import './ca__Heartbeat.css';
 @import './ca__KickOut.css';
 @import './ca__Kite.css';
+@import './ca__Magical.css';
+@import './ca__Moon.css';
 @import './ca__MoveFrom.css';
 @import './ca__MoveTo.css';
+@import './ca__Nature.css';
 @import './ca__Perspective.css';
+@import './ca__Playful.css';
 @import './ca__PullRelease.css';
 @import './ca__PushReleaseFrom.css';
 @import './ca__PushReleaseTo.css';
@@ -40,7 +46,8 @@
 @import './ca__Spotlights.css';
 @import './ca__Swing.css';
 @import './ca__SwingIn.css';
+@import './ca__TextAnimation.css';
 @import './ca__ZoomIn.css';
 @import './ca__ZoomOut.css';
 @import './ca__quake.css';
-@import './ca__text.css';
+@import './ca__wow.css';

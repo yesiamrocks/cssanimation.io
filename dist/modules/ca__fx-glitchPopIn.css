@@ -1,0 +1,73 @@
+/*!
+ * Module: glitchPopIn Animation
+ * Usage: <div class="cssanimation ca__fx-glitchPopIn">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-glitchPopIn {
+  animation-name: glitchPopIn;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  will-change: transform, opacity;
+}
+
+@keyframes glitchPopIn {
+  0% {
+    transform: scale(0.8);
+    filter: contrast(2) brightness(0.5);
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(1.2);
+    filter: contrast(1.5) brightness(1.5);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.95) translate(-2px, 2px);
+  }
+
+  70% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}

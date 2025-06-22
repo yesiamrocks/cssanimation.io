@@ -1,0 +1,696 @@
+/**
+ * Module: WOW
+ * Filename: ca__wow.css
+ */
+
+.blurTrailIn {
+  animation-name: blurTrailIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+  filter: blur(8px);
+}
+
+@keyframes blurTrailIn {
+  0% {
+    transform: translateY(60%) scale(1.2);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  80% {
+    filter: blur(3px);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.blurTrailOut {
+  animation-name: blurTrailOut;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes blurTrailOut {
+  0% {
+    transform: translateY(0%);
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-60%) scale(0.95);
+    filter: blur(10px);
+    opacity: 0;
+  }
+}
+
+.layerPeelIn {
+  animation-name: layerPeelIn;
+  animation-timing-function: ease-out;
+  transform-origin: top left;
+  will-change: transform, opacity;
+  perspective: 800px;
+}
+
+@keyframes layerPeelIn {
+  0% {
+    transform: rotateX(-90deg) translateY(-100%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateX(20deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0deg) translateY(0%);
+  }
+}
+
+.layerPeelOut {
+  animation-name: layerPeelOut;
+  animation-timing-function: ease-in;
+  transform-origin: bottom right;
+  will-change: transform, opacity;
+  perspective: 800px;
+}
+
+@keyframes layerPeelOut {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(90deg) translateY(100%);
+    opacity: 0;
+  }
+}
+
+.squishPop {
+  animation-name: squishPop;
+  animation-timing-function: cubic-bezier(0.25, 1.25, 0.5, 1.2);
+  animation-direction: normal;
+  will-change: transform, opacity;
+}
+
+@keyframes squishPop {
+  0% {
+    transform: scale(0.2, 1.6);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.3, 0.7);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.gravityPullIn {
+  animation-name: gravityPullIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+@keyframes gravityPullIn {
+  0% {
+    transform: scale(2) translateY(-100%) rotate(-10deg);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.05) translateY(0%) rotate(2deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.slinkyStretch {
+  animation-name: slinkyStretch;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.5, 1);
+  will-change: transform, opacity;
+}
+
+@keyframes slinkyStretch {
+  0% {
+    transform: scaleY(0.2);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scaleY(1.3);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.wobbleEntry {
+  animation-name: wobbleEntry;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+@keyframes wobbleEntry {
+  0% {
+    transform: rotate(-30deg) scale(0.5);
+    opacity: 0;
+  }
+
+  40% {
+    transform: rotate(15deg) scale(1.05);
+    opacity: 1;
+  }
+
+  70% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.peelDropIn {
+  animation-name: peelDropIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: top left;
+  perspective: 800px;
+}
+
+@keyframes peelDropIn {
+  0% {
+    transform: rotateX(-80deg) rotateZ(-10deg) translateY(-100%);
+    opacity: 0;
+  }
+
+  80% {
+    transform: rotateX(15deg) rotateZ(3deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0) rotateZ(0) translateY(0);
+  }
+}
+
+.vibeInPop {
+  animation-name: vibeInPop;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+@keyframes vibeInPop {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+    filter: brightness(1.8);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.05) rotate(5deg);
+    filter: brightness(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.flickerPop {
+  animation-name: flickerPop;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+@keyframes flickerPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+    filter: brightness(0);
+  }
+
+  25% {
+    opacity: 1;
+    filter: brightness(2);
+  }
+
+  30% {
+    filter: brightness(0.4);
+  }
+
+  50% {
+    filter: brightness(1);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+.inertiaSlideIn {
+  animation-name: inertiaSlideIn;
+  animation-timing-function: cubic-bezier(0.15, 0.85, 0.3, 1.2);
+  will-change: transform, opacity;
+  transform-origin: left center;
+}
+
+@keyframes inertiaSlideIn {
+  0% {
+    transform: translateX(-120%) scaleX(1.4);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(10%) scaleX(0.95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%) scaleX(1);
+  }
+}
+
+.dropSpinIn {
+  animation-name: dropSpinIn;
+  animation-timing-function: ease-out;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+
+@keyframes dropSpinIn {
+  0% {
+    transform: rotateZ(-180deg) translateY(-200%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateZ(20deg) translateY(10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateZ(0deg) translateY(0%);
+  }
+}
+
+.breezeLift {
+  animation-name: breezeLift;
+  animation-timing-function: ease-in-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+@keyframes breezeLift {
+  0% {
+    transform: translateY(40%) rotate(-3deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-5%) rotate(2deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.featherFloat {
+  animation-name: featherFloat;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes featherFloat {
+  0% {
+    transform: translateY(-120%) rotate(0deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(10%) rotate(10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(0%) rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.powerUpPop {
+  animation-name: powerUpPop;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes powerUpPop {
+  0% {
+    transform: scale(0.3);
+    filter: hue-rotate(180deg) brightness(2);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    filter: hue-rotate(90deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+.levelUnlock {
+  animation-name: levelUnlock;
+  animation-timing-function: ease-in-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+@keyframes levelUnlock {
+  0% {
+    transform: scale(0.8) rotateX(90deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2) rotateX(-30deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotateX(0deg);
+  }
+}
+
+.softPulseIdle {
+  animation-name: softPulseIdle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+@keyframes softPulseIdle {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+}
+
+.shimmerWaveIdle {
+  animation-name: shimmerWaveIdle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes shimmerWaveIdle {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.gearSnapIn {
+  animation-name: gearSnapIn;
+  animation-timing-function: cubic-bezier(0.3, 1.6, 0.6, 1);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes gearSnapIn {
+  0% {
+    transform: scale(0.6) rotate(-90deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.1) rotate(30deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.joyBounceIn {
+  animation-name: joyBounceIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes joyBounceIn {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(1.2) rotate(10deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(0.95) rotate(-5deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.blushSlideIn {
+  animation-name: blushSlideIn;
+  animation-timing-function: ease-out;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+
+@keyframes blushSlideIn {
+  0% {
+    transform: translateY(100%) scale(0.9) rotate(-6deg);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-4%) scale(1.05) rotate(3deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) scale(1) rotate(0deg);
+  }
+}
+
+.stampSmash {
+  animation-name: stampSmash;
+  animation-timing-function: cubic-bezier(0.25, 1.8, 0.4, 1);
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+@keyframes stampSmash {
+  0% {
+    transform: scale(2.4) rotate(15deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(0.85) rotate(-8deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.comboLevelRise {
+  animation-name: comboLevelRise;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: bottom center;
+}
+
+@keyframes comboLevelRise {
+  0% {
+    transform: translateY(40%) scale(0.8) rotateX(40deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(-8%) scale(1.1) rotateX(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) scale(1) rotateX(0deg);
+  }
+}
+
+.wiggleReactive {
+  animation-name: wiggleReactive;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+@keyframes wiggleReactive {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(4deg);
+  }
+
+  50% {
+    transform: rotate(-4deg);
+  }
+
+  75% {
+    transform: rotate(2deg);
+  }
+}
+
+.pulseGlow {
+  animation-name: pulseGlow;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.cosmicReveal {
+  animation-name: cosmicReveal;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+  filter: blur(6px) brightness(2);
+}
+
+@keyframes cosmicReveal {
+  0% {
+    transform: scale(1.8);
+    filter: blur(10px) brightness(4);
+    opacity: 0;
+  }
+
+  70% {
+    filter: blur(1px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+.scribbleGlowIn {
+  animation-name: scribbleGlowIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  filter: blur(5px);
+}
+
+@keyframes scribbleGlowIn {
+  0% {
+    transform: scale(1.4) rotate(-5deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    filter: none;
+  }
+}
+
+.panelUnfold {
+  animation-name: panelUnfold;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: top center;
+}
+
+@keyframes panelUnfold {
+  0% {
+    transform: scaleY(0.2) rotateX(-90deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scaleY(1.05) rotateX(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1) rotateX(0);
+  }
+}

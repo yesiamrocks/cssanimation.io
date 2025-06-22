@@ -1,0 +1,63 @@
+/*!
+ * Module: vibeInPop Animation
+ * Usage: <div class="cssanimation ca__fx-vibeInPop">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-vibeInPop {
+  animation-name: vibeInPop;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+@keyframes vibeInPop {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+    filter: brightness(1.8);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.05) rotate(5deg);
+    filter: brightness(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}

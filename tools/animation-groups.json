@@ -14,7 +14,6 @@
   "Bounce Animations": [
     "ca__fx-bounceX",
     "ca__fx-bounceY",
-    "ca__fx-bounceZoomIn",
     "ca__fx-bounceZoomOut",
     "ca__fx-spring",
     "ca__fx-boing",
@@ -28,20 +27,22 @@
     "ca__fx-levitate"
   ],
   "Bounce In": [
+    "ca__fx-bounceInTop",
+    "ca__fx-bounceInFromBottom",
     "ca__fx-bounceFromTop",
     "ca__fx-bounceFromDown",
-    "ca__fx-bounceInTop",
     "ca__fx-bounceInBottom",
     "ca__fx-bounceInLeft",
-    "ca__fx-bounceInRight",
-    "ca__fx-bounceInFromBottom"
+    "ca__fx-bounceInRight"
   ],
-  "Bounce Out": [
-    "ca__fx-bounceOutTop",
-    "ca__fx-bounceOutBottom",
-    "ca__fx-bounceOutLeft",
-    "ca__fx-bounceOutRight",
-    "ca__fx-bounceInFromBottom"
+  "Bounce Out": ["ca__fx-bounceOutTop", "ca__fx-bounceOutBottom", "ca__fx-bounceOutLeft", "ca__fx-bounceOutRight"],
+  "Dramatic": [
+    "ca__fx-curtainReveal",
+    "ca__fx-curtainClose",
+    "ca__fx-spiralTwistIn",
+    "ca__fx-spiralTwistOut",
+    "ca__fx-spotlightFocus",
+    "ca__fx-spotlightFade"
   ],
   "Elastic": [
     "ca__fx-elasticArise",
@@ -64,7 +65,9 @@
     "ca__fx-squishBoing",
     "ca__fx-rubber",
     "ca__fx-boingScale",
-    "ca__fx-slinkyDrop"
+    "ca__fx-slinkyDrop",
+    "ca__fx-rubberExpand",
+    "ca__fx-rubberShrink"
   ],
   "Engagement": ["ca__fx-bobble", "ca__fx-jelly", "ca__fx-perspectiveTilt", "ca__fx-jello", "ca__fx-waveBand"],
   "Dance & Skew": [
@@ -119,7 +122,90 @@
     "ca__fx-flipYZoomIn",
     "ca__fx-flipYZoomOut"
   ],
+  "Flip Twist": [
+    "ca__fx-flipTwistRight",
+    "ca__fx-flipTwistLeft",
+    "ca__fx-flipTwistTop",
+    "ca__fx-flipTwistBottom",
+    "ca__fx-flipTwistPop",
+    "ca__fx-flipTwistCombo",
+    "ca__fx-flipTwistVertical",
+    "ca__fx-flipTwistDiagonal",
+    "ca__fx-flipTwistSlam",
+    "ca__fx-flipTwistZoom",
+    "ca__fx-flipTwistDrop",
+    "ca__fx-flipTwistTiltIn",
+    "ca__fx-flipTwistHover",
+    "ca__fx-flipTwistTiltHover",
+    "ca__fx-flipTwistZoomHover",
+    "ca__fx-flipTwistOutRight",
+    "ca__fx-flipTwistOutLeft",
+    "ca__fx-flipTwistOutTop",
+    "ca__fx-flipTwistOutZoom"
+  ],
   "Fly In/Out": ["ca__fx-flyInTop", "ca__fx-flyInBottom", "ca__fx-flyOutTop", "ca__fx-flyOutBottom"],
+  "Glitch": [
+    "ca__fx-microGlitch",
+    "ca__fx-glitchPopIn",
+    "ca__fx-glitchExit",
+    "ca__fx-glitchJitter",
+    "ca__fx-glitchSlice",
+    "ca__fx-glitchFlash",
+    "ca__fx-glitchCollapseOut",
+    "ca__fx-glitchMatrixWave",
+    "ca__fx-hologramPulse",
+    "ca__fx-scanlineSweep",
+    "ca__fx-typewriterCorrupt",
+    "ca__fx-hologramWarp",
+    "ca__fx-glitchSliceYank",
+    "ca__fx-glitchSliceExitSharp",
+    "ca__fx-glitchSliceTilt",
+    "ca__fx-glitchSliceExitTilt",
+    "ca__fx-glitchSliceCrack",
+    "ca__fx-glitchSliceExitCollapse",
+    "ca__fx-glitchSliceDrop",
+    "ca__fx-glitchSliceStagger"
+  ],
+  "Magical": [
+    "ca__fx-sparklePopIn",
+    "ca__fx-wandReveal",
+    "ca__fx-magicDustExit",
+    "ca__fx-scanReveal",
+    "ca__fx-systemBootIn",
+    "ca__fx-signalDropOut",
+    "ca__fx-approveBounce",
+    "ca__fx-whisperFloatIn",
+    "ca__fx-aetherGlowRise",
+    "ca__fx-glintReveal",
+    "ca__fx-enchantFloatDrop"
+  ],
+  "Moon": [
+    "ca__fx-moonEclipseIn",
+    "ca__fx-moonEclipseOut",
+    "ca__fx-moonSlideInCrescent",
+    "ca__fx-moonSliceReveal",
+    "ca__fx-crescentOrbitReveal",
+    "ca__fx-moonSliceUp",
+    "ca__fx-moonPhaseReveal",
+    "ca__fx-lunarVeilIn",
+    "ca__fx-moonFade",
+    "ca__fx-moonFadeUp",
+    "ca__fx-moonFadeDown",
+    "ca__fx-moonFadeLeft",
+    "ca__fx-moonFadeRight",
+    "ca__fx-moonFadeScaleUp",
+    "ca__fx-moonFadeSlow",
+    "ca__fx-moonFadeStrong",
+    "ca__fx-moonFadeOutUp",
+    "ca__fx-moonFadeOutDown",
+    "ca__fx-moonFadeOutLeft",
+    "ca__fx-moonFadeOutRight",
+    "ca__fx-moonFadeOutScale",
+    "ca__fx-moonRippleGlow",
+    "ca__fx-moonDustFloat",
+    "ca__fx-moonTiltRise",
+    "ca__fx-moonCyclePulse"
+  ],
   "Kite": [
     "ca__fx-kiteFloatInRight",
     "ca__fx-kiteFloatInLeft",
@@ -136,8 +222,10 @@
     "ca__fx-kiteCollapse",
     "ca__fx-kiteDragDrop"
   ],
+  "Playful": ["ca__fx-snapGridEntry", "ca__fx-snapGridExit", "ca__fx-bounceInWaddle", "ca__fx-bounceOutWaddle"],
 
   "Heartbeat": ["ca__fx-heartbeatSlow", "ca__fx-heartbeatFast", "ca__fx-pulseShake", "ca__fx-elasticPulse"],
+  "Nature": ["ca__fx-petalDrop", "ca__fx-petalLiftOut", "ca__fx-leafFloatIn", "ca__fx-leafFloatAway"],
 
   "Shake": [
     "ca__fx-horizontalShake",
@@ -168,7 +256,6 @@
     "ca__fx-swingZoom",
     "ca__fx-swingPop",
     "ca__fx-swingSkew",
-    "ca__fx-swingInFromRight",
     "ca__fx-swingInFromLeft",
     "ca__fx-swingInFromTop",
     "ca__fx-swingInFromBottom",
@@ -284,12 +371,11 @@
 
   "Text Animation": [
     "ca__fx-effect3d",
-    "ca__fx-spring",
     "ca__fx-neonGlow",
     "ca__fx-colorPulse",
     "ca__fx-trackExpand",
     "ca__fx-trackCollapse",
-    "ca__fx-gradienText",
+    "ca__fx-gradientText",
     "ca__fx-rainbowText"
   ],
   "Quake & Quiver Series": [
@@ -302,5 +388,36 @@
     "ca__fx-rattle",
     "ca__fx-electricity",
     "ca__fx-buzz"
+  ],
+  "WOW": [
+    "ca__fx-blurTrailIn",
+    "ca__fx-blurTrailOut",
+    "ca__fx-layerPeelIn",
+    "ca__fx-layerPeelOut",
+    "ca__fx-squishPop",
+    "ca__fx-gravityPullIn",
+    "ca__fx-slinkyStretch",
+    "ca__fx-wobbleEntry",
+    "ca__fx-peelDropIn",
+    "ca__fx-vibeInPop",
+    "ca__fx-flickerPop",
+    "ca__fx-dropSpinIn",
+    "ca__fx-breezeLift",
+    "ca__fx-featherFloat",
+    "ca__fx-powerUpPop",
+    "ca__fx-levelUnlock",
+    "ca__fx-softPulseIdle",
+    "ca__fx-shimmerWaveIdle",
+    "ca__fx-gearSnapIn",
+    "ca__fx-joyBounceIn",
+    "ca__fx-blushSlideIn",
+    "ca__fx-stampSmash",
+    "ca__fx-comboLevelRise",
+    "ca__fx-wiggleReactive",
+    "ca__fx-pulseGlow",
+    "ca__fx-cosmicReveal",
+    "ca__fx-scribbleGlowIn",
+    "ca__fx-panelUnfold",
+    "ca__fx-inertiaSlideIn"
   ]
 }

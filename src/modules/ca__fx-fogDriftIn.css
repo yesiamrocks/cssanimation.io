@@ -1,0 +1,59 @@
+/*!
+ * Module: fogDriftIn Animation
+ * Usage: <div class="cssanimation ca__fx-fogDriftIn">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-fogDriftIn {
+  animation-name: fogDriftIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  filter: blur(10px);
+}
+
+@keyframes fogDriftIn {
+  0% {
+    transform: translateX(-80%);
+    opacity: 0;
+    filter: blur(14px);
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+    filter: blur(0);
+  }
+}

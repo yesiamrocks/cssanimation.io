@@ -63,9 +63,12 @@
   }
 }
 /**
- * Module: Pull release
- * Filename: ca__PullRelease.css
+ * Module: Playful
+ * Filename: ca__Playful.css
  */
-.ca__fx-pullRelease {
-  animation-name: pullRelease;
+.ca__fx-snapGridEntry {
+  animation-name: snapGridEntry;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.5, 1);
+  transform-origin: center;
+  will-change: transform, opacity;
 }

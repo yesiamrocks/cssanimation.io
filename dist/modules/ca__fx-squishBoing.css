@@ -63,10 +63,3 @@
     transform: scale(1, 1);
   } /* Return to normal */
 }
-/**
- * Module: Elevate
- * Filename: ca__Elevate.css
- */
-.ca__fx-elevateLeft {
-  animation-name: elevateLeft;
-}

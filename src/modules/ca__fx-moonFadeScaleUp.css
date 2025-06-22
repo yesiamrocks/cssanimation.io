@@ -1,0 +1,57 @@
+/*!
+ * Module: moonFadeScaleUp Animation
+ * Usage: <div class="cssanimation ca__fx-moonFadeScaleUp">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-moonFadeScaleUp {
+  animation: moonFadeScaleUp 2.1s ease-out both;
+  will-change: transform, opacity;
+}
+
+@keyframes moonFadeScaleUp {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+    filter: brightness(0.3) blur(6px);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}

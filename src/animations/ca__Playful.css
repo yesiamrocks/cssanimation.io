@@ -1,0 +1,91 @@
+/**
+ * Module: Playful
+ * Filename: ca__Playful.css
+ */
+.snapGridEntry {
+  animation-name: snapGridEntry;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.5, 1);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes snapGridEntry {
+  0% {
+    transform: scale(0.5) rotate(-20deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.snapGridExit {
+  animation-name: snapGridExit;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes snapGridExit {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.3) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.bounceInWaddle {
+  animation-name: bounceInWaddle;
+  animation-timing-function: ease-out;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+
+@keyframes bounceInWaddle {
+  0% {
+    transform: translateY(100%) rotate(-25deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(-10%) rotate(15deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(3%) rotate(-8deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+
+.bounceOutWaddle {
+  animation-name: bounceOutWaddle;
+  animation-timing-function: ease-in;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+
+@keyframes bounceOutWaddle {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+  }
+
+  30% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: translateY(120%) rotate(-20deg);
+    opacity: 0;
+  }
+}

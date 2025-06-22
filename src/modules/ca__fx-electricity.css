@@ -94,9 +94,13 @@
   }
 }
 /**
- * Module: Text Animation
- * Filename: ca__text.css
+ * Module: WOW
+ * Filename: ca__wow.css
  */
-.ca__fx-effect3d {
-  animation-name: effect3d;
+.ca__fx-blurTrailIn {
+  animation-name: blurTrailIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+  filter: blur(8px);
 }

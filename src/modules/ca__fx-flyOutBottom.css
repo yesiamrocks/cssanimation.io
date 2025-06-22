@@ -57,13 +57,11 @@
   }
 }
 /**
- * Module: Hang And Drop
- * Filename: ca__HangAndDrop.css
+ * Module: Glitch
+ * Filename: ca__Glitch.css
  */
-.ca__fx-hangAndDropLeft {
-  animation-name: hangAndDropLeft;
-  transform-origin: left;
-  backface-visibility: var(--cssanimation-backface-visibility);
-  transform-style: var(--cssanimation-transform-style);
-  will-change: var(--cssanimation-will-change);
+.ca__fx-microGlitch {
+  animation-name: microGlitch;
+  animation-timing-function: steps(1);
+  will-change: transform, opacity;
 }

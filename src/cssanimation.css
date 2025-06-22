@@ -212,34 +212,6 @@
     transform: scale3d(1, 1.1, 1);
   }
 }
-.bounceZoomIn {
-  animation-name: bounceZoomIn;
-}
-@keyframes bounceZoomIn {
-  0%,
-  25%,
-  55%,
-  85%,
-  100% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
-  }
-
-  41%,
-  44% {
-    animation-timing-function: ease-in;
-    transform: scale(1.5);
-  }
-
-  70% {
-    animation-timing-function: ease-in;
-    transform: scale(1.3);
-  }
-
-  90% {
-    transform: scale(1.1);
-  }
-}
 .bounceZoomOut {
   animation-name: bounceZoomOut;
 }
@@ -860,6 +832,121 @@
   }
 }
 /**
+ * Module: Dramatic
+ * Filename: ca__Dramatic.css
+ */
+.curtainReveal {
+  animation-name: curtainReveal;
+  animation-timing-function: ease-out;
+  transform-origin: top center;
+  overflow: hidden;
+}
+@keyframes curtainReveal {
+  0% {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+  }
+
+  50%,
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+.curtainClose {
+  animation-name: curtainClose;
+  animation-timing-function: ease-in;
+  transform-origin: top center;
+}
+@keyframes curtainClose {
+  0% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+  }
+}
+.spiralTwistIn {
+  animation-name: spiralTwistIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes spiralTwistIn {
+  0% {
+    transform: scale(0) rotate(720deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.05) rotate(-30deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.spiralTwistOut {
+  animation-name: spiralTwistOut;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes spiralTwistOut {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.3) rotate(-360deg);
+    opacity: 0;
+  }
+}
+.spotlightFocus {
+  animation-name: spotlightFocus;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes spotlightFocus {
+  0% {
+    filter: brightness(0.2) blur(4px);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    filter: brightness(1) blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.spotlightFade {
+  animation-name: spotlightFade;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes spotlightFade {
+  0% {
+    filter: brightness(1) blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    filter: brightness(0.3) blur(6px);
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+/**
  * Module: Elastic Animation
  * Filename: ca__elastic.css
  */
@@ -1362,6 +1449,49 @@
   100% {
     transform: scale(1, 1);
   } /* Return to normal */
+}
+.rubberExpand {
+  animation-name: rubberExpand;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform;
+}
+@keyframes rubberExpand {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scaleX(1.3) scaleY(0.7);
+  }
+
+  60% {
+    transform: scaleX(0.9) scaleY(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.rubberShrink {
+  animation-name: rubberShrink;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes rubberShrink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scaleX(1.1) scaleY(0.8);
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
 }
 /**
  * Module: Elevate
@@ -2311,6 +2441,551 @@
   }
 }
 /**
+ * Module: Glitch
+ * Filename: ca__Glitch.css
+ */
+.microGlitch {
+  animation-name: microGlitch;
+  animation-timing-function: steps(1);
+  will-change: transform, opacity;
+}
+@keyframes microGlitch {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translate(-2px, 1px);
+  }
+
+  40% {
+    transform: translate(3px, -1px);
+  }
+
+  60% {
+    transform: translate(-1px, 2px);
+  }
+
+  80% {
+    transform: translate(1px, -2px);
+  }
+}
+.glitchPopIn {
+  animation-name: glitchPopIn;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  will-change: transform, opacity;
+}
+@keyframes glitchPopIn {
+  0% {
+    transform: scale(0.8);
+    filter: contrast(2) brightness(0.5);
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(1.2);
+    filter: contrast(1.5) brightness(1.5);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.95) translate(-2px, 2px);
+  }
+
+  70% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+.glitchExit {
+  animation-name: glitchExit;
+  animation-timing-function: steps(2);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  will-change: transform, opacity;
+}
+@keyframes glitchExit {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  30% {
+    transform: translate(4px, -2px);
+  }
+
+  60% {
+    transform: translate(-4px, 2px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-10px, 10px) scale(0.9);
+  }
+}
+.glitchJitter {
+  animation: glitchJitter 0.6s steps(2, end) infinite;
+}
+@keyframes glitchJitter {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(2px, -2px);
+  }
+
+  60% {
+    transform: translate(-1px, 1px);
+  }
+
+  80% {
+    transform: translate(1px, -1px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.glitchSlice {
+  animation: glitchSlice 1s infinite linear alternate;
+}
+@keyframes glitchSlice {
+  0% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+
+  20% {
+    clip-path: inset(10% 0 85% 0);
+    transform: translate(-5px, 0);
+  }
+
+  40% {
+    clip-path: inset(60% 0 15% 0);
+    transform: translate(5px, 0);
+  }
+
+  60% {
+    clip-path: inset(30% 0 40% 0);
+    transform: translate(-3px, 0);
+  }
+
+  80% {
+    clip-path: inset(45% 0 30% 0);
+    transform: translate(3px, 0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+}
+.glitchFlash {
+  animation: glitchFlash 0.15s steps(2, end) infinite;
+}
+@keyframes glitchFlash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+.glitchCollapseOut {
+  animation: glitchCollapseOut 0.7s ease-in both;
+}
+@keyframes glitchCollapseOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) skew(0deg, 0deg);
+    filter: brightness(1);
+  }
+
+  60% {
+    transform: scale(1.1) skew(5deg, -5deg);
+    filter: hue-rotate(60deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.8) skew(-10deg, 10deg);
+    filter: blur(6px) brightness(0) grayscale(1);
+  }
+}
+.glitchMatrixWave {
+  animation: glitchMatrixWave 1.5s infinite ease-in-out;
+}
+@keyframes glitchMatrixWave {
+  0% {
+    transform: translateY(0) scaleY(1);
+    filter: grayscale(0);
+  }
+
+  25% {
+    transform: translateY(-3px) scaleY(1.2);
+  }
+
+  50% {
+    transform: translateY(3px) scaleY(0.8);
+    filter: grayscale(1);
+  }
+
+  75% {
+    transform: translateY(-1px) scaleY(1.05);
+    filter: none;
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+.hologramPulse {
+  animation: hologramPulse 2.5s ease-in-out infinite;
+  color: #00ffe0;
+  text-shadow:
+    0 0 2px #00ffe0,
+    0 0 6px #00ffe0;
+}
+@keyframes hologramPulse {
+  0%,
+  100% {
+    opacity: 1;
+    filter: hue-rotate(0deg) blur(0px);
+  }
+
+  50% {
+    opacity: 0.85;
+    filter: hue-rotate(20deg) blur(1px);
+  }
+}
+.scanlineSweep {
+  position: relative;
+  overflow: hidden;
+}
+.scanlineSweep::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.06) 50%, transparent 100%);
+  animation: scanlineSweep 1.8s linear infinite;
+}
+@keyframes scanlineSweep {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+.typewriterCorrupt {
+  animation: typewriterCorrupt 1.5s steps(2, end) infinite;
+}
+@keyframes typewriterCorrupt {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+    filter: none;
+  }
+
+  25% {
+    transform: translate(-1px, 0);
+    filter: blur(1px) hue-rotate(30deg);
+  }
+
+  50% {
+    transform: translate(1px, 0);
+    filter: grayscale(0.5);
+  }
+
+  75% {
+    transform: translate(-0.5px, 0);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    filter: none;
+    opacity: 1;
+  }
+}
+.hologramWarp {
+  animation: hologramWarp 2.3s ease-in-out infinite;
+  filter: contrast(1.2) brightness(1.1);
+}
+@keyframes hologramWarp {
+  0% {
+    transform: skew(0deg, 0deg);
+    filter: brightness(1) hue-rotate(0deg);
+  }
+
+  25% {
+    transform: skew(1deg, -1deg);
+  }
+
+  50% {
+    transform: skew(-1.5deg, 1.5deg);
+    filter: hue-rotate(15deg);
+  }
+
+  75% {
+    transform: skew(0.5deg, -0.5deg);
+  }
+
+  100% {
+    transform: skew(0deg, 0deg);
+    filter: hue-rotate(0deg);
+  }
+}
+.glitchSliceYank {
+  animation: glitchSliceYank 1s infinite steps(2, end);
+}
+@keyframes glitchSliceYank {
+  0% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+
+  15% {
+    clip-path: inset(10% 0 80% 0);
+    transform: translateX(-5px);
+  }
+
+  30% {
+    clip-path: inset(60% 0 25% 0);
+    transform: translateX(4px);
+  }
+
+  45% {
+    clip-path: inset(40% 0 50% 0);
+    transform: translateX(-3px);
+  }
+
+  60% {
+    clip-path: inset(20% 0 70% 0);
+    transform: translateX(3px);
+  }
+
+  75% {
+    clip-path: inset(50% 0 30% 0);
+    transform: translateX(-2px);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+}
+.glitchSliceExitSharp {
+  animation: glitchSliceExitSharp 0.8s ease-in forwards;
+}
+@keyframes glitchSliceExitSharp {
+  0% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+  }
+
+  30% {
+    clip-path: inset(30% 0 30% 0);
+    transform: translateX(-4px);
+  }
+
+  60% {
+    clip-path: inset(60% 0 10% 0);
+    transform: translateX(6px);
+  }
+
+  100% {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+}
+.glitchSliceTilt {
+  animation: glitchSliceTilt 1.2s infinite linear;
+}
+@keyframes glitchSliceTilt {
+  0% {
+    clip-path: inset(0 0 0 0);
+    transform: skew(0deg, 0deg);
+  }
+
+  25% {
+    clip-path: inset(10% 0 80% 0);
+    transform: skew(2deg, 0);
+  }
+
+  50% {
+    clip-path: inset(30% 0 40% 0);
+    transform: skew(-2deg, 1deg);
+  }
+
+  75% {
+    clip-path: inset(5% 0 70% 0);
+    transform: skew(1.5deg, -0.5deg);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: skew(0deg, 0deg);
+  }
+}
+.glitchSliceExitTilt {
+  animation: glitchSliceExitTilt 1s ease-in forwards;
+}
+@keyframes glitchSliceExitTilt {
+  0% {
+    transform: skew(0deg, 0deg);
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+
+  40% {
+    transform: skew(-5deg, 1deg);
+    clip-path: inset(40% 0 40% 0);
+  }
+
+  70% {
+    transform: skew(8deg, -2deg);
+    clip-path: inset(60% 0 10% 0);
+  }
+
+  100% {
+    transform: skew(0deg, 0deg) scaleY(0.8);
+    clip-path: inset(100% 0 0 0);
+    opacity: 0;
+  }
+}
+.glitchSliceCrack {
+  animation: glitchSliceCrack 1.4s infinite;
+}
+@keyframes glitchSliceCrack {
+  0%,
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+
+  20% {
+    clip-path: inset(45% 0 45% 0);
+    transform: translateX(5px);
+  }
+
+  50% {
+    clip-path: inset(50% 0 40% 0);
+    transform: translateX(-5px);
+  }
+
+  70% {
+    clip-path: inset(48% 0 42% 0);
+    transform: translateX(3px);
+  }
+}
+.glitchSliceExitCollapse {
+  animation: glitchSliceExitCollapse 0.9s ease-in forwards;
+}
+@keyframes glitchSliceExitCollapse {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+    clip-path: inset(0 0 0 0);
+  }
+
+  40% {
+    transform: scaleY(0.9);
+    clip-path: inset(20% 0 20% 0);
+  }
+
+  70% {
+    transform: scaleY(0.6);
+    clip-path: inset(60% 0 10% 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    clip-path: inset(100% 0 0 0);
+  }
+}
+.glitchSliceDrop {
+  animation: glitchSliceDrop 2s infinite ease-in-out;
+}
+@keyframes glitchSliceDrop {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+
+  20% {
+    clip-path: inset(10% 0 85% 0);
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(3px);
+  }
+
+  40% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+  }
+}
+.glitchSliceStagger {
+  animation: glitchSliceStagger 3s steps(1, end) infinite;
+}
+@keyframes glitchSliceStagger {
+  0% {
+    clip-path: inset(0 0 0 0);
+    transform: none;
+  }
+
+  10% {
+    clip-path: inset(10% 0 70% 0);
+    transform: translateX(4px);
+  }
+
+  20% {
+    clip-path: inset(60% 0 20% 0);
+    transform: translateX(-3px);
+  }
+
+  30% {
+    clip-path: inset(35% 0 50% 0);
+    transform: translateX(2px);
+  }
+
+  40%,
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: none;
+  }
+}
+/**
  * Module: Hang And Drop
  * Filename: ca__HangAndDrop.css
  */
@@ -2936,6 +3611,712 @@
   }
 }
 /**
+ * Module: Magical FX Pack
+ * Filename: ca__imaginative.css
+ */
+.sparklePopIn {
+  animation-name: sparklePopIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  filter: brightness(1.5);
+  will-change: transform, opacity;
+}
+@keyframes sparklePopIn {
+  0% {
+    transform: scale(0.3) rotate(-15deg);
+    opacity: 0;
+    filter: brightness(3) blur(4px);
+  }
+
+  60% {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(1.8);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+    filter: none;
+    opacity: 1;
+  }
+}
+.wandReveal {
+  animation-name: wandReveal;
+  animation-timing-function: ease-out;
+  transform-origin: left center;
+  will-change: transform, opacity;
+}
+@keyframes wandReveal {
+  0% {
+    transform: translateX(-60%) rotate(-15deg);
+    opacity: 0;
+    filter: drop-shadow(0 0 8px gold);
+  }
+
+  80% {
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0);
+    filter: none;
+    opacity: 1;
+  }
+}
+.magicDustExit {
+  animation-name: magicDustExit;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes magicDustExit {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+
+  60% {
+    opacity: 0.5;
+    transform: scale(1.1) translateY(-10%);
+    filter: blur(4px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.2) translateY(-40%);
+    filter: blur(10px);
+  }
+}
+.scanReveal {
+  animation-name: scanReveal;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes scanReveal {
+  0% {
+    transform: scaleY(0) skewY(-20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scaleY(1.1) skewY(5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1) skewY(0deg);
+  }
+}
+.systemBootIn {
+  animation: systemBootIn 1.4s ease-out both;
+  transform-origin: top;
+  filter: grayscale(1);
+  will-change: transform, opacity;
+}
+@keyframes systemBootIn {
+  0% {
+    transform: scaleY(0.5) translateY(-30%);
+    filter: grayscale(1) blur(4px);
+    opacity: 0;
+  }
+
+  70% {
+    transform: scaleY(1.1);
+    filter: grayscale(0.3);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    filter: none;
+  }
+}
+.signalDropOut {
+  animation-name: signalDropOut;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes signalDropOut {
+  0% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+
+  50% {
+    transform: scale(1.05) translateY(-10%);
+    filter: brightness(1.5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20%);
+    filter: brightness(0.3);
+  }
+}
+.approveBounce {
+  animation-name: approveBounce;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes approveBounce {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.whisperFloatIn {
+  animation: whisperFloatIn 1.4s ease-out both;
+  transform-origin: center;
+}
+@keyframes whisperFloatIn {
+  0% {
+    transform: translateY(30%) scale(0.95);
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  70% {
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+.aetherGlowRise {
+  animation: aetherGlowRise 1.5s ease-out both;
+  transform-origin: bottom center;
+}
+@keyframes aetherGlowRise {
+  0% {
+    transform: translateY(80%) scale(0.8);
+    opacity: 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    box-shadow: none;
+  }
+}
+.glintReveal {
+  animation-name: glintReveal;
+  animation-timing-function: ease-out;
+  position: relative;
+  overflow: hidden;
+}
+.glintReveal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+  transform: skewX(-30deg);
+  animation: glintSweep 1s ease-out forwards;
+}
+@keyframes glintSweep {
+  to {
+    left: 125%;
+  }
+}
+.enchantFloatDrop {
+  animation: enchantFloatDrop 1.6s ease-in-out both;
+  transform-origin: center;
+}
+@keyframes enchantFloatDrop {
+  0% {
+    transform: translateY(-100%) scale(1.2);
+    opacity: 0;
+    filter: brightness(1.5) blur(3px);
+  }
+
+  70% {
+    transform: translateY(5%) scale(1.05);
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+/**
+ * Module: Moon 
+ * Filename: ca__MoonFade.css
+ */
+.moonEclipseIn {
+  animation: moonEclipseIn 1.6s ease-out both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes moonEclipseIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.3) rotate(10deg);
+    filter: brightness(0) blur(12px);
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: none;
+    clip-path: circle(100% at 50% 50%);
+  }
+}
+.moonEclipseOut {
+  animation: moonEclipseOut 1.4s ease-in both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes moonEclipseOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    clip-path: circle(100% at 50% 50%);
+    filter: none;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.3) rotate(-10deg);
+    clip-path: circle(0% at 50% 50%);
+    filter: brightness(0) blur(10px);
+  }
+}
+.moonSlideInCrescent {
+  animation: moonSlideInCrescent 1.4s ease-out both;
+  clip-path: ellipse(0% 100% at 0% 50%);
+  will-change: transform, opacity;
+}
+@keyframes moonSlideInCrescent {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+    clip-path: ellipse(0% 100% at 0% 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
+}
+.moonSliceReveal {
+  animation: moonSliceReveal 1.2s ease-out both;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  will-change: transform, opacity;
+}
+@keyframes moonSliceReveal {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    opacity: 0;
+    transform: scale(1.8);
+    filter: blur(4px);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+}
+.crescentOrbitReveal {
+  animation: crescentOrbitReveal 1.6s ease-out both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes crescentOrbitReveal {
+  0% {
+    transform: translateX(-100%) rotate(-45deg) scale(0.8);
+    opacity: 0;
+    clip-path: ellipse(0% 100% at 0% 50%);
+  }
+
+  60% {
+    opacity: 1;
+    clip-path: ellipse(60% 100% at 50% 50%);
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
+}
+.moonSliceUp {
+  animation: moonSliceUp 1.4s ease-out both;
+  clip-path: inset(100% 0 0 0);
+  will-change: transform, opacity;
+}
+@keyframes moonSliceUp {
+  0% {
+    clip-path: inset(100% 0 0 0);
+    transform: translateY(20%);
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  100% {
+    clip-path: inset(0% 0 0 0);
+    transform: translateY(0%);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonPhaseReveal {
+  animation: moonPhaseReveal 1.6s ease-out both;
+  clip-path: circle(0% at 50% 50%);
+  will-change: transform, opacity;
+}
+@keyframes moonPhaseReveal {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+    transform: scale(0.9);
+    filter: brightness(0.2) blur(8px);
+  }
+
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+}
+.lunarVeilIn {
+  animation: lunarVeilIn 1.5s ease-out both;
+  clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 100%);
+  will-change: transform, opacity;
+}
+@keyframes lunarVeilIn {
+  0% {
+    clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 100%);
+    opacity: 0;
+    transform: scale(1.05);
+    filter: blur(5px);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+}
+.moonFade {
+  animation-name: moonFade;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes moonFade {
+  0% {
+    opacity: 0;
+    filter: brightness(0.3) blur(4px);
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    filter: none;
+    transform: scale(1);
+  }
+}
+.moonFadeUp {
+  animation-name: moonFadeUp;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeUp {
+  0% {
+    transform: translateY(20%) scale(0.95);
+    opacity: 0;
+    filter: brightness(0.4) blur(6px);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonFadeDown {
+  animation-name: moonFadeDown;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeDown {
+  0% {
+    transform: translateY(-20%) scale(1.05);
+    opacity: 0;
+    filter: brightness(0.4) blur(6px);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonFadeLeft {
+  animation: moonFadeLeft 2s ease-out both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeLeft {
+  0% {
+    transform: translateX(-30%) scale(0.95);
+    opacity: 0;
+    filter: brightness(0.4) blur(5px);
+  }
+
+  100% {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonFadeRight {
+  animation: moonFadeRight 2s ease-out both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeRight {
+  0% {
+    transform: translateX(30%) scale(0.95);
+    opacity: 0;
+    filter: brightness(0.4) blur(5px);
+  }
+
+  100% {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonFadeScaleUp {
+  animation: moonFadeScaleUp 2.1s ease-out both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeScaleUp {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+    filter: brightness(0.3) blur(6px);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonFadeSlow {
+  animation: moonFadeSlow 3.5s ease-out both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeSlow {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+    filter: brightness(0.25) blur(8px);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonFadeStrong {
+  animation: moonFadeStrong 1.5s ease-out both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeStrong {
+  0% {
+    transform: scale(1.1) rotate(-2deg);
+    opacity: 0;
+    filter: brightness(0.2) blur(12px);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonFadeOutUp {
+  animation: moonFadeOutUp 1.6s ease-in both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    filter: none;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-30%) scale(0.9);
+    filter: brightness(0.4) blur(8px);
+  }
+}
+.moonFadeOutDown {
+  animation: moonFadeOutDown 1.6s ease-in both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    filter: none;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30%) scale(0.9);
+    filter: brightness(0.4) blur(8px);
+  }
+}
+.moonFadeOutLeft {
+  animation: moonFadeOutLeft 1.5s ease-in both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+    filter: none;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-30%) scale(0.9);
+    filter: brightness(0.4) blur(6px);
+  }
+}
+.moonFadeOutRight {
+  animation: moonFadeOutRight 1.5s ease-in both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+    filter: none;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(30%) scale(0.9);
+    filter: brightness(0.4) blur(6px);
+  }
+}
+.moonFadeOutScale {
+  animation: moonFadeOutScale 1.7s ease-in both;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeOutScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    filter: none;
+  }
+
+  100% {
+    transform: scale(0.85);
+    opacity: 0;
+    filter: brightness(0.2) blur(10px);
+  }
+}
+.moonRippleGlow {
+  animation: moonRippleGlow 2.8s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes moonRippleGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+}
+.moonDustFloat {
+  animation: moonDustFloat 2.2s ease-out both;
+  will-change: transform, opacity;
+}
+@keyframes moonDustFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20%) scale(1.1);
+    filter: blur(8px) grayscale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    filter: none;
+  }
+}
+.moonTiltRise {
+  animation: moonTiltRise 1.7s ease-out both;
+  transform-origin: bottom left;
+  will-change: transform, opacity;
+}
+@keyframes moonTiltRise {
+  0% {
+    transform: translateY(60%) rotate(-15deg);
+    opacity: 0;
+    filter: brightness(0.4) blur(5px);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+    filter: none;
+  }
+}
+.moonCyclePulse {
+  animation: moonCyclePulse 3.5s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+@keyframes moonCyclePulse {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.3);
+  }
+}
+/**
  * Module: Move From
  * Filename: ca__MoveFrom.css
  */
@@ -3016,6 +4397,91 @@
   }
 }
 /**
+ * Module: Nature
+ * Filename: ca__Nature.css
+ */
+.petalDrop {
+  animation-name: petalDrop;
+  animation-timing-function: ease-out;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+@keyframes petalDrop {
+  0% {
+    transform: translateY(-100%) rotateZ(15deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(30%) rotateZ(-10deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(90%) rotateZ(5deg);
+  }
+
+  100% {
+    transform: translateY(120%) rotateZ(0deg);
+    opacity: 0;
+  }
+}
+.petalLiftOut {
+  animation-name: petalLiftOut;
+  animation-timing-function: ease-in;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+@keyframes petalLiftOut {
+  0% {
+    transform: translateY(0%) rotateZ(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100%) rotateZ(-20deg);
+    opacity: 0;
+  }
+}
+.leafFloatIn {
+  animation-name: leafFloatIn;
+  animation-timing-function: ease-out;
+  transform-origin: top left;
+  will-change: transform, opacity;
+}
+@keyframes leafFloatIn {
+  0% {
+    transform: translateX(-60%) rotate(-45deg) scale(0.8);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(10%) rotate(20deg) scale(1.05);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+  }
+}
+.leafFloatAway {
+  animation-name: leafFloatAway;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes leafFloatAway {
+  0% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(80%) rotate(45deg) scale(0.6);
+    opacity: 0;
+  }
+}
+/**
  * Module: Perspective
  * Filename: ca__Perspective.css
  */
@@ -3085,6 +4551,90 @@
   100% {
     transform: translateY(0); /* Settles at final position */
     opacity: 1;
+  }
+}
+/**
+ * Module: Playful
+ * Filename: ca__Playful.css
+ */
+.snapGridEntry {
+  animation-name: snapGridEntry;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.5, 1);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes snapGridEntry {
+  0% {
+    transform: scale(0.5) rotate(-20deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+.snapGridExit {
+  animation-name: snapGridExit;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes snapGridExit {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.3) rotate(15deg);
+    opacity: 0;
+  }
+}
+.bounceInWaddle {
+  animation-name: bounceInWaddle;
+  animation-timing-function: ease-out;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+@keyframes bounceInWaddle {
+  0% {
+    transform: translateY(100%) rotate(-25deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(-10%) rotate(15deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(3%) rotate(-8deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+.bounceOutWaddle {
+  animation-name: bounceOutWaddle;
+  animation-timing-function: ease-in;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+@keyframes bounceOutWaddle {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+  }
+
+  30% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: translateY(120%) rotate(-20deg);
+    opacity: 0;
   }
 }
 /**
@@ -4963,6 +6513,158 @@
   }
 }
 /**
+ * Module: Text Animation
+ * Filename: ca__text.css
+ */
+.effect3d {
+  animation-name: effect3d;
+}
+@keyframes effect3d {
+  to {
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0, 0, 0, 0.1),
+      0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3),
+      0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+.spring {
+  animation-name: springy;
+}
+@keyframes springy {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.4, 0.6);
+  }
+
+  50% {
+    transform: scale(0.8, 1.3);
+  }
+
+  70% {
+    transform: scale(1.2, 0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.neonGlow {
+  animation: neonGlow 1.5s ease-in-out infinite;
+}
+@keyframes neonGlow {
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #f0f,
+      0 0 20px #f0f;
+  }
+
+  50% {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #0ff,
+      0 0 30px #0ff;
+  }
+}
+.colorPulse {
+  animation: colorPulse 2s ease-in-out infinite;
+}
+@keyframes colorPulse {
+  0%,
+  100% {
+    color: #fff;
+  }
+
+  50% {
+    color: #ff4081;
+  }
+}
+.trackExpand {
+  animation-name: trackExpand;
+}
+@keyframes trackExpand {
+  0% {
+    transform: translateX(0);
+    letter-spacing: 0;
+  }
+
+  100% {
+    transform: translateX(5px);
+    letter-spacing: 0.5em;
+  }
+}
+.trackCollapse {
+  animation-name: trackCollapse;
+}
+@keyframes trackCollapse {
+  0% {
+    transform: translateX(5px);
+    letter-spacing: 0.5em;
+  }
+
+  100% {
+    transform: translateX(0);
+    letter-spacing: 0;
+  }
+}
+.gradientText {
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 3s linear infinite;
+  background-size: 200%;
+}
+@keyframes gradientText {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+.rainbowText {
+  animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+
+  20% {
+    color: orange;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  60% {
+    color: green;
+  }
+
+  80% {
+    color: blue;
+  }
+
+  100% {
+    color: violet;
+  }
+}
+/**
  * Module: Zoom In
  * Filename: ca__ZoomIn.css
  */
@@ -4973,6 +6675,34 @@
   from {
     transform: scale(10);
     opacity: 0;
+  }
+}
+.bounceZoomIn {
+  animation-name: bounceZoomIn;
+}
+@keyframes bounceZoomIn {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: scale(1.5);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale(1.3);
+  }
+
+  90% {
+    transform: scale(1.1);
   }
 }
 .zoomInLeft {
@@ -5364,154 +7094,640 @@
   }
 }
 /**
- * Module: Text Animation
- * Filename: ca__text.css
+ * Module: WOW
+ * Filename: ca__wow.css
  */
-.effect3d {
-  animation-name: effect3d;
+.blurTrailIn {
+  animation-name: blurTrailIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+  filter: blur(8px);
 }
-@keyframes effect3d {
-  to {
-    text-shadow:
-      0 1px 0 #ccc,
-      0 2px 0 #c9c9c9,
-      0 3px 0 #bbb,
-      0 4px 0 #b9b9b9,
-      0 5px 0 #aaa,
-      0 6px 1px rgba(0, 0, 0, 0.1),
-      0 0 5px rgba(0, 0, 0, 0.1),
-      0 1px 3px rgba(0, 0, 0, 0.3),
-      0 3px 5px rgba(0, 0, 0, 0.2),
-      0 5px 10px rgba(0, 0, 0, 0.25),
-      0 10px 10px rgba(0, 0, 0, 0.2),
-      0 20px 20px rgba(0, 0, 0, 0.15);
-  }
-}
-.spring {
-  animation-name: springy;
-}
-@keyframes springy {
+@keyframes blurTrailIn {
   0% {
-    transform: scale(1);
-  }
-
-  30% {
-    transform: scale(1.4, 0.6);
-  }
-
-  50% {
-    transform: scale(0.8, 1.3);
-  }
-
-  70% {
-    transform: scale(1.2, 0.8);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.neonGlow {
-  animation: neonGlow 1.5s ease-in-out infinite;
-}
-@keyframes neonGlow {
-  0%,
-  100% {
-    text-shadow:
-      0 0 5px #fff,
-      0 0 10px #f0f,
-      0 0 20px #f0f;
-  }
-
-  50% {
-    text-shadow:
-      0 0 10px #fff,
-      0 0 20px #0ff,
-      0 0 30px #0ff;
-  }
-}
-.colorPulse {
-  animation: colorPulse 2s ease-in-out infinite;
-}
-@keyframes colorPulse {
-  0%,
-  100% {
-    color: #fff;
-  }
-
-  50% {
-    color: #ff4081;
-  }
-}
-.trackExpand {
-  animation-name: trackExpand;
-}
-@keyframes trackExpand {
-  0% {
-    transform: translateX(0);
-    letter-spacing: 0;
-  }
-
-  100% {
-    transform: translateX(5px);
-    letter-spacing: 0.5em;
-  }
-}
-.trackCollapse {
-  animation-name: trackCollapse;
-}
-@keyframes trackCollapse {
-  0% {
-    transform: translateX(5px);
-    letter-spacing: 0.5em;
-  }
-
-  100% {
-    transform: translateX(0);
-    letter-spacing: 0;
-  }
-}
-.gradienText {
-  background: linear-gradient(90deg, #ff0080, #7928ca);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: moveGradient 3s linear infinite;
-  background-size: 200%;
-}
-@keyframes moveGradient {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 200%;
-  }
-}
-.rainbowText {
-  animation: rainbow 3s linear infinite;
-}
-@keyframes rainbow {
-  0% {
-    color: red;
-  }
-
-  20% {
-    color: orange;
-  }
-
-  40% {
-    color: yellow;
-  }
-
-  60% {
-    color: green;
+    transform: translateY(60%) scale(1.2);
+    filter: blur(12px);
+    opacity: 0;
   }
 
   80% {
-    color: blue;
+    filter: blur(3px);
   }
 
   100% {
-    color: violet;
+    transform: translateY(0%) scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.blurTrailOut {
+  animation-name: blurTrailOut;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes blurTrailOut {
+  0% {
+    transform: translateY(0%);
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-60%) scale(0.95);
+    filter: blur(10px);
+    opacity: 0;
+  }
+}
+.layerPeelIn {
+  animation-name: layerPeelIn;
+  animation-timing-function: ease-out;
+  transform-origin: top left;
+  will-change: transform, opacity;
+  perspective: 800px;
+}
+@keyframes layerPeelIn {
+  0% {
+    transform: rotateX(-90deg) translateY(-100%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateX(20deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0deg) translateY(0%);
+  }
+}
+.layerPeelOut {
+  animation-name: layerPeelOut;
+  animation-timing-function: ease-in;
+  transform-origin: bottom right;
+  will-change: transform, opacity;
+  perspective: 800px;
+}
+@keyframes layerPeelOut {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(90deg) translateY(100%);
+    opacity: 0;
+  }
+}
+.squishPop {
+  animation-name: squishPop;
+  animation-timing-function: cubic-bezier(0.25, 1.25, 0.5, 1.2);
+  animation-direction: normal;
+  will-change: transform, opacity;
+}
+@keyframes squishPop {
+  0% {
+    transform: scale(0.2, 1.6);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.3, 0.7);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.gravityPullIn {
+  animation-name: gravityPullIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes gravityPullIn {
+  0% {
+    transform: scale(2) translateY(-100%) rotate(-10deg);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.05) translateY(0%) rotate(2deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.slinkyStretch {
+  animation-name: slinkyStretch;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.5, 1);
+  will-change: transform, opacity;
+}
+@keyframes slinkyStretch {
+  0% {
+    transform: scaleY(0.2);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scaleY(1.3);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+.wobbleEntry {
+  animation-name: wobbleEntry;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes wobbleEntry {
+  0% {
+    transform: rotate(-30deg) scale(0.5);
+    opacity: 0;
+  }
+
+  40% {
+    transform: rotate(15deg) scale(1.05);
+    opacity: 1;
+  }
+
+  70% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+.peelDropIn {
+  animation-name: peelDropIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: top left;
+  perspective: 800px;
+}
+@keyframes peelDropIn {
+  0% {
+    transform: rotateX(-80deg) rotateZ(-10deg) translateY(-100%);
+    opacity: 0;
+  }
+
+  80% {
+    transform: rotateX(15deg) rotateZ(3deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0) rotateZ(0) translateY(0);
+  }
+}
+.vibeInPop {
+  animation-name: vibeInPop;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+@keyframes vibeInPop {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+    filter: brightness(1.8);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.05) rotate(5deg);
+    filter: brightness(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.flickerPop {
+  animation-name: flickerPop;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes flickerPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+    filter: brightness(0);
+  }
+
+  25% {
+    opacity: 1;
+    filter: brightness(2);
+  }
+
+  30% {
+    filter: brightness(0.4);
+  }
+
+  50% {
+    filter: brightness(1);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+.inertiaSlideIn {
+  animation-name: inertiaSlideIn;
+  animation-timing-function: cubic-bezier(0.15, 0.85, 0.3, 1.2);
+  will-change: transform, opacity;
+  transform-origin: left center;
+}
+@keyframes inertiaSlideIn {
+  0% {
+    transform: translateX(-120%) scaleX(1.4);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(10%) scaleX(0.95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%) scaleX(1);
+  }
+}
+.dropSpinIn {
+  animation-name: dropSpinIn;
+  animation-timing-function: ease-out;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+@keyframes dropSpinIn {
+  0% {
+    transform: rotateZ(-180deg) translateY(-200%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateZ(20deg) translateY(10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateZ(0deg) translateY(0%);
+  }
+}
+.breezeLift {
+  animation-name: breezeLift;
+  animation-timing-function: ease-in-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+@keyframes breezeLift {
+  0% {
+    transform: translateY(40%) rotate(-3deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-5%) rotate(2deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+  }
+}
+.featherFloat {
+  animation-name: featherFloat;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes featherFloat {
+  0% {
+    transform: translateY(-120%) rotate(0deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(10%) rotate(10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(0%) rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.powerUpPop {
+  animation-name: powerUpPop;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes powerUpPop {
+  0% {
+    transform: scale(0.3);
+    filter: hue-rotate(180deg) brightness(2);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    filter: hue-rotate(90deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+.levelUnlock {
+  animation-name: levelUnlock;
+  animation-timing-function: ease-in-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+@keyframes levelUnlock {
+  0% {
+    transform: scale(0.8) rotateX(90deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2) rotateX(-30deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotateX(0deg);
+  }
+}
+.softPulseIdle {
+  animation-name: softPulseIdle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+@keyframes softPulseIdle {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+}
+.shimmerWaveIdle {
+  animation-name: shimmerWaveIdle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@keyframes shimmerWaveIdle {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+.gearSnapIn {
+  animation-name: gearSnapIn;
+  animation-timing-function: cubic-bezier(0.3, 1.6, 0.6, 1);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes gearSnapIn {
+  0% {
+    transform: scale(0.6) rotate(-90deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.1) rotate(30deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.joyBounceIn {
+  animation-name: joyBounceIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes joyBounceIn {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(1.2) rotate(10deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(0.95) rotate(-5deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.blushSlideIn {
+  animation-name: blushSlideIn;
+  animation-timing-function: ease-out;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+@keyframes blushSlideIn {
+  0% {
+    transform: translateY(100%) scale(0.9) rotate(-6deg);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-4%) scale(1.05) rotate(3deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) scale(1) rotate(0deg);
+  }
+}
+.stampSmash {
+  animation-name: stampSmash;
+  animation-timing-function: cubic-bezier(0.25, 1.8, 0.4, 1);
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+@keyframes stampSmash {
+  0% {
+    transform: scale(2.4) rotate(15deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(0.85) rotate(-8deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.comboLevelRise {
+  animation-name: comboLevelRise;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: bottom center;
+}
+@keyframes comboLevelRise {
+  0% {
+    transform: translateY(40%) scale(0.8) rotateX(40deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(-8%) scale(1.1) rotateX(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) scale(1) rotateX(0deg);
+  }
+}
+.wiggleReactive {
+  animation-name: wiggleReactive;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+@keyframes wiggleReactive {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(4deg);
+  }
+
+  50% {
+    transform: rotate(-4deg);
+  }
+
+  75% {
+    transform: rotate(2deg);
+  }
+}
+.pulseGlow {
+  animation-name: pulseGlow;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.cosmicReveal {
+  animation-name: cosmicReveal;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+  filter: blur(6px) brightness(2);
+}
+@keyframes cosmicReveal {
+  0% {
+    transform: scale(1.8);
+    filter: blur(10px) brightness(4);
+    opacity: 0;
+  }
+
+  70% {
+    filter: blur(1px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+.scribbleGlowIn {
+  animation-name: scribbleGlowIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  filter: blur(5px);
+}
+@keyframes scribbleGlowIn {
+  0% {
+    transform: scale(1.4) rotate(-5deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    filter: none;
+  }
+}
+.panelUnfold {
+  animation-name: panelUnfold;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: top center;
+}
+@keyframes panelUnfold {
+  0% {
+    transform: scaleY(0.2) rotateX(-90deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scaleY(1.05) rotateX(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1) rotateX(0);
   }
 }

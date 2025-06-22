@@ -52,9 +52,9 @@
   }
 }
 /**
- * Module: Zoom In
- * Filename: ca__ZoomIn.css
+ * Module: Text Animation
+ * Filename: ca__text.css
  */
-.ca__fx-zoomIn {
-  animation-name: zoomIn;
+.ca__fx-effect3d {
+  animation-name: effect3d;
 }

@@ -1,6 +1,6 @@
 ## [6.4.0] - 2025-06-18
 
-### ✨ Added
+### Added
 
 - FlipTwist entry animations:
 
@@ -23,7 +23,7 @@
   - `ca__fx-flipTwistOutTop`
   - `ca__fx-flipTwistOutZoom`
 
-### 🧠 Notes
+### Notes
 
 - All animations use `transform` and `opacity` for optimal GPU performance
 - Hover variants use `transition` for smooth interactivity
