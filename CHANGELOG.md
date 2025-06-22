@@ -1,4 +1,18 @@
-## [6.4.0] - 2025-06-18
+## [6.5.0] - 2025-06-22
+
+### Added
+
+- Introduced seven new animation groups to expand expressive capabilities:
+
+  - **Dramatic**: Intense, high-energy effects for theatrical entrances and exits.
+  - **Glitch**: Digital distortion, frame skip, and corruption-style animations.
+  - **Magical**: Whimsical and enchanting effects like sparkles, shimmer, and reveal glows.
+  - **Moon**: Dreamy and surreal animations inspired by lunar motion and light play.
+  - **Nature**: Organic movements mimicking wind, water, leaves, and natural rhythms.
+  - **Playful**: Bouncy, humorous, and childlike animations with exaggerated motion.
+  - **WOW**: Over-the-top effects with high visual impact and strong visual contrast.
+
+  ## [6.4.0] - 2025-06-18
 
 ### Added
 
