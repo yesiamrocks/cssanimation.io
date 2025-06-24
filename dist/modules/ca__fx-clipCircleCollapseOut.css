@@ -38,7 +38,9 @@
 /* stylelint-enable */
 
 .ca__fx-clipCircleCollapseOut {
-  animation: clipCircleCollapseOut 0.8s ease-in forwards;
+  animation: clipCircleCollapseOut 3s ease-in both;
+  clip-path: circle(150% at 50% 50%);
+  will-change: clip-path;
 }
 
 @keyframes clipCircleCollapseOut {

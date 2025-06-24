@@ -46,10 +46,12 @@
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     opacity: 0;
   }
+
   50% {
     clip-path: polygon(0 0, 80% 0, 80% 100%, 0 100%);
     opacity: 0.6;
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 1;

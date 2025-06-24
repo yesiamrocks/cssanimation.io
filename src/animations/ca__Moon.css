@@ -1,6 +1,6 @@
 /**
  * Module: Moon 
- * Filename: ca__MoonFade.css
+ * Filename: ca__Moon.css
  */
 
 .moonEclipseIn {
@@ -89,17 +89,41 @@
   }
 }
 
-.crescentOrbitReveal {
-  animation: crescentOrbitReveal 1.6s ease-out both;
+.crescentOrbitRevealLeft {
+  animation: crescentOrbitRevealLeft 1.6s ease-out both;
   transform-origin: center;
   will-change: transform, opacity;
 }
 
-@keyframes crescentOrbitReveal {
+@keyframes crescentOrbitRevealLeft {
   0% {
     transform: translateX(-100%) rotate(-45deg) scale(0.8);
     opacity: 0;
     clip-path: ellipse(0% 100% at 0% 50%);
+  }
+
+  60% {
+    opacity: 1;
+    clip-path: ellipse(60% 100% at 50% 50%);
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
+}
+
+.crescentOrbitRevealRight {
+  animation: crescentOrbitRevealRight 1.6s ease-out both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes crescentOrbitRevealRight {
+  0% {
+    transform: translateX(100%) rotate(45deg) scale(0.8);
+    opacity: 0;
+    clip-path: ellipse(0% 100% at 100% 50%);
   }
 
   60% {
@@ -176,259 +200,6 @@
     opacity: 1;
     transform: scale(1);
     filter: none;
-  }
-}
-
-.moonFade {
-  animation-name: moonFade;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFade {
-  0% {
-    opacity: 0;
-    filter: brightness(0.3) blur(4px);
-    transform: scale(0.95);
-  }
-
-  100% {
-    opacity: 1;
-    filter: none;
-    transform: scale(1);
-  }
-}
-
-.moonFadeUp {
-  animation-name: moonFadeUp;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeUp {
-  0% {
-    transform: translateY(20%) scale(0.95);
-    opacity: 0;
-    filter: brightness(0.4) blur(6px);
-  }
-
-  100% {
-    transform: translateY(0%) scale(1);
-    opacity: 1;
-    filter: none;
-  }
-}
-
-.moonFadeDown {
-  animation-name: moonFadeDown;
-  animation-duration: 1.8s;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeDown {
-  0% {
-    transform: translateY(-20%) scale(1.05);
-    opacity: 0;
-    filter: brightness(0.4) blur(6px);
-  }
-
-  100% {
-    transform: translateY(0%) scale(1);
-    opacity: 1;
-    filter: none;
-  }
-}
-
-.moonFadeLeft {
-  animation: moonFadeLeft 2s ease-out both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeLeft {
-  0% {
-    transform: translateX(-30%) scale(0.95);
-    opacity: 0;
-    filter: brightness(0.4) blur(5px);
-  }
-
-  100% {
-    transform: translateX(0%) scale(1);
-    opacity: 1;
-    filter: none;
-  }
-}
-
-.moonFadeRight {
-  animation: moonFadeRight 2s ease-out both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeRight {
-  0% {
-    transform: translateX(30%) scale(0.95);
-    opacity: 0;
-    filter: brightness(0.4) blur(5px);
-  }
-
-  100% {
-    transform: translateX(0%) scale(1);
-    opacity: 1;
-    filter: none;
-  }
-}
-
-.moonFadeScaleUp {
-  animation: moonFadeScaleUp 2.1s ease-out both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeScaleUp {
-  0% {
-    transform: scale(0.85);
-    opacity: 0;
-    filter: brightness(0.3) blur(6px);
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-    filter: none;
-  }
-}
-
-.moonFadeSlow {
-  animation: moonFadeSlow 3.5s ease-out both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeSlow {
-  0% {
-    transform: scale(0.9);
-    opacity: 0;
-    filter: brightness(0.25) blur(8px);
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-    filter: none;
-  }
-}
-
-.moonFadeStrong {
-  animation: moonFadeStrong 1.5s ease-out both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeStrong {
-  0% {
-    transform: scale(1.1) rotate(-2deg);
-    opacity: 0;
-    filter: brightness(0.2) blur(12px);
-  }
-
-  100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-    filter: none;
-  }
-}
-
-.moonFadeOutUp {
-  animation: moonFadeOutUp 1.6s ease-in both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeOutUp {
-  0% {
-    opacity: 1;
-    transform: translateY(0%) scale(1);
-    filter: none;
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(-30%) scale(0.9);
-    filter: brightness(0.4) blur(8px);
-  }
-}
-
-.moonFadeOutDown {
-  animation: moonFadeOutDown 1.6s ease-in both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeOutDown {
-  0% {
-    opacity: 1;
-    transform: translateY(0%) scale(1);
-    filter: none;
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(30%) scale(0.9);
-    filter: brightness(0.4) blur(8px);
-  }
-}
-
-.moonFadeOutLeft {
-  animation: moonFadeOutLeft 1.5s ease-in both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeOutLeft {
-  0% {
-    opacity: 1;
-    transform: translateX(0%) scale(1);
-    filter: none;
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(-30%) scale(0.9);
-    filter: brightness(0.4) blur(6px);
-  }
-}
-
-.moonFadeOutRight {
-  animation: moonFadeOutRight 1.5s ease-in both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeOutRight {
-  0% {
-    opacity: 1;
-    transform: translateX(0%) scale(1);
-    filter: none;
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(30%) scale(0.9);
-    filter: brightness(0.4) blur(6px);
-  }
-}
-
-.moonFadeOutScale {
-  animation: moonFadeOutScale 1.7s ease-in both;
-  will-change: transform, opacity;
-}
-
-@keyframes moonFadeOutScale {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-    filter: none;
-  }
-
-  100% {
-    transform: scale(0.85);
-    opacity: 0;
-    filter: brightness(0.2) blur(10px);
   }
 }
 

@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-clipDiagonalWipeIn {
-  animation: clipDiagonalWipeIn 1s ease-in-out both;
+  animation-name: clipDiagonalWipeIn;
 }
 
 @keyframes clipDiagonalWipeIn {
@@ -46,6 +46,7 @@
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     opacity: 0;
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     opacity: 1;

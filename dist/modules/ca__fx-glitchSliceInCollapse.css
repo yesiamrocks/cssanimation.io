@@ -39,7 +39,7 @@
 
 .ca__fx-glitchSliceInCollapse {
   animation-name: glitchSliceInCollapse;
-  animation-timing-function: ease-out;
+  animation-timing-function: steps(5 end);
 }
 
 @keyframes glitchSliceInCollapse {

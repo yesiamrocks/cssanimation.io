@@ -39,17 +39,60 @@
 
 .ca__fx-dataTypeCascadeOut {
   animation-name: dataTypeCascadeOut;
+  animation-timing-function: steps(10, end);
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
 }
 
 @keyframes dataTypeCascadeOut {
   0% {
-    clip-path: inset(0 0 0 0);
+    clip-path: inset(0% 0 0 0);
     opacity: 1;
   }
 
+  10% {
+    clip-path: inset(10% 0 0 0);
+    opacity: 0.9;
+  }
+
+  20% {
+    clip-path: inset(20% 0 0 0);
+    opacity: 0.85;
+  }
+
+  30% {
+    clip-path: inset(30% 0 0 0);
+    opacity: 0.75;
+  }
+
+  40% {
+    clip-path: inset(40% 0 0 0);
+    opacity: 0.65;
+  }
+
+  50% {
+    clip-path: inset(50% 0 0 0);
+    opacity: 0.55;
+  }
+
   60% {
-    clip-path: inset(20% 0 60% 0);
-    opacity: 0.4;
+    clip-path: inset(60% 0 0 0);
+    opacity: 0.45;
+  }
+
+  70% {
+    clip-path: inset(70% 0 0 0);
+    opacity: 0.35;
+  }
+
+  80% {
+    clip-path: inset(80% 0 0 0);
+    opacity: 0.2;
+  }
+
+  90% {
+    clip-path: inset(90% 0 0 0);
+    opacity: 0.1;
   }
 
   100% {

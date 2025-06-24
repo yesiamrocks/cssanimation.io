@@ -66,10 +66,10 @@
   }
 }
 /**
- * Module: Clip-Path Animations 
+ * Module: Clip Path Animations 
  * Filename: ca__Clip-Path.css
  */
 .ca__fx-clipCircleExpandIn {
-  animation: clipCircleExpandIn 1s ease-out both;
+  animation: clipCircleExpandIn 3s ease-out;
   clip-path: circle(0% at 50% 50%);
 }

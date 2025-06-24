@@ -38,17 +38,16 @@
 /* stylelint-enable */
 
 .ca__fx-clipCircleExpandIn {
-  animation: clipCircleExpandIn 1s ease-out both;
+  animation: clipCircleExpandIn 3s ease-out;
   clip-path: circle(0% at 50% 50%);
 }
 
 @keyframes clipCircleExpandIn {
   0% {
     clip-path: circle(0% at 50% 50%);
-    opacity: 0;
   }
+
   100% {
     clip-path: circle(150% at 50% 50%);
-    opacity: 1;
   }
 }

@@ -1,0 +1,63 @@
+/*!
+ * Module: ca__runeMorphCycle Animation
+ * Usage: <div class="cssanimation ca__fx-ca__runeMorphCycle">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-ca__runeMorphCycle {
+  animation: ca__runeMorphCycle 2s ease-in-out infinite alternate;
+  border-radius: 60% 40% 70% 30% / 60% 40% 60% 40%;
+}
+
+@keyframes ca__runeMorphCycle {
+  0% {
+    border-radius: 60% 40% 70% 30% / 60% 40% 60% 40%;
+  }
+  50% {
+    border-radius: 50% 50% 40% 60% / 50% 60% 40% 50%;
+  }
+  100% {
+    border-radius: 70% 30% 50% 50% / 60% 40% 50% 50%;
+  }
+}
+/**
+ * Module: Elastic Animation
+ * Filename: ca__elastic.css
+ */
+.ca__fx-elasticArise {
+  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
+  transform-origin: bottom center; /* Important for vertical scaling */
+}

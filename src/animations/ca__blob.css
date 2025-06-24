@@ -1,0 +1,287 @@
+/**
+ * Module: Blob
+ * Filename: ca__blob.css
+ */
+
+.blobJumpMorph {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 50% 50%, #00f0ff, #0099cc);
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  animation: blobJumpMorph 2.2s ease-in-out infinite;
+}
+
+@keyframes blobJumpMorph {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  }
+
+  25% {
+    transform: translateY(-30%) scale(1.1, 0.9);
+    border-radius: 50% 40% 60% 50% / 40% 60% 40% 60%;
+  }
+
+  50% {
+    transform: translateY(0) scale(0.95, 1.05);
+    border-radius: 60% 50% 40% 60% / 50% 60% 50% 40%;
+  }
+
+  75% {
+    transform: translateY(-15%) scale(1.05, 0.95);
+    border-radius: 45% 55% 55% 45% / 55% 45% 55% 45%;
+  }
+}
+
+.gooBounceBlob {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #ff66cc, #9900ff);
+  border-radius: 50%;
+  animation: gooBounceBlob 1.8s ease-in-out infinite;
+}
+
+@keyframes gooBounceBlob {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    border-radius: 50%;
+  }
+
+  30% {
+    transform: translateY(-40%) scale(1.2, 0.8);
+    border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+  }
+
+  60% {
+    transform: translateY(10%) scale(0.9, 1.1);
+    border-radius: 60% 40% 40% 60% / 50% 40% 60% 50%;
+  }
+}
+
+.jellyBounceWave {
+  width: 80px;
+  height: 80px;
+  background: conic-gradient(from 90deg, #00ffcc, #6600ff, #00ffcc);
+  border-radius: 50%;
+  animation: jellyBounceWave 2.6s ease-in-out infinite;
+}
+
+@keyframes jellyBounceWave {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    border-radius: 50%;
+  }
+
+  20% {
+    transform: translateY(-30%) scale(1.1, 0.8);
+    border-radius: 40% 60% 65% 35% / 50% 40% 60% 50%;
+  }
+
+  50% {
+    transform: translateY(0) scale(0.95, 1.1);
+    border-radius: 60% 40% 45% 55% / 60% 45% 55% 40%;
+  }
+
+  80% {
+    transform: translateY(-10%) scale(1.05, 0.95);
+    border-radius: 55% 45% 50% 50% / 50% 50% 55% 45%;
+  }
+}
+
+.blobBouncePop {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle at 40% 40%, #ffe066, #ff6b6b);
+  border-radius: 50%;
+  animation: blobBouncePop 2.2s ease-in-out infinite;
+}
+
+@keyframes blobBouncePop {
+  0% {
+    transform: scale(1) translateY(0);
+    border-radius: 50%;
+  }
+
+  20% {
+    transform: scale(1.2, 0.8) translateY(-25%);
+    border-radius: 40% 60% 70% 30% / 60% 40% 60% 40%;
+  }
+
+  50% {
+    transform: scale(0.95, 1.1) translateY(10%);
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+    border-radius: 50%;
+  }
+}
+
+.blobElasticStretch {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, #00f0ff, #0044ff);
+  border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+  animation: blobElasticStretch 2.8s ease-in-out infinite;
+}
+
+@keyframes blobElasticStretch {
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+  }
+
+  25% {
+    transform: translateY(-60%) scale(0.9, 1.3);
+    border-radius: 50% 60% 40% 50% / 50% 40% 60% 50%;
+  }
+
+  50% {
+    transform: translateY(10%) scale(1.1, 0.8);
+    border-radius: 60% 50% 50% 40% / 50% 50% 50% 60%;
+  }
+}
+
+.blobPulseDrop {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at 50% 50%, #ffffff, #00ffcc);
+  border-radius: 50%;
+  animation: blobPulseDrop 1.8s ease-in-out infinite;
+  box-shadow:
+    0 0 12px #00ffc3,
+    0 0 24px #00ffc3;
+}
+
+@keyframes blobPulseDrop {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateY(-30%) scale(1.15, 0.85);
+  }
+
+  50% {
+    transform: translateY(0) scale(0.9, 1.1);
+    opacity: 0.9;
+  }
+
+  75% {
+    transform: translateY(-15%) scale(1.05, 0.95);
+    opacity: 1;
+  }
+}
+
+.floatingOrb {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at 60% 40%, #fff5cc, #ff00cc);
+  border-radius: 50%;
+  animation: floatingOrb 3.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px #ff00ccaa);
+}
+
+@keyframes floatingOrb {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-12%) scale(1.05);
+  }
+}
+
+.magicBlobSplit {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #99faff, #3300ff);
+  border-radius: 60% 40% 50% 70% / 60% 40% 60% 50%;
+  animation: magicBlobSplit 2.8s ease-in-out infinite;
+}
+
+@keyframes ca__magicBlobSplit {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    border-radius: 60% 40% 50% 70% / 60% 40% 60% 50%;
+  }
+  50% {
+    transform: translate(-10%, -10%) scale(1.1);
+    border-radius: 40% 60% 70% 30% / 50% 70% 30% 60%;
+  }
+}
+
+.orbitalSpin {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #ff66ff, #9900ff);
+  border-radius: 50%;
+  animation: ca__orbitalSpin 5s linear infinite;
+  position: relative;
+  transform-origin: 100px center;
+}
+
+@keyframes orbitalSpin {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+.pulseAura {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, #ffffff 10%, #00ffff 40%, transparent 70%);
+  border-radius: 50%;
+  animation: pulseAura 2s ease-in-out infinite;
+  filter: blur(3px);
+  opacity: 0.5;
+}
+
+@keyframes pulseAura {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.magicTrailComet {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #00ffff, #ffffff);
+  animation: magicTrailComet 1.5s linear infinite;
+  border-radius: 100px;
+}
+
+@keyframes magicTrailComet {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

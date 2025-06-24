@@ -227,6 +227,34 @@
   }
 }
 
+.jumping {
+  animation: jumping 1.2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes jumping {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+
+  25% {
+    transform: translateY(-20%) scale(1.1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(0) scale(0.95);
+    opacity: 0.8;
+  }
+
+  75% {
+    transform: translateY(-10%) scale(1.05);
+    opacity: 0.9;
+  }
+}
+
 .launch {
   animation: launch var(--launch-duration, 0.8s) ease-out infinite;
 }
@@ -299,5 +327,81 @@
 
   100% {
     transform: translateY(0) scale(1, 1);
+  }
+}
+
+.elasticJump {
+  animation: elasticJump 1.2s cubic-bezier(0.2, 0.8, 0.3, 1.2) infinite;
+  transform-origin: bottom center;
+  display: inline-block;
+}
+
+@keyframes elasticJump {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  30% {
+    transform: translateY(-40%) scaleY(1.2);
+  }
+
+  50% {
+    transform: translateY(0) scaleY(0.9);
+  }
+
+  70% {
+    transform: translateY(-20%) scaleY(1.05);
+  }
+}
+
+.squishyBounce {
+  animation: squishyBounce 1.4s ease-in-out infinite;
+  transform-origin: bottom center;
+  display: inline-block;
+}
+
+@keyframes squishyBounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+
+  25% {
+    transform: translateY(-30%) scale(1.1, 0.9);
+  }
+
+  50% {
+    transform: translateY(0) scale(0.95, 1.05);
+  }
+
+  75% {
+    transform: translateY(-15%) scale(1.05, 0.95);
+  }
+}
+
+.bouncyDrop {
+  animation: bouncyDrop 1.5s ease-in-out infinite;
+  transform-origin: top center;
+  display: inline-block;
+}
+
+@keyframes bouncyDrop {
+  0% {
+    transform: translateY(-100%) scaleY(1.2);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateY(10%) scaleY(0.8);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateY(-5%) scaleY(1.1);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
   }
 }

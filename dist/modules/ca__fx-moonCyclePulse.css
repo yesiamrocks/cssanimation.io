@@ -52,10 +52,12 @@
   }
 }
 /**
- * Module: Move From
- * Filename: ca__MoveFrom.css
+ * Module: Moon Fade
+ * Filename: ca__MoonFade.css
  */
-.ca__fx-moveFromLeft {
-  animation-name: moveFromLeft;
+.ca__fx-moonFade {
+  animation-name: moonFade;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
+  will-change: transform, opacity;
 }

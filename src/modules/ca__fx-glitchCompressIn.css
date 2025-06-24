@@ -39,19 +39,19 @@
 
 .ca__fx-glitchCompressIn {
   animation-name: glitchCompressIn;
-  animation-timing-function: ease-out;
+  animation-timing-function: steps(3, end);
   will-change: transform, opacity;
 }
 
 @keyframes glitchCompressIn {
   0% {
-    transform: scale(1.4, 0.6);
+    transform: scale(2, 0.6);
     filter: blur(6px) brightness(0.2);
     opacity: 0;
   }
 
   40% {
-    transform: scale(1.05, 0.95);
+    transform: scale(1.5, 0.95);
     filter: blur(2px);
     opacity: 0.8;
   }
@@ -61,4 +61,15 @@
     filter: none;
     opacity: 1;
   }
+}
+/**
+ * Module: Hang And Drop
+ * Filename: ca__HangAndDrop.css
+ */
+.ca__fx-hangAndDropLeft {
+  animation-name: hangAndDropLeft;
+  transform-origin: left;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
 }

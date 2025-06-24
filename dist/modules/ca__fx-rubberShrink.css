@@ -58,10 +58,3 @@
     opacity: 0;
   }
 }
-/**
- * Module: Elevate
- * Filename: ca__Elevate.css
- */
-.ca__fx-elevateLeft {
-  animation-name: elevateLeft;
-}

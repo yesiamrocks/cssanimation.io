@@ -38,7 +38,8 @@
 /* stylelint-enable */
 
 .ca__fx-clipDiagonalWipeOut {
-  animation: clipDiagonalWipeOut 0.9s ease-in-out forwards;
+  animation-name: clipDiagonalWipeOut;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes clipDiagonalWipeOut {
@@ -46,6 +47,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     opacity: 1;
   }
+
   100% {
     clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
     opacity: 0;

@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-clipGridReveal {
-  animation: clipGridReveal 1.2s ease-out both;
+  animation-name: clipGridReveal;
 }
 
 @keyframes clipGridReveal {
@@ -46,14 +46,17 @@
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     opacity: 0;
   }
+
   40% {
     clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
     opacity: 0.5;
   }
+
   70% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 0.8;
   }
+
   100% {
     clip-path: inset(0);
     opacity: 1;

@@ -3,7 +3,7 @@
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
 * Version: 6.5.0
-* Built: 2025-06-22 18:28:21 UTC
+* Built: 2025-06-24 16:24:23 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -377,6 +377,32 @@
     transform: translateY(calc(var(--jump-height, 1.2rem) * -1));
   }
 }
+.ca__fx-jumping {
+  animation: jumping 1.2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+@keyframes jumping {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+
+  25% {
+    transform: translateY(-20%) scale(1.1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(0) scale(0.95);
+    opacity: 0.8;
+  }
+
+  75% {
+    transform: translateY(-10%) scale(1.05);
+    opacity: 0.9;
+  }
+}
 .ca__fx-launch {
   animation: launch var(--launch-duration, 0.8s) ease-out infinite;
 }
@@ -444,6 +470,76 @@
 
   100% {
     transform: translateY(0) scale(1, 1);
+  }
+}
+.ca__fx-elasticJump {
+  animation: elasticJump 1.2s cubic-bezier(0.2, 0.8, 0.3, 1.2) infinite;
+  transform-origin: bottom center;
+  display: inline-block;
+}
+@keyframes elasticJump {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  30% {
+    transform: translateY(-40%) scaleY(1.2);
+  }
+
+  50% {
+    transform: translateY(0) scaleY(0.9);
+  }
+
+  70% {
+    transform: translateY(-20%) scaleY(1.05);
+  }
+}
+.ca__fx-squishyBounce {
+  animation: squishyBounce 1.4s ease-in-out infinite;
+  transform-origin: bottom center;
+  display: inline-block;
+}
+@keyframes squishyBounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+
+  25% {
+    transform: translateY(-30%) scale(1.1, 0.9);
+  }
+
+  50% {
+    transform: translateY(0) scale(0.95, 1.05);
+  }
+
+  75% {
+    transform: translateY(-15%) scale(1.05, 0.95);
+  }
+}
+.ca__fx-bouncyDrop {
+  animation: bouncyDrop 1.5s ease-in-out infinite;
+  transform-origin: top center;
+  display: inline-block;
+}
+@keyframes bouncyDrop {
+  0% {
+    transform: translateY(-100%) scaleY(1.2);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateY(10%) scaleY(0.8);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateY(-5%) scaleY(1.1);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
   }
 }
 /**
@@ -699,25 +795,26 @@
   }
 }
 /**
- * Module: Clip-Path Animations 
+ * Module: Clip Path Animations 
  * Filename: ca__Clip-Path.css
  */
 .ca__fx-clipCircleExpandIn {
-  animation: clipCircleExpandIn 1s ease-out both;
+  animation: clipCircleExpandIn 3s ease-out;
   clip-path: circle(0% at 50% 50%);
 }
 @keyframes clipCircleExpandIn {
   0% {
     clip-path: circle(0% at 50% 50%);
-    opacity: 0;
   }
+
   100% {
     clip-path: circle(150% at 50% 50%);
-    opacity: 1;
   }
 }
 .ca__fx-clipCircleCollapseOut {
-  animation: clipCircleCollapseOut 0.8s ease-in forwards;
+  animation: clipCircleCollapseOut 3s ease-in both;
+  clip-path: circle(150% at 50% 50%);
+  will-change: clip-path;
 }
 @keyframes clipCircleCollapseOut {
   0% {
@@ -729,103 +826,86 @@
   }
 }
 .ca__fx-clipDiagonalWipeIn {
-  animation: clipDiagonalWipeIn 1s ease-in-out both;
+  animation-name: clipDiagonalWipeIn;
 }
 @keyframes clipDiagonalWipeIn {
   0% {
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     opacity: 0;
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     opacity: 1;
   }
 }
 .ca__fx-clipDiagonalWipeOut {
-  animation: clipDiagonalWipeOut 0.9s ease-in-out forwards;
+  animation-name: clipDiagonalWipeOut;
+  animation-timing-function: ease-in-out;
 }
 @keyframes clipDiagonalWipeOut {
   0% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     opacity: 1;
   }
+
   100% {
     clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
     opacity: 0;
   }
 }
 .ca__fx-clipGridReveal {
-  animation: clipGridReveal 1.2s ease-out both;
+  animation-name: clipGridReveal;
 }
 @keyframes clipGridReveal {
   0% {
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     opacity: 0;
   }
+
   40% {
     clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
     opacity: 0.5;
   }
+
   70% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 0.8;
   }
+
   100% {
     clip-path: inset(0);
     opacity: 1;
   }
 }
 .ca__fx-clipGridCollapse {
-  animation: clipGridCollapse 1s ease-in forwards;
+  animation-name: clipGridCollapse;
 }
 @keyframes clipGridCollapse {
   0% {
     clip-path: inset(0);
     opacity: 1;
   }
+
   40% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 0.5;
   }
+
   100% {
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     opacity: 0;
   }
 }
-.ca__fx-clipHexReveal {
-  animation: clipHexReveal 1s ease-out both;
-}
-@keyframes clipHexReveal {
-  0% {
-    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
-    opacity: 0;
-  }
-  100% {
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    opacity: 1;
-  }
-}
-.ca__fx-clipHexCollapse {
-  animation: clipHexCollapse 0.9s ease-in forwards;
-}
-@keyframes clipHexCollapse {
-  0% {
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    opacity: 1;
-  }
-  100% {
-    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
-    opacity: 0;
-  }
-}
 .ca__fx-clipVerticalSplitIn {
-  animation: clipVerticalSplitIn 0.9s ease-out both;
+  animation-name: clipVerticalSplitIn;
 }
 @keyframes clipVerticalSplitIn {
   0% {
     clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
     opacity: 0;
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     opacity: 1;
@@ -839,26 +919,10 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 1;
   }
+
   100% {
     clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
     opacity: 0;
-  }
-}
-.ca__fx-clipCrossSweep {
-  animation: clipCrossSweep 1.1s ease-in-out both;
-}
-@keyframes clipCrossSweep {
-  0% {
-    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
-    opacity: 0;
-  }
-  60% {
-    clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 25% 75%);
-    opacity: 0.6;
-  }
-  100% {
-    clip-path: inset(0);
-    opacity: 1;
   }
 }
 .ca__fx-clipCrossSweepOut {
@@ -869,10 +933,12 @@
     clip-path: inset(0);
     opacity: 1;
   }
+
   60% {
     clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 25% 75%);
     opacity: 0.6;
   }
+
   100% {
     clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
     opacity: 0;
@@ -887,55 +953,14 @@
     clip-path: circle(0% at 50% 50%);
     opacity: 0;
   }
+
   60% {
     clip-path: circle(60% at 50% 50%);
     opacity: 1;
   }
+
   100% {
     clip-path: circle(120% at 50% 50%);
-  }
-}
-.ca__fx-clipBurstCollapse {
-  animation: clipBurstCollapse 0.9s ease-in forwards;
-}
-@keyframes clipBurstCollapse {
-  0% {
-    clip-path: circle(120% at 50% 50%);
-    opacity: 1;
-  }
-  100% {
-    clip-path: circle(0% at 50% 50%);
-    opacity: 0;
-  }
-}
-.ca__fx-clipStarburstIn {
-  animation: clipStarburstIn 1s ease-out both;
-}
-@keyframes clipStarburstIn {
-  0% {
-    clip-path: polygon(50% 0%, 55% 35%, 100% 35%, 60% 57%, 70% 100%, 50% 75%, 30% 100%, 40% 57%, 0% 35%, 45% 35%);
-    opacity: 0;
-    transform: scale(0.4);
-  }
-  100% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-.ca__fx-clipStarburstOut {
-  animation: clipStarburstOut 1s ease-in forwards;
-}
-@keyframes clipStarburstOut {
-  0% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    clip-path: polygon(50% 0%, 55% 35%, 100% 35%, 60% 57%, 70% 100%, 50% 75%, 30% 100%, 40% 57%, 0% 35%, 45% 35%);
-    opacity: 0;
-    transform: scale(0.4);
   }
 }
 .ca__fx-clipDiamondIn {
@@ -947,51 +972,11 @@
     opacity: 0;
     transform: scale(0.6);
   }
+
   100% {
     clip-path: inset(0);
     opacity: 1;
     transform: scale(1);
-  }
-}
-.ca__fx-clipDiamondOut {
-  animation: clipDiamondOut 0.8s ease-in forwards;
-}
-@keyframes clipDiamondOut {
-  0% {
-    clip-path: inset(0);
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
-    opacity: 0;
-    transform: scale(0.6);
-  }
-}
-.ca__fx-clipTriangleSweepIn {
-  animation: clipTriangleSweepIn 0.7s ease-in-out both;
-}
-@keyframes clipTriangleSweepIn {
-  0% {
-    clip-path: polygon(0 0, 0 100%, 0 100%);
-    opacity: 0;
-  }
-  100% {
-    clip-path: polygon(0 0, 100% 50%, 0 100%);
-    opacity: 1;
-  }
-}
-.ca__fx-clipTriangleSweepOut {
-  animation: clipTriangleSweepOut 0.7s ease-in-out forwards;
-}
-@keyframes clipTriangleSweepOut {
-  0% {
-    clip-path: polygon(0 0, 100% 50%, 0 100%);
-    opacity: 1;
-  }
-  100% {
-    clip-path: polygon(0 0, 0 100%, 0 100%);
-    opacity: 0;
   }
 }
 .ca__fx-clipDiagonalSliceIn {
@@ -1002,22 +987,10 @@
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     opacity: 0;
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 1;
-  }
-}
-.ca__fx-clipDiagonalSliceOut {
-  animation: clipDiagonalSliceOut 1s ease-in forwards;
-}
-@keyframes clipDiagonalSliceOut {
-  0% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    opacity: 1;
-  }
-  100% {
-    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
-    opacity: 0;
   }
 }
 .ca__fx-clipMultiStepReveal {
@@ -1028,10 +1001,12 @@
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     opacity: 0;
   }
+
   50% {
     clip-path: polygon(0 0, 80% 0, 80% 100%, 0 100%);
     opacity: 0.6;
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 1;
@@ -1045,128 +1020,34 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 1;
   }
+
   50% {
     clip-path: polygon(0 0, 80% 0, 80% 100%, 0 100%);
     opacity: 0.5;
   }
+
   100% {
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     opacity: 0;
   }
 }
-.ca__fx-clip-animate {
+.ca__fx-clipAnimate {
   animation: morph 8s infinite ease-in-out alternate;
 }
 @keyframes morph {
   0% {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond */
   }
-  25% {
+
+  50% {
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); /* Trapezoid */
   }
-  50% {
+
+  100% {
     clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 85% 15%, 100% 100%, 0% 100%); /* A complex star-like shape */
   }
-  75% {
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); /* A different kind of star */
-  }
-  100% {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Back to Diamond */
-  }
 }
-.ca__fx-clip-animate-fluid {
-  animation: fluid-morph 10s infinite ease-in-out alternate; /* Longer duration */
-}
-@keyframes fluid-morph {
-  0% {
-    clip-path: circle(50% at 50% 50%); /* Start as a perfect circle */
-  }
-  25% {
-    clip-path: ellipse(60% 40% at 50% 50%); /* Stretch into an ellipse */
-  }
-  50% {
-    clip-path: polygon(
-      20% 0%,
-      80% 0%,
-      100% 30%,
-      100% 70%,
-      80% 100%,
-      20% 100%,
-      0% 70%,
-      0% 30%
-    ); /* An octagon-like shape */
-  }
-  75% {
-    clip-path: polygon(
-      30% 0%,
-      70% 0%,
-      100% 20%,
-      100% 80%,
-      70% 100%,
-      30% 100%,
-      0% 80%,
-      0% 20%
-    ); /* Slightly different octagon, creating a pulsating effect */
-  }
-  100% {
-    clip-path: circle(50% at 50% 50%); /* Back to a circle */
-  }
-}
-.ca__fx-clip-animate-jagged {
-  animation: jagged-explode 6s infinite ease-in-out alternate; /* Shorter, faster */
-}
-@keyframes jagged-explode {
-  0% {
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* Hexagon */
-  }
-
-  20% {
-    clip-path: polygon(
-      50% 0%,
-      /* Top center */ 80% 20%,
-      /* Top right spike */ 100% 0%,
-      /* Far top right */ 100% 50%,
-      /* Right center */ 80% 80%,
-      /* Bottom right spike */ 100% 100%,
-      /* Far bottom right */ 50% 100%,
-      /* Bottom center */ 20% 80%,
-      /* Bottom left spike */ 0% 100%,
-      /* Far bottom left */ 0% 50%,
-      /* Left center */ 20% 20%,
-      /* Top left spike */ 0% 0% /* Far top left */
-    ); /* An exploding star/burst */
-  }
-
-  40% {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Full square/rectangle */
-  }
-
-  60% {
-    clip-path: polygon(
-      50% 0%,
-      61% 35%,
-      98% 35%,
-      68% 57%,
-      79% 91%,
-      50% 70%,
-      21% 91%,
-      32% 57%,
-      2% 35%,
-      39% 35%
-    ); /* A classic star shape */
-  }
-
-  80% {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Back to full square */
-  }
-
-  100% {
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* Back to Hexagon */
-  }
-}
-.ca__fx-clip-animate-wave {
-  /* New class name */
-
+.ca__fx-clipAnimateWave {
   animation: wave-morph 7s infinite ease-in-out alternate; /* Medium speed */
 }
 @keyframes wave-morph {
@@ -1279,35 +1160,6 @@
       10% 75%,
       0% 80%
     );
-  }
-}
-.ca__fx-clip-animate-slice {
-  animation: slice-reveal 5s infinite ease-in-out alternate; /* Faster, sharper */
-}
-@keyframes slice-reveal {
-  0% {
-    /* Start as a full rectangle */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-
-  25% {
-    /* Slice from top-left to bottom-right */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 100%);
-  }
-
-  50% {
-    /* Reveal a central diamond/diagonal slice */
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  }
-
-  75% {
-    /* Slice from bottom-left to top-right */
-    clip-path: polygon(0% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-
-  100% {
-    /* Back to full rectangle */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 /**
@@ -1573,553 +1425,6 @@
     filter: brightness(0.3) blur(6px);
     opacity: 0;
     transform: scale(0.9);
-  }
-}
-/**
- * Module: Elastic Animation
- * Filename: ca__elastic.css
- */
-.ca__fx-elasticArise {
-  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
-  transform-origin: bottom center; /* Important for vertical scaling */
-}
-@keyframes elasticArise {
-  0%,
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-
-  20% {
-    transform: translateY(-40px) scaleY(1.2); /* Rise with stretch */
-  }
-
-  40% {
-    transform: translateY(0) scaleY(0.9); /* Settle with slight squash */
-  }
-
-  60% {
-    transform: translateY(-15px) scaleY(1.05); /* Smaller elastic bounce */
-  }
-
-  80% {
-    transform: translateY(0) scaleY(0.98);
-  }
-}
-.ca__fx-elasticRise {
-  animation: elasticRise var(--elastic-duration, 1s) ease-out both;
-}
-@keyframes elasticRise {
-  0% {
-    transform: scaleY(1) translateY(0);
-  }
-
-  40% {
-    transform: scaleY(0.9) translateY(calc(var(--elastic-height, 1.5rem) * -1.2));
-  }
-
-  60% {
-    transform: scaleY(1.1) translateY(calc(var(--elastic-height, 1.5rem) * 0.3));
-  }
-
-  80% {
-    transform: scaleY(0.95) translateY(calc(var(--elastic-height, 1.5rem) * -0.1));
-  }
-
-  100% {
-    transform: scaleY(1) translateY(0);
-  }
-}
-.ca__fx-elasticStretch {
-  animation: elasticStretch var(--duration, 1s) ease-out both;
-}
-@keyframes elasticStretch {
-  0% {
-    transform: scaleX(1);
-  }
-
-  30% {
-    transform: scaleX(1.4);
-  }
-
-  50% {
-    transform: scaleX(0.85);
-  }
-
-  70% {
-    transform: scaleX(1.15);
-  }
-
-  100% {
-    transform: scaleX(1);
-  }
-}
-.ca__fx-elasticBounce {
-  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-@keyframes elasticBounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-1.5rem);
-  }
-}
-.ca__fx-elasticSquash {
-  animation: elasticSquash var(--duration, 0.7s) ease-out both;
-}
-@keyframes elasticSquash {
-  0% {
-    transform: scaleY(1);
-  }
-
-  40% {
-    transform: scaleY(0.5) scaleX(1.3);
-  }
-
-  60% {
-    transform: scaleY(1.2) scaleX(0.9);
-  }
-
-  80% {
-    transform: scaleY(0.95) scaleX(1.05);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-elasticIn {
-  animation: elasticIn var(--duration, 0.6s) ease-out both;
-}
-@keyframes elasticIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-rubberPop {
-  animation: rubberPop var(--duration, 0.7s) ease-out both;
-}
-@keyframes rubberPop {
-  0% {
-    transform: scale(0.3);
-  }
-
-  40% {
-    transform: scale(1.25);
-  }
-
-  60% {
-    transform: scale(0.9);
-  }
-
-  80% {
-    transform: scale(1.05);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-squishLift {
-  animation: squishLift var(--duration, 0.8s) ease-in-out both;
-}
-@keyframes squishLift {
-  0% {
-    transform: translateY(0) scaleY(1);
-  }
-
-  30% {
-    transform: translateY(-1.2rem) scaleY(1.3);
-  }
-
-  60% {
-    transform: translateY(0.5rem) scaleY(0.9);
-  }
-
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
-.ca__fx-flubberBounce {
-  animation: flubberBounce var(--duration, 1s) ease-in-out both;
-}
-@keyframes flubberBounce {
-  0% {
-    transform: scale(1, 1);
-  }
-
-  20% {
-    transform: scale(1.2, 0.8);
-  }
-
-  40% {
-    transform: scale(0.8, 1.2);
-  }
-
-  60% {
-    transform: scale(1.1, 0.9);
-  }
-
-  80% {
-    transform: scale(0.95, 1.05);
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-}
-.ca__fx-boingScale {
-  animation: boingScale var(--duration, 0.9s) ease-out both;
-}
-@keyframes boingScale {
-  0% {
-    transform: scale(0.5);
-  }
-
-  30% {
-    transform: scale(1.3);
-  }
-
-  60% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-slinkyDrop {
-  animation: slinkyDrop var(--duration, 1s) ease-in both;
-}
-@keyframes slinkyDrop {
-  0% {
-    transform: translateY(-120%);
-    scale: 1 0.8;
-  }
-
-  40% {
-    transform: translateY(20%) scale(1, 1.2);
-  }
-
-  60% {
-    transform: translateY(-10%) scale(1, 0.95);
-  }
-
-  100% {
-    transform: translateY(0) scale(1, 1);
-  }
-}
-.ca__fx-elasticBounce {
-  animation: elasticBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-  transform-origin: bottom center; /* Important for bouncing */
-}
-@keyframes elasticBounce {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-
-  20% {
-    transform: translateY(-30px) scaleX(1.05) scaleY(0.95);
-  }
-
-  40% {
-    transform: translateY(0) scaleX(0.98) scaleY(1.02);
-  }
-
-  60% {
-    transform: translateY(-15px) scaleX(1.02) scaleY(0.98);
-  }
-
-  80% {
-    transform: translateY(0) scaleX(0.99) scaleY(1.01);
-  }
-
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
-.ca__fx-springyEffect {
-  animation: springyEffect 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-}
-@keyframes springyEffect {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(1.1, 0.9);
-  }
-
-  50% {
-    transform: scale(0.95, 1.05);
-  }
-
-  75% {
-    transform: scale(1.05, 0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-jiggleTransform {
-  animation: jiggleTransform 0.7s ease-in-out forwards;
-  transform-origin: center;
-}
-@keyframes jiggleTransform {
-  0%,
-  100% {
-    transform: rotate(0deg) scale(1);
-  }
-
-  15% {
-    transform: rotate(-3deg) scale(1.02);
-  }
-
-  30% {
-    transform: rotate(3deg) scale(0.98);
-  }
-
-  45% {
-    transform: rotate(-2deg) scale(1.01);
-  }
-
-  60% {
-    transform: rotate(2deg) scale(0.99);
-  }
-
-  75% {
-    transform: rotate(-1deg) scale(1);
-  }
-}
-.ca__fx-stretchCollapse {
-  animation: stretchCollapse 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-  transform-origin: center;
-}
-@keyframes stretchCollapse {
-  0% {
-    transform: scaleY(1);
-  }
-
-  25% {
-    transform: scaleY(1.3);
-  } /* Stretch */
-
-  50% {
-    transform: scaleY(0.7);
-  } /* Collapse */
-
-  75% {
-    transform: scaleY(1.1);
-  }
-
-  100% {
-    transform: scaleY(1);
-  }
-}
-.ca__fx-reboundMotion {
-  animation: reboundMotion 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  transform-origin: bottom center; /* For vertical rebound */
-}
-@keyframes reboundMotion {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-50px);
-  } /* Move up */
-
-  100% {
-    transform: translateY(0);
-  } /* Rebound with overshoot */
-}
-.ca__fx-snapBackEase {
-  animation: snapBackEase 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-}
-@keyframes snapBackEase {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  80% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-flexiShrink {
-  animation: flexiShrink 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-}
-@keyframes flexiShrink {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(0.8);
-  } /* Shrink */
-
-  75% {
-    transform: scale(1.05);
-  } /* Overshoot */
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-bouncyScale {
-  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both;
-}
-/* bouncyScale */
-@keyframes bouncyScale {
-  0% {
-    transform: scale(0.5);
-  }
-
-  60% {
-    transform: scale(1.1);
-  }
-
-  80% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-pulseElastic {
-  animation: pulseElastic 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate; /* Infinite for pulsing */
-}
-@keyframes pulseElastic {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  } /* Pulse out */
-
-  75% {
-    transform: scale(0.95);
-  } /* Slightly inward */
-}
-.ca__fx-rubber {
-  animation: rubber 0.8s ease-out;
-}
-@keyframes rubber {
-  0% {
-    transform: scale(1);
-  }
-
-  30% {
-    transform: scale(1.25, 0.75);
-  }
-
-  40% {
-    transform: scale(0.75, 1.25);
-  }
-
-  50% {
-    transform: scale(1.15, 0.85);
-  }
-
-  65% {
-    transform: scale(0.95, 1.05);
-  }
-
-  75% {
-    transform: scale(1.05, 0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-squishBoing {
-  animation-name: squishBoing;
-  transform-origin: bottom center;
-}
-@keyframes squishBoing {
-  0% {
-    transform: scale(1, 1);
-  }
-
-  25% {
-    transform: scale(1.1, 0.8);
-  } /* Squish down and slightly wider */
-
-  50% {
-    transform: scale(0.9, 1.2);
-  } /* Stretch up and slightly narrower */
-
-  75% {
-    transform: scale(1.05, 0.95);
-  } /* Overshoot slightly */
-
-  100% {
-    transform: scale(1, 1);
-  } /* Return to normal */
-}
-.ca__fx-rubberExpand {
-  animation-name: rubberExpand;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform;
-}
-@keyframes rubberExpand {
-  0% {
-    transform: scale(1);
-  }
-
-  30% {
-    transform: scaleX(1.3) scaleY(0.7);
-  }
-
-  60% {
-    transform: scaleX(0.9) scaleY(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-.ca__fx-rubberShrink {
-  animation-name: rubberShrink;
-  animation-timing-function: ease-in;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-@keyframes rubberShrink {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scaleX(1.1) scaleY(0.8);
-  }
-
-  100% {
-    transform: scale(0);
-    opacity: 0;
   }
 }
 /**
@@ -3235,30 +2540,9 @@
     opacity: 0;
   }
 }
-.ca__fx-glitchCollapseOut {
-  animation: glitchCollapseOut 0.7s ease-in both;
-}
-@keyframes glitchCollapseOut {
-  0% {
-    opacity: 1;
-    transform: scale(1) skew(0deg, 0deg);
-    filter: brightness(1);
-  }
-
-  60% {
-    transform: scale(1.1) skew(5deg, -5deg);
-    filter: hue-rotate(60deg);
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(0.8) skew(-10deg, 10deg);
-    filter: blur(6px) brightness(0) grayscale(1);
-  }
-}
 .ca__fx-glitchSliceInCollapse {
   animation-name: glitchSliceInCollapse;
-  animation-timing-function: ease-out;
+  animation-timing-function: steps(5 end);
 }
 @keyframes glitchSliceInCollapse {
   0% {
@@ -3281,74 +2565,6 @@
     opacity: 1;
     transform: scaleY(1);
     clip-path: inset(0 0 0 0);
-  }
-}
-.ca__fx-glitchMatrixWave {
-  animation: glitchMatrixWave 1.5s infinite ease-in-out;
-}
-@keyframes glitchMatrixWave {
-  0% {
-    transform: translateY(0) scaleY(1);
-    filter: grayscale(0);
-  }
-
-  25% {
-    transform: translateY(-3px) scaleY(1.2);
-  }
-
-  50% {
-    transform: translateY(3px) scaleY(0.8);
-    filter: grayscale(1);
-  }
-
-  75% {
-    transform: translateY(-1px) scaleY(1.05);
-    filter: none;
-  }
-
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
-.ca__fx-hologramPulse {
-  animation: hologramPulse 2.5s ease-in-out infinite;
-  color: #00ffe0;
-  text-shadow:
-    0 0 2px #00ffe0,
-    0 0 6px #00ffe0;
-}
-@keyframes hologramPulse {
-  0%,
-  100% {
-    opacity: 1;
-    filter: hue-rotate(0deg) blur(0px);
-  }
-
-  50% {
-    opacity: 0.85;
-    filter: hue-rotate(20deg) blur(1px);
-  }
-}
-.ca__fx-scanlineSweep {
-  position: relative;
-  overflow: hidden;
-}
-.ca__fx-scanlineSweep::before {
-  content: '';
-  position: absolute;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.06) 50%, transparent 100%);
-  animation: scanlineSweep 1.8s linear infinite;
-}
-@keyframes scanlineSweep {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 100%;
   }
 }
 .ca__fx-typewriterCorrupt {
@@ -3380,34 +2596,6 @@
     transform: translate(0, 0);
     filter: none;
     opacity: 1;
-  }
-}
-.ca__fx-hologramWarp {
-  animation: hologramWarp 2.3s ease-in-out infinite;
-  filter: contrast(1.2) brightness(1.1);
-}
-@keyframes hologramWarp {
-  0% {
-    transform: skew(0deg, 0deg);
-    filter: brightness(1) hue-rotate(0deg);
-  }
-
-  25% {
-    transform: skew(1deg, -1deg);
-  }
-
-  50% {
-    transform: skew(-1.5deg, 1.5deg);
-    filter: hue-rotate(15deg);
-  }
-
-  75% {
-    transform: skew(0.5deg, -0.5deg);
-  }
-
-  100% {
-    transform: skew(0deg, 0deg);
-    filter: hue-rotate(0deg);
   }
 }
 .ca__fx-glitchSliceYank {
@@ -3603,62 +2791,6 @@
     transform: translateX(3px);
   }
 }
-.ca__fx-glitchSliceExitCollapse {
-  animation: glitchSliceExitCollapse 0.9s ease-in forwards;
-}
-@keyframes glitchSliceExitCollapse {
-  0% {
-    opacity: 1;
-    transform: scaleY(1);
-    clip-path: inset(0 0 0 0);
-  }
-
-  40% {
-    transform: scaleY(0.9);
-    clip-path: inset(20% 0 20% 0);
-  }
-
-  70% {
-    transform: scaleY(0.6);
-    clip-path: inset(60% 0 10% 0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: scaleY(0);
-    clip-path: inset(100% 0 0 0);
-  }
-}
-.ca__fx-glitchSliceDrop {
-  animation: glitchSliceDrop 2s infinite ease-in-out;
-}
-@keyframes glitchSliceDrop {
-  0% {
-    clip-path: inset(0 0 0 0);
-  }
-
-  20% {
-    clip-path: inset(10% 0 85% 0);
-    transform: translateY(0);
-  }
-
-  30% {
-    transform: translateY(3px);
-  }
-
-  40% {
-    transform: translateY(-2px);
-  }
-
-  50% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    clip-path: inset(0 0 0 0);
-    transform: translateY(0);
-  }
-}
 .ca__fx-glitchSliceStagger {
   animation: glitchSliceStagger 3s steps(1, end) infinite;
 }
@@ -3687,56 +2819,6 @@
   100% {
     clip-path: inset(0 0 0 0);
     transform: none;
-  }
-}
-.ca__fx-glitchCompressIn {
-  animation-name: glitchCompressIn;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-@keyframes glitchCompressIn {
-  0% {
-    transform: scale(1.4, 0.6);
-    filter: blur(6px) brightness(0.2);
-    opacity: 0;
-  }
-
-  40% {
-    transform: scale(1.05, 0.95);
-    filter: blur(2px);
-    opacity: 0.8;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    filter: none;
-    opacity: 1;
-  }
-}
-.ca__fx-glitchDecodePulse {
-  animation: glitchDecodePulse 1.3s ease-out both;
-  letter-spacing: 0.05em;
-}
-@keyframes glitchDecodePulse {
-  0% {
-    filter: grayscale(1) brightness(0.3);
-    transform: scale(1.05) skewX(-5deg);
-    opacity: 0;
-  }
-
-  40% {
-    filter: hue-rotate(90deg);
-    opacity: 0.6;
-  }
-
-  70% {
-    filter: none;
-    transform: scale(1) skewX(0);
-    opacity: 1;
-  }
-
-  100% {
-    letter-spacing: normal;
   }
 }
 .ca__fx-glitchScanBurst {
@@ -3801,6 +2883,173 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+.ca__fx-corruptTextScramble {
+  animation: corruptTextScramble 1.2s infinite steps(2, end);
+  color: #ff0059;
+  text-shadow: 0 0 4px #ff0059;
+}
+@keyframes corruptTextScramble {
+  0% {
+    opacity: 1;
+    transform: skewX(0);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: skewX(15deg);
+    filter: hue-rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: skewX(0);
+    filter: hue-rotate(0deg);
+  }
+}
+.ca__fx-corruptTextOffset {
+  animation: corruptTextOffset 0.5s infinite steps(3, end);
+  text-shadow:
+    2px 0 #f0f,
+    -2px 0 #0ff;
+}
+@keyframes corruptTextOffset {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(-1px);
+  }
+}
+.ca__fx-dataTypeCascadeOut {
+  animation-name: dataTypeCascadeOut;
+  animation-timing-function: steps(10, end);
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+}
+@keyframes dataTypeCascadeOut {
+  0% {
+    clip-path: inset(0% 0 0 0);
+    opacity: 1;
+  }
+
+  10% {
+    clip-path: inset(10% 0 0 0);
+    opacity: 0.9;
+  }
+
+  20% {
+    clip-path: inset(20% 0 0 0);
+    opacity: 0.85;
+  }
+
+  30% {
+    clip-path: inset(30% 0 0 0);
+    opacity: 0.75;
+  }
+
+  40% {
+    clip-path: inset(40% 0 0 0);
+    opacity: 0.65;
+  }
+
+  50% {
+    clip-path: inset(50% 0 0 0);
+    opacity: 0.55;
+  }
+
+  60% {
+    clip-path: inset(60% 0 0 0);
+    opacity: 0.45;
+  }
+
+  70% {
+    clip-path: inset(70% 0 0 0);
+    opacity: 0.35;
+  }
+
+  80% {
+    clip-path: inset(80% 0 0 0);
+    opacity: 0.2;
+  }
+
+  90% {
+    clip-path: inset(90% 0 0 0);
+    opacity: 0.1;
+  }
+
+  100% {
+    clip-path: inset(100% 0 0 0);
+    opacity: 0;
+  }
+}
+.ca__fx-criticalBreach {
+  animation: criticalBreach 1.2s steps(2, end) infinite;
+  color: #ff1a1a;
+  background: black;
+  text-shadow: 0 0 4px red;
+}
+@keyframes criticalBreach {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
+.ca__fx-dataTypeCascade {
+  animation: dataTypeCascade 1.4s ease-out forwards;
+  clip-path: inset(100% 0 0 0);
+}
+@keyframes dataTypeCascade {
+  0% {
+    clip-path: inset(100% 0 0 0);
+    opacity: 0;
+  }
+
+  60% {
+    clip-path: inset(20% 0 0 0);
+    opacity: 0.7;
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+.ca__fx-glitchCompressIn {
+  animation-name: glitchCompressIn;
+  animation-timing-function: steps(3, end);
+  will-change: transform, opacity;
+}
+@keyframes glitchCompressIn {
+  0% {
+    transform: scale(2, 0.6);
+    filter: blur(6px) brightness(0.2);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.5, 0.95);
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    filter: none;
+    opacity: 1;
   }
 }
 /**
@@ -4682,7 +3931,7 @@
 }
 /**
  * Module: Moon 
- * Filename: ca__MoonFade.css
+ * Filename: ca__Moon.css
  */
 .ca__fx-moonEclipseIn {
   animation: moonEclipseIn 1.6s ease-out both;
@@ -4762,16 +4011,38 @@
     filter: none;
   }
 }
-.ca__fx-crescentOrbitReveal {
-  animation: crescentOrbitReveal 1.6s ease-out both;
+.ca__fx-crescentOrbitRevealLeft {
+  animation: crescentOrbitRevealLeft 1.6s ease-out both;
   transform-origin: center;
   will-change: transform, opacity;
 }
-@keyframes crescentOrbitReveal {
+@keyframes crescentOrbitRevealLeft {
   0% {
     transform: translateX(-100%) rotate(-45deg) scale(0.8);
     opacity: 0;
     clip-path: ellipse(0% 100% at 0% 50%);
+  }
+
+  60% {
+    opacity: 1;
+    clip-path: ellipse(60% 100% at 50% 50%);
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
+}
+.ca__fx-crescentOrbitRevealRight {
+  animation: crescentOrbitRevealRight 1.6s ease-out both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes crescentOrbitRevealRight {
+  0% {
+    transform: translateX(100%) rotate(45deg) scale(0.8);
+    opacity: 0;
+    clip-path: ellipse(0% 100% at 100% 50%);
   }
 
   60% {
@@ -4844,6 +4115,73 @@
     filter: none;
   }
 }
+.ca__fx-moonRippleGlow {
+  animation: moonRippleGlow 2.8s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes moonRippleGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+}
+.ca__fx-moonDustFloat {
+  animation: moonDustFloat 2.2s ease-out both;
+  will-change: transform, opacity;
+}
+@keyframes moonDustFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20%) scale(1.1);
+    filter: blur(8px) grayscale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    filter: none;
+  }
+}
+.ca__fx-moonTiltRise {
+  animation: moonTiltRise 1.7s ease-out both;
+  transform-origin: bottom left;
+  will-change: transform, opacity;
+}
+@keyframes moonTiltRise {
+  0% {
+    transform: translateY(60%) rotate(-15deg);
+    opacity: 0;
+    filter: brightness(0.4) blur(5px);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+    filter: none;
+  }
+}
+.ca__fx-moonCyclePulse {
+  animation: moonCyclePulse 3.5s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+@keyframes moonCyclePulse {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.3);
+  }
+}
+/**
+ * Module: Moon Fade
+ * Filename: ca__MoonFade.css
+ */
 .ca__fx-moonFade {
   animation-name: moonFade;
   animation-duration: 2s;
@@ -4986,6 +4324,25 @@
     filter: none;
   }
 }
+.ca__fx-moonFadeOut {
+  animation-name: moonFadeOut;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes moonFadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    filter: brightness(0.3) blur(4px);
+    transform: scale(0.95);
+  }
+}
 .ca__fx-moonFadeOutUp {
   animation: moonFadeOutUp 1.6s ease-in both;
   will-change: transform, opacity;
@@ -5069,69 +4426,6 @@
     transform: scale(0.85);
     opacity: 0;
     filter: brightness(0.2) blur(10px);
-  }
-}
-.ca__fx-moonRippleGlow {
-  animation: moonRippleGlow 2.8s ease-in-out infinite;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-@keyframes moonRippleGlow {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-  }
-
-  50% {
-    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
-  }
-}
-.ca__fx-moonDustFloat {
-  animation: moonDustFloat 2.2s ease-out both;
-  will-change: transform, opacity;
-}
-@keyframes moonDustFloat {
-  0% {
-    opacity: 0;
-    transform: translateY(20%) scale(1.1);
-    filter: blur(8px) grayscale(1);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0%) scale(1);
-    filter: none;
-  }
-}
-.ca__fx-moonTiltRise {
-  animation: moonTiltRise 1.7s ease-out both;
-  transform-origin: bottom left;
-  will-change: transform, opacity;
-}
-@keyframes moonTiltRise {
-  0% {
-    transform: translateY(60%) rotate(-15deg);
-    opacity: 0;
-    filter: brightness(0.4) blur(5px);
-  }
-
-  100% {
-    transform: translateY(0%) rotate(0deg);
-    opacity: 1;
-    filter: none;
-  }
-}
-.ca__fx-moonCyclePulse {
-  animation: moonCyclePulse 3.5s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-@keyframes moonCyclePulse {
-  0%,
-  100% {
-    filter: brightness(1);
-  }
-  50% {
-    filter: brightness(1.3);
   }
 }
 /**
@@ -5957,31 +5251,6 @@
     box-shadow: 0 0 0 0 rgba(0, 255, 128, 0);
   }
 }
-.ca__fx-hudPing {
-  position: relative;
-}
-.ca__fx-hudPing::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 50%;
-  border: 2px solid rgba(0, 255, 255, 0.5);
-  animation: hudPing 1.2s infinite ease-out;
-}
-@keyframes hudPing {
-  0% {
-    transform: scale(0.5);
-    opacity: 0.8;
-  }
-
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
 .ca__fx-hudScanExit {
   animation: hudScanExit 0.8s ease-in forwards;
 }
@@ -5996,120 +5265,6 @@
     clip-path: circle(0% at 50% 50%);
     opacity: 0;
     transform: scale(0.8);
-  }
-}
-.ca__fx-dataTypeCascade {
-  animation: dataTypeCascade 1.4s ease-out forwards;
-  clip-path: inset(100% 0 0 0);
-}
-@keyframes dataTypeCascade {
-  0% {
-    clip-path: inset(100% 0 0 0);
-    opacity: 0;
-  }
-
-  60% {
-    clip-path: inset(20% 0 0 0);
-    opacity: 0.7;
-  }
-
-  100% {
-    clip-path: inset(0 0 0 0);
-    opacity: 1;
-  }
-}
-.ca__fx-corruptTextScramble {
-  animation: corruptTextScramble 1.2s infinite steps(2, end);
-  color: #ff0059;
-  text-shadow: 0 0 4px #ff0059;
-}
-@keyframes corruptTextScramble {
-  0% {
-    opacity: 1;
-    transform: skewX(0);
-    filter: hue-rotate(0deg);
-  }
-
-  50% {
-    opacity: 0.6;
-    transform: skewX(15deg);
-    filter: hue-rotate(180deg);
-  }
-
-  100% {
-    opacity: 1;
-    transform: skewX(0);
-    filter: hue-rotate(0deg);
-  }
-}
-.ca__fx-corruptTextOffset {
-  animation: corruptTextOffset 0.5s infinite steps(3, end);
-  text-shadow:
-    2px 0 #f0f,
-    -2px 0 #0ff;
-}
-@keyframes corruptTextOffset {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(1px);
-  }
-
-  100% {
-    transform: translateX(-1px);
-  }
-}
-.ca__fx-dataTypeCascadeOut {
-  animation-name: dataTypeCascadeOut;
-}
-@keyframes dataTypeCascadeOut {
-  0% {
-    clip-path: inset(0 0 0 0);
-    opacity: 1;
-  }
-
-  60% {
-    clip-path: inset(20% 0 60% 0);
-    opacity: 0.4;
-  }
-
-  100% {
-    clip-path: inset(100% 0 0 0);
-    opacity: 0;
-  }
-}
-.ca__fx-initiateSequenceOut {
-  animation: initiateSequenceOut 0.9s steps(2, end) forwards;
-}
-@keyframes initiateSequenceOut {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(1.05) rotate(2deg);
-  }
-}
-.ca__fx-criticalBreach {
-  animation: criticalBreach 1.2s steps(2, end) infinite;
-  color: #ff1a1a;
-  background: black;
-  text-shadow: 0 0 4px red;
-}
-@keyframes criticalBreach {
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 0.4;
-    transform: scale(1.05);
   }
 }
 .ca__fx-hudReticleExpand {
@@ -7872,6 +7027,845 @@
   100% {
     transform: scale(0.8) translate(10px, 20px);
     opacity: 0;
+  }
+}
+/**
+ * Module: Blob
+ * Filename: ca__blob.css
+ */
+.ca__fx-blobJumpMorph {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 50% 50%, #00f0ff, #0099cc);
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  animation: blobJumpMorph 2.2s ease-in-out infinite;
+}
+@keyframes blobJumpMorph {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  }
+
+  25% {
+    transform: translateY(-30%) scale(1.1, 0.9);
+    border-radius: 50% 40% 60% 50% / 40% 60% 40% 60%;
+  }
+
+  50% {
+    transform: translateY(0) scale(0.95, 1.05);
+    border-radius: 60% 50% 40% 60% / 50% 60% 50% 40%;
+  }
+
+  75% {
+    transform: translateY(-15%) scale(1.05, 0.95);
+    border-radius: 45% 55% 55% 45% / 55% 45% 55% 45%;
+  }
+}
+.ca__fx-gooBounceBlob {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #ff66cc, #9900ff);
+  border-radius: 50%;
+  animation: gooBounceBlob 1.8s ease-in-out infinite;
+}
+@keyframes gooBounceBlob {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    border-radius: 50%;
+  }
+
+  30% {
+    transform: translateY(-40%) scale(1.2, 0.8);
+    border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+  }
+
+  60% {
+    transform: translateY(10%) scale(0.9, 1.1);
+    border-radius: 60% 40% 40% 60% / 50% 40% 60% 50%;
+  }
+}
+.ca__fx-jellyBounceWave {
+  width: 80px;
+  height: 80px;
+  background: conic-gradient(from 90deg, #00ffcc, #6600ff, #00ffcc);
+  border-radius: 50%;
+  animation: jellyBounceWave 2.6s ease-in-out infinite;
+}
+@keyframes jellyBounceWave {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    border-radius: 50%;
+  }
+
+  20% {
+    transform: translateY(-30%) scale(1.1, 0.8);
+    border-radius: 40% 60% 65% 35% / 50% 40% 60% 50%;
+  }
+
+  50% {
+    transform: translateY(0) scale(0.95, 1.1);
+    border-radius: 60% 40% 45% 55% / 60% 45% 55% 40%;
+  }
+
+  80% {
+    transform: translateY(-10%) scale(1.05, 0.95);
+    border-radius: 55% 45% 50% 50% / 50% 50% 55% 45%;
+  }
+}
+.ca__fx-blobBouncePop {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle at 40% 40%, #ffe066, #ff6b6b);
+  border-radius: 50%;
+  animation: blobBouncePop 2.2s ease-in-out infinite;
+}
+@keyframes blobBouncePop {
+  0% {
+    transform: scale(1) translateY(0);
+    border-radius: 50%;
+  }
+
+  20% {
+    transform: scale(1.2, 0.8) translateY(-25%);
+    border-radius: 40% 60% 70% 30% / 60% 40% 60% 40%;
+  }
+
+  50% {
+    transform: scale(0.95, 1.1) translateY(10%);
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+    border-radius: 50%;
+  }
+}
+.ca__fx-blobElasticStretch {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, #00f0ff, #0044ff);
+  border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+  animation: blobElasticStretch 2.8s ease-in-out infinite;
+}
+@keyframes blobElasticStretch {
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+  }
+
+  25% {
+    transform: translateY(-60%) scale(0.9, 1.3);
+    border-radius: 50% 60% 40% 50% / 50% 40% 60% 50%;
+  }
+
+  50% {
+    transform: translateY(10%) scale(1.1, 0.8);
+    border-radius: 60% 50% 50% 40% / 50% 50% 50% 60%;
+  }
+}
+.ca__fx-blobPulseDrop {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at 50% 50%, #ffffff, #00ffcc);
+  border-radius: 50%;
+  animation: blobPulseDrop 1.8s ease-in-out infinite;
+  box-shadow:
+    0 0 12px #00ffc3,
+    0 0 24px #00ffc3;
+}
+@keyframes blobPulseDrop {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateY(-30%) scale(1.15, 0.85);
+  }
+
+  50% {
+    transform: translateY(0) scale(0.9, 1.1);
+    opacity: 0.9;
+  }
+
+  75% {
+    transform: translateY(-15%) scale(1.05, 0.95);
+    opacity: 1;
+  }
+}
+.ca__fx-floatingOrb {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at 60% 40%, #fff5cc, #ff00cc);
+  border-radius: 50%;
+  animation: floatingOrb 3.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(255,0,204,0.66667));
+}
+@keyframes floatingOrb {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-12%) scale(1.05);
+  }
+}
+.ca__fx-magicBlobSplit {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #99faff, #3300ff);
+  border-radius: 60% 40% 50% 70% / 60% 40% 60% 50%;
+  animation: magicBlobSplit 2.8s ease-in-out infinite;
+}
+@keyframes ca__magicBlobSplit {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    border-radius: 60% 40% 50% 70% / 60% 40% 60% 50%;
+  }
+  50% {
+    transform: translate(-10%, -10%) scale(1.1);
+    border-radius: 40% 60% 70% 30% / 50% 70% 30% 60%;
+  }
+}
+.ca__fx-orbitalSpin {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #ff66ff, #9900ff);
+  border-radius: 50%;
+  animation: ca__orbitalSpin 5s linear infinite;
+  position: relative;
+  transform-origin: 100px center;
+}
+@keyframes orbitalSpin {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+.ca__fx-pulseAura {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, #ffffff 10%, #00ffff 40%, transparent 70%);
+  border-radius: 50%;
+  animation: pulseAura 2s ease-in-out infinite;
+  filter: blur(3px);
+  opacity: 0.5;
+}
+@keyframes pulseAura {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+.ca__fx-magicTrailComet {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #00ffff, #ffffff);
+  animation: magicTrailComet 1.5s linear infinite;
+  border-radius: 100px;
+}
+@keyframes magicTrailComet {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+/**
+ * Module: Elastic Animation
+ * Filename: ca__elastic.css
+ */
+.ca__fx-elasticArise {
+  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
+  transform-origin: bottom center; /* Important for vertical scaling */
+}
+@keyframes elasticArise {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  20% {
+    transform: translateY(-40px) scaleY(1.2); /* Rise with stretch */
+  }
+
+  40% {
+    transform: translateY(0) scaleY(0.9); /* Settle with slight squash */
+  }
+
+  60% {
+    transform: translateY(-15px) scaleY(1.05); /* Smaller elastic bounce */
+  }
+
+  80% {
+    transform: translateY(0) scaleY(0.98);
+  }
+}
+.ca__fx-elasticRise {
+  animation: elasticRise var(--elastic-duration, 1s) ease-out both;
+}
+@keyframes elasticRise {
+  0% {
+    transform: scaleY(1) translateY(0);
+  }
+
+  40% {
+    transform: scaleY(0.9) translateY(calc(var(--elastic-height, 1.5rem) * -1.2));
+  }
+
+  60% {
+    transform: scaleY(1.1) translateY(calc(var(--elastic-height, 1.5rem) * 0.3));
+  }
+
+  80% {
+    transform: scaleY(0.95) translateY(calc(var(--elastic-height, 1.5rem) * -0.1));
+  }
+
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}
+.ca__fx-elasticStretch {
+  animation: elasticStretch var(--duration, 1s) ease-out both;
+}
+@keyframes elasticStretch {
+  0% {
+    transform: scaleX(1);
+  }
+
+  30% {
+    transform: scaleX(1.4);
+  }
+
+  50% {
+    transform: scaleX(0.85);
+  }
+
+  70% {
+    transform: scaleX(1.15);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+.ca__fx-elasticBounce {
+  animation: elasticBounce var(--duration, 1s) cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes elasticBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1.5rem);
+  }
+}
+.ca__fx-elasticSquash {
+  animation: elasticSquash var(--duration, 0.7s) ease-out both;
+}
+@keyframes elasticSquash {
+  0% {
+    transform: scaleY(1);
+  }
+
+  40% {
+    transform: scaleY(0.5) scaleX(1.3);
+  }
+
+  60% {
+    transform: scaleY(1.2) scaleX(0.9);
+  }
+
+  80% {
+    transform: scaleY(0.95) scaleX(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-elasticIn {
+  animation: elasticIn var(--duration, 0.6s) ease-out both;
+}
+@keyframes elasticIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-rubberPop {
+  animation: rubberPop var(--duration, 0.7s) ease-out both;
+}
+@keyframes rubberPop {
+  0% {
+    transform: scale(0.3);
+  }
+
+  40% {
+    transform: scale(1.25);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  80% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-squishLift {
+  animation: squishLift var(--duration, 0.8s) ease-in-out both;
+}
+@keyframes squishLift {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  30% {
+    transform: translateY(-1.2rem) scaleY(1.3);
+  }
+
+  60% {
+    transform: translateY(0.5rem) scaleY(0.9);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+.ca__fx-flubberBounce {
+  animation: flubberBounce var(--duration, 1s) ease-in-out both;
+}
+@keyframes flubberBounce {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  20% {
+    transform: scale(1.2, 0.8);
+  }
+
+  40% {
+    transform: scale(0.8, 1.2);
+  }
+
+  60% {
+    transform: scale(1.1, 0.9);
+  }
+
+  80% {
+    transform: scale(0.95, 1.05);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.ca__fx-boingScale {
+  animation: boingScale var(--duration, 0.9s) ease-out both;
+}
+@keyframes boingScale {
+  0% {
+    transform: scale(0.5);
+  }
+
+  30% {
+    transform: scale(1.3);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-slinkyDrop {
+  animation: slinkyDrop var(--duration, 1s) ease-in both;
+}
+@keyframes slinkyDrop {
+  0% {
+    transform: translateY(-120%);
+    scale: 1 0.8;
+  }
+
+  40% {
+    transform: translateY(20%) scale(1, 1.2);
+  }
+
+  60% {
+    transform: translateY(-10%) scale(1, 0.95);
+  }
+
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+.ca__fx-elasticBounce {
+  animation: elasticBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  transform-origin: bottom center; /* Important for bouncing */
+}
+@keyframes elasticBounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  20% {
+    transform: translateY(-30px) scaleX(1.05) scaleY(0.95);
+  }
+
+  40% {
+    transform: translateY(0) scaleX(0.98) scaleY(1.02);
+  }
+
+  60% {
+    transform: translateY(-15px) scaleX(1.02) scaleY(0.98);
+  }
+
+  80% {
+    transform: translateY(0) scaleX(0.99) scaleY(1.01);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+.ca__fx-springyEffect {
+  animation: springyEffect 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@keyframes springyEffect {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1, 0.9);
+  }
+
+  50% {
+    transform: scale(0.95, 1.05);
+  }
+
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-jiggleTransform {
+  animation: jiggleTransform 0.7s ease-in-out forwards;
+  transform-origin: center;
+}
+@keyframes jiggleTransform {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  15% {
+    transform: rotate(-3deg) scale(1.02);
+  }
+
+  30% {
+    transform: rotate(3deg) scale(0.98);
+  }
+
+  45% {
+    transform: rotate(-2deg) scale(1.01);
+  }
+
+  60% {
+    transform: rotate(2deg) scale(0.99);
+  }
+
+  75% {
+    transform: rotate(-1deg) scale(1);
+  }
+}
+.ca__fx-stretchCollapse {
+  animation: stretchCollapse 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  transform-origin: center;
+}
+@keyframes stretchCollapse {
+  0% {
+    transform: scaleY(1);
+  }
+
+  25% {
+    transform: scaleY(1.3);
+  } /* Stretch */
+
+  50% {
+    transform: scaleY(0.7);
+  } /* Collapse */
+
+  75% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+.ca__fx-reboundMotion {
+  animation: reboundMotion 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  transform-origin: bottom center; /* For vertical rebound */
+}
+@keyframes reboundMotion {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  } /* Move up */
+
+  100% {
+    transform: translateY(0);
+  } /* Rebound with overshoot */
+}
+.ca__fx-snapBackEase {
+  animation: snapBackEase 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+@keyframes snapBackEase {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-flexiShrink {
+  animation: flexiShrink 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+@keyframes flexiShrink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  } /* Shrink */
+
+  75% {
+    transform: scale(1.05);
+  } /* Overshoot */
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-bouncyScale {
+  animation: bouncyScale 0.7s cubic-bezier(0, 0, 0.2, 1.4) both;
+}
+/* bouncyScale */
+@keyframes bouncyScale {
+  0% {
+    transform: scale(0.5);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  80% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-pulseElastic {
+  animation: pulseElastic 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate; /* Infinite for pulsing */
+}
+@keyframes pulseElastic {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  } /* Pulse out */
+
+  75% {
+    transform: scale(0.95);
+  } /* Slightly inward */
+}
+.ca__fx-rubber {
+  animation: rubber 0.8s ease-out;
+}
+@keyframes rubber {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-squishBoing {
+  animation-name: squishBoing;
+  transform-origin: bottom center;
+}
+@keyframes squishBoing {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(1.1, 0.8);
+  } /* Squish down and slightly wider */
+
+  50% {
+    transform: scale(0.9, 1.2);
+  } /* Stretch up and slightly narrower */
+
+  75% {
+    transform: scale(1.05, 0.95);
+  } /* Overshoot slightly */
+
+  100% {
+    transform: scale(1, 1);
+  } /* Return to normal */
+}
+.ca__fx-rubberExpand {
+  animation-name: rubberExpand;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform;
+}
+@keyframes rubberExpand {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scaleX(1.3) scaleY(0.7);
+  }
+
+  60% {
+    transform: scaleX(0.9) scaleY(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.ca__fx-rubberShrink {
+  animation-name: rubberShrink;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes rubberShrink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scaleX(1.1) scaleY(0.8);
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.ca__fx-matrixWave {
+  animation: matrixWave 1.5s infinite ease-in-out;
+}
+@keyframes matrixWave {
+  0% {
+    transform: translateY(0) scaleY(1);
+    filter: grayscale(0);
+  }
+
+  25% {
+    transform: translateY(-3px) scaleY(1.2);
+  }
+
+  50% {
+    transform: translateY(3px) scaleY(0.8);
+    filter: grayscale(1);
+  }
+
+  75% {
+    transform: translateY(-1px) scaleY(1.05);
+    filter: none;
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
   }
 }
 /**

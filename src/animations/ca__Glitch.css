@@ -177,32 +177,9 @@
   }
 }
 
-.glitchCollapseOut {
-  animation: glitchCollapseOut 0.7s ease-in both;
-}
-
-@keyframes glitchCollapseOut {
-  0% {
-    opacity: 1;
-    transform: scale(1) skew(0deg, 0deg);
-    filter: brightness(1);
-  }
-
-  60% {
-    transform: scale(1.1) skew(5deg, -5deg);
-    filter: hue-rotate(60deg);
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(0.8) skew(-10deg, 10deg);
-    filter: blur(6px) brightness(0) grayscale(1);
-  }
-}
-
 .glitchSliceInCollapse {
   animation-name: glitchSliceInCollapse;
-  animation-timing-function: ease-out;
+  animation-timing-function: steps(5 end);
 }
 
 @keyframes glitchSliceInCollapse {
@@ -226,81 +203,6 @@
     opacity: 1;
     transform: scaleY(1);
     clip-path: inset(0 0 0 0);
-  }
-}
-
-.glitchMatrixWave {
-  animation: glitchMatrixWave 1.5s infinite ease-in-out;
-}
-
-@keyframes glitchMatrixWave {
-  0% {
-    transform: translateY(0) scaleY(1);
-    filter: grayscale(0);
-  }
-
-  25% {
-    transform: translateY(-3px) scaleY(1.2);
-  }
-
-  50% {
-    transform: translateY(3px) scaleY(0.8);
-    filter: grayscale(1);
-  }
-
-  75% {
-    transform: translateY(-1px) scaleY(1.05);
-    filter: none;
-  }
-
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
-
-.hologramPulse {
-  animation: hologramPulse 2.5s ease-in-out infinite;
-  color: #00ffe0;
-  text-shadow:
-    0 0 2px #00ffe0,
-    0 0 6px #00ffe0;
-}
-
-@keyframes hologramPulse {
-  0%,
-  100% {
-    opacity: 1;
-    filter: hue-rotate(0deg) blur(0px);
-  }
-
-  50% {
-    opacity: 0.85;
-    filter: hue-rotate(20deg) blur(1px);
-  }
-}
-
-.scanlineSweep {
-  position: relative;
-  overflow: hidden;
-}
-
-.scanlineSweep::before {
-  content: '';
-  position: absolute;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.06) 50%, transparent 100%);
-  animation: scanlineSweep 1.8s linear infinite;
-}
-
-@keyframes scanlineSweep {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 100%;
   }
 }
 
@@ -334,36 +236,6 @@
     transform: translate(0, 0);
     filter: none;
     opacity: 1;
-  }
-}
-
-.hologramWarp {
-  animation: hologramWarp 2.3s ease-in-out infinite;
-  filter: contrast(1.2) brightness(1.1);
-}
-
-@keyframes hologramWarp {
-  0% {
-    transform: skew(0deg, 0deg);
-    filter: brightness(1) hue-rotate(0deg);
-  }
-
-  25% {
-    transform: skew(1deg, -1deg);
-  }
-
-  50% {
-    transform: skew(-1.5deg, 1.5deg);
-    filter: hue-rotate(15deg);
-  }
-
-  75% {
-    transform: skew(0.5deg, -0.5deg);
-  }
-
-  100% {
-    transform: skew(0deg, 0deg);
-    filter: hue-rotate(0deg);
   }
 }
 
@@ -574,66 +446,6 @@
   }
 }
 
-.glitchSliceExitCollapse {
-  animation: glitchSliceExitCollapse 0.9s ease-in forwards;
-}
-
-@keyframes glitchSliceExitCollapse {
-  0% {
-    opacity: 1;
-    transform: scaleY(1);
-    clip-path: inset(0 0 0 0);
-  }
-
-  40% {
-    transform: scaleY(0.9);
-    clip-path: inset(20% 0 20% 0);
-  }
-
-  70% {
-    transform: scaleY(0.6);
-    clip-path: inset(60% 0 10% 0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: scaleY(0);
-    clip-path: inset(100% 0 0 0);
-  }
-}
-
-.glitchSliceDrop {
-  animation: glitchSliceDrop 2s infinite ease-in-out;
-}
-
-@keyframes glitchSliceDrop {
-  0% {
-    clip-path: inset(0 0 0 0);
-  }
-
-  20% {
-    clip-path: inset(10% 0 85% 0);
-    transform: translateY(0);
-  }
-
-  30% {
-    transform: translateY(3px);
-  }
-
-  40% {
-    transform: translateY(-2px);
-  }
-
-  50% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    clip-path: inset(0 0 0 0);
-    transform: translateY(0);
-  }
-}
-
 .glitchSliceStagger {
   animation: glitchSliceStagger 3s steps(1, end) infinite;
 }
@@ -663,60 +475,6 @@
   100% {
     clip-path: inset(0 0 0 0);
     transform: none;
-  }
-}
-
-.glitchCompressIn {
-  animation-name: glitchCompressIn;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-
-@keyframes glitchCompressIn {
-  0% {
-    transform: scale(1.4, 0.6);
-    filter: blur(6px) brightness(0.2);
-    opacity: 0;
-  }
-
-  40% {
-    transform: scale(1.05, 0.95);
-    filter: blur(2px);
-    opacity: 0.8;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    filter: none;
-    opacity: 1;
-  }
-}
-
-.glitchDecodePulse {
-  animation: glitchDecodePulse 1.3s ease-out both;
-  letter-spacing: 0.05em;
-}
-
-@keyframes glitchDecodePulse {
-  0% {
-    filter: grayscale(1) brightness(0.3);
-    transform: scale(1.05) skewX(-5deg);
-    opacity: 0;
-  }
-
-  40% {
-    filter: hue-rotate(90deg);
-    opacity: 0.6;
-  }
-
-  70% {
-    filter: none;
-    transform: scale(1) skewX(0);
-    opacity: 1;
-  }
-
-  100% {
-    letter-spacing: normal;
   }
 }
 
@@ -787,5 +545,120 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+.corruptTextScramble {
+  animation: corruptTextScramble 1.2s infinite steps(2, end);
+  color: #ff0059;
+  text-shadow: 0 0 4px #ff0059;
+}
+
+@keyframes corruptTextScramble {
+  0% {
+    opacity: 1;
+    transform: skewX(0);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: skewX(15deg);
+    filter: hue-rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: skewX(0);
+    filter: hue-rotate(0deg);
+  }
+}
+
+.corruptTextOffset {
+  animation: corruptTextOffset 0.5s infinite steps(3, end);
+  text-shadow:
+    2px 0 #f0f,
+    -2px 0 #0ff;
+}
+
+@keyframes corruptTextOffset {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(-1px);
+  }
+}
+
+.criticalBreach {
+  animation: criticalBreach 1.2s steps(2, end) infinite;
+  color: #ff1a1a;
+  background: black;
+  text-shadow: 0 0 4px red;
+}
+
+@keyframes criticalBreach {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
+
+.dataTypeCascade {
+  animation: dataTypeCascade 1.4s ease-out forwards;
+  clip-path: inset(100% 0 0 0);
+}
+
+@keyframes dataTypeCascade {
+  0% {
+    clip-path: inset(100% 0 0 0);
+    opacity: 0;
+  }
+
+  60% {
+    clip-path: inset(20% 0 0 0);
+    opacity: 0.7;
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+.glitchCompressIn {
+  animation-name: glitchCompressIn;
+  animation-timing-function: steps(3, end);
+  will-change: transform, opacity;
+}
+
+@keyframes glitchCompressIn {
+  0% {
+    transform: scale(2, 0.6);
+    filter: blur(6px) brightness(0.2);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.5, 0.95);
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    filter: none;
+    opacity: 1;
   }
 }

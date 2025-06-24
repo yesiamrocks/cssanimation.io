@@ -58,9 +58,13 @@
   }
 }
 /**
- * Module: Quake & Quiver Series
- * Filename: ca__quake.css
+ * Module: Blob
+ * Filename: ca__blob.css
  */
-.ca__fx-jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
+.ca__fx-blobJumpMorph {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 50% 50%, #00f0ff, #0099cc);
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  animation: blobJumpMorph 2.2s ease-in-out infinite;
 }

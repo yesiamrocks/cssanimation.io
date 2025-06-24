@@ -24,6 +24,10 @@
     "ca__fx-jump",
     "ca__fx-launch",
     "ca__fx-jitterJump",
+    "ca__fx-jumping",
+    "ca__fx-elasticJump",
+    "ca__fx-squishyBounce",
+    "ca__fx-bouncyDrop",
     "ca__fx-levitate"
   ],
   "Bounce In": [
@@ -36,6 +40,38 @@
     "ca__fx-bounceInRight"
   ],
   "Bounce Out": ["ca__fx-bounceOutTop", "ca__fx-bounceOutBottom", "ca__fx-bounceOutLeft", "ca__fx-bounceOutRight"],
+  "Blob Animation": [
+    "ca__fx-blobJumpMorph",
+    "ca__fx-gooBounceBlob",
+    "ca__fx-jellyBounceWave",
+    "ca__fx-blobBouncePop",
+    "ca__fx-blobElasticStretch",
+    "ca__fx-blobPulseDrop",
+    "ca__fx-floatingOrb",
+    "ca__fx-magicBlobSplit",
+    "ca__fx-orbitalSpin",
+    "ca__fx-pulseAura",
+    "ca__fx-magicTrailComet"
+  ],
+  "Clip-Path": [
+    "ca__fx-clipCircleExpandIn",
+    "ca__fx-clipCircleCollapseOut",
+    "ca__fx-clipDiagonalWipeIn",
+    "ca__fx-clipDiagonalWipeOut",
+    "ca__fx-clipGridReveal",
+    "ca__fx-clipGridCollapse",
+    "ca__fx-clipVerticalSplitIn",
+    "ca__fx-clipVerticalSplitOut",
+    "ca__fx-clipCrossSweepOut",
+    "ca__fx-clipBurstCircle",
+    "ca__fx-clipBurstCollapse",
+    "ca__fx-clipDiamondIn",
+    "ca__fx-clipDiagonalSliceIn",
+    "ca__fx-clipMultiStepReveal",
+    "ca__fx-clipMultiStepCollapse",
+    "ca__fx-clipAnimate",
+    "ca__fx-clipAnimateWave"
+  ],
   "Dramatic": [
     "ca__fx-curtainReveal",
     "ca__fx-curtainClose",
@@ -67,7 +103,9 @@
     "ca__fx-boingScale",
     "ca__fx-slinkyDrop",
     "ca__fx-rubberExpand",
-    "ca__fx-rubberShrink"
+    "ca__fx-rubberShrink",
+    "ca__fx-MatrixWave",
+    "ca__fx-matrixWave"
   ],
   "Engagement": ["ca__fx-bobble", "ca__fx-jelly", "ca__fx-perspectiveTilt", "ca__fx-jello", "ca__fx-waveBand"],
   "Dance & Skew": [
@@ -157,22 +195,19 @@
     "ca__fx-glitchSliceTilt",
     "ca__fx-glitchSliceExitTilt",
     "ca__fx-glitchSliceCrack",
-    "ca__fx-glitchSliceExitCollapse",
     "ca__fx-glitchSliceInCollapse",
-    "ca__fx-glitchSliceDrop",
     "ca__fx-glitchSliceStagger",
     "ca__fx-glitchFlash",
-    "ca__fx-glitchCompressIn",
-    "ca__fx-glitchCollapseOut",
-    "ca__fx-glitchMatrixWave",
     "ca__fx-hologramPulse",
-    "ca__fx-scanlineSweep",
     "ca__fx-typewriterCorrupt",
-    "ca__fx-hologramWarp",
-    "ca__fx-glitchDecodePulse",
     "ca__fx-glitchScanBurst",
     "ca__fx-hudAlertGlitch",
-    "ca__fx-glitchSequence"
+    "ca__fx-glitchSequence",
+    "ca__fx-corruptTextOffset",
+    "ca__fx-dataTypeCascadeOut",
+    "ca__fx-criticalBreach",
+    "ca__fx-corruptTextScramble",
+    "ca__fx-glitchCompressIn"
   ],
   "Magical": [
     "ca__fx-sparklePopIn",
@@ -192,10 +227,17 @@
     "ca__fx-moonEclipseOut",
     "ca__fx-moonSlideInCrescent",
     "ca__fx-moonSliceReveal",
-    "ca__fx-crescentOrbitReveal",
+    "ca__fx-crescentOrbitRevealLeft",
+    "ca__fx-crescentOrbitRevealRight",
     "ca__fx-moonSliceUp",
     "ca__fx-moonPhaseReveal",
     "ca__fx-lunarVeilIn",
+    "ca__fx-moonRippleGlow",
+    "ca__fx-moonDustFloat",
+    "ca__fx-moonTiltRise",
+    "ca__fx-moonCyclePulse"
+  ],
+  "Moon Fade": [
     "ca__fx-moonFade",
     "ca__fx-moonFadeUp",
     "ca__fx-moonFadeDown",
@@ -204,15 +246,12 @@
     "ca__fx-moonFadeScaleUp",
     "ca__fx-moonFadeSlow",
     "ca__fx-moonFadeStrong",
+    "ca__fx-moonFadeOut",
     "ca__fx-moonFadeOutUp",
     "ca__fx-moonFadeOutDown",
     "ca__fx-moonFadeOutLeft",
     "ca__fx-moonFadeOutRight",
-    "ca__fx-moonFadeOutScale",
-    "ca__fx-moonRippleGlow",
-    "ca__fx-moonDustFloat",
-    "ca__fx-moonTiltRise",
-    "ca__fx-moonCyclePulse"
+    "ca__fx-moonFadeOutScale"
   ],
   "Kite": [
     "ca__fx-kiteFloatInRight",
@@ -285,19 +324,7 @@
     "ca__fx-swingDropSnap",
     "ca__fx-swingDropMagnet"
   ],
-  "Sci-Fi UI": [
-    "ca__fx-targetLockOn",
-    "ca__fx-hudPing",
-    "ca__fx-swingIn",
-    "ca__fx-hudScanExit",
-    "ca__fx-dataTypeCascade",
-    "ca__fx-corruptTextScramble",
-    "ca__fx-corruptTextOffset",
-    "ca__fx-dataTypeCascadeOut",
-    "ca__fx-initiateSequenceOut",
-    "ca__fx-criticalBreach",
-    "ca__fx-hudReticleExpand"
-  ],
+  "Sci-Fi UI": ["ca__fx-targetLockOn", "ca__fx-hudScanExit", "ca__fx-hudReticleExpand"],
   "Pull & Push": [
     "ca__fx-pullRelease",
     "ca__fx-pushRelease",

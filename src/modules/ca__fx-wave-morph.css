@@ -149,3 +149,11 @@
     );
   }
 }
+/**
+ * Module: Dance
+ * Filename: ca__Dance.css
+ */
+.ca__fx-danceTop {
+  animation-name: danceTop;
+  transform-origin: top;
+}

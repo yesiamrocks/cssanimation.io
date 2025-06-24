@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-clipGridCollapse {
-  animation: clipGridCollapse 1s ease-in forwards;
+  animation-name: clipGridCollapse;
 }
 
 @keyframes clipGridCollapse {
@@ -46,10 +46,12 @@
     clip-path: inset(0);
     opacity: 1;
   }
+
   40% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 0.5;
   }
+
   100% {
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     opacity: 0;

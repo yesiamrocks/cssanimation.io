@@ -41,16 +41,12 @@
   0% {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond */
   }
-  25% {
+
+  50% {
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); /* Trapezoid */
   }
-  50% {
-    clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 85% 15%, 100% 100%, 0% 100%); /* A complex star-like shape */
-  }
-  75% {
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); /* A different kind of star */
-  }
+
   100% {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Back to Diamond */
+    clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 85% 15%, 100% 100%, 0% 100%); /* A complex star-like shape */
   }
 }

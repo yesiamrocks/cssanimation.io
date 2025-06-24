@@ -1,3 +1,33 @@
+## [6.6.0] - 2025-06-18
+
+### New Features
+
+- Added `ca__Clip-Path.css` module with advanced visual transitions
+- 20+ new animations:
+  - `.ca__fx-clipCircleExpandIn`, `.ca__fx-clipCircleCollapseOut`
+  - `.ca__fx-clipDiagonalWipeIn`, `.ca__fx-clipDiagonalWipeOut`
+  - `.ca__fx-clipGridReveal`, `.ca__fx-clipGridCollapse`
+  - `.ca__fx-clipDiamondIn`, `.ca__fx-clipDiagonalSliceIn`
+  - `.ca__fx-clipBurstCircle`, `.ca__fx-clipVerticalSplitIn/Out`
+  - `.ca__fx-clipCrossSweepOut`, `.ca__fx-clipMultiStepReveal/Collapse`
+  - `.ca__fx-clipAnimate`, `.ca__fx-clipAnimateWave` (polygon morph and waveflow)
+
+### Improvements
+
+- Designed for seamless entry and exit logic
+- Animations support `ease`, `cubic-bezier`, and `alternate` loop modes
+
+These animations are lightweight, GPU-accelerated, and stackable with other `cssanimation.css` effects.
+
+> Note: Use with `will-change: clip-path;` for enhanced performance.
+
+### Use cases:
+
+- Section reveals
+- Modal transitions
+- Loader FX
+- Immersive landing elements
+
 ## [6.5.0] - 2025-06-22
 
 ### Added

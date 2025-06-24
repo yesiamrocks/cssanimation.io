@@ -1,0 +1,54 @@
+/*!
+ * Module: ca__noiseBackground Animation
+ * Usage: <div class="cssanimation ca__fx-ca__noiseBackground">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-ca__noiseBackground {
+  width: 100%;
+  height: 100%;
+  background-image:
+    repeating-conic-gradient(from 0deg, #000000 0deg,#000000 1deg, #111111 1deg, #111111 2deg),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.02) 0px, rgba(0, 0, 0, 0.02) 1px);
+  background-image:
+    repeating-conic-gradient(from 0deg, #000000 0deg 1deg, #111111 1deg 2deg),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.02) 0px, rgba(0, 0, 0, 0.02) 1px);
+  background-size: 200% 200%;
+  animation: ca__noisePan 6s linear infinite;
+  opacity: 0.08;
+  filter: contrast(120%) brightness(120%);
+  mix-blend-mode: overlay;
+}

@@ -41,9 +41,11 @@
   0% {
     clip-path: circle(50% at 50% 50%); /* Start as a perfect circle */
   }
+
   25% {
     clip-path: ellipse(60% 40% at 50% 50%); /* Stretch into an ellipse */
   }
+
   50% {
     clip-path: polygon(
       20% 0%,
@@ -56,6 +58,7 @@
       0% 30%
     ); /* An octagon-like shape */
   }
+
   75% {
     clip-path: polygon(
       30% 0%,
@@ -68,6 +71,7 @@
       0% 20%
     ); /* Slightly different octagon, creating a pulsating effect */
   }
+
   100% {
     clip-path: circle(50% at 50% 50%); /* Back to a circle */
   }

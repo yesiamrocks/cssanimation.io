@@ -592,3 +592,32 @@
     opacity: 0;
   }
 }
+
+.matrixWave {
+  animation: matrixWave 1.5s infinite ease-in-out;
+}
+
+@keyframes matrixWave {
+  0% {
+    transform: translateY(0) scaleY(1);
+    filter: grayscale(0);
+  }
+
+  25% {
+    transform: translateY(-3px) scaleY(1.2);
+  }
+
+  50% {
+    transform: translateY(3px) scaleY(0.8);
+    filter: grayscale(1);
+  }
+
+  75% {
+    transform: translateY(-1px) scaleY(1.05);
+    filter: none;
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}

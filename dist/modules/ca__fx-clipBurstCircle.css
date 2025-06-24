@@ -47,10 +47,12 @@
     clip-path: circle(0% at 50% 50%);
     opacity: 0;
   }
+
   60% {
     clip-path: circle(60% at 50% 50%);
     opacity: 1;
   }
+
   100% {
     clip-path: circle(120% at 50% 50%);
   }

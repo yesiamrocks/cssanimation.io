@@ -66,10 +66,3 @@
     transform: translateY(0) scale(1, 1);
   }
 }
-/**
- * Module: Bounce In
- * Filename: ca__BounceIn.css
- */
-.ca__fx-bounceInTop {
-  animation-name: bounceInTop;
-}

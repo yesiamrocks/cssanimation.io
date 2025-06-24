@@ -38,7 +38,5 @@
 /* stylelint-enable */
 
 .ca__fx-clip-animate-wave {
-  /* New class name */
-
   animation: wave-morph 7s infinite ease-in-out alternate; /* Medium speed */
 }

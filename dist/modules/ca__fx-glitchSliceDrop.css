@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-glitchSliceDrop {
-  animation: glitchSliceDrop 2s infinite ease-in-out;
+  animation: glitchSliceDrop 2s infinite steps(1, end);
 }
 
 @keyframes glitchSliceDrop {
@@ -46,20 +46,20 @@
     clip-path: inset(0 0 0 0);
   }
 
-  20% {
+  30% {
     clip-path: inset(10% 0 85% 0);
     transform: translateY(0);
   }
 
-  30% {
-    transform: translateY(3px);
-  }
-
-  40% {
-    transform: translateY(-2px);
-  }
-
   50% {
+    transform: translateY(50px);
+  }
+
+  70% {
+    transform: translateY(-20px);
+  }
+
+  90% {
     transform: translateY(0px);
   }
 

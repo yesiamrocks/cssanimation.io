@@ -46,6 +46,7 @@
     clip-path: circle(120% at 50% 50%);
     opacity: 1;
   }
+
   100% {
     clip-path: circle(0% at 50% 50%);
     opacity: 0;
