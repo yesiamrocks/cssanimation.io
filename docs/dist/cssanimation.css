@@ -2,8 +2,8 @@
 /*!* @preserve
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
-* Version: 6.5.0
-* Built: 2025-06-24 16:24:23 UTC
+* Version: 6.6.0
+* Built: 2025-06-24 16:34:55 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -2928,68 +2928,6 @@
     transform: translateX(-1px);
   }
 }
-.ca__fx-dataTypeCascadeOut {
-  animation-name: dataTypeCascadeOut;
-  animation-timing-function: steps(10, end);
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-}
-@keyframes dataTypeCascadeOut {
-  0% {
-    clip-path: inset(0% 0 0 0);
-    opacity: 1;
-  }
-
-  10% {
-    clip-path: inset(10% 0 0 0);
-    opacity: 0.9;
-  }
-
-  20% {
-    clip-path: inset(20% 0 0 0);
-    opacity: 0.85;
-  }
-
-  30% {
-    clip-path: inset(30% 0 0 0);
-    opacity: 0.75;
-  }
-
-  40% {
-    clip-path: inset(40% 0 0 0);
-    opacity: 0.65;
-  }
-
-  50% {
-    clip-path: inset(50% 0 0 0);
-    opacity: 0.55;
-  }
-
-  60% {
-    clip-path: inset(60% 0 0 0);
-    opacity: 0.45;
-  }
-
-  70% {
-    clip-path: inset(70% 0 0 0);
-    opacity: 0.35;
-  }
-
-  80% {
-    clip-path: inset(80% 0 0 0);
-    opacity: 0.2;
-  }
-
-  90% {
-    clip-path: inset(90% 0 0 0);
-    opacity: 0.1;
-  }
-
-  100% {
-    clip-path: inset(100% 0 0 0);
-    opacity: 0;
-  }
-}
 .ca__fx-criticalBreach {
   animation: criticalBreach 1.2s steps(2, end) infinite;
   color: #ff1a1a;
@@ -3006,26 +2944,6 @@
   50% {
     opacity: 0.4;
     transform: scale(1.05);
-  }
-}
-.ca__fx-dataTypeCascade {
-  animation: dataTypeCascade 1.4s ease-out forwards;
-  clip-path: inset(100% 0 0 0);
-}
-@keyframes dataTypeCascade {
-  0% {
-    clip-path: inset(100% 0 0 0);
-    opacity: 0;
-  }
-
-  60% {
-    clip-path: inset(20% 0 0 0);
-    opacity: 0.7;
-  }
-
-  100% {
-    clip-path: inset(0 0 0 0);
-    opacity: 1;
   }
 }
 .ca__fx-glitchCompressIn {

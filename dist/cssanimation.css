@@ -3,7 +3,7 @@
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
 * Version: 6.6.0
-* Built: 2025-06-24 16:31:10 UTC
+* Built: 2025-06-24 16:34:55 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -2944,26 +2944,6 @@
   50% {
     opacity: 0.4;
     transform: scale(1.05);
-  }
-}
-.ca__fx-dataTypeCascade {
-  animation: dataTypeCascade 1.4s ease-out forwards;
-  clip-path: inset(100% 0 0 0);
-}
-@keyframes dataTypeCascade {
-  0% {
-    clip-path: inset(100% 0 0 0);
-    opacity: 0;
-  }
-
-  60% {
-    clip-path: inset(20% 0 0 0);
-    opacity: 0.7;
-  }
-
-  100% {
-    clip-path: inset(0 0 0 0);
-    opacity: 1;
   }
 }
 .ca__fx-glitchCompressIn {

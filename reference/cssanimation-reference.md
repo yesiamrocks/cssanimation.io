@@ -130,7 +130,6 @@
 - `ca__fx-criticalBreach`
 - `ca__fx-curtainClose`
 - `ca__fx-curtainReveal`
-- `ca__fx-dataTypeCascade`
 - `ca__fx-dropSpinIn`
 - `ca__fx-elasticArise`
 - `ca__fx-elasticBounce`
