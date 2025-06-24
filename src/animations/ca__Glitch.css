@@ -615,28 +615,6 @@
   }
 }
 
-.dataTypeCascade {
-  animation: dataTypeCascade 1.4s ease-out forwards;
-  clip-path: inset(100% 0 0 0);
-}
-
-@keyframes dataTypeCascade {
-  0% {
-    clip-path: inset(100% 0 0 0);
-    opacity: 0;
-  }
-
-  60% {
-    clip-path: inset(20% 0 0 0);
-    opacity: 0.7;
-  }
-
-  100% {
-    clip-path: inset(0 0 0 0);
-    opacity: 1;
-  }
-}
-
 .glitchCompressIn {
   animation-name: glitchCompressIn;
   animation-timing-function: steps(3, end);
