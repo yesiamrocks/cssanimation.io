@@ -148,7 +148,7 @@
             <h2 class="text-lg font-semibold mb-4 text-violet-600 dark:text-violet-400 rounded-md">Categories</h2>
             <div id="categories" class="flex flex-col gap-2">
                 <button class="category-button text-left px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out active" data-category="All">
-                    All (419)
+                    All (437)
                 </button>
                 
                                 <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="Blob Animation">
@@ -216,7 +216,7 @@
                                 </button>
                                 
                                 <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="Glitch">
-                                    Glitch (25)
+                                    Glitch (26)
                                 </button>
                                 
                                 <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="Heartbeat">
@@ -224,7 +224,7 @@
                                 </button>
                                 
                                 <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="Kite">
-                                    Kite (14)
+                                    Kite (13)
                                 </button>
                                 
                                 <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="Magical">
@@ -281,6 +281,10 @@
                                 
                                 <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="Spotlight">
                                     Spotlight (11)
+                                </button>
+                                
+                                <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="Step Animation">
+                                    Step Animation (18)
                                 </button>
                                 
                                 <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="Swing">
@@ -3824,6 +3828,31 @@
                             <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Glitch" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-glitchCompressOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-glitchCompressOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-glitchCompressOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-glitchCompressOut" id="ca__fx-glitchCompressOut" onclick="replay('ca__fx-glitchCompressOut')">
+                                    ca__fx-glitchCompressOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-glitchCompressOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-glitchCompressOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-glitchCompressOut')">
+                                        ca__fx-glitchCompressOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-glitchCompressOut')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-glitchCompressOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-glitchCompressOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Elevate & Hang" tabindex="0">
                                 <button onclick="shareAnimation('ca__fx-hangAndDropLeft')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-hangAndDropLeft">
                                     Share
@@ -4243,31 +4272,6 @@
                                     <button onclick="copyToClipboard('ca__fx-kiteSwingEntry')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-kiteSwingEntry">
                                         Copy
                                         <span id="feedback-ca__fx-kiteSwingEntry" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
-  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
-  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
-  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Kite" tabindex="0">
-                                <button onclick="shareAnimation('ca__fx-kiteIdleFloat')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-kiteIdleFloat">
-                                    Share
-                                    <span id="share-feedback-ca__fx-kiteIdleFloat" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
-                                </button>
-
-                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-kiteIdleFloat" id="ca__fx-kiteIdleFloat" onclick="replay('ca__fx-kiteIdleFloat')">
-                                    ca__fx-kiteIdleFloat
-                                </div>
-                                
-                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-ca__fx-kiteIdleFloat" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
-                                          data-animation-class="ca__fx-kiteIdleFloat" tabindex="0" role="button" aria-expanded="false"
-                                          onclick="toggleCodeExpansion('ca__fx-kiteIdleFloat')">
-                                        ca__fx-kiteIdleFloat
-                                    </code>
-                                    <button onclick="copyToClipboard('ca__fx-kiteIdleFloat')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-kiteIdleFloat">
-                                        Copy
-                                        <span id="feedback-ca__fx-kiteIdleFloat" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>
@@ -10068,6 +10072,456 @@
                                     <button onclick="copyToClipboard('ca__fx-electricity')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-electricity">
                                         Copy
                                         <span id="feedback-ca__fx-electricity" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepTypeIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepTypeIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepTypeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepTypeIn" id="ca__fx-stepTypeIn" onclick="replay('ca__fx-stepTypeIn')">
+                                    ca__fx-stepTypeIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepTypeIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepTypeIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepTypeIn')">
+                                        ca__fx-stepTypeIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepTypeIn')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepTypeIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepTypeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepSlideInX')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepSlideInX">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepSlideInX" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepSlideInX" id="ca__fx-stepSlideInX" onclick="replay('ca__fx-stepSlideInX')">
+                                    ca__fx-stepSlideInX
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepSlideInX" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepSlideInX" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepSlideInX')">
+                                        ca__fx-stepSlideInX
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepSlideInX')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepSlideInX">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepSlideInX" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepSlideOutX')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepSlideOutX">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepSlideOutX" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepSlideOutX" id="ca__fx-stepSlideOutX" onclick="replay('ca__fx-stepSlideOutX')">
+                                    ca__fx-stepSlideOutX
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepSlideOutX" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepSlideOutX" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepSlideOutX')">
+                                        ca__fx-stepSlideOutX
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepSlideOutX')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepSlideOutX">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepSlideOutX" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepZoomIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepZoomIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepZoomIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepZoomIn" id="ca__fx-stepZoomIn" onclick="replay('ca__fx-stepZoomIn')">
+                                    ca__fx-stepZoomIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepZoomIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepZoomIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepZoomIn')">
+                                        ca__fx-stepZoomIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepZoomIn')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepZoomIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepZoomIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepZoomOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepZoomOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepZoomOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepZoomOut" id="ca__fx-stepZoomOut" onclick="replay('ca__fx-stepZoomOut')">
+                                    ca__fx-stepZoomOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepZoomOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepZoomOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepZoomOut')">
+                                        ca__fx-stepZoomOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepZoomOut')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepZoomOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepZoomOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepFadeUp')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepFadeUp">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepFadeUp" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepFadeUp" id="ca__fx-stepFadeUp" onclick="replay('ca__fx-stepFadeUp')">
+                                    ca__fx-stepFadeUp
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepFadeUp" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepFadeUp" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepFadeUp')">
+                                        ca__fx-stepFadeUp
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepFadeUp')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepFadeUp">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepFadeUp" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepFadeDown')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepFadeDown">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepFadeDown" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepFadeDown" id="ca__fx-stepFadeDown" onclick="replay('ca__fx-stepFadeDown')">
+                                    ca__fx-stepFadeDown
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepFadeDown" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepFadeDown" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepFadeDown')">
+                                        ca__fx-stepFadeDown
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepFadeDown')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepFadeDown">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepFadeDown" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepGlitchIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepGlitchIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepGlitchIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepGlitchIn" id="ca__fx-stepGlitchIn" onclick="replay('ca__fx-stepGlitchIn')">
+                                    ca__fx-stepGlitchIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepGlitchIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepGlitchIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepGlitchIn')">
+                                        ca__fx-stepGlitchIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepGlitchIn')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepGlitchIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepGlitchIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepGlitchOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepGlitchOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepGlitchOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepGlitchOut" id="ca__fx-stepGlitchOut" onclick="replay('ca__fx-stepGlitchOut')">
+                                    ca__fx-stepGlitchOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepGlitchOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepGlitchOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepGlitchOut')">
+                                        ca__fx-stepGlitchOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepGlitchOut')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepGlitchOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepGlitchOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-slideInSteps')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-slideInSteps">
+                                    Share
+                                    <span id="share-feedback-ca__fx-slideInSteps" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-slideInSteps" id="ca__fx-slideInSteps" onclick="replay('ca__fx-slideInSteps')">
+                                    ca__fx-slideInSteps
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-slideInSteps" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-slideInSteps" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-slideInSteps')">
+                                        ca__fx-slideInSteps
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-slideInSteps')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-slideInSteps">
+                                        Copy
+                                        <span id="feedback-ca__fx-slideInSteps" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepRotateIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepRotateIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepRotateIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepRotateIn" id="ca__fx-stepRotateIn" onclick="replay('ca__fx-stepRotateIn')">
+                                    ca__fx-stepRotateIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepRotateIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepRotateIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepRotateIn')">
+                                        ca__fx-stepRotateIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepRotateIn')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepRotateIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepRotateIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepRotateOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepRotateOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepRotateOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepRotateOut" id="ca__fx-stepRotateOut" onclick="replay('ca__fx-stepRotateOut')">
+                                    ca__fx-stepRotateOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepRotateOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepRotateOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepRotateOut')">
+                                        ca__fx-stepRotateOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepRotateOut')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepRotateOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepRotateOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepJumpIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepJumpIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepJumpIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepJumpIn" id="ca__fx-stepJumpIn" onclick="replay('ca__fx-stepJumpIn')">
+                                    ca__fx-stepJumpIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepJumpIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepJumpIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepJumpIn')">
+                                        ca__fx-stepJumpIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepJumpIn')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepJumpIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepJumpIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepJumpOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepJumpOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepJumpOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepJumpOut" id="ca__fx-stepJumpOut" onclick="replay('ca__fx-stepJumpOut')">
+                                    ca__fx-stepJumpOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepJumpOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepJumpOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepJumpOut')">
+                                        ca__fx-stepJumpOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepJumpOut')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepJumpOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepJumpOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepScalePopIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepScalePopIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepScalePopIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepScalePopIn" id="ca__fx-stepScalePopIn" onclick="replay('ca__fx-stepScalePopIn')">
+                                    ca__fx-stepScalePopIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepScalePopIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepScalePopIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepScalePopIn')">
+                                        ca__fx-stepScalePopIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepScalePopIn')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepScalePopIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepScalePopIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepScalePopOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepScalePopOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepScalePopOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepScalePopOut" id="ca__fx-stepScalePopOut" onclick="replay('ca__fx-stepScalePopOut')">
+                                    ca__fx-stepScalePopOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepScalePopOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepScalePopOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepScalePopOut')">
+                                        ca__fx-stepScalePopOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepScalePopOut')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepScalePopOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepScalePopOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepBlurReveal')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepBlurReveal">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepBlurReveal" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepBlurReveal" id="ca__fx-stepBlurReveal" onclick="replay('ca__fx-stepBlurReveal')">
+                                    ca__fx-stepBlurReveal
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepBlurReveal" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepBlurReveal" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepBlurReveal')">
+                                        ca__fx-stepBlurReveal
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepBlurReveal')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepBlurReveal">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepBlurReveal" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Step Animation" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-stepBlurOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-stepBlurOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-stepBlurOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-stepBlurOut" id="ca__fx-stepBlurOut" onclick="replay('ca__fx-stepBlurOut')">
+                                    ca__fx-stepBlurOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-stepBlurOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-stepBlurOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-stepBlurOut')">
+                                        ca__fx-stepBlurOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-stepBlurOut')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-stepBlurOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-stepBlurOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>

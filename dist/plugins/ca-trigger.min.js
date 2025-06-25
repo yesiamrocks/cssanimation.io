@@ -3,7 +3,7 @@
  * Title: Trigger-based animation control for HTML elements
  * Description: Enables animations on user interactions like click, hover, focus, blur using HTML attributes.
  * Part of: https://cssanimation.io/
- * Version: 6.6.0
+ * Version: 6.7.0
  *
  * Author: Shafayetul Islam Pavel
  * LinkedIn: https://www.linkedin.com/in/shafayetul/

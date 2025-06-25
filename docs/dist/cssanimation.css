@@ -3,7 +3,7 @@
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
 * Version: 6.6.0
-* Built: 2025-06-24 16:34:55 UTC
+* Built: 2025-06-25 12:38:33 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -2970,6 +2970,30 @@
     opacity: 1;
   }
 }
+.ca__fx-glitchCompressOut {
+  animation-name: glitchCompressOut;
+  animation-timing-function: steps(3, end);
+  will-change: transform, opacity;
+}
+@keyframes glitchCompressOut {
+  0% {
+    transform: scale(1, 1);
+    filter: none;
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1.5, 0.95);
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(2, 0.6);
+    filter: blur(6px) brightness(0.2);
+    opacity: 0;
+  }
+}
 /**
  * Module: Hang And Drop
  * Filename: ca__HangAndDrop.css
@@ -3407,38 +3431,6 @@
 
   100% {
     transform: translate(0%, 0%) rotate(0deg) scale(1);
-  }
-}
-.ca__fx-kiteIdleFloat {
-  animation-name: kiteIdleFloat;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-@keyframes kiteIdleFloat {
-  0% {
-    transform: translateY(0%) rotate(0deg);
-  }
-
-  20% {
-    transform: translateY(-4%) rotate(2deg);
-  }
-
-  40% {
-    transform: translateY(3%) rotate(-1.5deg);
-  }
-
-  60% {
-    transform: translateY(-2%) rotate(2deg);
-  }
-
-  80% {
-    transform: translateY(1%) rotate(-1deg);
-  }
-
-  100% {
-    transform: translateY(0%) rotate(0deg);
   }
 }
 .ca__fx-kiteExitLift {
@@ -8052,6 +8044,237 @@
   76%,
   100% {
     transform: translateY(40px);
+  }
+}
+/**
+ * Module: Step Animation
+ * Filename: ca__ttep.css
+ */
+.ca__fx-stepTypeIn {
+  animation: stepTypeIn 1.2s steps(10, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  will-change: opacity, transform;
+}
+@keyframes stepTypeIn {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  80% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.ca__fx-stepSlideInX {
+  animation: stepSlideInX 0.8s steps(6, end) forwards;
+  transform: translateX(-50px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepSlideInX {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.ca__fx-stepSlideOutX {
+  animation: stepSlideOutX 0.8s steps(6, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepSlideOutX {
+  to {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+}
+.ca__fx-stepZoomIn {
+  animation: stepZoomIn 0.9s steps(7, end) forwards;
+  transform: scale(2);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepZoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.ca__fx-stepZoomOut {
+  animation: stepZoomOut 0.9s steps(7, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepZoomOut {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.ca__fx-stepFadeUp {
+  animation: stepFadeUp 1s steps(5, end) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+@keyframes stepFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.ca__fx-stepFadeDown {
+  animation: stepFadeDown 1s steps(5, end) forwards;
+  will-change: opacity, transform;
+}
+@keyframes stepFadeDown {
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+.ca__fx-stepGlitchIn {
+  animation: stepGlitchIn 1.1s steps(8, end) forwards;
+  opacity: 0;
+  transform: skewX(-15deg) scale(1.3);
+  filter: blur(2px) brightness(1.5);
+  will-change: transform, opacity, filter;
+}
+@keyframes stepGlitchIn {
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+.ca__fx-stepGlitchOut {
+  animation: stepGlitchOut 1.1s steps(8, end) forwards;
+  will-change: transform, opacity, filter;
+}
+@keyframes stepGlitchOut {
+  to {
+    opacity: 0;
+    transform: skewX(-15deg) scale(1.3);
+    filter: blur(2px) brightness(1.5);
+  }
+}
+.ca__fx-slideInSteps {
+  animation-name: slideInSteps;
+  animation-duration: 2s;
+  animation-timing-function: steps(5, end);
+  transform: translateX(0);
+}
+@keyframes slideInSteps {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+.ca__fx-stepRotateIn {
+  animation: stepRotateIn 0.9s steps(8, end) forwards;
+  transform: rotate(-90deg);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepRotateIn {
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+.ca__fx-stepRotateOut {
+  animation: stepRotateOut 0.9s steps(8, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepRotateOut {
+  to {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+.ca__fx-stepJumpIn {
+  animation: stepJumpIn 1s steps(5, end) forwards;
+  transform: translateY(100%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepJumpIn {
+  80% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.ca__fx-stepJumpOut {
+  display: inline-block;
+  animation: stepJumpOut 1s steps(5, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepJumpOut {
+  20% {
+    transform: translateY(-10%);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.ca__fx-stepScalePopIn {
+  animation: stepScalePopIn 0.7s steps(4, end) forwards;
+  transform: scale(0.4);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepScalePopIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.ca__fx-stepScalePopOut {
+  animation: stepScalePopOut 0.7s steps(4, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepScalePopOut {
+  to {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+}
+.ca__fx-stepBlurReveal {
+  animation: stepBlurReveal 1s steps(6, end) forwards;
+  filter: blur(8px);
+  opacity: 0.2;
+  will-change: filter, opacity;
+}
+@keyframes stepBlurReveal {
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.ca__fx-stepBlurOut {
+  animation: stepBlurOut 1s steps(6, end) forwards;
+  will-change: filter, opacity;
+}
+@keyframes stepBlurOut {
+  to {
+    filter: blur(8px);
+    opacity: 0.2;
   }
 }
 /**

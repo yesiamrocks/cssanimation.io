@@ -196,40 +196,6 @@
   }
 }
 
-.kiteIdleFloat {
-  animation-name: kiteIdleFloat;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-
-@keyframes kiteIdleFloat {
-  0% {
-    transform: translateY(0%) rotate(0deg);
-  }
-
-  20% {
-    transform: translateY(-4%) rotate(2deg);
-  }
-
-  40% {
-    transform: translateY(3%) rotate(-1.5deg);
-  }
-
-  60% {
-    transform: translateY(-2%) rotate(2deg);
-  }
-
-  80% {
-    transform: translateY(1%) rotate(-1deg);
-  }
-
-  100% {
-    transform: translateY(0%) rotate(0deg);
-  }
-}
-
 .kiteExitLift {
   animation-name: kiteExitLift;
   animation-timing-function: ease-in;

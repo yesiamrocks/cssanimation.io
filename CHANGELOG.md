@@ -1,3 +1,27 @@
+## [6.7.0] – 2025-06-25
+
+### Added
+
+- **Step Animation Pack** – New glitchy, mechanical, and digital-style animations using `steps()` timing functions:
+- `ca__fx-stepTypeIn`
+- `ca__fx-stepSlideInX`
+- `ca__fx-stepSlideOutX`
+- `ca__fx-stepZoomIn`
+- `ca__fx-stepZoomOut`
+- `ca__fx-stepFadeUp`
+- `ca__fx-stepFadeDown`
+- `ca__fx-stepGlitchIn`
+- `ca__fx-stepGlitchOut`
+- `ca__fx-slideInSteps`
+- `ca__fx-stepRotateIn`
+- `ca__fx-stepRotateOut`
+- `ca__fx-stepJumpIn`
+- `ca__fx-stepJumpOut`
+- `ca__fx-stepScalePopIn`
+- `ca__fx-stepScalePopOut`
+- `ca__fx-stepBlurReveal`
+- `ca__fx-stepBlurOut`
+
 ## [6.6.0] - 2025-06-18
 
 ### New Features
@@ -207,14 +231,11 @@ If you're referencing the project, please use **cssanimation** going forward (no
 
 ### New Features
 
-- **Live Preview Support**  
-  Introduced the ability to dynamically reapply `caLetterAnimation(el)` on elements. This enables live animation previews when DOM or attribute values change, perfect for visual editors or dev playgrounds.
+- **Live Preview Support** Introduced the ability to dynamically reapply `caLetterAnimation(el)` on elements. This enables live animation previews when DOM or attribute values change, perfect for visual editors or dev playgrounds.
 
-- **Runtime Reinitialization**  
-  `caLetterAnimation` can now safely be re-invoked on the same element. All animation units (letters, words, lines) are recalculated and replayed based on current attributes.
+- **Runtime Reinitialization** `caLetterAnimation` can now safely be re-invoked on the same element. All animation units (letters, words, lines) are recalculated and replayed based on current attributes.
 
-- **Dynamic Attribute Parsing**  
-  Automatically parses and updates:
+- **Dynamic Attribute Parsing** Automatically parses and updates:
 
   - `ca__lt-sequence`
   - `ca__lt-random`
@@ -222,14 +243,11 @@ If you're referencing the project, please use **cssanimation** going forward (no
   - `ca__lt-word`
   - `ca__lt-line`
 
-- **`ca__lt-separator Support`**  
-  When `ca__lt-line` is used, users can now add `ca__lt-separator="dot"` to animate lines split by `.` instead of `<br>` or `\n`.
+- **`ca__lt-separator Support`** When `ca__lt-line` is used, users can now add `ca__lt-separator="dot"` to animate lines split by `.` instead of `<br>` or `\n`.
 
-- **Multi-Class + Delay Handling**  
-  Accepts multiple space-separated animation classes (e.g., `ca__fx-FadeIn ca__fx-BounceIn`) and delay sequences (`100 200 300`) mapped across units.
+- **Multi-Class + Delay Handling** Accepts multiple space-separated animation classes (e.g., `ca__fx-FadeIn ca__fx-BounceIn`) and delay sequences (`100 200 300`) mapped across units.
 
-- **Global Duration Control**  
-  Full support for `ca__lt-base-duration` allows global timing override (in milliseconds), improving consistency across animations.
+- **Global Duration Control** Full support for `ca__lt-base-duration` allows global timing override (in milliseconds), improving consistency across animations.
 
 ### Improvements
 

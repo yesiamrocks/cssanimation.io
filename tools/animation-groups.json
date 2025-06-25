@@ -207,7 +207,8 @@
     "ca__fx-dataTypeCascadeOut",
     "ca__fx-criticalBreach",
     "ca__fx-corruptTextScramble",
-    "ca__fx-glitchCompressIn"
+    "ca__fx-glitchCompressIn",
+    "ca__fx-glitchCompressOut"
   ],
   "Magical": [
     "ca__fx-sparklePopIn",
@@ -261,7 +262,6 @@
     "ca__fx-kiteWaveExit",
     "ca__fx-kiteWhipIn",
     "ca__fx-kiteSwingEntry",
-    "ca__fx-kiteIdleFloat",
     "ca__fx-kiteExitLift",
     "ca__fx-kiteSnapBounceIn",
     "ca__fx-kiteFlipTwist",
@@ -293,6 +293,27 @@
     "ca__fx-moveToRight",
     "ca__fx-moveToTop",
     "ca__fx-moveToBottom"
+  ],
+
+  "Step Animation": [
+    "ca__fx-stepTypeIn",
+    "ca__fx-stepSlideInX",
+    "ca__fx-stepSlideOutX",
+    "ca__fx-stepZoomIn",
+    "ca__fx-stepZoomOut",
+    "ca__fx-stepFadeUp",
+    "ca__fx-stepFadeDown",
+    "ca__fx-stepGlitchIn",
+    "ca__fx-stepGlitchOut",
+    "ca__fx-slideInSteps",
+    "ca__fx-stepRotateIn",
+    "ca__fx-stepRotateOut",
+    "ca__fx-stepJumpIn",
+    "ca__fx-stepJumpOut",
+    "ca__fx-stepScalePopIn",
+    "ca__fx-stepScalePopOut",
+    "ca__fx-stepBlurReveal",
+    "ca__fx-stepBlurOut"
   ],
 
   "Swing": [

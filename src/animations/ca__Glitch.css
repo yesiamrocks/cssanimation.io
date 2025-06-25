@@ -640,3 +640,29 @@
     opacity: 1;
   }
 }
+
+.glitchCompressOut {
+  animation-name: glitchCompressOut;
+  animation-timing-function: steps(3, end);
+  will-change: transform, opacity;
+}
+
+@keyframes glitchCompressOut {
+  0% {
+    transform: scale(1, 1);
+    filter: none;
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1.5, 0.95);
+    filter: blur(2px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(2, 0.6);
+    filter: blur(6px) brightness(0.2);
+    opacity: 0;
+  }
+}

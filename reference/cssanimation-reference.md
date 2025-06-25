@@ -175,6 +175,7 @@
 - `ca__fx-gearSnapIn`
 - `ca__fx-glintReveal`
 - `ca__fx-glitchCompressIn`
+- `ca__fx-glitchCompressOut`
 - `ca__fx-glitchExit`
 - `ca__fx-glitchFlash`
 - `ca__fx-glitchJitter`
@@ -221,7 +222,6 @@
 - `ca__fx-kiteFloatInLeft`
 - `ca__fx-kiteFloatInRight`
 - `ca__fx-kiteHoverLoop`
-- `ca__fx-kiteIdleFloat`
 - `ca__fx-kiteSnapBounceIn`
 - `ca__fx-kiteSwingEntry`
 - `ca__fx-kiteTetheredFloat`
@@ -353,6 +353,7 @@
 - `ca__fx-skewOutLeft`
 - `ca__fx-skewOutRight`
 - `ca__fx-skewRight`
+- `ca__fx-slideInSteps`
 - `ca__fx-slinkyDrop`
 - `ca__fx-slinkyStretch`
 - `ca__fx-snapBackEase`
@@ -380,6 +381,23 @@
 - `ca__fx-squishPop`
 - `ca__fx-squishyBounce`
 - `ca__fx-stampSmash`
+- `ca__fx-stepBlurOut`
+- `ca__fx-stepBlurReveal`
+- `ca__fx-stepFadeDown`
+- `ca__fx-stepFadeUp`
+- `ca__fx-stepGlitchIn`
+- `ca__fx-stepGlitchOut`
+- `ca__fx-stepJumpIn`
+- `ca__fx-stepJumpOut`
+- `ca__fx-stepRotateIn`
+- `ca__fx-stepRotateOut`
+- `ca__fx-stepScalePopIn`
+- `ca__fx-stepScalePopOut`
+- `ca__fx-stepSlideInX`
+- `ca__fx-stepSlideOutX`
+- `ca__fx-stepTypeIn`
+- `ca__fx-stepZoomIn`
+- `ca__fx-stepZoomOut`
 - `ca__fx-stretchCollapse`
 - `ca__fx-swing`
 - `ca__fx-swingDrop`

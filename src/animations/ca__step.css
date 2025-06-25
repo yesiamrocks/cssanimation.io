@@ -1,0 +1,267 @@
+/**
+ * Module: Step Animation
+ * Filename: ca__ttep.css
+ */
+
+.stepTypeIn {
+  animation: stepTypeIn 1.2s steps(10, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  will-change: opacity, transform;
+}
+
+@keyframes stepTypeIn {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  80% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.stepSlideInX {
+  animation: stepSlideInX 0.8s steps(6, end) forwards;
+  transform: translateX(-50px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepSlideInX {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.stepSlideOutX {
+  animation: stepSlideOutX 0.8s steps(6, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepSlideOutX {
+  to {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+}
+
+.stepZoomIn {
+  animation: stepZoomIn 0.9s steps(7, end) forwards;
+  transform: scale(2);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepZoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.stepZoomOut {
+  animation: stepZoomOut 0.9s steps(7, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepZoomOut {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.stepFadeUp {
+  animation: stepFadeUp 1s steps(5, end) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+
+@keyframes stepFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stepFadeDown {
+  animation: stepFadeDown 1s steps(5, end) forwards;
+  will-change: opacity, transform;
+}
+
+@keyframes stepFadeDown {
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+.stepGlitchIn {
+  animation: stepGlitchIn 1.1s steps(8, end) forwards;
+  opacity: 0;
+  transform: skewX(-15deg) scale(1.3);
+  filter: blur(2px) brightness(1.5);
+  will-change: transform, opacity, filter;
+}
+
+@keyframes stepGlitchIn {
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+.stepGlitchOut {
+  animation: stepGlitchOut 1.1s steps(8, end) forwards;
+  will-change: transform, opacity, filter;
+}
+
+@keyframes stepGlitchOut {
+  to {
+    opacity: 0;
+    transform: skewX(-15deg) scale(1.3);
+    filter: blur(2px) brightness(1.5);
+  }
+}
+
+.slideInSteps {
+  animation-name: slideInSteps;
+  animation-duration: 2s;
+  animation-timing-function: steps(5, end);
+  transform: translateX(0);
+}
+
+@keyframes slideInSteps {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.stepRotateIn {
+  animation: stepRotateIn 0.9s steps(8, end) forwards;
+  transform: rotate(-90deg);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepRotateIn {
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.stepRotateOut {
+  animation: stepRotateOut 0.9s steps(8, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepRotateOut {
+  to {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.stepJumpIn {
+  animation: stepJumpIn 1s steps(5, end) forwards;
+  transform: translateY(100%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepJumpIn {
+  80% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.stepJumpOut {
+  display: inline-block;
+  animation: stepJumpOut 1s steps(5, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepJumpOut {
+  20% {
+    transform: translateY(-10%);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.stepScalePopIn {
+  animation: stepScalePopIn 0.7s steps(4, end) forwards;
+  transform: scale(0.4);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepScalePopIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.stepScalePopOut {
+  animation: stepScalePopOut 0.7s steps(4, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepScalePopOut {
+  to {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+}
+
+.stepBlurReveal {
+  animation: stepBlurReveal 1s steps(6, end) forwards;
+  filter: blur(8px);
+  opacity: 0.2;
+  will-change: filter, opacity;
+}
+
+@keyframes stepBlurReveal {
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.stepBlurOut {
+  animation: stepBlurOut 1s steps(6, end) forwards;
+  will-change: filter, opacity;
+}
+
+@keyframes stepBlurOut {
+  to {
+    filter: blur(8px);
+    opacity: 0.2;
+  }
+}
