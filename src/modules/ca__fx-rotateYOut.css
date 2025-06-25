@@ -51,10 +51,3 @@
     opacity: 0;
   }
 }
-/**
- * Module: Sci-Fi UI
- * Filename: ca__Sci-Fi-UI.css
- */
-.ca__fx-targetLockOn {
-  animation: targetLockOn 1.5s ease-out infinite;
-}

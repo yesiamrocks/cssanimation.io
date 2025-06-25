@@ -345,7 +345,7 @@
     "ca__fx-swingDropSnap",
     "ca__fx-swingDropMagnet"
   ],
-  "Sci-Fi UI": ["ca__fx-targetLockOn", "ca__fx-hudScanExit", "ca__fx-hudReticleExpand"],
+  "Sci-Fi UI": ["ca__fx-scifiFlickerIn", "ca__fx-digitalScanlineReveal", "ca__fx-scifiDigitalReveal"],
   "Pull & Push": [
     "ca__fx-pullRelease",
     "ca__fx-pushRelease",

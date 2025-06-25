@@ -57,11 +57,3 @@
     transform: scale(1);
   }
 }
-/**
- * Module: Shake
- * Filename: ca__Shake.css
- */
-.ca__fx-horizontalShake {
-  animation-name: horizontalShake;
-  animation-iteration-count: infinite;
-}

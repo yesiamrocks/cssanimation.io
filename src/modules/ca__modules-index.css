@@ -254,9 +254,9 @@
 @import url('./ca__fx-rotateY.css');
 @import url('./ca__fx-rotateYIn.css');
 @import url('./ca__fx-rotateYOut.css');
-@import url('./ca__fx-targetLockOn.css');
-@import url('./ca__fx-hudScanExit.css');
-@import url('./ca__fx-hudReticleExpand.css');
+@import url('./ca__fx-scifiFlickerIn.css');
+@import url('./ca__fx-digitalScanlineReveal.css');
+@import url('./ca__fx-scifiDigitalReveal.css');
 @import url('./ca__fx-horizontalShake.css');
 @import url('./ca__fx-verticalShake.css');
 @import url('./ca__fx-madMax.css');
@@ -447,6 +447,9 @@
 @import url('./ca__fx-wave-morph.css');
 @import url('./ca__fx-initiateSequence.css');
 @import url('./ca__fx-glintSweep.css');
+@import url('./ca__fx-flickerIn.css');
+@import url('./ca__fx-scanlineReveal.css');
+@import url('./ca__fx-digitalReveal.css');
 @import url('./ca__fx-flicker.css');
 @import url('./ca__fx-springy.css');
 @import url('./ca__fx-rainbow.css');

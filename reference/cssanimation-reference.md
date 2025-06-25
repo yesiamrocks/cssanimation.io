@@ -130,6 +130,7 @@
 - `ca__fx-criticalBreach`
 - `ca__fx-curtainClose`
 - `ca__fx-curtainReveal`
+- `ca__fx-digitalScanlineReveal`
 - `ca__fx-dropSpinIn`
 - `ca__fx-elasticArise`
 - `ca__fx-elasticBounce`
@@ -197,8 +198,6 @@
 - `ca__fx-gravityPullIn`
 - `ca__fx-hop`
 - `ca__fx-hudAlertGlitch`
-- `ca__fx-hudReticleExpand`
-- `ca__fx-hudScanExit`
 - `ca__fx-inertiaSlideIn`
 - `ca__fx-jello`
 - `ca__fx-jelly`
@@ -339,6 +338,8 @@
 - `ca__fx-rubberShrink`
 - `ca__fx-rumble`
 - `ca__fx-scanReveal`
+- `ca__fx-scifiDigitalReveal`
+- `ca__fx-scifiFlickerIn`
 - `ca__fx-scribbleGlowIn`
 - `ca__fx-shimmerWaveIdle`
 - `ca__fx-shockInBottom`
@@ -430,7 +431,6 @@
 - `ca__fx-swingUp`
 - `ca__fx-swingZoom`
 - `ca__fx-systemBootIn`
-- `ca__fx-targetLockOn`
 - `ca__fx-tiltFadeBack`
 - `ca__fx-trackCollapse`
 - `ca__fx-trackExpand`

@@ -1,0 +1,106 @@
+/*!
+ * Module: digitalReveal Animation
+ * Usage: <div class="cssanimation ca__fx-digitalReveal">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+@keyframes digitalReveal {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    clip-path: inset(0 100% 0 0); /* Fully clipped from right */
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.4);
+  }
+
+  10% {
+    opacity: 0.2;
+    filter: blur(8px);
+    clip-path: inset(0 80% 0 0); /* Partially revealed */
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.6);
+  }
+
+  30% {
+    opacity: 0.6;
+    filter: blur(4px);
+    clip-path: inset(0 50% 0 0); /* Half revealed */
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+  }
+
+  50% {
+    opacity: 0.9;
+    filter: blur(2px);
+    clip-path: inset(0 10% 0 0); /* Almost fully revealed */
+    text-shadow: 0 0 20px rgba(0, 255, 204, 0.9);
+  }
+
+  70% {
+    opacity: 1;
+    filter: blur(0px);
+    clip-path: inset(0 0% 0 0); /* Fully revealed */
+    text-shadow:
+      0 0 25px rgba(0, 255, 204, 1),
+      0 0 35px rgba(0, 255, 204, 0.7);
+  }
+
+  80% {
+    filter: blur(1px);
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+  }
+
+  90% {
+    filter: blur(0px);
+    text-shadow:
+      0 0 25px rgba(0, 255, 204, 1),
+      0 0 35px rgba(0, 255, 204, 0.7);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    clip-path: inset(0 0% 0 0); /* Final state, fully visible */
+    text-shadow:
+      0 0 20px rgba(0, 255, 204, 0.8),
+      0 0 30px rgba(0, 255, 204, 0.5);
+  }
+}
+/**
+ * Module: Shake
+ * Filename: ca__Shake.css
+ */
+.ca__fx-horizontalShake {
+  animation-name: horizontalShake;
+  animation-iteration-count: infinite;
+}

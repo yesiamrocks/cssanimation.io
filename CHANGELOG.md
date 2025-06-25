@@ -1,3 +1,13 @@
+## [6.8.0] – 2025-06-25
+
+### Added
+
+**Sci-Fi / Digital Entry Animations:**
+
+- `ca__fx-scifiFlickerIn` – Intermittent flicker with pulse glow (HUD/UI style)
+- `ca__fx-digitalScanlineReveal` – Horizontal scanline-based text reveal
+- `ca__fx-scifiDigitalReveal` – High-tech layered scan-in effect for digital interfaces
+
 ## [6.7.0] – 2025-06-25
 
 ### Added
