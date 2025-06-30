@@ -641,9 +641,27 @@ const htmlContent = `<!DOCTYPE html>
 
     <link rel="stylesheet" href="./dist/cssanimation.css">
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        /* Optional: Smooth scrolling for anchor links */
+        :root {
+            --color-brand: #7e2ea0;
+            --color-secondary: #4e1671;
+            --color-accent: #c24ef2;
+
+            --color-bg-dark: #0e0a1a;
+            --color-bg-light: #f5f2fa;
+            --color-surface: #1c102b;
+
+            --color-text-dark: #e6d9f3;
+            --color-text-light: #1d082b;
+
+            --color-success: #00d288;
+            --color-warning: #f5be40;
+            --color-error: #f34b7d;
+            }
+
+           
+
         html {
             scroll-behavior: smooth;
         }
@@ -673,16 +691,23 @@ const htmlContent = `<!DOCTYPE html>
         }
         /* Keyboard focus style */
         .animation-box.focused {
-            outline: 3px solid #7c3aed; /* Tailwind violet-500 */
+            outline: 3px solid var(--color-brand);
             outline-offset: 2px;
         }
         .category-button.active {
-            background-color: #5b21b6; /* Tailwind violet-700 */
+            background-color: var( --color-brand);
             color: #ffffff;
         }
         .dark .category-button.active {
             background-color: #5b21b6; /* Tailwind blue-400 */
             color: #ffffff; /* Tailwind gray-900 */
+        }
+        aside, .dark aside {
+            background-color: var(--color-secondary); 
+        }
+
+        header, .dark header {
+            background-color: var(--color-brand);
         }
 
         /* Custom scrollbar for better aesthetics, if desired */
@@ -720,7 +745,7 @@ const htmlContent = `<!DOCTYPE html>
 <body class="flex flex-col h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 ease-in-out">
 
     <!-- Fixed Header -->
-    <header class="fixed top-0 left-0 right-0 bg-violet-700 text-white p-4 shadow-lg z-20 flex items-center justify-between h-16">
+    <header class="fixed top-0 left-0 right-0 text-white p-4 shadow-lg z-20 flex items-center justify-between h-16">
         <h1 class="text-xl md:text-2xl font-bold rounded-md">Explore CSS Animations</h1>
         <div class="flex items-center space-x-4">
             <!-- Hamburger Button for Mobile -->
@@ -773,11 +798,10 @@ const htmlContent = `<!DOCTYPE html>
     <!-- Main Layout Container (adjusts for fixed header height) -->
     <div class="flex flex-1 pt-16 overflow-hidden">
         <!-- Sticky Left Sidebar -->
-        <aside id="sidebar-aside" class="w-full lg:w-64 xl:w-80 bg-gray-100 dark:bg-gray-800 p-4 overflow-y-auto flex-shrink-0
+        <aside id="sidebar-aside" class="w-full lg:w-64 xl:w-80 p-4 overflow-y-auto flex-shrink-0
                       fixed top-16 right-0 h-[calc(100vh-4rem)] z-20 transform translate-x-full transition-transform duration-300 ease-in-out
                       lg:static lg:h-full lg:translate-x-0 lg:shadow-none
                       border-r border-gray-200 dark:border-gray-700 shadow-md">
-            <h2 class="text-lg font-semibold mb-4 text-violet-600 dark:text-violet-400 rounded-md">Categories</h2>
             <div id="categories" class="flex flex-col gap-2">
                 <button class="category-button text-left px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out active" data-category="All">
                     All (${allCssAnimationClassNames.length})
@@ -792,7 +816,7 @@ const htmlContent = `<!DOCTYPE html>
                     const count = animationCounts.get(category) || 0;
                     if (count > 0) {
                       return `
-                                <button class="category-button text-left px-2 py-2 text-gray-800 dark:text-gray-400 hover:text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="${category}">
+                                <button class="category-button text-left px-2 py-2 text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="${category}">
                                     ${category} (${count})
                                 </button>
                                 `;

@@ -68,7 +68,7 @@
     "postcss-import": "^16.1.0",
     "postcss-prefix-selector": "^2.1.1",
     "postcss-preset-env": "^10.2.0",
-    "postcss-selector-namespace": "^1.5.0",
+    "postcss-selector-namespace": "^3.0.1",
     "postcss-selector-prefix": "^5.0.1",
     "prettier": "^3.5.3",
     "rollup": "^4.42.0",
