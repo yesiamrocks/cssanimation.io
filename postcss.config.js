@@ -122,9 +122,9 @@ export default (ctx) => {
     charsetPlugin,
     // 2. Import statements
     postcssImport(),
-    // 3. Prefixing based on file type
+    // 4. Prefixing based on file type
     ...(prefixPlugin ? [prefixPlugin] : []),
-    // 4. PostCSS Preset Env for modern CSS features and autoprefixing
+    // 5. PostCSS Preset Env for modern CSS features and autoprefixing
     postcssPresetEnv({
       autoprefixer: {cascade: false},
       features: {'custom-properties': false}, // Set to false if you handle custom properties elsewhere or assume native support

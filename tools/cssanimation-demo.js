@@ -642,6 +642,35 @@ const htmlContent = `<!DOCTYPE html>
     <link rel="stylesheet" href="./dist/cssanimation.css">
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand: #7e2ea0;
+        --color-secondary: #4e1671;
+        --color-accent: #c24ef2;
+
+        --color-bg-dark: #0e0a1a;
+        --color-bg-light: #f5f2fa;
+        --color-surface: #1c102b;
+
+        --color-text-dark: #e6d9f3;
+        --color-text-light: #1d082b;
+
+        --color-success: #00d288;
+        --color-warning: #f5be40;
+        --color-error: #f34b7d;
+
+        --color-bg: #0e0a1a;
+        --color-sidebar: #ded0ea;
+        --color-sidebarD: #4e1671;
+        --color-header: #7e2ea0;
+        --color-btn: #c24ef2;
+        --color-btn-hover: #4e1671;
+        --color-text: #e6d9f3;
+        --color-text-muted: #aa8cc9;
+        --color-panel: #2a1a3d;
+        --color-border: #39274f;
+      }
+    </style>
     <style>
         :root {
             --color-brand: #7e2ea0;
@@ -702,13 +731,7 @@ const htmlContent = `<!DOCTYPE html>
             background-color: #5b21b6; /* Tailwind blue-400 */
             color: #ffffff; /* Tailwind gray-900 */
         }
-        aside, .dark aside {
-            background-color: var(--color-secondary); 
-        }
-
-        header, .dark header {
-            background-color: var(--color-brand);
-        }
+             
 
         /* Custom scrollbar for better aesthetics, if desired */
         /* For Webkit browsers (Chrome, Safari) */
@@ -745,7 +768,7 @@ const htmlContent = `<!DOCTYPE html>
 <body class="flex flex-col h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 ease-in-out">
 
     <!-- Fixed Header -->
-    <header class="fixed top-0 left-0 right-0 text-white p-4 shadow-lg z-20 flex items-center justify-between h-16">
+    <header class="fixed bg-header top-0 left-0 right-0 text-white p-4 shadow-lg z-20 flex items-center justify-between h-16">
         <h1 class="text-xl md:text-2xl font-bold rounded-md">Explore CSS Animations</h1>
         <div class="flex items-center space-x-4">
             <!-- Hamburger Button for Mobile -->
@@ -798,12 +821,12 @@ const htmlContent = `<!DOCTYPE html>
     <!-- Main Layout Container (adjusts for fixed header height) -->
     <div class="flex flex-1 pt-16 overflow-hidden">
         <!-- Sticky Left Sidebar -->
-        <aside id="sidebar-aside" class="w-full lg:w-64 xl:w-80 p-4 overflow-y-auto flex-shrink-0
+        <aside id="sidebar-aside" class="w-full bg-sidebar dark:bg-sidebarD lg:w-64 xl:w-80 p-4 overflow-y-auto flex-shrink-0
                       fixed top-16 right-0 h-[calc(100vh-4rem)] z-20 transform translate-x-full transition-transform duration-300 ease-in-out
                       lg:static lg:h-full lg:translate-x-0 lg:shadow-none
                       border-r border-gray-200 dark:border-gray-700 shadow-md">
             <div id="categories" class="flex flex-col gap-2">
-                <button class="category-button text-left px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out active" data-category="All">
+                <button class="category-button text-left px-2 py-2 text-light hover:bg-brand hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="All">
                     All (${allCssAnimationClassNames.length})
                 </button>
                 ${Array.from(animationCategories.keys())
@@ -816,7 +839,7 @@ const htmlContent = `<!DOCTYPE html>
                     const count = animationCounts.get(category) || 0;
                     if (count > 0) {
                       return `
-                                <button class="category-button text-left px-2 py-2 text-gray-100 hover:bg-gray-300 hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="${category}">
+                                <button class="category-button text-left px-2 py-2 rounded-md text-light hover:bg-brand hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="${category}">
                                     ${category} (${count})
                                 </button>
                                 `;
