@@ -639,7 +639,7 @@ const htmlContent = `<!DOCTYPE html>
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./dist/cssanimation.css">
+    <link rel="stylesheet" href="./assets/cssanimation.css">
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
@@ -687,10 +687,7 @@ const htmlContent = `<!DOCTYPE html>
             --color-success: #00d288;
             --color-warning: #f5be40;
             --color-error: #f34b7d;
-            }
-
-           
-
+        }
         html {
             scroll-behavior: smooth;
         }
@@ -724,11 +721,11 @@ const htmlContent = `<!DOCTYPE html>
             outline-offset: 2px;
         }
         .category-button.active {
-            background-color: var( --color-brand);
+            background-color: var(--color-accent);
             color: #ffffff;
         }
         .dark .category-button.active {
-            background-color: #5b21b6; /* Tailwind blue-400 */
+            background-color: var(--color-accent);
             color: #ffffff; /* Tailwind gray-900 */
         }
              
@@ -769,51 +766,73 @@ const htmlContent = `<!DOCTYPE html>
 
     <!-- Fixed Header -->
     <header class="fixed bg-header top-0 left-0 right-0 text-white p-4 shadow-lg z-20 flex items-center justify-between h-16">
-        <h1 class="text-xl md:text-2xl font-bold rounded-md">Explore CSS Animations</h1>
-        <div class="flex items-center space-x-4">
-            <!-- Hamburger Button for Mobile -->
-            <button id="hamburger-btn" class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out lg:hidden" aria-label="Toggle Navigation">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+    <h1 class="text-xl md:text-2xl font-bold rounded-md"><img src="./assets/cssanimation-logo.svg" alt="cssanimation brand" width="250"></h1>
+    <div class="flex items-center space-x-4">
+        <button id="hamburger-btn" class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out lg:hidden" aria-label="Toggle Navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
 
-            <input
-                type="text"
-                id="search-input"
-                placeholder="Search animations..."
-                class="flex-grow px-4 py-2 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
-            />
-            <button
-                id="theme-toggle"
-                class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
-                aria-label="Toggle Dark Mode"
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search animations..."
+            class="flex-grow px-4 py-2 rounded-md bg-secondary text-bg-light border border-gray-700 focus:outline-none focus:ring-2 focus:ring-bg-light transition-colors duration-300 ease-in-out"
+        />
+
+        <a 
+            href="https://github.com/yesiamrocks/cssanimation?tab=readme-ov-file#css-animation-library-for-developers-and-ninjas" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
+            aria-label="Getting Started"
+        >
+            Getting Started
+        </a>
+        
+        <a 
+            href="https://github.com/yesiamrocks/cssanimation" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
+            aria-label="GitHub Profile"
+        >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.417 2.865 8.167 6.839 9.504.499.09.679-.217.679-.481 0-.237-.008-.865-.013-1.702-2.782.602-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.618.069-.606.069-.606 1.003.07 1.531 1.029 1.531 1.029.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.338-2.22-.253-4.555-1.113-4.555-4.931 0-1.09.39-1.981 1.029-2.675-.103-.253-.446-1.268.098-2.64 0 0 .84-.268 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.293 2.747-1.025 2.747-1.025.546 1.372.202 2.387.099 2.64.64.694 1.028 1.584 1.028 2.675 0 3.829-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.338-.012 2.419-.012 2.747 0 .268.179.577.688.48C21.137 20.165 24 16.416 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd" />
+            </svg>
+        </a>
+
+        <button
+            id="theme-toggle"
+            class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
+            aria-label="Toggle Dark Mode"
+        >
+            <svg
+                id="theme-toggle-dark-icon"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
             >
-                <svg
-                    id="theme-toggle-dark-icon"
-                    class="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                    ></path>
-                </svg>
-                <svg
-                    id="theme-toggle-light-icon"
-                    class="w-5 h-5 hidden"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.939a1 1 0 111.414 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.121-2.121zM10 10a3 3 0 100-6 3 3 0 000 6zm7-3a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zm-9 0a1 1 0 011-1H4a1 1 0 010 2H3a1 1 0 01-1-1zm7 7a1 1 0 011-1v-1a1 1 0 112 0v1a1 1 0 01-1 1h-2zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1zm7 7a1 1 0 011-1v-1a1 1 0 112 0v1a1 1 0 01-1 1h-2zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    ></path>
-                </svg>
-            </button>
-        </div>
-    </header>
+                <path
+                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+            </svg>
+            <svg
+                id="theme-toggle-light-icon"
+                class="w-5 h-5 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.939a1 1 0 111.414 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.121-2.121zM10 10a3 3 0 100-6 3 3 0 000 6zm7-3a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zm-9 0a1 1 0 011-1H4a1 1 0 010 2H3a1 1 0 01-1-1zm7 7a1 1 0 011-1v-1a1 1 0 112 0v1a1 1 0 01-1 1h-2zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1zm7 7a1 1 0 011-1v-1a1 1 0 112 0v1a1 1 0 01-1 1h-2zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1z"
+                ></path>
+            </svg>
+        </button>
+    </div>
+</header>
 
     <!-- Mobile Overlay (hidden by default, shown when sidebar is active) -->
     <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-15 hidden transition-opacity duration-300 ease-in-out lg:hidden"></div>
@@ -826,7 +845,7 @@ const htmlContent = `<!DOCTYPE html>
                       lg:static lg:h-full lg:translate-x-0 lg:shadow-none
                       border-r border-gray-200 dark:border-gray-700 shadow-md">
             <div id="categories" class="flex flex-col gap-2">
-                <button class="category-button text-left px-2 py-2 text-light hover:bg-brand hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="All">
+                <button class="category-button cursor-pointer text-left px-2 py-2 rounded-md text-muted hover:bg-accent hover:text-white hover:px-5 dark:hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-300 ease-in-out" data-category="All">
                     All (${allCssAnimationClassNames.length})
                 </button>
                 ${Array.from(animationCategories.keys())
@@ -839,7 +858,7 @@ const htmlContent = `<!DOCTYPE html>
                     const count = animationCounts.get(category) || 0;
                     if (count > 0) {
                       return `
-                                <button class="category-button text-left px-2 py-2 rounded-md text-light hover:bg-brand hover:px-4 dark:hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all duration-300 ease-in-out" data-category="${category}">
+                                <button class="category-button cursor-pointer text-left px-2 py-2 rounded-md text-muted hover:bg-accent hover:text-white hover:px-5 dark:hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-500 ease-in-out" data-category="${category}">
                                     ${category} (${count})
                                 </button>
                                 `;
@@ -873,11 +892,11 @@ const htmlContent = `<!DOCTYPE html>
                     const fullClass = `cssanimation ${cls}`;
                     const category = getCategoryForClass(cls);
                     return `
-                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-300 ease-in-out
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="${category}" tabindex="0">
-                                <button onclick="shareAnimation('${cls}')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ${cls}">
+                                <button onclick="shareAnimation('${cls}')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ${cls}">
                                     Share
                                     <span id="share-feedback-${cls}" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                                 </button>
@@ -887,12 +906,12 @@ const htmlContent = `<!DOCTYPE html>
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-${cls}" class="font-mono w-full text-sm text-gray-900 transition-colors duration-300 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                    <code id="code-${cls}" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
                                           data-animation-class="${cls}" tabindex="0" role="button" aria-expanded="false"
                                           onclick="toggleCodeExpansion('${cls}')">
                                         ${cls}
                                     </code>
-                                    <button onclick="copyToClipboard('${cls}')" class="relative px-4 py-2 bg-violet-400 dark:bg-violet-700 text-white font-semibold rounded-md hover:bg-violet-800 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Copy code for ${cls}">
+                                    <button onclick="copyToClipboard('${cls}')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ${cls}">
                                         Copy
                                         <span id="feedback-${cls}" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 434.85 58.82">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #7c3994;
+        font-size: 46px;
+        letter-spacing: -.03em;
+      }
+
+      .cls-3, .cls-2 {
+        font-family: Ubuntu-Bold, Ubuntu;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 52px;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="cssanimation_IO_Logo" data-name="cssanimation IO Logo">
+    <text class="cls-2" transform="translate(0 44.02)"><tspan x="0" y="0">cssanimation</tspan></text>
+    <g>
+      <rect class="cls-1" x="334.31" y="1.72" width="100.54" height="57.1" rx="5.96" ry="5.96"/>
+      <g>
+        <text class="cls-3" transform="translate(338.02 44.68)"><tspan x="0" y="0">{</tspan></text>
+        <text class="cls-3" transform="translate(415.14 44.68)"><tspan x="0" y="0">}</tspan></text>
+        <text class="cls-3" transform="translate(352.22 41.77)"><tspan x="0" y="0">css</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
