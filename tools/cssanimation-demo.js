@@ -646,7 +646,7 @@ const htmlContent = `<!DOCTYPE html>
       @theme {
         --color-brand: #7e2ea0;
         --color-secondary: #4e1671;
-        --color-accent: #c24ef2;
+        --color-accent: #ff33cc;
 
         --color-bg-dark: #0e0a1a;
         --color-bg-light: #f5f2fa;
