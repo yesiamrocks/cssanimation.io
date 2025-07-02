@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 // 3. Adjust all path.resolve calls to use the new __dirname
 const cssFilePath = path.resolve(__dirname, '../dist/cssanimation.css');
-const outputHtmlPath = path.resolve(__dirname, '../docs/cssanimation-demo.html');
+const outputHtmlPath = path.resolve(__dirname, '../docs/index.html');
 const outputClientJsPath = path.resolve(__dirname, '../docs/cssanimation-client.js'); // Path for client-side JS
 const animationGroupsPath = path.resolve(__dirname, './animation-groups.json'); // Path to the JSON file
 
@@ -633,7 +633,33 @@ const htmlContent = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CA Animation Gallery</title>
+    <title>CSS Animation Library for Developers and Ninjas - cssanimation.io</title>
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="canonical" href="http://cssanimation.io" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Are you looking for css animation? Don’t know how to use css3 keyframe also css transition, want to design websites with animation? Follow us to have all solutions together.">
+    <meta name="keywords" content="css animation, website animation, css3, css3 animation, greensock, animation library, html5 animation, transition, animate css, css3 animation examples, css3 transform, css3 effects, css text animation, website designer, creating animation, css3 animation effects, css hover, css3 hover animation, css rotate, scales, css transition">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Pavel">
+    <meta name="contact" content="hello@cssanimation.io">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@cssanimation_io" />
+    <meta name="twitter:title" content="CSS Animation Library for Developers and Ninjas" />
+    <meta name="twitter:description" content="Are you looking for css animation? Don’t know how to use css3 keyframe also css transition, want to design websites with animation? Follow us to have all solutions together." />
+    <meta name="twitter:image" content="assets/cssanimation_icon.png" />
+    <meta property="og:title" content="CSS Animation Library for Developers and Ninjas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Are you looking for css animation? Don’t know how to use css3 keyframe also css transition, want to design websites with animation? Follow us to have all solutions together." />
+    <meta property="og:url" content="https://cssanimation.io/" />
+    <meta property="og:image" content="assets/cssanimation_icon.png" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="CSS Animation">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7e2ea0">
+    <link rel="apple-touch-icon-precomposed" href="assets/cssanimation_icon.png">
+    <meta name="msapplication-TileImage" content="assets/cssanimation_icon.png">
+    <meta name="msapplication-TileColor" content="#fcf5f2">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -642,6 +668,24 @@ const htmlContent = `<!DOCTYPE html>
     <link rel="stylesheet" href="./assets/cssanimation.css">
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-78437975-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
     <style type="text/tailwindcss">
       @theme {
         --color-brand: #7e2ea0;
@@ -769,7 +813,7 @@ const htmlContent = `<!DOCTYPE html>
 
     <div class="flex items-center">
         <h1 class="text-xl md:text-2xl font-bold rounded-md lg:hidden">
-            <img src="./assets/cssanimation-logo.svg" alt="cssanimation brand" width="250">
+            <img src="./assets/cssanimation-logo.svg" alt="cssanimation brand" width="220">
         </h1>
 
         <div class="hidden lg:flex items-center">
