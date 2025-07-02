@@ -766,21 +766,27 @@ const htmlContent = `<!DOCTYPE html>
 
     <!-- Fixed Header -->
     <header class="fixed bg-header top-0 left-0 right-0 text-white p-4 shadow-lg z-20 flex items-center justify-between h-16">
-    <h1 class="text-xl md:text-2xl font-bold rounded-md"><img src="./assets/cssanimation-logo.svg" alt="cssanimation brand" width="250"></h1>
+
+    <div class="flex items-center">
+        <h1 class="text-xl md:text-2xl font-bold rounded-md lg:hidden">
+            <img src="./assets/cssanimation-logo.svg" alt="cssanimation brand" width="250">
+        </h1>
+
+        <div class="hidden lg:flex items-center">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search animations..."
+                class="px-4 py-2 rounded-md bg-secondary text-bg-light border border-gray-700 focus:outline-none focus:ring-2 focus:ring-bg-light transition-colors duration-300 ease-in-out w-48 sm:w-64"
+            />
+        </div>
+    </div>
+
+    <h1 class="text-xl md:text-2xl font-bold rounded-md hidden lg:block lg:absolute lg:left-1/2 lg:-translate-x-1/2">
+        <img src="./assets/cssanimation-logo.svg" alt="cssanimation brand" width="250">
+    </h1>
+
     <div class="flex items-center space-x-4">
-        <button id="hamburger-btn" class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out lg:hidden" aria-label="Toggle Navigation">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-
-        <input
-            type="text"
-            id="search-input"
-            placeholder="Search animations..."
-            class="flex-grow px-4 py-2 rounded-md bg-secondary text-bg-light border border-gray-700 focus:outline-none focus:ring-2 focus:ring-bg-light transition-colors duration-300 ease-in-out"
-        />
-
         <a 
             href="https://github.com/yesiamrocks/cssanimation?tab=readme-ov-file#css-animation-library-for-developers-and-ninjas" 
             target="_blank" 
@@ -795,7 +801,7 @@ const htmlContent = `<!DOCTYPE html>
             href="https://github.com/yesiamrocks/cssanimation" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
+            class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out hidden lg:flex"
             aria-label="GitHub Profile"
         >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -805,30 +811,20 @@ const htmlContent = `<!DOCTYPE html>
 
         <button
             id="theme-toggle"
-            class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out"
+            class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out hidden lg:flex"
             aria-label="Toggle Dark Mode"
         >
-            <svg
-                id="theme-toggle-dark-icon"
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
+            <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>
-            <svg
-                id="theme-toggle-light-icon"
-                class="w-5 h-5 hidden"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.939a1 1 0 111.414 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.121-2.121zM10 10a3 3 0 100-6 3 3 0 000 6zm7-3a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zm-9 0a1 1 0 011-1H4a1 1 0 010 2H3a1 1 0 01-1-1zm7 7a1 1 0 011-1v-1a1 1 0 112 0v1a1 1 0 01-1 1h-2zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1zm7 7a1 1 0 011-1v-1a1 1 0 112 0v1a1 1 0 01-1 1h-2zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1z"
-                ></path>
+            <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.939a1 1 0 111.414 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.121-2.121zM10 10a3 3 0 100-6 3 3 0 000 6zm7-3a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zm-9 0a1 1 0 011-1H4a1 1 0 010 2H3a1 1 0 01-1-1zm7 7a1 1 0 011-1v-1a1 1 0 112 0v1a1 1 0 01-1 1h-2zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1zm7 7a1 1 0 011-1v-1a1 1 0 112 0v1a1 1 0 01-1 1h-2zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
+            </svg>
+        </button>
+
+        <button id="hamburger-btn" class="p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-colors duration-300 ease-in-out lg:hidden" aria-label="Toggle Navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
         </button>
     </div>
