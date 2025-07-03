@@ -1,6 +1,6 @@
 /*!
- * Module: matrixWave Animation
- * Usage: <div class="cssanimation ca__fx-matrixWave">Your Content</div>
+ * Module: mask-stripesIn Animation
+ * Usage: <div class="cssanimation ca__fx-mask-stripesIn">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,38 +37,6 @@
 }
 /* stylelint-enable */
 
-.ca__fx-matrixWave {
-  animation: matrixWave 1.5s infinite ease-in-out;
-}
-
-@keyframes matrixWave {
-  0% {
-    transform: translateY(0) scaleY(1);
-    filter: grayscale(0);
-  }
-
-  25% {
-    transform: translateY(-3px) scaleY(1.2);
-  }
-
-  50% {
-    transform: translateY(3px) scaleY(0.8);
-    filter: grayscale(1);
-  }
-
-  75% {
-    transform: translateY(-1px) scaleY(1.05);
-    filter: none;
-  }
-
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
-/**
- * Module: Masking Animation
- * Filename: ca__masking.css
- */
 .ca__fx-mask-stripesIn {
   animation-name: mask-stripesIn;
   -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
@@ -79,4 +47,20 @@
   mask-size: 100% 200%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+
+@keyframes mask-stripesIn {
+  0% {
+    -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+    mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+    -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+    mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }

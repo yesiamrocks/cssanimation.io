@@ -379,6 +379,9 @@
 @import url('./ca__fx-rubberExpand.css');
 @import url('./ca__fx-rubberShrink.css');
 @import url('./ca__fx-matrixWave.css');
+@import url('./ca__fx-mask-stripesIn.css');
+@import url('./ca__fx-mask-swipeLeftIn.css');
+@import url('./ca__fx-mask-circleRevealIn.css');
 @import url('./ca__fx-jiggle.css');
 @import url('./ca__fx-quiver.css');
 @import url('./ca__fx-tremor.css');
@@ -454,3 +457,5 @@
 @import url('./ca__fx-springy.css');
 @import url('./ca__fx-rainbow.css');
 @import url('./ca__fx-ca__magicBlobSplit.css');
+@import url('./ca__fx-mask-swipeLeftIn-key.css');
+@import url('./ca__fx-mask-circleRevealIn-key.css');

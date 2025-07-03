@@ -1,0 +1,186 @@
+/**
+ * Module: Masking Animation
+ * Filename: ca__masking.css
+ */
+
+.mask-stripesIn {
+  animation-name: mask-stripesIn;
+  mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+  mask-size: 100% 200%;
+  mask-repeat: no-repeat;
+}
+
+@keyframes mask-stripesIn {
+  0% {
+    mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    mask-position: 0 0;
+  }
+}
+
+.ca__mask-topFadeIn {
+  animation: ca__mask-topFadeIn 1s ease-out forwards;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+  mask-size: 100% 200%;
+  -webkit-mask-size: 100% 200%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+@keyframes ca__mask-topFadeIn {
+  0% {
+    mask-position: 0 -100%;
+    -webkit-mask-position: 0 -100%;
+  }
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}
+
+.ca__mask-diagonalWipeIn {
+  animation: ca__mask-diagonalWipeIn 1s ease-out forwards;
+  mask-image: linear-gradient(45deg, transparent 40%, black 60%);
+  -webkit-mask-image: linear-gradient(45deg, transparent 40%, black 60%);
+  mask-size: 200% 200%;
+  -webkit-mask-size: 200% 200%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+@keyframes ca__mask-diagonalWipeIn {
+  0% {
+    mask-position: -100% -100%;
+    -webkit-mask-position: -100% -100%;
+  }
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}
+
+.ca__mask-stripesIn {
+  animation: ca__mask-stripesIn 1s ease-out forwards;
+  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  mask-size: 100% 200%;
+  -webkit-mask-size: 100% 200%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@keyframes ca__mask-stripesIn {
+  0% {
+    mask-position: 0 -100%;
+    -webkit-mask-position: 0 -100%;
+  }
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}
+
+.ca__mask-topFadeIn {
+  animation: ca__mask-topFadeIn 1s ease-out forwards;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+  mask-size: 100% 200%;
+  -webkit-mask-size: 100% 200%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@keyframes ca__mask-topFadeIn {
+  0% {
+    mask-position: 0 -100%;
+    -webkit-mask-position: 0 -100%;
+  }
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}
+
+.ca__mask-wipeLeftIn {
+  animation: ca__mask-wipeLeftIn 1s ease-out forwards;
+  mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  mask-size: 200% 100%;
+  -webkit-mask-size: 200% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@keyframes ca__mask-wipeLeftIn {
+  0% {
+    mask-position: -100% 0;
+    -webkit-mask-position: -100% 0;
+  }
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}
+
+.ca__mask-radialBurstIn {
+  animation: ca__mask-radialBurstIn 1s ease-out forwards;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 60%);
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 60%);
+  mask-size: 200% 200%;
+  -webkit-mask-size: 200% 200%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@keyframes ca__mask-radialBurstIn {
+  0% {
+    mask-position: center center;
+    -webkit-mask-position: center center;
+    transform: scale(3);
+  }
+  100% {
+    mask-position: center center;
+    -webkit-mask-position: center center;
+    transform: scale(1);
+  }
+}
+
+.ca__mask-horizontalBarsIn {
+  animation: ca__mask-horizontalBarsIn 1s ease-out forwards;
+  mask-image: repeating-linear-gradient(to bottom, black 0 15%, transparent 15% 30%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 15%, transparent 15% 30%);
+  mask-size: 100% 200%;
+  -webkit-mask-size: 100% 200%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@keyframes ca__mask-horizontalBarsIn {
+  0% {
+    mask-position: 0 -100%;
+    -webkit-mask-position: 0 -100%;
+  }
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}
+
+.ca__mask-zigzagRevealIn {
+  animation: ca__mask-zigzagRevealIn 1s ease-out forwards;
+  mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
+  mask-size: 200% 200%;
+  -webkit-mask-size: 200% 200%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@keyframes ca__mask-zigzagRevealIn {
+  0% {
+    mask-position: -100% -100%;
+    -webkit-mask-position: -100% -100%;
+  }
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}

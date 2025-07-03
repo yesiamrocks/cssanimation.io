@@ -103,6 +103,13 @@
 - `ca__fx-bouncyScale`
 - `ca__fx-breezeLift`
 - `ca__fx-buzz`
+- `ca__fx-ca__mask-diagonalWipeIn`
+- `ca__fx-ca__mask-horizontalBarsIn`
+- `ca__fx-ca__mask-radialBurstIn`
+- `ca__fx-ca__mask-stripesIn`
+- `ca__fx-ca__mask-topFadeIn`
+- `ca__fx-ca__mask-wipeLeftIn`
+- `ca__fx-ca__mask-zigzagRevealIn`
 - `ca__fx-clipAnimate`
 - `ca__fx-clipAnimateWave`
 - `ca__fx-clipBurstCircle`
@@ -240,6 +247,7 @@
 - `ca__fx-magicBlobSplit`
 - `ca__fx-magicDustExit`
 - `ca__fx-magicTrailComet`
+- `ca__fx-mask-stripesIn`
 - `ca__fx-matrixWave`
 - `ca__fx-microGlitch`
 - `ca__fx-moonCyclePulse`

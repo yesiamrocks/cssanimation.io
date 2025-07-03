@@ -1,0 +1,59 @@
+/*!
+ * Module: ca__mask-topFadeIn Animation
+ * Usage: <div class="cssanimation ca__fx-ca__mask-topFadeIn">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-ca__mask-topFadeIn {
+  animation: ca__mask-topFadeIn 1s ease-out forwards;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+  mask-size: 100% 200%;
+  -webkit-mask-size: 100% 200%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+@keyframes ca__mask-topFadeIn {
+  0% {
+    mask-position: 0 -100%;
+    -webkit-mask-position: 0 -100%;
+  }
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}

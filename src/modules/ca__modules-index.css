@@ -379,6 +379,14 @@
 @import url('./ca__fx-rubberExpand.css');
 @import url('./ca__fx-rubberShrink.css');
 @import url('./ca__fx-matrixWave.css');
+@import url('./ca__fx-mask-stripesIn.css');
+@import url('./ca__fx-ca__mask-topFadeIn.css');
+@import url('./ca__fx-ca__mask-diagonalWipeIn.css');
+@import url('./ca__fx-ca__mask-stripesIn.css');
+@import url('./ca__fx-ca__mask-wipeLeftIn.css');
+@import url('./ca__fx-ca__mask-radialBurstIn.css');
+@import url('./ca__fx-ca__mask-horizontalBarsIn.css');
+@import url('./ca__fx-ca__mask-zigzagRevealIn.css');
 @import url('./ca__fx-jiggle.css');
 @import url('./ca__fx-quiver.css');
 @import url('./ca__fx-tremor.css');
