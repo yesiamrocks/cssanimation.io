@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/cssanimation.css">
+    <link rel="stylesheet" href="./assets/cssanimation.min.css">
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -256,7 +256,7 @@
                       border-r border-gray-200 dark:border-gray-700 shadow-md">
             <div id="categories" class="flex flex-col gap-2">
                 <button class="category-button cursor-pointer text-left px-2 py-2 rounded-md text-muted hover:bg-accent hover:text-white hover:px-5 dark:hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-300 ease-in-out" data-category="All">
-                    All (445)
+                    All (469)
                 </button>
                 
                                 <button class="category-button cursor-pointer text-left px-2 py-2 rounded-md text-muted hover:bg-accent hover:text-white hover:px-5 dark:hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-500 ease-in-out" data-category="Blob Animation">
@@ -412,7 +412,7 @@
                                 </button>
                                 
                                 <button class="category-button cursor-pointer text-left px-2 py-2 rounded-md text-muted hover:bg-accent hover:text-white hover:px-5 dark:hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-500 ease-in-out" data-category="Other">
-                                    Other (8)
+                                    Other (32)
                                 </button>
                                 
             </div>
@@ -9966,6 +9966,31 @@
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-horizontalBarsIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-horizontalBarsIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-horizontalBarsIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-horizontalBarsIn" id="ca__fx-mask-horizontalBarsIn" onclick="replay('ca__fx-mask-horizontalBarsIn')">
+                                    ca__fx-mask-horizontalBarsIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-horizontalBarsIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-horizontalBarsIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-horizontalBarsIn')">
+                                        ca__fx-mask-horizontalBarsIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-horizontalBarsIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-horizontalBarsIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-horizontalBarsIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
                                 <button onclick="shareAnimation('ca__fx-mask-stripesIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesIn">
                                     Share
                                     <span id="share-feedback-ca__fx-mask-stripesIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
@@ -9991,24 +10016,24 @@
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
-                                <button onclick="shareAnimation('ca__fx-ca__mask-topFadeIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-topFadeIn">
+                                <button onclick="shareAnimation('ca__fx-mask-topFadeIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-topFadeIn">
                                     Share
-                                    <span id="share-feedback-ca__fx-ca__mask-topFadeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                    <span id="share-feedback-ca__fx-mask-topFadeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                                 </button>
 
-                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-topFadeIn" id="ca__fx-ca__mask-topFadeIn" onclick="replay('ca__fx-ca__mask-topFadeIn')">
-                                    ca__fx-ca__mask-topFadeIn
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-topFadeIn" id="ca__fx-mask-topFadeIn" onclick="replay('ca__fx-mask-topFadeIn')">
+                                    ca__fx-mask-topFadeIn
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-ca__fx-ca__mask-topFadeIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
-                                          data-animation-class="ca__fx-ca__mask-topFadeIn" tabindex="0" role="button" aria-expanded="false"
-                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-topFadeIn')">
-                                        ca__fx-ca__mask-topFadeIn
+                                    <code id="code-ca__fx-mask-topFadeIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-topFadeIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-topFadeIn')">
+                                        ca__fx-mask-topFadeIn
                                     </code>
-                                    <button onclick="copyToClipboard('ca__fx-ca__mask-topFadeIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-topFadeIn">
+                                    <button onclick="copyToClipboard('ca__fx-mask-topFadeIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-topFadeIn">
                                         Copy
-                                        <span id="feedback-ca__fx-ca__mask-topFadeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                        <span id="feedback-ca__fx-mask-topFadeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>
@@ -10016,24 +10041,24 @@
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
-                                <button onclick="shareAnimation('ca__fx-ca__mask-diagonalWipeIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-diagonalWipeIn">
+                                <button onclick="shareAnimation('ca__fx-mask-wipeLeftIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-wipeLeftIn">
                                     Share
-                                    <span id="share-feedback-ca__fx-ca__mask-diagonalWipeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                    <span id="share-feedback-ca__fx-mask-wipeLeftIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                                 </button>
 
-                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-diagonalWipeIn" id="ca__fx-ca__mask-diagonalWipeIn" onclick="replay('ca__fx-ca__mask-diagonalWipeIn')">
-                                    ca__fx-ca__mask-diagonalWipeIn
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-wipeLeftIn" id="ca__fx-mask-wipeLeftIn" onclick="replay('ca__fx-mask-wipeLeftIn')">
+                                    ca__fx-mask-wipeLeftIn
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-ca__fx-ca__mask-diagonalWipeIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
-                                          data-animation-class="ca__fx-ca__mask-diagonalWipeIn" tabindex="0" role="button" aria-expanded="false"
-                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-diagonalWipeIn')">
-                                        ca__fx-ca__mask-diagonalWipeIn
+                                    <code id="code-ca__fx-mask-wipeLeftIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-wipeLeftIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-wipeLeftIn')">
+                                        ca__fx-mask-wipeLeftIn
                                     </code>
-                                    <button onclick="copyToClipboard('ca__fx-ca__mask-diagonalWipeIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-diagonalWipeIn">
+                                    <button onclick="copyToClipboard('ca__fx-mask-wipeLeftIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-wipeLeftIn">
                                         Copy
-                                        <span id="feedback-ca__fx-ca__mask-diagonalWipeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                        <span id="feedback-ca__fx-mask-wipeLeftIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>
@@ -10041,24 +10066,24 @@
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
-                                <button onclick="shareAnimation('ca__fx-ca__mask-stripesIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-stripesIn">
+                                <button onclick="shareAnimation('ca__fx-mask-zigzagRevealIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-zigzagRevealIn">
                                     Share
-                                    <span id="share-feedback-ca__fx-ca__mask-stripesIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                    <span id="share-feedback-ca__fx-mask-zigzagRevealIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                                 </button>
 
-                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-stripesIn" id="ca__fx-ca__mask-stripesIn" onclick="replay('ca__fx-ca__mask-stripesIn')">
-                                    ca__fx-ca__mask-stripesIn
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-zigzagRevealIn" id="ca__fx-mask-zigzagRevealIn" onclick="replay('ca__fx-mask-zigzagRevealIn')">
+                                    ca__fx-mask-zigzagRevealIn
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-ca__fx-ca__mask-stripesIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
-                                          data-animation-class="ca__fx-ca__mask-stripesIn" tabindex="0" role="button" aria-expanded="false"
-                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-stripesIn')">
-                                        ca__fx-ca__mask-stripesIn
+                                    <code id="code-ca__fx-mask-zigzagRevealIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-zigzagRevealIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-zigzagRevealIn')">
+                                        ca__fx-mask-zigzagRevealIn
                                     </code>
-                                    <button onclick="copyToClipboard('ca__fx-ca__mask-stripesIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-stripesIn">
+                                    <button onclick="copyToClipboard('ca__fx-mask-zigzagRevealIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-zigzagRevealIn">
                                         Copy
-                                        <span id="feedback-ca__fx-ca__mask-stripesIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                        <span id="feedback-ca__fx-mask-zigzagRevealIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>
@@ -10066,24 +10091,24 @@
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
-                                <button onclick="shareAnimation('ca__fx-ca__mask-wipeLeftIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-wipeLeftIn">
+                                <button onclick="shareAnimation('ca__fx-mask-checkerboardIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-checkerboardIn">
                                     Share
-                                    <span id="share-feedback-ca__fx-ca__mask-wipeLeftIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                    <span id="share-feedback-ca__fx-mask-checkerboardIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                                 </button>
 
-                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-wipeLeftIn" id="ca__fx-ca__mask-wipeLeftIn" onclick="replay('ca__fx-ca__mask-wipeLeftIn')">
-                                    ca__fx-ca__mask-wipeLeftIn
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-checkerboardIn" id="ca__fx-mask-checkerboardIn" onclick="replay('ca__fx-mask-checkerboardIn')">
+                                    ca__fx-mask-checkerboardIn
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-ca__fx-ca__mask-wipeLeftIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
-                                          data-animation-class="ca__fx-ca__mask-wipeLeftIn" tabindex="0" role="button" aria-expanded="false"
-                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-wipeLeftIn')">
-                                        ca__fx-ca__mask-wipeLeftIn
+                                    <code id="code-ca__fx-mask-checkerboardIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-checkerboardIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-checkerboardIn')">
+                                        ca__fx-mask-checkerboardIn
                                     </code>
-                                    <button onclick="copyToClipboard('ca__fx-ca__mask-wipeLeftIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-wipeLeftIn">
+                                    <button onclick="copyToClipboard('ca__fx-mask-checkerboardIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-checkerboardIn">
                                         Copy
-                                        <span id="feedback-ca__fx-ca__mask-wipeLeftIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                        <span id="feedback-ca__fx-mask-checkerboardIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>
@@ -10091,24 +10116,24 @@
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
-                                <button onclick="shareAnimation('ca__fx-ca__mask-radialBurstIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-radialBurstIn">
+                                <button onclick="shareAnimation('ca__fx-mask-diamondIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-diamondIn">
                                     Share
-                                    <span id="share-feedback-ca__fx-ca__mask-radialBurstIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                    <span id="share-feedback-ca__fx-mask-diamondIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                                 </button>
 
-                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-radialBurstIn" id="ca__fx-ca__mask-radialBurstIn" onclick="replay('ca__fx-ca__mask-radialBurstIn')">
-                                    ca__fx-ca__mask-radialBurstIn
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-diamondIn" id="ca__fx-mask-diamondIn" onclick="replay('ca__fx-mask-diamondIn')">
+                                    ca__fx-mask-diamondIn
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-ca__fx-ca__mask-radialBurstIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
-                                          data-animation-class="ca__fx-ca__mask-radialBurstIn" tabindex="0" role="button" aria-expanded="false"
-                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-radialBurstIn')">
-                                        ca__fx-ca__mask-radialBurstIn
+                                    <code id="code-ca__fx-mask-diamondIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-diamondIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-diamondIn')">
+                                        ca__fx-mask-diamondIn
                                     </code>
-                                    <button onclick="copyToClipboard('ca__fx-ca__mask-radialBurstIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-radialBurstIn">
+                                    <button onclick="copyToClipboard('ca__fx-mask-diamondIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-diamondIn">
                                         Copy
-                                        <span id="feedback-ca__fx-ca__mask-radialBurstIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                        <span id="feedback-ca__fx-mask-diamondIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>
@@ -10116,24 +10141,24 @@
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
-                                <button onclick="shareAnimation('ca__fx-ca__mask-horizontalBarsIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-horizontalBarsIn">
+                                <button onclick="shareAnimation('ca__fx-ca__mask-linesSlideIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-linesSlideIn">
                                     Share
-                                    <span id="share-feedback-ca__fx-ca__mask-horizontalBarsIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                    <span id="share-feedback-ca__fx-ca__mask-linesSlideIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                                 </button>
 
-                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-horizontalBarsIn" id="ca__fx-ca__mask-horizontalBarsIn" onclick="replay('ca__fx-ca__mask-horizontalBarsIn')">
-                                    ca__fx-ca__mask-horizontalBarsIn
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-linesSlideIn" id="ca__fx-ca__mask-linesSlideIn" onclick="replay('ca__fx-ca__mask-linesSlideIn')">
+                                    ca__fx-ca__mask-linesSlideIn
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-ca__fx-ca__mask-horizontalBarsIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
-                                          data-animation-class="ca__fx-ca__mask-horizontalBarsIn" tabindex="0" role="button" aria-expanded="false"
-                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-horizontalBarsIn')">
-                                        ca__fx-ca__mask-horizontalBarsIn
+                                    <code id="code-ca__fx-ca__mask-linesSlideIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-ca__mask-linesSlideIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-linesSlideIn')">
+                                        ca__fx-ca__mask-linesSlideIn
                                     </code>
-                                    <button onclick="copyToClipboard('ca__fx-ca__mask-horizontalBarsIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-horizontalBarsIn">
+                                    <button onclick="copyToClipboard('ca__fx-ca__mask-linesSlideIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-linesSlideIn">
                                         Copy
-                                        <span id="feedback-ca__fx-ca__mask-horizontalBarsIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                        <span id="feedback-ca__fx-ca__mask-linesSlideIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>
@@ -10141,24 +10166,599 @@
   hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
   hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
   focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
-                                <button onclick="shareAnimation('ca__fx-ca__mask-zigzagRevealIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-zigzagRevealIn">
+                                <button onclick="shareAnimation('ca__fx-ca__mask-insetSwipeIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-insetSwipeIn">
                                     Share
-                                    <span id="share-feedback-ca__fx-ca__mask-zigzagRevealIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                    <span id="share-feedback-ca__fx-ca__mask-insetSwipeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
                                 </button>
 
-                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-zigzagRevealIn" id="ca__fx-ca__mask-zigzagRevealIn" onclick="replay('ca__fx-ca__mask-zigzagRevealIn')">
-                                    ca__fx-ca__mask-zigzagRevealIn
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-insetSwipeIn" id="ca__fx-ca__mask-insetSwipeIn" onclick="replay('ca__fx-ca__mask-insetSwipeIn')">
+                                    ca__fx-ca__mask-insetSwipeIn
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
-                                    <code id="code-ca__fx-ca__mask-zigzagRevealIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
-                                          data-animation-class="ca__fx-ca__mask-zigzagRevealIn" tabindex="0" role="button" aria-expanded="false"
-                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-zigzagRevealIn')">
-                                        ca__fx-ca__mask-zigzagRevealIn
+                                    <code id="code-ca__fx-ca__mask-insetSwipeIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-ca__mask-insetSwipeIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-insetSwipeIn')">
+                                        ca__fx-ca__mask-insetSwipeIn
                                     </code>
-                                    <button onclick="copyToClipboard('ca__fx-ca__mask-zigzagRevealIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-zigzagRevealIn">
+                                    <button onclick="copyToClipboard('ca__fx-ca__mask-insetSwipeIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-insetSwipeIn">
                                         Copy
-                                        <span id="feedback-ca__fx-ca__mask-zigzagRevealIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                        <span id="feedback-ca__fx-ca__mask-insetSwipeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-ca__mask-rainRevealIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-ca__mask-rainRevealIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-ca__mask-rainRevealIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-ca__mask-rainRevealIn" id="ca__fx-ca__mask-rainRevealIn" onclick="replay('ca__fx-ca__mask-rainRevealIn')">
+                                    ca__fx-ca__mask-rainRevealIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-ca__mask-rainRevealIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-ca__mask-rainRevealIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-ca__mask-rainRevealIn')">
+                                        ca__fx-ca__mask-rainRevealIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-ca__mask-rainRevealIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-ca__mask-rainRevealIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-ca__mask-rainRevealIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-verticalScanIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-verticalScanIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-verticalScanIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-verticalScanIn" id="ca__fx-mask-verticalScanIn" onclick="replay('ca__fx-mask-verticalScanIn')">
+                                    ca__fx-mask-verticalScanIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-verticalScanIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-verticalScanIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-verticalScanIn')">
+                                        ca__fx-mask-verticalScanIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-verticalScanIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-verticalScanIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-verticalScanIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-angleSweepRightIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-angleSweepRightIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-angleSweepRightIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-angleSweepRightIn" id="ca__fx-mask-angleSweepRightIn" onclick="replay('ca__fx-mask-angleSweepRightIn')">
+                                    ca__fx-mask-angleSweepRightIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-angleSweepRightIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-angleSweepRightIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-angleSweepRightIn')">
+                                        ca__fx-mask-angleSweepRightIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-angleSweepRightIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-angleSweepRightIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-angleSweepRightIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-irisOpenIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-irisOpenIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-irisOpenIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-irisOpenIn" id="ca__fx-mask-irisOpenIn" onclick="replay('ca__fx-mask-irisOpenIn')">
+                                    ca__fx-mask-irisOpenIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-irisOpenIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-irisOpenIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-irisOpenIn')">
+                                        ca__fx-mask-irisOpenIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-irisOpenIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-irisOpenIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-irisOpenIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-reflectiveWipeIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-reflectiveWipeIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-reflectiveWipeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-reflectiveWipeIn" id="ca__fx-mask-reflectiveWipeIn" onclick="replay('ca__fx-mask-reflectiveWipeIn')">
+                                    ca__fx-mask-reflectiveWipeIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-reflectiveWipeIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-reflectiveWipeIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-reflectiveWipeIn')">
+                                        ca__fx-mask-reflectiveWipeIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-reflectiveWipeIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-reflectiveWipeIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-reflectiveWipeIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-threadLinesIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-threadLinesIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-threadLinesIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-threadLinesIn" id="ca__fx-mask-threadLinesIn" onclick="replay('ca__fx-mask-threadLinesIn')">
+                                    ca__fx-mask-threadLinesIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-threadLinesIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-threadLinesIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-threadLinesIn')">
+                                        ca__fx-mask-threadLinesIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-threadLinesIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-threadLinesIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-threadLinesIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stairStepIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stairStepIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stairStepIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stairStepIn" id="ca__fx-mask-stairStepIn" onclick="replay('ca__fx-mask-stairStepIn')">
+                                    ca__fx-mask-stairStepIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stairStepIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stairStepIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stairStepIn')">
+                                        ca__fx-mask-stairStepIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stairStepIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stairStepIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stairStepIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-explosionRevealIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-explosionRevealIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-explosionRevealIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-explosionRevealIn" id="ca__fx-mask-explosionRevealIn" onclick="replay('ca__fx-mask-explosionRevealIn')">
+                                    ca__fx-mask-explosionRevealIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-explosionRevealIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-explosionRevealIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-explosionRevealIn')">
+                                        ca__fx-mask-explosionRevealIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-explosionRevealIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-explosionRevealIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-explosionRevealIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-shutterLinesIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-shutterLinesIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-shutterLinesIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-shutterLinesIn" id="ca__fx-mask-shutterLinesIn" onclick="replay('ca__fx-mask-shutterLinesIn')">
+                                    ca__fx-mask-shutterLinesIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-shutterLinesIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-shutterLinesIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-shutterLinesIn')">
+                                        ca__fx-mask-shutterLinesIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-shutterLinesIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-shutterLinesIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-shutterLinesIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesVerticalIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesVerticalIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesVerticalIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesVerticalIn" id="ca__fx-mask-stripesVerticalIn" onclick="replay('ca__fx-mask-stripesVerticalIn')">
+                                    ca__fx-mask-stripesVerticalIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesVerticalIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesVerticalIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesVerticalIn')">
+                                        ca__fx-mask-stripesVerticalIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesVerticalIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesVerticalIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesVerticalIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesVerticalOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesVerticalOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesVerticalOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesVerticalOut" id="ca__fx-mask-stripesVerticalOut" onclick="replay('ca__fx-mask-stripesVerticalOut')">
+                                    ca__fx-mask-stripesVerticalOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesVerticalOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesVerticalOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesVerticalOut')">
+                                        ca__fx-mask-stripesVerticalOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesVerticalOut')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesVerticalOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesVerticalOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesHorizontalReverseIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesHorizontalReverseIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesHorizontalReverseIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesHorizontalReverseIn" id="ca__fx-mask-stripesHorizontalReverseIn" onclick="replay('ca__fx-mask-stripesHorizontalReverseIn')">
+                                    ca__fx-mask-stripesHorizontalReverseIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesHorizontalReverseIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesHorizontalReverseIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesHorizontalReverseIn')">
+                                        ca__fx-mask-stripesHorizontalReverseIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesHorizontalReverseIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesHorizontalReverseIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesHorizontalReverseIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesDiagonalLeftIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesDiagonalLeftIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesDiagonalLeftIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesDiagonalLeftIn" id="ca__fx-mask-stripesDiagonalLeftIn" onclick="replay('ca__fx-mask-stripesDiagonalLeftIn')">
+                                    ca__fx-mask-stripesDiagonalLeftIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesDiagonalLeftIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesDiagonalLeftIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesDiagonalLeftIn')">
+                                        ca__fx-mask-stripesDiagonalLeftIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesDiagonalLeftIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesDiagonalLeftIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesDiagonalLeftIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesDiagonalUpIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesDiagonalUpIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesDiagonalUpIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesDiagonalUpIn" id="ca__fx-mask-stripesDiagonalUpIn" onclick="replay('ca__fx-mask-stripesDiagonalUpIn')">
+                                    ca__fx-mask-stripesDiagonalUpIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesDiagonalUpIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesDiagonalUpIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesDiagonalUpIn')">
+                                        ca__fx-mask-stripesDiagonalUpIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesDiagonalUpIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesDiagonalUpIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesDiagonalUpIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesWideIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesWideIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesWideIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesWideIn" id="ca__fx-mask-stripesWideIn" onclick="replay('ca__fx-mask-stripesWideIn')">
+                                    ca__fx-mask-stripesWideIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesWideIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesWideIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesWideIn')">
+                                        ca__fx-mask-stripesWideIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesWideIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesWideIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesWideIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesThinIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesThinIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesThinIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesThinIn" id="ca__fx-mask-stripesThinIn" onclick="replay('ca__fx-mask-stripesThinIn')">
+                                    ca__fx-mask-stripesThinIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesThinIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesThinIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesThinIn')">
+                                        ca__fx-mask-stripesThinIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesThinIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesThinIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesThinIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesJitterIn')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesJitterIn">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesJitterIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesJitterIn" id="ca__fx-mask-stripesJitterIn" onclick="replay('ca__fx-mask-stripesJitterIn')">
+                                    ca__fx-mask-stripesJitterIn
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesJitterIn" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesJitterIn" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesJitterIn')">
+                                        ca__fx-mask-stripesJitterIn
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesJitterIn')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesJitterIn">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesJitterIn" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesHorizontalReverseOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesHorizontalReverseOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesHorizontalReverseOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesHorizontalReverseOut" id="ca__fx-mask-stripesHorizontalReverseOut" onclick="replay('ca__fx-mask-stripesHorizontalReverseOut')">
+                                    ca__fx-mask-stripesHorizontalReverseOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesHorizontalReverseOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesHorizontalReverseOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesHorizontalReverseOut')">
+                                        ca__fx-mask-stripesHorizontalReverseOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesHorizontalReverseOut')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesHorizontalReverseOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesHorizontalReverseOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesDiagonalLeftOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesDiagonalLeftOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesDiagonalLeftOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesDiagonalLeftOut" id="ca__fx-mask-stripesDiagonalLeftOut" onclick="replay('ca__fx-mask-stripesDiagonalLeftOut')">
+                                    ca__fx-mask-stripesDiagonalLeftOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesDiagonalLeftOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesDiagonalLeftOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesDiagonalLeftOut')">
+                                        ca__fx-mask-stripesDiagonalLeftOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesDiagonalLeftOut')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesDiagonalLeftOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesDiagonalLeftOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesDiagonalUpOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesDiagonalUpOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesDiagonalUpOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesDiagonalUpOut" id="ca__fx-mask-stripesDiagonalUpOut" onclick="replay('ca__fx-mask-stripesDiagonalUpOut')">
+                                    ca__fx-mask-stripesDiagonalUpOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesDiagonalUpOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesDiagonalUpOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesDiagonalUpOut')">
+                                        ca__fx-mask-stripesDiagonalUpOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesDiagonalUpOut')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesDiagonalUpOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesDiagonalUpOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesWideOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesWideOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesWideOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesWideOut" id="ca__fx-mask-stripesWideOut" onclick="replay('ca__fx-mask-stripesWideOut')">
+                                    ca__fx-mask-stripesWideOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesWideOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesWideOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesWideOut')">
+                                        ca__fx-mask-stripesWideOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesWideOut')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesWideOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesWideOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesThinOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesThinOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesThinOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesThinOut" id="ca__fx-mask-stripesThinOut" onclick="replay('ca__fx-mask-stripesThinOut')">
+                                    ca__fx-mask-stripesThinOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesThinOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesThinOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesThinOut')">
+                                        ca__fx-mask-stripesThinOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesThinOut')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesThinOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesThinOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="animation-box relative bg-zinc-200 dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center justify-between transition-all duration-800 ease-in-out
+  hover:scale-[1.03] hover:shadow-xl hover:bg-gradient-to-br hover:from-fuchsia-100 hover:to-violet-200 dark:hover:from-gray-700 dark:hover:to-gray-900
+  hover:ring-2 hover:ring-pink-300 dark:hover:ring-purple-500
+  focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-purple-400" data-category="Other" tabindex="0">
+                                <button onclick="shareAnimation('ca__fx-mask-stripesJitterOut')" class="absolute top-0 right-0 px-1 py-1 bg-slate-50 dark:bg-slate-700 text-slate-500 text-xs rounded-bl-lg hover:bg-slate-500 transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-75 group" aria-label="Share direct link for ca__fx-mask-stripesJitterOut">
+                                    Share
+                                    <span id="share-feedback-ca__fx-mask-stripesJitterOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap share-feedback">Link Copied!</span>
+                                </button>
+
+                                <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm cssanimation ca__fx-mask-stripesJitterOut" id="ca__fx-mask-stripesJitterOut" onclick="replay('ca__fx-mask-stripesJitterOut')">
+                                    ca__fx-mask-stripesJitterOut
+                                </div>
+                                
+                                <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">
+                                    <code id="code-ca__fx-mask-stripesJitterOut" class="font-mono w-full text-sm text-gray-900 transition-colors duration-500 ease-in-out whitespace-normal break-all p-2 sm:text-left rounded-md dark:bg-gray-800 dark:text-gray-200 cursor-pointer"
+                                          data-animation-class="ca__fx-mask-stripesJitterOut" tabindex="0" role="button" aria-expanded="false"
+                                          onclick="toggleCodeExpansion('ca__fx-mask-stripesJitterOut')">
+                                        ca__fx-mask-stripesJitterOut
+                                    </code>
+                                    <button onclick="copyToClipboard('ca__fx-mask-stripesJitterOut')" class="relative px-4 py-2 bg-btn dark:bg-btn text-white font-semibold rounded-md hover:bg-btn-hover transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-btn focus:ring-opacity-75 group" aria-label="Copy code for ca__fx-mask-stripesJitterOut">
+                                        Copy
+                                        <span id="feedback-ca__fx-mask-stripesJitterOut" class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap copy-feedback">Copied!</span>
                                     </button>
                                 </div>
                             </div>

@@ -38,36 +38,24 @@
 /* stylelint-enable */
 
 .ca__fx-ca__mask-stripesIn {
-  animation: ca__mask-stripesIn 1s ease-in-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-  mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-  mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-  -webkit-mask-size: 100% 200%;
+  animation: ca__mask-stripesIn 1s ease-out forwards;
+  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
   mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 200%;
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 @keyframes ca__mask-stripesIn {
   0% {
-    -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-    mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-    -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-    mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-    -webkit-mask-position: 0 -100%;
     mask-position: 0 -100%;
+    -webkit-mask-position: 0 -100%;
   }
-
   100% {
-    -webkit-mask-position: 0 0;
     mask-position: 0 0;
+    -webkit-mask-position: 0 0;
   }
-}
-/**
- * Module: Quake & Quiver Series
- * Filename: ca__quake.css
- */
-.ca__fx-jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
 }

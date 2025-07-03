@@ -7934,8 +7934,8 @@
  * Module: Masking Animation
  * Filename: ca__masking.css
  */
-.mask-stripesIn {
-  animation-name: mask-stripesIn;
+.mask-horizontalBarsIn {
+  animation-name: mask-horizontalBarsIn;
   -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
   mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
   -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
@@ -7945,7 +7945,7 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
-@keyframes mask-stripesIn {
+@keyframes mask-horizontalBarsIn {
   0% {
     -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
     mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
@@ -7960,136 +7960,153 @@
     mask-position: 0 0;
   }
 }
-.ca__mask-topFadeIn {
-  animation: ca__mask-topFadeIn 1s ease-out forwards;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
-  mask-size: 100% 200%;
-  -webkit-mask-size: 100% 200%;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-}
-@keyframes ca__mask-topFadeIn {
-  0% {
-    mask-position: 0 -100%;
-    -webkit-mask-position: 0 -100%;
-  }
-  100% {
-    mask-position: 0 0;
-    -webkit-mask-position: 0 0;
-  }
-}
-.ca__mask-diagonalWipeIn {
-  animation: ca__mask-diagonalWipeIn 1s ease-out forwards;
-  mask-image: linear-gradient(45deg, transparent 40%, black 60%);
-  -webkit-mask-image: linear-gradient(45deg, transparent 40%, black 60%);
-  mask-size: 200% 200%;
-  -webkit-mask-size: 200% 200%;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-}
-@keyframes ca__mask-diagonalWipeIn {
-  0% {
-    mask-position: -100% -100%;
-    -webkit-mask-position: -100% -100%;
-  }
-  100% {
-    mask-position: 0 0;
-    -webkit-mask-position: 0 0;
-  }
-}
-.ca__mask-stripesIn {
-  animation: ca__mask-stripesIn 1s ease-out forwards;
-  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+.mask-stripesIn {
+  animation-name: mask-stripesIn;
   -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
   -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  mask-size: 100% 200%;
+  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
   -webkit-mask-size: 100% 200%;
-  mask-repeat: no-repeat;
+  mask-size: 100% 200%;
   -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
-@keyframes ca__mask-stripesIn {
+@keyframes mask-stripesIn {
   0% {
-    mask-position: 0 -100%;
     -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
   }
+
   100% {
-    mask-position: 0 0;
     -webkit-mask-position: 0 0;
+    mask-position: 0 0;
   }
 }
-.ca__mask-topFadeIn {
-  animation: ca__mask-topFadeIn 1s ease-out forwards;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+.mask-topFadeIn {
+  animation: mask-topFadeIn;
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
-  mask-size: 100% 200%;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
   -webkit-mask-size: 100% 200%;
-  mask-repeat: no-repeat;
+  mask-size: 100% 200%;
   -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
-@keyframes ca__mask-topFadeIn {
+@keyframes mask-topFadeIn {
   0% {
-    mask-position: 0 -100%;
     -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
   }
+
   100% {
-    mask-position: 0 0;
     -webkit-mask-position: 0 0;
+    mask-position: 0 0;
   }
 }
-.ca__mask-wipeLeftIn {
-  animation: ca__mask-wipeLeftIn 1s ease-out forwards;
-  mask-image: linear-gradient(to right, black 50%, transparent 50%);
+.mask-wipeLeftIn {
+  animation-name: mask-wipeLeftIn;
   -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
-  mask-size: 200% 100%;
+  mask-image: linear-gradient(to right, black 50%, transparent 50%);
   -webkit-mask-size: 200% 100%;
-  mask-repeat: no-repeat;
+  mask-size: 200% 100%;
   -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
-@keyframes ca__mask-wipeLeftIn {
+@keyframes mask-wipeLeftIn {
   0% {
-    mask-position: -100% 0;
     -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-zigzagRevealIn {
+  animation-name: mask-zigzagRevealIn;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
+  mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-zigzagRevealIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-checkerboardIn {
+  animation: mask-checkerboardIn 1s ease-out forwards;
+  -webkit-mask-image:
+    repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
+    repeating-linear-gradient(90deg, transparent 0,transparent 25%, black 25%, black 50%);
+  mask-image:
+    repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
+    repeating-linear-gradient(90deg, transparent 0,transparent 25%, black 25%, black 50%);
+  -webkit-mask-image:
+    repeating-linear-gradient(0deg, transparent 0 25%, black 25% 50%),
+    repeating-linear-gradient(90deg, transparent 0 25%, black 25% 50%);
+  mask-image:
+    repeating-linear-gradient(0deg, transparent 0 25%, black 25% 50%),
+    repeating-linear-gradient(90deg, transparent 0 25%, black 25% 50%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+@keyframes mask-checkerboardIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-diamondIn {
+  animation: ca__mask-diamondIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+@keyframes ca__mask-diamondIn {
+  0% {
+    mask-position: -100% 100%;
+    -webkit-mask-position: -100% 100%;
   }
   100% {
     mask-position: 0 0;
     -webkit-mask-position: 0 0;
   }
 }
-.ca__mask-radialBurstIn {
-  animation: ca__mask-radialBurstIn 1s ease-out forwards;
-  mask-image: radial-gradient(circle at center, black 40%, transparent 60%);
-  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 60%);
-  mask-size: 200% 200%;
-  -webkit-mask-size: 200% 200%;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-}
-@keyframes ca__mask-radialBurstIn {
-  0% {
-    mask-position: center center;
-    -webkit-mask-position: center center;
-    transform: scale(3);
-  }
-  100% {
-    mask-position: center center;
-    -webkit-mask-position: center center;
-    transform: scale(1);
-  }
-}
-.ca__mask-horizontalBarsIn {
-  animation: ca__mask-horizontalBarsIn 1s ease-out forwards;
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 15%, transparent 15%, transparent 30%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 15%, transparent 15% 30%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 15%, transparent 15%, transparent 30%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 15%, transparent 15% 30%);
+.ca__mask-linesSlideIn {
+  animation: ca__mask-linesSlideIn 1s ease-out forwards;
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
+  mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
   mask-size: 100% 200%;
   -webkit-mask-size: 100% 200%;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
-@keyframes ca__mask-horizontalBarsIn {
+@keyframes ca__mask-linesSlideIn {
   0% {
     mask-position: 0 -100%;
     -webkit-mask-position: 0 -100%;
@@ -8099,25 +8116,519 @@
     -webkit-mask-position: 0 0;
   }
 }
-.ca__mask-zigzagRevealIn {
-  animation: ca__mask-zigzagRevealIn 1s ease-out forwards;
-  mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
-  mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
+.ca__mask-insetSwipeIn {
+  animation: ca__mask-insetSwipeIn 1s ease-out forwards;
+  mask-image: radial-gradient(ellipse at center, transparent 20%, black 50%);
+  -webkit-mask-image: radial-gradient(ellipse at center, transparent 20%, black 50%);
   mask-size: 200% 200%;
   -webkit-mask-size: 200% 200%;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
-@keyframes ca__mask-zigzagRevealIn {
+@keyframes ca__mask-insetSwipeIn {
   0% {
-    mask-position: -100% -100%;
-    -webkit-mask-position: -100% -100%;
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+  100% {
+    mask-position: 50% 50%;
+    -webkit-mask-position: 50% 50%;
+  }
+}
+.ca__mask-rainRevealIn {
+  animation: ca__mask-rainRevealIn 1s ease-out forwards;
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
+  mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
+  mask-size: 100% 300%;
+  -webkit-mask-size: 100% 300%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+@keyframes ca__mask-rainRevealIn {
+  0% {
+    mask-position: 0 -100%;
+    -webkit-mask-position: 0 -100%;
   }
   100% {
     mask-position: 0 0;
     -webkit-mask-position: 0 0;
+  }
+}
+.mask-verticalScanIn {
+  animation: mask-verticalScanIn 1s ease-out forwards;
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-verticalScanIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-angleSweepRightIn {
+  animation: mask-angleSweepRightIn 1s ease-out forwards;
+  -webkit-mask-image: linear-gradient(45deg, transparent 20%, black 60%);
+  mask-image: linear-gradient(45deg, transparent 20%, black 60%);
+  -webkit-mask-size: 500% 500%;
+  mask-size: 500% 500%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-angleSweepRightIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-irisOpenIn {
+  animation: mask-irisOpenIn 1s ease-out forwards;
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0%, black 40%, black 100%);
+  mask-image: radial-gradient(circle at center, transparent 0%, black 40%, black 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transform: scale(0);
+}
+@keyframes mask-irisOpenIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-reflectiveWipeIn {
+  animation: mask-reflectiveWipeIn 1s ease-in-out forwards;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40%, black 60%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 40%, black 60%, transparent 100%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-reflectiveWipeIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.mask-threadLinesIn {
+  animation: mask-threadLinesIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
+  mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-threadLinesIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stairStepIn {
+  animation: mask-stairStepIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
+  -webkit-mask-size: 300% 300%;
+  mask-size: 300% 300%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stairStepIn {
+  0% {
+    -webkit-mask-position: -150% 150%;
+    mask-position: -150% 150%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-explosionRevealIn {
+  animation: mask-explosionRevealIn 1s ease-out forwards;
+  -webkit-mask-image: radial-gradient(circle at center, black 20%, transparent 60%);
+  mask-image: radial-gradient(circle at center, black 20%, transparent 60%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transform: scale(0.3);
+}
+@keyframes mask-explosionRevealIn {
+  0% {
+    -webkit-mask-size: 20% 20%;
+    mask-size: 20% 20%;
+  }
+  100% {
+    -webkit-mask-size: 200% 200%;
+    mask-size: 200% 200%;
+  }
+}
+.mask-shutterLinesIn {
+  animation: mask-shutterLinesIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 30%, transparent 30%, transparent 60%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 30%, transparent 30%, transparent 60%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 30%, transparent 30% 60%);
+  mask-image: repeating-linear-gradient(to right, black 0 30%, transparent 30% 60%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-shutterLinesIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stripesVerticalIn {
+  animation: mask-stripesVerticalIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stripesVerticalOut {
+  animation: mask-stripesVerticalOut 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.mask-stripesHorizontalReverseIn {
+  animation: mask-stripesHorizontalReverseIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesHorizontalReverseIn {
+  0% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stripesDiagonalLeftIn {
+  animation: mask-stripesDiagonalLeftIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalLeftIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stripesDiagonalUpIn {
+  animation: mask-stripesDiagonalUpIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalUpIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stripesWideIn {
+  animation: mask-stripesWideIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesWideIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stripesThinIn {
+  animation: mask-stripesThinIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesThinIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stripesJitterIn {
+  animation: mask-stripesJitterIn 0.8s steps(3, end) forwards;
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 150% 150%;
+  mask-size: 150% 150%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesJitterIn {
+  0% {
+    -webkit-mask-position: -50% -50%;
+    mask-position: -50% -50%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.mask-stripesVerticalOut {
+  animation: mask-stripesVerticalOut 1s ease-in forwards;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.mask-stripesHorizontalReverseOut {
+  animation: mask-stripesHorizontalReverseOut 1s ease-in forwards;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesHorizontalReverseOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.mask-stripesDiagonalLeftOut {
+  animation: mask-stripesDiagonalLeftOut 1s ease-in forwards;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalLeftOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.mask-stripesDiagonalUpOut {
+  animation: mask-stripesDiagonalUpOut 1s ease-in forwards;
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalUpOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 100%;
+    mask-position: 100% 100%;
+  }
+}
+.mask-stripesWideOut {
+  animation: mask-stripesWideOut 1s ease-in forwards;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesWideOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.mask-stripesThinOut {
+  animation: mask-stripesThinOut 1s ease-in forwards;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesThinOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.mask-stripesJitterOut {
+  animation: mask-stripesJitterOut 0.8s steps(3, end) forwards;
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 150% 150%;
+  mask-size: 150% 150%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesJitterOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 100%;
+    mask-position: 100% 100%;
   }
 }
 /**
