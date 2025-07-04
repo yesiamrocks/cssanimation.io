@@ -61,11 +61,13 @@
   }
 }
 /**
- * Module: Moon 
- * Filename: ca__Moon.css
+ * Module: Mask Wipe Animations
+ * Filename: ca__MaskWipe.css
  */
-.ca__fx-moonEclipseIn {
-  animation: moonEclipseIn 1.6s ease-out both;
-  transform-origin: center;
-  will-change: transform, opacity;
+.ca__fx-mask-wipeInLeft {
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  animation-name: mask-wipeInLeft;
 }

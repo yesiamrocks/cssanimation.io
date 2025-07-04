@@ -3,7 +3,7 @@
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
 * Version: 6.8.0
-* Built: 2025-07-03 19:30:37 UTC
+* Built: 2025-07-04 16:21:43 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -3837,6 +3837,154 @@
     transform: translateY(0%) scale(1);
     opacity: 1;
     filter: none;
+  }
+}
+/**
+ * Module: Mask Wipe Animations
+ * Filename: ca__MaskWipe.css
+ */
+.ca__fx-mask-wipeInLeft {
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  animation-name: mask-wipeInLeft;
+}
+@keyframes mask-wipeInLeft {
+  0% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-mask-wipeInRight {
+  -webkit-mask-image: linear-gradient(to right, transparent 50%, black 50%);
+  mask-image: linear-gradient(to right, transparent 50%, black 50%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  animation-name: mask-wipeInLeft;
+}
+@keyframes mask-wipeInRight {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-mask-wipeInTop {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 50%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 50%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  animation-name: mask-wipeInTop;
+}
+@keyframes mask-wipeInTop {
+  0% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-mask-wipeInBottom {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 50%, black 50%);
+  mask-image: linear-gradient(to bottom, transparent 50%, black 50%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  animation-name: mask-wipeInBottom;
+}
+@keyframes mask-wipeInBottom {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.ca__fx-mask-wipeOutLeft {
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  animation-name: mask-wipeOutLeft;
+}
+@keyframes mask-wipeOutLeft {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+}
+.ca__fx-mask-wipeOutRight {
+  -webkit-mask-image: linear-gradient(to right, transparent 50%, black 50%);
+  mask-image: linear-gradient(to right, transparent 50%, black 50%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  animation-name: mask-wipeOutRight;
+}
+@keyframes mask-wipeOutRight {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.ca__fx-mask-wipeOutTop {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 50%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 50%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  animation-name: mask-wipeOutTop;
+}
+@keyframes mask-wipeOutTop {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+}
+.ca__fx-mask-wipeOutBottom {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 50%, black 50%);
+  mask-image: linear-gradient(to bottom, transparent 50%, black 50%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  animation-name: mask-wipeOutBottom;
+}
+@keyframes mask-wipeOutBottom {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
   }
 }
 /**
@@ -7949,9 +8097,158 @@
 }
 /**
  * Module: Masking Animation
- * Filename: ca__masking.css
+ * Filename: ca__maskingStripe.css
+ * Description: Stripe Masking Animation
  */
-.ca__fx-mask-horizontalBarsIn {
+.ca__fx-mask-irisOpenIn {
+  animation-name: mask-irisOpenIn;
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0%, black 40%, black 100%);
+  mask-image: radial-gradient(circle at center, transparent 0%, black 40%, black 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transform: scale(0);
+}
+@keyframes mask-irisOpenIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-mask-reflectiveWipeIn {
+  animation-name: mask-reflectiveWipeIn;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40%, black 60%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 40%, black 60%, transparent 100%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-reflectiveWipeIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.ca__fx-mask-explosionRevealIn {
+  animation-name: mask-explosionRevealIn;
+  -webkit-mask-image: radial-gradient(circle at center, black 20%, transparent 60%);
+  mask-image: radial-gradient(circle at center, black 20%, transparent 60%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transform: scale(0.3);
+}
+@keyframes mask-explosionRevealIn {
+  0% {
+    -webkit-mask-size: 20% 20%;
+    mask-size: 20% 20%;
+  }
+
+  100% {
+    -webkit-mask-size: 200% 200%;
+    mask-size: 200% 200%;
+  }
+}
+.ca__fx-mask-shutterLinesIn {
+  animation-name: mask-shutterLinesIn;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 30%, transparent 30%, transparent 60%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 30%, transparent 30%, transparent 60%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 30%, transparent 30% 60%);
+  mask-image: repeating-linear-gradient(to right, black 0 30%, transparent 30% 60%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-shutterLinesIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-mask-stripesWideIn {
+  animation-name: mask-stripesWideIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesWideIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-sparkleSlideAcross {
+  position: relative;
+  overflow: hidden;
+}
+.ca__fx-sparkleSlideAcross::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%);
+  transform: skewX(-20deg);
+  animation: sparkleSlideAcross 2s infinite;
+}
+@keyframes sparkleSlideAcross {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.ca__fx-flipExitZ {
+  animation: flipExitZ 0.8s ease-in forwards;
+  transform-style: preserve-3d;
+}
+@keyframes flipExitZ {
+  0% {
+    transform: rotateZ(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(90deg) scale(0.3);
+    opacity: 0;
+  }
+}
+/**
+ * Module: Stripe Masking Animation
+ * Filename: ca__maskingStripe.css
+ * Description: Stripe Masking Animation
+ */
+.ca__fx-maskHorizontalBarsIn {
   animation-name: mask-horizontalBarsIn;
   -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
   mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
@@ -7977,7 +8274,7 @@
     mask-position: 0 0;
   }
 }
-.ca__fx-mask-stripesIn {
+.ca__fx-maskStripesIn {
   animation-name: mask-stripesIn;
   -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
   mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
@@ -7999,47 +8296,7 @@
     mask-position: 0 0;
   }
 }
-.ca__fx-mask-topFadeIn {
-  animation: mask-topFadeIn;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-topFadeIn {
-  0% {
-    -webkit-mask-position: 0 -100%;
-    mask-position: 0 -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-wipeLeftIn {
-  animation-name: mask-wipeLeftIn;
-  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
-  mask-image: linear-gradient(to right, black 50%, transparent 50%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-wipeLeftIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-zigzagRevealIn {
+.ca__fx-maskZigzagRevealIn {
   animation-name: mask-zigzagRevealIn;
   -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
   mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
@@ -8061,7 +8318,7 @@
     mask-position: 0 0;
   }
 }
-.ca__fx-mask-checkerboardIn {
+.ca__fx-maskCheckerboardIn {
   animation: mask-checkerboardIn 1s ease-out forwards;
   -webkit-mask-image:
     repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
@@ -8091,8 +8348,8 @@
     mask-position: 0 0;
   }
 }
-.ca__fx-mask-diamondIn {
-  animation: ca__mask-diamondIn 1s ease-out forwards;
+.ca__fx-maskDiamondIn {
+  animation: mask-diamondIn 1s ease-out forwards;
   -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
   mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
   -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
@@ -8102,365 +8359,63 @@
   -webkit-mask-repeat: repeat;
   mask-repeat: repeat;
 }
-@keyframes ca__mask-diamondIn {
+@keyframes mask-diamondIn {
   0% {
     mask-position: -100% 100%;
     -webkit-mask-position: -100% 100%;
   }
+
   100% {
     mask-position: 0 0;
     -webkit-mask-position: 0 0;
   }
 }
-.ca__fx-ca__mask-linesSlideIn {
-  animation: ca__mask-linesSlideIn 1s ease-out forwards;
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
-  mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
+.ca__fx-maskLinesSlideIn {
+  animation-name: mask-linesSlideIn;
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
-  mask-size: 100% 200%;
+  mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
   -webkit-mask-size: 100% 200%;
-  mask-repeat: no-repeat;
+  mask-size: 100% 200%;
   -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
-@keyframes ca__mask-linesSlideIn {
+@keyframes mask-linesSlideIn {
   0% {
-    mask-position: 0 -100%;
     -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
   }
+
   100% {
-    mask-position: 0 0;
     -webkit-mask-position: 0 0;
-  }
-}
-.ca__fx-ca__mask-insetSwipeIn {
-  animation: ca__mask-insetSwipeIn 1s ease-out forwards;
-  mask-image: radial-gradient(ellipse at center, transparent 20%, black 50%);
-  -webkit-mask-image: radial-gradient(ellipse at center, transparent 20%, black 50%);
-  mask-size: 200% 200%;
-  -webkit-mask-size: 200% 200%;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-}
-@keyframes ca__mask-insetSwipeIn {
-  0% {
     mask-position: 0 0;
-    -webkit-mask-position: 0 0;
-  }
-  100% {
-    mask-position: 50% 50%;
-    -webkit-mask-position: 50% 50%;
   }
 }
-.ca__fx-ca__mask-rainRevealIn {
-  animation: ca__mask-rainRevealIn 1s ease-out forwards;
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
-  mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
+.ca__fx-maskRainRevealIn {
+  animation-name: mask-rainRevealIn;
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
-  mask-size: 100% 300%;
+  mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
   -webkit-mask-size: 100% 300%;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-}
-@keyframes ca__mask-rainRevealIn {
-  0% {
-    mask-position: 0 -100%;
-    -webkit-mask-position: 0 -100%;
-  }
-  100% {
-    mask-position: 0 0;
-    -webkit-mask-position: 0 0;
-  }
-}
-.ca__fx-mask-verticalScanIn {
-  animation: mask-verticalScanIn 1s ease-out forwards;
-  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
+  mask-size: 100% 300%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
-@keyframes mask-verticalScanIn {
+@keyframes mask-rainRevealIn {
   0% {
     -webkit-mask-position: 0 -100%;
     mask-position: 0 -100%;
   }
+
   100% {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
 }
-.ca__fx-mask-angleSweepRightIn {
-  animation: mask-angleSweepRightIn 1s ease-out forwards;
-  -webkit-mask-image: linear-gradient(45deg, transparent 20%, black 60%);
-  mask-image: linear-gradient(45deg, transparent 20%, black 60%);
-  -webkit-mask-size: 500% 500%;
-  mask-size: 500% 500%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-angleSweepRightIn {
-  0% {
-    -webkit-mask-position: -100% -100%;
-    mask-position: -100% -100%;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-irisOpenIn {
-  animation: mask-irisOpenIn 1s ease-out forwards;
-  -webkit-mask-image: radial-gradient(circle at center, transparent 0%, black 40%, black 100%);
-  mask-image: radial-gradient(circle at center, transparent 0%, black 40%, black 100%);
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  transform: scale(0);
-}
-@keyframes mask-irisOpenIn {
-  0% {
-    -webkit-mask-position: -100% -100%;
-    mask-position: -100% -100%;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-reflectiveWipeIn {
-  animation: mask-reflectiveWipeIn 1s ease-in-out forwards;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40%, black 60%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 40%, black 60%, transparent 100%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-reflectiveWipeIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-  100% {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-.ca__fx-mask-threadLinesIn {
-  animation: mask-threadLinesIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
-  mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
-  mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-threadLinesIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-stairStepIn {
-  animation: mask-stairStepIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
-  -webkit-mask-size: 300% 300%;
-  mask-size: 300% 300%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stairStepIn {
-  0% {
-    -webkit-mask-position: -150% 150%;
-    mask-position: -150% 150%;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-explosionRevealIn {
-  animation: mask-explosionRevealIn 1s ease-out forwards;
-  -webkit-mask-image: radial-gradient(circle at center, black 20%, transparent 60%);
-  mask-image: radial-gradient(circle at center, black 20%, transparent 60%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  transform: scale(0.3);
-}
-@keyframes mask-explosionRevealIn {
-  0% {
-    -webkit-mask-size: 20% 20%;
-    mask-size: 20% 20%;
-  }
-  100% {
-    -webkit-mask-size: 200% 200%;
-    mask-size: 200% 200%;
-  }
-}
-.ca__fx-mask-shutterLinesIn {
-  animation: mask-shutterLinesIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 30%, transparent 30%, transparent 60%);
-  mask-image: repeating-linear-gradient(to right, black 0,black 30%, transparent 30%, transparent 60%);
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0 30%, transparent 30% 60%);
-  mask-image: repeating-linear-gradient(to right, black 0 30%, transparent 30% 60%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-shutterLinesIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-stripesVerticalIn {
-  animation: mask-stripesVerticalIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesVerticalIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-stripesVerticalOut {
-  animation: mask-stripesVerticalOut 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesVerticalOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  100% {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-.ca__fx-mask-stripesHorizontalReverseIn {
-  animation: mask-stripesHorizontalReverseIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesHorizontalReverseIn {
-  0% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-stripesDiagonalLeftIn {
-  animation: mask-stripesDiagonalLeftIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesDiagonalLeftIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-stripesDiagonalUpIn {
-  animation: mask-stripesDiagonalUpIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
-  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
-  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesDiagonalUpIn {
-  0% {
-    -webkit-mask-position: -100% -100%;
-    mask-position: -100% -100%;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-stripesWideIn {
-  animation: mask-stripesWideIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesWideIn {
-  0% {
-    -webkit-mask-position: 0 -100%;
-    mask-position: 0 -100%;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-stripesThinIn {
-  animation: mask-stripesThinIn 1s ease-out forwards;
+.ca__fx-maskStripesThinIn {
+  animation-name: mask-stripesThinIn;
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
   mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
@@ -8475,139 +8430,14 @@
     -webkit-mask-position: 0 -100%;
     mask-position: 0 -100%;
   }
+
   100% {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
 }
-.ca__fx-mask-stripesJitterIn {
-  animation: mask-stripesJitterIn 0.8s steps(3, end) forwards;
-  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 150% 150%;
-  mask-size: 150% 150%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesJitterIn {
-  0% {
-    -webkit-mask-position: -50% -50%;
-    mask-position: -50% -50%;
-  }
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-mask-stripesVerticalOut {
-  animation: mask-stripesVerticalOut 1s ease-in forwards;
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesVerticalOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  100% {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-.ca__fx-mask-stripesHorizontalReverseOut {
-  animation: mask-stripesHorizontalReverseOut 1s ease-in forwards;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesHorizontalReverseOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  100% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-  }
-}
-.ca__fx-mask-stripesDiagonalLeftOut {
-  animation: mask-stripesDiagonalLeftOut 1s ease-in forwards;
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesDiagonalLeftOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  100% {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-.ca__fx-mask-stripesDiagonalUpOut {
-  animation: mask-stripesDiagonalUpOut 1s ease-in forwards;
-  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
-  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
-  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesDiagonalUpOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  100% {
-    -webkit-mask-position: 100% 100%;
-    mask-position: 100% 100%;
-  }
-}
-.ca__fx-mask-stripesWideOut {
-  animation: mask-stripesWideOut 1s ease-in forwards;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesWideOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  100% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-  }
-}
-.ca__fx-mask-stripesThinOut {
-  animation: mask-stripesThinOut 1s ease-in forwards;
+.ca__fx-maskStripesThinOut {
+  animation-name: mask-stripesThinOut;
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
   mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
@@ -8622,13 +8452,300 @@
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
+
   100% {
     -webkit-mask-position: 0 100%;
     mask-position: 0 100%;
   }
 }
-.ca__fx-mask-stripesJitterOut {
-  animation: mask-stripesJitterOut 0.8s steps(3, end) forwards;
+.ca__fx-maskThreadLinesIn {
+  animation-name: mask-threadLinesIn;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
+  mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-threadLinesIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStairStepIn {
+  animation-name: mask-stairStepIn;
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
+  -webkit-mask-size: 300% 300%;
+  mask-size: 300% 300%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stairStepIn {
+  0% {
+    -webkit-mask-position: -150% 150%;
+    mask-position: -150% 150%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesHorizontalReverseOut {
+  animation-name: mask-stripesHorizontalReverseOut;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesHorizontalReverseOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.ca__fx-maskStripesVerticalIn {
+  animation-name: mask-stripesVerticalIn;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesVerticalOut {
+  animation-name: mask-stripesVerticalOut;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.ca__fx-maskStripesHorizontalReverseIn {
+  animation-name: mask-stripesHorizontalReverseIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesHorizontalReverseIn {
+  0% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesDiagonalLeftIn {
+  animation-name: mask-stripesDiagonalLeftIn;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalLeftIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesDiagonalUpIn {
+  animation-name: mask-stripesDiagonalUpIn;
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalUpIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesJitterIn {
+  animation-name: mask-stripesJitterIn;
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 150% 150%;
+  mask-size: 150% 150%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesJitterIn {
+  0% {
+    -webkit-mask-position: -50% -50%;
+    mask-position: -50% -50%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesVerticalOut {
+  animation-name: mask-stripesVerticalOut;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.ca__fx-maskStripesDiagonalLeftOut {
+  animation-name: mask-stripesDiagonalLeftOut;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalLeftOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.ca__fx-maskStripesDiagonalUpOut {
+  animation-name: mask-stripesDiagonalUpOut;
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalUpOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 100%;
+    mask-position: 100% 100%;
+  }
+}
+.ca__fx-maskStripesWideOut {
+  animation-name: mask-stripesWideOut;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesWideOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.ca__fx-maskStripesJitterOut {
+  animation-name: mask-stripesJitterOut;
   -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
   mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
   -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
@@ -8643,6 +8760,7 @@
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
+
   100% {
     -webkit-mask-position: 100% 100%;
     mask-position: 100% 100%;
@@ -9783,5 +9901,377 @@
 
   100% {
     transform: scaleY(1) rotateX(0);
+  }
+}
+.ca__fx-orbitRevealLeft {
+  animation: orbitRevealLeft 1.2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+@keyframes orbitRevealLeft {
+  0% {
+    transform: rotateY(-90deg) translateX(-300px) translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitExitLeft {
+  animation: orbitExitLeft 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+@keyframes orbitExitLeft {
+  0% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(-90deg) translateX(-300px) translateZ(-200px);
+    opacity: 0;
+  }
+}
+.ca__fx-orbitRevealRight {
+  animation: orbitRevealRight 1.2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+@keyframes orbitRevealRight {
+  0% {
+    transform: rotateY(90deg) translateX(300px) translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitExitRight {
+  animation: orbitExitRight 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+@keyframes orbitExitRight {
+  0% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(90deg) translateX(300px) translateZ(-200px);
+    opacity: 0;
+  }
+}
+.ca__fx-orbitRevealTop {
+  animation: orbitRevealTop 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitRevealTop {
+  0% {
+    transform: rotateZ(-90deg) rotateY(90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitRevealBottom {
+  animation: orbitRevealBottom 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitRevealBottom {
+  0% {
+    transform: rotateZ(90deg) rotateY(-90deg) translateZ(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitReveal3 {
+  animation: orbitReveal3 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitReveal3 {
+  0% {
+    transform: rotateZ(-90deg) rotateY(90deg) translateX(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitReveal4 {
+  animation: orbitReveal4 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitReveal4 {
+  0% {
+    transform: rotateZ(90deg) rotateY(-90deg) translateX(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitRevealDiagonalLeft {
+  animation: orbitRevealDiagonalLeft 1.2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+@keyframes orbitRevealDiagonalLeft {
+  0% {
+    transform: rotateX(-45deg) rotateY(-45deg) translate(-300px, -300px) translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0) rotateY(0) translate(0, 0) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitExitDiagonalLeft {
+  animation: orbitExitDiagonalLeft 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+@keyframes orbitExitDiagonalLeft {
+  0% {
+    transform: rotateX(0) rotateY(0) translate(0, 0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(-45deg) rotateY(-45deg) translate(-300px, -300px) translateZ(-200px);
+    opacity: 0;
+  }
+}
+.ca__fx-orbitRevealDiagonalRight {
+  animation: orbitRevealDiagonalRight 1.2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+@keyframes orbitRevealDiagonalRight {
+  0% {
+    transform: rotateX(45deg) rotateY(45deg) translate(300px, 300px) translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0) rotateY(0) translate(0, 0) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitExitDiagonalRight {
+  animation: orbitExitDiagonalRight 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+@keyframes orbitExitDiagonalRight {
+  0% {
+    transform: rotateX(0) rotateY(0) translate(0, 0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(45deg) rotateY(45deg) translate(300px, 300px) translateZ(-200px);
+    opacity: 0;
+  }
+}
+.ca__fx-orbitRevealFromTopRight {
+  animation: orbitRevealFromTopRight 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitRevealFromTopRight {
+  0% {
+    transform: rotateZ(-90deg) rotateY(90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitRevealFromTopLeft {
+  animation: orbitRevealFromTopLeft 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitRevealFromTopLeft {
+  0% {
+    transform: rotateZ(90deg) rotateY(-90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitRevealFromBottomLeft {
+  animation: orbitRevealFromBottomLeft 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitRevealFromBottomLeft {
+  0% {
+    transform: rotateZ(-90deg) rotateY(-90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitRevealFromBottomRight {
+  animation: orbitRevealFromBottomRight 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitRevealFromBottomRight {
+  0% {
+    transform: rotateZ(90deg) rotateY(90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitSwingFromTopRight {
+  animation: orbitSwingFromTopRight 2s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitSwingFromTopRight {
+  0% {
+    transform: rotateX(-90deg) rotateY(90deg) translateX(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitSwingFromTopLeft {
+  animation: orbitSwingFromTopLeft 2s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitSwingFromTopLeft {
+  0% {
+    transform: rotateX(90deg) rotateY(90deg) translateX(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitSwingFromBottomLeft {
+  animation: orbitSwingFromBottomLeft 2s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitSwingFromBottomLeft {
+  0% {
+    transform: rotateX(-90deg) rotateY(90deg) translateX(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitSwingFromBottomRight {
+  animation: orbitSwingFromBottomRight 2s ease-out forwards;
+  transform-style: preserve-3d;
+}
+@keyframes orbitSwingFromBottomRight {
+  0% {
+    transform: rotateX(90deg) rotateY(90deg) translateX(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitDriftFromTopRight {
+  animation: orbitDriftFromTopRight 2s ease-out;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.09, 1.77);
+  transform-style: preserve-3d;
+}
+@keyframes orbitDriftFromTopRight {
+  0% {
+    transform: rotateX(90deg) rotateY(-90deg) translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitDriftFromTopLeft {
+  animation: orbitDriftFromTopLeft 2s ease-out;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.09, 1.77);
+  transform-style: preserve-3d;
+}
+@keyframes orbitDriftFromTopLeft {
+  0% {
+    transform: rotateX(90deg) rotateY(-90deg) translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitDriftFromBottomLeft {
+  animation: orbitDriftFromBottomLeft 2s ease-out;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.09, 1.77);
+  transform-style: preserve-3d;
+}
+@keyframes orbitDriftFromBottomLeft {
+  0% {
+    transform: rotateX(-90deg) rotateY(-90deg) translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+.ca__fx-orbitDriftFromBottomRight {
+  animation: orbitDriftFromBottomRight 2s ease-out;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.09, 1.77);
+  transform-style: preserve-3d;
+}
+@keyframes orbitDriftFromBottomRight {
+  0% {
+    transform: rotateX(90deg) rotateY(90deg) translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
   }
 }

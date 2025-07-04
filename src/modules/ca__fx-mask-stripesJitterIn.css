@@ -37,23 +37,12 @@
 }
 /* stylelint-enable */
 
-.ca__fx-mask-stripesJitterIn {
-  animation: mask-stripesJitterIn 0.8s steps(3, end) forwards;
-  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 150% 150%;
-  mask-size: 150% 150%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 @keyframes mask-stripesJitterIn {
   0% {
     -webkit-mask-position: -50% -50%;
     mask-position: -50% -50%;
   }
+
   100% {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;

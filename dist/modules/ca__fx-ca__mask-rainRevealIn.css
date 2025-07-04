@@ -38,24 +38,13 @@
 /* stylelint-enable */
 
 .ca__fx-ca__mask-rainRevealIn {
-  animation: ca__mask-rainRevealIn 1s ease-out forwards;
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
-  mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
+  animation-name: mask-rainRevealIn;
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
-  mask-size: 100% 300%;
+  mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
   -webkit-mask-size: 100% 300%;
-  mask-repeat: no-repeat;
+  mask-size: 100% 300%;
   -webkit-mask-repeat: no-repeat;
-}
-
-@keyframes ca__mask-rainRevealIn {
-  0% {
-    mask-position: 0 -100%;
-    -webkit-mask-position: 0 -100%;
-  }
-  100% {
-    mask-position: 0 0;
-    -webkit-mask-position: 0 0;
-  }
+  mask-repeat: no-repeat;
 }

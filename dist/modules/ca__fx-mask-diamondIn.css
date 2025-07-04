@@ -37,14 +37,14 @@
 }
 /* stylelint-enable */
 
-.ca__fx-mask-diamondIn {
-  animation: ca__mask-diamondIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: repeat;
-  mask-repeat: repeat;
+@keyframes mask-diamondIn {
+  0% {
+    mask-position: -100% 100%;
+    -webkit-mask-position: -100% 100%;
+  }
+
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
 }

@@ -37,23 +37,12 @@
 }
 /* stylelint-enable */
 
-.ca__fx-mask-stripesHorizontalReverseIn {
-  animation: mask-stripesHorizontalReverseIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 @keyframes mask-stripesHorizontalReverseIn {
   0% {
     -webkit-mask-position: 0 100%;
     mask-position: 0 100%;
   }
+
   100% {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;

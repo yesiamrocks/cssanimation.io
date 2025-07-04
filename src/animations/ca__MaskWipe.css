@@ -1,0 +1,143 @@
+/**
+ * Module: Mask Wipe Animations
+ * Filename: ca__MaskWipe.css
+ */
+
+.mask-wipeInLeft {
+  mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  mask-size: 200% 100%;
+  animation-name: mask-wipeInLeft;
+}
+
+@keyframes mask-wipeInLeft {
+  0% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+.mask-wipeInRight {
+  mask-image: linear-gradient(to right, transparent 50%, black 50%);
+  mask-size: 200% 100%;
+  animation-name: mask-wipeInLeft;
+}
+
+@keyframes mask-wipeInRight {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+.mask-wipeInTop {
+  mask-image: linear-gradient(to bottom, black 50%, transparent 50%);
+  mask-size: 100% 200%;
+  animation-name: mask-wipeInTop;
+}
+
+@keyframes mask-wipeInTop {
+  0% {
+    mask-position: 0 100%;
+  }
+
+  100% {
+    mask-position: 0 0;
+  }
+}
+
+.mask-wipeInBottom {
+  mask-image: linear-gradient(to bottom, transparent 50%, black 50%);
+  mask-size: 100% 200%;
+  animation-name: mask-wipeInBottom;
+}
+
+@keyframes mask-wipeInBottom {
+  0% {
+    mask-position: 0 0;
+  }
+
+  100% {
+    mask-position: 0 100%;
+  }
+}
+
+.mask-wipeOutLeft {
+  mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  mask-size: 200% 100%;
+  animation-name: mask-wipeOutLeft;
+}
+
+@keyframes mask-wipeOutLeft {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+}
+
+.mask-wipeOutRight {
+  mask-image: linear-gradient(to right, transparent 50%, black 50%);
+  mask-size: 200% 100%;
+  animation-name: mask-wipeOutRight;
+}
+
+@keyframes mask-wipeOutRight {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+.mask-wipeOutTop {
+  mask-image: linear-gradient(to bottom, black 50%, transparent 50%);
+  mask-size: 100% 200%;
+  animation-name: mask-wipeOutTop;
+}
+
+@keyframes mask-wipeOutTop {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+}
+
+.mask-wipeOutBottom {
+  mask-image: linear-gradient(to bottom, transparent 50%, black 50%);
+  mask-size: 100% 200%;
+  animation-name: mask-wipeOutBottom;
+}
+
+@keyframes mask-wipeOutBottom {
+  0% {
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}

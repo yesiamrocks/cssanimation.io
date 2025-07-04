@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-mask-irisOpenIn {
-  animation: mask-irisOpenIn 1s ease-out forwards;
+  animation-name: mask-irisOpenIn;
   -webkit-mask-image: radial-gradient(circle at center, transparent 0%, black 40%, black 100%);
   mask-image: radial-gradient(circle at center, transparent 0%, black 40%, black 100%);
   -webkit-mask-size: 100% 100%;
@@ -53,6 +53,7 @@
     -webkit-mask-position: -100% -100%;
     mask-position: -100% -100%;
   }
+
   100% {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;

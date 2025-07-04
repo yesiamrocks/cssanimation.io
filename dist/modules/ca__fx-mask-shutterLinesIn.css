@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-mask-shutterLinesIn {
-  animation: mask-shutterLinesIn 1s ease-out forwards;
+  animation-name: mask-shutterLinesIn;
   -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 30%, transparent 30%, transparent 60%);
   mask-image: repeating-linear-gradient(to right, black 0,black 30%, transparent 30%, transparent 60%);
   -webkit-mask-image: repeating-linear-gradient(to right, black 0 30%, transparent 30% 60%);
@@ -54,6 +54,7 @@
     -webkit-mask-position: -100% 0;
     mask-position: -100% 0;
   }
+
   100% {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;

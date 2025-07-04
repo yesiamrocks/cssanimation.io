@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-mask-stripesWideIn {
-  animation: mask-stripesWideIn 1s ease-out forwards;
+  animation-name: mask-stripesWideIn;
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
   mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
   -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
@@ -54,6 +54,7 @@
     -webkit-mask-position: 0 -100%;
     mask-position: 0 -100%;
   }
+
   100% {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;

@@ -37,18 +37,6 @@
 }
 /* stylelint-enable */
 
-.ca__fx-mask-zigzagRevealIn {
-  animation-name: mask-zigzagRevealIn;
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
-  mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
-  mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 @keyframes mask-zigzagRevealIn {
   0% {
     -webkit-mask-position: -100% -100%;

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comprehensive Mask Wipe Animations</title>
+        <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            gap: 30px; /* Space between sections */
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .animation-container {
+            flex: 1 1 45%; /* Allows two columns on wider screens, single on small */
+            max-width: 500px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Important for the mask to work properly */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .animation-text {
+            font-size: 2em; /* Adjusted for better fit */
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 15px 0;
+            color: #007bff; /* Vibrant text color */
+        }
+
+        /* --- Base Mask Animation Styles --- */
+        .mask-animation {
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out; /* Adjusted for smoother wipe */
+        }
+
+        /* --- Individual Animation Definitions --- */
+
+        .orbitRevealTopRight {
+            animation: orbitRevealTopRight 1.5s ease-out forwards;
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealTopRight {
+            0% {
+                transform: rotateZ(-90deg) rotateY(90deg) translateZ(300px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+                opacity: 1;
+            }
+            }
+
+        .orbitRevealTopLeft {
+            animation: orbitRevealTopLeft 1.5s ease-out forwards;
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealTopLeft {
+            0% {
+                transform: rotateZ(90deg) rotateY(-90deg) translateZ(300px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+                opacity: 1;
+            }
+            }
+
+        .orbitRevealBottomLeft {
+            animation: orbitRevealBottomLeft 1.5s ease-out forwards;
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealBottomLeft {
+                0% {
+                    transform: rotateZ(-90deg) rotateY(-90deg) translateZ(300px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+                    opacity: 1;
+                }
+            }
+
+        .orbitRevealBottomRight {
+            animation: orbitRevealBottomRight 1.5s ease-out forwards;
+            transform-style: preserve-3d;
+        }
+
+            @keyframes orbitRevealBottomRight {
+            0% {
+                transform: rotateZ(90deg) rotateY(90deg) translateZ(300px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+                opacity: 1;
+            }
+        }
+
+        .orbitRevealTopRightX {
+            animation: orbitRevealTopRightX 2s ease-out forwards;
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealTopRightX {
+            0% {
+                transform: rotateX(-90deg) rotateY(90deg) translateX(500px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateX(0deg) rotateY(0deg) translateX(0);
+                opacity: 1;
+            }
+            }
+
+        .orbitRevealTopLeftX {
+            animation: orbitRevealTopLeftX 2s ease-out forwards;
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealTopLeftX {
+            0% {
+                transform: rotateX(90deg) rotateY(-90deg) translateX(-500px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateX(0deg) rotateY(0deg) translateX(0);
+                opacity: 1;
+            }
+            }
+
+        .orbitRevealBottomLeftX {
+            animation: orbitRevealBottomLeftX 2s ease-out forwards;
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealBottomLeftX {
+                0% {
+                    transform: rotateX(-90deg) rotateY(90deg) translateX(-500px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+                    opacity: 1;
+                }
+            }
+
+        .orbitRevealBottomRightX {
+            animation: orbitRevealBottomRightX 2s ease-out forwards;
+            transform-style: preserve-3d;
+        }
+
+            @keyframes orbitRevealBottomRightX {
+            0% {
+                transform: rotateX(90deg) rotateY(90deg) translateX(500px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateX(0deg) rotateY(0deg) translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .orbitRevealTopRightY {
+            animation: orbitRevealTopRightY 2s ease-out;
+            animation-timing-function: cubic-bezier(.17,.67,.09,1.77);
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealTopRightY {
+            0% {
+                 transform: rotateX(90deg) rotateY(90deg) translateY(200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateX(0deg) rotateY(0deg) translateY(0);
+                opacity: 1;
+            }
+            }
+
+        .orbitRevealTopLeftY {
+            animation: orbitRevealTopLeftY 2s ease-out;
+            animation-timing-function: cubic-bezier(.17,.67,.09,1.77);
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealTopLeftY {
+            0% {
+                transform: rotateX(90deg) rotateY(-90deg) translateY(-200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateX(0deg) rotateY(0deg) translateY(0);
+                opacity: 1;
+            }
+            }
+
+        .orbitRevealBottomLeftY {
+            animation: orbitRevealBottomLeftY 2s ease-out;
+            animation-timing-function: cubic-bezier(.17,.67,.09,1.77);
+            transform-style: preserve-3d;
+            }
+
+            @keyframes orbitRevealBottomLeftY {
+                0% {
+                    transform: rotateX(-90deg) rotateY(-90deg) translateY(200px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: rotateX(0deg) rotateY(0deg) translateY(0);
+                    opacity: 1;
+                }
+            }
+
+        .orbitRevealBottomRightY {
+            animation: orbitRevealBottomRightY 2s ease-out;
+            animation-timing-function: cubic-bezier(.17,.67,.09,1.77);
+            transform-style: preserve-3d;
+        }
+
+            @keyframes orbitRevealBottomRightY {
+            0% {
+                transform: rotateX(90deg) rotateY(90deg) translateY(200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateX(0deg) rotateY(0deg) translateX(0);
+                opacity: 1;
+            }
+        }
+
+
+        /* Button for replaying animations */
+        button {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .animation-container {
+                flex: 1 1 90%;
+                max-width: 90%;
+            }
+            .animation-text {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .animation-text {
+                font-size: 1.4em;
+                white-space: normal; /* Allow text to wrap on very small screens */
+            }
+        }
+    </style>
+    </head>
+    <body>
+
+        <h1>Comprehensive Mask Wipe Animations</h1>
+
+        <div class="section-group">
+            <div class="animation-container">
+                <h2>Wipe In Left</h2>
+                <div id="wipeInLeft"
+                    class="animation-text orbitRevealTopRight mask-wipeInLeft">
+                    orbitRevealTopRight
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe In Right</h2>
+                <div id="wipeInRight"
+                    class="animation-text orbitRevealTopLeft mask-wipeInRight">
+                    orbit Reveal Left
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe In Top</h2>
+                <div id="wipeInTop"
+                    class="animation-text orbitRevealBottomLeft mask-wipeInTop">
+                    orbit Reveal Left
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe In Bottom</h2>
+                <div id="wipeInBottom"
+                    class="animation-text orbitRevealBottomRight mask-wipeInBottom">
+                    Reveal from Bottom!
+                </div>
+            </div>
+        </div>
+
+        <hr style="width: 80%; border: 1px solid #ddd; margin: 40px 0;">
+
+        <h1>Wipe Out Animations</h1>
+
+        <div class="section-group">
+            <div class="animation-container">
+                <h2>Wipe Out Left</h2>
+                <div id="wipeOutLeft"
+                    class="animation-text orbitRevealTopRightX mask-wipeOutLeft">
+                    Hide to Left!
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe Out Right</h2>
+                <div id="wipeOutRight"
+                    class="animation-text orbitRevealTopLeftX mask-wipeOutRight">
+                    Hide to Right!
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe Out Top</h2>
+                <div id="wipeOutTop"
+                    class="animation-text orbitRevealBottomLeftX mask-wipeOutTop">
+                    Hide to Top!
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe Out Bottom</h2>
+                <div id="wipeOutBottom"
+                    class="animation-text orbitRevealBottomRightX mask-wipeOutBottom">
+                    Hide to Bottom!
+                </div>
+            </div>
+        </div>
+
+        <a href="#Wipe">Wipe Out animations</a>
+
+        <div class="section-group">
+            <div class="animation-container">
+                <h2>Wipe Out Left</h2>
+                <div id="wipeOutLeft"
+                    class="animation-text orbitRevealTopRightY">
+                    orbit Reveal Top RightY
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe Out Right</h2>
+                <div id="wipeOutRight"
+                    class="animation-text orbitRevealTopLeftY">
+                    orbit Reveal Top LeftY
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe Out Top</h2>
+                <div id="wipeOutTop"
+                    class="animation-text orbitRevealBottomLeftY">
+                    orbit Reveal Bottom LeftY
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <h2>Wipe Out Bottom</h2>
+                <div id="wipeOutBottom"
+                    class="animation-text orbitRevealBottomRightY">
+                    orbit Reveal Bottom RightY
+                </div>
+            </div>
+        </div>
+
+        <button id="replayAllAnimations">Replay All Animations</button>
+
+        <script>
+        document.getElementById('replayAllAnimations').addEventListener('click', function() {
+            const animationElements = document.querySelectorAll('.animation-text');
+
+            animationElements.forEach(element => {
+                const originalClass = Array.from(element.classList).find(cls => cls.startsWith('mask-wipe'));
+
+                if (originalClass) {
+                    element.classList.remove(originalClass);
+                    void element.offsetWidth; // Force reflow
+                    element.classList.add(originalClass);
+                }
+            });
+        });
+    </script>
+
+    </body>
+</html>

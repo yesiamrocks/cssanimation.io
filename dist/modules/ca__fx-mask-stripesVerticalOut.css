@@ -37,23 +37,12 @@
 }
 /* stylelint-enable */
 
-.ca__fx-mask-stripesVerticalOut {
-  animation: mask-stripesVerticalOut 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 @keyframes mask-stripesVerticalOut {
   0% {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
+
   100% {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;

@@ -24,6 +24,7 @@
 @import './ca__KickOut.css';
 @import './ca__Kite.css';
 @import './ca__Magical.css';
+@import './ca__MaskWipe.css';
 @import './ca__Moon.css';
 @import './ca__MoonFade.css';
 @import './ca__MoveFrom.css';
@@ -54,6 +55,8 @@
 @import './ca__blob.css';
 @import './ca__elastic.css';
 @import './ca__masking.css';
+@import './ca__maskingStripe.css';
 @import './ca__quake.css';
 @import './ca__step.css';
 @import './ca__wow.css';
+@import './cs__orbitReveal.css';

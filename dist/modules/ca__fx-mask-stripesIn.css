@@ -37,18 +37,6 @@
 }
 /* stylelint-enable */
 
-.ca__fx-mask-stripesIn {
-  animation-name: mask-stripesIn;
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 @keyframes mask-stripesIn {
   0% {
     -webkit-mask-position: 0 -100%;

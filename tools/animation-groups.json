@@ -254,6 +254,42 @@
     "ca__fx-moonFadeOutRight",
     "ca__fx-moonFadeOutScale"
   ],
+  "Mask Wipe": [
+    "ca__fx-mask-wipeInLeft",
+    "ca__fx-mask-wipeInRight",
+    "ca__fx-mask-wipeInTop",
+    "ca__fx-mask-wipeInBottom",
+    "ca__fx-mask-wipeOutLeft",
+    "ca__fx-mask-wipeOutRight",
+    "ca__fx-mask-wipeOutTop",
+    "ca__fx-mask-wipeOutBottom"
+  ],
+  "Masking Stripe": [
+    "ca__fx-maskHorizontalBarsIn",
+    "ca__fx-maskStripesIn",
+    "ca__fx-maskZigzagRevealIn ",
+    "ca__fx-maskZigzagRevealIn",
+    "ca__fx-maskCheckerboardIn",
+    "ca__fx-maskDiamondIn",
+    "ca__fx-maskLinesSlideIn",
+    "ca__fx-maskRainRevealIn",
+    "ca__fx-maskStripesThinIn",
+    "ca__fx-maskStripesThinOut",
+    "ca__fx-maskThreadLinesIn",
+    "ca__fx-maskStairStepIn",
+    "ca__fx-maskStripesHorizontalReverseOut",
+    "ca__fx-maskStripesVerticalIn",
+    "ca__fx-maskStripesVerticalOut",
+    "ca__fx-maskStripesHorizontalReverseIn",
+    "ca__fx-maskStripesDiagonalLeftIn",
+    "ca__fx-maskStripesDiagonalUpIn",
+    "ca__fx-maskStripesJitterIn",
+    "ca__fx-maskStripesDiagonalLeftOut",
+    "ca__fx-maskStripesDiagonalUpOut",
+    "ca__fx-maskStripesWideOut",
+    "ca__fx-maskStripesJitterOut"
+  ],
+
   "Kite": [
     "ca__fx-kiteFloatInRight",
     "ca__fx-kiteFloatInLeft",
@@ -268,6 +304,20 @@
     "ca__fx-kiteTetheredFloat",
     "ca__fx-kiteCollapse",
     "ca__fx-kiteDragDrop"
+  ],
+  "Orbit 3D": [
+    "ca__fx-orbitRevealFromTopRight",
+    "ca__fx-orbitRevealFromTopLeft",
+    "ca__fx-orbitRevealFromBottomLeft",
+    "ca__fx-orbitRevealFromBottomRight",
+    "ca__fx-orbitSwingFromTopRight",
+    "ca__fx-orbitSwingFromTopLeft",
+    "ca__fx-orbitSwingFromBottomLeft",
+    "ca__fx-orbitSwingFromBottomRight",
+    "ca__fx-orbitDriftFromTopRight",
+    "ca__fx-orbitDriftFromTopLeft",
+    "ca__fx-orbitDriftFromBottomLeft",
+    "ca__fx-orbitDriftFromBottomRight"
   ],
   "Playful": ["ca__fx-snapGridEntry", "ca__fx-snapGridExit", "ca__fx-bounceInWaddle", "ca__fx-bounceOutWaddle"],
 

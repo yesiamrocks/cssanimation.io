@@ -37,26 +37,6 @@
 }
 /* stylelint-enable */
 
-.ca__fx-mask-checkerboardIn {
-  animation: mask-checkerboardIn 1s ease-out forwards;
-  -webkit-mask-image:
-    repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
-    repeating-linear-gradient(90deg, transparent 0,transparent 25%, black 25%, black 50%);
-  mask-image:
-    repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
-    repeating-linear-gradient(90deg, transparent 0,transparent 25%, black 25%, black 50%);
-  -webkit-mask-image:
-    repeating-linear-gradient(0deg, transparent 0 25%, black 25% 50%),
-    repeating-linear-gradient(90deg, transparent 0 25%, black 25% 50%);
-  mask-image:
-    repeating-linear-gradient(0deg, transparent 0 25%, black 25% 50%),
-    repeating-linear-gradient(90deg, transparent 0 25%, black 25% 50%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: repeat;
-  mask-repeat: repeat;
-}
-
 @keyframes mask-checkerboardIn {
   0% {
     -webkit-mask-position: -100% -100%;

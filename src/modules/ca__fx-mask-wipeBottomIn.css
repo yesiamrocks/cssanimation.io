@@ -1,0 +1,65 @@
+/*!
+ * Module: mask-wipeBottomIn Animation
+ * Usage: <div class="cssanimation ca__fx-mask-wipeBottomIn">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-mask-wipeBottomIn {
+  animation: mask-wipeBottomIn 1s ease-out forwards;
+  -webkit-mask-image: linear-gradient(to top, black 50%, transparent 50%);
+  mask-image: linear-gradient(to top, black 50%, transparent 50%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@keyframes mask-wipeBottomIn {
+  0% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+/* .mask-wipeRightOut {
+  animation: mask-wipeRightOut 1s ease-in forwards;
+  mask-image: linear-gradient(to left, black 50%, transparent 50%);
+  mask-size: 200% 100%;
+  mask-repeat: no-repeat;
+}

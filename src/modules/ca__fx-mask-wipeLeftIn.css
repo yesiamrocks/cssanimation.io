@@ -37,16 +37,6 @@
 }
 /* stylelint-enable */
 
-.ca__fx-mask-wipeLeftIn {
-  animation-name: mask-wipeLeftIn;
-  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
-  mask-image: linear-gradient(to right, black 50%, transparent 50%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 @keyframes mask-wipeLeftIn {
   0% {
     -webkit-mask-position: -100% 0;

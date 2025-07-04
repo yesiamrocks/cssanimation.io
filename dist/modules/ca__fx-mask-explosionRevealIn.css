@@ -38,7 +38,7 @@
 /* stylelint-enable */
 
 .ca__fx-mask-explosionRevealIn {
-  animation: mask-explosionRevealIn 1s ease-out forwards;
+  animation-name: mask-explosionRevealIn;
   -webkit-mask-image: radial-gradient(circle at center, black 20%, transparent 60%);
   mask-image: radial-gradient(circle at center, black 20%, transparent 60%);
   -webkit-mask-size: 200% 200%;
@@ -53,6 +53,7 @@
     -webkit-mask-size: 20% 20%;
     mask-size: 20% 20%;
   }
+
   100% {
     -webkit-mask-size: 200% 200%;
     mask-size: 200% 200%;
