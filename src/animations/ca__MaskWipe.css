@@ -141,3 +141,37 @@
     mask-position: 0 100%;
   }
 }
+
+.mask-shutterLinesIn {
+  animation-name: mask-shutterLinesIn;
+  mask-image: repeating-linear-gradient(to right, black 0 30%, transparent 30% 60%);
+  mask-size: 200% 100%;
+  mask-repeat: no-repeat;
+}
+
+@keyframes mask-shutterLinesIn {
+  0% {
+    mask-position: -100% 0;
+  }
+
+  100% {
+    mask-position: 0 0;
+  }
+}
+
+.mask-stripesWideIn {
+  animation-name: mask-stripesWideIn;
+  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  mask-size: 100% 200%;
+  mask-repeat: no-repeat;
+}
+
+@keyframes mask-stripesWideIn {
+  0% {
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    mask-position: 0 0;
+  }
+}

@@ -942,7 +942,7 @@ const htmlContent = `<!DOCTYPE html>
                                 </button>
 
                                 <div class="preview w-full inline-flex items-center justify-center p-4 px-8 mt-6 bg-gray-100 dark:bg-slate-700 font-bold text-center text-slate-700 dark:text-gray-200 cursor-pointer hover:shadow-lg transition-all duration-500 ease-in-out overflow-hidden rounded-md shadow-sm ${fullClass}" id="${cls}" onclick="replay('${cls}')">
-                                    ${cls}
+                                   { CSS } Animation
                                 </div>
                                 
                                 <div class="flex space-x-2 flex-shrink-0 justify-center mt-4">

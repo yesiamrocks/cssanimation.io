@@ -1,6 +1,6 @@
 /*!
- * Module: panelUnfold Animation
- * Usage: <div class="cssanimation ca__fx-panelUnfold">Your Content</div>
+ * Module: orbitRollIn3D Animation
+ * Usage: <div class="cssanimation ca__fx-orbitRollIn3D">Your Content</div>
  */
 /* stylelint-disable */
 
@@ -37,34 +37,19 @@
 }
 /* stylelint-enable */
 
-.ca__fx-panelUnfold {
-  animation-name: panelUnfold;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-  transform-origin: top center;
+.ca__fx-orbitRollIn3D {
+  animation-name: orbitRollIn3D;
+  transform-style: preserve-3d;
 }
 
-@keyframes panelUnfold {
+@keyframes orbitRollIn3D {
   0% {
-    transform: scaleY(0.2) rotateX(-90deg);
+    transform: rotateX(-360deg) translateY(-200px) scale(0.7);
     opacity: 0;
   }
 
-  60% {
-    transform: scaleY(1.05) rotateX(10deg);
+  100% {
+    transform: rotateX(0deg) translateY(0) scale(1);
     opacity: 1;
   }
-
-  100% {
-    transform: scaleY(1) rotateX(0);
-  }
-}
-/**
- * Module: Orbit Reveal Animations
- * Filename: cs__orbitReveal.css
- */
-.ca__fx-orbitRevealLeft {
-  animation: orbitRevealLeft 1.2s ease-out forwards;
-  transform-style: preserve-3d;
-  perspective: 1000px;
 }

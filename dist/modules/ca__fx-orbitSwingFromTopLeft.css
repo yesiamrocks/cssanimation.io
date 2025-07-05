@@ -44,7 +44,7 @@
 
 @keyframes orbitSwingFromTopLeft {
   0% {
-    transform: rotateX(90deg) rotateY(-90deg) translateX(-500px);
+    transform: rotateX(90deg) rotateY(90deg) translateX(-500px);
     opacity: 0;
   }
 

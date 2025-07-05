@@ -1,3 +1,23 @@
+## [6.8.1] — 2025-07-03
+
+### Added
+
+- `cs__orbitReveal.css`: A comprehensive orbit-style 3D animation module featuring:
+  - Left, right, top, bottom reveals and exits
+  - Diagonal and corner-based orbit animations
+  - Spiral, swing, swirl, roll, tilt, and helix variants
+- `ca__MaskWipe.css`: Includes CSS-only directional mask animations:
+  - `wipeLeftIn`, `wipeRightOut`, `wipeTopIn`, `wipeBottomOut`, etc.
+- `ca__maskingStripe.css`: Adds stylish striped mask-based reveal and exit effects
+  - Variations include horizontal, vertical, alternate, and reversed stripes
+
+### Grouping
+
+- New entries added to `animation-groups.json` under:
+  - `"Orbit 3D"` for all orbit animations
+  - `"Mask Wipe"` for all wipe mask animations
+  - `"Masking Stripe"` for striped masking effects
+
 ## [6.8.0] – 2025-06-25
 
 ### Added

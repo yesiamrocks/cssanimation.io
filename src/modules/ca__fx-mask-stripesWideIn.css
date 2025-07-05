@@ -60,3 +60,12 @@
     mask-position: 0 0;
   }
 }
+/**
+ * Module: Moon 
+ * Filename: ca__Moon.css
+ */
+.ca__fx-moonEclipseIn {
+  animation: moonEclipseIn 1.6s ease-out both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
