@@ -1,6 +1,6 @@
 {
   "name": "@hellouxpavel/cssanimation",
-  "version": "6.8.1",
+  "version": "6.9.0",
   "description": "A Powerful CSS Animation Library for Advanced Motion Design.",
   "main": "index.js",
   "style": "dist/cssanimation.css",
@@ -34,7 +34,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "npm run generate:animation-index && npm run build:animations && npm run build:styles && npm run copy:assets && npm run build:classlist && npm run generate:demo && npm run generate:animation-preview && npm run build:js && npm run export:modules && npm run generate:animation-index",
+    "build": "npm run generate:animation-index && npm run build:animations && npm run build:styles && npm run copy:assets && npm run build:classlist && npm run generate:demo && npm run generate:animation-preview && npm run build:js && npm run build:modules && npm run build:animationFils && npm run generate:animation-index",
     "build:animations": "postcss src/animations/cssanimation-index.css -o src/cssanimation.css",
     "build:styles": "npm run prefix:css && npm run prefix:utility",
     "build:js": "rollup -c",
@@ -48,8 +48,9 @@
     "generate:animation-index": "node tools/build-animation-index.js",
     "generate:demo": "node tools/cssanimation-demo.js",
     "generate:animation-preview": "node tools/generate-animation-preview.js",
-    "export:modules": "node tools/export-modules.js",
+    "build:animationFils": "node tools/build-animations.js",
     "prebuild": "node tools/generate-classes.js",
+    "build:modules": "node tools/build-modules.js",
     "start": "postcss src/*.css -d dist/ --watch"
   },
   "devDependencies": {
@@ -91,9 +92,6 @@
     "./letter": "./dist/plugins/ca-letteranimation.js",
     "./letter.min": "./dist/plugins/ca-letteranimation.min.js",
     "./letter/min": "./dist/plugins/ca-letteranimation.min.js",
-    "./trigger": "./dist/plugins/ca-trigger.js",
-    "./trigger.min": "./dist/plugins/ca-trigger.min.js",
-    "./trigger/min": "./dist/plugins/ca-trigger.min.js",
     "./modules-index": "./dist/modules/ca__modules-index.css",
     "./modules/*": "./dist/modules/*.css"
   },

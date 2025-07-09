@@ -207,12 +207,13 @@
   animation: magicBlobSplit 2.8s ease-in-out infinite;
 }
 
-@keyframes ca__magicBlobSplit {
+@keyframes magicBlobSplit {
   0%,
   100% {
     transform: translate(0, 0) scale(1);
     border-radius: 60% 40% 50% 70% / 60% 40% 60% 50%;
   }
+
   50% {
     transform: translate(-10%, -10%) scale(1.1);
     border-radius: 40% 60% 70% 30% / 50% 70% 30% 60%;

@@ -1,3 +1,23 @@
+## [6.9.0] - 2025-07-09
+
+### Added
+
+- New modular build pipeline for animations:
+  - Grouped modules (e.g., `ca__FadeIn.css`) available in `dist/modules/`
+  - Individual atomic animations (e.g., `fadeIn.css`) in `dist/animations/`
+- Auto-prefixing of class names with `ca__fx-` for scoped utility use
+- Shared base styles and variables injected into every animation file
+
+### Changed
+
+- `export-modules.js` now generates cleaner, non-prefixed filenames while retaining prefixed class names
+
+### Updated
+
+- README now includes detailed instructions for modular imports
+  - Examples for HTML, CSS/SCSS, and JS environments
+  - Table of available grouped modules
+
 ## [6.8.1] — 2025-07-03
 
 ### Added

@@ -1,0 +1,150 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Zoom Out
+ * Filename: ca__ZoomOut.ca__fx-css
+ */
+
+.ca__fx-zoomOut {
+  animation-name: zoomOut;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutLeft {
+  animation-name: zoomOutLeft;
+}
+
+@keyframes zoomOutLeft {
+  to {
+    transform: scale(10) translateX(-50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutRight {
+  animation-name: zoomOutRight;
+}
+
+@keyframes zoomOutRight {
+  to {
+    transform: scale(10) translateX(50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutTop {
+  animation-name: zoomOutTop;
+}
+
+@keyframes zoomOutTop {
+  to {
+    transform: scale(10) translateY(-50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutBottom {
+  animation-name: zoomOutBottom;
+}
+
+@keyframes zoomOutBottom {
+  to {
+    transform: scale(10) translateY(50%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomOutRotateUp {
+  animation-name: zoomOutRotateUp;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes zoomOutRotateUp {
+  0% {
+    transform: perspective(700px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(700px) rotateX(80deg) scale(0.ca__fx-3) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomPingExit {
+  animation-name: zoomPingExit;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoomPingExit {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.ca__fx-5);
+    opacity: 0;
+  }
+}
+
+.ca__fx-zoomToTarget {
+  animation: zoomToTarget 1.ca__fx-1s ease-out forwards;
+  transform-origin: center center;
+}
+
+@keyframes zoomToTarget {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1.ca__fx-2) translate(0, -10px);
+  }
+
+  100% {
+    transform: scale(0.ca__fx-8) translate(10px, 20px);
+    opacity: 0;
+  }
+}

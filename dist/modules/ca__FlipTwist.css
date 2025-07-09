@@ -1,0 +1,431 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: FlipTwist Animation
+ * Filename: ca__FlipTwist.ca__fx-css
+ */
+.ca__fx-flipTwistRight {
+  animation-name: flipTwistRight;
+  transform-origin: center right;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistRight {
+  0% {
+    transform: perspective(1000px) rotateY(90deg) rotateZ(-25deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: perspective(1000px) rotateY(-10deg) rotateZ(5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+.ca__fx-flipTwistLeft {
+  animation-name: flipTwistLeft;
+  transform-origin: center left;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistLeft {
+  0% {
+    transform: perspective(1000px) rotateY(-90deg) rotateZ(25deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: perspective(1000px) rotateY(10deg) rotateZ(-5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+.ca__fx-flipTwistTop {
+  animation-name: flipTwistTop;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistTop {
+  0% {
+    transform: perspective(800px) rotateX(90deg) rotateZ(20deg) translateY(-80%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(800px) rotateX(-10deg) rotateZ(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(0deg) rotateZ(0deg);
+  }
+}
+
+.ca__fx-flipTwistBottom {
+  animation-name: flipTwistBottom;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistBottom {
+  0% {
+    transform: perspective(800px) rotateX(-90deg) rotateZ(-20deg) translateY(80%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(800px) rotateX(10deg) rotateZ(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(0deg) rotateZ(0deg);
+  }
+}
+
+.ca__fx-flipTwistPop {
+  animation-name: flipTwistPop;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistPop {
+  0% {
+    transform: perspective(600px) rotateY(60deg) rotateZ(-10deg) scale(0.ca__fx-8);
+    opacity: 0;
+  }
+
+  60% {
+    transform: perspective(600px) rotateY(-10deg) rotateZ(5deg) scale(1.ca__fx-05);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(600px) rotateY(0deg) rotateZ(0deg) scale(1);
+  }
+}
+
+.ca__fx-flipTwistCombo {
+  animation-name: flipTwistCombo;
+  animation-duration: 1.ca__fx-5s;
+  transform-origin: top right;
+  will-change: transform, opacity;
+  animation-timing-function: cubic-bezier(0.ca__fx-3, 1.ca__fx-4, 0.ca__fx-5, 1);
+}
+
+@keyframes flipTwistCombo {
+  0% {
+    transform: perspective(1000px) rotateX(90deg) rotateY(60deg) rotateZ(-30deg) translate(50%, -100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0%, 0%);
+  }
+}
+
+.ca__fx-flipTwistVertical {
+  animation-name: flipTwistVertical;
+  transform-origin: center top;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistVertical {
+  0% {
+    transform: perspective(900px) rotateX(-90deg) rotateZ(15deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(900px) rotateX(15deg) rotateZ(-5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(900px) rotateX(0deg) rotateZ(0deg);
+  }
+}
+
+.ca__fx-flipTwistDiagonal {
+  animation-name: flipTwistDiagonal;
+  transform-origin: top right;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistDiagonal {
+  0% {
+    transform: perspective(1000px) rotateX(-60deg) rotateY(60deg) rotateZ(25deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotateX(10deg) rotateY(-10deg) rotateZ(-5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+.ca__fx-flipTwistSlam {
+  animation-name: flipTwistSlam;
+  transform-origin: center left;
+  will-change: transform, opacity;
+  animation-timing-function: cubic-bezier(0.ca__fx-3, 1.ca__fx-5, 0.ca__fx-4, 1);
+}
+
+@keyframes flipTwistSlam {
+  0% {
+    transform: perspective(800px) rotateY(-120deg) rotateZ(20deg);
+    opacity: 0;
+  }
+
+  70% {
+    transform: rotateY(15deg) rotateZ(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+.ca__fx-flipTwistZoom {
+  animation-name: flipTwistZoom;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistZoom {
+  0% {
+    transform: perspective(1000px) rotateY(75deg) scale(1.ca__fx-3);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateY(-15deg) scale(0.ca__fx-95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+.ca__fx-flipTwistDrop {
+  animation-name: flipTwistDrop;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistDrop {
+  0% {
+    transform: perspective(800px) rotateX(80deg) translateY(-80%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotateX(-15deg) translateY(5%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0deg) translateY(0%);
+  }
+}
+
+.ca__fx-flipTwistTiltIn {
+  animation-name: flipTwistTiltIn;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistTiltIn {
+  0% {
+    transform: perspective(900px) rotateY(90deg) rotateZ(-30deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: rotateY(-20deg) rotateZ(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+.ca__fx-flipTwistHover {
+  display: inline-block;
+  transform-origin: center;
+  transition:
+    transform 0.ca__fx-5s ease,
+    opacity 0.ca__fx-5s ease;
+}
+
+.ca__fx-flipTwistHover:hover {
+  transform: perspective(800px) rotateY(15deg) rotateZ(-5deg) scale(1.ca__fx-05);
+  opacity: 0.ca__fx-95;
+}
+
+.ca__fx-flipTwistTiltHover {
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.ca__fx-4s ease-in-out;
+}
+
+.ca__fx-flipTwistTiltHover:hover {
+  transform: perspective(900px) rotateZ(10deg) rotateY(20deg);
+}
+
+.ca__fx-flipTwistZoomHover {
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.ca__fx-6s ease-out;
+}
+
+.ca__fx-flipTwistZoomHover:hover {
+  transform: perspective(1000px) rotateY(-15deg) scale(1.ca__fx-1);
+}
+
+.ca__fx-flipTwistOutRight {
+  animation-name: flipTwistOutRight;
+  transform-origin: center right;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistOutRight {
+  0% {
+    transform: rotateY(0deg) rotateZ(0deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotateY(-20deg) rotateZ(10deg);
+    opacity: 0.ca__fx-7;
+  }
+
+  100% {
+    transform: rotateY(90deg) rotateZ(-15deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipTwistOutLeft {
+  animation-name: flipTwistOutLeft;
+  transform-origin: center left;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistOutLeft {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotateY(20deg) rotateZ(-10deg);
+    opacity: 0.ca__fx-6;
+  }
+
+  100% {
+    transform: rotateY(-90deg) rotateZ(10deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipTwistOutTop {
+  animation-name: flipTwistOutTop;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistOutTop {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotateX(20deg);
+    opacity: 0.ca__fx-6;
+  }
+
+  100% {
+    transform: rotateX(-90deg) translateY(-60%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-flipTwistOutZoom {
+  animation-name: flipTwistOutZoom;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes flipTwistOutZoom {
+  0% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotateY(-15deg) scale(0.ca__fx-9);
+    opacity: 0.ca__fx-6;
+  }
+
+  100% {
+    transform: rotateY(75deg) scale(0.ca__fx-5);
+    opacity: 0;
+  }
+}

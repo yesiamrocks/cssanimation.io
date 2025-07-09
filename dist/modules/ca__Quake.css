@@ -1,0 +1,320 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Quake & Quiver Series
+ * Filename: ca__quake.ca__fx-css
+ */
+
+.ca__fx-jiggle {
+  animation: jiggle var(--jiggle-duration, 0.ca__fx-8s) ease-in-out both;
+}
+
+@keyframes jiggle {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+
+  20% {
+    transform: translateX(var(--jiggle-intensity, 2px)) rotate(var(--jiggle-rotate, 1deg));
+  }
+
+  40% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * -1)) rotate(calc(var(--jiggle-rotate, 1deg) * -1));
+  }
+
+  60% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * 0.ca__fx-5)) rotate(calc(var(--jiggle-rotate, 1deg) * 0.ca__fx-5));
+  }
+
+  80% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * -0.ca__fx-5)) rotate(calc(var(--jiggle-rotate, 1deg) * -0.ca__fx-5));
+  }
+}
+
+.ca__fx-quiver {
+  animation: quiver var(--quiver-duration, 0.ca__fx-3s) ease-in-out infinite both;
+}
+
+@keyframes quiver {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(var(--quiver-intensity, 1px), 0);
+  }
+
+  50% {
+    transform: translate(0, var(--quiver-intensity, 1px));
+  }
+
+  75% {
+    transform: translate(calc(var(--quiver-intensity, 1px) * -1), 0);
+  }
+}
+
+.ca__fx-tremor {
+  animation: tremor var(--tremor-duration, 0.ca__fx-6s) ease-in-out both;
+}
+
+@keyframes tremor {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(var(--tremor-intensity, 4px), var(--tremor-intensity, 4px));
+  }
+
+  40% {
+    transform: translate(calc(var(--tremor-intensity, 4px) * -1), var(--tremor-intensity, 4px));
+  }
+
+  60% {
+    transform: translate(var(--tremor-intensity, 4px), calc(var(--tremor-intensity, 4px) * -1));
+  }
+
+  80% {
+    transform: translate(calc(var(--tremor-intensity, 4px) * -1), calc(var(--tremor-intensity, 4px) * -1));
+  }
+}
+
+.ca__fx-rumble {
+  animation: rumble var(--rumble-duration, 0.ca__fx-4s) ease-in-out both;
+}
+
+@keyframes rumble {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+
+  10% {
+    transform: translate(var(--rumble-intensity, 6px), var(--rumble-intensity, 6px)) rotate(var(--rumble-rotate, 2deg));
+  }
+
+  30% {
+    transform: translate(calc(var(--rumble-intensity, 6px) * -1), var(--rumble-intensity, 6px))
+      rotate(calc(var(--rumble-rotate, 2deg) * -1));
+  }
+
+  50% {
+    transform: translate(var(--rumble-intensity, 6px), calc(var(--rumble-intensity, 6px) * -1))
+      rotate(var(--rumble-rotate, 2deg));
+  }
+
+  70% {
+    transform: translate(calc(var(--rumble-intensity, 6px) * -1), calc(var(--rumble-intensity, 6px) * -1))
+      rotate(calc(var(--rumble-rotate, 2deg) * -1));
+  }
+}
+
+.ca__fx-wiggle {
+  transform-origin: center center;
+  animation: wiggle var(--wiggle-duration, 1s) ease-in-out both;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+
+  50% {
+    transform: rotate(calc(var(--wiggle-angle, 4deg) * -1));
+  }
+
+  75% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+}
+
+.ca__fx-rattle {
+  animation: rattle var(--rattle-duration, 0.ca__fx-2s) ease-in-out both;
+}
+
+@keyframes rattle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(var(--rattle-intensity, 3px));
+  }
+
+  40%,
+  80% {
+    transform: translateX(calc(var(--rattle-intensity, 3px) * -1));
+  }
+}
+
+.ca__fx-buzz {
+  animation: buzz var(--buzz-duration, 0.ca__fx-1s) linear both infinite;
+}
+
+@keyframes buzz {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(var(--buzz-intensity, 1px), var(--buzz-intensity, 1px));
+  }
+
+  50% {
+    transform: translate(calc(var(--buzz-intensity, 1px) * -1), var(--buzz-intensity, 1px));
+  }
+
+  75% {
+    transform: translate(var(--buzz-intensity, 1px), calc(var(--buzz-intensity, 1px) * -1));
+  }
+}
+
+.ca__fx-jitter {
+  animation: jitter var(--jitter-duration, 0.ca__fx-5s) ease-in-out both;
+}
+
+@keyframes jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), var(--jitter-intensity, 2px));
+  }
+
+  20% {
+    transform: translate(var(--jitter-intensity, 2px), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  30% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  40% {
+    transform: translate(var(--jitter-intensity, 2px), var(--jitter-intensity, 2px));
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), var(--jitter-intensity, 2px));
+  }
+
+  70% {
+    transform: translate(var(--jitter-intensity, 2px), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  80% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  90% {
+    transform: translate(var(--jitter-intensity, 2px), var(--jitter-intensity, 2px));
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.ca__fx-electricity {
+  animation-name: electricity;
+  animation-iteration-count: infinite;
+}
+
+@keyframes electricity {
+  0%,
+  37%,
+  67%,
+  85%,
+  93% {
+    transform: translateY(30px);
+  }
+
+  4%,
+  64%,
+  88% {
+    transform: translateY(10px);
+  }
+
+  8%,
+  24%,
+  32%,
+  44% {
+    transform: translateY(5px);
+  }
+
+  12%,
+  52%,
+  60%,
+  20% {
+    transform: translateY(10px);
+  }
+
+  16%,
+  40% {
+    transform: translateY(5px);
+  }
+
+  28%,
+  56% {
+    transform: translateY(10px);
+  }
+
+  48%,
+  72%,
+  80%,
+  96% {
+    transform: translateY(30px);
+  }
+
+  76%,
+  100% {
+    transform: translateY(40px);
+  }
+}

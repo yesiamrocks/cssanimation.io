@@ -1,0 +1,397 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: kite Animation
+ * Filename: ca__Kite.ca__fx-css
+ */
+.ca__fx-kiteFloatInRight {
+  animation-name: kiteFloatInRight;
+  transform-origin: top left;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteFloatInRight {
+  0% {
+    transform: translate(80%, -100%) rotate(15deg);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translate(-10%, 20%) rotate(-10deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translate(5%, -10%) rotate(6deg);
+  }
+
+  80% {
+    transform: translate(-2%, 5%) rotate(-3deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+
+.ca__fx-kiteFloatInLeft {
+  animation-name: kiteFloatInLeft;
+  transform-origin: top right;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteFloatInLeft {
+  0% {
+    transform: translate(-80%, -100%) rotate(-15deg);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translate(10%, 20%) rotate(10deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translate(-5%, -10%) rotate(-6deg);
+  }
+
+  80% {
+    transform: translate(2%, 5%) rotate(3deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+
+.ca__fx-kiteHoverLoop {
+  animation-name: kiteHoverLoop;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@keyframes kiteHoverLoop {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-4%) rotate(2deg);
+  }
+
+  50% {
+    transform: translateY(2%) rotate(-3deg);
+  }
+
+  75% {
+    transform: translateY(-3%) rotate(1.ca__fx-5deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+
+.ca__fx-kiteEntrySnap {
+  animation-name: kiteEntrySnap;
+  transform-origin: center top;
+  animation-timing-function: cubic-bezier(0.ca__fx-25, 0.ca__fx-9, 0.ca__fx-4, 1.ca__fx-4);
+  will-change: transform, opacity;
+}
+
+@keyframes kiteEntrySnap {
+  0% {
+    transform: translateY(-100%) rotate(20deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(10%) rotate(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+
+.ca__fx-kiteWaveExit {
+  animation-name: kiteWaveExit;
+  transform-origin: bottom left;
+  animation-timing-function: ease-in;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteWaveExit {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translate(-10%, -10%) rotate(-10deg);
+  }
+
+  70% {
+    transform: translate(20%, -80%) rotate(25deg);
+    opacity: 0.ca__fx-5;
+  }
+
+  100% {
+    transform: translate(50%, -120%) rotate(40deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-kiteWhipIn {
+  animation-name: kiteWhipIn;
+  transform-origin: top left;
+  animation-timing-function: cubic-bezier(0.ca__fx-4, -0.ca__fx-3, 0.ca__fx-7, 1.ca__fx-8);
+  will-change: transform, opacity;
+}
+
+@keyframes kiteWhipIn {
+  0% {
+    transform: translate(-150%, -80%) rotate(-35deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate(10%, 10%) rotate(15deg);
+    opacity: 1;
+  }
+
+  85% {
+    transform: translate(-5%, -5%) rotate(-7deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+
+.ca__fx-kiteSwingEntry {
+  animation-name: kiteSwingEntry;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteSwingEntry {
+  0% {
+    transform: translate(-60%, -100%) rotate(-80deg) scale(0.ca__fx-6);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translate(10%, 10%) rotate(30deg) scale(1.ca__fx-05);
+    opacity: 1;
+  }
+
+  70% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+}
+
+.ca__fx-kiteExitLift {
+  animation-name: kiteExitLift;
+  animation-timing-function: ease-in;
+  transform-origin: bottom right;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteExitLift {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(10%, -30%) rotate(15deg);
+    opacity: 0.ca__fx-8;
+  }
+
+  80% {
+    transform: translate(-20%, -90%) rotate(-25deg);
+    opacity: 0.ca__fx-4;
+  }
+
+  100% {
+    transform: translate(40%, -150%) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-kiteSnapBounceIn {
+  animation-name: kiteSnapBounceIn;
+  animation-timing-function: cubic-bezier(0.ca__fx-45, 1.ca__fx-5, 0.ca__fx-55, 1);
+  transform-origin: center top;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteSnapBounceIn {
+  0% {
+    transform: translateY(-150%) rotate(25deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(10%) rotate(-10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(-5%) rotate(5deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+
+.ca__fx-kiteFlipTwist {
+  animation-name: kiteFlipTwist;
+  transform-origin: center;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteFlipTwist {
+  0% {
+    transform: perspective(800px) rotateX(90deg) rotateZ(-45deg) translateY(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(800px) rotateX(-30deg) rotateZ(10deg) translateY(10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(0deg) rotateZ(0deg) translateY(0%);
+  }
+}
+
+.ca__fx-kiteTetheredFloat {
+  animation-name: kiteTetheredFloat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteTetheredFloat {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-5%) rotate(2deg);
+  }
+
+  50% {
+    transform: translateY(3%) rotate(-2deg);
+  }
+
+  75% {
+    transform: translateY(-3%) rotate(1.ca__fx-5deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+
+.ca__fx-kiteCollapse {
+  animation-name: kiteCollapse;
+  transform-origin: top center;
+  animation-timing-function: ease-in;
+  will-change: transform, opacity;
+}
+
+@keyframes kiteCollapse {
+  0% {
+    transform: rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+
+  30% {
+    transform: rotate(20deg) translateY(20%);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotate(-60deg) translateY(60%) scale(0.ca__fx-8);
+    opacity: 0.ca__fx-5;
+  }
+
+  100% {
+    transform: rotate(90deg) translateY(120%) scale(0.ca__fx-5);
+    opacity: 0;
+  }
+}
+
+.ca__fx-kiteDragDrop {
+  animation-name: kiteDragDrop;
+  transform-origin: top center;
+  animation-timing-function: cubic-bezier(0.ca__fx-3, 1.ca__fx-5, 0.ca__fx-6, 1);
+  will-change: transform, opacity;
+}
+
+@keyframes kiteDragDrop {
+  0% {
+    transform: translateY(-80%) rotate(15deg) scale(1.ca__fx-05);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(5%) rotate(-8deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(-3%) rotate(4deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg) scale(1);
+  }
+}

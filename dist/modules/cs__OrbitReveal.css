@@ -1,0 +1,590 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Orbit Reveal Animations
+ * Filename: cs__orbitReveal.ca__fx-css
+ */
+
+.ca__fx-orbitRevealLeft {
+  animation: orbitRevealLeft 1.ca__fx-2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitRevealLeft {
+  0% {
+    transform: rotateY(-90deg) translateX(-300px) translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitExitLeft {
+  animation: orbitExitLeft 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitExitLeft {
+  0% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(-90deg) translateX(-300px) translateZ(-200px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-orbitRevealRight {
+  animation: orbitRevealRight 1.ca__fx-2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitRevealRight {
+  0% {
+    transform: rotateY(90deg) translateX(300px) translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitExitRight {
+  animation: orbitExitRight 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitExitRight {
+  0% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(90deg) translateX(300px) translateZ(-200px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-orbitRevealTop {
+  animation: orbitRevealTop 1.ca__fx-5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitRevealTop {
+  0% {
+    transform: rotateZ(-90deg) rotateY(90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitRevealBottom {
+  animation: orbitRevealBottom 1.ca__fx-5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitRevealBottom {
+  0% {
+    transform: rotateZ(90deg) rotateY(-90deg) translateZ(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitReveal3 {
+  animation: orbitReveal3 1.ca__fx-5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitReveal3 {
+  0% {
+    transform: rotateZ(-90deg) rotateY(90deg) translateX(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitReveal4 {
+  animation: orbitReveal4 1.ca__fx-5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitReveal4 {
+  0% {
+    transform: rotateZ(90deg) rotateY(-90deg) translateX(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitRevealDiagonalLeft {
+  animation: orbitRevealDiagonalLeft 1.ca__fx-2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitRevealDiagonalLeft {
+  0% {
+    transform: rotateX(-45deg) rotateY(-45deg) translate(-300px, -300px) translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0) rotateY(0) translate(0, 0) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitExitDiagonalLeft {
+  animation: orbitExitDiagonalLeft 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitExitDiagonalLeft {
+  0% {
+    transform: rotateX(0) rotateY(0) translate(0, 0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(-45deg) rotateY(-45deg) translate(-300px, -300px) translateZ(-200px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-orbitRevealDiagonalRight {
+  animation: orbitRevealDiagonalRight 1.ca__fx-2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitRevealDiagonalRight {
+  0% {
+    transform: rotateX(45deg) rotateY(45deg) translate(300px, 300px) translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0) rotateY(0) translate(0, 0) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitExitDiagonalRight {
+  animation: orbitExitDiagonalRight 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitExitDiagonalRight {
+  0% {
+    transform: rotateX(0) rotateY(0) translate(0, 0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(45deg) rotateY(45deg) translate(300px, 300px) translateZ(-200px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-orbitRevealFromTopRight {
+  animation: orbitRevealFromTopRight 1.ca__fx-5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitRevealFromTopRight {
+  0% {
+    transform: rotateZ(-90deg) rotateY(90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitRevealFromTopLeft {
+  animation: orbitRevealFromTopLeft 1.ca__fx-5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitRevealFromTopLeft {
+  0% {
+    transform: rotateZ(90deg) rotateY(-90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitRevealFromBottomLeft {
+  animation: orbitRevealFromBottomLeft 1.ca__fx-5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitRevealFromBottomLeft {
+  0% {
+    transform: rotateZ(-90deg) rotateY(-90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitRevealFromBottomRight {
+  animation: orbitRevealFromBottomRight 1.ca__fx-5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitRevealFromBottomRight {
+  0% {
+    transform: rotateZ(90deg) rotateY(90deg) translateZ(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitSwingFromTopRight {
+  animation: orbitSwingFromTopRight 2s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSwingFromTopRight {
+  0% {
+    transform: rotateX(-90deg) rotateY(90deg) translateX(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitSwingFromTopLeft {
+  animation: orbitSwingFromTopLeft 2s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSwingFromTopLeft {
+  0% {
+    transform: rotateX(90deg) rotateY(90deg) translateX(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitSwingFromBottomLeft {
+  animation: orbitSwingFromBottomLeft 2s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSwingFromBottomLeft {
+  0% {
+    transform: rotateX(-90deg) rotateY(90deg) translateX(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitSwingFromBottomRight {
+  animation: orbitSwingFromBottomRight 2s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSwingFromBottomRight {
+  0% {
+    transform: rotateX(90deg) rotateY(90deg) translateX(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitSpiralIn {
+  animation: orbitSpiralIn 1.ca__fx-4s cubic-bezier(0.ca__fx-5, 1.ca__fx-5, 0.ca__fx-4, 1) forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSpiralIn {
+  0% {
+    transform: rotateY(720deg) rotateX(180deg) scale(0) translateZ(-600px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0) rotateX(0) scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitPopTwistIn {
+  animation-name: orbitPopTwistIn;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitPopTwistIn {
+  0% {
+    transform: scale(0.ca__fx-4) rotateX(-180deg) rotateY(-180deg) translateZ(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1) rotateX(0) rotateY(0) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitSwingFlipIn {
+  animation: orbitSwingFlipIn 1.ca__fx-3s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSwingFlipIn {
+  0% {
+    transform: rotateY(-120deg) translateX(-200px) scale(0.ca__fx-8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0deg) translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitSwingFlipOut {
+  animation-name: orbitSwingFlipOut;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSwingFlipOut {
+  0% {
+    transform: rotateY(0deg) translateX(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(120deg) translateX(200px) scale(0.ca__fx-8);
+    opacity: 0;
+  }
+}
+
+.ca__fx-orbitSwirlReveal {
+  animation-name: orbitSwirlReveal;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSwirlReveal {
+  0% {
+    transform: rotateZ(-360deg) scale(0) translateZ(-400px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateZ(0deg) scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitSwirlExit {
+  animation-name: orbitSwirlExit;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitSwirlExit {
+  0% {
+    transform: rotateZ(0deg) scale(1) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateZ(360deg) scale(0) translateZ(-400px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-orbitRollIn3D {
+  animation-name: orbitRollIn3D;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitRollIn3D {
+  0% {
+    transform: rotateX(-360deg) translateY(-200px) scale(0.ca__fx-7);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitRollOut3D {
+  animation-name: orbitRollOut3D;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitRollOut3D {
+  0% {
+    transform: rotateX(0deg) translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(360deg) translateY(-200px) scale(0.ca__fx-7);
+    opacity: 0;
+  }
+}
+
+.ca__fx-orbitTiltReveal {
+  animation-name: orbitTiltReveal;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitTiltReveal {
+  0% {
+    transform: translateX(-150px) rotateZ(-15deg) rotateY(45deg) scale(0.ca__fx-85);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0) rotateZ(0) rotateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitTiltExit {
+  animation-name: orbitTiltExit;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitTiltExit {
+  0% {
+    transform: translateX(0) rotateZ(0) rotateY(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-150px) rotateZ(-15deg) rotateY(45deg) scale(0.ca__fx-85);
+    opacity: 0;
+  }
+}
+
+.ca__fx-orbitHelixRise {
+  animation: orbitHelixRise 1.ca__fx-6s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitHelixRise {
+  0% {
+    transform: rotateY(360deg) rotateZ(180deg) translateY(200px) scale(0.ca__fx-4);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0deg) rotateZ(0deg) translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.ca__fx-orbitHelixFall {
+  animation: orbitHelixFall 1.ca__fx-4s ease-in forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes orbitHelixFall {
+  0% {
+    transform: rotateY(0deg) rotateZ(0deg) translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(-360deg) rotateZ(-180deg) translateY(200px) scale(0.ca__fx-4);
+    opacity: 0;
+  }
+}

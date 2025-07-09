@@ -1,0 +1,117 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Blur Out
+ * Filename: ca__BlurOut.ca__fx-css
+ */
+
+.ca__fx-blurOut {
+  animation-name: blurOut;
+}
+
+@keyframes blurOut {
+  85%,
+  100% {
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurOutToLeft {
+  animation-name: blurOutLeft;
+}
+
+@keyframes blurOutLeft {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurOutToRight {
+  animation-name: blurOutRight;
+}
+
+@keyframes blurOutRight {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurOutToTop {
+  animation-name: blurOutTop;
+}
+
+@keyframes blurOutTop {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.ca__fx-blurOutToBottom {
+  animation-name: blurOutBottom;
+}
+
+@keyframes blurOutBottom {
+  85%,
+  100% {
+    filter: blur(20px);
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,441 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Bounce
+ * Filename: ca__Bounce.ca__fx-css
+ */
+
+.ca__fx-bounceX {
+  animation-name: bounceX;
+}
+
+@keyframes bounceX {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale3d(1, 1, 1);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: scale3d(1.ca__fx-8, 1, 1);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale3d(1.ca__fx-5, 1, 1);
+  }
+
+  90% {
+    transform: scale3d(1.ca__fx-1, 1, 1);
+  }
+}
+
+.ca__fx-bounceY {
+  animation-name: bounceY;
+}
+
+@keyframes bounceY {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale3d(1, 1, 1);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: scale3d(1, 2, 1);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale3d(1, 1.ca__fx-5, 1);
+  }
+
+  90% {
+    transform: scale3d(1, 1.ca__fx-1, 1);
+  }
+}
+
+.ca__fx-bounceZoomOut {
+  animation-name: bounceZoomOut;
+}
+
+@keyframes bounceZoomOut {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: scale(0.ca__fx-3);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale(0.ca__fx-5);
+  }
+
+  90% {
+    transform: scale(0.ca__fx-9);
+  }
+}
+
+.ca__fx-spring {
+  animation: spring var(--spring-duration, 0.ca__fx-6s) cubic-bezier(0.ca__fx-34, 1.ca__fx-56, 0.ca__fx-64, 1) infinite;
+}
+
+@keyframes spring {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(calc(var(--spring-height, 1rem) * -1));
+  }
+}
+
+.ca__fx-boing {
+  animation: boing var(--boing-duration, 0.ca__fx-9s) cubic-bezier(0.ca__fx-28, 1.ca__fx-5, 0.ca__fx-68, 1) infinite;
+}
+
+@keyframes boing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(calc(var(--boing-height, 1rem) * -1.ca__fx-1));
+  }
+
+  50% {
+    transform: translateY(calc(var(--boing-height, 1rem) * 0.ca__fx-3));
+  }
+
+  70% {
+    transform: translateY(calc(var(--boing-height, 1rem) * -0.ca__fx-5));
+  }
+
+  90% {
+    transform: translateY(calc(var(--boing-height, 1rem) * 0.ca__fx-15));
+  }
+}
+
+.ca__fx-hop {
+  animation: hop var(--hop-duration, 0.ca__fx-5s) ease-out infinite;
+}
+
+@keyframes hop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(calc(var(--hop-height, 0.ca__fx-8rem) * -1));
+  }
+}
+
+.ca__fx-lift {
+  animation: lift var(--lift-duration, 1.ca__fx-2s) ease-in-out infinite;
+}
+
+@keyframes lift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(calc(var(--lift-height, 10px) * -1));
+  }
+}
+
+.ca__fx-popUp {
+  animation: popUp var(--popUp-duration, 0.ca__fx-5s) ease-out both;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.ca__fx-95) translateY(0);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.ca__fx-05) translateY(calc(var(--popUp-height, 8px) * -1));
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(0.ca__fx-98) translateY(calc(var(--popUp-height, 8px) * -0.ca__fx-3));
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.ca__fx-rebound {
+  animation: rebound var(--rebound-duration, 0.ca__fx-7s) ease-in-out infinite;
+}
+
+@keyframes rebound {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * -1));
+  }
+
+  40% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * 0.ca__fx-5));
+  }
+
+  60% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * -0.ca__fx-3));
+  }
+}
+
+.ca__fx-jump {
+  animation: jump var(--jump-duration, 0.ca__fx-6s) ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(calc(var(--jump-height, 1.ca__fx-2rem) * -1));
+  }
+}
+
+.ca__fx-jumping {
+  animation: jumping 1.ca__fx-2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes jumping {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.ca__fx-7;
+  }
+
+  25% {
+    transform: translateY(-20%) scale(1.ca__fx-1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(0) scale(0.ca__fx-95);
+    opacity: 0.ca__fx-8;
+  }
+
+  75% {
+    transform: translateY(-10%) scale(1.ca__fx-05);
+    opacity: 0.ca__fx-9;
+  }
+}
+
+.ca__fx-launch {
+  animation: launch var(--launch-duration, 0.ca__fx-8s) ease-out infinite;
+}
+
+@keyframes launch {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(calc(var(--launch-height, 2rem) * -1.ca__fx-2));
+  }
+
+  40% {
+    transform: translateY(calc(var(--launch-height, 2rem) * 0.ca__fx-5));
+  }
+
+  60% {
+    transform: translateY(calc(var(--launch-height, 2rem) * -0.ca__fx-3));
+  }
+
+  80% {
+    transform: translateY(calc(var(--launch-height, 2rem) * 0.ca__fx-15));
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ca__fx-levitate {
+  animation: levitate var(--levitate-duration, 2s) ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(calc(var(--levitate-height, 0.ca__fx-6rem) * -1));
+  }
+}
+
+.ca__fx-jitterJump {
+  animation: jitterJump 1.ca__fx-3s cubic-bezier(0.ca__fx-68, -0.ca__fx-55, 0.ca__fx-265, 1.ca__fx-55) infinite;
+}
+
+@keyframes jitterJump {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+
+  20% {
+    transform: translateY(-40px) scale(1.ca__fx-1, 0.ca__fx-9);
+  } /* Jump up with squash */
+
+  40% {
+    transform: translateY(0) scale(0.ca__fx-9, 1.ca__fx-1);
+  } /* Land with stretch */
+
+  60% {
+    transform: translateY(-20px) scale(1.ca__fx-05, 0.ca__fx-95);
+  } /* Smaller rebound */
+
+  80% {
+    transform: translateY(0) scale(0.ca__fx-98, 1.ca__fx-02);
+  } /* Settle */
+
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+.ca__fx-elasticJump {
+  animation: elasticJump 1.ca__fx-2s cubic-bezier(0.ca__fx-2, 0.ca__fx-8, 0.ca__fx-3, 1.ca__fx-2) infinite;
+  transform-origin: bottom center;
+  display: inline-block;
+}
+
+@keyframes elasticJump {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  30% {
+    transform: translateY(-40%) scaleY(1.ca__fx-2);
+  }
+
+  50% {
+    transform: translateY(0) scaleY(0.ca__fx-9);
+  }
+
+  70% {
+    transform: translateY(-20%) scaleY(1.ca__fx-05);
+  }
+}
+
+.ca__fx-squishyBounce {
+  animation: squishyBounce 1.ca__fx-4s ease-in-out infinite;
+  transform-origin: bottom center;
+  display: inline-block;
+}
+
+@keyframes squishyBounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+
+  25% {
+    transform: translateY(-30%) scale(1.ca__fx-1, 0.ca__fx-9);
+  }
+
+  50% {
+    transform: translateY(0) scale(0.ca__fx-95, 1.ca__fx-05);
+  }
+
+  75% {
+    transform: translateY(-15%) scale(1.ca__fx-05, 0.ca__fx-95);
+  }
+}
+
+.ca__fx-bouncyDrop {
+  animation: bouncyDrop 1.ca__fx-5s ease-in-out infinite;
+  transform-origin: top center;
+  display: inline-block;
+}
+
+@keyframes bouncyDrop {
+  0% {
+    transform: translateY(-100%) scaleY(1.ca__fx-2);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateY(10%) scaleY(0.ca__fx-8);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateY(-5%) scaleY(1.ca__fx-1);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}

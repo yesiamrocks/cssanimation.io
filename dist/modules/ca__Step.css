@@ -1,0 +1,301 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Step Animation
+ * Filename: ca__ttep.ca__fx-css
+ */
+
+.ca__fx-stepTypeIn {
+  animation: stepTypeIn 1.ca__fx-2s steps(10, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  will-change: opacity, transform;
+}
+
+@keyframes stepTypeIn {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  80% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-stepSlideInX {
+  animation: stepSlideInX 0.ca__fx-8s steps(6, end) forwards;
+  transform: translateX(-50px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepSlideInX {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-stepSlideOutX {
+  animation: stepSlideOutX 0.ca__fx-8s steps(6, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepSlideOutX {
+  to {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-stepZoomIn {
+  animation: stepZoomIn 0.ca__fx-9s steps(7, end) forwards;
+  transform: scale(2);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepZoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.ca__fx-stepZoomOut {
+  animation: stepZoomOut 0.ca__fx-9s steps(7, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepZoomOut {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.ca__fx-stepFadeUp {
+  animation: stepFadeUp 1s steps(5, end) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+
+@keyframes stepFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ca__fx-stepFadeDown {
+  animation: stepFadeDown 1s steps(5, end) forwards;
+  will-change: opacity, transform;
+}
+
+@keyframes stepFadeDown {
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-stepGlitchIn {
+  animation: stepGlitchIn 1.ca__fx-1s steps(8, end) forwards;
+  opacity: 0;
+  transform: skewX(-15deg) scale(1.ca__fx-3);
+  filter: blur(2px) brightness(1.ca__fx-5);
+  will-change: transform, opacity, filter;
+}
+
+@keyframes stepGlitchIn {
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+.ca__fx-stepGlitchOut {
+  animation: stepGlitchOut 1.ca__fx-1s steps(8, end) forwards;
+  will-change: transform, opacity, filter;
+}
+
+@keyframes stepGlitchOut {
+  to {
+    opacity: 0;
+    transform: skewX(-15deg) scale(1.ca__fx-3);
+    filter: blur(2px) brightness(1.ca__fx-5);
+  }
+}
+
+.ca__fx-slideInSteps {
+  animation-name: slideInSteps;
+  animation-duration: 2s;
+  animation-timing-function: steps(5, end);
+  transform: translateX(0);
+}
+
+@keyframes slideInSteps {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.ca__fx-stepRotateIn {
+  animation: stepRotateIn 0.ca__fx-9s steps(8, end) forwards;
+  transform: rotate(-90deg);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepRotateIn {
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.ca__fx-stepRotateOut {
+  animation: stepRotateOut 0.ca__fx-9s steps(8, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepRotateOut {
+  to {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.ca__fx-stepJumpIn {
+  animation: stepJumpIn 1s steps(5, end) forwards;
+  transform: translateY(100%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepJumpIn {
+  80% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ca__fx-stepJumpOut {
+  display: inline-block;
+  animation: stepJumpOut 1s steps(5, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepJumpOut {
+  20% {
+    transform: translateY(-10%);
+    opacity: 0.ca__fx-9;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.ca__fx-stepScalePopIn {
+  animation: stepScalePopIn 0.ca__fx-7s steps(4, end) forwards;
+  transform: scale(0.ca__fx-4);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes stepScalePopIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.ca__fx-stepScalePopOut {
+  animation: stepScalePopOut 0.ca__fx-7s steps(4, end) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes stepScalePopOut {
+  to {
+    transform: scale(0.ca__fx-4);
+    opacity: 0;
+  }
+}
+
+.ca__fx-stepBlurReveal {
+  animation: stepBlurReveal 1s steps(6, end) forwards;
+  filter: blur(8px);
+  opacity: 0.ca__fx-2;
+  will-change: filter, opacity;
+}
+
+@keyframes stepBlurReveal {
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.ca__fx-stepBlurOut {
+  animation: stepBlurOut 1s steps(6, end) forwards;
+  will-change: filter, opacity;
+}
+
+@keyframes stepBlurOut {
+  to {
+    filter: blur(8px);
+    opacity: 0.ca__fx-2;
+  }
+}

@@ -21,7 +21,7 @@ You're in control. Just apply the [class names](https://yesiamrocks.github.io/cs
 - Zero JavaScript Dependencies: Keep your project lean and fast.
 - Modern Dev Friendly: Works great with Tailwind CSS, React, and your favorite build tools.
 
-## 🛠️ Get Started: Installation
+## Get Started: Installation
 
 Choose the method that fits your workflow best.
 
@@ -62,13 +62,6 @@ For Letter Animations (JavaScript required for this part):
 import '@hellouxpavel/cssanimation/letter';
 ```
 
-For Letter Animations (JavaScript required for this part):
-
-```bash
-//Trigger-based animation control for HTML elements
-import '@hellouxpavel/cssanimation/trigger';
-```
-
 ### Install via CDN
 
 Quickly add **cssanimation** to your HTML. Include these lines in your `<head>`tag:
@@ -86,7 +79,7 @@ Quickly add **cssanimation** to your HTML. Include these lines in your `<head>`t
 </head>
 ```
 
-### 🧩 How to Use It
+### How to Use It
 
 Once installed, simply add the base`.cssanimation` to your element, along with your chosen animation class like `.ca__fx-FadeIn` for fade in animation.
 
@@ -96,7 +89,7 @@ Once installed, simply add the base`.cssanimation` to your element, along with y
 
 _That's it! You've got a CSS animated element. Super! 🎉_
 
-For the demo and list of animation class name [click here](https://yesiamrocks.github.io/cssanimation.io/index.html).
+For the demo and list of animation class name [click here](https://yesiamrocks.github.io/cssanimation.io/).
 
 ### Understanding Our Class Prefixes
 
@@ -107,42 +100,60 @@ We use clear prefixes to help you find the right animation or utility class.
 | `ca__fx-` | Visual FX animations (pure CSS)                  | `<h1 class="ca__fx-bounceX">`   |
 | `ca__u-`  | Utility classes (pure CSS spacing, layout, etc.) | `<h1 class="ca__u-speedChill">` |
 
-## 📦 Modular Import
+## Modular Import
 
-Want to keep your bundle size minimal? Only import the effects you actually use!
+Want to keep your CSS bundle size minimal? You can import only the **animation groups** or **individual effects** you actually use!
 
 HTML
 
 ```html
-<link rel="stylesheet" href="./dist/modules/ca__FadeIn.css" />
+<!-- Grouped animation (e.g., ca__BlurIn module) -->
+<link rel="stylesheet" href="./dist/modules/ca__BlurIn.css" />
 ```
 
-CSS or SCSS
+CSS, SCSS or JavaScript (Webpack, Vite, Rollup)
 
 ```CSS
-@import './dist/modules/ca__fx-fadeIn.css';
-```
-
-JavaScript (Webpack/Vite/Rollup)
-
-```js
-import './dist/modules/ca__fx-fadeIn.css';
+// Grouped module
+@import './dist/modules/ca__BlurIn.css';
 ```
 
 #### Available Modules
 
-Each module is generated from `./dist/cssanimation.css` and follows the naming convention: `ca__fx-[animationName].css`. Check out the `./dist/modules/` folder to see them all!
+Check out the `./dist/modules/` folder to see all available animation groups:
 
-| Module      | File                                    |
-| ----------- | --------------------------------------- |
-| Blur In     | `./dist/modules/ca__fx-blurIn.css`      |
-| Blur Out    | `./dist/modules/ca__fx-blurOutLeft.css` |
-| Jello       | `./dist/modules/ca__fx-jello.css`       |
-| Jitter      | `./dist/modules/ca__fx-jitter.css`      |
-| Quiver      | `./dist/modules/ca__fx-quiver.css`      |
-| ...and more | See `./dist/modules/` folder            |
+| Module                  | File                             |
+| ----------------------- | -------------------------------- |
+| Blob Animation Group    | `./dist/modules/ca__Blob.css`    |
+| Blur In Animation Group | `./dist/modules/ca__BlurIn.css`  |
+| Bounce Animation Group  | `./dist/modules/ca__Bounce.css`  |
+| Elastic Animation Group | `./dist/modules/ca__Elastic.css` |
+| FadeIn Animation Group  | `./dist/modules/ca__FadeIn.css`  |
+| ...and more             | See `./dist/modules/` folder     |
 
-## 🧰 Utility Class
+## Individual Animation Imports
+
+Need just one animation, like `fadeIn`, `bounceX`, or `zoomIn`? You can import individual effect files too.
+
+HTML
+
+```html
+<!-- Individual effect (e.g., fadeIn only) -->
+<link rel="stylesheet" href="./dist/animations/fadeIn.css" />
+```
+
+CSS, SCSS or JavaScript (Webpack, Vite, Rollup)
+
+```CSS
+// Individual effect
+@import './dist/animations/fadeIn.css';
+```
+
+#### Available Individual Effects
+
+Each file in the `./dist/animations/` folder is a standalone animation with scoped styles and keyframes. Explore and import only what you need!
+
+## Utility Class
 
 **cssanimation** also provides a powerful set of pre-built utility classes to fine-tune your animations. Use them alongside the `.cssanimation` base class and your chosen animation class.
 
@@ -157,29 +168,20 @@ Check out the full list and details in [`cssanimation-utilities.md`](./reference
 
 ### 🎉 That’s It!
 
-<br><br>
+<br>
+<div style="background: #FCEF91; padding: 1em; border-radius: 6px; border: 1px solid #f0e68c; color: #333;">
 
-## 🧩 Discover More CSS Animation Plugins
+<h3 style="margin-top: 0;"> Enhance Your {css}animation with Triggers</h3>
 
-Each plugin in this library is designed to be lightweight, flexible, and easy to integrate — whether you're building UI transitions, scroll effects, or expressive text animations.
+<p>
+Want to activate your <strong>{css}animation</strong> classes on click, hover, scroll, or keyboard input?<br>
+Use <a href="https://github.com/yesiamrocks/triggle"><strong>Triggle</strong></a> — a lightweight, no-dependency library built to trigger animations with simple <code>data-triggle*</code> attributes.
+</p>
 
-### `ca-letteranimation.js` Text & Letter Animations Plugin
+<p><em>Perfect companion for <code>cssanimation.css</code> — no JavaScript expertise needed.</em></p>
 
-With the `ca-letteranimation.js` plugin Bring your typography to life with letter-by-letter, word-by-word, and line-by-line animations.
-
-👉 [Explore all animation and docs](./text-animation.md)
-
----
-
-### `ca-trigger.js` Trigger-based Animation Control
-
-Take full control of when animations happen.
-
-The `ca-trigger.js` plugin lets you trigger any cssanimation effect using simple HTML attributes tied to user interactions like clicks, key presses, or custom events. It's lightweight, flexible, and perfect for interactive UI moments.
-
-👉 [Explore Trigger-based Animation docs](./trigger-animation.md)
-
-<br><br>
+</div>
+<br>
 
 ## Accessibility: Respecting User Preferences
 

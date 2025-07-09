@@ -1,0 +1,266 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+.ca__fx-scifiFlickerIn {
+  animation: flickerIn 1.ca__fx-5s steps(10, end) forwards;
+  opacity: 0;
+  transform: scale(0.ca__fx-8) translateY(-20px);
+}
+
+@keyframes flickerIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.ca__fx-8) translateY(-20px) rotateX(10deg);
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.ca__fx-2);
+  }
+
+  10% {
+    opacity: 0.ca__fx-2;
+    transform: scale(1.ca__fx-05) translateY(5px) rotateX(-5deg);
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.ca__fx-5);
+  }
+
+  20% {
+    opacity: 0;
+    transform: scale(0.ca__fx-9) translateY(-10px) rotateX(0deg);
+    text-shadow: none;
+  }
+
+  30% {
+    opacity: 0.ca__fx-6;
+    transform: scale(1.ca__fx-02) translateY(0px) rotateX(2deg);
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.ca__fx-4);
+  }
+
+  40% {
+    opacity: 0.ca__fx-1;
+    transform: scale(0.ca__fx-95) translateY(-5px) rotateX(0deg);
+    text-shadow: none;
+  }
+
+  50% {
+    opacity: 0.ca__fx-8;
+    transform: scale(1.ca__fx-01) translateY(0px) rotateX(-1deg);
+    text-shadow: 0 0 12px rgba(0, 255, 204, 0.ca__fx-6);
+  }
+
+  60% {
+    opacity: 0.ca__fx-3;
+    transform: scale(0.ca__fx-98) translateY(-2px) rotateX(1deg);
+    text-shadow: none;
+  }
+
+  70% {
+    opacity: 0.ca__fx-9;
+    transform: scale(1) translateY(0px) rotateX(0deg);
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.ca__fx-7);
+  }
+
+  80% {
+    opacity: 0.ca__fx-5;
+    transform: scale(0.ca__fx-99) translateY(0px) rotateX(0deg);
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0px) rotateX(0deg);
+    text-shadow:
+      0 0 20px rgba(0, 255, 204, 0.ca__fx-8),
+      0 0 30px rgba(0, 255, 204, 0.ca__fx-5);
+  }
+}
+
+.ca__fx-digitalScanlineReveal {
+  animation: scanlineReveal 3s steps(15, end) forwards;
+  opacity: 0;
+  transform: translateY(10px);
+  text-shadow: none;
+}
+
+@keyframes scanlineReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    text-shadow:
+      0 -2px 0 #005544,
+      0 2px 0 #00ffaa; /* Initial scanline effect */
+  }
+
+  10% {
+    opacity: 0.ca__fx-2;
+    transform: translateY(-5px);
+    text-shadow:
+      0 -1px 0 #006655,
+      0 1px 0 #00cc88;
+  }
+
+  20% {
+    opacity: 0.ca__fx-1;
+    transform: translateY(8px);
+    text-shadow:
+      0 -3px 0 #004433,
+      0 3px 0 #00ee99;
+  }
+
+  30% {
+    opacity: 0.ca__fx-5;
+    transform: translateY(-2px);
+    text-shadow:
+      0 -1px 0 #007766,
+      0 1px 0 #00dd99;
+  }
+
+  40% {
+    opacity: 0.ca__fx-3;
+    transform: translateY(5px);
+    text-shadow:
+      0 -2px 0 #005544,
+      0 2px 0 #00ffaa;
+  }
+
+  50% {
+    opacity: 0.ca__fx-7;
+    transform: translateY(0px);
+    text-shadow:
+      0 -1px 0 #008877,
+      0 1px 0 #00eeaa;
+  }
+
+  60% {
+    opacity: 0.ca__fx-4;
+    transform: translateY(3px);
+    text-shadow:
+      0 -1px 0 #006655,
+      0 1px 0 #00cc88;
+  }
+
+  70% {
+    opacity: 0.ca__fx-8;
+    transform: translateY(0px);
+    text-shadow:
+      0 0 5px rgba(0, 255, 170, 0.ca__fx-5),
+      0 0 10px rgba(0, 255, 170, 0.ca__fx-3);
+  }
+
+  80% {
+    opacity: 0.ca__fx-6;
+    transform: translateY(1px);
+    text-shadow: 0 0 3px rgba(0, 255, 170, 0.ca__fx-4);
+  }
+
+  90% {
+    opacity: 0.ca__fx-95;
+    transform: translateY(0px);
+    text-shadow:
+      0 0 10px rgba(0, 255, 170, 0.ca__fx-7),
+      0 0 20px rgba(0, 255, 170, 0.ca__fx-4);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    text-shadow:
+      0 0 15px rgba(0, 255, 170, 0.ca__fx-8),
+      0 0 25px rgba(0, 255, 170, 0.ca__fx-6); /* Final subtle glow */
+  }
+}
+
+.ca__fx-scifiDigitalReveal {
+  animation: digitalReveal 3s ease-out forwards;
+  opacity: 0;
+  filter: blur(10px);
+  clip-path: inset(0 100% 0 0);
+  text-shadow: 0 0 5px rgba(0, 255, 204, 0.ca__fx-4);
+}
+
+@keyframes digitalReveal {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    clip-path: inset(0 100% 0 0); /* Fully clipped from right */
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.ca__fx-4);
+  }
+
+  10% {
+    opacity: 0.ca__fx-2;
+    filter: blur(8px);
+    clip-path: inset(0 80% 0 0); /* Partially revealed */
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.ca__fx-6);
+  }
+
+  30% {
+    opacity: 0.ca__fx-6;
+    filter: blur(4px);
+    clip-path: inset(0 50% 0 0); /* Half revealed */
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.ca__fx-8);
+  }
+
+  50% {
+    opacity: 0.ca__fx-9;
+    filter: blur(2px);
+    clip-path: inset(0 10% 0 0); /* Almost fully revealed */
+    text-shadow: 0 0 20px rgba(0, 255, 204, 0.ca__fx-9);
+  }
+
+  70% {
+    opacity: 1;
+    filter: blur(0px);
+    clip-path: inset(0 0% 0 0); /* Fully revealed */
+    text-shadow:
+      0 0 25px rgba(0, 255, 204, 1),
+      0 0 35px rgba(0, 255, 204, 0.ca__fx-7);
+  }
+
+  80% {
+    filter: blur(1px);
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.ca__fx-6);
+  }
+
+  90% {
+    filter: blur(0px);
+    text-shadow:
+      0 0 25px rgba(0, 255, 204, 1),
+      0 0 35px rgba(0, 255, 204, 0.ca__fx-7);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    clip-path: inset(0 0% 0 0); /* Final state, fully visible */
+    text-shadow:
+      0 0 20px rgba(0, 255, 204, 0.ca__fx-8),
+      0 0 30px rgba(0, 255, 204, 0.ca__fx-5);
+  }
+}

@@ -1,0 +1,126 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Swing In
+ * Filename: ca__SwingIn.ca__fx-css
+ */
+
+.ca__fx-swing {
+  transform-origin: top center;
+  animation: swing var(--swing-duration, 1s) ease-in-out infinite;
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
+.ca__fx-swingInLeft {
+  animation-name: swingInLeft;
+}
+
+@keyframes swingInLeft {
+  0% {
+    transform: matrix(3, 0, 0, 3, -800, 0);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: matrix(1.ca__fx-3, 0, 0, 1.ca__fx-3, 20, 0);
+  }
+}
+
+.ca__fx-swingInRight {
+  animation-name: swingInRight;
+}
+
+@keyframes swingInRight {
+  0% {
+    transform: matrix(3, 0, 0, 3, 800, 0);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: matrix(1.ca__fx-3, 0, 0, 1.ca__fx-3, -20, 0);
+  }
+}
+
+.ca__fx-swingInTop {
+  animation-name: swingInTop;
+}
+
+@keyframes swingInTop {
+  0% {
+    transform: matrix(3, 0, 0, 3, 0, -800);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: matrix(1.ca__fx-3, 0, 0, 1.ca__fx-3, 0, 20);
+  }
+}
+
+.ca__fx-swingInBottom {
+  animation-name: swingInBottom;
+}
+
+@keyframes swingInBottom {
+  0% {
+    transform: matrix(3, 0, 0, 3, 0, 800);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: matrix(1.ca__fx-3, 0, 0, 1.ca__fx-3, 0, -20);
+  }
+}

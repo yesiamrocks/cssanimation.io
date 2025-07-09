@@ -1,0 +1,309 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Moon 
+ * Filename: ca__Moon.ca__fx-css
+ */
+
+.ca__fx-moonEclipseIn {
+  animation: moonEclipseIn 1.ca__fx-6s ease-out both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes moonEclipseIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.ca__fx-3) rotate(10deg);
+    filter: brightness(0) blur(12px);
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: none;
+    clip-path: circle(100% at 50% 50%);
+  }
+}
+
+.ca__fx-moonEclipseOut {
+  animation: moonEclipseOut 1.ca__fx-4s ease-in both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes moonEclipseOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    clip-path: circle(100% at 50% 50%);
+    filter: none;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.ca__fx-3) rotate(-10deg);
+    clip-path: circle(0% at 50% 50%);
+    filter: brightness(0) blur(10px);
+  }
+}
+
+.ca__fx-moonSlideInCrescent {
+  animation: moonSlideInCrescent 1.ca__fx-4s ease-out both;
+  clip-path: ellipse(0% 100% at 0% 50%);
+  will-change: transform, opacity;
+}
+
+@keyframes moonSlideInCrescent {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+    clip-path: ellipse(0% 100% at 0% 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
+}
+
+.ca__fx-moonSliceReveal {
+  animation: moonSliceReveal 1.ca__fx-2s ease-out both;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  will-change: transform, opacity;
+}
+
+@keyframes moonSliceReveal {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    opacity: 0;
+    transform: scale(1.ca__fx-8);
+    filter: blur(4px);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+.ca__fx-crescentOrbitRevealLeft {
+  animation: crescentOrbitRevealLeft 1.ca__fx-6s ease-out both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes crescentOrbitRevealLeft {
+  0% {
+    transform: translateX(-100%) rotate(-45deg) scale(0.ca__fx-8);
+    opacity: 0;
+    clip-path: ellipse(0% 100% at 0% 50%);
+  }
+
+  60% {
+    opacity: 1;
+    clip-path: ellipse(60% 100% at 50% 50%);
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
+}
+
+.ca__fx-crescentOrbitRevealRight {
+  animation: crescentOrbitRevealRight 1.ca__fx-6s ease-out both;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes crescentOrbitRevealRight {
+  0% {
+    transform: translateX(100%) rotate(45deg) scale(0.ca__fx-8);
+    opacity: 0;
+    clip-path: ellipse(0% 100% at 100% 50%);
+  }
+
+  60% {
+    opacity: 1;
+    clip-path: ellipse(60% 100% at 50% 50%);
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0deg) scale(1);
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
+}
+
+.ca__fx-moonSliceUp {
+  animation: moonSliceUp 1.ca__fx-4s ease-out both;
+  clip-path: inset(100% 0 0 0);
+  will-change: transform, opacity;
+}
+
+@keyframes moonSliceUp {
+  0% {
+    clip-path: inset(100% 0 0 0);
+    transform: translateY(20%);
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  100% {
+    clip-path: inset(0% 0 0 0);
+    transform: translateY(0%);
+    opacity: 1;
+    filter: none;
+  }
+}
+
+.ca__fx-moonPhaseReveal {
+  animation: moonPhaseReveal 1.ca__fx-6s ease-out both;
+  clip-path: circle(0% at 50% 50%);
+  will-change: transform, opacity;
+}
+
+@keyframes moonPhaseReveal {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+    transform: scale(0.ca__fx-9);
+    filter: brightness(0.ca__fx-2) blur(8px);
+  }
+
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+.ca__fx-lunarVeilIn {
+  animation: lunarVeilIn 1.ca__fx-5s ease-out both;
+  clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 100%);
+  will-change: transform, opacity;
+}
+
+@keyframes lunarVeilIn {
+  0% {
+    clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 100%);
+    opacity: 0;
+    transform: scale(1.ca__fx-05);
+    filter: blur(5px);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+.ca__fx-moonRippleGlow {
+  animation: moonRippleGlow 2.ca__fx-8s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes moonRippleGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.ca__fx-1);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+}
+
+.ca__fx-moonDustFloat {
+  animation: moonDustFloat 2.ca__fx-2s ease-out both;
+  will-change: transform, opacity;
+}
+
+@keyframes moonDustFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20%) scale(1.ca__fx-1);
+    filter: blur(8px) grayscale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    filter: none;
+  }
+}
+
+.ca__fx-moonTiltRise {
+  animation: moonTiltRise 1.ca__fx-7s ease-out both;
+  transform-origin: bottom left;
+  will-change: transform, opacity;
+}
+
+@keyframes moonTiltRise {
+  0% {
+    transform: translateY(60%) rotate(-15deg);
+    opacity: 0;
+    filter: brightness(0.ca__fx-4) blur(5px);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+    filter: none;
+  }
+}
+
+.ca__fx-moonCyclePulse {
+  animation: moonCyclePulse 3.ca__fx-5s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes moonCyclePulse {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.ca__fx-3);
+  }
+}

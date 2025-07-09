@@ -1,0 +1,112 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Perspective
+ * Filename: ca__Perspective.ca__fx-css
+ */
+
+.ca__fx-perspectiveToTop {
+  animation-name: perspectiveToTop;
+  transform: perspective(500px);
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes perspectiveToTop {
+  0% {
+    transform: perspective(500px) rotateX(0deg) translateY(0) translateZ(0);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(500px) rotateX(90deg) translateY(-100px) translateZ(-150px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-perspectiveToBottom {
+  animation-name: perspectiveToBottom;
+  transform: perspective(500px);
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+}
+
+@keyframes perspectiveToBottom {
+  0% {
+    transform: perspective(500px) rotateX(0deg) translateY(0) translateZ(0);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(500px) rotateX(-90deg) translateY(100px) translateZ(-150px);
+    opacity: 0;
+  }
+}
+
+.ca__fx-bounceInFromBottom {
+  animation-name: bounceInFromBottom;
+  animation-timing-function: cubic-bezier(0.ca__fx-25, 0.ca__fx-46, 0.ca__fx-45, 0.ca__fx-94); /* Can be customized for different bounce feels */
+}
+
+@keyframes bounceInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Starts far below */
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-20%); /* Bounces up higher than final position */
+  }
+
+  80% {
+    transform: translateY(5%); /* Bounces down slightly */
+  }
+
+  100% {
+    transform: translateY(0); /* Settles at final position */
+    opacity: 1;
+  }
+}

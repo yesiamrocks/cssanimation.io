@@ -1,0 +1,308 @@
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+
+/**
+ * Module: Magical FX Pack
+ * Filename: ca__imaginative.ca__fx-css
+ */
+.ca__fx-sparklePopIn {
+  animation-name: sparklePopIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  filter: brightness(1.ca__fx-5);
+  will-change: transform, opacity;
+}
+
+@keyframes sparklePopIn {
+  0% {
+    transform: scale(0.ca__fx-3) rotate(-15deg);
+    opacity: 0;
+    filter: brightness(3) blur(4px);
+  }
+
+  60% {
+    transform: scale(1.ca__fx-1) rotate(5deg);
+    filter: brightness(1.ca__fx-8);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+    filter: none;
+    opacity: 1;
+  }
+}
+
+.ca__fx-wandReveal {
+  animation-name: wandReveal;
+  animation-timing-function: ease-out;
+  transform-origin: left center;
+  will-change: transform, opacity;
+}
+
+@keyframes wandReveal {
+  0% {
+    transform: translateX(-60%) rotate(-15deg);
+    opacity: 0;
+    filter: drop-shadow(0 0 8px gold);
+  }
+
+  80% {
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.ca__fx-6));
+  }
+
+  100% {
+    transform: translateX(0%) rotate(0);
+    filter: none;
+    opacity: 1;
+  }
+}
+
+.ca__fx-magicDustExit {
+  animation-name: magicDustExit;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes magicDustExit {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+
+  60% {
+    opacity: 0.ca__fx-5;
+    transform: scale(1.ca__fx-1) translateY(-10%);
+    filter: blur(4px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.ca__fx-2) translateY(-40%);
+    filter: blur(10px);
+  }
+}
+
+.ca__fx-scanReveal {
+  animation-name: scanReveal;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes scanReveal {
+  0% {
+    transform: scaleY(0) skewY(-20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scaleY(1.ca__fx-1) skewY(5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1) skewY(0deg);
+  }
+}
+
+.ca__fx-systemBootIn {
+  animation: systemBootIn 1.ca__fx-4s ease-out both;
+  transform-origin: top;
+  filter: grayscale(1);
+  will-change: transform, opacity;
+}
+
+@keyframes systemBootIn {
+  0% {
+    transform: scaleY(0.ca__fx-5) translateY(-30%);
+    filter: grayscale(1) blur(4px);
+    opacity: 0;
+  }
+
+  70% {
+    transform: scaleY(1.ca__fx-1);
+    filter: grayscale(0.ca__fx-3);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    filter: none;
+  }
+}
+
+.ca__fx-signalDropOut {
+  animation-name: signalDropOut;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes signalDropOut {
+  0% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+
+  50% {
+    transform: scale(1.ca__fx-05) translateY(-10%);
+    filter: brightness(1.ca__fx-5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.ca__fx-8) translateY(20%);
+    filter: brightness(0.ca__fx-3);
+  }
+}
+
+.ca__fx-approveBounce {
+  animation-name: approveBounce;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes approveBounce {
+  0% {
+    transform: scale(0.ca__fx-5);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.ca__fx-2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ca__fx-whisperFloatIn {
+  animation: whisperFloatIn 1.ca__fx-4s ease-out both;
+  transform-origin: center;
+}
+
+@keyframes whisperFloatIn {
+  0% {
+    transform: translateY(30%) scale(0.ca__fx-95);
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  70% {
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
+
+.ca__fx-aetherGlowRise {
+  animation: aetherGlowRise 1.ca__fx-5s ease-out both;
+  transform-origin: bottom center;
+}
+
+@keyframes aetherGlowRise {
+  0% {
+    transform: translateY(80%) scale(0.ca__fx-8);
+    opacity: 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.ca__fx-4);
+  }
+
+  50% {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.ca__fx-2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    box-shadow: none;
+  }
+}
+
+.ca__fx-glintReveal {
+  animation-name: glintReveal;
+  animation-timing-function: ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.ca__fx-glintReveal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.ca__fx-3) 50%, transparent 100%);
+  transform: skewX(-30deg);
+  animation: glintSweep 1s ease-out forwards;
+}
+
+@keyframes glintSweep {
+  to {
+    left: 125%;
+  }
+}
+
+.ca__fx-enchantFloatDrop {
+  animation: enchantFloatDrop 1.ca__fx-6s ease-in-out both;
+  transform-origin: center;
+}
+
+@keyframes enchantFloatDrop {
+  0% {
+    transform: translateY(-100%) scale(1.ca__fx-2);
+    opacity: 0;
+    filter: brightness(1.ca__fx-5) blur(3px);
+  }
+
+  70% {
+    transform: translateY(5%) scale(1.ca__fx-05);
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    filter: none;
+  }
+}
