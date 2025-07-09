@@ -1,0 +1,74 @@
+/*!
+ * Module: bounceInFromBottom Animation
+ * Usage: <div class="cssanimation ca__bounceInFromBottom">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-bounceInFromBottom {
+  animation-name: bounceInFromBottom;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Can be customized for different bounce feels */
+}
+
+@keyframes bounceInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Starts far below */
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-20%); /* Bounces up higher than final position */
+  }
+
+  80% {
+    transform: translateY(5%); /* Bounces down slightly */
+  }
+
+  100% {
+    transform: translateY(0); /* Settles at final position */
+    opacity: 1;
+  }
+}
+/**
+ * Module: Playful
+ * Filename: ca__Playful.css
+ */
+.ca__fx-snapGridEntry {
+  animation-name: snapGridEntry;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.5, 1);
+  transform-origin: center;
+  will-change: transform, opacity;
+}

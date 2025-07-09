@@ -1,0 +1,61 @@
+/*!
+ * Module: glitchSliceInTilt Animation
+ * Usage: <div class="cssanimation ca__glitchSliceInTilt">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-glitchSliceInTilt {
+  animation-name: glitchSliceInTilt;
+}
+
+@keyframes glitchSliceInTilt {
+  0% {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+    transform: skew(8deg, -2deg) scaleY(0.8);
+  }
+
+  50% {
+    clip-path: inset(60% 0 10% 0);
+    transform: skew(-5deg, 1deg);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: skew(0, 0) scaleY(1);
+  }
+}

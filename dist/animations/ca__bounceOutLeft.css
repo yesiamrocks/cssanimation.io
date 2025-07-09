@@ -1,0 +1,67 @@
+/*!
+ * Module: bounceOutLeft Animation
+ * Usage: <div class="cssanimation ca__bounceOutLeft">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-bounceOutLeft {
+  animation-name: bounceOutLeft;
+}
+
+@keyframes bounceOutLeft {
+  18%,
+  33%,
+  48% {
+    opacity: 1;
+  }
+
+  18% {
+    transform: translate3d(27px, 0, 0);
+  }
+
+  33% {
+    transform: translate3d(-12px, 0, 0);
+  }
+
+  48% {
+    transform: translate3d(8px, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(-300%, 0, 0);
+  }
+}

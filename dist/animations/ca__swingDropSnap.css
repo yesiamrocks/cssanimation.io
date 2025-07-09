@@ -1,0 +1,60 @@
+/*!
+ * Module: swingDropSnap Animation
+ * Usage: <div class="cssanimation ca__swingDropSnap">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-swingDropSnap {
+  animation-name: swingDropSnap;
+  animation-timing-function: cubic-bezier(0.25, 0.85, 0.5, 1.25);
+  transform-origin: top center;
+}
+
+@keyframes swingDropSnap {
+  0% {
+    transform: translateY(-90%) rotate(10deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(5%) rotate(-5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}

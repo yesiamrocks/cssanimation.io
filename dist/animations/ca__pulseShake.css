@@ -1,0 +1,73 @@
+/*!
+ * Module: pulseShake Animation
+ * Usage: <div class="cssanimation ca__pulseShake">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-pulseShake {
+  animation-name: pulseShake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseShake {
+  90% {
+    transform: scale(1);
+  }
+
+  92% {
+    transform: scale(1.2);
+  }
+
+  96% {
+    transform: scale(1, 1);
+  }
+
+  98% {
+    transform: scale(1.1);
+  }
+}
+/**
+ * Module: Kick out
+ * Filename: ca__KickOut.css
+ */
+.ca__fx-kickOutBehind {
+  animation-name: kickOutBehind;
+  transform-origin: top;
+  backface-visibility: var(--cssanimation-backface-visibility);
+  transform-style: var(--cssanimation-transform-style);
+  will-change: var(--cssanimation-will-change);
+  animation-timing-function: cubic-bezier(0, 0.9, 0.7, 1.45);
+}

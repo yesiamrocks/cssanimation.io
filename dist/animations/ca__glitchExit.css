@@ -1,0 +1,66 @@
+/*!
+ * Module: glitchExit Animation
+ * Usage: <div class="cssanimation ca__glitchExit">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-glitchExit {
+  animation-name: glitchExit;
+  animation-timing-function: steps(2);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  will-change: transform, opacity;
+}
+
+@keyframes glitchExit {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  30% {
+    transform: translate(4px, -2px);
+  }
+
+  60% {
+    transform: translate(-4px, 2px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-10px, 10px) scale(0.9);
+  }
+}

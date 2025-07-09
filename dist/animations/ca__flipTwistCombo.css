@@ -1,0 +1,62 @@
+/*!
+ * Module: flipTwistCombo Animation
+ * Usage: <div class="cssanimation ca__flipTwistCombo">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-flipTwistCombo {
+  animation-name: flipTwistCombo;
+  animation-duration: 1.5s;
+  transform-origin: top right;
+  will-change: transform, opacity;
+  animation-timing-function: cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+
+@keyframes flipTwistCombo {
+  0% {
+    transform: perspective(1000px) rotateX(90deg) rotateY(60deg) rotateZ(-30deg) translate(50%, -100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0%, 0%);
+  }
+}

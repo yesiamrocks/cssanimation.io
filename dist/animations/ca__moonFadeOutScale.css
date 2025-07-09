@@ -1,0 +1,65 @@
+/*!
+ * Module: moonFadeOutScale Animation
+ * Usage: <div class="cssanimation ca__moonFadeOutScale">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-moonFadeOutScale {
+  animation: moonFadeOutScale 1.7s ease-in both;
+  will-change: transform, opacity;
+}
+
+@keyframes moonFadeOutScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    filter: none;
+  }
+
+  100% {
+    transform: scale(0.85);
+    opacity: 0;
+    filter: brightness(0.2) blur(10px);
+  }
+}
+/**
+ * Module: Move From
+ * Filename: ca__MoveFrom.css
+ */
+.ca__fx-moveFromLeft {
+  animation-name: moveFromLeft;
+  animation-timing-function: ease-out;
+}

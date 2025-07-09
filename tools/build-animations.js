@@ -107,8 +107,8 @@ if (animationData.size === 0) {
 
 for (const [baseName, data] of animationData.entries()) {
   if (data.classCode || data.keyframesCode) {
-    //const fullFileName = `ca__fx-${baseName}`;
-    const fullFileName = baseName;
+    const fullFileName = `ca__${baseName}`;
+    //const fullFileName = baseName;
     const cssFilePath = path.join(outputDir, `${fullFileName}.css`);
 
     // --- Module Content Assembly ---

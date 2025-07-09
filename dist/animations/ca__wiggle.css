@@ -1,0 +1,62 @@
+/*!
+ * Module: wiggle Animation
+ * Usage: <div class="cssanimation ca__wiggle">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-wiggle {
+  transform-origin: center center;
+  animation: wiggle var(--wiggle-duration, 1s) ease-in-out both;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+
+  50% {
+    transform: rotate(calc(var(--wiggle-angle, 4deg) * -1));
+  }
+
+  75% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+}

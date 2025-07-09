@@ -1,0 +1,126 @@
+/*!
+ * Module: scanlineReveal Animation
+ * Usage: <div class="cssanimation ca__scanlineReveal">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+@keyframes scanlineReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    text-shadow:
+      0 -2px 0 #005544,
+      0 2px 0 #00ffaa; /* Initial scanline effect */
+  }
+
+  10% {
+    opacity: 0.2;
+    transform: translateY(-5px);
+    text-shadow:
+      0 -1px 0 #006655,
+      0 1px 0 #00cc88;
+  }
+
+  20% {
+    opacity: 0.1;
+    transform: translateY(8px);
+    text-shadow:
+      0 -3px 0 #004433,
+      0 3px 0 #00ee99;
+  }
+
+  30% {
+    opacity: 0.5;
+    transform: translateY(-2px);
+    text-shadow:
+      0 -1px 0 #007766,
+      0 1px 0 #00dd99;
+  }
+
+  40% {
+    opacity: 0.3;
+    transform: translateY(5px);
+    text-shadow:
+      0 -2px 0 #005544,
+      0 2px 0 #00ffaa;
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: translateY(0px);
+    text-shadow:
+      0 -1px 0 #008877,
+      0 1px 0 #00eeaa;
+  }
+
+  60% {
+    opacity: 0.4;
+    transform: translateY(3px);
+    text-shadow:
+      0 -1px 0 #006655,
+      0 1px 0 #00cc88;
+  }
+
+  70% {
+    opacity: 0.8;
+    transform: translateY(0px);
+    text-shadow:
+      0 0 5px rgba(0, 255, 170, 0.5),
+      0 0 10px rgba(0, 255, 170, 0.3);
+  }
+
+  80% {
+    opacity: 0.6;
+    transform: translateY(1px);
+    text-shadow: 0 0 3px rgba(0, 255, 170, 0.4);
+  }
+
+  90% {
+    opacity: 0.95;
+    transform: translateY(0px);
+    text-shadow:
+      0 0 10px rgba(0, 255, 170, 0.7),
+      0 0 20px rgba(0, 255, 170, 0.4);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    text-shadow:
+      0 0 15px rgba(0, 255, 170, 0.8),
+      0 0 25px rgba(0, 255, 170, 0.6); /* Final subtle glow */
+  }
+}

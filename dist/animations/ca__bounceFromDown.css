@@ -1,0 +1,75 @@
+/*!
+ * Module: bounceFromDown Animation
+ * Usage: <div class="cssanimation ca__bounceFromDown">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-bounceFromDown {
+  animation-name: bounceFromDown;
+}
+
+@keyframes bounceFromDown {
+  0%,
+  25%,
+  55%,
+  85%,
+  100% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+
+  41%,
+  44% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, 80px, 0) scale3d(1, 1.2, 1);
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+/**
+ * Module: Bounce Out
+ * Filename: ca__BounceOut.css
+ */
+.ca__fx-bounceOutTop {
+  animation-name: bounceOutTop;
+}

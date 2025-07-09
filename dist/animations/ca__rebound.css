@@ -1,0 +1,61 @@
+/*!
+ * Module: rebound Animation
+ * Usage: <div class="cssanimation ca__rebound">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-rebound {
+  animation: rebound var(--rebound-duration, 0.7s) ease-in-out infinite;
+}
+
+@keyframes rebound {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * -1));
+  }
+
+  40% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * 0.5));
+  }
+
+  60% {
+    transform: translateY(calc(var(--rebound-height, 1rem) * -0.3));
+  }
+}

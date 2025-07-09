@@ -1,0 +1,77 @@
+/*!
+ * Module: mask-stripesWideIn Animation
+ * Usage: <div class="cssanimation ca__mask-stripesWideIn">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-mask-stripesWideIn {
+  animation-name: mask-stripesWideIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@keyframes mask-stripesWideIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+/**
+ * Module: Stripe Masking Animation
+ * Filename: ca__maskingStripe.css
+ */
+.ca__fx-maskHorizontalBarsIn {
+  animation-name: mask-horizontalBarsIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+  mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}

@@ -1,0 +1,65 @@
+/*!
+ * Module: sparklePopIn Animation
+ * Usage: <div class="cssanimation ca__sparklePopIn">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-sparklePopIn {
+  animation-name: sparklePopIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  filter: brightness(1.5);
+  will-change: transform, opacity;
+}
+
+@keyframes sparklePopIn {
+  0% {
+    transform: scale(0.3) rotate(-15deg);
+    opacity: 0;
+    filter: brightness(3) blur(4px);
+  }
+
+  60% {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(1.8);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+    filter: none;
+    opacity: 1;
+  }
+}

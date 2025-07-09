@@ -4,7 +4,7 @@
 
 <!-- Tech & Status -->
 
-![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/index.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge)
+![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/index.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge) [![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle)
 
 <img src="./branding/cssanimation-logo.svg" width="250" style="margin:10px 0 10px 0">
 
@@ -139,14 +139,14 @@ HTML
 
 ```html
 <!-- Individual effect (e.g., fadeIn only) -->
-<link rel="stylesheet" href="./dist/animations/fadeIn.css" />
+<link rel="stylesheet" href="./dist/animations/ca__fadeIn.css" />
 ```
 
 CSS, SCSS or JavaScript (Webpack, Vite, Rollup)
 
 ```CSS
 // Individual effect
-@import './dist/animations/fadeIn.css';
+@import './dist/animations/ca__fadeIn.css';
 ```
 
 #### Available Individual Effects
@@ -169,18 +169,17 @@ Check out the full list and details in [`cssanimation-utilities.md`](./reference
 ### 🎉 That’s It!
 
 <br>
-<div style="background: #FCEF91; padding: 1em; border-radius: 6px; border: 1px solid #f0e68c; color: #333;">
 
-<h3 style="margin-top: 0;"> Enhance Your {css}animation with Triggers</h3>
+## Enhance Your `{css}animation` with Triggers
 
-<p>
-Want to activate your <strong>{css}animation</strong> classes on click, hover, scroll, or keyboard input?<br>
-Use <a href="https://github.com/yesiamrocks/triggle"><strong>Triggle</strong></a> — a lightweight, no-dependency library built to trigger animations with simple <code>data-triggle*</code> attributes.
-</p>
+**Want to animate on click, hover, scroll, or keypress — without writing JavaScript?**  
+Meet [**Triggle**](https://github.com/yesiamrocks/triggle) — a zero-dependency helper to trigger `{css}animation` classes using simple `data-triggle-*` attributes.
 
-<p><em>Perfect companion for <code>cssanimation.css</code> — no JavaScript expertise needed.</em></p>
+> 💡 Works beautifully with `cssanimation.css` out of the box.  
+> Use it to make your animations interactive in seconds.
 
-</div>
+[View Triggle on GitHub →](https://github.com/yesiamrocks/triggle)
+
 <br>
 
 ## Accessibility: Respecting User Preferences

@@ -1,0 +1,46 @@
+/*!
+ * Module: scifiDigitalReveal Animation
+ * Usage: <div class="cssanimation ca__scifiDigitalReveal">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-scifiDigitalReveal {
+  animation: digitalReveal 3s ease-out forwards;
+  opacity: 0;
+  filter: blur(10px);
+  clip-path: inset(0 100% 0 0);
+  text-shadow: 0 0 5px rgba(0, 255, 204, 0.4);
+}

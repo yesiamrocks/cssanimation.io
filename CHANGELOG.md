@@ -1,3 +1,10 @@
+## [6.10.0] - 2025-07-09
+
+### Updated
+
+- README: Added a custom `Triggle JS` badge with GitHub link
+- Badge styled using shields.io with `flash` logo and green theme
+
 ## [6.9.0] - 2025-07-09
 
 ### Added
