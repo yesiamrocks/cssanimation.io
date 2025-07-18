@@ -195,8 +195,7 @@ Enhance Your **{css}animation** with Triggers
 **Want to animate on click, hover, scroll, or keypress — without writing JavaScript?**  
 Meet [**Triggle**](https://github.com/yesiamrocks/triggle) — a zero-dependency helper to trigger **{css}animation** classes using simple `data-triggle-*` attributes.
 
-Works beautifully with **{css}animation** out of the box.  
-Use it to make your animations interactive in seconds.
+Works beautifully with **{css}animation** out of the box. Use it to make your animations interactive in seconds.
 
 [![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle)
 
