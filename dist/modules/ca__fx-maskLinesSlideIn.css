@@ -1,0 +1,50 @@
+/*!
+ * Module: maskLinesSlideIn Animation
+ * Usage: <div class="cssanimation ca__fx-maskLinesSlideIn">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-maskLinesSlideIn {
+  animation-name: mask-linesSlideIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
+  mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}

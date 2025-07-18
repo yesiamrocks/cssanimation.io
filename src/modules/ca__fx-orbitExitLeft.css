@@ -1,0 +1,56 @@
+/*!
+ * Module: orbitExitLeft Animation
+ * Usage: <div class="cssanimation ca__fx-orbitExitLeft">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-orbitExitLeft {
+  animation: orbitExitLeft 1s ease-in forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes orbitExitLeft {
+  0% {
+    transform: rotateY(0deg) translateX(0) translateZ(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateY(-90deg) translateX(-300px) translateZ(-200px);
+    opacity: 0;
+  }
+}

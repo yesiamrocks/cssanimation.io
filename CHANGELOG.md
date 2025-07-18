@@ -1,3 +1,13 @@
+## [6.10.1]- 2025-07-09
+
+### Documentation Updated
+
+- Refreshed and reorganized the {css}animation documentation for clarity and ease of use
+- Added new usage examples for AnimText
+- Documented modular import strategy using individual animation files
+- Updated CDN usage references and improved copy-paste code blocks
+- Clarified animation group behavior and preset class naming conventions
+
 ## [6.10.0] - 2025-07-09
 
 ### Updated

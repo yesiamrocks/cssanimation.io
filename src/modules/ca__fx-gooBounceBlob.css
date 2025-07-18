@@ -1,0 +1,64 @@
+/*!
+ * Module: gooBounceBlob Animation
+ * Usage: <div class="cssanimation ca__fx-gooBounceBlob">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-gooBounceBlob {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #ff66cc, #9900ff);
+  border-radius: 50%;
+  animation: gooBounceBlob 1.8s ease-in-out infinite;
+}
+
+@keyframes gooBounceBlob {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    border-radius: 50%;
+  }
+
+  30% {
+    transform: translateY(-40%) scale(1.2, 0.8);
+    border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+  }
+
+  60% {
+    transform: translateY(10%) scale(0.9, 1.1);
+    border-radius: 60% 40% 40% 60% / 50% 40% 60% 50%;
+  }
+}

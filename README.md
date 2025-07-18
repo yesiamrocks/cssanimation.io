@@ -4,9 +4,9 @@
 
 <!-- Tech & Status -->
 
-![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/index.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge) [![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle)
+![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/index.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge) [![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle) [![AnimText](https://img.shields.io/badge/AnimText%20JS-22d3ee?style=for-the-badge&logo=typography&logoColor=white)](https://github.com/yesiamrocks/animtext)
 
-<img src="./branding/cssanimation-logo.svg" width="250" style="margin:10px 0 10px 0">
+<a href="https://yesiamrocks.github.io/cssanimation/index.html" target="_bank"><img src="./branding/cssanimation-logo.svg" width="250" style="margin:10px 0 10px 0"></a>
 
 **cssanimation** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
 
@@ -170,15 +170,37 @@ Check out the full list and details in [`cssanimation-utilities.md`](./reference
 
 <br>
 
-## Enhance Your `{css}animation` with Triggers
+## AnimText
+
+Add Smart Text Animations with [AnimText](https://github.com/yesiamrocks/animtext)
+
+**AnimText** is a lightweight JavaScript plugin that brings your {css}animation classes to life — one **letter**, **word**, or **line** at a time.
+
+Perfect for headlines, hero sections, callouts, and more.
+
+- Supports `data-at-sequence`, `data-at-random`, `data-at-word`, `data-at-line`, and more
+- Works out of the box with **cssanimation.io** classes like `ca__fx-fadeIn`
+- No dependencies – just plug and play!
+
+[![AnimText](https://img.shields.io/badge/AnimText%20JS-4B9CE2?style=for-the-badge&logo=typography&logoColor=white)](https://github.com/yesiamrocks/animtext)
+
+👉 [Get Started with AnimText →](https://github.com/yesiamrocks/animtext)
+
+<br>
+
+## Triggle
+
+Enhance Your `{css}animation` with Triggers
 
 **Want to animate on click, hover, scroll, or keypress — without writing JavaScript?**  
 Meet [**Triggle**](https://github.com/yesiamrocks/triggle) — a zero-dependency helper to trigger `{css}animation` classes using simple `data-triggle-*` attributes.
 
-> 💡 Works beautifully with `cssanimation.css` out of the box.  
+> Works beautifully with `cssanimation.css` out of the box.  
 > Use it to make your animations interactive in seconds.
 
-[View Triggle on GitHub →](https://github.com/yesiamrocks/triggle)
+[![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle)
+
+👉 [Get Started with Triggle →](https://github.com/yesiamrocks/triggle)
 
 <br>
 

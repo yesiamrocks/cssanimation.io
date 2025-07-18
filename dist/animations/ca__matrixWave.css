@@ -66,9 +66,17 @@
   }
 }
 /**
- * Module: Elevate
- * Filename: ca__Elevate.css
+ * Module: Stripe Masking Animation
+ * Filename: ca__maskingStripe.css
  */
-.ca__fx-elevateLeft {
-  animation-name: elevateLeft;
+.ca__fx-maskHorizontalBarsIn {
+  animation-name: mask-horizontalBarsIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+  mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }

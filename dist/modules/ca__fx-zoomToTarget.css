@@ -1,0 +1,70 @@
+/*!
+ * Module: zoomToTarget Animation
+ * Usage: <div class="cssanimation ca__fx-zoomToTarget">Your Content</div>
+ */
+/* stylelint-disable */
+
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+
+.cssanimation {
+  animation-duration: var(--cssanimation-duration, 1s);
+  animation-fill-mode: var(--cssanimation-fill-mode, both);
+}
+
+.cssanimation span {
+  display: var(--cssanimation-display, inline-block);
+}
+
+.infinite {
+  animation-iteration-count: var(--cssanimation-infinite, infinite) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cssanimation,
+  .cssanimation span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* stylelint-enable */
+
+.ca__fx-zoomToTarget {
+  animation: zoomToTarget 1.1s ease-out forwards;
+  transform-origin: center center;
+}
+
+@keyframes zoomToTarget {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1.2) translate(0, -10px);
+  }
+
+  100% {
+    transform: scale(0.8) translate(10px, 20px);
+    opacity: 0;
+  }
+}
+/**
+ * Module: Blob
+ * Filename: ca__blob.css
+ */
+.ca__fx-blobJumpMorph {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 50% 50%, #00f0ff, #0099cc);
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  animation: blobJumpMorph 2.2s ease-in-out infinite;
+}
