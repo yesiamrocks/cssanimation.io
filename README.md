@@ -174,12 +174,12 @@ Check out the full list and details in [`cssanimation-utilities.md`](./reference
 
 Add Smart Text Animations with [AnimText](https://github.com/yesiamrocks/animtext)
 
-**AnimText** is a lightweight JavaScript plugin that brings your {css}animation classes to life — one **letter**, **word**, or **line** at a time.
+**AnimText** is a lightweight JavaScript plugin that brings your **{css}animation** classes to life — one **letter**, **word**, or **line** at a time.
 
 Perfect for headlines, hero sections, callouts, and more.
 
 - Supports `data-at-sequence`, `data-at-random`, `data-at-word`, `data-at-line`, and more
-- Works out of the box with **cssanimation.io** classes like `ca__fx-fadeIn`
+- Works out of the box with **{css}animation** classes like `ca__fx-fadeIn`
 - No dependencies – just plug and play!
 
 [![AnimText](https://img.shields.io/badge/AnimText%20JS-4B9CE2?style=for-the-badge&logo=typography&logoColor=white)](https://github.com/yesiamrocks/animtext)
@@ -190,7 +190,7 @@ Perfect for headlines, hero sections, callouts, and more.
 
 ## Triggle
 
-Enhance Your `{css}animation` with Triggers
+Enhance Your **{css}animation** with Triggers
 
 **Want to animate on click, hover, scroll, or keypress — without writing JavaScript?**  
 Meet [**Triggle**](https://github.com/yesiamrocks/triggle) — a zero-dependency helper to trigger `{css}animation` classes using simple `data-triggle-*` attributes.
