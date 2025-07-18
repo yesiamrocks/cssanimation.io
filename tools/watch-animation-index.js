@@ -1,6 +1,6 @@
 const chokidar = require('chokidar');
 const path = require('path');
-const {exec} = require('child_process');
+const {execFile} = require('child_process');
 
 const animationsDir = path.resolve(__dirname, '../src/animations');
 const buildScript = path.resolve(__dirname, 'build-animation-index.js');
@@ -13,7 +13,7 @@ chokidar
   .on('change', runBuild);
 
 function runBuild() {
-  exec(`node ${buildScript}`, (err, stdout, stderr) => {
+  execFile('node', [buildScript], (err, stdout, stderr) => {
     if (err) return console.error(`❌ Error: ${stderr}`);
     console.log(stdout);
   });
