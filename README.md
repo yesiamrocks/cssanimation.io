@@ -1,4 +1,4 @@
-# CSS Animation Library for Developers and Ninjas
+# CSS Animation Library for Developers and Ninjas - {css}animation
 
 > A Powerful CSS Animation Library for Advanced Motion Design.
 
@@ -8,7 +8,7 @@
 
 <a href="https://yesiamrocks.github.io/cssanimation/index.html" target="_bank"><img src="./branding/cssanimation-logo.svg" width="250" style="margin:10px 0 10px 0"></a>
 
-**cssanimation** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
+**{css}animation** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
 
 You're in control. Just apply the [class names](https://yesiamrocks.github.io/cssanimation/index.html) where you want them. **Zero setup. No JavaScript needed. Just clean, reusable animations that "just work."**
 
@@ -64,7 +64,7 @@ import '@hellouxpavel/cssanimation/letter';
 
 ### Install via CDN
 
-Quickly add **cssanimation** to your HTML. Include these lines in your `<head>`tag:
+Quickly add **{css}animation** to your HTML. Include these lines in your `<head>`tag:
 
 ```html
 <head>
@@ -155,7 +155,7 @@ Each file in the `./dist/animations/` folder is a standalone animation with scop
 
 ## Utility Class
 
-**cssanimation** also provides a powerful set of pre-built utility classes to fine-tune your animations. Use them alongside the `.cssanimation` base class and your chosen animation class.
+**{css}animation** also provides a powerful set of pre-built utility classes to fine-tune your animations. Use them alongside the `.cssanimation` base class and your chosen animation class.
 
 This includes:
 
@@ -167,6 +167,18 @@ This includes:
 Check out the full list and details in [`cssanimation-utilities.md`](./reference/cssanimation-reference.md#utility-classes-ungrouped).
 
 ### 🎉 That’s It!
+
+## Accessibility: Respecting User Preferences
+
+By default, **{css}animation** respects user system preferences. When `prefers-reduced-motion: reduce` is enabled in a user's operating system settings, animations are automatically turned off for a more comfortable user experience.
+
+## License
+
+**{css}animation** is licensed under the [Parity Public License](https://paritylicense.com/).
+
+## Contribute
+
+We welcome issues, pull requests, and suggestions! 🤝 Help us make animations even more magical for everyone.
 
 <br>
 
@@ -202,17 +214,5 @@ Works beautifully with **{css}animation** out of the box. Use it to make your an
 👉 [Get Started with Triggle →](https://github.com/yesiamrocks/triggle)
 
 <br>
-
-## Accessibility: Respecting User Preferences
-
-By default, **cssanimation** respects user system preferences. When `prefers-reduced-motion: reduce` is enabled in a user's operating system settings, animations are automatically turned off for a more comfortable user experience.
-
-## License
-
-**cssanimation** is licensed under the [Parity Public License](https://paritylicense.com/).
-
-## Contribute
-
-We welcome issues, pull requests, and suggestions! 🤝 Help us make animations even more magical for everyone.
 
 ![Built with ❤️ by Pavel](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange?style=for-the-badge) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/shafayetul/)
