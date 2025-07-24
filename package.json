@@ -1,6 +1,6 @@
 {
   "name": "@hellouxpavel/cssanimation",
-  "version": "6.10.1",
+  "version": "6.10.2",
   "description": "A Powerful CSS Animation Library for Advanced Motion Design.",
   "main": "index.js",
   "style": "dist/cssanimation.css",
@@ -16,7 +16,7 @@
     "animate text with CSS"
   ],
   "author": "Shafayetul Islam Pavel <hello@cssanimation.io>",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yesiamrocks/cssanimation.git"

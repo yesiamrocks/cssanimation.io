@@ -1,3 +1,16 @@
+## [6.10.2] - 2025-07-23
+
+### Changed
+
+- Updated project license to **Apache License, Version 2.0**
+
+### Added
+
+- Introduced a `NOTICE` file with attribution details for legal clarity
+  - Author: Shafayetul Islam Pavel
+  - Project: {css}animation
+  - Attribution is now required when using, modifying, or redistributing the software
+
 ## [6.10.1]- 2025-07-09
 
 ### Documentation Updated

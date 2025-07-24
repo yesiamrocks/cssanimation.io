@@ -1,36 +1,21 @@
-Parity Public License 7.0.0
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
 
-cssanimation.io Copyright © 2025 Shafayetul Islam Pavel
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-Purpose
+Copyright 2025 Shafayetul Islam Pavel
 
-This license gives everyone as much permission to work with this software as possible, while protecting contributors from liability and ensuring paid licenses for commercial use.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
-Acceptance
+       http://www.apache.org/licenses/LICENSE-2.0
 
-In order to receive this license, you must agree to its rules. Those rules are both obligations under that agreement and conditions to your license. You must not do anything with this software that triggers a rule you cannot or will not follow.
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
-Copyright
+---
 
-Each contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
+Attribution Requirement: When using, modifying, or distributing this software (in source or binary form), you must provide clear credit to the original author:
 
-Notices
+     Created by Shafayetul Islam Pavel — https://www.linkedin.com/in/shafayetul/
 
-You must ensure that everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source information provided with the software.
-
-Copyleft
-
-You must release all software you create, adapt, or combine with this software, in whole or in part, under this license. You must include the source code of that software when you share it. You may convert it to another commonly used open license.
-
-No Liability
-
-As far as the law allows, this software comes as is, without any warranty or condition, and no contributor will be liable to anyone for any damages related to this software or this license, under any kind of legal claim.
-
-Limitations on Use
-
-You may not use this software for military, government surveillance, or any unethical applications. Commercial use, including resale, SaaS integration, or bundling in paid products, requires a commercial license from the author.
-
-To obtain a commercial license, please contact:
-
-hello@cssanimation.io
-https://cssanimation.io
+If you modify the source, please include a note describing what was changed.

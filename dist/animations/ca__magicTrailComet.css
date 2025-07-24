@@ -61,10 +61,9 @@
   }
 }
 /**
- * Module: Elastic Animation
- * Filename: ca__elastic.css
+ * Module: Blur In
+ * Filename: ca__BlurIn.css
  */
-.ca__fx-elasticArise {
-  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
-  transform-origin: bottom center; /* Important for vertical scaling */
+.ca__fx-blurIn {
+  animation-name: blurIn;
 }
