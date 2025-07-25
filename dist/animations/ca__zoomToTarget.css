@@ -58,11 +58,13 @@
   }
 }
 /**
- * Module: Orbit Reveal Animations
- * Filename: cs__orbitReveal.css
+ * Module: Blob
+ * Filename: ca__blob.css
  */
-.ca__fx-orbitRevealLeft {
-  animation: orbitRevealLeft 1.2s ease-out forwards;
-  transform-style: preserve-3d;
-  perspective: 1000px;
+.ca__fx-blobJumpMorph {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 50% 50%, #00f0ff, #0099cc);
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  animation: blobJumpMorph 2.2s ease-in-out infinite;
 }

@@ -49,11 +49,9 @@
   }
 }
 /**
- * Module: Moon 
- * Filename: ca__Moon.css
+ * Module: Quake & Quiver Series
+ * Filename: ca__quake.css
  */
-.ca__fx-moonEclipseIn {
-  animation: moonEclipseIn 1.6s ease-out both;
-  transform-origin: center;
-  will-change: transform, opacity;
+.ca__fx-jiggle {
+  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
 }

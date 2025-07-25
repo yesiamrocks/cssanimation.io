@@ -57,12 +57,11 @@
   }
 }
 /**
- * Module: Step Animation
- * Filename: ca__ttep.css
+ * Module: Swing
+ * Filename: ca_Swing.css
  */
-.ca__fx-stepTypeIn {
-  animation: stepTypeIn 1.2s steps(10, end) forwards;
-  white-space: nowrap;
-  overflow: hidden;
-  will-change: opacity, transform;
+.ca__fx-swing {
+  animation-name: swing;
+  animation-timing-function: ease-in-out;
+  transform-origin: top center;
 }

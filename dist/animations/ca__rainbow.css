@@ -62,24 +62,10 @@
     color: violet;
   }
 }
-:root {
-  --cssanimation-duration: 1s;
-  --cssanimation-fill-mode: both;
-  --cssanimation-infinite: infinite;
-  --cssanimation-backface-visibility: hidden;
-  --cssanimation-transform-style: preserve-3d;
-  --cssanimation-will-change: transform, opacity;
-  --cssanimation-display: inline-block;
-  --move-distance: -800px;
-}
 /**
- * Module: WOW
- * Filename: ca__wow.css
+ * Module: Zoom In
+ * Filename: ca__ZoomIn.css
  */
-.ca__fx-blurTrailIn {
-  animation-name: blurTrailIn;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-  filter: blur(8px);
+.ca__fx-zoomIn {
+  animation-name: zoomIn;
 }
