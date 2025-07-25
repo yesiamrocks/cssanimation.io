@@ -1,3 +1,9 @@
+## [6.10.4] - 2025-07-25
+
+## Readme Update
+
+- Revised license section in documentation with the correct license name and link
+
 ## [6.10.3] - 2025-07-25
 
 ## 📦 What’s New

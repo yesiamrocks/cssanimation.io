@@ -176,7 +176,7 @@ By default, **{css}animation** respects user system preferences. When `prefers-r
 
 ## License
 
-**{css}animation** is licensed under the [Parity Public License](https://paritylicense.com/).
+**{css}animation** is licensed under the [Apache License, Version 2.0](https://github.com/yesiamrocks/cssanimation/blob/master/LICENSE).
 
 ## Contribute
 
