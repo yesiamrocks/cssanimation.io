@@ -1,19 +1,22 @@
 {
   "name": "@hellouxpavel/cssanimation",
-  "version": "6.10.2",
+  "version": "6.10.3",
   "description": "A Powerful CSS Animation Library for Advanced Motion Design.",
   "main": "index.js",
   "style": "dist/cssanimation.css",
   "keywords": [
     "css",
     "animation",
+    "css animations",
+    "web animation",
     "CSS animation library",
     "scroll animation",
     "text animation",
     "pure CSS animations",
     "letter animation effects",
     "CSS keyframe animations",
-    "animate text with CSS"
+    "animate text with CSS",
+    "Zero Javascript Animation"
   ],
   "author": "Shafayetul Islam Pavel <hello@cssanimation.io>",
   "license": "Apache-2.0",

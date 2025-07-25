@@ -1,3 +1,13 @@
+## [6.10.3] - 2025-07-25
+
+## 📦 What’s New
+
+- **Version bump:** Updated package version to `6.10.3`
+- **Improved Keywords:** Added `"Zero Javascript Animation"` to the `package.json` keyword list to enhance discoverability on NPM
+- **License Update:** Included the GitHub project URL in the license notice for better visibility and attribution
+
+Thanks for using [`@hellouxpavel/cssanimation`](https://github.com/yesiamrocks/cssanimation)!
+
 ## [6.10.2] - 2025-07-23
 
 ### Changed
