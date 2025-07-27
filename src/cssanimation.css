@@ -7493,7 +7493,7 @@
   height: 30px;
   background: radial-gradient(circle, #ff66ff, #9900ff);
   border-radius: 50%;
-  animation: ca__orbitalSpin 5s linear infinite;
+  animation: orbitalSpin 5s linear infinite;
   position: relative;
   transform-origin: 100px center;
 }
@@ -7503,7 +7503,7 @@
   }
 
   100% {
-    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    transform: rotate(350deg) translateX(100px) rotate(-350deg);
   }
 }
 .pulseAura {
@@ -7554,7 +7554,8 @@
  * Filename: ca__elastic.css
  */
 .elasticArise {
-  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
+  animation: elasticArise 2s;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
   transform-origin: bottom center; /* Important for vertical scaling */
 }
 @keyframes elasticArise {

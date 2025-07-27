@@ -1,6 +1,6 @@
 {
   "name": "@hellouxpavel/cssanimation",
-  "version": "6.10.4",
+  "version": "6.11.0",
   "description": "A Powerful CSS Animation Library for Advanced Motion Design.",
   "main": "index.js",
   "style": "dist/cssanimation.css",
@@ -52,6 +52,7 @@
     "build:animationFils": "node tools/build-animations.js",
     "prebuild": "node tools/generate-classes.js",
     "build:modules": "node tools/build-modules.js",
+    "build:JSON": "node tools/generate-Json.js",
     "start": "postcss src/*.css -d dist/ --watch"
   },
   "devDependencies": {

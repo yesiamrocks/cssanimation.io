@@ -42,7 +42,7 @@
   height: 30px;
   background: radial-gradient(circle, #ff66ff, #9900ff);
   border-radius: 50%;
-  animation: ca__orbitalSpin 5s linear infinite;
+  animation: orbitalSpin 5s linear infinite;
   position: relative;
   transform-origin: 100px center;
 }
@@ -53,6 +53,6 @@
   }
 
   100% {
-    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    transform: rotate(350deg) translateX(100px) rotate(-350deg);
   }
 }

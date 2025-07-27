@@ -1,3 +1,15 @@
+## [6.11.0] – 2025-07-25
+
+## Added
+
+- `tools/generate-Json.js`: A new utility script that parses `dist/cssanimation.css` and generates a structured JSON manifest of all animation classes and keyframes.
+- `dist/cssanimation.json`: Output file containing class names, animation metadata (duration, easing, fill mode), parsed `@keyframes`, and optional tags/category support.
+
+## Notes
+
+- This generator script supports `from`, `to`, and percentage-based keyframes (`0%`, `100%`, etc.), including multi-line blocks.
+- Designed for future integration into tools, animation editors, or documentation pipelines.
+
 ## [6.10.4] - 2025-07-25
 
 ## Readme Update

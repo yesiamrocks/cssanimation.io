@@ -2,8 +2,8 @@
 /*!* @preserve
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
-* Version: 6.10.4
-* Built: 2025-07-25 12:22:39 UTC
+* Version: 6.11.0
+* Built: 2025-07-27 16:48:43 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -7510,7 +7510,7 @@
   height: 30px;
   background: radial-gradient(circle, #ff66ff, #9900ff);
   border-radius: 50%;
-  animation: ca__orbitalSpin 5s linear infinite;
+  animation: orbitalSpin 5s linear infinite;
   position: relative;
   transform-origin: 100px center;
 }
@@ -7520,7 +7520,7 @@
   }
 
   100% {
-    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    transform: rotate(350deg) translateX(100px) rotate(-350deg);
   }
 }
 .ca__fx-pulseAura {
@@ -7571,7 +7571,8 @@
  * Filename: ca__elastic.css
  */
 .ca__fx-elasticArise {
-  animation: elasticArise 2s cubic-bezier(0.5, 0, 0.5, 1);
+  animation: elasticArise 2s;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
   transform-origin: bottom center; /* Important for vertical scaling */
 }
 @keyframes elasticArise {
