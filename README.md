@@ -217,4 +217,10 @@ Works beautifully with **{css}animation** out of the box. Use it to make your an
 
 <br>
 
+## 🙋 Need Help?
+
+If you’re building a **Website, Landing page, Tool, Visual Editor, or Framework** integration using **{css}animation**, feel free to reach out or contribute via GitHub Issues or Discussions.
+
+<br>
+
 ![Built with ❤️ by Pavel](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange?style=for-the-badge) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/shafayetul/)
