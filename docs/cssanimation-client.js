@@ -364,15 +364,18 @@
         function showMessageBox(message) {
             const messageBox = document.createElement('div');
             messageBox.classList.add('fixed', 'inset-0', 'flex', 'items-center', 'justify-center', 'z-50', 'bg-black', 'bg-opacity-50');
-            messageBox.innerHTML = `
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl text-center max-w-sm mx-auto">
-                    <p class="text-gray-900 dark:text-gray-100 mb-4">${message}</p>
-                    <button class="px-4 py-2 bg-violet-700 text-white rounded-md hover:bg-violet-800" onclick="this.closest('.fixed').remove()">
-                        OK
-                    </button>
-                </div>
-            `;
-            document.body.appendChild(messageBox);
+            const innerBox = document.createElement('div');
+            innerBox.classList.add('bg-white', 'dark:bg-gray-800', 'p-6', 'rounded-lg', 'shadow-xl', 'text-center', 'max-w-sm', 'mx-auto');
+            const paragraph = document.createElement('p');
+            paragraph.classList.add('text-gray-900', 'dark:text-gray-100', 'mb-4');
+            paragraph.textContent = message; // Safely set the message content
+            const button = document.createElement('button');
+            button.classList.add('px-4', 'py-2', 'bg-violet-700', 'text-white', 'rounded-md', 'hover:bg-violet-800');
+            button.textContent = 'OK';
+            button.onclick = function() { this.closest('.fixed').remove(); };
+            innerBox.appendChild(paragraph);
+            innerBox.appendChild(button);
+            messageBox
         }
 
         function filterAnimations() {
