@@ -2,13 +2,19 @@
 
 ## Added
 
-- `tools/generate-Json.js`: A new utility script that parses `dist/cssanimation.css` and generates a structured JSON manifest of all animation classes and keyframes.
-- `dist/cssanimation.json`: Output file containing class names, animation metadata (duration, easing, fill mode), parsed `@keyframes`, and optional tags/category support.
+- `tools/generate-Json.js`: Full-featured JSON animation manifest generator that parses `cssanimation.css`.
+- Outputs structured `dist/cssanimation.json` containing:
+  - `.ca__fx-*` class names
+  - Parsed `@keyframes` (supports `from`, `to`, `%`)
+  - Inferred `to` or `from` properties for `In`/`Out` animations
+  - Default and parsed CSS animation properties (`duration`, `easing`, `fill-mode`, etc.)
+  - Metadata support via `animation-metadata.json`
 
-## Notes
+## Improved
 
-- This generator script supports `from`, `to`, and percentage-based keyframes (`0%`, `100%`, etc.), including multi-line blocks.
-- Designed for future integration into tools, animation editors, or documentation pipelines.
+- Accurate handling of `animation` shorthand (with regex parsing of each property)
+- Intelligent inference of missing `from`/`to` keyframes based on animation type (e.g., `blurIn`, `bounceOut`)
+- Support for edge cases like `clip-path`, `filter`, and `transform` variations
 
 ## [6.10.4] - 2025-07-25
 
