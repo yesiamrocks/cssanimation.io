@@ -1,3 +1,30 @@
+## [6.11.2] – 2025-07-31
+
+### Changed
+
+- Updated all README badges to use flat-square style for consistency
+- Refined README layout for improved clarity and branding alignment
+
+### Notes
+
+This is a minor release focused on improving documentation and presentation. No core functionality or code changes.
+
+## [6.11.1] – 2025-07-31
+
+### Added
+
+- `FUNDING.yml` file to enable GitHub Sponsor button with Buy Me a Coffee support
+- New “☕ Support This Project” section in README with donation and newsletter links
+
+### Changed
+
+- Updated all README badges
+- Improved badge layout for visual clarity and branding
+
+### Notes
+
+This release is focused on community support and documentation updates, no functional changes to the animation library itself. If you enjoy the project, consider supporting ongoing development 🙌
+
 ## [6.11.0] – 2025-07-25
 
 ## Added

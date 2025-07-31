@@ -1,5 +1,4 @@
-@import './ca__vars.css';
-@import './ca__base.css';
+@import './ca__Base.css';
 @import './ca__BlurIn.css';
 @import './ca__BlurOut.css';
 @import './ca__Bounce.css';
@@ -25,6 +24,7 @@
 @import './ca__Kite.css';
 @import './ca__Magical.css';
 @import './ca__MaskWipe.css';
+@import './ca__MaskingStripe.css';
 @import './ca__Moon.css';
 @import './ca__MoonFade.css';
 @import './ca__MoveFrom.css';
@@ -35,6 +35,7 @@
 @import './ca__PullRelease.css';
 @import './ca__PushReleaseFrom.css';
 @import './ca__PushReleaseTo.css';
+@import './ca__Quake.css';
 @import './ca__RollFrom.css';
 @import './ca__RollTo.css';
 @import './ca__RotateIn.css';
@@ -47,15 +48,14 @@
 @import './ca__SpinFrom.css';
 @import './ca__SpinTo.css';
 @import './ca__Spotlights.css';
+@import './ca__Step.css';
 @import './ca__Swing.css';
 @import './ca__SwingIn.css';
 @import './ca__TextAnimation.css';
+@import './ca__Vars.css';
+@import './ca__Wow.css';
 @import './ca__ZoomIn.css';
 @import './ca__ZoomOut.css';
 @import './ca__blob.css';
 @import './ca__elastic.css';
-@import './ca__maskingStripe.css';
-@import './ca__quake.css';
-@import './ca__step.css';
-@import './ca__wow.css';
-@import './cs__orbitReveal.css';
+@import './cs__OrbitReveal.css';

@@ -49,13 +49,11 @@
   }
 }
 /**
- * Module: WOW
- * Filename: ca__wow.css
+ * Module: Swing
+ * Filename: ca_Swing.css
  */
-.ca__fx-blurTrailIn {
-  animation-name: blurTrailIn;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-  filter: blur(8px);
+.ca__fx-swing {
+  animation-name: swing;
+  animation-timing-function: ease-in-out;
+  transform-origin: top center;
 }

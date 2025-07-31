@@ -60,11 +60,9 @@
   }
 }
 /**
- * Module: Orbit Reveal Animations
- * Filename: cs__orbitReveal.css
+ * Module: Zoom In
+ * Filename: ca__ZoomIn.css
  */
-.ca__fx-orbitRevealLeft {
-  animation: orbitRevealLeft 1.2s ease-out forwards;
-  transform-style: preserve-3d;
-  perspective: 1000px;
+.ca__fx-zoomIn {
+  animation-name: zoomIn;
 }

@@ -2,8 +2,8 @@
 /*!* @preserve
 * cssanimation.css – Core animation styles and keyframes
 * Part of: https://cssanimation.io/
-* Version: 6.11.0
-* Built: 2025-07-27 16:48:43 UTC
+* Version: 6.11.2
+* Built: 2025-07-31 12:16:23 UTC
 *
 * Author: Shafayetul Islam Pavel
 * LinkedIn: https://www.linkedin.com/in/shafayetul/
@@ -16,16 +16,6 @@
 *
 * © 2025 Shafayetul Islam Pavel – All rights reserved.*/
 @charset "UTF-8";
-:root {
-  --cssanimation-duration: 1s;
-  --cssanimation-fill-mode: both;
-  --cssanimation-infinite: infinite;
-  --cssanimation-backface-visibility: hidden;
-  --cssanimation-transform-style: preserve-3d;
-  --cssanimation-will-change: transform, opacity;
-  --cssanimation-display: inline-block;
-  --move-distance: -800px;
-}
 .cssanimation {
   animation-duration: var(--cssanimation-duration, 1s);
   animation-fill-mode: var(--cssanimation-fill-mode, both);
@@ -4032,6 +4022,528 @@
   }
 }
 /**
+ * Module: Stripe Masking Animation
+ * Filename: ca__maskingStripe.css
+ */
+.ca__fx-maskHorizontalBarsIn {
+  animation-name: mask-horizontalBarsIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+  mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-horizontalBarsIn {
+  0% {
+    -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+    mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
+    -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+    mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesIn {
+  animation-name: mask-stripesIn;
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskZigzagRevealIn {
+  animation-name: mask-zigzagRevealIn;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
+  mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-zigzagRevealIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskCheckerboardIn {
+  animation: mask-checkerboardIn 1s ease-out forwards;
+  -webkit-mask-image:
+    repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
+    repeating-linear-gradient(90deg, transparent 0,transparent 25%, black 25%, black 50%);
+  mask-image:
+    repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
+    repeating-linear-gradient(90deg, transparent 0,transparent 25%, black 25%, black 50%);
+  -webkit-mask-image:
+    repeating-linear-gradient(0deg, transparent 0 25%, black 25% 50%),
+    repeating-linear-gradient(90deg, transparent 0 25%, black 25% 50%);
+  mask-image:
+    repeating-linear-gradient(0deg, transparent 0 25%, black 25% 50%),
+    repeating-linear-gradient(90deg, transparent 0 25%, black 25% 50%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+@keyframes mask-checkerboardIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskDiamondIn {
+  animation: mask-diamondIn 1s ease-out forwards;
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+@keyframes mask-diamondIn {
+  0% {
+    mask-position: -100% 100%;
+    -webkit-mask-position: -100% 100%;
+  }
+
+  100% {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+}
+.ca__fx-maskLinesSlideIn {
+  animation-name: mask-linesSlideIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
+  mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-linesSlideIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskRainRevealIn {
+  animation-name: mask-rainRevealIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
+  mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
+  -webkit-mask-size: 100% 300%;
+  mask-size: 100% 300%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-rainRevealIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesThinIn {
+  animation-name: mask-stripesThinIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesThinIn {
+  0% {
+    -webkit-mask-position: 0 -100%;
+    mask-position: 0 -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesThinOut {
+  animation-name: mask-stripesThinOut;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesThinOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.ca__fx-maskThreadLinesIn {
+  animation-name: mask-threadLinesIn;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
+  mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-threadLinesIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStairStepIn {
+  animation-name: mask-stairStepIn;
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
+  mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
+  -webkit-mask-size: 300% 300%;
+  mask-size: 300% 300%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stairStepIn {
+  0% {
+    -webkit-mask-position: -150% 150%;
+    mask-position: -150% 150%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesHorizontalReverseOut {
+  animation-name: mask-stripesHorizontalReverseOut;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesHorizontalReverseOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.ca__fx-maskStripesVerticalIn {
+  animation-name: mask-stripesVerticalIn;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesVerticalOut {
+  animation-name: mask-stripesVerticalOut;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.ca__fx-maskStripesHorizontalReverseIn {
+  animation-name: mask-stripesHorizontalReverseIn;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesHorizontalReverseIn {
+  0% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesDiagonalLeftIn {
+  animation-name: mask-stripesDiagonalLeftIn;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalLeftIn {
+  0% {
+    -webkit-mask-position: -100% 0;
+    mask-position: -100% 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesDiagonalUpIn {
+  animation-name: mask-stripesDiagonalUpIn;
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalUpIn {
+  0% {
+    -webkit-mask-position: -100% -100%;
+    mask-position: -100% -100%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesJitterIn {
+  animation-name: mask-stripesJitterIn;
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 150% 150%;
+  mask-size: 150% 150%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesJitterIn {
+  0% {
+    -webkit-mask-position: -50% -50%;
+    mask-position: -50% -50%;
+  }
+
+  100% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.ca__fx-maskStripesVerticalOut {
+  animation-name: mask-stripesVerticalOut;
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesVerticalOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.ca__fx-maskStripesDiagonalLeftOut {
+  animation-name: mask-stripesDiagonalLeftOut;
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalLeftOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+.ca__fx-maskStripesDiagonalUpOut {
+  animation-name: mask-stripesDiagonalUpOut;
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
+  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesDiagonalUpOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 100%;
+    mask-position: 100% 100%;
+  }
+}
+.ca__fx-maskStripesWideOut {
+  animation-name: mask-stripesWideOut;
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
+  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
+  -webkit-mask-size: 100% 200%;
+  mask-size: 100% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesWideOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+}
+.ca__fx-maskStripesJitterOut {
+  animation-name: mask-stripesJitterOut;
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
+  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
+  -webkit-mask-size: 150% 150%;
+  mask-size: 150% 150%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+@keyframes mask-stripesJitterOut {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  100% {
+    -webkit-mask-position: 100% 100%;
+    mask-position: 100% 100%;
+  }
+}
+/**
  * Module: Moon 
  * Filename: ca__Moon.css
  */
@@ -5003,6 +5515,274 @@
   100% {
     transform: translateY(100%);
     opacity: 0;
+  }
+}
+/**
+ * Module: Quake & Quiver Series
+ * Filename: ca__quake.css
+ */
+.ca__fx-jiggle {
+  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
+}
+@keyframes jiggle {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+
+  20% {
+    transform: translateX(var(--jiggle-intensity, 2px)) rotate(var(--jiggle-rotate, 1deg));
+  }
+
+  40% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * -1)) rotate(calc(var(--jiggle-rotate, 1deg) * -1));
+  }
+
+  60% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * 0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * 0.5));
+  }
+
+  80% {
+    transform: translateX(calc(var(--jiggle-intensity, 2px) * -0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * -0.5));
+  }
+}
+.ca__fx-quiver {
+  animation: quiver var(--quiver-duration, 0.3s) ease-in-out infinite both;
+}
+@keyframes quiver {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(var(--quiver-intensity, 1px), 0);
+  }
+
+  50% {
+    transform: translate(0, var(--quiver-intensity, 1px));
+  }
+
+  75% {
+    transform: translate(calc(var(--quiver-intensity, 1px) * -1), 0);
+  }
+}
+.ca__fx-tremor {
+  animation: tremor var(--tremor-duration, 0.6s) ease-in-out both;
+}
+@keyframes tremor {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(var(--tremor-intensity, 4px), var(--tremor-intensity, 4px));
+  }
+
+  40% {
+    transform: translate(calc(var(--tremor-intensity, 4px) * -1), var(--tremor-intensity, 4px));
+  }
+
+  60% {
+    transform: translate(var(--tremor-intensity, 4px), calc(var(--tremor-intensity, 4px) * -1));
+  }
+
+  80% {
+    transform: translate(calc(var(--tremor-intensity, 4px) * -1), calc(var(--tremor-intensity, 4px) * -1));
+  }
+}
+.ca__fx-rumble {
+  animation: rumble var(--rumble-duration, 0.4s) ease-in-out both;
+}
+@keyframes rumble {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+
+  10% {
+    transform: translate(var(--rumble-intensity, 6px), var(--rumble-intensity, 6px)) rotate(var(--rumble-rotate, 2deg));
+  }
+
+  30% {
+    transform: translate(calc(var(--rumble-intensity, 6px) * -1), var(--rumble-intensity, 6px))
+      rotate(calc(var(--rumble-rotate, 2deg) * -1));
+  }
+
+  50% {
+    transform: translate(var(--rumble-intensity, 6px), calc(var(--rumble-intensity, 6px) * -1))
+      rotate(var(--rumble-rotate, 2deg));
+  }
+
+  70% {
+    transform: translate(calc(var(--rumble-intensity, 6px) * -1), calc(var(--rumble-intensity, 6px) * -1))
+      rotate(calc(var(--rumble-rotate, 2deg) * -1));
+  }
+}
+.ca__fx-wiggle {
+  transform-origin: center center;
+  animation: wiggle var(--wiggle-duration, 1s) ease-in-out both;
+}
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+
+  50% {
+    transform: rotate(calc(var(--wiggle-angle, 4deg) * -1));
+  }
+
+  75% {
+    transform: rotate(var(--wiggle-angle, 4deg));
+  }
+}
+.ca__fx-rattle {
+  animation: rattle var(--rattle-duration, 0.2s) ease-in-out both;
+}
+@keyframes rattle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(var(--rattle-intensity, 3px));
+  }
+
+  40%,
+  80% {
+    transform: translateX(calc(var(--rattle-intensity, 3px) * -1));
+  }
+}
+.ca__fx-buzz {
+  animation: buzz var(--buzz-duration, 0.1s) linear both infinite;
+}
+@keyframes buzz {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(var(--buzz-intensity, 1px), var(--buzz-intensity, 1px));
+  }
+
+  50% {
+    transform: translate(calc(var(--buzz-intensity, 1px) * -1), var(--buzz-intensity, 1px));
+  }
+
+  75% {
+    transform: translate(var(--buzz-intensity, 1px), calc(var(--buzz-intensity, 1px) * -1));
+  }
+}
+.ca__fx-jitter {
+  animation: jitter var(--jitter-duration, 0.5s) ease-in-out both;
+}
+@keyframes jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), var(--jitter-intensity, 2px));
+  }
+
+  20% {
+    transform: translate(var(--jitter-intensity, 2px), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  30% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  40% {
+    transform: translate(var(--jitter-intensity, 2px), var(--jitter-intensity, 2px));
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), var(--jitter-intensity, 2px));
+  }
+
+  70% {
+    transform: translate(var(--jitter-intensity, 2px), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  80% {
+    transform: translate(calc(var(--jitter-intensity, 2px) * -1), calc(var(--jitter-intensity, 2px) * -1));
+  }
+
+  90% {
+    transform: translate(var(--jitter-intensity, 2px), var(--jitter-intensity, 2px));
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.ca__fx-electricity {
+  animation-name: electricity;
+  animation-iteration-count: infinite;
+}
+@keyframes electricity {
+  0%,
+  37%,
+  67%,
+  85%,
+  93% {
+    transform: translateY(30px);
+  }
+
+  4%,
+  64%,
+  88% {
+    transform: translateY(10px);
+  }
+
+  8%,
+  24%,
+  32%,
+  44% {
+    transform: translateY(5px);
+  }
+
+  12%,
+  52%,
+  60%,
+  20% {
+    transform: translateY(10px);
+  }
+
+  16%,
+  40% {
+    transform: translateY(5px);
+  }
+
+  28%,
+  56% {
+    transform: translateY(10px);
+  }
+
+  48%,
+  72%,
+  80%,
+  96% {
+    transform: translateY(30px);
+  }
+
+  76%,
+  100% {
+    transform: translateY(40px);
   }
 }
 /**
@@ -6267,6 +7047,237 @@
   }
 }
 /**
+ * Module: Step Animation
+ * Filename: ca__ttep.css
+ */
+.ca__fx-stepTypeIn {
+  animation: stepTypeIn 1.2s steps(10, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  will-change: opacity, transform;
+}
+@keyframes stepTypeIn {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  80% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.ca__fx-stepSlideInX {
+  animation: stepSlideInX 0.8s steps(6, end) forwards;
+  transform: translateX(-50px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepSlideInX {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.ca__fx-stepSlideOutX {
+  animation: stepSlideOutX 0.8s steps(6, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepSlideOutX {
+  to {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+}
+.ca__fx-stepZoomIn {
+  animation: stepZoomIn 0.9s steps(7, end) forwards;
+  transform: scale(2);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepZoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.ca__fx-stepZoomOut {
+  animation: stepZoomOut 0.9s steps(7, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepZoomOut {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.ca__fx-stepFadeUp {
+  animation: stepFadeUp 1s steps(5, end) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+@keyframes stepFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.ca__fx-stepFadeDown {
+  animation: stepFadeDown 1s steps(5, end) forwards;
+  will-change: opacity, transform;
+}
+@keyframes stepFadeDown {
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+.ca__fx-stepGlitchIn {
+  animation: stepGlitchIn 1.1s steps(8, end) forwards;
+  opacity: 0;
+  transform: skewX(-15deg) scale(1.3);
+  filter: blur(2px) brightness(1.5);
+  will-change: transform, opacity, filter;
+}
+@keyframes stepGlitchIn {
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+.ca__fx-stepGlitchOut {
+  animation: stepGlitchOut 1.1s steps(8, end) forwards;
+  will-change: transform, opacity, filter;
+}
+@keyframes stepGlitchOut {
+  to {
+    opacity: 0;
+    transform: skewX(-15deg) scale(1.3);
+    filter: blur(2px) brightness(1.5);
+  }
+}
+.ca__fx-slideInSteps {
+  animation-name: slideInSteps;
+  animation-duration: 2s;
+  animation-timing-function: steps(5, end);
+  transform: translateX(0);
+}
+@keyframes slideInSteps {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+.ca__fx-stepRotateIn {
+  animation: stepRotateIn 0.9s steps(8, end) forwards;
+  transform: rotate(-90deg);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepRotateIn {
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+.ca__fx-stepRotateOut {
+  animation: stepRotateOut 0.9s steps(8, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepRotateOut {
+  to {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+.ca__fx-stepJumpIn {
+  animation: stepJumpIn 1s steps(5, end) forwards;
+  transform: translateY(100%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepJumpIn {
+  80% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.ca__fx-stepJumpOut {
+  display: inline-block;
+  animation: stepJumpOut 1s steps(5, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepJumpOut {
+  20% {
+    transform: translateY(-10%);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.ca__fx-stepScalePopIn {
+  animation: stepScalePopIn 0.7s steps(4, end) forwards;
+  transform: scale(0.4);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+@keyframes stepScalePopIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.ca__fx-stepScalePopOut {
+  animation: stepScalePopOut 0.7s steps(4, end) forwards;
+  will-change: transform, opacity;
+}
+@keyframes stepScalePopOut {
+  to {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+}
+.ca__fx-stepBlurReveal {
+  animation: stepBlurReveal 1s steps(6, end) forwards;
+  filter: blur(8px);
+  opacity: 0.2;
+  will-change: filter, opacity;
+}
+@keyframes stepBlurReveal {
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.ca__fx-stepBlurOut {
+  animation: stepBlurOut 1s steps(6, end) forwards;
+  will-change: filter, opacity;
+}
+@keyframes stepBlurOut {
+  to {
+    filter: blur(8px);
+    opacity: 0.2;
+  }
+}
+/**
  * Module: Swing
  * Filename: ca_Swing.css
  */
@@ -7103,6 +8114,654 @@
 
   100% {
     color: violet;
+  }
+}
+:root {
+  --cssanimation-duration: 1s;
+  --cssanimation-fill-mode: both;
+  --cssanimation-infinite: infinite;
+  --cssanimation-backface-visibility: hidden;
+  --cssanimation-transform-style: preserve-3d;
+  --cssanimation-will-change: transform, opacity;
+  --cssanimation-display: inline-block;
+  --move-distance: -800px;
+}
+/**
+ * Module: WOW
+ * Filename: ca__wow.css
+ */
+.ca__fx-blurTrailIn {
+  animation-name: blurTrailIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+  filter: blur(8px);
+}
+@keyframes blurTrailIn {
+  0% {
+    transform: translateY(60%) scale(1.2);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  80% {
+    filter: blur(3px);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.ca__fx-blurTrailOut {
+  animation-name: blurTrailOut;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes blurTrailOut {
+  0% {
+    transform: translateY(0%);
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-60%) scale(0.95);
+    filter: blur(10px);
+    opacity: 0;
+  }
+}
+.ca__fx-layerPeelIn {
+  animation-name: layerPeelIn;
+  animation-timing-function: ease-out;
+  transform-origin: top left;
+  will-change: transform, opacity;
+  perspective: 800px;
+}
+@keyframes layerPeelIn {
+  0% {
+    transform: rotateX(-90deg) translateY(-100%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateX(20deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0deg) translateY(0%);
+  }
+}
+.ca__fx-layerPeelOut {
+  animation-name: layerPeelOut;
+  animation-timing-function: ease-in;
+  transform-origin: bottom right;
+  will-change: transform, opacity;
+  perspective: 800px;
+}
+@keyframes layerPeelOut {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(90deg) translateY(100%);
+    opacity: 0;
+  }
+}
+.ca__fx-squishPop {
+  animation-name: squishPop;
+  animation-timing-function: cubic-bezier(0.25, 1.25, 0.5, 1.2);
+  animation-direction: normal;
+  will-change: transform, opacity;
+}
+@keyframes squishPop {
+  0% {
+    transform: scale(0.2, 1.6);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.3, 0.7);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.ca__fx-gravityPullIn {
+  animation-name: gravityPullIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes gravityPullIn {
+  0% {
+    transform: scale(2) translateY(-100%) rotate(-10deg);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.05) translateY(0%) rotate(2deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.ca__fx-slinkyStretch {
+  animation-name: slinkyStretch;
+  animation-timing-function: cubic-bezier(0.3, 1.5, 0.5, 1);
+  will-change: transform, opacity;
+}
+@keyframes slinkyStretch {
+  0% {
+    transform: scaleY(0.2);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scaleY(1.3);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+.ca__fx-wobbleEntry {
+  animation-name: wobbleEntry;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes wobbleEntry {
+  0% {
+    transform: rotate(-30deg) scale(0.5);
+    opacity: 0;
+  }
+
+  40% {
+    transform: rotate(15deg) scale(1.05);
+    opacity: 1;
+  }
+
+  70% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+.ca__fx-peelDropIn {
+  animation-name: peelDropIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: top left;
+  perspective: 800px;
+}
+@keyframes peelDropIn {
+  0% {
+    transform: rotateX(-80deg) rotateZ(-10deg) translateY(-100%);
+    opacity: 0;
+  }
+
+  80% {
+    transform: rotateX(15deg) rotateZ(3deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(0) rotateZ(0) translateY(0);
+  }
+}
+.ca__fx-vibeInPop {
+  animation-name: vibeInPop;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+@keyframes vibeInPop {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+    filter: brightness(1.8);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.05) rotate(5deg);
+    filter: brightness(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.ca__fx-flickerPop {
+  animation-name: flickerPop;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+@keyframes flickerPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+    filter: brightness(0);
+  }
+
+  25% {
+    opacity: 1;
+    filter: brightness(2);
+  }
+
+  30% {
+    filter: brightness(0.4);
+  }
+
+  50% {
+    filter: brightness(1);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+.ca__fx-inertiaSlideIn {
+  animation-name: inertiaSlideIn;
+  animation-timing-function: cubic-bezier(0.15, 0.85, 0.3, 1.2);
+  will-change: transform, opacity;
+  transform-origin: left center;
+}
+@keyframes inertiaSlideIn {
+  0% {
+    transform: translateX(-120%) scaleX(1.4);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(10%) scaleX(0.95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%) scaleX(1);
+  }
+}
+.ca__fx-dropSpinIn {
+  animation-name: dropSpinIn;
+  animation-timing-function: ease-out;
+  transform-origin: top center;
+  will-change: transform, opacity;
+}
+@keyframes dropSpinIn {
+  0% {
+    transform: rotateZ(-180deg) translateY(-200%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateZ(20deg) translateY(10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateZ(0deg) translateY(0%);
+  }
+}
+.ca__fx-breezeLift {
+  animation-name: breezeLift;
+  animation-timing-function: ease-in-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+@keyframes breezeLift {
+  0% {
+    transform: translateY(40%) rotate(-3deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-5%) rotate(2deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+  }
+}
+.ca__fx-featherFloat {
+  animation-name: featherFloat;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes featherFloat {
+  0% {
+    transform: translateY(-120%) rotate(0deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(10%) rotate(10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(0%) rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.ca__fx-powerUpPop {
+  animation-name: powerUpPop;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes powerUpPop {
+  0% {
+    transform: scale(0.3);
+    filter: hue-rotate(180deg) brightness(2);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    filter: hue-rotate(90deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+.ca__fx-levelUnlock {
+  animation-name: levelUnlock;
+  animation-timing-function: ease-in-out;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+@keyframes levelUnlock {
+  0% {
+    transform: scale(0.8) rotateX(90deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2) rotateX(-30deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotateX(0deg);
+  }
+}
+.ca__fx-softPulseIdle {
+  animation-name: softPulseIdle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+@keyframes softPulseIdle {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+}
+.ca__fx-shimmerWaveIdle {
+  animation-name: shimmerWaveIdle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@keyframes shimmerWaveIdle {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+.ca__fx-gearSnapIn {
+  animation-name: gearSnapIn;
+  animation-timing-function: cubic-bezier(0.3, 1.6, 0.6, 1);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes gearSnapIn {
+  0% {
+    transform: scale(0.6) rotate(-90deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.1) rotate(30deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.ca__fx-joyBounceIn {
+  animation-name: joyBounceIn;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes joyBounceIn {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(1.2) rotate(10deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(0.95) rotate(-5deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.ca__fx-blushSlideIn {
+  animation-name: blushSlideIn;
+  animation-timing-function: ease-out;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+@keyframes blushSlideIn {
+  0% {
+    transform: translateY(100%) scale(0.9) rotate(-6deg);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-4%) scale(1.05) rotate(3deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) scale(1) rotate(0deg);
+  }
+}
+.ca__fx-stampSmash {
+  animation-name: stampSmash;
+  animation-timing-function: cubic-bezier(0.25, 1.8, 0.4, 1);
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+@keyframes stampSmash {
+  0% {
+    transform: scale(2.4) rotate(15deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(0.85) rotate(-8deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.ca__fx-comboLevelRise {
+  animation-name: comboLevelRise;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: bottom center;
+}
+@keyframes comboLevelRise {
+  0% {
+    transform: translateY(40%) scale(0.8) rotateX(40deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(-8%) scale(1.1) rotateX(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%) scale(1) rotateX(0deg);
+  }
+}
+.ca__fx-wiggleReactive {
+  animation-name: wiggleReactive;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+@keyframes wiggleReactive {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(4deg);
+  }
+
+  50% {
+    transform: rotate(-4deg);
+  }
+
+  75% {
+    transform: rotate(2deg);
+  }
+}
+.ca__fx-pulseGlow {
+  animation-name: pulseGlow;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.ca__fx-cosmicReveal {
+  animation-name: cosmicReveal;
+  animation-timing-function: ease-out;
+  transform-origin: center;
+  will-change: transform, opacity;
+  filter: blur(6px) brightness(2);
+}
+@keyframes cosmicReveal {
+  0% {
+    transform: scale(1.8);
+    filter: blur(10px) brightness(4);
+    opacity: 0;
+  }
+
+  70% {
+    filter: blur(1px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: none;
+  }
+}
+.ca__fx-scribbleGlowIn {
+  animation-name: scribbleGlowIn;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  filter: blur(5px);
+}
+@keyframes scribbleGlowIn {
+  0% {
+    transform: scale(1.4) rotate(-5deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    filter: none;
+  }
+}
+.ca__fx-panelUnfold {
+  animation-name: panelUnfold;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+  transform-origin: top center;
+}
+@keyframes panelUnfold {
+  0% {
+    transform: scaleY(0.2) rotateX(-90deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scaleY(1.05) rotateX(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1) rotateX(0);
   }
 }
 /**
@@ -8139,1665 +9798,6 @@
 
   100% {
     transform: translateY(0) scaleY(1);
-  }
-}
-/**
- * Module: Stripe Masking Animation
- * Filename: ca__maskingStripe.css
- */
-.ca__fx-maskHorizontalBarsIn {
-  animation-name: mask-horizontalBarsIn;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-  mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-  mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-horizontalBarsIn {
-  0% {
-    -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-    mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-    -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-    mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-    -webkit-mask-position: 0 -100%;
-    mask-position: 0 -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesIn {
-  animation-name: mask-stripesIn;
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesIn {
-  0% {
-    -webkit-mask-position: 0 -100%;
-    mask-position: 0 -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskZigzagRevealIn {
-  animation-name: mask-zigzagRevealIn;
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
-  mask-image: repeating-linear-gradient(135deg, black 0,black 10px, transparent 10px, transparent 20px);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
-  mask-image: repeating-linear-gradient(135deg, black 0 10px, transparent 10px 20px);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-zigzagRevealIn {
-  0% {
-    -webkit-mask-position: -100% -100%;
-    mask-position: -100% -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskCheckerboardIn {
-  animation: mask-checkerboardIn 1s ease-out forwards;
-  -webkit-mask-image:
-    repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
-    repeating-linear-gradient(90deg, transparent 0,transparent 25%, black 25%, black 50%);
-  mask-image:
-    repeating-linear-gradient(0deg, transparent 0,transparent 25%, black 25%, black 50%),
-    repeating-linear-gradient(90deg, transparent 0,transparent 25%, black 25%, black 50%);
-  -webkit-mask-image:
-    repeating-linear-gradient(0deg, transparent 0 25%, black 25% 50%),
-    repeating-linear-gradient(90deg, transparent 0 25%, black 25% 50%);
-  mask-image:
-    repeating-linear-gradient(0deg, transparent 0 25%, black 25% 50%),
-    repeating-linear-gradient(90deg, transparent 0 25%, black 25% 50%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: repeat;
-  mask-repeat: repeat;
-}
-@keyframes mask-checkerboardIn {
-  0% {
-    -webkit-mask-position: -100% -100%;
-    mask-position: -100% -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskDiamondIn {
-  animation: mask-diamondIn 1s ease-out forwards;
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 10%, black 10%, black 20%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0 10%, black 10% 20%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: repeat;
-  mask-repeat: repeat;
-}
-@keyframes mask-diamondIn {
-  0% {
-    mask-position: -100% 100%;
-    -webkit-mask-position: -100% 100%;
-  }
-
-  100% {
-    mask-position: 0 0;
-    -webkit-mask-position: 0 0;
-  }
-}
-.ca__fx-maskLinesSlideIn {
-  animation-name: mask-linesSlideIn;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 2px, transparent 2px, transparent 10px);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
-  mask-image: repeating-linear-gradient(to bottom, black 0 2px, transparent 2px 10px);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-linesSlideIn {
-  0% {
-    -webkit-mask-position: 0 -100%;
-    mask-position: 0 -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskRainRevealIn {
-  animation-name: mask-rainRevealIn;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 1px, transparent 1px, transparent 5px);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
-  mask-image: repeating-linear-gradient(to bottom, black 0 1px, transparent 1px 5px);
-  -webkit-mask-size: 100% 300%;
-  mask-size: 100% 300%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-rainRevealIn {
-  0% {
-    -webkit-mask-position: 0 -100%;
-    mask-position: 0 -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesThinIn {
-  animation-name: mask-stripesThinIn;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesThinIn {
-  0% {
-    -webkit-mask-position: 0 -100%;
-    mask-position: 0 -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesThinOut {
-  animation-name: mask-stripesThinOut;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 4%, transparent 4%, transparent 8%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 4%, transparent 4% 8%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesThinOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  100% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-  }
-}
-.ca__fx-maskThreadLinesIn {
-  animation-name: mask-threadLinesIn;
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
-  mask-image: repeating-linear-gradient(135deg, black 0,black 2px, transparent 2px, transparent 6px);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
-  mask-image: repeating-linear-gradient(135deg, black 0 2px, transparent 2px 6px);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-threadLinesIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStairStepIn {
-  animation-name: mask-stairStepIn;
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0,transparent 15%, black 15%, black 30%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
-  mask-image: repeating-linear-gradient(45deg, transparent 0 15%, black 15% 30%);
-  -webkit-mask-size: 300% 300%;
-  mask-size: 300% 300%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stairStepIn {
-  0% {
-    -webkit-mask-position: -150% 150%;
-    mask-position: -150% 150%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesHorizontalReverseOut {
-  animation-name: mask-stripesHorizontalReverseOut;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesHorizontalReverseOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  100% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-  }
-}
-.ca__fx-maskStripesVerticalIn {
-  animation-name: mask-stripesVerticalIn;
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesVerticalIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesVerticalOut {
-  animation-name: mask-stripesVerticalOut;
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesVerticalOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  100% {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-.ca__fx-maskStripesHorizontalReverseIn {
-  animation-name: mask-stripesHorizontalReverseIn;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesHorizontalReverseIn {
-  0% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesDiagonalLeftIn {
-  animation-name: mask-stripesDiagonalLeftIn;
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesDiagonalLeftIn {
-  0% {
-    -webkit-mask-position: -100% 0;
-    mask-position: -100% 0;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesDiagonalUpIn {
-  animation-name: mask-stripesDiagonalUpIn;
-  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
-  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
-  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesDiagonalUpIn {
-  0% {
-    -webkit-mask-position: -100% -100%;
-    mask-position: -100% -100%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesJitterIn {
-  animation-name: mask-stripesJitterIn;
-  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 150% 150%;
-  mask-size: 150% 150%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesJitterIn {
-  0% {
-    -webkit-mask-position: -50% -50%;
-    mask-position: -50% -50%;
-  }
-
-  100% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-.ca__fx-maskStripesVerticalOut {
-  animation-name: mask-stripesVerticalOut;
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(to right, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(to right, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 100%;
-  mask-size: 200% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesVerticalOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  100% {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-.ca__fx-maskStripesDiagonalLeftOut {
-  animation-name: mask-stripesDiagonalLeftOut;
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(135deg, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(135deg, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesDiagonalLeftOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  100% {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-.ca__fx-maskStripesDiagonalUpOut {
-  animation-name: mask-stripesDiagonalUpOut;
-  -webkit-mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
-  mask-image: repeating-linear-gradient(45deg, black 0,black 8%, transparent 8%, transparent 16%);
-  -webkit-mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
-  mask-image: repeating-linear-gradient(45deg, black 0 8%, transparent 8% 16%);
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesDiagonalUpOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  100% {
-    -webkit-mask-position: 100% 100%;
-    mask-position: 100% 100%;
-  }
-}
-.ca__fx-maskStripesWideOut {
-  animation-name: mask-stripesWideOut;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
-  mask-image: repeating-linear-gradient(to bottom, black 0,black 40%, transparent 40%, transparent 60%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
-  mask-image: repeating-linear-gradient(to bottom, black 0 40%, transparent 40% 60%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesWideOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  100% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-  }
-}
-.ca__fx-maskStripesJitterOut {
-  animation-name: mask-stripesJitterOut;
-  -webkit-mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
-  mask-image: repeating-linear-gradient(120deg, black 0,black 10%, transparent 10%, transparent 20%);
-  -webkit-mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
-  mask-image: repeating-linear-gradient(120deg, black 0 10%, transparent 10% 20%);
-  -webkit-mask-size: 150% 150%;
-  mask-size: 150% 150%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-@keyframes mask-stripesJitterOut {
-  0% {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  100% {
-    -webkit-mask-position: 100% 100%;
-    mask-position: 100% 100%;
-  }
-}
-/**
- * Module: Quake & Quiver Series
- * Filename: ca__quake.css
- */
-.ca__fx-jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
-}
-@keyframes jiggle {
-  0%,
-  100% {
-    transform: translateX(0) rotate(0);
-  }
-
-  20% {
-    transform: translateX(var(--jiggle-intensity, 2px)) rotate(var(--jiggle-rotate, 1deg));
-  }
-
-  40% {
-    transform: translateX(calc(var(--jiggle-intensity, 2px) * -1)) rotate(calc(var(--jiggle-rotate, 1deg) * -1));
-  }
-
-  60% {
-    transform: translateX(calc(var(--jiggle-intensity, 2px) * 0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * 0.5));
-  }
-
-  80% {
-    transform: translateX(calc(var(--jiggle-intensity, 2px) * -0.5)) rotate(calc(var(--jiggle-rotate, 1deg) * -0.5));
-  }
-}
-.ca__fx-quiver {
-  animation: quiver var(--quiver-duration, 0.3s) ease-in-out infinite both;
-}
-@keyframes quiver {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(var(--quiver-intensity, 1px), 0);
-  }
-
-  50% {
-    transform: translate(0, var(--quiver-intensity, 1px));
-  }
-
-  75% {
-    transform: translate(calc(var(--quiver-intensity, 1px) * -1), 0);
-  }
-}
-.ca__fx-tremor {
-  animation: tremor var(--tremor-duration, 0.6s) ease-in-out both;
-}
-@keyframes tremor {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  20% {
-    transform: translate(var(--tremor-intensity, 4px), var(--tremor-intensity, 4px));
-  }
-
-  40% {
-    transform: translate(calc(var(--tremor-intensity, 4px) * -1), var(--tremor-intensity, 4px));
-  }
-
-  60% {
-    transform: translate(var(--tremor-intensity, 4px), calc(var(--tremor-intensity, 4px) * -1));
-  }
-
-  80% {
-    transform: translate(calc(var(--tremor-intensity, 4px) * -1), calc(var(--tremor-intensity, 4px) * -1));
-  }
-}
-.ca__fx-rumble {
-  animation: rumble var(--rumble-duration, 0.4s) ease-in-out both;
-}
-@keyframes rumble {
-  0%,
-  100% {
-    transform: translate(0, 0) rotate(0);
-  }
-
-  10% {
-    transform: translate(var(--rumble-intensity, 6px), var(--rumble-intensity, 6px)) rotate(var(--rumble-rotate, 2deg));
-  }
-
-  30% {
-    transform: translate(calc(var(--rumble-intensity, 6px) * -1), var(--rumble-intensity, 6px))
-      rotate(calc(var(--rumble-rotate, 2deg) * -1));
-  }
-
-  50% {
-    transform: translate(var(--rumble-intensity, 6px), calc(var(--rumble-intensity, 6px) * -1))
-      rotate(var(--rumble-rotate, 2deg));
-  }
-
-  70% {
-    transform: translate(calc(var(--rumble-intensity, 6px) * -1), calc(var(--rumble-intensity, 6px) * -1))
-      rotate(calc(var(--rumble-rotate, 2deg) * -1));
-  }
-}
-.ca__fx-wiggle {
-  transform-origin: center center;
-  animation: wiggle var(--wiggle-duration, 1s) ease-in-out both;
-}
-@keyframes wiggle {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(var(--wiggle-angle, 4deg));
-  }
-
-  50% {
-    transform: rotate(calc(var(--wiggle-angle, 4deg) * -1));
-  }
-
-  75% {
-    transform: rotate(var(--wiggle-angle, 4deg));
-  }
-}
-.ca__fx-rattle {
-  animation: rattle var(--rattle-duration, 0.2s) ease-in-out both;
-}
-@keyframes rattle {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  20%,
-  60% {
-    transform: translateX(var(--rattle-intensity, 3px));
-  }
-
-  40%,
-  80% {
-    transform: translateX(calc(var(--rattle-intensity, 3px) * -1));
-  }
-}
-.ca__fx-buzz {
-  animation: buzz var(--buzz-duration, 0.1s) linear both infinite;
-}
-@keyframes buzz {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(var(--buzz-intensity, 1px), var(--buzz-intensity, 1px));
-  }
-
-  50% {
-    transform: translate(calc(var(--buzz-intensity, 1px) * -1), var(--buzz-intensity, 1px));
-  }
-
-  75% {
-    transform: translate(var(--buzz-intensity, 1px), calc(var(--buzz-intensity, 1px) * -1));
-  }
-}
-.ca__fx-jitter {
-  animation: jitter var(--jitter-duration, 0.5s) ease-in-out both;
-}
-@keyframes jitter {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  10% {
-    transform: translate(calc(var(--jitter-intensity, 2px) * -1), var(--jitter-intensity, 2px));
-  }
-
-  20% {
-    transform: translate(var(--jitter-intensity, 2px), calc(var(--jitter-intensity, 2px) * -1));
-  }
-
-  30% {
-    transform: translate(calc(var(--jitter-intensity, 2px) * -1), calc(var(--jitter-intensity, 2px) * -1));
-  }
-
-  40% {
-    transform: translate(var(--jitter-intensity, 2px), var(--jitter-intensity, 2px));
-  }
-
-  50% {
-    transform: translate(0, 0);
-  }
-
-  60% {
-    transform: translate(calc(var(--jitter-intensity, 2px) * -1), var(--jitter-intensity, 2px));
-  }
-
-  70% {
-    transform: translate(var(--jitter-intensity, 2px), calc(var(--jitter-intensity, 2px) * -1));
-  }
-
-  80% {
-    transform: translate(calc(var(--jitter-intensity, 2px) * -1), calc(var(--jitter-intensity, 2px) * -1));
-  }
-
-  90% {
-    transform: translate(var(--jitter-intensity, 2px), var(--jitter-intensity, 2px));
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-.ca__fx-electricity {
-  animation-name: electricity;
-  animation-iteration-count: infinite;
-}
-@keyframes electricity {
-  0%,
-  37%,
-  67%,
-  85%,
-  93% {
-    transform: translateY(30px);
-  }
-
-  4%,
-  64%,
-  88% {
-    transform: translateY(10px);
-  }
-
-  8%,
-  24%,
-  32%,
-  44% {
-    transform: translateY(5px);
-  }
-
-  12%,
-  52%,
-  60%,
-  20% {
-    transform: translateY(10px);
-  }
-
-  16%,
-  40% {
-    transform: translateY(5px);
-  }
-
-  28%,
-  56% {
-    transform: translateY(10px);
-  }
-
-  48%,
-  72%,
-  80%,
-  96% {
-    transform: translateY(30px);
-  }
-
-  76%,
-  100% {
-    transform: translateY(40px);
-  }
-}
-/**
- * Module: Step Animation
- * Filename: ca__ttep.css
- */
-.ca__fx-stepTypeIn {
-  animation: stepTypeIn 1.2s steps(10, end) forwards;
-  white-space: nowrap;
-  overflow: hidden;
-  will-change: opacity, transform;
-}
-@keyframes stepTypeIn {
-  0% {
-    transform: translateY(10px);
-    opacity: 0;
-    clip-path: inset(0 100% 0 0);
-  }
-
-  80% {
-    opacity: 1;
-    clip-path: inset(0 0 0 0);
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.ca__fx-stepSlideInX {
-  animation: stepSlideInX 0.8s steps(6, end) forwards;
-  transform: translateX(-50px);
-  opacity: 0;
-  will-change: transform, opacity;
-}
-@keyframes stepSlideInX {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.ca__fx-stepSlideOutX {
-  animation: stepSlideOutX 0.8s steps(6, end) forwards;
-  will-change: transform, opacity;
-}
-@keyframes stepSlideOutX {
-  to {
-    transform: translateX(50px);
-    opacity: 0;
-  }
-}
-.ca__fx-stepZoomIn {
-  animation: stepZoomIn 0.9s steps(7, end) forwards;
-  transform: scale(2);
-  opacity: 0;
-  will-change: transform, opacity;
-}
-@keyframes stepZoomIn {
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.ca__fx-stepZoomOut {
-  animation: stepZoomOut 0.9s steps(7, end) forwards;
-  will-change: transform, opacity;
-}
-@keyframes stepZoomOut {
-  to {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-.ca__fx-stepFadeUp {
-  animation: stepFadeUp 1s steps(5, end) forwards;
-  opacity: 0;
-  transform: translateY(20px);
-  will-change: opacity, transform;
-}
-@keyframes stepFadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.ca__fx-stepFadeDown {
-  animation: stepFadeDown 1s steps(5, end) forwards;
-  will-change: opacity, transform;
-}
-@keyframes stepFadeDown {
-  to {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-}
-.ca__fx-stepGlitchIn {
-  animation: stepGlitchIn 1.1s steps(8, end) forwards;
-  opacity: 0;
-  transform: skewX(-15deg) scale(1.3);
-  filter: blur(2px) brightness(1.5);
-  will-change: transform, opacity, filter;
-}
-@keyframes stepGlitchIn {
-  to {
-    opacity: 1;
-    transform: none;
-    filter: none;
-  }
-}
-.ca__fx-stepGlitchOut {
-  animation: stepGlitchOut 1.1s steps(8, end) forwards;
-  will-change: transform, opacity, filter;
-}
-@keyframes stepGlitchOut {
-  to {
-    opacity: 0;
-    transform: skewX(-15deg) scale(1.3);
-    filter: blur(2px) brightness(1.5);
-  }
-}
-.ca__fx-slideInSteps {
-  animation-name: slideInSteps;
-  animation-duration: 2s;
-  animation-timing-function: steps(5, end);
-  transform: translateX(0);
-}
-@keyframes slideInSteps {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(200px);
-  }
-}
-.ca__fx-stepRotateIn {
-  animation: stepRotateIn 0.9s steps(8, end) forwards;
-  transform: rotate(-90deg);
-  opacity: 0;
-  will-change: transform, opacity;
-}
-@keyframes stepRotateIn {
-  to {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-}
-.ca__fx-stepRotateOut {
-  animation: stepRotateOut 0.9s steps(8, end) forwards;
-  will-change: transform, opacity;
-}
-@keyframes stepRotateOut {
-  to {
-    transform: rotate(90deg);
-    opacity: 0;
-  }
-}
-.ca__fx-stepJumpIn {
-  animation: stepJumpIn 1s steps(5, end) forwards;
-  transform: translateY(100%);
-  opacity: 0;
-  will-change: transform, opacity;
-}
-@keyframes stepJumpIn {
-  80% {
-    transform: translateY(-10%);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-.ca__fx-stepJumpOut {
-  display: inline-block;
-  animation: stepJumpOut 1s steps(5, end) forwards;
-  will-change: transform, opacity;
-}
-@keyframes stepJumpOut {
-  20% {
-    transform: translateY(-10%);
-    opacity: 0.9;
-  }
-
-  100% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-}
-.ca__fx-stepScalePopIn {
-  animation: stepScalePopIn 0.7s steps(4, end) forwards;
-  transform: scale(0.4);
-  opacity: 0;
-  will-change: transform, opacity;
-}
-@keyframes stepScalePopIn {
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.ca__fx-stepScalePopOut {
-  animation: stepScalePopOut 0.7s steps(4, end) forwards;
-  will-change: transform, opacity;
-}
-@keyframes stepScalePopOut {
-  to {
-    transform: scale(0.4);
-    opacity: 0;
-  }
-}
-.ca__fx-stepBlurReveal {
-  animation: stepBlurReveal 1s steps(6, end) forwards;
-  filter: blur(8px);
-  opacity: 0.2;
-  will-change: filter, opacity;
-}
-@keyframes stepBlurReveal {
-  to {
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-.ca__fx-stepBlurOut {
-  animation: stepBlurOut 1s steps(6, end) forwards;
-  will-change: filter, opacity;
-}
-@keyframes stepBlurOut {
-  to {
-    filter: blur(8px);
-    opacity: 0.2;
-  }
-}
-/**
- * Module: WOW
- * Filename: ca__wow.css
- */
-.ca__fx-blurTrailIn {
-  animation-name: blurTrailIn;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-  filter: blur(8px);
-}
-@keyframes blurTrailIn {
-  0% {
-    transform: translateY(60%) scale(1.2);
-    filter: blur(12px);
-    opacity: 0;
-  }
-
-  80% {
-    filter: blur(3px);
-  }
-
-  100% {
-    transform: translateY(0%) scale(1);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-.ca__fx-blurTrailOut {
-  animation-name: blurTrailOut;
-  animation-timing-function: ease-in;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-@keyframes blurTrailOut {
-  0% {
-    transform: translateY(0%);
-    filter: blur(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(-60%) scale(0.95);
-    filter: blur(10px);
-    opacity: 0;
-  }
-}
-.ca__fx-layerPeelIn {
-  animation-name: layerPeelIn;
-  animation-timing-function: ease-out;
-  transform-origin: top left;
-  will-change: transform, opacity;
-  perspective: 800px;
-}
-@keyframes layerPeelIn {
-  0% {
-    transform: rotateX(-90deg) translateY(-100%);
-    opacity: 0;
-  }
-
-  60% {
-    transform: rotateX(20deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: rotateX(0deg) translateY(0%);
-  }
-}
-.ca__fx-layerPeelOut {
-  animation-name: layerPeelOut;
-  animation-timing-function: ease-in;
-  transform-origin: bottom right;
-  will-change: transform, opacity;
-  perspective: 800px;
-}
-@keyframes layerPeelOut {
-  0% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: rotateX(90deg) translateY(100%);
-    opacity: 0;
-  }
-}
-.ca__fx-squishPop {
-  animation-name: squishPop;
-  animation-timing-function: cubic-bezier(0.25, 1.25, 0.5, 1.2);
-  animation-direction: normal;
-  will-change: transform, opacity;
-}
-@keyframes squishPop {
-  0% {
-    transform: scale(0.2, 1.6);
-    opacity: 0;
-  }
-
-  60% {
-    transform: scale(1.3, 0.7);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-}
-.ca__fx-gravityPullIn {
-  animation-name: gravityPullIn;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-@keyframes gravityPullIn {
-  0% {
-    transform: scale(2) translateY(-100%) rotate(-10deg);
-    opacity: 0;
-  }
-
-  80% {
-    transform: scale(1.05) translateY(0%) rotate(2deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-.ca__fx-slinkyStretch {
-  animation-name: slinkyStretch;
-  animation-timing-function: cubic-bezier(0.3, 1.5, 0.5, 1);
-  will-change: transform, opacity;
-}
-@keyframes slinkyStretch {
-  0% {
-    transform: scaleY(0.2);
-    opacity: 0;
-  }
-
-  50% {
-    transform: scaleY(1.3);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scaleY(1);
-  }
-}
-.ca__fx-wobbleEntry {
-  animation-name: wobbleEntry;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-@keyframes wobbleEntry {
-  0% {
-    transform: rotate(-30deg) scale(0.5);
-    opacity: 0;
-  }
-
-  40% {
-    transform: rotate(15deg) scale(1.05);
-    opacity: 1;
-  }
-
-  70% {
-    transform: rotate(-8deg);
-  }
-
-  100% {
-    transform: rotate(0deg) scale(1);
-  }
-}
-.ca__fx-peelDropIn {
-  animation-name: peelDropIn;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-  transform-origin: top left;
-  perspective: 800px;
-}
-@keyframes peelDropIn {
-  0% {
-    transform: rotateX(-80deg) rotateZ(-10deg) translateY(-100%);
-    opacity: 0;
-  }
-
-  80% {
-    transform: rotateX(15deg) rotateZ(3deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: rotateX(0) rotateZ(0) translateY(0);
-  }
-}
-.ca__fx-vibeInPop {
-  animation-name: vibeInPop;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-  transform-origin: center;
-}
-@keyframes vibeInPop {
-  0% {
-    transform: scale(0.4) rotate(-15deg);
-    filter: brightness(1.8);
-    opacity: 0;
-  }
-
-  40% {
-    transform: scale(1.05) rotate(5deg);
-    filter: brightness(1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-.ca__fx-flickerPop {
-  animation-name: flickerPop;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-@keyframes flickerPop {
-  0% {
-    opacity: 0;
-    transform: scale(0.6);
-    filter: brightness(0);
-  }
-
-  25% {
-    opacity: 1;
-    filter: brightness(2);
-  }
-
-  30% {
-    filter: brightness(0.4);
-  }
-
-  50% {
-    filter: brightness(1);
-  }
-
-  100% {
-    transform: scale(1);
-    filter: none;
-  }
-}
-.ca__fx-inertiaSlideIn {
-  animation-name: inertiaSlideIn;
-  animation-timing-function: cubic-bezier(0.15, 0.85, 0.3, 1.2);
-  will-change: transform, opacity;
-  transform-origin: left center;
-}
-@keyframes inertiaSlideIn {
-  0% {
-    transform: translateX(-120%) scaleX(1.4);
-    opacity: 0;
-  }
-
-  60% {
-    transform: translateX(10%) scaleX(0.95);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateX(0%) scaleX(1);
-  }
-}
-.ca__fx-dropSpinIn {
-  animation-name: dropSpinIn;
-  animation-timing-function: ease-out;
-  transform-origin: top center;
-  will-change: transform, opacity;
-}
-@keyframes dropSpinIn {
-  0% {
-    transform: rotateZ(-180deg) translateY(-200%);
-    opacity: 0;
-  }
-
-  60% {
-    transform: rotateZ(20deg) translateY(10%);
-    opacity: 1;
-  }
-
-  100% {
-    transform: rotateZ(0deg) translateY(0%);
-  }
-}
-.ca__fx-breezeLift {
-  animation-name: breezeLift;
-  animation-timing-function: ease-in-out;
-  will-change: transform, opacity;
-  transform-origin: center;
-}
-@keyframes breezeLift {
-  0% {
-    transform: translateY(40%) rotate(-3deg);
-    opacity: 0;
-  }
-
-  50% {
-    transform: translateY(-5%) rotate(2deg);
-  }
-
-  100% {
-    transform: translateY(0%) rotate(0deg);
-    opacity: 1;
-  }
-}
-.ca__fx-featherFloat {
-  animation-name: featherFloat;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-@keyframes featherFloat {
-  0% {
-    transform: translateY(-120%) rotate(0deg);
-    opacity: 0;
-  }
-
-  40% {
-    transform: translateY(10%) rotate(10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: translateY(0%) rotate(-2deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-.ca__fx-powerUpPop {
-  animation-name: powerUpPop;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-@keyframes powerUpPop {
-  0% {
-    transform: scale(0.3);
-    filter: hue-rotate(180deg) brightness(2);
-    opacity: 0;
-  }
-
-  50% {
-    transform: scale(1.2);
-    filter: hue-rotate(90deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-    filter: none;
-  }
-}
-.ca__fx-levelUnlock {
-  animation-name: levelUnlock;
-  animation-timing-function: ease-in-out;
-  will-change: transform, opacity;
-  transform-origin: center;
-}
-@keyframes levelUnlock {
-  0% {
-    transform: scale(0.8) rotateX(90deg);
-    opacity: 0;
-  }
-
-  50% {
-    transform: scale(1.2) rotateX(-30deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1) rotateX(0deg);
-  }
-}
-.ca__fx-softPulseIdle {
-  animation-name: softPulseIdle;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  transform-origin: center;
-}
-@keyframes softPulseIdle {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(1.05);
-    opacity: 0.95;
-  }
-}
-.ca__fx-shimmerWaveIdle {
-  animation-name: shimmerWaveIdle;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 200% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-@keyframes shimmerWaveIdle {
-  0% {
-    background-position: 200% 0;
-  }
-
-  100% {
-    background-position: -200% 0;
-  }
-}
-.ca__fx-gearSnapIn {
-  animation-name: gearSnapIn;
-  animation-timing-function: cubic-bezier(0.3, 1.6, 0.6, 1);
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-@keyframes gearSnapIn {
-  0% {
-    transform: scale(0.6) rotate(-90deg);
-    opacity: 0;
-  }
-
-  40% {
-    transform: scale(1.1) rotate(30deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-.ca__fx-joyBounceIn {
-  animation-name: joyBounceIn;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
-@keyframes joyBounceIn {
-  0% {
-    transform: scale(0.4) rotate(-15deg);
-    opacity: 0;
-  }
-
-  30% {
-    transform: scale(1.2) rotate(10deg);
-    opacity: 1;
-  }
-
-  60% {
-    transform: scale(0.95) rotate(-5deg);
-  }
-
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-.ca__fx-blushSlideIn {
-  animation-name: blushSlideIn;
-  animation-timing-function: ease-out;
-  transform-origin: bottom center;
-  will-change: transform, opacity;
-}
-@keyframes blushSlideIn {
-  0% {
-    transform: translateY(100%) scale(0.9) rotate(-6deg);
-    opacity: 0;
-  }
-
-  70% {
-    transform: translateY(-4%) scale(1.05) rotate(3deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(0%) scale(1) rotate(0deg);
-  }
-}
-.ca__fx-stampSmash {
-  animation-name: stampSmash;
-  animation-timing-function: cubic-bezier(0.25, 1.8, 0.4, 1);
-  will-change: transform, opacity;
-  transform-origin: center;
-}
-@keyframes stampSmash {
-  0% {
-    transform: scale(2.4) rotate(15deg);
-    opacity: 0;
-  }
-
-  60% {
-    transform: scale(0.85) rotate(-8deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-.ca__fx-comboLevelRise {
-  animation-name: comboLevelRise;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-  transform-origin: bottom center;
-}
-@keyframes comboLevelRise {
-  0% {
-    transform: translateY(40%) scale(0.8) rotateX(40deg);
-    opacity: 0;
-  }
-
-  60% {
-    transform: translateY(-8%) scale(1.1) rotateX(-10deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(0%) scale(1) rotateX(0deg);
-  }
-}
-.ca__fx-wiggleReactive {
-  animation-name: wiggleReactive;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  transform-origin: center;
-}
-@keyframes wiggleReactive {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(4deg);
-  }
-
-  50% {
-    transform: rotate(-4deg);
-  }
-
-  75% {
-    transform: rotate(2deg);
-  }
-}
-.ca__fx-pulseGlow {
-  animation-name: pulseGlow;
-  animation-timing-function: ease-in-out;
-  box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
-}
-@keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
-  }
-
-  70% {
-    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-  }
-}
-.ca__fx-cosmicReveal {
-  animation-name: cosmicReveal;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-  filter: blur(6px) brightness(2);
-}
-@keyframes cosmicReveal {
-  0% {
-    transform: scale(1.8);
-    filter: blur(10px) brightness(4);
-    opacity: 0;
-  }
-
-  70% {
-    filter: blur(1px);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-    filter: none;
-  }
-}
-.ca__fx-scribbleGlowIn {
-  animation-name: scribbleGlowIn;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-  filter: blur(5px);
-}
-@keyframes scribbleGlowIn {
-  0% {
-    transform: scale(1.4) rotate(-5deg);
-    opacity: 0;
-    filter: blur(8px);
-  }
-
-  100% {
-    transform: scale(1) rotate(0);
-    opacity: 1;
-    filter: none;
-  }
-}
-.ca__fx-panelUnfold {
-  animation-name: panelUnfold;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-  transform-origin: top center;
-}
-@keyframes panelUnfold {
-  0% {
-    transform: scaleY(0.2) rotateX(-90deg);
-    opacity: 0;
-  }
-
-  60% {
-    transform: scaleY(1.05) rotateX(10deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scaleY(1) rotateX(0);
   }
 }
 /**
