@@ -1,3 +1,21 @@
+## [6.11.3] – 2025-07-31
+
+### Added
+
+- New "Community Sponsor – $10/month" tier with support via Buy Me a Coffee
+- Shoutout and project listing perks for sponsors
+- Link to membership page in README for easier access
+
+### Changed
+
+- Updated README to describe sponsor benefits and future support roadmap
+- Prepped structure for future premium content (e.g., exclusive animations, early access packs)
+
+### Notes
+
+This release focuses on enabling ongoing community support for cssanimation.io.  
+If you love the project, consider becoming a member 💛
+
 ## [6.11.2] – 2025-07-31
 
 ### Changed
