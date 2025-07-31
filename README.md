@@ -186,6 +186,12 @@ We welcome issues, pull requests, and suggestions! 🤝 Help us make animations 
 
 If you’re building a **Website, Landing page, Tool, Visual Editor, or Framework** integration using **{css}animation**, feel free to reach out or contribute via GitHub Issues or Discussions.
 
+## ☕ Support This Project
+
+If you find **{css}animation** helpful, consider supporting my work. Your support helps me keep building open source tools, adding more animation packs, and writing design/dev insights in my newsletter [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/).
+
+[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=000000)](https://www.buymeacoffee.com/pavelrocks)
+
 <br>
 
 ## AnimText
@@ -218,14 +224,6 @@ Works beautifully with **{css}animation** out of the box. Use it to make your an
 [![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle)
 
 👉 [Get Started with Triggle →](https://github.com/yesiamrocks/triggle)
-
-<br>
-
-## ☕ Support This Project
-
-If you find **{css}animation** helpful, consider supporting my work. Your support helps me keep building open source tools, adding more animation packs, and writing design/dev insights in my newsletter [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/).
-
-[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=000000)](https://www.buymeacoffee.com/pavelrocks)
 
 <br>
 
