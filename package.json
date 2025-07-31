@@ -71,7 +71,7 @@
     "postcss-import": "^16.1.0",
     "postcss-prefix-selector": "^2.1.1",
     "postcss-preset-env": "^10.2.0",
-    "postcss-selector-namespace": "^3.0.1",
+    "postcss-selector-namespace": "^1.2.2",
     "postcss-selector-prefix": "^5.0.1",
     "prettier": "^3.5.3",
     "rollup": "^4.42.0",
@@ -96,7 +96,11 @@
   },
   "dependencies": {
     "glob-parent": "^6.0.2",
-    "micromatch": "^4.0.8"
+    "micromatch": "^4.0.8",
+    "fs-extra": "^11.2.0",
+    "postcss": "^8.4.38",
+    "postcss-scss": "^4.0.9",
+    "gsap": "^3.12.5"
   },
   "lint-staged": {
     "src/**/*.css": [

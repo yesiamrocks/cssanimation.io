@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const CSS_FILE = path.join(__dirname, '../dist/cssanimation.css');
-const OUTPUT_JSON = path.join(__dirname, '../dist/cssanimation.json');
+const OUTPUT_JSON = path.join(__dirname, '../src/cssanimation.json');
 
 let animationMetadata = {};
 const metadataPath = path.join(__dirname, 'animation-metadata.json');
