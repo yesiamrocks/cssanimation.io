@@ -1,0 +1,50 @@
+name: Sponsor Shoutout
+description: Submit your info for a shoutout in the newsletter and project documentation
+title: '✨ Sponsor Shoutout Request'
+labels: ['sponsor', 'community']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for becoming a sponsor! 💛  
+        Fill out the info below so I can include your shoutout in **Pixels & Projects with Pavel** and/or in the docs of my open-source libraries.
+
+  - type: input
+    id: name
+    attributes:
+      label: Your Name or Handle
+      placeholder: e.g., Jane Doe / @janedev
+    validations:
+      required: true
+
+  - type: input
+    id: project
+    attributes:
+      label: Project/Website you'd like me to link
+      placeholder: e.g., https://janedev.io or GitHub repo
+    validations:
+      required: false
+
+  - type: input
+    id: avatar
+    attributes:
+      label: Avatar or Logo URL (optional)
+      placeholder: Paste a link to your logo or avatar image (e.g., Twitter, GitHub, CDN)
+    validations:
+      required: false
+
+  - type: input
+    id: social
+    attributes:
+      label: Social handle you'd like mentioned (optional)
+      placeholder: e.g., Twitter, LinkedIn, GitHub, etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: message
+    attributes:
+      label: Optional message or context you'd like me to include
+      placeholder: e.g., “Using {css}animation on a new design portfolio project!”
+    validations:
+      required: false
