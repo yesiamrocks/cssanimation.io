@@ -52,7 +52,7 @@
   }
 
   80% {
-    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
+    filter: drop-shadow(0 0 4px rgb(255 255 255 / 60%));
   }
 
   100% {

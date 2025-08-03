@@ -60,6 +60,7 @@
     transform: scaleY(1.05) translateY(-2px); /* Slight overshoot */
   }
 }
+
 /**
  * Module: Fade in
  * Filename: ca__FadeIn.css

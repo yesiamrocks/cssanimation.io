@@ -47,10 +47,12 @@
   100% {
     filter: brightness(1);
   }
+
   50% {
     filter: brightness(1.3);
   }
 }
+
 /**
  * Module: Moon Fade
  * Filename: ca__MoonFade.css

@@ -1,3 +1,22 @@
+# [6.11.4] – 2025-07-31
+
+### Documentation Improvements
+
+- Rewrote the **Contribute** section with clearer language and developer-friendly tone
+- Added a new [`LICENSE-summary.md`](./LICENSE-summary.md) for a explanation of Apache 2.0 license terms and attribution requirements
+- Linked the license summary in the main README under the License section
+- Improved the **Accessibility**, **Changelog Highlights**, and **Support** sections for readability and structure
+- Added new badges:  
+  ![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)  
+  ![Attribution Required](https://img.shields.io/badge/Attribution-Required-important)
+
+### Community & Support
+
+- Updated community callout for developers using `{css}animation` in websites, tools, or frameworks
+- Encouraged contributions and feedback via [GitHub Issues](https://github.com/yesiamrocks/cssanimation/issues) and [Discussions](https://github.com/yesiamrocks/cssanimation/discussions)
+
+Thanks to everyone supporting and using **{css}animation**! Let’s keep building magical motion for the web.
+
 ## [6.11.3] – 2025-07-31
 
 ### Added

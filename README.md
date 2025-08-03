@@ -1,12 +1,14 @@
 # CSS Animation Library for Developers and Ninjas - {css}animation
 
-> A Powerful CSS Animation Library for Advanced Motion Design.
-
 <!-- Tech & Status -->
 
-![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) ![No Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) ![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=for-the-badge) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/index.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge) [![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle) [![AnimText](https://img.shields.io/badge/AnimText%20JS-22d3ee?style=for-the-badge&logo=typography&logoColor=white)](https://github.com/yesiamrocks/animtext) [![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-ffdd00?logo=buy-me-a-coffee&logoColor=000000&style=for-the-badge)](https://www.buymeacoffee.com/yesiamrocks) [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%98%95-lightgrey?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/yesiamrocks/membership) [![Newsletter](https://img.shields.io/badge/Subscribe-Pixels%20&%20Projects%20-A6CA4B?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/)
+![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) ![No Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) ![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=for-the-badge) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/index.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge) [![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle) [![AnimText](https://img.shields.io/badge/AnimText%20JS-22d3ee?style=for-the-badge&logo=typography&logoColor=white)](https://github.com/yesiamrocks/animtext)
 
-<a href="https://yesiamrocks.github.io/cssanimation/index.html" target="_bank"><img src="./branding/cssanimation-logo.svg" width="250" style="margin:10px 0 10px 0"></a>
+[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-ffdd00?logo=buy-me-a-coffee&logoColor=000000&style=for-the-badge)](https://www.buymeacoffee.com/yesiamrocks) [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%98%95-lightgrey?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/yesiamrocks/membership)
+
+> A Powerful CSS Animation Library for Advanced Motion Design. Zero JS Required. Over 500 Effects, Letter, Word & Line Stagger Animations, Utilities, and easy CDN or NPM Install.
+
+<a href="https://yesiamrocks.github.io/cssanimation/index.html" target="_bank"><img src="./branding/cssanimation-logo.svg" width="250" style="margin:10px 0 5px 0"></a>
 
 **{css}animation** is a lightweight, modular CSS animation library built for front-end developers, creative coders, and UI ninjas. Get access to **A Rich Set of Ready-to-Use Animation Classes** to bring your interfaces to life. From simple fades and zooms to dynamic letter effects and 3D transitions, we’ve got your motion design needs covered.
 
@@ -170,31 +172,7 @@ Check out the full list and details in [`cssanimation-utilities.md`](./reference
 
 ### 🎉 That’s It!
 
-## Accessibility: Respecting User Preferences
-
-By default, **{css}animation** respects user system preferences. When `prefers-reduced-motion: reduce` is enabled in a user's operating system settings, animations are automatically turned off for a more comfortable user experience.
-
-## License
-
-**{css}animation** is licensed under the [Apache License, Version 2.0](https://github.com/yesiamrocks/cssanimation/blob/master/LICENSE).
-
-## Contribute
-
-We welcome issues, pull requests, and suggestions! 🤝 Help us make animations even more magical for everyone.
-
-## Need Help?
-
-If you’re building a **Website, Landing page, Tool, Visual Editor, or Framework** integration using **{css}animation**, feel free to reach out or contribute via GitHub Issues or Discussions.
-
-## ☕ Support This Project
-
-If you find **{css}animation** helpful, consider supporting my work. Your support helps me keep building open source tools, adding more animation packs, and writing design/dev insights in my newsletter [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/).
-
-[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=000000)](https://www.buymeacoffee.com/pavelrocks)
-
-<br>
-
-## AnimText
+## AnimText - Letter, Word & Line Text Animation JS Library
 
 Add Smart Text Animations with [AnimText](https://github.com/yesiamrocks/animtext)
 
@@ -210,9 +188,7 @@ Perfect for headlines, hero sections, callouts, and more.
 
 👉 [Get Started with AnimText →](https://github.com/yesiamrocks/animtext)
 
-<br>
-
-## Triggle
+## Triggle - Simple Trigger-Based CSS Animation Control
 
 Enhance Your **{css}animation** with Triggers
 
@@ -225,9 +201,42 @@ Works beautifully with **{css}animation** out of the box. Use it to make your an
 
 👉 [Get Started with Triggle →](https://github.com/yesiamrocks/triggle)
 
-<br>
+## Accessibility: Respecting User Preferences
 
-## 💛 Become a Community Sponsor
+**{css}animation** is built with accessibility in mind. If a user has enabled `prefers-reduced-motion: reduce` in their system preferences, all animations are automatically disabled, ensuring a smoother and more comfortable experience for those sensitive to motion.
+
+No extra configuration required. It's automatic, built-in, and developer-friendly.
+
+## License
+
+**{css}animation** {css}animation is proudly open-sourced under the [Apache License 2.0](./LICENSE). You can freely use it in personal, commercial, and creative projects.
+
+Want a quick explanation? See the [License Summary →](./LICENSE-summary.md)
+
+## Contribute
+
+We welcome all contributions — whether it’s fixing bugs, adding animations, improving docs, or sharing ideas!
+
+- Found an issue? [Open a GitHub Issue](https://github.com/yesiamrocks/cssanimation/issues)
+- Want to improve the library? [Submit a Pull Request](https://github.com/yesiamrocks/cssanimation/pulls)
+- Have questions or feature ideas? [Start a Discussion](https://github.com/yesiamrocks/cssanimation/discussions)
+
+Help us make animations even more magical for everyone.
+
+## Need Help?
+
+**Using `{css}animation` in your project?**  
+Whether it’s a website, landing page, tool, visual editor, or framework - we’d love to see it! Got feedback or ideas? Open a [GitHub Issue](https://github.com/yesiamrocks/cssanimation/issues) or join the [Discussions](https://github.com/yesiamrocks/cssanimation/discussions) to share.
+
+## Support This Project
+
+If you enjoy using **{css}animation** helpful, consider supporting my work.
+
+please consider supporting its development. Your contribution helps maintain the library, expand animation packs, and publish design/dev tips through [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/).
+
+[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=000000)](https://www.buymeacoffee.com/pavelrocks)
+
+## Become a Community Sponsor
 
 If you enjoy **{css}animation**, help support its development by becoming a monthly sponsor
 
@@ -242,4 +251,4 @@ Help keep this open-source project alive and growing
 
 <br>
 
-![Built with ❤️ by Pavel](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange?style=for-the-badge) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/shafayetul/) [![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-ffdd00?logo=buy-me-a-coffee&logoColor=000000&style=for-the-badge)](https://www.buymeacoffee.com/yesiamrocks)
+![Built with ❤️ by Pavel](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange?style=for-the-badge) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/shafayetul/) [![Newsletter](https://img.shields.io/badge/Subscribe-Pixels%20&%20Projects%20-A6CA4B?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/)

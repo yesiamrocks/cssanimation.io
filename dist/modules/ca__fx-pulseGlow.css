@@ -40,19 +40,19 @@
 .ca__fx-pulseGlow {
   animation-name: pulseGlow;
   animation-timing-function: ease-in-out;
-  box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 rgb(255 255 255 / 40%);
 }
 
 @keyframes pulseGlow {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 40%);
   }
 
   70% {
-    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 12px rgb(255 255 255 / 0%);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 0%);
   }
 }

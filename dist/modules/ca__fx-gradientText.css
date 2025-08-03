@@ -39,7 +39,7 @@
 
 .ca__fx-gradientText {
   background: linear-gradient(90deg, #ff0080, #7928ca);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientText 3s linear infinite;
   background-size: 200%;

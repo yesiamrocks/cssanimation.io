@@ -52,9 +52,9 @@
   }
 }
 /**
- * Module: Quake & Quiver Series
- * Filename: ca__quake.css
+ * Module: Roll From
+ * Filename: ca__RollFrom.css
  */
-.ca__fx-jiggle {
-  animation: jiggle var(--jiggle-duration, 0.8s) ease-in-out both;
+.ca__fx-rollFromLeft {
+  animation-name: rollFromLeft;
 }
