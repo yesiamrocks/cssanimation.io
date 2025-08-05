@@ -4,7 +4,7 @@
 
 **License:** [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)  
 **Author:** Shafayetul Islam Pavel  
-**Project:** [cssanimation.io](https://cssanimation.io)  
+**Project:** [{css}animation](https://yesiamrocks.github.io/cssanimation/)  
 **Repository:** [yesiamrocks/cssanimation](https://github.com/yesiamrocks/cssanimation)
 
 ## What You Can Do
