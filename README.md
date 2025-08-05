@@ -2,9 +2,9 @@
 
 <!-- Tech & Status -->
 
-![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) ![No Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) ![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=for-the-badge) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/index.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge) [![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle) [![AnimText](https://img.shields.io/badge/AnimText%20JS-22d3ee?style=for-the-badge&logo=typography&logoColor=white)](https://github.com/yesiamrocks/animtext)
+![CSS](https://img.shields.io/badge/style-CSS-blue?style=for-the-badge) ![No Dependencies](https://img.shields.io/badge/Dependencies-None-lightgrey?style=for-the-badge) [![NPM](https://img.shields.io/npm/v/@hellouxpavel%2Fcssanimation.svg?style=for-the-badge)](https://www.npmjs.com/package/@hellouxpavel/cssanimation) ![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=for-the-badge) [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@hellouxpavel/cssanimation?style=for-the-badge)](https://www.jsdelivr.com/package/npm/@hellouxpavel/cssanimation) [![unpkg](https://img.shields.io/badge/CDN-unpkg-blue?style=for-the-badge)](https://unpkg.com/browse/@hellouxpavel/cssanimation/) [![GitHub issues](https://img.shields.io/github/issues/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/issues) [![GitHub stars](https://img.shields.io/github/stars/yesiamrocks/cssanimation?style=for-the-badge)](https://github.com/yesiamrocks/cssanimation/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://yesiamrocks.github.io/cssanimation/index.html) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@hellouxpavel/cssanimation?style=for-the-badge)](https://bundlephobia.com/result?p=@hellouxpavel/cssanimation) ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge) [![AnimText](https://img.shields.io/badge/AnimText-Text%20Animation-f43f5e?style=for-the-badge&logo=javascript&logoColor=white)](https://github.com/yesiamrocks/animtext) [![Triggle.js](https://img.shields.io/badge/Triggle-Trigger%20Engine-FF6600?style=for-the-badge&logo=javascript&logoColor=white)](https://github.com/yesiamrocks/triggle)
 
-[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-ffdd00?logo=buy-me-a-coffee&logoColor=000000&style=for-the-badge)](https://www.buymeacoffee.com/yesiamrocks) [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%98%95-lightgrey?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/yesiamrocks/membership)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20My%20Work-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/yesiamrocks) [![Join Membership](https://img.shields.io/badge/Become%20a%20Member-Monthly%20Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/yesiamrocks/membership)
 
 > A Powerful CSS Animation Library for Advanced Motion Design. Zero JS Required. Over 500 Effects, Letter, Word & Line Stagger Animations, Utilities, and easy CDN or NPM Install.
 
@@ -184,7 +184,7 @@ Perfect for headlines, hero sections, callouts, and more.
 - Works out of the box with **{css}animation** classes like `ca__fx-fadeIn`
 - No dependencies – just plug and play!
 
-[![AnimText](https://img.shields.io/badge/AnimText%20JS-4B9CE2?style=for-the-badge&logo=typography&logoColor=white)](https://github.com/yesiamrocks/animtext)
+[![AnimText](https://img.shields.io/badge/AnimText-Text%20Animation-f43f5e?style=for-the-badge&logo=javascript&logoColor=white)](https://github.com/yesiamrocks/animtext)
 
 👉 [Get Started with AnimText →](https://github.com/yesiamrocks/animtext)
 
@@ -197,7 +197,7 @@ Meet [**Triggle**](https://github.com/yesiamrocks/triggle) — a zero-dependency
 
 Works beautifully with **{css}animation** out of the box. Use it to make your animations interactive in seconds.
 
-[![Triggle JS](https://img.shields.io/badge/Triggle%20JS-00c853?style=for-the-badge&logo=flash&logoColor=white)](https://github.com/yesiamrocks/triggle)
+[![Triggle.js](https://img.shields.io/badge/Triggle-Trigger%20Engine-FF6600?style=for-the-badge&logo=javascript&logoColor=white)](https://github.com/yesiamrocks/triggle)
 
 👉 [Get Started with Triggle →](https://github.com/yesiamrocks/triggle)
 
@@ -234,11 +234,11 @@ If you enjoy using **{css}animation** helpful, consider supporting my work.
 
 please consider supporting its development. Your contribution helps maintain the library, expand animation packs, and publish design/dev tips through [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/).
 
-[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=000000)](https://www.buymeacoffee.com/pavelrocks)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20My%20Work-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/yesiamrocks)
 
 ## Become a Community Sponsor
 
-If you enjoy **{css}animation**, help support its development by becoming a monthly sponsor
+If you enjoy **{css}animation**, help support its development by becoming a monthly sponsor.
 
 **As a Community Sponsor**, you’ll get:
 
@@ -247,8 +247,10 @@ If you enjoy **{css}animation**, help support its development by becoming a mont
 
 Help keep this open-source project alive and growing
 
-👉 [Join the Membership](https://buymeacoffee.com/yesiamrocks/membership)
+[![Join Membership](https://img.shields.io/badge/Become%20a%20Member-Monthly%20Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/yesiamrocks/membership)
 
 <br>
 
-![Built with ❤️ by Pavel](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange?style=for-the-badge) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/shafayetul/) [![Newsletter](https://img.shields.io/badge/Subscribe-Pixels%20&%20Projects%20-A6CA4B?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/)
+---
+
+![Built with ❤️ by Pavel](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20by%20Pavel-orange?style=for-the-badge) [![LinkedIn](https://img.shields.io/badge/LinkedIn-@shafayetul-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shafayetul/) [![Twitter](https://img.shields.io/badge/Twitter-@yesiamrocks-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/yesiamrocks) [![Email](https://img.shields.io/badge/Email-yesiamrocks@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yesiamrocks@gmail.com) [![Newsletter](https://img.shields.io/badge/Pixels_&_Projects_with_Pavel-Subscribe-a6ca4b?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/)
