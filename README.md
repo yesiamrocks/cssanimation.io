@@ -209,9 +209,9 @@ No extra configuration required. It's automatic, built-in, and developer-friendl
 
 ## License
 
-**{css}animation** {css}animation is proudly open-sourced under the [Apache License 2.0](./LICENSE). You can freely use it in personal, commercial, and creative projects.
+**{css}animation** is proudly open-sourced under the [Apache License 2.0](./LICENSE). You can freely use it in personal, commercial, and creative projects.
 
-Want a quick explanation? See the [License Summary →](./LICENSE-summary.md)
+Want a quick explanation? See the [License Summary →](./ABOUT-LICENSE.md)
 
 ## Contribute
 
