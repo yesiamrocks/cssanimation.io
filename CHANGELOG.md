@@ -1,3 +1,13 @@
+# [6.11.6] – 2025-08-6
+
+### Changed
+
+- Renamed license summary link in README:
+  - Updated from `LICENSE-summary.md` ➜ `ABOUT-LICENSE.md`
+  - Improves clarity and avoids confusion with the official `LICENSE` file used for GitHub detection
+
+This is a minor maintenance release focused on documentation accuracy and alignment with GitHub’s license recognition system.
+
 # [6.11.5] – 2025-08-6
 
 ### Added
