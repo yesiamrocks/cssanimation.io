@@ -94,12 +94,9 @@
   }
 }
 /**
- * Module: Step Animation
- * Filename: ca__step.css
+ * Module: Roll From
+ * Filename: ca__RollFrom.css
  */
-.ca__fx-stepTypeIn {
-  animation: stepTypeIn 1.2s steps(10, end) forwards;
-  white-space: nowrap;
-  overflow: hidden;
-  will-change: opacity, transform;
+.ca__fx-rollFromLeft {
+  animation-name: rollFromLeft;
 }

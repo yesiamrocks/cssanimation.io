@@ -66,17 +66,12 @@
   }
 }
 /**
- * Module: Stripe Masking Animation
- * Filename: ca__maskingStripe.css
+ * Module: Step Animation
+ * Filename: ca__step.css
  */
-.ca__fx-maskHorizontalBarsIn {
-  animation-name: mask-horizontalBarsIn;
-  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-  mask-image: repeating-linear-gradient(to bottom, transparent 0,transparent 10%, black 10%, black 20%);
-  -webkit-mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-  mask-image: repeating-linear-gradient(to bottom, transparent 0 10%, black 10% 20%);
-  -webkit-mask-size: 100% 200%;
-  mask-size: 100% 200%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+.ca__fx-stepTypeIn {
+  animation: stepTypeIn 1.2s steps(10, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  will-change: opacity, transform;
 }

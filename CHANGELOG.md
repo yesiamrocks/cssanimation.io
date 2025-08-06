@@ -1,3 +1,40 @@
+# [6.11.5] – 2025-08-6
+
+### Added
+
+- **New project badges**:
+
+  - [AnimText](https://github.com/yesiamrocks/animtext) (Text Animation – `f43f5e`, JavaScript logo)
+  - [Triggle.js](https://github.com/yesiamrocks/triggle) (Trigger Engine – `FF6600`, JavaScript logo)
+  - `Buy Me a Coffee` and `Membership` buttons with improved visual CTA and color
+
+- Added a clear **license usage guide** (`ABOUT-LICENSE.md`) outlining:
+  - What’s allowed
+  - What’s restricted
+  - Attribution requirements
+  - How to seek help or clarification
+
+### Changed
+
+- Updated badge designs in the README:
+  - Replaced outdated badge styles for **AnimText** and **Triggle** with updated colors/icons
+  - Unified CTA badges for sponsorship and support (Buy Me a Coffee)
+- Minor wording improvements in README:
+  - Streamlined project description and contribution section
+  - Improved clarity of animation tool references and sponsorship links
+
+### Fixed
+
+- **Resolved GitHub license detection issue**:
+  - Replaced the existing `LICENSE` file with the official [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Renamed `LICENSE-summary.md` ➜ `ABOUT-LICENSE.md` to avoid confusion
+  - GitHub now properly detects the license and displays the full summary (Permissions, Conditions, Limitations)
+
+Thanks for supporting **{css}animation**
+
+[Subscribe to Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/)  
+[Sponsor development on Buy Me a Coffee](https://www.buymeacoffee.com/yesiamrocks)
+
 # [6.11.4] – 2025-07-31
 
 ### Documentation Improvements

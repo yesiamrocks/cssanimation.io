@@ -49,13 +49,11 @@
   }
 }
 /**
- * Module: WOW
- * Filename: ca__wow.css
+ * Module: Orbit Reveal Animations
+ * Filename: cs__orbitReveal.css
  */
-.ca__fx-blurTrailIn {
-  animation-name: blurTrailIn;
-  animation-timing-function: ease-out;
-  transform-origin: center;
-  will-change: transform, opacity;
-  filter: blur(8px);
+.ca__fx-orbitRevealLeft {
+  animation: orbitRevealLeft 1.2s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
