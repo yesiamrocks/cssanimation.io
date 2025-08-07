@@ -1,4 +1,14 @@
-# [6.11.6] – 2025-08-6
+# [6.11.7] – 2025-08-07
+
+### Documentation Updates
+
+- Rewrote the **Support This Project** section.
+- Updated **Become a Community Sponsor** with more personal, heartfelt copy that invites monthly backers to be part of the journey
+- Clearly outlined sponsor benefits (newsletter shoutouts, documentation credits, and community recognition)
+
+These updates aim to connect more deeply with the community, inspire meaningful support, and ensure the longevity of the project through shared purpose and passion.
+
+# [6.11.6] – 2025-08-06
 
 ### Changed
 
@@ -8,7 +18,7 @@
 
 This is a minor maintenance release focused on documentation accuracy and alignment with GitHub’s license recognition system.
 
-# [6.11.5] – 2025-08-6
+# [6.11.5] – 2025-08-06
 
 ### Added
 

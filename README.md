@@ -225,27 +225,48 @@ Help us make animations even more magical for everyone.
 
 ## Need Help?
 
-**Using `{css}animation` in your project?**  
-Whether it’s a website, landing page, tool, visual editor, or framework - we’d love to see it! Got feedback or ideas? Open a [GitHub Issue](https://github.com/yesiamrocks/cssanimation/issues) or join the [Discussions](https://github.com/yesiamrocks/cssanimation/discussions) to share.
+Running into issues while using **{css}animation** in your project?  
+Whether it's a website, landing page, tool, or framework integration — we're here to help!
 
-## Support This Project
+- Report bugs or problems via [GitHub Issues](https://github.com/yesiamrocks/cssanimation/issues)
+- Ask questions or get guidance in [GitHub Discussions](https://github.com/yesiamrocks/cssanimation/discussions)
 
-If you enjoy using **{css}animation** helpful, consider supporting my work.
+We’re happy to assist and make sure everything works smoothly in your setup.
 
-please consider supporting its development. Your contribution helps maintain the library, expand animation packs, and publish design/dev tips through [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/).
+## Support {css}animation
+
+If **{css}animation** has helped you bring ideas to life, ship smoother animations, or simply made your UI feel more alive, I’d be truly grateful for your support.
+
+This project is the result of years of late nights, weekends, experiments, and a deep love for motion design.  
+I started **{css}animation** to make expressive, cinematic animation easier and more accessible for developers and designers everywhere.
+
+Your support helps me:
+
+- Maintain and improve the library
+- Craft new animation packs and modules
+- Share insights through my newsletter  
+  👉 [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/)
+
+Even a small contribution means a lot, it fuels my creativity and helps keep this project alive and growing.
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20My%20Work-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/yesiamrocks)
 
 ## Become a Community Sponsor
 
-If you enjoy **{css}animation**, help support its development by becoming a monthly sponsor.
+**{css}animation** isn’t just a library, it’s a love letter to motion.  
+If it’s helped bring your ideas to life, saved you time, or added delight to your UI, I’d be incredibly grateful for your support as a monthly sponsor.
 
-**As a Community Sponsor**, you’ll get:
+This project is handcrafted with care — from animation packs to utilities — during nights, weekends, and moments between client work.  
+Sponsorship helps keep this creative momentum going and ensures I can continue building tools that empower others.
 
-- A shoutout in my newsletter [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/)
-- Your name or project listed in the documentation and on the site.
+### As a Community Sponsor, you'll receive:
 
-Help keep this open-source project alive and growing
+- A personal shoutout in my newsletter  
+  👉 [Pixels & Projects with Pavel](https://www.linkedin.com/newsletters/pixels-projects-with-pavel-7093275757006782464/)
+- Your name or project featured in the official documentation and on the website
+- The satisfaction of supporting independent, open-source motion design
+
+Let’s build a more playful, expressive web — together.
 
 [![Join Membership](https://img.shields.io/badge/Become%20a%20Member-Monthly%20Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/yesiamrocks/membership)
 
