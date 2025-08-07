@@ -1,16 +1,19 @@
-# Contributing to cssanimation.io
+# Contributing to {css}animation
 
-Thank you for considering contributing to **cssanimation.io!** Your help makes this library better for designers and developers around the world.
+# 🛠️ Contributing to {css}animation
 
-This guide will walk you through the setup, standards, and process to ensure smooth collaboration.
+Thank you for your interest in contributing to **{css}animation**.  
+Your support helps bring better motion design to developers and designers around the world 💛
+
+This guide will walk you through the setup, conventions, and submission process to make collaboration smooth and enjoyable.
 
 ## Getting Started
 
-### 1. Fork & Clone
+### 1. Fork & Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/cssanimation.io.git
-cd cssanimation.io
+git clone https://github.com/your-username/cssanimation.git
+cd cssanimation
 ```
 
 ### 2. Install dev dependencies
@@ -38,29 +41,26 @@ Branch Naming Guidelines
 
 This runs the prefixer, copies assets, and extracts class references.
 
-### 3. Start Contributing
-
-Make your changes in the `src/` directory. Avoid editing `dist/` directly.
-
 ## Project Structure
 
 ```bash
 src/
 ├── cssanimation.css              # Core animation styles
 ├── cssanimation-utility.css      # Utility modifiers (delay, speed, etc.)
-└── cssanimation-reference.md     # Auto-generated class list
 ```
+
+> Make your changes in the `src/` directory. Avoid editing `dist/` directly.
 
 ## Naming Conventions
 
 CSS Class Prefixes
 
-- Use `ca__` for all animation class names
-- Example: `.ca__fadeIn`, `.ca__gsap-effect3d`
+- Use `ca__fx-` for all animation class names
+- Example: `.ca__fx-fadeIn`
 
 JavaScript Targets
 
-- Always wrap selectors in `document.querySelector` or GSAP-safe strings
+- Always wrap selectors in `document.querySelector`
 - Avoid hardcoding non-prefixed class names
 
 ## Scripts
@@ -80,7 +80,7 @@ JavaScript Targets
 
 - Use 2 spaces for indentation
 - Write clear, concise comments
-- Use semantic naming (e.g. .ca\_\_bounceInLeft > .bL)
+- Use semantic naming (e.g. `.ca__bounceInLeft`)
 - Prefer SCSS-like readability in raw CSS
 
 ## Submitting a Pull Request
@@ -94,7 +94,7 @@ git checkout -b feature/your-change
 Commit clearly
 
 ```bash
-git commit -m "Add: new animation ca__flashFadeIn"
+git commit -m "Add: new animation ca__fx-flashFadeIn"
 ```
 
 Push to your fork
@@ -116,8 +116,7 @@ Open a GitHub Issue with:
 
 ## Maintainer
 
-- Email: hello@cssanimation.io
+- Email: yesiamrocks@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/shafayetul/)
-- [cssanimation.io](cssanimation.io)
 
 Thank you again for your contributions 💛
