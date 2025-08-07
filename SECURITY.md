@@ -1,10 +1,10 @@
 # Security Policy
 
-Thank you for your interest in improving the security of [cssanimation.io](https://github.com/yesiamrocks/cssanimation.io). We value and appreciate responsible security disclosures and are committed to resolving any legitimate issues in a timely manner.
+Thank you for your interest in improving the security of [{css}animation](https://github.com/yesiamrocks/cssanimation). We value and appreciate responsible security disclosures and are committed to resolving any legitimate issues in a timely manner.
 
 ## Scope
 
-This policy applies only to vulnerabilities found within the codebase of this repository (`cssanimation.io`). Issues in third-party dependencies should be reported to their respective maintainers.
+This policy applies only to vulnerabilities found within the codebase of this repository (`cssanimation`). Issues in third-party dependencies should be reported to their respective maintainers.
 
 ## Supported Versions
 
@@ -17,9 +17,7 @@ We currently support only the latest version of the library for security updates
 
 ## Reporting a Vulnerability
 
-If you believe you’ve discovered a security vulnerability, please report it privately by emailing:
-
-**➡️ hello@cssanimatio.io**
+If you believe you’ve discovered a security vulnerability, please report it privately by emailing: **yesiamrocks@gmail.com**
 
 ## Please include:
 
@@ -43,6 +41,6 @@ We aim to acknowledge all reports promptly and, if validated, will work to resol
 
 ## Credit & Recognition
 
-We’re happy to acknowledge your contribution to securing `cssanimation.io` in our changelog and release notes (with your permission).
+We’re happy to acknowledge your contribution to securing `{css}animation` in our changelog and release notes (with your permission).
 
 Thank you for helping make the web a safer place
