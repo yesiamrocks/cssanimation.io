@@ -1,6 +1,6 @@
 {
   "name": "@hellouxpavel/cssanimation",
-  "version": "6.11.6",
+  "version": "6.11.7",
   "description": "A Powerful CSS Animation Library for Advanced Motion Design.",
   "main": "index.js",
   "style": "dist/cssanimation.css",
